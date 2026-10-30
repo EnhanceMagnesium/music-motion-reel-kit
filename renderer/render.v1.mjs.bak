@@ -1,0 +1,156 @@
+import puppeteer from 'puppeteer-core';
+import { createHash } from 'node:crypto';
+import { spawn } from 'node:child_process';
+import { existsSync } from 'node:fs';
+import { mkdir, readFile, writeFile, rename, stat, open, rm } from 'node:fs/promises';
+import { basename, dirname, resolve, join } from 'node:path';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+
+const root = dirname(fileURLToPath(import.meta.url));
+const args = {};
+const argv = process.argv.slice(2);
+for (let i = 0; i < argv.length; i++) {
+  const item = argv[i].replace(/^--/, '');
+  const eq = item.indexOf('=');
+  if (eq >= 0) args[item.slice(0, eq)] = item.slice(eq + 1);
+  else if (argv[i + 1] && !argv[i + 1].startsWith('--')) args[item] = argv[++i];
+  else args[item] = true;
+}
+const specPath = resolve(root, String(args.spec || 'specs/demo.json'));
+const studioPath = join(root, 'studio.html');
+const spec = JSON.parse(await readFile(specPath, 'utf8'));
+const studio = await readFile(studioPath);
+const rendererCode = await readFile(fileURLToPath(import.meta.url));
+
+function validate(s) {
+  for (const key of ['width', 'height', 'fps', 'duration']) {
+    if (!Number.isFinite(s[key]) || s[key] <= 0) throw new Error(`Invalid ${key}`);
+  }
+  if (s.width % 2 || s.height % 2) throw new Error('Width and height must be even for H.264');
+  if (!Array.isArray(s.scenes) || !s.scenes.length) throw new Error('At least one scene is required');
+  let end = 0;
+  for (const scene of s.scenes) {
+    if (Math.abs(scene.start - end) > .001 || scene.end <= scene.start) throw new Error('Scenes must cover the timeline without gaps or overlaps');
+    if (!['title', 'dots', 'orbit'].includes(scene.type)) throw new Error(`Unsupported scene type: ${scene.type}`);
+    end = scene.end;
+  }
+  if (Math.abs(end - s.duration) > .001) throw new Error('Scenes must end at duration');
+}
+validate(spec);
+
+const audioPath = spec.audio ? resolve(dirname(specPath), spec.audio) : null;
+const audioStamp = audioPath ? await stat(audioPath).then(s => `${s.size}:${s.mtimeMs}`) : '';
+const version = createHash('sha256').update(JSON.stringify(spec)).update(studio).update(rendererCode).update(audioStamp).digest('hex').slice(0, 12);
+const slug = String(spec.name || basename(specPath, '.json')).replace(/[^a-z0-9-]/gi, '-').toLowerCase();
+const jobDir = join(root, 'out', `${slug}-${version}`);
+const framesDir = join(jobDir, 'frames');
+const statusPath = join(jobDir, 'status.json');
+const outputPath = join(jobDir, 'video.mp4');
+const lockPath = join(jobDir, '.render.lock');
+const frameCount = Math.ceil(spec.duration * spec.fps);
+const chrome = process.env.CHROME_PATH || [
+  '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+  '/usr/bin/google-chrome', '/usr/bin/chromium'
+].find(existsSync);
+if (!chrome) throw new Error('Google Chrome or Chromium not found; set CHROME_PATH');
+
+async function run(cmd, cmdArgs) {
+  await new Promise((good, bad) => {
+    const child = spawn(cmd, cmdArgs, { stdio: 'inherit' });
+    child.on('error', bad);
+    child.on('close', code => code === 0 ? good() : bad(new Error(`${cmd} exited ${code}`)));
+  });
+}
+async function writeStatus(stage, extra = {}) {
+  const data = { name: spec.name, version, stage, frameCount, outputPath, updatedAt: new Date().toISOString(), ...extra };
+  const temp = `${statusPath}.${process.pid}.${Date.now()}.${Math.random().toString(36).slice(2)}.tmp`;
+  await writeFile(temp, JSON.stringify(data, null, 2));
+  await rename(temp, statusPath);
+}
+async function validFrame(index) {
+  try { return (await stat(join(framesDir, `frame-${String(index).padStart(6, '0')}.png`))).size > 1000; }
+  catch { return false; }
+}
+
+if (args.preflight) {
+  await run('ffmpeg', ['-version']);
+  console.log(`Preflight OK: ${spec.width}x${spec.height}, ${frameCount} frames, Chrome: ${chrome}`);
+  console.log(`Job directory: ${jobDir}`);
+  process.exit(0);
+}
+
+await mkdir(framesDir, { recursive: true });
+if (args.detach) {
+  const log = await open(join(jobDir, 'render.log'), 'a');
+  const child = spawn(process.execPath, [fileURLToPath(import.meta.url), `--spec=${specPath}`, `--workers=${args.workers || 2}`], {
+    cwd: root, detached: true, stdio: ['ignore', log.fd, log.fd], env: process.env
+  });
+  child.unref();
+  await log.close();
+  console.log(`Started local render, PID ${child.pid}`);
+  console.log(`Status: ${statusPath}`);
+  console.log(`Log: ${join(jobDir, 'render.log')}`);
+  process.exit(0);
+}
+
+let lock;
+try { lock = await open(lockPath, 'wx'); }
+catch {
+  const oldPid = Number(await readFile(lockPath, 'utf8').catch(() => '0'));
+  let running = false;
+  if (oldPid) { try { process.kill(oldPid, 0); running = true; } catch {} }
+  if (running) throw new Error(`Render already running as PID ${oldPid}`);
+  await rm(lockPath, { force: true });
+  lock = await open(lockPath, 'wx');
+}
+await lock.writeFile(String(process.pid));
+
+try {
+  await writeStatus('rendering', { rendered: 0 });
+  const browser = await puppeteer.launch({
+    executablePath: chrome, headless: true,
+    args: ['--allow-file-access-from-files', '--disable-background-timer-throttling']
+  });
+  let next = 0, rendered = 0;
+  const workers = Math.max(1, Math.min(8, Number(args.workers || 2)));
+  try {
+    await Promise.all(Array.from({ length: workers }, async () => {
+      const page = await browser.newPage();
+      await page.setViewport({ width: spec.width, height: spec.height, deviceScaleFactor: 1 });
+      await page.goto(pathToFileURL(studioPath).href, { waitUntil: 'load' });
+      try {
+        while (true) {
+          const index = next++;
+          if (index >= frameCount) break;
+          if (!await validFrame(index)) {
+            await page.evaluate((t, s) => window.renderAt(t, s), index / spec.fps, spec);
+            const target = join(framesDir, `frame-${String(index).padStart(6, '0')}.png`);
+            const temp = `${target}.tmp.png`;
+            await page.screenshot({ path: temp, type: 'png' });
+            await rename(temp, target);
+          }
+          rendered++;
+          if (rendered % 12 === 0 || rendered === frameCount) await writeStatus('rendering', { rendered });
+        }
+      } finally { await page.close(); }
+    }));
+  } finally { await browser.close(); }
+
+  for (let i = 0; i < frameCount; i++) if (!await validFrame(i)) throw new Error(`Missing frame ${i}`);
+  await writeStatus('encoding', { rendered: frameCount });
+  const cmd = ['-y', '-hide_banner', '-loglevel', 'error', '-stats', '-framerate', String(spec.fps),
+    '-i', join(framesDir, 'frame-%06d.png')];
+  if (audioPath) cmd.push('-i', audioPath);
+  cmd.push('-t', String(spec.duration), '-c:v', 'libx264', '-preset', 'medium', '-crf', '18', '-pix_fmt', 'yuv420p');
+  if (audioPath) cmd.push('-c:a', 'aac', '-b:a', '192k'); else cmd.push('-an');
+  cmd.push('-movflags', '+faststart', outputPath);
+  await run('ffmpeg', cmd);
+  await writeStatus('complete', { rendered: frameCount });
+  console.log(`Done: ${outputPath}`);
+} catch (error) {
+  await writeStatus('failed', { error: String(error) });
+  throw error;
+} finally {
+  await lock.close();
+  await rm(lockPath, { force: true });
+}

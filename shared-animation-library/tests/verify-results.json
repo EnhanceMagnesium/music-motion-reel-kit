@@ -1,0 +1,365 @@
+{
+ "node": "v26.7.0",
+ "generatedFor": "non-rendering verification; no pixels, browser, screenshots or media",
+ "passed": 43,
+ "failed": 0,
+ "results": [
+  {
+   "group": "source",
+   "name": "staged manifest = original = staged hashes (all 26 records)",
+   "status": "PASS",
+   "establishes": "Candidate copies are byte-identical to the pinned originals",
+   "detail": {
+    "records": 26
+   }
+  },
+  {
+   "group": "source",
+   "name": "verbatim library copies match staged hashes",
+   "status": "PASS",
+   "establishes": "Adopted files that were NOT modified are byte-identical to the staged R02 files",
+   "detail": {
+    "files": 14
+   }
+  },
+  {
+   "group": "source",
+   "name": "package.json and lock unchanged; installed deps match lock",
+   "status": "PASS",
+   "establishes": "Original manifest/lock preserved; linked node_modules versions equal lock",
+   "detail": {
+    "p5": "2.3.3",
+    "p5.brush": "2.2.3",
+    "puppeteer-core": "25.11.0"
+   }
+  },
+  {
+   "group": "source",
+   "name": "licenses present and byte-identical to originals",
+   "status": "PASS",
+   "establishes": "R02 root MIT, R03 MIT, R06 MIT retained"
+  },
+  {
+   "group": "syntax",
+   "name": "node --check on every library .mjs/.js (non-HTML)",
+   "status": "PASS",
+   "establishes": "All derived JavaScript parses",
+   "detail": {
+    "files": 36
+   }
+  },
+  {
+   "group": "graph",
+   "name": "portrait entry: ordered classic scripts all exist, order preserved",
+   "status": "PASS",
+   "establishes": "Complete ordered global-script graph resolves (incl. linked p5/p5.brush)",
+   "detail": [
+    "node_modules/p5/lib/p5.min.js",
+    "node_modules/p5.brush/dist/p5.brush.js",
+    "src/config.js",
+    "src/project-config.js",
+    "src/core.js",
+    "src/clawd.js",
+    "src/timeline.js",
+    "src/sheets.js"
+   ]
+  },
+  {
+   "group": "graph",
+   "name": "landscape example: authored order incl. demo, paths resolve",
+   "status": "PASS",
+   "establishes": "Landscape example kept loadable in authored 1920x1080",
+   "detail": [
+    "../../node_modules/p5/lib/p5.min.js",
+    "../../node_modules/p5.brush/dist/p5.brush.js",
+    "config.js",
+    "../../src/project-config.js",
+    "../../src/core.js",
+    "../../src/clawd.js",
+    "../../src/timeline.js",
+    "../../src/sheets.js",
+    "../../src/scenes/demo.js"
+   ]
+  },
+  {
+   "group": "graph",
+   "name": "browser module graph free of Node/native/p5/random",
+   "status": "PASS",
+   "establishes": "Adapters/numeric have no node:, @napi-rs/canvas, p5 or Math.random references; every relative import resolves",
+   "detail": {
+    "numeric/numeric.mjs": [],
+    "numeric/timebase.mjs": [],
+    "adapters/r06-burst-particles.mjs": [
+     "../numeric/timebase.mjs"
+    ],
+    "adapters/overlay-dispatcher.mjs": [],
+    "adapters/host-integration.mjs": [
+     "./overlay-dispatcher.mjs",
+     "./r06-burst-particles.mjs"
+    ]
+   }
+  },
+  {
+   "group": "config",
+   "name": "dimension propagation: config -> core W/H -> #out -> CSS ratio -> viewport",
+   "status": "PASS",
+   "establishes": "One PROJECT source drives core.js, sizing script and render.mjs viewport; portrait default 1080x1920; landscape example 1920x1080",
+   "detail": {
+    "portrait": [
+     1080,
+     1920
+    ],
+    "landscape": [
+     1920,
+     1080
+    ]
+   }
+  },
+  {
+   "group": "config",
+   "name": "readiness hook: core.js awaits READY_PROMISES; overlayHook retained",
+   "status": "PASS",
+   "establishes": "R02 additions (EXTRA_FONTS, overlayHook) intact; adapter load is part of readiness"
+  },
+  {
+   "group": "config",
+   "name": "core.js differs from staged R02 only in the documented edits (CFG-based W/H/timing, READY_PROMISES)",
+   "status": "PASS",
+   "establishes": "Derivation is limited and diff-auditable",
+   "detail": {
+    "addedLines": 3
+   }
+  },
+  {
+   "group": "numeric",
+   "name": "common + variant helpers equal original sources on sampled inputs (6001 samples, Object.is)",
+   "status": "PASS",
+   "establishes": "For the aliases compared here (all except r02.beatPulse, checked separately), derived results are identical under Object.is -- NaN-for-NaN, no +0/-0 difference -- on 6001 samples in [-1,2] (plus the stated window/seed probes); this is sampled evidence, not a proof for all doubles",
+   "detail": {
+    "exactAssertions": 222037
+   }
+  },
+  {
+   "group": "numeric",
+   "name": "RNG variants: Park–Miller (seed normalisation, degenerate) and Mulberry32 equal originals",
+   "status": "PASS",
+   "establishes": "Seeds incl. 0, negatives, fractions, 2^31-1 behave exactly as R06/R03; algorithms stay distinct",
+   "detail": {
+    "draws": 17000
+   }
+  },
+  {
+   "group": "numeric",
+   "name": "beatPulse remainder, exposure track semantics equal originals",
+   "status": "PASS",
+   "establishes": "Negative-time beatPulse and R06 exposure (epsilon, hold, pre-first-entry) preserved"
+  },
+  {
+   "group": "numeric",
+   "name": "selected caller expectations (original closure uses)",
+   "status": "PASS",
+   "establishes": "R06 burst helper clamp/rng closure equals numeric exports; timebase conversions behave as contract"
+  },
+  {
+   "group": "particles",
+   "name": "original bytes: staged/repository R06 files hash-equal; verbatim kernel text matches",
+   "status": "PASS",
+   "establishes": "The baseline is the actual pinned source and the adapter kernel text is its burstParticles body",
+   "detail": {
+    "kernelChars": 1876,
+    "adaptedPairs": 3
+   }
+  },
+  {
+   "group": "particles",
+   "name": "all 5 kinds x defaults/nondefaults x seeds x t0 x 6 times: adapter trace == original trace",
+   "status": "PASS",
+   "establishes": "Adapter reproduces the original's complete Canvas call/state/gradient traces; active traces contain drawing geometry",
+   "detail": {
+    "cases": 720,
+    "activeNonEmpty": 360,
+    "kindsWithGeometry": [
+     "spark",
+     "debris",
+     "dust",
+     "confetti",
+     "ember"
+    ]
+   }
+  },
+  {
+   "group": "particles",
+   "name": "inactive outside [at, at+1.6*life]; no calls before/after",
+   "status": "PASS",
+   "establishes": "Lifetime window"
+  },
+  {
+   "group": "particles",
+   "name": "derived event seeds: stable, order-free, equal to original given the derived seed",
+   "status": "PASS",
+   "establishes": "deriveEventSeed(productionSeed,id) is documented and used; trace equals original run with that explicit seed",
+   "detail": {
+    "derivedSeed": 3053108
+   }
+  },
+  {
+   "group": "particles",
+   "name": "order independence and seed sensitivity",
+   "status": "PASS",
+   "establishes": "Same time/input => identical trace regardless of earlier evaluations or event input order; seeds change trajectories",
+   "detail": {
+    "calls": 534
+   }
+  },
+  {
+   "group": "particles",
+   "name": "cue conversion, frame time, portrait coordinates, shot-boundary tail",
+   "status": "PASS",
+   "establishes": "source 12.4/offset 10 -> 2.4 and back; frame i = i/fps; native 1080x1920 coords unscaled; tail survives a shot boundary"
+  },
+  {
+   "group": "particles",
+   "name": "validation fails before any drawing; zero count is a no-op",
+   "status": "PASS",
+   "establishes": "Invalid life/colors/NaN/duplicate ids/kind/etc. rejected at construction; invalid evaluation rejected with zero calls",
+   "detail": {
+    "rejected": 18
+   }
+  },
+  {
+   "group": "dispatcher",
+   "name": "ordering, forwarding, state reset per layer, restoration on success and injected failure",
+   "status": "PASS",
+   "establishes": "Layers run particles-then-previous hook with the actual ctx/t; each sees reset state; host state restored even on throw"
+  },
+  {
+   "group": "dispatcher",
+   "name": "duplicate install, duplicate layer id, dispose restores previous hook",
+   "status": "PASS",
+   "establishes": "Single dispatcher per host; previous hook restored; stale wrapper stays safe"
+  },
+  {
+   "group": "dispatcher",
+   "name": "host integration: readiness promise, layer wiring from PROJECT, karaoke-style previous hook composable",
+   "status": "PASS",
+   "establishes": "installLibraryOverlays resolves before ready, wires video-local time + source offset + production seed, and keeps an existing hook as a layer"
+  },
+  {
+   "group": "config",
+   "name": "normalizeProject: defaults, validation, pass-through",
+   "status": "PASS",
+   "establishes": "One validated contract: finite positive integer dims, positive fps/duration/bpm, finite non-negative source offset, safe-integer seed, no global duration ceiling; production keys pass through",
+   "detail": {
+    "rejected": 16
+   }
+  },
+  {
+   "group": "config",
+   "name": "supported overrides reach every consumer (core text, sizing script, driver, adapter install)",
+   "status": "PASS",
+   "establishes": "core.js, both entry pages, render.mjs and host-integration all consume normalizeProject output"
+  },
+  {
+   "group": "config",
+   "name": "readiness wait expression: delayed and rejected READY_PROMISES (extracted from core.js, no setup/draw)",
+   "status": "PASS",
+   "establishes": "Window.ready is set only after fonts AND adapter promises resolve; a rejected adapter promise prevents ready"
+  },
+  {
+   "group": "export",
+   "name": "plan: zero vs nonzero recording offset, whole excerpt vs nonzero range",
+   "status": "PASS",
+   "establishes": "Audio starts at sourceAudioOffsetSeconds + local range start; frames start at round(a*fps); count is exact; --clip and --encode use the identical audio arguments"
+  },
+  {
+   "group": "export",
+   "name": "plan: rounding convention, cue/frame/audio agree, different fps",
+   "status": "PASS",
+   "establishes": "A frame's source time = offset + i/fps equals audio.start + (i-first)/fps for every selected frame; ranges snap to frame boundaries; invalid ranges rejected"
+  },
+  {
+   "group": "cache",
+   "name": "identity: different productions differ; same production stable; closure-sensitive; audio and unrelated files excluded",
+   "status": "PASS",
+   "establishes": "Identity covers entry, local scripts, transitive modules, config, declared assets and output settings only",
+   "detail": {
+    "closureFiles": 6
+   }
+  },
+  {
+   "group": "cache",
+   "name": "manifest contents; compatible resume vs incompatible-cache detection",
+   "status": "PASS",
+   "establishes": "Manifest records identity, dimensions, fps, interval, count, soundtrack offset; resume allowed only for same identity/dims/fps/entry/quality, with explicit mismatch reasons",
+   "detail": {
+    "mismatchFields": 4
+   }
+  },
+  {
+   "group": "cache",
+   "name": "stale trailing frames cannot extend an export",
+   "status": "PASS",
+   "establishes": "missingFrames looks only at the selected sequence; encode arguments carry -start_number and an exact -frames:v bound"
+  },
+  {
+   "group": "cache",
+   "name": "driver CLI (--plan / --encode) on synthetic productions, no Chrome, no ffmpeg run",
+   "status": "PASS",
+   "establishes": "render.mjs resolves root/entry/config/audio itself: dims, audio seek with offset+range start, per-production cache dirs; incompatible or incomplete caches fail explicitly"
+  },
+  {
+   "group": "failure",
+   "name": "handlers attached at spawn; success only after exit 0; part file renamed last",
+   "status": "PASS",
+   "establishes": "Completion is reported after a clean encoder exit, never before"
+  },
+  {
+   "group": "failure",
+   "name": "failed startup (async error event and synchronous throw)",
+   "status": "PASS",
+   "establishes": "ENOENT-style failures reject with an actionable message and no rename"
+  },
+  {
+   "group": "failure",
+   "name": "nonzero exit mid-feed stops feeding; early exit with code 0; signal; broken input pipe",
+   "status": "PASS",
+   "establishes": "A failed encoder is never fed again; each failure kind is reported; resumable work (frames dir) is not touched; partial output removed"
+  },
+  {
+   "group": "adapter",
+   "name": "failures inside real particle drawing paths restore host state (all 5 kinds, nonidentity transform)",
+   "status": "PASS",
+   "establishes": "A throwing stroke/fill/strokeRect/createRadialGradient inside spark/debris+dust/confetti/ember leaves depth, alpha, composite, shadow, filter, line/fill styles and the affine matrix as found"
+  },
+  {
+   "group": "adapter",
+   "name": "baseline: the unadapted original leaks state on the same failure (regression is real)",
+   "status": "PASS",
+   "establishes": "Reproduces the reviewed defect on the pinned source so the try/finally adaptation is demonstrably necessary"
+  },
+  {
+   "group": "adapter",
+   "name": "recording context: affine bookkeeping is meaningful",
+   "status": "PASS",
+   "establishes": "translate/rotate/scale/transform/setTransform/resetTransform compose like Canvas2D; save/restore restores the matrix; paint snapshots show in-layer transforms"
+  },
+  {
+   "group": "adapter",
+   "name": "rejected installations: host hook, marks and previously valid layers unchanged",
+   "status": "PASS",
+   "establishes": "Validation precedes mutation; a rejected install never wraps a fresh host, never alters a legacy hook, never removes earlier valid layers"
+  },
+  {
+   "group": "reuse",
+   "name": "two different productions: own offsets, dimensions, fps, cues, particle events through the shared mechanisms",
+   "status": "PASS",
+   "establishes": "Same library code serves 1080x1920@24 (offset 0) and 720x1280@30 (offset 10): cue time, frame time, coordinates and seeds follow each production's config"
+  },
+  {
+   "group": "numeric",
+   "name": "beatPulse API exception and tempo-bound form; strict timebase",
+   "status": "PASS",
+   "establishes": "r02.beatPulse takes explicit seconds-per-beat; beatPulseForBpm(bpm) reproduces the source call shape exactly; frame indices must be safe integers; overflow rejected"
+  }
+ ]
+}

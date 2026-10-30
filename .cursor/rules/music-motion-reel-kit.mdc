@@ -1,0 +1,10 @@
+---
+description: Local project rules for the shared music-motion animation kit
+alwaysApply: true
+---
+
+Read `AGENTS.md` and `PROJECT_INSTRUCTIONS.md` before editing or producing a song. Use `CURSOR_LOCAL_FULL_SONG_PRODUCTION_PROMPT.md` only when a full song production is authorized. Keep each production in a new `productions/<song-slug>/` folder and preserve the supplied master.
+
+The shared Remotion renderer is the production route. Read the linked renderer, source, footage, storyboard and quality guides before implementation. Search/rank all catalogued repositories, then inspect only relevant source candidates and record exact paths and scene callers. Keep the Moving Image Archive, Commons/Internet Archive, Skillry and code-repository evidence distinct.
+
+The kit's `repository-preparation/CHECKPOINT.md` is a log of actual reusable-kit edits. Song-only work belongs in that song's checkpoint. Do not claim a check, render, playback, sync review or visual acceptance that did not happen.

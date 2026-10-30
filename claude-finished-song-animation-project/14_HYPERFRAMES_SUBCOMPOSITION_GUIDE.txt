@@ -1,0 +1,35 @@
+# OPTIONAL HYPERFRAMES SUBCOMPOSITIONS INSIDE REMOTION
+
+## Decision authority
+
+The executing production agent chooses the scene implementation per song and per scene. This applies to Claude and Codex tasks using the shared production workflow. The user does not need to select Remotion versus HyperFrames for routine in-scope work, approve each use, or request a comparison. Inspect the scene need, available source, integration cost and evidence, then choose the suitable path and record the reason in the song's source map/checkpoint. Do not force HyperFrames into a scene when it adds machinery without a concrete craft or reuse benefit.
+
+## Authority and division of work
+
+- Remotion remains the song's master clock and final composition: it owns the measured full-song duration, frame rate and dimensions, scene schedule, lyrics/cues, supplied master audio, shared export plan, final encoding and output protection.
+- A HyperFrames Player subcomposition may supply one scene's HTML/GSAP timeline, nested layout or footage-layering treatment when that model fits the actual scene. It is a visual child of the Remotion composition, not a second full-song renderer or a replacement for the shared render entry.
+- Remotion's frame/time drives the child scene. Keep the HyperFrames timeline paused and seek it deterministically to the requested local time. Do not let HyperFrames establish a competing clock, soundtrack, independent song duration or final export.
+- Use the supplied song master as the only soundtrack by default. Mute/remove any audio declared by the child composition unless the user separately asks for an audio treatment.
+- Existing p5 productions remain on the shared entry's legacy p5 route; do not mix their modules into React or HyperFrames registries.
+
+## Per-scene choice
+
+Start from the song's planned scene requirement. Choose direct Remotion React/Canvas/SVG/DOM/CSS/WebGL when it expresses the scene cleanly. The executing production agent may instead use a HyperFrames subcomposition when an inspected, compatible HyperFrames mechanism or existing composition materially helps with nested HTML/GSAP structure, footage layers or another named visual need. This is ordinary implementation judgment, not a manual user gate.
+
+The isolated working proof is `shared-animation-library/examples/remotion-hyperframes-hybrid/`. Its synthetic orbit scene produced nearly matching sampled images in direct Remotion and in a HyperFrames Player composition at 4:5 and 9:16, while the hybrid required extra Player/runtime/GSAP assets and seek/readiness bridging. It proves only feasibility for that small synchronous DOM/GSAP example. It does not establish that arbitrary HyperFrames projects, archival clips, Canvas/WebGL work or long full-song compositions work inside Remotion. Consult its `INTEGRATION_COMPARISON.md`; do not copy its fixture artwork into a song.
+
+## Required implementation properties when the production agent selects the hybrid
+
+1. Read the exact pinned HyperFrames source, actual entry/component APIs, dependency closure and applicable licenses. Preserve source URL, commit, package/artifact versions, hashes where applicable, notices, and copied/modified/re-authored classification. A prepared package or registry entry is not proof of integration.
+2. Keep the child scene in the song's `productions/<song>/` tree and render it through `shared-animation-library/render.mjs`. Do not create a sibling HyperFrames project or call the HyperFrames CLI as a competing song renderer.
+3. Map each requested Remotion scene frame to a deterministic child time. Support out-of-order frame seeks and repeated frames; do not depend on prior frame visitation, wall-clock timing or unseeded randomness. Use explicit seeds for stochastic visuals.
+4. Await player/custom-element readiness and all required fonts/assets before capture. HyperFrames Player `seek()` is not itself a completion promise. The example's two-animation-frame wait is evidence only for its synchronous fixture; do not treat it as a universal readiness contract. Use supported Remotion delay/readiness handling and release or cancel handles on every success, failure and unmount path.
+5. Keep dimensions and crop/layout explicit for the song's chosen 4:5 or 9:16 composition. Do not assume a child is responsive because the outer Remotion frame is configurable.
+6. Avoid copying a complete demo or repeatedly duplicating large runtime bundles without reason. Prefer a versioned, license-preserving shared asset/adapter location if repeated scenes justify it; keep a one-off implementation song-local when that is simpler. Do not add or update packages without an explicit dependency decision.
+7. Include a focused technical fixture or scene-level check when the behavior is new or risky. Verify no-media planning, both requested dimensions when relevant, non-chronological seeking/revisits, loading/readiness, failure reporting and cleanup. Use risk-based rendered still review and full candidate playback only at the authorized stages.
+
+If a suitable HyperFrames integration is unavailable or its timing/readiness cannot be made reliable, use a direct Remotion implementation for that scene and document the limitation. Do not block unrelated scenes or ask the user to choose between routine technical implementations.
+
+## Evidence boundary
+
+Keep these claims separate: source inspected, dependency prepared, child adapter written, Remotion plan passed, child mounted, browser draw completed, still inspected, video encoded, playback heard, sync checked, user acceptance. A successful plan or still proves neither encoded audio/video alignment nor motion/pacing. The shared render route currently has no general HyperFrames engine selection; the isolated hybrid example does not by itself integrate HyperFrames into every song or change the shared front door.

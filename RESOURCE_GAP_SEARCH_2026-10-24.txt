@@ -1,0 +1,186 @@
+REUSABLE CODE-RENDERED MUSIC VIDEO — RESOURCE GAP SEARCH
+2026-10-24 | Local audit plus primary-source web research
+
+DECISION
+The largest gap is reusable integration of resources already downloaded. The
+existing library implements the painted base, numeric/timebase helpers, particles,
+overlay dispatch, configuration, export planning and cache/error handling. Its
+last saved checkpoint records 43 non-rendering checks and pending real-browser
+and export verification. That checkpoint is evidence of the recorded state, not
+a fresh visual validation in this research pass.
+
+All 13 repositories were recorded as complete pinned checkouts with LFS checked
+in repository-preparation/README.txt. This pass did not rehash every checkout.
+Downloaded, dependencies prepared, adapted, browser verified and creatively
+accepted are separate states.
+
+1. HIGHEST-PRIORITY GAPS AND EXISTING SOURCES
+Paths below are relative to music-motion-reel-kit/.
+
+A. REUSABLE PORTRAIT PRODUCTION SCAFFOLD — incomplete
+shared-animation-library/base/studio.html has no authored portrait production
+scene sequence. Example scenes, placeholder and karaoke retain landscape layout
+assumptions. A new song needs its own recording, excerpt, scene entry, cues,
+assets and shot sequence, using shared configuration and export contracts.
+Build one general scaffold with a scene registry, declared dependencies, font
+readiness and deterministic time evaluation. Each production owns its content.
+No new framework is required to do this.
+
+B. SUBJECT MOTION, CAMERA, TYPE, MATERIALS AND TRANSITIONS — sources present;
+reusable adapters incomplete
+- R02: repository-downloads/tuzhechen2005/opus-video-skills/skills/kinetic-reel/template/reel/reel.js
+  contains kinetic glyphs, buffers, WebGL particles and postprocessing.
+- R03: repository-downloads/lemomo-ai/lemo-opuscar/core/lib.js
+  and core/three/post.js, plus style demos, contain additional helpers and effects.
+- R03: styles/risograph/demo/riso.js and styles/engraving/demo/engine/burin.js
+  provide specific material mechanisms.
+- R06: repository-downloads/buildwithhanif/claude-animation-skill/plugins/claude-animation/skills/claude-animation/lib/
+  contains core.mjs, fx.mjs, textures.mjs, nature.mjs, lowpoly.mjs and rigs/
+  including bean, critter, bug, chibi, ant and pen.
+Select complete dependency closures and expose a small production-facing API.
+Keep engines that own their own canvas/WebGL renderer behind separate scene
+entry points or explicit compositing adapters. File concatenation is insufficient.
+Do not force every song into the painted or print treatment.
+
+C. MUSIC FEATURES AND STRUCTURAL CUES — code present; shared pipeline incomplete
+- R02: skills/painted-animation/scripts/beat_grid.py under the R02 root above.
+  Existing FFmpeg/NumPy spectral-flux BPM/phase estimation and LRC mapping.
+  Its constant pulse and tempo search assumptions need appropriate handling.
+- R04: repository-downloads/heygen-com/hyperframes/skills/music-to-video/scripts/analyze-beatgrid.py
+- R07: repository-downloads/bizarro/evangelion/analysis/analyze.py,
+  analysis/pyproject.toml and app/src/engine/audio.ts.
+  Rich stem/features route exists; analysis environment is recorded as deferred.
+  Remove source-song SECTION_BARS and constant-tempo/8-bar assumptions when adapting.
+- Existing His Line measurement source: productions/his-line/tools/build_cues_v2.py.
+  Preserve reusable measurements; replace its recording and shot-specific decisions.
+Needed interface: recording hash + excerpt + analysis settings -> versioned cues
+and sampled features, queryable by production time. Mark measured onsets,
+estimated beats, inferred sections and human-confirmed events separately.
+Use the light route first; stems/models are optional per-song preparation.
+
+D. SUNG-LYRIC TIMING — missing evidenced reusable alignment integration
+R04 already has skills/media-use/scripts/transcribe.mjs, with local Mac ASR routes.
+Model availability/preparation must be checked separately. Speech timestamps do
+not establish accurate timing for singing. shared-animation-library/base/src/karaoke.js
+uses supplied lines and approximate character fill with landscape coordinates.
+Needed: approved lyrics + recording -> provisional words/phrases -> correction
+and listening review -> master-bound cue JSON -> portrait-aware typography.
+Only songs requiring visible synchronized lyrics need this heavier route.
+
+E. LOCAL FONTS AND 3D ASSETS — present, not integrated broadly
+R03 core/fonts/ has fonts.css, OFL.md and f0.woff2 through f7.woff2.
+R03 core/assets/polyhaven/ includes assets and SOURCES.md provenance.
+The older renderer also has DejaVu fonts under renderer/assets/fonts/.
+Shared base still loads remote Google Fonts. Select existing compatible fonts,
+confirm license coverage/glyph coverage, load locally and include relevant files
+in production identity. Inventory existing assets before acquiring replacements.
+
+F. REAL-BROWSER AND CREATIVE ACCEPTANCE — verification gap
+Existing Puppeteer/Playwright and FFmpeg tools cover the basic machinery.
+Still pending in the shared checkpoint: actual module loading/readiness, fonts,
+p5.brush output, arbitrary-time visual behavior, real encode and A/V alignment.
+Non-rendering checks cannot establish composition quality, readable text,
+convincing subject motion or rhythm. No repository download substitutes for these.
+Render/visual checks remain subject to the user's existing stage authorization.
+
+G. STANDING GUIDANCE CONSISTENCY — documentation repair
+claude-animation-project-context/06_AUDIO_TIMING_AND_LYRIC_CUES.txt still describes
+the older baseline's beginning-of-audio restriction. Reconcile it with the repaired
+shared-animation-library/export/export-plan.mjs offset contract before another song.
+Preserve master recordings; avoid unnecessary derived-audio steps caused by stale guidance.
+
+2. EXTERNAL REPOSITORIES WORTH SELECTIVE ADDITION
+These candidates were read via official repositories/documentation. They were not
+downloaded, installed, pinned or compatibility-tested during this search.
+
+LIBROSA — priority: music analysis expansion when existing scripts need it
+https://github.com/librosa/librosa
+https://github.com/librosa/librosa/blob/main/librosa/beat.py
+https://github.com/librosa/librosa/blob/main/librosa/onset.py
+Role: music-feature, onset and beat algorithms behind the shared cue interface.
+Existing R07 source already references this ecosystem; prepare that dependency
+route before creating a competing analyzer. ISC license. Outputs are estimates,
+not proof of musical downbeats or narrative sections.
+
+FONT SOURCE — priority: additional fonts only after existing-font assessment
+https://github.com/fontsource/fontsource
+https://github.com/fontsource/font-files
+Role: versioned, self-hosted font packages for additional families/languages.
+Read each chosen font's license; repository tooling licensing is not a blanket
+license for all font files. Acquire selected families/weights/subsets, then use
+local @font-face and readiness checks. No need to clone the entire font collection.
+
+FLUBBER — priority: small optional shape-morph capability
+https://github.com/veltman/flubber
+Role: interpolation between SVG paths or point rings, suitable for symbolic
+transformations and shape transitions. MIT. Adapter can evaluate interpolator(t)
+from the production clock rather than an autonomous animation loop.
+Its documented simple path interpolation ignores holes/additional outer shapes;
+check artwork topology and cost before choosing it. This is a specialized addition,
+not a character rig or complete animation engine.
+
+LOTTIE-WEB — priority: optional authored vector-asset playback
+https://github.com/airbnb/lottie-web
+Role: play compatible exported JSON vector animation assets. MIT player;
+animation asset rights remain separate. goToAndStop(value, isFrame) provides a
+candidate explicit-time control point. Need asset readiness, no autoplay,
+deterministic seek tests and renderer/compositing integration.
+This supplies playback, not automatic creation of good character animation.
+
+WHISPERX — priority: evaluate when precise lyric cues are needed
+https://github.com/m-bain/whisperX
+https://github.com/m-bain/whisperX/blob/main/whisperx/alignment.py
+Role: word-level alignment candidate with language-specific alignment models.
+Official README includes a CPU route for Mac. Do not assume CUDA acceleration
+on the Mac or reliable sung-word timing. Validate on an approved recording and
+preserve manual corrections. Model downloads/runtime requirements are additional.
+Alternative researched: https://github.com/jianfch/stable-ts provides text/audio
+alignment, but its README now says development is indefinitely paused. Defer
+adoption as a new default unless a pinned version has a concrete advantage.
+
+KHRONOS GLTF SAMPLE ASSETS — priority: selective 3D integration fixtures
+https://github.com/KhronosGroup/glTF-Sample-Assets
+Role: model/animation/skin/material examples for a reusable 3D loader/adapter.
+Read each model directory's README for rights. Use selected assets as integration
+fixtures; existing R03 Poly Haven assets may already suit actual productions.
+Underlying Three.js source/docs: https://github.com/mrdoob/three.js
+Three is already in the downloaded ecosystem; the missing item is its shared
+production adapter, not necessarily another copy of the engine.
+
+PIXELMATCH — priority: optional regression aid after approved visual baselines
+https://github.com/mapbox/pixelmatch
+Role: image comparison for repeat-frame determinism and accidental visual changes.
+ISC. Reuse existing browser automation for captures when authorized. Fix browser,
+font and platform conditions and choose tolerances. Pixel agreement does not
+measure attractiveness, storytelling or musical pacing.
+
+MOTION CANVAS — priority: alternative-engine evaluation, deferred by default
+https://github.com/motion-canvas/motion-canvas
+Role: TypeScript generator animation library, 2D renderer and interactive editor.
+Official repository currently identifies MIT licensing. It is a separate engine
+with its own lifecycle; evaluate only if an authoring need justifies integration.
+It does not directly drop into the p5 host. Existing Hyperframes and R02/R03 sources
+should be evaluated for the same requirement before expanding the engine stack.
+
+3. RECOMMENDED ORDER
+1. Reconcile stale timing guidance and establish a general portrait production
+   scaffold, cue/feature schema, source selection and asset/font declarations.
+2. Expose existing repository techniques as complete, attributable modules:
+   kinetic type; subject/rig movement; camera/transition; dimensional scene;
+   material treatment. Select by each song's visual brief.
+3. Prepare the light audio-analysis route; add stems/ASR/alignment only when needed.
+4. Integrate existing offline fonts and selected licensed local assets.
+5. At the authorized visual stage, verify browser behavior and review image craft,
+   subject movement, staging, pacing and A/V sync. Keep the full candidate target
+   35–40 seconds, maximum 45; technical fixtures are not creative proof candidates.
+6. Add specialized external packages only against a specific unmet capability.
+
+Every capability should record: source commit, exact source files/functions,
+dependency closure, adapter entry, loading order, explicit-time contract,
+license/attribution, checks completed and a production call site. This makes
+repository use traceable instead of equating a context upload with implementation.
+
+SCOPE OF THIS PASS
+Read-only local inspection and web research, with two concurrent audit subagents.
+Only this report was created. No implementation changed, dependencies installed,
+models downloaded, recordings processed, Claude prompt sent or media generated.

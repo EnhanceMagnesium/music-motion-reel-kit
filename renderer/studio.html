@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Music motion reel renderer</title>
+<style>
+  html, body { margin: 0; width: 100%; height: 100%; background: #111; overflow: hidden; }
+  canvas { display: block; }
+</style>
+<canvas id="frame"></canvas>
+<script>
+const canvas = document.getElementById('frame');
+const ctx = canvas.getContext('2d', { alpha: false });
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const ease = x => { x = clamp(x); return x * x * (3 - 2 * x); };
+
+function lines(text, maxWidth, font) {
+  ctx.font = font;
+  const out = [], words = String(text).split(/\s+/);
+  let line = '';
+  for (const word of words) {
+    const next = line ? `${line} ${word}` : word;
+    if (line && ctx.measureText(next).width > maxWidth) { out.push(line); line = word; }
+    else line = next;
+  }
+  if (line) out.push(line);
+  return out;
+}
+
+function base(color, w, h, t) {
+  ctx.fillStyle = color;
+  ctx.fillRect(0, 0, w, h);
+  ctx.strokeStyle = 'rgba(110, 100, 88, .13)';
+  ctx.lineWidth = 1;
+  for (let i = 0; i < 22; i++) {
+    const y = 120 + i * 84 + Math.sin(i * 7.3 + t * .3) * 2;
+    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke();
+  }
+}
+
+function textBlock(scene, p, palette, w, h, dark = false) {
+  const ink = dark ? palette.bone : palette.soot;
+  const margin = w * .09;
+  ctx.globalAlpha = ease(p * 3);
+  ctx.fillStyle = palette.ember;
+  ctx.fillRect(margin, h * .19, w * .17 * ease(p * 4), 8);
+  ctx.font = `600 ${Math.round(w * .034)}px Georgia, serif`;
+  ctx.fillText(scene.kicker || '', margin, h * .175);
+  ctx.fillStyle = ink;
+  const size = Math.round(w * .11);
+  const font = `bold ${size}px Georgia, serif`;
+  const rows = lines(scene.title || '', w - margin * 2, font);
+  ctx.font = font;
+  const rise = (1 - ease(p * 2.6)) * 45;
+  rows.forEach((row, i) => ctx.fillText(row, margin, h * .31 + i * size * 1.08 + rise));
+  ctx.globalAlpha = 1;
+}
+
+function titleScene(scene, p, pal, w, h, t) {
+  base(pal.bone, w, h, t);
+  textBlock(scene, p, pal, w, h);
+  ctx.strokeStyle = pal.ember;
+  ctx.lineWidth = 4;
+  const x = w * .2, y = h * .69;
+  ctx.beginPath();
+  ctx.moveTo(x, y);
+  ctx.bezierCurveTo(w * .42, y - 130 * p, w * .54, y + 90 * p, w * (.25 + .55 * ease(p)), y - 40);
+  ctx.stroke();
+  ctx.fillStyle = pal.soot;
+  ctx.beginPath(); ctx.arc(w * (.25 + .55 * ease(p)), y - 40, 10, 0, Math.PI * 2); ctx.fill();
+}
+
+function dotsScene(scene, p, pal, w, h, t) {
+  base(pal.bone, w, h, t);
+  textBlock(scene, p, pal, w, h);
+  const cols = 15, rows = 18, total = cols * rows;
+  const shown = Math.floor(total * ease(p));
+  const gap = w * .052, x0 = w * .11, y0 = h * .5;
+  for (let i = 0; i < shown; i++) {
+    ctx.fillStyle = i % 13 === 0 ? pal.ember : pal.soot;
+    ctx.beginPath(); ctx.arc(x0 + (i % cols) * gap, y0 + Math.floor(i / cols) * gap, 4.5, 0, Math.PI * 2); ctx.fill();
+  }
+  ctx.fillStyle = pal.ember;
+  ctx.font = `bold ${Math.round(w * .09)}px Georgia, serif`;
+  ctx.fillText(String(shown).padStart(3, '0'), x0, h * .91);
+}
+
+function orbitScene(scene, p, pal, w, h, t) {
+  base(pal.night, w, h, t);
+  textBlock(scene, p, pal, w, h, true);
+  const cx = w * .5, cy = h * .68;
+  for (let i = 0; i < 9; i++) {
+    ctx.strokeStyle = i % 3 === 0 ? 'rgba(201,91,49,.65)' : 'rgba(233,225,208,.35)';
+    ctx.lineWidth = i % 3 === 0 ? 3 : 1;
+    ctx.beginPath(); ctx.ellipse(cx, cy, w * (.14 + i * .045) * (1 + p * .12), h * (.045 + i * .013), t * .06, 0, Math.PI * 2); ctx.stroke();
+  }
+  ctx.fillStyle = pal.ember;
+  ctx.beginPath(); ctx.arc(cx, cy, 13 + 5 * Math.sin(t * 8), 0, Math.PI * 2); ctx.fill();
+}
+
+// ---- v2 registry (2026-10-05): scene modules add to window.SCENES; prepare() loads fonts ----
+window.SCENES = { title: (sc,p,spec,t)=>titleScene(sc,p,spec.style,spec.width,spec.height,t),
+  dots: (sc,p,spec,t)=>dotsScene(sc,p,spec.style,spec.width,spec.height,t),
+  orbit: (sc,p,spec,t)=>orbitScene(sc,p,spec.style,spec.width,spec.height,t) };
+window.ctx2d = ctx; window.canvasEl = canvas;
+window.prepare = async ({ spec, cues, base }) => {
+  canvas.width = spec.width; canvas.height = spec.height;
+  for (const f of spec.fonts || []) {
+    const face = new FontFace(f.family, `url(${new URL(f.url, base).href})`, f.descriptors || {});
+    document.fonts.add(await face.load());
+  }
+  await document.fonts.ready;
+  if (window.SCENE_INIT) await window.SCENE_INIT(spec, cues);
+  return true;
+};
+window.renderAt = (t, spec, cues) => {
+  if (canvas.width !== spec.width || canvas.height !== spec.height) { canvas.width = spec.width; canvas.height = spec.height; }
+  ctx.setTransform(1,0,0,1,0,0); ctx.globalAlpha = 1;
+  const scene = spec.scenes.find(s => t >= s.start && t < s.end) || spec.scenes.at(-1);
+  const p = clamp((t - scene.start) / (scene.end - scene.start));
+  const f = window.SCENES[scene.type];
+  if (!f) throw new Error(`Unknown scene type: ${scene.type}`);
+  f(scene, p, spec, t, cues);
+  return true;
+};
+</script>
+</html>

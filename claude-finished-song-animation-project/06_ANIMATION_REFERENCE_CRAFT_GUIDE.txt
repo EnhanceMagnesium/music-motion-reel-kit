@@ -1,0 +1,172 @@
+ANIMATION REFERENCE CRAFT GUIDE — FROM SIX REFERENCES TO NATIVE 4:5 OR 9:16 SONG COMPOSITIONS
+Prepared 2026-10-25 in the original kit. Documentation only: no production code, media, audio or dependency was changed. This is the single detailed reference-to-technique source; routers only point here.
+
+HOW TO USE
+Read sections 1-2 when choosing a visual direction for a new finished song, section 3 when selecting source mechanisms, section 4 as the per-song workflow, and section 5 for what is not yet known. The six videos are references for CRAFT (staging, image-making, motion, camera, typography, pacing). Do not copy their footage, layouts, characters, wording, stories or palettes. For each new song, choose either 4:5 (1080×1350) or 9:16 (1080×1920) based on its own visual direction, explain the choice before storyboarding, and compose natively for that frame. His Line is one prior example, not a default.
+
+EVIDENCE LABELS USED BELOW
+[S] observed in the sampled one-second stills (I viewed the 13 contact sheets; thumbnails about 190 px wide). [I] inferred from stills or from source code; plausible, not observed. [U] unverified / unknown.
+What I could NOT do: play any MP4. The Read tool shows images, not video, and this pass did not extract new frames. So continuous motion, easing, transition timing, audio sync and anything shorter than one second are [U] for all six videos. Sheet cells are labelled with source seconds (0, 1, 2 ...); a range such as 43-49 s means those samples.
+
+======================================================================
+1. THE SIX REFERENCES
+======================================================================
+ACCESS (verified this session)
+- Working folder: . (original kit; Downloads migration copy not used).
+- Videos opened for METADATA ONLY with ffprobe (no frames decoded for viewing), folder ~/Downloads/Reference Animation songs/ : 4xYkath--kYz1x8N.mp4 (1920x1080, 60 fps, 184.4 s), DpnW-34KRx9fvYcF.mp4 (1280x720, 60 fps, 156.7 s), a-3S4JyeH5twHbBB.mp4 (1920x1080, 30 fps, 90.0 s), q0KsmKcmecu8019Y.mp4 (1920x1080, 30 fps, 136.5 s), tIZWqQAnzw1xoNiR.mp4 (3840x2160, 30 fps, 156.7 s), w-44k0yAWFmugzpy.mp4 (1280x720, 30 fps, 300.2 s). All six are landscape, all have an AAC stream (audio not analysed).
+- Existing sample set (made earlier, not by this pass): ~/Downloads/Reference Animation songs - 1fps reference set-2026-10-25/ with REFERENCE_SET_README.txt, RUN_MANIFEST.json, CONTACT_SHEET_INDEX.csv, 13 contact sheets (contact-sheets/*.png, opened: all 13), per-video frames.jsonl and 1,027 sampled PNGs (one frame per second, max 1920x1080; the 4K source was downscaled for the sample). I did not open the individual PNGs or the frames.jsonl files, only the contact sheets. A sibling folder "Reference Animation songs - every-frame PNG archive" exists (interrupted every-frame run, capacity stop report); not used.
+- The 1fps set is a sampling aid, not motion evidence.
+
+------------------------------------------------------------------
+REF A  4xYkath--kYz1x8N.mp4   "command-terminal HUD" (184 s)
+------------------------------------------------------------------
+Useful passages [S]: 0-8 s near-black opening: a few thin readout lines, then a small cluster of hex cells grows from a point (3-6 s), then a serif title card on black (7-8 s). 10-17 s three-panel status screen where two panels alternate green/red every sample. 18-28 s green waveform/monitor screens. 29-37 s circular scope with a sweeping line (angle differs each sample). 58-67 s very large segmented countdown numerals shifting amber to red. 68-85 s octagonal hex-field with a bright ring that pulses (brightest at 71, 73, 77, 81, 83 s). 86-102 s whole screen flips to red-dominant "emergency" with a split panel and a pale-blue accent. 103-112 s radial wireframe tunnel. 113-121 s targeting reticle with rising numeric readout. 122-134 s orange isometric wireframe city. 135-145 s giant percentage numerals climbing (amber to lime to violet-tinted). 146-161 s hex-dot figure plus huge glyph label on red. 162-177 s four-quadrant HUD with a centre cross-flare growing to white-hot. 178-184 s return to green waveform, credit card, final single-glyph end card.
+Observed craft [S]: one persistent HUD frame (corner brackets, micro text in corners, side bars) with ONE dominant focal element per beat; palette flips between whole-screen colour states (green calm, amber build, red alarm, violet/lime peak); numerals used as narrative (a count climbing to a limit); dense small detail around a large simple hero; a title card and an end card bracket the piece.
+Inferred [I]: the on-screen title/credit text and the section names match the scene files of R07 (bizarro/evangelion app/src/scenes: boot, magi, harmonics, battery, atfield, alert, plug, city, psycho, berserk, impact, end), so this video is probably that repository's own render. [U] not proven that this MP4 is a render of the pinned commit.
+Limits: sweep speed, pulse timing, flare easing, any camera move, and how visuals follow the music are [U].
+Distinctive quality: information density as spectacle; state changes as colour changes.
+
+------------------------------------------------------------------
+REF B  DpnW-34KRx9fvYcF.mp4   "dark kinetic type on grids" (157 s)
+------------------------------------------------------------------
+Useful passages [S]: 0-9 s a line-drawn animal sketch builds on a dark grid while words appear in changing sizes. 10-20 s concentric contour terrain with typed prompt-style text. 23-26 s hard cut to a pale full-frame word, then a large orange numeric readout. 30-39 s a sculpted 3D-looking object with a flat smiley disc and small orange labels. 43-49 s words set on circular paths spiralling into a dark hole in a perspective grid. 53-58 s thin vertical bars with a typed line. 59-60 s one flat orange frame. 63-64 s pale-paper beat. 70-79 s form-paper and neural-diagram layouts. 80-81 s paper tears apart. 101-107 s a glowing fuse/polyline carrying words. 110-115 s slab-like 3D text planes. 116-119 s dense repeated-word texture with one highlighted word. 132-139 s glowing laptop then a spotlight on a curtained stage. 141-149 s a light burst then counters climbing to very large values and a loop symbol. 150-153 s serif maths line on black.
+Observed craft [S]: strict palette (charcoal/black plus one orange, occasional pale paper); type is the hero and is staged in space (on rings, planes, paths, behind masks); hard-cut colour breaks and light-paper beats reset the eye; counters/numerals escalate.
+Inferred [I]: kinetic text on paths and perspective planes is Canvas/WebGL text with per-letter transforms. The sample text includes the string "P(DOOM)", which matches the title of R08 (JohnHeibel/PDoomVideo, README title); R08 is STUDY-ONLY (no reuse grant established). [U] whether this MP4 is that project's render.
+Limits: text motion curves, cut timing against music, 3D-ness (could be fake perspective) are [U].
+Distinctive quality: one accent colour carries the whole piece.
+
+------------------------------------------------------------------
+REF C  a-3S4JyeH5twHbBB.mp4   "warm paper unit-chart explainer" (90 s)
+------------------------------------------------------------------
+Useful passages [S, at sampled timestamps only]: the samples at 6, 14, 24, 35, 44, 56, 66, 77 and 85 s show blank parchment with no headline or visual. The samples between them show a red serif headline top-left that is complete in some samples and partial in earlier ones, a monospaced counter top-right whose value differs from sample to sample, and a visual in which each dot or small block appears to be one unit: a row of dots (1-5 s samples), a dot grid that appears denser in later samples (25-29 s), a dense grid (37-43 s), a map with scattered points (45-55 s), a swarm (59-65 s), bars of rising scale (67-76 s), a pile (86-89 s). Reading the blank samples as chapter separators and the stretches between them as chapters is an inference [I].
+Not established [U]: how long each blank lasted (a single one-second sample cannot show duration), how long each chapter lasted (the spacing of blank samples is only an upper-resolution hint, not a measured length), and the pacing, stagger and easing inside any stretch.
+Observed craft [S]: one palette (parchment, near-black, one red); quantity made visible by counting units; blank-parchment samples between stretches that may act as reset beats [I]; big-and-small hierarchy (headline vs. counter); gentle paper cloud texture.
+Limits: how dots arrive (stagger, easing) and the paper-turn transition are [U].
+Distinctive quality: restraint; the data is the animation.
+
+------------------------------------------------------------------
+REF D  q0KsmKcmecu8019Y.mp4   "gold-lit historical explainer" (136 s)
+------------------------------------------------------------------
+Useful passages [S]: alternation of dark gold-lit scenes and parchment diagram scenes, joined by one recurring flame. 0-8 s 3D gold wireframe monument, then a flame beneath large headline words. 10-21 s parchment: crowd dots, a temple model, solids, geometric constructions, lever-and-fulcrum. 22-28 s red-seat auditorium, then a colosseum/aqueduct. 35-39 s columns falling into darkness then a candle and a page. 40-49 s rose window, nave, library perspective, dome. 60-65 s route lines across maps and a globe. 66-70 s dark concert-hall pipes and glowing notes. 76-90 s machines, schematics, charts. 92-97 s counting numerals, then a launching rocket. 100-126 s dark-navy space scenes with gold line art. 127-136 s the flame returns as a ring of small icons orbits it, and the last word fades.
+Observed craft [S]: a small caption line plus one large headline per beat (one noun/idea per beat); era switches parchment (past) to dark navy (future); light as the recurring motif; thin gold line art over soft glow; a progress rule along the bottom.
+Limits: 3D camera moves, glow animation, and tick timing are [U]; whether the 3D forms are modelled or fake-3D is [U].
+Distinctive quality: a single motif that evolves across the whole piece.
+
+------------------------------------------------------------------
+REF E  tIZWqQAnzw1xoNiR.mp4   "saturated typographic collage" (157 s, 4K)
+------------------------------------------------------------------
+Useful passages [S]: each beat is 1-6 s and has its OWN dominant flat colour field: black/line geometry (0-5 s), cream with an anatomical engraving (6-9 s), red-pink crowd (10-12 s), acid yellow with old-print text (13-16 s), violet with a posterised animal (17-22 s), teal with curved type (46-49 s), orange (60-69 s), blue duotone (70-73 s), acid green (78-81 s, 106-109 s), red glitch (34-36 s), a horizon image sliced with blocky RGB glitch (40-45 s), a narrow-letter navy/magenta word (53-58 s), deep-blue jellyfish (96-99 s), blue-on-white abstract field (141-152 s), flat blue end (155-156 s). Archival engravings, photos and drawings are posterised, halftoned or duotoned and sit under or inside large type; type scale jumps between tiny captions and full-frame words.
+Observed craft [S]: colour field as scene identity; image treatment unifies mixed sources; type as texture and as mask; glitch used on a few beats rather than everywhere.
+Limits: the transitions between fields, text animation and any particles are [U]; the source imagery is third-party material (rights unknown) and must not be reused.
+Distinctive quality: maximum variety held together by treatment rules.
+
+------------------------------------------------------------------
+REF F  w-44k0yAWFmugzpy.mp4   "character-led lyric stage" (300 s)
+------------------------------------------------------------------
+Useful passages [S]: a recurring anime-style character cutout (0-5, 54-57, 90-94, 139-148, 248-249, 298-299 s) anchors the piece; around her each lyric section changes environment: spiral/circular lyric text (3-9 s), warm headline-poster screens (9-13 s), surf-wave scene (16-17 s), a stage with plinth, ring and spark burst (51-53, 60-70, 258-262 s), balance-scale and power-button symbol (37-47 s), a binocular/lens framing (123-125 s), a road-at-night perspective (128-131 s), hand-drawn whiteboard stick-figure section (150-190 s), blue schematic section (192-205 s), a window-and-silhouette room (208-219 s), sunset horizon with kite/hourglass/padlock props (221-256 s), then end text on black (299-300 s).
+Observed craft [S]: one character persists while the world changes with lyric meaning; a choral "stage" set is revisited as the emotional peak; lyric words become the environment (on paths, in grids, on signs); several drawing modes (cutout, line doodle, schematic, silhouette) separated by section.
+Inferred [I]: the character appears as an image asset (illustrated), so code-rendered equivalents need either a drawn rig (see R06 critter / R02 clawd) or a purchased/licensed/generated asset (budget decision).
+Limits: lip/eye/hair motion, camera drift, beat-sync are [U]; the stills do not show how the character was animated.
+Distinctive quality: the lyric drives scene design line by line.
+
+SHARED VISUAL PRINCIPLES (supported by two or more references) [S unless marked]
+P1. One dominant focal element per beat; everything else supports it (A, C, D, F).
+P2. Palette discipline: either one accent on near-black (B), one red on parchment (C), or a different single colour field per beat (E); colour state changes carry structure (A, E). These are palettes OBSERVED in those references, not palettes to adopt: borrow the discipline, never the colours.
+P3. Type is image: staged on paths, planes, masks, inside shapes or growing letter by letter (B, E, F, D).
+P4. Quantity made visible: counters, dot grids, percentage climbs (A, B, C, D).
+P5. Reset beats between chapters: blank sample, flat colour, light-paper cut, title card (A, B, C, E).
+P6. A recurring motif that develops (flame in D, ring pulse in A, the character in F, the fuse line in B).
+P7. Section-level change of drawing mode matches lyric/narrative change (F, E, D).
+P8. Opening restraint then escalation, ending on a calm card (A, B, D, F).
+P9. Mixed material treatment (halftone, duotone, line art) makes unrelated sources feel unified (E, D, B).
+
+======================================================================
+2. CHOOSING AND TRANSLATING PRINCIPLES FOR A NEW SONG
+======================================================================
+SELECTION METHOD (use the song's own material; reference match is secondary)
+1. Genre/mood: driving electronic/synth -> HUD/data grammar or kinetic type (A, B); intimate acoustic or storytelling -> paper/ink or illustrated rig (C, D, F); lyric-dense rap/pop -> lyric-as-environment (F) or collage (E); epic/ambient -> single evolving light motif (D).
+2. Lyrics: pick the 1-3 nouns/verbs that can become images or counters; if the song counts, climbs or repeats, P4 fits; if it narrates, P7 fits.
+3. Musical structure: map sections to beats (verse = quieter mode, chorus = revisited "stage" or full-colour state, drop/bridge = reset beat or colour flip). Derive the map from the song's own cues (evidence-labelled, see shared-animation-library cue-schema), never from a reference.
+4. Choose up to 3 candidate treatments, state what each costs (sources, assets, fonts, risk) and recommend one.
+5. Palette: Choose the palette from this song's recording, lyrics, brief, theme, narrative and visual treatment, and briefly explain the reasoning before storyboarding. Do not use Claude's brand orange merely because Claude is the assistant, and do not carry over a prior song's colors or a house palette as defaults; orange is allowed with a clear song-specific rationale. Make a reasoned, editable choice and record it in this song's plan and config; do not ask the user to pick swatches or routine palette options, and ask only if an essential input is missing or the decision has a material consequence that cannot be responsibly inferred. Give colors roles (ground, ink, focal accent, lyric/type treatment, secondary detail). Check contrast, hierarchy and readability in rendered work, and do not claim those checks passed before the images are reviewed. Reference palettes are evidence about those references, not required palettes; borrow craft and create this song's own color direction. Keep each song's palette in that song's folder and conversation; never promote one production's palette into a studio-wide template.
+5. Keep treatment, timing, assets and theme independent of previous songs; reuse mechanisms, not imagery.
+
+PER-SONG FORMAT SELECTION AND NATIVE COMPOSITION
+Choose one frame before storyboarding:
+- 4:5 at 1080×1350 when the song's visual direction benefits from a compact portrait field, a close focal hierarchy or less vertical separation.
+- 9:16 at 1080×1920 when the treatment benefits from a taller vertical field, extended stacking or greater vertical camera travel.
+These are compositional considerations, not fixed genre rules. Base the recommendation on the supplied song and intended use; explain its consequences for subject scale, hierarchy, type, camera, transitions and negative space. Record the ratio and exact PROJECT.width/height in that song's plan/config. The renderer's configurable dimensions do not automatically adapt authored scenes.
+
+Compose for the selected canvas from the start; do not crop or resize a layout designed for the other ratio. Re-stage each focal element. Side-by-side panels may become deliberate vertical stacks, one-at-a-time panels or a different composition; choose what serves the image rather than following a formula. Rework wide motifs (timelines, bars, cities) only when a new arrangement remains legible and purposeful; radial, ring and reticle forms may fit either frame when staged accordingly.
+
+For a song that uses archival footage, plan its timeline duration independently from its visible frame footprint and prominence. Keep footage selections and timing while letting original code-built subjects, settings, choreography, typography and transformations carry more of the visual story. Every footage-bearing scene needs meaningful code-authored action beyond a border, tint, caption or texture. Use `17_FOOTAGE_FRAME_FOOTPRINT_AND_CODE_ACTION.txt` for the per-shot plan and R14–R16 craft-resource decisions; it uses existing projects as code-reading evidence, not as art templates.
+
+Use fewer words per line and size type for phone reading. Treat interface margins as a working assumption and confirm current platform requirements when they matter; exact safe-zone values were not checked in this guide. Check every scene and overlay, all frame edges and key text at the chosen dimensions and phone size. Do not claim either ratio has passed visual review without actual output review.
+
+Use each song’s complete supplied master at its measured duration by default; choose a shortened excerpt only if the user explicitly requests one. References may be much shorter or longer than a song production: study their image craft and invent a song-specific visual arc across the full recording instead of compressing the song to fit a reference runtime. Preserve the master audio; changes to its duration require an explicit decision.
+
+======================================================================
+3. SOURCE MAP — TECHNIQUE TO LOCAL IMPLEMENTATION
+======================================================================
+STATUS WORDS: present (files exist) < read (I opened named parts) < adapted (shared-animation-library code derived from it) < implemented adapter < called by a scene < browser-observed < visually verified. Nothing below is visually verified. "Candidate" = recommended to evaluate, not integrated. Roots are under repository-downloads/ (complete pinned checkouts). Commit hashes are the recorded pins in repository-preparation/REPOSITORY_LIBRARY_CATALOG.csv.
+
+ALREADY COVERED BY THE SHARED RENDERER (shared-animation-library/, see its README)
+- Dimension-configurable p5/Canvas painted host (R02 painted template, R01 upstream): explicit PROJECT width/height flow through normalization, canvas sizing and export viewport; the neutral example uses 1080×1920. This renderer capability does not make every authored scene responsive. It also has time-pure shots(), overlay dispatcher, export planner/cache identity and supervised FFmpeg (static checks; one local browser load of the neutral example reported; no still or video of the shell has been rendered).
+- Song-neutral production shell (declared modules/scenes/cues/assets/fonts, ordered loading, coverage guard) — static checks 25/25; browser-load only for the neutral 8 s example.
+- R06 burst particles (adapted, adapter implemented, no scene call site yet), R06 critter rig (adapted, adapter implemented, called by the neutral example scene, never rendered).
+- Cue schema with evidence classes; importers for R04/R07 analysis output shapes (never run on real output).
+
+CANDIDATE MECHANISMS BY REFERENCE NEED
+M1  Beat-snapped motion language (supports P5, P3; refs A, B, E)
+  Repo R03 lemomo-ai/lemo-opuscar @b65efe6ea393fdc71212898ea4c57c754cfefa46 (MIT)
+  Path styles/swiss-motion/demo/ease.js — read in full (43 lines): cubicBezier(), E (one house easing), snap(t, t1, d) (arrive on a beat, start one subdivision early), steps(), track(keys). Pure, time-in/time-out, no state. Time model: seconds with BPM constants hard-coded (BPM=120 here) — must be parameterised per song. Status: read; not adapted; plain math, trivial to port; shared numeric/ already carries other R03 helpers (earlier pass).
+  Also read: head of styles/swiss-motion/demo/film.js (grid constants, T moments table; 1920x1080 hard-coded).
+M2  Per-letter kinetic type, text-as-mask, two-buffer scene transitions (P3, P5; refs B, E)
+  Repo R02 tuzhechen2005/opus-video-skills @59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1 (MIT)
+  Path skills/kinetic-reel/template/reel/reel.js — read: lines 1-140 and 215-250 and 344-395 (helpers, txt(), letters(s,x,y,o,fn), measure(), texWindow(draw, src) = text as window onto another image via source-in, transitions trIris/trZoom/trPush/trWipe/trSlats/trGrid taking (k, A, B, g)); other ranges indexed only. Also reel/cues.js head.
+  Dependencies/requirements: three.js module, hard-coded W=1920,H=1080, global KCUE cue table, window.DUR/PROJECT, own WebGL canvases and output renderer, mutable global ctx swapped during transitions (TRANS flag). Conflicts with the shared host (2D #out, normalizeProject sizing). Status: read; NOT adapted; separate-engine route. A narrow port of letters()/txt()/measure()/texWindow() and the Canvas-only transitions (they only need a 2D context and offscreen canvases) is a plausible future adapter, requiring coordinates designed for the selected 4:5 or 9:16 frame and removing the FX/WebGL post coupling.
+M3  HUD plates, target boxes, leader lines, wireframe projection (P1, P4; ref A)
+  Repo R03 @b65efe6e, styles/hologram-hud/demo/engine/hud.js (exports index read: theme, background, plate, chrome, corners, targetBox, leader, rollText, monoText, specCard, chip, subtitle, glitch, marker, beam; bodies not read) and holo.js (header lines 1-22 read: deterministic Canvas2D wireframe projector, loads JSON models by fetch, API Holo.draw(ctx, model, cam, opts)).
+  Time model: parameterised by T passed in (deterministic per comments; not verified by me). Fonts Rajdhani / ShareTechMono — licence/loading not checked. Status: candidate; read partially; not adapted. fetch() of a JSON model fails over file:// — models would need to be inlined as scripts/modules.
+M4  Whole-video HUD architecture, audio-reactive plate engine (refs A)
+  Repo R07 bizarro/evangelion @8f670f3262c75a454d26e01e062da96db7eefb05 (MIT code; media/font terms separate)
+  Paths read in the original pass: README (head); app/src/engine/audio.ts lines 1-60 (the header comment saying the data is sampled at arbitrary song time, interfaces AudioJSON and AudioSample, the FEATURES list rms/low/mid/high/vocal/drums/bass/other, the AudioData class fields and constructor with beats/downbeats/sections/onsets); engine/lyrics.ts lines 1-22 plus an export/class listing (Word and Line interfaces with start/end, class Lyrics; header comment says word-timed lyrics with queries for karaoke rendering); engine/hud.ts lines 1-22 + exports (crop-mark frame, plate captions); engine/type.ts lines 1-22 (font registry, opentype outlines, text point sampling); scenes/ directory listing and analysis/analyze.py import/function index; docs not read.
+  Source locations NOT read (found afterwards by a text search during the 2026-10-25 correction; bodies still unread): audio.ts AudioData.sample(t) at line 184 and melFrame(t) at line 94; lyrics.ts Lyrics.lineAt(t) at line 48 and Lyrics.wordAt(t) at line 74. Whether sample(), lineAt() and wordAt() behave as their names suggest, and their cost, are [U] until their bodies are inspected.
+  Requirements: TypeScript, vite, bun, WebGL (its own post), three.js not confirmed; separate engine. Status: architecture reference; read partially; not adapted. Treat as a candidate model (unverified beyond the read ranges) for a data-driven HUD video or for cue/lyric APIs, not as code to copy wholesale.
+M5  Gold-leaf type, light-by-light marquee, centre-axis deco composition (P6; ref D)
+  Repo R03 @b65efe6e, styles/art-deco/demo/engine/type.js goldText() (lines 1-22 read) and bulbs.js (header read: glyphs thinned to a skeleton, traced to chains, bulbs lit individually — Zhang-Suen thinning in the first function), deco.js/cam.js/film.js not read. Candidate for "light arrives one bulb at a time" and gold line art. Fonts Limelight/Poiret/Josefin/Italiana (loading/licence not checked). Not adapted.
+M6  Hand-drawn / cel character and animal rigs (P7; ref F, E)
+  R06 buildwithhanif/claude-animation-skill @4ddb8c80fdec96dc9f55d4b9bdee60bde6f0134b (MIT): lib/rigs/critter.mjs + lib/core.mjs — read in full, ADAPTED (adapters/r06-critter-rig.mjs). Other rigs (ant, bean, bug, chibi) NOT read. R03 cel-anime-80s/demo/cel.js lines 1-22 read (Catmull-Rom-to-Bezier smooth/cornered path builder, flat fill + hard shadow style); rest unread. R02/R01 painted base clawd.js (in shared base) provides a painted character with feelings. None of these reproduces a detailed illustrated anime character; that requires an asset route (rights/budget decision) or a bespoke drawn rig.
+M7  Unit-dot charts, counters, parchment/ink print look (P4, P2; refs C, D)
+  No repository source was read for this need. Candidates only: R03 styles/halftone-dossier (procedural SVG+Canvas print look, CREDITS head read; code not read), styles/engraving/demo/engine (burin.js etc., indexed not read), R06 colony.mjs (not read). The dot-grid/counter grammar is simple enough to write natively on the shared base; treat repositories as optional finish layers.
+M8  Particles, sparks, embers, flame-like glow (P6; refs D, B)
+  R06 lib/fx.mjs burstParticles — read, ADAPTED (adapters/r06-burst-particles.mjs; implemented; no scene call site). A continuous flame sprite is NOT covered; would need a new native or adapted mechanism.
+M9  Recording-bound cues and lyric timing (P8, structure)
+  R04 heygen-com/hyperframes @6791ea580c811fe3f1a532a2ced4bbed29008ee7 (Apache-2.0): skills/music-to-video/scripts/analyze-beatgrid.py (analyze() 408-490 read; output schema mapped); R07 analysis/analyze.py (index only) and audio.ts (see M4). Installed Librosa/WhisperX environments exist (repository-preparation/additional-resources) and have NOT been run on any song.
+Study-only (do not adapt): R08 JohnHeibel/PDoomVideo, R09 domenic/domenic.me, R10 WinterArc21/Battle-of-Austerlitz-Film. Catalogs only: R11-R13 (they do not license listed works). R08 README was read for identification; none of its code was.
+
+LICENCE / ATTRIBUTION NOTES
+Adaptations keep the MIT notice and the recorded commit (shared-animation-library/provenance/). Repository MIT code licences do not cover media or fonts bundled elsewhere (R07 says so explicitly). Reference videos themselves are third-party works; nothing from them may be copied.
+
+======================================================================
+4. WORKFLOW FOR A NEW SONG
+======================================================================
+1. Intake: recording attached to the conversation, optional Grok brief (text-derived), lyrics. State which audio capabilities this session actually has.
+2. Plan the visual arc across the complete supplied recording at its measured duration. Do not select a shortened excerpt unless the user explicitly requests it. Keep the original master untouched; record source and production time separately, and report any frame-quantization difference at export.
+3. Choose treatment: section 2 method; compare up to three; recommend one; write the one-sentence rule set (song-specific palette with reasoning, motif, type behaviour, reset-beat plan, camera behaviour).
+4. Select 1-3 mechanisms (section 3). For each: read the named files and the call path now, record repo/commit/path/symbol/dependencies/time model/licence, and label guidance vs source vs adapted vs integrated.
+5. Specify a timed board: opening hook, development, strongest moment, ending; per-shot purpose; evidence-labelled cues; source-to-helper-to-shot traces.
+6. Implement in the song's own production folder using the shared production shell (PROJECT.modules / PROJECT.scenes, cues, assets, fonts); add an adapter only for a named need; keep separate engines separate.
+7. Use `07_QUALITY_REVIEW_AND_ACCEPTANCE.txt` as the canonical bounded review process. Keep source/config checks, browser readiness, risk-based stills, full-candidate playback with sound, audiovisual alignment and user creative acceptance separate; each media stage still requires its applicable authorization. Sparse reference stills describe only their sampled appearances and do not prove motion or sync.
+8. Record accepted lessons in the song's checkpoint; carry mechanisms forward, not imagery.
+
+======================================================================
+5. UNKNOWNS AND NEXT RESEARCH / IMPLEMENTATION GAPS
+======================================================================
+Evidence gaps: no reference video was played here, so motion, easing, transition timing, sync to music and audio are [U]; the 1fps contact sheets are small thumbnails; individual PNGs and frames.jsonl were not opened. Next research (needs authorization): a short motion study of chosen passages (frame-stepping a few seconds of A/B/E/F) and an audio-structure look at how the references cut to their music.
+Provenance gaps: which pinned repository (if any) produced each reference MP4 is unproven; A looks like R07, B/E may relate to R08 (study-only).
+Implementation gaps: no kinetic-type adapter (M2 port), no HUD/hologram adapter (M3), no continuous flame/glow mechanism, no unit-dot/counter helper library, no art-deco/engraving adapters, no anime-illustration route, no shared responsive layout system for the legacy timeline/sheets/karaoke or the distinct 4:5 and 9:16 compositions; selected-format HUD/typographic scenes never rendered; fonts and assets (Fontsource Inter etc.) installed but never loaded by a real scene; cue importers untested on real analysis output; WhisperX singing alignment unassessed; platform safe-zone numbers unchecked.
+Dependency notes: R02 kinetic needs three.js (installed in its template environment); R03 style demos have per-style demo dependencies (Playwright/Chromium, fonts via fetch_fonts.mjs in halftone-dossier) not prepared by this pass; R07 needs bun/vite and its audio assets are not in the repo.
+
+END OF GUIDE
+REPOSITORY NAVIGATION: for each new song scan/rank all catalogued R01–R16 and use `13_REPOSITORY_NAVIGATION_AND_USE.txt` plus `repository-preparation/REPOSITORY_NAVIGATION_AND_USE_GUIDE.md`; deep-inspect only source candidates that map to a real scene need. The atlas records exact paths and reading limits.

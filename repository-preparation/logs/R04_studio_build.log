@@ -1,0 +1,66 @@
+@hyperframes/studio build: vite v6.4.2 building for production...
+@hyperframes/studio build: transforming...
+@hyperframes/studio build: [plugin vite:resolve] Module "os" has been externalized for browser compatibility, imported by "<ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/node_modules/.bun/recast@0.23.11/node_modules/recast/lib/util.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+@hyperframes/studio build: ✓ 6523 modules transformed.
+@hyperframes/studio build: rendering chunks...
+@hyperframes/studio build: [plugin vite:reporter] 
+@hyperframes/studio build: (!) <ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/studio/src/components/editor/domEditingLayers.ts is dynamically imported by <ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/studio/src/components/editor/OffCanvasIndicators.tsx but also statically imported by <ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/studio/src/components/editor/PropertyPanel.tsx, <ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/studio/src/components/editor/domEditInlineText.ts, <ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/studio/src/components/editor/domEditing.ts, <ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/studio/src/components/editor/marqueeCommit.ts, <ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/studio/src/components/editor/offCanvasIndicatorGeometry.ts, <ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/studio/src/webmcp/tools/lookTools.ts, dynamic import will not move module into another chunk.
+@hyperframes/studio build: 
+@hyperframes/studio build: computing gzip size...
+@hyperframes/studio build: dist/index.html                                 0.90 kB │ gzip:     0.51 kB
+@hyperframes/studio build: dist/assets/index-D11atkBt.css                301.41 kB │ gzip:    36.51 kB
+@hyperframes/studio build: dist/assets/index-DAp0QmWa.js                   1.85 kB │ gzip:     1.00 kB
+@hyperframes/studio build: dist/assets/hyperframes-player-Cm1Cj3TU.js     76.01 kB │ gzip:    20.92 kB
+@hyperframes/studio build: dist/assets/index-BX3KHhGX.js                 295.09 kB │ gzip:    77.96 kB
+@hyperframes/studio build: dist/assets/index--Z5JgizA.js                 667.36 kB │ gzip:   168.28 kB
+@hyperframes/studio build: dist/assets/index-DDsV6l9T.js               4,998.57 kB │ gzip: 1,487.76 kB
+@hyperframes/studio build: 
+@hyperframes/studio build: (!) Some chunks are larger than 500 kB after minification. Consider:
+@hyperframes/studio build: - Using dynamic import() to code-split the application
+@hyperframes/studio build: - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+@hyperframes/studio build: - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+@hyperframes/studio build: ✓ built in 7.41s
+@hyperframes/studio build: CLI Building entry: {"index":"src/index.ts","ui":"src/ui.ts","player":"src/playerEntry.ts","styles/tailwind-preset":"src/styles/tailwind-preset.ts"}
+@hyperframes/studio build: CLI Using tsconfig: tsconfig.lib.json
+@hyperframes/studio build: CLI tsup v8.5.1
+@hyperframes/studio build: CLI Using tsup config: <ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/studio/tsup.config.ts
+@hyperframes/studio build: CLI Target: es2022
+@hyperframes/studio build: ESM Build start
+@hyperframes/studio build: DTS Build start
+@hyperframes/studio build: ESM dist/ui.js                            901.00 B
+@hyperframes/studio build: ESM dist/chunk-EEXSYY5F.js                10.11 KB
+@hyperframes/studio build: ESM dist/player.js                        193.00 B
+@hyperframes/studio build: ESM dist/domEditingLayers-IEVLO54Z.js     1.24 KB
+@hyperframes/studio build: ESM dist/chunk-DRVWEPO5.js                54.16 KB
+@hyperframes/studio build: ESM dist/chunk-TDWGXBUT.js                38.13 KB
+@hyperframes/studio build: ESM dist/chunk-5VSXRGIX.js                32.10 KB
+@hyperframes/studio build: ESM dist/chunk-7UQWVN52.js                33.19 KB
+@hyperframes/studio build: ESM dist/styles/tailwind-preset.js        1.29 KB
+@hyperframes/studio build: ESM dist/chunk-PZ5AY32C.js                233.00 B
+@hyperframes/studio build: ESM dist/index.css                        4.40 KB
+@hyperframes/studio build: ESM dist/domEditingLayers-IEVLO54Z.js.map 71.00 B
+@hyperframes/studio build: ESM dist/chunk-EEXSYY5F.js.map            10.79 KB
+@hyperframes/studio build: ESM dist/player.js.map                    71.00 B
+@hyperframes/studio build: ESM dist/ui.js.map                        71.00 B
+@hyperframes/studio build: ESM dist/chunk-DRVWEPO5.js.map            129.56 KB
+@hyperframes/studio build: ESM dist/chunk-5VSXRGIX.js.map            64.19 KB
+@hyperframes/studio build: ESM dist/chunk-TDWGXBUT.js.map            89.75 KB
+@hyperframes/studio build: ESM dist/chunk-PZ5AY32C.js.map            71.00 B
+@hyperframes/studio build: ESM dist/index.css.map                    7.84 KB
+@hyperframes/studio build: ESM dist/chunk-7UQWVN52.js.map            81.64 KB
+@hyperframes/studio build: ESM dist/styles/tailwind-preset.js.map    2.19 KB
+@hyperframes/studio build: ESM dist/index.js                         3.52 MB
+@hyperframes/studio build: ESM dist/index.js.map                     7.75 MB
+@hyperframes/studio build: ESM ⚡️ Build success in 248ms
+@hyperframes/studio build: error TS2688: Cannot find type definition file for 'node'.
+@hyperframes/studio build:   The file is in the program because:
+@hyperframes/studio build:     Entry point of type library 'node' specified in compilerOptions
+@hyperframes/studio build: 
+@hyperframes/studio build: Error: error occurred in dts build
+@hyperframes/studio build:     at Worker.<anonymous> (<ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/node_modules/.bun/tsup@8.5.1+915967a16ee427dd/node_modules/tsup/dist/index.js:1545:26)
+@hyperframes/studio build:     at Worker.emit (node:events:514:20)
+@hyperframes/studio build:     at MessagePort.<anonymous> (node:internal/worker:358:14)
+@hyperframes/studio build:     at [nodejs.internal.kHybridDispatch] (node:internal/event_target:856:20)
+@hyperframes/studio build:     at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+@hyperframes/studio build: DTS Build error
+@hyperframes/studio build: Exited with code 1

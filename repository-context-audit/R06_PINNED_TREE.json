@@ -1,0 +1,534 @@
+{
+  "sha": "4ddb8c80fdec96dc9f55d4b9bdee60bde6f0134b",
+  "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/trees/4ddb8c80fdec96dc9f55d4b9bdee60bde6f0134b",
+  "tree": [
+    {
+      "path": ".claude-plugin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0dfb65ba6a4b55c3df61c19ce91272664923a5e7",
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/trees/0dfb65ba6a4b55c3df61c19ce91272664923a5e7"
+    },
+    {
+      "path": ".claude-plugin/marketplace.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7812281c04a31fc43fc5936c31c5b0f31ac031b6",
+      "size": 983,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/7812281c04a31fc43fc5936c31c5b0f31ac031b6"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c18bffe941166d45bc4164a6dad2859b929bd288",
+      "size": 43,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/c18bffe941166d45bc4164a6dad2859b929bd288"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73601203eebdaeeb06af7a33ae2d3fd538cd743f",
+      "size": 1080,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/73601203eebdaeeb06af7a33ae2d3fd538cd743f"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "033a0291e204927381165059e4c3298978582dc1",
+      "size": 6838,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/033a0291e204927381165059e4c3298978582dc1"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e340d9c950314dfbb3cfc3ee5eca62624ab20c97",
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/trees/e340d9c950314dfbb3cfc3ee5eca62624ab20c97"
+    },
+    {
+      "path": "docs/ant-detail.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e365db76664b0af0b1feaab6754063d0094628cf",
+      "size": 160547,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/e365db76664b0af0b1feaab6754063d0094628cf"
+    },
+    {
+      "path": "docs/ant-poses.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6bac22767dcf26c098ebef224b5c450eb202c21",
+      "size": 407087,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/a6bac22767dcf26c098ebef224b5c450eb202c21"
+    },
+    {
+      "path": "docs/balloon.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5015671a733b712635848815416af9cced611ff2",
+      "size": 169242,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/5015671a733b712635848815416af9cced611ff2"
+    },
+    {
+      "path": "docs/colony-contact.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23d3c8f3d3f0862d80b3a8c4d90ce7d3694f39fa",
+      "size": 471151,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/23d3c8f3d3f0862d80b3a8c4d90ce7d3694f39fa"
+    },
+    {
+      "path": "docs/colony-nest.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3401dd42bd8f79b16a863933f8b6defcc4e23f9",
+      "size": 279641,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/b3401dd42bd8f79b16a863933f8b6defcc4e23f9"
+    },
+    {
+      "path": "docs/game-combo.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb5ab79b414355a84fb7bee320163c08f715d014",
+      "size": 254407,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/cb5ab79b414355a84fb7bee320163c08f715d014"
+    },
+    {
+      "path": "docs/game-contact.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3304a617676af2348e4a9468c8fca7e378e3494d",
+      "size": 731928,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/3304a617676af2348e4a9468c8fca7e378e3494d"
+    },
+    {
+      "path": "docs/money-quest.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57992106bca91990871afdaad7b9f82a1a4242de",
+      "size": 157723,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/57992106bca91990871afdaad7b9f82a1a4242de"
+    },
+    {
+      "path": "examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d199ef55088c5eeec382631eb8ff11560fd56d09",
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/trees/d199ef55088c5eeec382631eb8ff11560fd56d09"
+    },
+    {
+      "path": "examples/ant-colony",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7f11c6b5e2c32c27f6b741ff383dd4d604813e14",
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/trees/7f11c6b5e2c32c27f6b741ff383dd4d604813e14"
+    },
+    {
+      "path": "examples/ant-colony/film.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51e1335c198a506d79cc1080f414ee08c80aabf2",
+      "size": 28830,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/51e1335c198a506d79cc1080f414ee08c80aabf2"
+    },
+    {
+      "path": "examples/ant-colony/make.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "b73b215f7e011eb7435116f2c4f1bbc0821a46a8",
+      "size": 678,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/b73b215f7e011eb7435116f2c4f1bbc0821a46a8"
+    },
+    {
+      "path": "examples/claude-balloon",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b36fde2e8a666bc3ab87a4289f8a964bbc8a14e7",
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/trees/b36fde2e8a666bc3ab87a4289f8a964bbc8a14e7"
+    },
+    {
+      "path": "examples/claude-balloon/film.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e4731973fa93d978b88dba800b65c7f13161dbf",
+      "size": 13447,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/3e4731973fa93d978b88dba800b65c7f13161dbf"
+    },
+    {
+      "path": "examples/claude-balloon/make.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "a1c896d627f1016a6020d0a49db9383e87d58a07",
+      "size": 484,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/a1c896d627f1016a6020d0a49db9383e87d58a07"
+    },
+    {
+      "path": "examples/claude-game",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dc83e0100a7f29be108e64f317d6a8d366831619",
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/trees/dc83e0100a7f29be108e64f317d6a8d366831619"
+    },
+    {
+      "path": "examples/claude-game/film.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d954cf829beaf16be8f339413b264b0c1916802",
+      "size": 34188,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/7d954cf829beaf16be8f339413b264b0c1916802"
+    },
+    {
+      "path": "examples/claude-game/make.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "3f1b914d8236b3e5fac21af169c607f26be9e609",
+      "size": 583,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/3f1b914d8236b3e5fac21af169c607f26be9e609"
+    },
+    {
+      "path": "examples/money-quest",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c01f615c9de68294a76f74ef12613edf0b939afc",
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/trees/c01f615c9de68294a76f74ef12613edf0b939afc"
+    },
+    {
+      "path": "examples/money-quest/film.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7318062918ba79dfbceabb423a55dcb2ae5acd47",
+      "size": 30207,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/7318062918ba79dfbceabb423a55dcb2ae5acd47"
+    },
+    {
+      "path": "examples/money-quest/make.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "abf29c5e26d605f6a8f837c74f3ce7f11127c034",
+      "size": 373,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/abf29c5e26d605f6a8f837c74f3ce7f11127c034"
+    },
+    {
+      "path": "plugins",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "838c8b77b866cd2f7b774832eb618526da434e0d",
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/trees/838c8b77b866cd2f7b774832eb618526da434e0d"
+    },
+    {
+      "path": "plugins/claude-animation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bdd069968431cb2d4ab2bce3fa2aae2722e297f5",
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/trees/bdd069968431cb2d4ab2bce3fa2aae2722e297f5"
+    },
+    {
+      "path": "plugins/claude-animation/.claude-plugin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8599d7ea90b01f00648f48f9c47eeddc8bc711c1",
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/trees/8599d7ea90b01f00648f48f9c47eeddc8bc711c1"
+    },
+    {
+      "path": "plugins/claude-animation/.claude-plugin/plugin.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efe796d31979c16a5c7687e6f096cf2890d2c8c9",
+      "size": 640,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/efe796d31979c16a5c7687e6f096cf2890d2c8c9"
+    },
+    {
+      "path": "plugins/claude-animation/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a29951bb5a98d30f37b468f1168584d76d7e3c6f",
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/trees/a29951bb5a98d30f37b468f1168584d76d7e3c6f"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b64797021f4d39a96538eeabeac69e95ad40d725",
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/trees/b64797021f4d39a96538eeabeac69e95ad40d725"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2de2e5fe667112bae59994f680639bdac005dd6",
+      "size": 8018,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/e2de2e5fe667112bae59994f680639bdac005dd6"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "de09402d42634fd862a0cd7f6c0d6882a756fd11",
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/trees/de09402d42634fd862a0cd7f6c0d6882a756fd11"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/lib/colony.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c15fa4d2c0f3ae1c7a70dd4cec12aa3b0ceac6e",
+      "size": 9188,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/0c15fa4d2c0f3ae1c7a70dd4cec12aa3b0ceac6e"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/lib/core.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b317cff78fee93a2385e32f0ba794f4b294d05c0",
+      "size": 10461,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/b317cff78fee93a2385e32f0ba794f4b294d05c0"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/lib/film.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92e14351bc828a32d77723dd6cc105acc4c25426",
+      "size": 7248,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/92e14351bc828a32d77723dd6cc105acc4c25426"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/lib/fx.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "029a51ba01e836bf8cab6864badfa3f94c3e4dbb",
+      "size": 9047,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/029a51ba01e836bf8cab6864badfa3f94c3e4dbb"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/lib/lowpoly.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "808bb109a6b2d3ceedfacd6da276938dfa2c1f43",
+      "size": 7220,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/808bb109a6b2d3ceedfacd6da276938dfa2c1f43"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/lib/nature.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cd3831c65541a2b497319476e3550b126d4a1a9",
+      "size": 5512,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/0cd3831c65541a2b497319476e3550b126d4a1a9"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/lib/pen.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97aa678effaaed66abbba655d8e973f88e565d1e",
+      "size": 9055,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/97aa678effaaed66abbba655d8e973f88e565d1e"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/lib/rigs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "de6833e2eb4804c2d4e7686f3754f59d916b203e",
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/trees/de6833e2eb4804c2d4e7686f3754f59d916b203e"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/lib/rigs/ant.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9c489d0d3dda2b946fab1d622b28d43b9127a66",
+      "size": 16165,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/a9c489d0d3dda2b946fab1d622b28d43b9127a66"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/lib/rigs/bean.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b05bd3725330ee49a8ae009c5a52ad56c0a5a887",
+      "size": 9244,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/b05bd3725330ee49a8ae009c5a52ad56c0a5a887"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/lib/rigs/bug.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "536efaf1a20b9d0b732279d686b6a3853828786d",
+      "size": 5105,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/536efaf1a20b9d0b732279d686b6a3853828786d"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/lib/rigs/chibi.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f6efe13560e8a5a617f197a0f9b7e1acc9eb598",
+      "size": 11888,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/7f6efe13560e8a5a617f197a0f9b7e1acc9eb598"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/lib/rigs/critter.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "794a9771297021e56edb7abfadea42a9c46617ff",
+      "size": 7098,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/794a9771297021e56edb7abfadea42a9c46617ff"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/lib/textures.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "481b6c64f8051b2ba3161bb49082153f22795c9a",
+      "size": 9047,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/481b6c64f8051b2ba3161bb49082153f22795c9a"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2a8cffaac7b98d80796aace224dbaf79bf894d3",
+      "size": 298,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/b2a8cffaac7b98d80796aace224dbaf79bf894d3"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "15477505c7801c5512c0e4eee31cde2204c042a5",
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/trees/15477505c7801c5512c0e4eee31cde2204c042a5"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/references/characters.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bf282583f9fba765b201848a607675e1add8b5b",
+      "size": 6351,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/3bf282583f9fba765b201848a607675e1add8b5b"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/references/detail.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17ad315af56dc6f0fd9f11fa6181488e2abf9f7a",
+      "size": 7190,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/17ad315af56dc6f0fd9f11fa6181488e2abf9f7a"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/references/motion.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1083d717726c04c1df184d3b31bdd13d369fc74a",
+      "size": 4450,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/1083d717726c04c1df184d3b31bdd13d369fc74a"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/references/prior-art.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1e7d2f2160aab00b22f38a7d803423821efb843",
+      "size": 2416,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/c1e7d2f2160aab00b22f38a7d803423821efb843"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/references/sound.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3639849031a02ad65df9d8d9d57b94e313a1f98",
+      "size": 2292,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/a3639849031a02ad65df9d8d9d57b94e313a1f98"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/references/styles.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca10a4036dc527d27efa726948a3b5ea92b225a3",
+      "size": 4162,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/ca10a4036dc527d27efa726948a3b5ea92b225a3"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/references/traps.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff8ce6597182ee07d23a96684657af80de763db4",
+      "size": 2465,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/ff8ce6597182ee07d23a96684657af80de763db4"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/references/workflow.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7f344f783be85b50631a2330dc7e38002e96b27",
+      "size": 2263,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/b7f344f783be85b50631a2330dc7e38002e96b27"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f56e58f9a89e3a88bd3898ba5e5dd15d9744abaf",
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/trees/f56e58f9a89e3a88bd3898ba5e5dd15d9744abaf"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/scripts/ambient.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fc9ad105c47c2d2025f7a547aae5a514b64e161",
+      "size": 3138,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/4fc9ad105c47c2d2025f7a547aae5a514b64e161"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/scripts/chiptune.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "041d687481fe7b8c1d0cdcf8d0d626114dab8e34",
+      "size": 6969,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/041d687481fe7b8c1d0cdcf8d0d626114dab8e34"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/scripts/music.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30a2a6476805839290b46154d62faaa8c57c585e",
+      "size": 5998,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/30a2a6476805839290b46154d62faaa8c57c585e"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/scripts/rig-sheet.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa3e360edb66eaffe9925f1bf588e7a63ef8af38",
+      "size": 1411,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/aa3e360edb66eaffe9925f1bf588e7a63ef8af38"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/scripts/sound.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "342b67ce06e6de57dbfde88415f40a250b08f104",
+      "size": 7914,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/342b67ce06e6de57dbfde88415f40a250b08f104"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/templates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "93ec793b41728fc1a6354dcbf9ae8f6255d28b92",
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/trees/93ec793b41728fc1a6354dcbf9ae8f6255d28b92"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/templates/beat-sheet.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "070946c753bae1e6add2484eb967da5725760d40",
+      "size": 1776,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/070946c753bae1e6add2484eb967da5725760d40"
+    },
+    {
+      "path": "plugins/claude-animation/skills/claude-animation/templates/film-template.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bce201f8af2aaff20b320ae6dfc88fafd27f247",
+      "size": 2631,
+      "url": "https://api.github.com/repos/buildwithhanif/claude-animation-skill/git/blobs/5bce201f8af2aaff20b320ae6dfc88fafd27f247"
+    }
+  ],
+  "truncated": false
+}

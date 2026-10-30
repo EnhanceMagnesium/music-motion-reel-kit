@@ -1,0 +1,24 @@
+
+COMMAND ['git', 'init', '-q']
+
+COMMAND ['git', 'remote', 'add', 'origin', 'https://github.com/athemeroy/awesome-claude-5-5-videos']
+
+COMMAND ['git', 'fetch', '--depth=1', 'origin', '0b96ca1ec8e03fe72a1c349370ab5dad043c5a1b']
+From https://github.com/athemeroy/awesome-claude-5-5-videos
+ * branch            0b96ca1ec8e03fe72a1c349370ab5dad043c5a1b -> FETCH_HEAD
+
+COMMAND ['git', 'checkout', '--detach', '0b96ca1ec8e03fe72a1c349370ab5dad043c5a1b']
+HEAD is now at 0b96ca1 Add October 3 Claude video directory and source coverage
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.
+
+COMMAND ['git', 'lfs', 'pull']
+
+COMMAND ['git', 'lfs', 'fsck']
+Git LFS fsck OK
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.

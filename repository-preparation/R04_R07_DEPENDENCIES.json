@@ -1,0 +1,189 @@
+{
+  "repositories": [
+    {
+      "id": "R04",
+      "repository": "https://github.com/heygen-com/hyperframes",
+      "path": "repository-downloads/heygen-com/hyperframes",
+      "commit": "6791ea580c811fe3f1a532a2ced4bbed29008ee7",
+      "packageManager": "bun",
+      "runtime": {
+        "bun": "1.4.2",
+        "node": "v26.7.0",
+        "binary": "repository-preparation/bin/bun"
+      },
+      "manifest": "repository-downloads/heygen-com/hyperframes/package.json",
+      "manifestSHA256": "64c709ddb7554a42f4624830db90b7c1d155121767ca40a194d24da40d2ee376",
+      "manifestUnchanged": true,
+      "lockfile": "repository-downloads/heygen-com/hyperframes/bun.lock",
+      "lockSHA256": "2a412c7edb73a38d1183d441438da07554ed28ff8fd005f83d29c3328c427c98",
+      "lockUnchanged": true,
+      "checks": [
+        {
+          "name": "prerequisite parsers/lint/studio-server build",
+          "exit": 0,
+          "log": "repository-preparation/logs/R04_prerequisite_build.log"
+        },
+        {
+          "name": "core build",
+          "exit": 0,
+          "log": "repository-preparation/logs/R04_core_build.log"
+        },
+        {
+          "name": "engine build",
+          "exit": 0,
+          "log": "repository-preparation/logs/R04_engine_build.log"
+        },
+        {
+          "name": "producer build",
+          "exit": 0,
+          "log": "repository-preparation/logs/R04_producer_build.log"
+        },
+        {
+          "name": "player build",
+          "exit": 0,
+          "log": "repository-preparation/logs/R04_player_build.log"
+        },
+        {
+          "name": "initial CLI build missing studio dist",
+          "exit": 1,
+          "log": "repository-preparation/logs/R04_cli_build.log"
+        },
+        {
+          "name": "CLI build after Studio assets",
+          "exit": 0,
+          "log": "repository-preparation/logs/R04_cli_build_retry.log"
+        },
+        {
+          "name": "CLI help",
+          "exit": 0,
+          "log": "repository-preparation/logs/R04_cli_help_final.log"
+        },
+        {
+          "name": "direct built core/engine/producer import",
+          "exit": 0,
+          "log": "repository-preparation/logs/R04_direct_modules_check_final.log"
+        },
+        {
+          "name": "initial Studio build missing node types",
+          "exit": 1,
+          "log": "repository-preparation/logs/R04_studio_build.log"
+        },
+        {
+          "name": "Studio build after linking installed node types",
+          "exit": 0,
+          "log": "repository-preparation/logs/R04_studio_build_retry.log",
+          "reason": "Root declared @types/node linked to already installed copy; complete build passes."
+        },
+        {
+          "name": "Core/engine/producer import after cache removal",
+          "exit": 0,
+          "log": "repository-preparation/logs/R04_post_cache_module_check.log"
+        },
+        {
+          "name": "CLI help after cache removal",
+          "exit": 0,
+          "log": "repository-preparation/logs/R04_post_cache_help.log"
+        }
+      ],
+      "install": {
+        "command": "PUPPETEER_SKIP_DOWNLOAD=true PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 bun install --frozen-lockfile --ignore-scripts --filter @hyperframes/core --filter @hyperframes/engine --filter @hyperframes/producer --filter @hyperframes/cli --cache-dir <preparation>/bun-cache",
+        "exit": 0,
+        "packagesInstalled": 662,
+        "log": "repository-preparation/logs/R04_install.log",
+        "scripts": "lifecycle scripts suppressed; reviewed explicit build scripts run separately",
+        "browser": "Puppeteer browser download skipped; existing Google Chrome available"
+      },
+      "issues": [
+        "Filtered install initially left root declared @types/node unlinked. Linked already-installed 25.7.0 package; no manifest or lock edits.",
+        "Initial root package-name import check failed because root manifest does not depend on core/engine/producer. Direct dist module imports succeeded.",
+        "CLI warns skills/gsap absent; bundled other available skill directories.",
+        "Rendering/preview/browser checks not executed.",
+        "Cloud AWS/GCP and SDK playground builds deferred; representative local core/engine/producer/CLI prepared."
+      ],
+      "capabilities": {
+        "entry": "repository-downloads/heygen-com/hyperframes/packages/cli/bin/hyperframes.mjs",
+        "help": "verified",
+        "core_engine_producer_module_imports": "verified",
+        "rendering": "not executed",
+        "studio": "frontend and library/declarations build verified"
+      },
+      "storage": {
+        "nodeModulesDuKB": 1432220,
+        "note": "symlinked package modules and APFS cloned blocks affect accounting"
+      },
+      "trackedGitStatus": ""
+    },
+    {
+      "id": "R07",
+      "repository": "https://github.com/bizarro/evangelion",
+      "path": "repository-downloads/bizarro/evangelion",
+      "commit": "8f670f3262c75a454d26e01e062da96db7eefb05",
+      "packageManager": "bun",
+      "runtime": {
+        "bun": "1.4.2",
+        "node": "v26.7.0",
+        "binary": "repository-preparation/bin/bun"
+      },
+      "manifest": "repository-downloads/bizarro/evangelion/app/package.json",
+      "manifestSHA256": "73a592e9b1c8aebf211c4ae1ca13d8fc897aabd5efb8f447572d2a5e1e2b9b6f",
+      "manifestUnchanged": true,
+      "lockfile": "repository-downloads/bizarro/evangelion/app/bun.lock",
+      "lockSHA256": "0a00740de998caed9b8652ee009f42ee3045109438ba64ee03118c2f665d898d",
+      "lockUnchanged": true,
+      "checks": [
+        {
+          "name": "default vite build",
+          "exit": 1,
+          "log": "repository-preparation/logs/R07_build.log",
+          "reason": "public/audio is symlink to absent separately licensed audio directory"
+        },
+        {
+          "name": "Vite compilation with public asset copy disabled",
+          "exit": 0,
+          "command": "bun run vite build --config <preparation>/R07.vite.config.mjs",
+          "config": "repository-preparation/R07.vite.config.mjs",
+          "log": "repository-preparation/logs/R07_build_without_public.log"
+        },
+        {
+          "name": "three/openType module import",
+          "exit": 0,
+          "log": "repository-preparation/logs/R07_module_check.log"
+        }
+      ],
+      "install": {
+        "command": "bun install --frozen-lockfile --ignore-scripts --cache-dir <preparation>/bun-cache",
+        "exit": 0,
+        "packagesInstalled": 33,
+        "log": "repository-preparation/logs/R07_install.log"
+      },
+      "capabilities": {
+        "entry": "repository-downloads/bizarro/evangelion/app/src/main.ts",
+        "webgl_three_engine_dependencies": "installed and module import checked",
+        "bundle": "repository-preparation/builds/R07",
+        "preview": "not launched",
+        "rendering": "not executed"
+      },
+      "issues": [
+        "Source repo omits licensed soundtrack and playable wave.bin. Compilation passes without copying public/audio; resulting build is code-check bundle, not a media-complete production.",
+        "Python analysis/uv/Demucs pipelines deferred; existing analysis data supplied, raw waveform and audio need separately chosen track.",
+        "No Three/WebGL canvas initialized and no frame generated."
+      ],
+      "storage": {
+        "nodeModulesDuKB": 120392,
+        "note": "symlinked package modules and APFS cloned blocks affect accounting"
+      },
+      "trackedGitStatus": ""
+    }
+  ],
+  "cacheCleanup": {
+    "status": "removed",
+    "verifiedNoDependencySymlinksIntoCache": true,
+    "symlinksChecked": 2141,
+    "cachePath": "repository-preparation/bun-cache",
+    "logicalFileBytesRemoved": 1396860665,
+    "apparentAllocatedBytesRemoved": 1576345600,
+    "note": "APFS clone/shared-block accounting means these sizes are not exact physically reclaimed space."
+  },
+  "preservation": "Original manifests and lockfiles checked against Git HEAD; no renderer or production changes.",
+  "freeDiskAfterBytes": 3933929472
+}

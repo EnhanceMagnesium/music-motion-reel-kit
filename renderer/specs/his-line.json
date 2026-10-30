@@ -1,0 +1,25 @@
+{
+  "name": "his-line",
+  "width": 1080,
+  "height": 1920,
+  "fps": 24,
+  "duration": 36,
+  "audio": "../../productions/his-line/audio/His_Line_master.m4a",
+  "audioStart": 0,
+  "cues": "../../productions/his-line/cues.json",
+  "sceneScript": "../scenes/his-line.js",
+  "fonts": [
+    { "family": "HL Display", "url": "../assets/fonts/DejaVuSansCondensed-Bold.ttf", "descriptors": { "weight": "700" } },
+    { "family": "HL Label", "url": "../assets/fonts/DejaVuSansMono.ttf", "descriptors": { "weight": "400" } }
+  ],
+  "assets": ["../assets/fonts/DejaVuSansCondensed-Bold.ttf", "../assets/fonts/DejaVuSansMono.ttf"],
+  "scenes": [
+    { "start": 0, "end": 6.383, "type": "his-line", "id": "S0 opening: deed kept, seal absent (Media Luna sung)" },
+    { "start": 6.383, "end": 11.09, "type": "his-line", "id": "S1 upon the wall" },
+    { "start": 11.09, "end": 16.835, "type": "his-line", "id": "S2 seal crosses / Westman's line" },
+    { "start": 16.835, "end": 22.979, "type": "his-line", "id": "S3 reads, ink open" },
+    { "start": 22.979, "end": 28.324, "type": "his-line", "id": "S4 refrain: wall widens, deed lengthens" },
+    { "start": 28.324, "end": 31.197, "type": "his-line", "id": "S5 layers drop" },
+    { "start": 31.197, "end": 36, "type": "his-line", "id": "S6 seal lands; image-only end" }
+  ]
+}

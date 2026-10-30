@@ -1,0 +1,24 @@
+
+COMMAND ['git', 'init', '-q']
+
+COMMAND ['git', 'remote', 'add', 'origin', 'https://github.com/guanmo-ai/awesome-ai-motion']
+
+COMMAND ['git', 'fetch', '--depth=1', 'origin', '203472a514a4d41c12b1cee8e82423b5ca311186']
+From https://github.com/guanmo-ai/awesome-ai-motion
+ * branch            203472a514a4d41c12b1cee8e82423b5ca311186 -> FETCH_HEAD
+
+COMMAND ['git', 'checkout', '--detach', '203472a514a4d41c12b1cee8e82423b5ca311186']
+HEAD is now at 203472a 新增23个创意动效案例并准确区分任务描述
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.
+
+COMMAND ['git', 'lfs', 'pull']
+
+COMMAND ['git', 'lfs', 'fsck']
+Git LFS fsck OK
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.

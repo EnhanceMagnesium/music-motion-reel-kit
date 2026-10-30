@@ -1,0 +1,163 @@
+
+COMMAND ['git', 'init', '-q']
+
+COMMAND ['git', 'remote', 'add', 'origin', 'https://github.com/heygen-com/hyperframes']
+
+COMMAND ['git', 'fetch', '--depth=1', 'origin', '6791ea580c811fe3f1a532a2ced4bbed29008ee7']
+From https://github.com/heygen-com/hyperframes
+ * branch            6791ea580c811fe3f1a532a2ced4bbed29008ee7 -> FETCH_HEAD
+
+COMMAND ['git', 'checkout', '--detach', '6791ea580c811fe3f1a532a2ced4bbed29008ee7']
+HEAD is now at 6791ea5 Merge pull request #5062 from heygen-com/release/v0.8.130
+Encountered 67 files that should have been pointers, but weren't:
+	packages/producer/tests/animejs-adapter/output/compiled.html
+	packages/producer/tests/audio-mux-parity/output/compiled.html
+	packages/producer/tests/chat/output/compiled.html
+	packages/producer/tests/chrome-screenshot-bottom-edge/output/compiled.html
+	packages/producer/tests/css-import-scoping/output/compiled.html
+	packages/producer/tests/css-spinner-render-compat/output/compiled.html
+	packages/producer/tests/d3-adapter/output/compiled.html
+	packages/producer/tests/distributed/mov-prores/output/compiled.html
+	packages/producer/tests/distributed/mp4-h264-sdr/output/compiled.html
+	packages/producer/tests/distributed/mp4-h265-sdr/output/compiled.html
+	packages/producer/tests/distributed/png-sequence/output/compiled.html
+	packages/producer/tests/distributed/three-boundary-deferred/output/compiled.html
+	packages/producer/tests/distributed/three-boundary/output/compiled.html
+	packages/producer/tests/distributed/webm-vp9/output/compiled.html
+	packages/producer/tests/dogs-captions/output/compiled.html
+	packages/producer/tests/fast-capture-gsap/output/compiled.html
+	packages/producer/tests/font-variant-numeric/output/compiled.html
+	packages/producer/tests/google-maps-adapter/output/compiled.html
+	packages/producer/tests/gsap-letters-render-compat/output/compiled.html
+	packages/producer/tests/hdr-hlg-regression/output/compiled.html
+	packages/producer/tests/hdr-regression/output/compiled.html
+	packages/producer/tests/heygen-promo-preview-assets/output/compiled.html
+	packages/producer/tests/iframe-render-compat/output/compiled.html
+	packages/producer/tests/leaflet-adapter/output/compiled.html
+	packages/producer/tests/many-cuts/output/compiled.html
+	packages/producer/tests/mapbox-adapter/output/compiled.html
+	packages/producer/tests/maplibre-adapter/output/compiled.html
+	packages/producer/tests/missing-host-comp-id/output/compiled.html
+	packages/producer/tests/overlay-montage-prod/output/compiled.html
+	packages/producer/tests/page-side-shader-compositor-render-compat/output/compiled.html
+	packages/producer/tests/parallel-capture-regression/output/compiled.html
+	packages/producer/tests/pip-video-late-host/output/compiled.html
+	packages/producer/tests/portrait-edge-bleed/output/compiled.html
+	packages/producer/tests/portrait-edge-bleed/src/sample.mp4
+	packages/producer/tests/raf-ball-render-compat/output/compiled.html
+	packages/producer/tests/render-symlinked-assets/output/compiled.html
+	packages/producer/tests/render-video-overlay-stretch/output/compiled.html
+	packages/producer/tests/spanish-empire-cdn-inline/output/compiled.html
+	packages/producer/tests/style-1-prod/output/compiled.html
+	packages/producer/tests/style-10-prod/output/compiled.html
+	packages/producer/tests/style-11-prod/output/compiled.html
+	packages/producer/tests/style-12-prod/output/compiled.html
+	packages/producer/tests/style-13-prod/output/compiled.html
+	packages/producer/tests/style-15-prod/output/compiled.html
+	packages/producer/tests/style-16-prod/output/compiled.html
+	packages/producer/tests/style-17-prod/output/compiled.html
+	packages/producer/tests/style-18-prod/output/compiled.html
+	packages/producer/tests/style-2-prod/output/compiled.html
+	packages/producer/tests/style-3-prod/output/compiled.html
+	packages/producer/tests/style-4-prod/output/compiled.html
+	packages/producer/tests/style-5-prod/output/compiled.html
+	packages/producer/tests/style-6-prod/output/compiled.html
+	packages/producer/tests/style-7-prod/output/compiled.html
+	packages/producer/tests/style-8-prod/output/compiled.html
+	packages/producer/tests/style-9-prod/output/compiled.html
+	packages/producer/tests/sub-comp-class-selector/output/compiled.html
+	packages/producer/tests/sub-comp-height-percent/output/compiled.html
+	packages/producer/tests/sub-comp-id-selector/output/compiled.html
+	packages/producer/tests/sub-comp-t0/output/compiled.html
+	packages/producer/tests/sub-composition-video/output/compiled.html
+	packages/producer/tests/timed-descendant-visibility/output/compiled.html
+	packages/producer/tests/typegpu-adapter/output/compiled.html
+	packages/producer/tests/variables-prod/output/compiled.html
+	packages/producer/tests/vfr-screen-recording/output/compiled.html
+	packages/producer/tests/video-hfid-no-id/output/compiled.html
+	packages/producer/tests/vignelli-stacking/output/compiled.html
+	packages/producer/tests/webgl-video-texture-render-compat/output/compiled.html
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.
+
+COMMAND ['git', 'lfs', 'pull']
+
+COMMAND ['git', 'lfs', 'fsck']
+pointer: unexpectedGitObject: "packages/producer/tests/distributed/three-boundary-deferred/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/distributed/mp4-h264-sdr/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/raf-ball-render-compat/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/many-cuts/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/heygen-promo-preview-assets/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/style-13-prod/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/timed-descendant-visibility/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/distributed/webm-vp9/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/parallel-capture-regression/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/style-8-prod/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/css-spinner-render-compat/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/typegpu-adapter/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/sub-comp-id-selector/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/sub-comp-t0/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/page-side-shader-compositor-render-compat/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/video-hfid-no-id/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/iframe-render-compat/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/style-10-prod/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/style-3-prod/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/d3-adapter/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/distributed/png-sequence/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/variables-prod/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/style-11-prod/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/style-12-prod/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/sub-comp-height-percent/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/sub-composition-video/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/portrait-edge-bleed/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/style-9-prod/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/sub-comp-class-selector/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/spanish-empire-cdn-inline/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/render-symlinked-assets/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/style-4-prod/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/style-7-prod/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/pip-video-late-host/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/webgl-video-texture-render-compat/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/leaflet-adapter/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/style-2-prod/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/style-6-prod/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/audio-mux-parity/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/animejs-adapter/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/vignelli-stacking/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/portrait-edge-bleed/src/sample.mp4" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/render-video-overlay-stretch/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/hdr-hlg-regression/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/chrome-screenshot-bottom-edge/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/mapbox-adapter/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/vfr-screen-recording/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/style-18-prod/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/distributed/mov-prores/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/google-maps-adapter/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/dogs-captions/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/hdr-regression/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/style-17-prod/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/fast-capture-gsap/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/style-15-prod/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/font-variant-numeric/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/distributed/mp4-h265-sdr/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/gsap-letters-render-compat/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/style-5-prod/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/distributed/three-boundary/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/missing-host-comp-id/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/css-import-scoping/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/overlay-montage-prod/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/style-16-prod/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/maplibre-adapter/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/style-1-prod/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+pointer: unexpectedGitObject: "packages/producer/tests/chat/output/compiled.html" (treeish 6791ea580c811fe3f1a532a2ced4bbed29008ee7) should have been a pointer but was not
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.
+
+COMMAND ['git', 'lfs', 'pull']
+
+COMMAND ['git', 'lfs', 'fsck', '--objects']
+Git LFS fsck OK

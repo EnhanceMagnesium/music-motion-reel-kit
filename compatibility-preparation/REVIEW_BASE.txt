@@ -1,0 +1,38 @@
+BASE REVIEW — 2026-10-07
+Scope: read-only source review of derived base/studio.html, landscape entry, core/config, renderer and test coverage. No browser, drawing, media or original-source edits. Findings below are supported by source paths and line numbers; runtime/browser behavior is not certified.
+
+P1 — Configured master-audio offset is omitted from export audio seeks
+File: shared-animation-library/base/render.mjs:155-158; base/src/config.js:8-10; adapters/host-integration.mjs:15
+The config defines sourceAudioOffsetSeconds as master-audio time at video time zero and the particle adapter subtracts it for source cues. --clip still seeks master audio by a alone; it never reads the configured offset. With sourceAudioOffsetSeconds=10 and range=0:4, a cue at source 12.4 appears at video 2.4 while the soundtrack plays source 0..4. Full exports must seek offset+a. --encode at lines 60-65 applies no seek at all, so separate-frame encoding has the same mismatch. The shipped zero default hides this defect.
+Suggested fix: use the same source-to-video mapping for ffmpeg inputs; carry range start and source offset through both export modes.
+Coverage gap: tests/verify.mjs:175-180 verifies cue conversion only; no test inspects ffmpeg arguments or export timing.
+
+P1 — Rendering a nonzero frame range produces an unencodable default sequence
+File: shared-animation-library/base/render.mjs:134-145 and 60-65
+--frames --range=2:4 at 24 fps writes f00048.jpg..f00095.jpg, while --encode reads f%05d.jpg with no -start_number. FFmpeg's sequence discovery defaults to start number zero and searches only the first few candidates, so this fresh range has no discoverable start. Even if the reader start were fixed, --encode has no recorded range duration/start for correctly seeking corresponding audio.
+Suggested fix: record frame range/fps/project metadata with the frame cache; pass the first index as -start_number, bound the selected count and align audio.
+Coverage gap: all renderer checks at tests/verify.mjs:64-74 are dimension/path text inspection; neither frame filename ranges nor encode input selection is checked.
+
+P1 — Shared cwd frame cache can silently reuse another entry/project's frames
+File: shared-animation-library/base/render.mjs:44,53,135-145,60-65
+Every root and entry uses the same cwd-relative out/frames. Resume accepts any existing JPEG larger than 1000 bytes, without checking PROJECT, entry, fps, dimensions, source hashes or range. Running the portrait entry and then examples/landscape/studio.html from the same cwd can skip all overlapping indices and later encode the earlier portrait frames. --encode consumes the unbounded directory, including tail frames from a previous longer export.
+Suggested fix: bind a cache manifest to entry/config/source hashes, fps, dimensions and requested range, and fail or use a new directory on mismatch. Encode only the manifest's selected sequence.
+Coverage gap: no frame cache/resume/encode tests exist. The new --root/--entry support increases the practical chance of two different entries sharing this inherited cache.
+
+P2 — Clip export reports success even when ffmpeg fails
+File: shared-animation-library/base/render.mjs:157-168
+The clip branch waits for close without inspecting its exit code, then prints wrote <out>. Invalid/unreadable audio, an encoder failure, or a bad output target can therefore be reported as success. Spawn errors have no controlled handler; a child that exits before the frame-writing loop reaches ff.on('close') can also leave completion waiting or surface an unhelpful EPIPE.
+Suggested fix: install error/close completion handling at spawn time, reject nonzero exit, stop feeding on failure and print success only after zero exit.
+Coverage gap: no child-process failure test. This is inherited canonical renderer behavior but is still present in the shared driver.
+
+P2 — Dimension defaults differ between core and canvas/viewport
+File: shared-animation-library/base/src/core.js:4; base/studio.html:30-31; base/examples/landscape/studio.html:27-28; base/render.mjs:51-53
+core.js defaults missing/zero PROJECT.width and height via ||, while HTML directly assigns raw values to canvas width/height and the driver rejects missing values. A config copied from the canonical upstream (duration/bpm/offset only) yields a core 1080x1920 surface and a zero-sized output canvas on direct page use; driver execution fails early. Negative/noninteger/nonfinite values are not consistently validated either: viewport positivity accepts Infinity/fractions, core and HTML apply different coercions.
+Suggested fix: normalize and validate one immutable config before any sizing, core declaration, adapter installation or driver use; use the normalized values everywhere. Either require dimensions or support shared defaults consistently.
+Coverage gap: tests/verify.mjs:65-73 exercises only two valid supplied configs; the W/H test recreates an expression instead of executing actual setup/sizing together.
+
+DOCUMENTED LIMITATIONS / REMAINING CHECKS (not new findings)
+- Portrait entry has no scenes and runs timeline.js placeholder at x=960; it also exposes landscape-authored views/emotions loops. README.md:24 explicitly records this unfinished layout work. Upstream views coordinates span x=240..1680 and hats x=82..1839, so a portrait loop cannot show all columns. Do not present these as a validated portrait demo.
+- base/studio.html:48-49 dynamically imports ES modules over file://, and core.js:281-283 blocks ready on that promise. render.mjs:82 supplies --allow-file-access-from-files, but ordinary manual file opening does not. Module loading and readiness under the actual host remain an explicit browser check; file path existence and a direct Node import do not establish browser module loading.
+- R02 EXTRA_FONTS and overlayHook additions are preserved; classic script order is intact in both entries. Landscape example uses its own 1920x1080 config and original scene load. Its omission of the dispatcher means it demonstrates the original painted base rather than validating integration of derived particle overlays.
+- Tests verify authored syntax, import path existence and recording-context behavior. They do not execute real p5 setup/redraw/composite, fonts, browser canvas dimensions, Chrome viewport enforcement or encoding. These boundaries are accurately stated in IMPLEMENTATION_REPORT.md:18.

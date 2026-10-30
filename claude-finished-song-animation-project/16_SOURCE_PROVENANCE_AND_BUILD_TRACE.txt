@@ -1,0 +1,30 @@
+SOURCE PROVENANCE AND BUILD TRACE — EVERY SONG
+
+Purpose: make each production's source decisions, copied/adapted mechanisms, agent-skill use and scene callers reviewable from the local song folder. This is production evidence, not renderer code and not a requirement to use every repository.
+
+CANONICAL RECORD
+Before storyboarding, copy `repository-preparation/templates/SONG_RESOURCE_PROVENANCE_TEMPLATE.md` to `productions/<song>/research/REPOSITORY_REVIEW.md`. Fill its song-specific needs, all R01–R16 ranked rows, actual read paths and disposition. Update the same record as selected mechanisms reach source code and scenes. Do not create competing source-review reports. Link it from the plan, technical report and song checkpoint. This supplements the repository navigation steps in `13_REPOSITORY_NAVIGATION_AND_USE.txt`.
+
+R01–R16 CODE SOURCE
+The all-repository pass is a breadth-first suitability scan: define scene needs, then inspect the current catalog/atlas and rank all 16 local entries. Read exact files in the active checkout and record their paths, commit and actual depth. Deep-read only plausible candidates, including necessary imports, dependencies and license/asset boundaries. A no-fit result is valid. Installed packages, preparation records, checkout presence or a skill's claims do not prove source inspection or use.
+
+AGENT SKILLS — R14–R16
+Check the project-local skill paths for the current agent: `.claude/skills/` for Claude Code and `.agents/skills/` for Codex. Consult only a skill that addresses a real song need. Open its `SKILL.md`, `KIT_INTEGRATION.md`, `PROVENANCE.md`, and only supporting files that actually matter. Log exact paths and whether they were available, opened or consulted; discovery/automatic availability is not proof of reading. Use `ANIMATION_AGENT_SKILL_INSTALL_MANIFEST.json` for the installed copy's upstream commit, source path, hashes and license. Record the actual song decision it informed. If it informed code, trace through the specific source mechanism to a song-local helper and scene caller. If not used, say why without forcing a fit. The R14–R16 skill copies do not install runtime packages; the shared Remotion runtime separately includes GSAP through `@remotion/gsap` and `gsap`. For deterministic scene choreography, use the documented adapter rather than the GSAP skills' ordinary wall-clock examples.
+
+FROM SOURCE TO BUILT SCENE
+For every selected or materially influential technique, record:
+
+1. Song need and the scene/shot it serves.
+2. Source identity: repository ID and URL, pinned commit, exact path and symbol; or exact skill name and local `SKILL.md`/support path.
+3. What was read and the behavior observed; relevant import/dependency and license/asset closure.
+4. Classification: copied, modified, re-authored from an idea, or guidance-only. Keep original song artwork distinguishable from sample design.
+5. Destination helper/scene file and concrete call site. If there is no call site yet, mark it proposed, not integrated.
+6. Focused verification and its limit: source check, plan, browser draw, rendered candidate, reviewed frames or user acceptance are separate states.
+
+For directly copied or materially modified code, leave a concise source notice beside the song-local helper or link an adjacent notice; include the license and required attribution. Do not add source notices that imply original code came from a repository. Preserve original pinned checkouts unchanged.
+
+SEPARATE PROVENANCE TRACKS
+The repository review is for code and guidance sources. Keep R12/Skillry prompt discovery separate. Keep Moving Image Archive, Commons and Internet Archive/Prelinger media in their own item/clip manifests, with source identity, terms, local file/hash, clip range and scene call site. Font and other asset terms also need their own source evidence. A repository catalog license does not grant rights to linked creator media.
+
+BUILD HANDOFF
+At each meaningful production stage, update the repository review and checkpoint with its current status and links. The final handoff identifies what was available, inspected, selected, adapted, called by scenes, technically checked and visually reviewed. Do not merge those states. A song can build successfully with no repository mechanism selected when original song-specific code is the better fit. An all-R01–R16 review proves breadth of consideration, not that every resource was read, integrated or useful.

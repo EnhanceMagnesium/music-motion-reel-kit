@@ -1,0 +1,67 @@
+# HEADLESS PLAYWRIGHT FRAME REVIEW — REMOTION SONG CANDIDATES
+
+This guide defines the project's Playwright role. Remotion remains the composition renderer and video encoder. Playwright is the separate headless browser check for an already-rendered MP4 candidate. FFmpeg makes the contact sheet from the browser-captured sample PNGs. Claude Code's local Browser pane (“Browse with Claude”) is an optional additional preview for Claude Desktop sessions only; it is not part of the Codex workflow and does not replace Playwright or its saved evidence. None of these tools decides whether the design is good or whether the user accepts it.
+
+## Companion preview in Claude Code Desktop
+
+When Claude is working in a local Code Desktop session, open the rendered MP4 in its Browser pane by clicking the video path in the conversation. Use the pane to inspect the candidate visually and navigate to specific questions. Anthropic documents local video-file preview and Browser-pane interaction in its [Claude Code Desktop guide](https://code.claude.com/docs/en/desktop#preview-your-app). This app feature is not the project's Playwright script, and its internal screenshots are not a substitute for the saved sample PNGs, JSON report, command output or FFmpeg contact sheet below. If the Browser pane is unavailable in the active session, preserve the boundary and use the dedicated Playwright route when its local requirements are available; do not claim a preview occurred.
+
+The Browser pane's visual inspection does not establish that Claude heard the audio or checked synchronization. Keep normal-speed full playback with sound and a listener's sync review as a separate evidence item. Do not infer motion quality from still captures alone.
+
+## Separation of jobs
+
+- `node shared-animation-library/render.mjs --root=productions/<song> --plan` validates the no-media production/export plan. It does not launch Chrome.
+- `--stills=<times>` and `--render` use the installed Remotion renderer and the configured local Chrome/Chromium to execute the composition. `--stills` creates pre-export scene stills; `--render` writes the encoded candidate.
+- `shared-animation-library/quality-review/playwright-video-review.mjs` opens an already-rendered MP4 in headless Chrome, seeks to a deliberate risk-based timestamp list, captures the browser-decoded video frames, and records browser diagnostics and video metadata.
+- The local Claude Code Browser pane can provide an interactive visual preview of the MP4; it is a separate companion to this automated check and does not replace the saved Playwright evidence.
+- FFmpeg creates a compact contact sheet from those captured PNGs. Inspect the original PNGs as well when small type, line detail or crop needs a closer look.
+
+For flicker and single-frame dropout review, this sparse capture list is not sufficient by itself. Use the shared `temporal-stability-scan.mjs` on the complete encoded candidate, then inspect any flagged timestamp with adjacent decoded frames. The exact method, limitations and controlled `--workers=1` comparison are in `18_TEMPORAL_STABILITY_AND_WORD_TIMING.txt`.
+- A browser decode, successful screenshot, correct dimensions, or contact sheet is technical evidence only. It does not establish scene behavior between samples, motion quality, creative acceptance, audio/video synchronization, or listening review.
+
+The helper is deliberately outside `remotion-runtime`; Playwright does not become the composition engine, change the project's scene API, render the video, or add Playwright to each song's dependency set. It does not alter the candidate video or audio; it reads the candidate and writes new review evidence under that song's folder.
+
+## One-time local setup
+
+The dedicated helper package is `shared-animation-library/quality-review/`. Its exact dependency and lockfile are isolated from the Remotion production runtime. In the original active kit, install from the checked-in lockfile if the helper is absent:
+
+```sh
+npm ci --prefix shared-animation-library/quality-review
+```
+
+The helper uses the machine's existing Chrome executable, which is also the renderer's browser. Do not run `playwright install` for this workflow; the Playwright-managed browser download is intentionally omitted. If Chrome is not present or has moved, pass `--chrome=/absolute/path/to/Chrome`. A new OS/Chrome/Playwright combination needs a small headless smoke check before its result is treated as established. The helper opens a fresh automation profile and binds its temporary media server only to `127.0.0.1`.
+
+## Run after an authorized full render
+
+First complete the no-media plan and the project’s pre-render still review. Once the full candidate has been rendered under the conversation's authorization, select a small sample that answers actual review questions: opening and ending, at least one frame in each distinct scene/state and text treatment, archival-clip portions, and frames tied to any known correction. Include boundary-adjacent frames only where a risky transition needs them. Do not use uniform half-second sampling.
+
+From the kit root, run:
+
+```sh
+node shared-animation-library/quality-review/playwright-video-review.mjs \
+  --root=productions/<song> \
+  --video=out/<candidate>.mp4 \
+  --times=0,4.2,12.5,28.0,67.0 \
+  --out=review/playwright-round-01
+```
+
+Replace the example sample times with this song's chosen risk-based times and use a new output directory for each run. The helper refuses to overwrite the candidate or an existing evidence directory. It writes:
+
+- `frame-001.png`, etc.: browser-decoded frames at the requested times;
+- `contact-sheet.png`: an FFmpeg tile of those frames;
+- `browser-review.json`: candidate SHA-256, project dimensions/fps/duration, expected frame-count duration, Chrome path/version, browser-reported video metadata, requested/current sample times, image inventory, diagnostics, contact-sheet command/status, and known limits.
+
+The command fails on candidate decode errors, dimension mismatch, unexpected page/console/request failures, or failed FFmpeg contact-sheet creation. Expected request cancellation during a seek is recorded separately. Preserve stdout, stderr and exit status alongside the JSON when creating the song's review note. Do not rerun a passing check unless the candidate bytes, browser, or check code changed.
+
+## Review interpretation
+
+Inspect the contact sheet first for missing/black frames, visibly discontinuous captions, wrong crop, and frame-to-frame discontinuities. Then inspect the original PNGs at full resolution and at phone size. Record timestamp/frame and scene ID for each finding. A visually plausible contact sheet is not a substitute for inspecting higher-risk originals.
+
+The helper mutes the HTML video element and never listens to the song. It may show the candidate's dimensions and browser-reported video duration; it does not measure the encoded audio stream or prove endpoint alignment. Perform the separately authorized complete-candidate playback at normal speed with sound, and record the audio/video alignment check separately. Do not infer motion, easing, transitions or pacing from the sampled PNGs. Do not claim visual acceptance unless a person actually reviewed the images/video, and reserve final creative acceptance for the user.
+
+If Chrome cannot decode the codec, the browser check is blocked; record that result. Do not change the Remotion render path or download another browser automatically. Inspect the failure and choose the smallest authorized environment adjustment.
+
+
+PLAYWRIGHT BROWSER COMPATIBILITY NOTE
+This kit uses isolated `playwright-core` with the existing system Chrome/Chromium to avoid a second browser download. Playwright’s [official BrowserType documentation](https://playwright.dev/docs/api/class-browsertype) says it works best with its bundled Chromium, gives no guarantee for another browser version and advises extreme caution with `executablePath`. Stock Chrome may be appropriate when proprietary media codecs are required, but compatibility must be established by the actual candidate test. A basic Chrome launch/page smoke is not proof of MP4 codec decode, seeking, frame capture or FFmpeg contact-sheet success. Record the actual browser/version and candidate-review result; do not install a browser or update versions just to suppress this limitation without a demonstrated need.
+

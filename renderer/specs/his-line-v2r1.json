@@ -1,0 +1,156 @@
+{
+ "name": "his-line-v2r1",
+ "width": 1080,
+ "height": 1920,
+ "fps": 24,
+ "duration": 36,
+ "audio": "../../productions/his-line/audio/His_Line_master.m4a",
+ "audioStart": 0,
+ "cues": "../../productions/his-line/cues_v2.json",
+ "sceneScripts": [
+  "../scenes/his-line-v2r1/00_core.js",
+  "../scenes/his-line-v2r1/01_lib.js",
+  "../scenes/his-line-v2r1/02_cues.js",
+  "../scenes/his-line-v2r1/03_print.js",
+  "../scenes/his-line-v2r1/04_type.js",
+  "../scenes/his-line-v2r1/05_cam.js",
+  "../scenes/his-line-v2r1/06_trans.js",
+  "../scenes/his-line-v2r1/07_text.js",
+  "../scenes/his-line-v2r1/08_hits.js",
+  "../scenes/his-line-v2r1/09_fx.js",
+  "../scenes/his-line-v2r1/shots/shots_a.js",
+  "../scenes/his-line-v2r1/shots/shots_b.js",
+  "../scenes/his-line-v2r1/shots/shots_c.js",
+  "../scenes/his-line-v2r1/entry.js"
+ ],
+ "fonts": [
+  {
+   "family": "HL Display",
+   "url": "../assets/fonts/DejaVuSansCondensed-Bold.ttf",
+   "descriptors": {
+    "weight": "700"
+   }
+  },
+  {
+   "family": "HL Label",
+   "url": "../assets/fonts/DejaVuSansMono.ttf",
+   "descriptors": {
+    "weight": "400"
+   }
+  }
+ ],
+ "assets": [
+  "../assets/fonts/DejaVuSansCondensed-Bold.ttf",
+  "../assets/fonts/DejaVuSansMono.ttf"
+ ],
+ "scenes": [
+  {
+   "start": 0,
+   "end": 3.33333,
+   "type": "hl-s01",
+   "id": "s01 hook: bead strikes the line, ticks and density bands, paper edge enters"
+  },
+  {
+   "start": 3.33333,
+   "end": 6.25,
+   "type": "hl-s02",
+   "id": "s02 a pen draws the deed; label, rule, lift",
+   "flashOnCut": 0.08
+  },
+  {
+   "start": 6.25,
+   "end": 9.875,
+   "type": "hl-s03",
+   "id": "s03 deed enters the wall; twelve courses, plaque, three planes",
+   "flashOnCut": 0.08
+  },
+  {
+   "start": 9.875,
+   "end": 12.04166,
+   "type": "hl-s04",
+   "id": "s04 cropped giant words thin with the low band; hold; bead anticipates",
+   "transitionIn": {
+    "type": "wipe",
+    "col": "#e7dfcc",
+    "dur": 0.25
+   }
+  },
+  {
+   "start": 12.04166,
+   "end": 14.58333,
+   "type": "hl-s05",
+   "id": "s05 ground flip and completed hairline on frame 289; edges build the deed",
+   "flashOnCut": 0.12
+  },
+  {
+   "start": 14.58333,
+   "end": 16.75,
+   "type": "hl-s06",
+   "id": "s06 curved double impressions settle into register",
+   "flashOnCut": 0.06
+  },
+  {
+   "start": 16.75,
+   "end": 19.66666,
+   "type": "hl-s07",
+   "id": "s07 reading: wet loose ink becomes dry registered print",
+   "transitionIn": {
+    "type": "push",
+    "dy": -1,
+    "dur": 0.2
+   }
+  },
+  {
+   "start": 19.66666,
+   "end": 22.91666,
+   "type": "hl-s08",
+   "id": "s08 translucent sheet over the ember; the dry edge advances",
+   "transitionIn": {
+    "type": "flip",
+    "dur": 0.28
+   }
+  },
+  {
+   "start": 22.91666,
+   "end": 25.41666,
+   "type": "hl-s09",
+   "id": "s09 the room answers: joints and radiating outlines",
+   "transitionIn": {
+    "type": "slats",
+    "n": 10,
+    "dur": 0.4
+   }
+  },
+  {
+   "start": 25.41666,
+   "end": 28.29166,
+   "type": "hl-s10",
+   "id": "s10 room planes: wall, floor, deed unrolls",
+   "flashOnCut": 0.06
+  },
+  {
+   "start": 28.29166,
+   "end": 31.20833,
+   "type": "hl-s11",
+   "id": "s11 strip to the line; registration drift; the ember arcs",
+   "transitionIn": {
+    "type": "wipe",
+    "col": "#e7dfcc",
+    "dur": 0.3
+   }
+  },
+  {
+   "start": 31.20833,
+   "end": 36,
+   "type": "hl-s12",
+   "id": "s12 ember becomes seal; contact on frame 790; stamp, snap, sparks, closure",
+   "transitionIn": {
+    "type": "iris",
+    "cx": 700,
+    "cy": 560,
+    "col": "#e7dfcc",
+    "dur": 0.35
+   }
+  }
+ ]
+}

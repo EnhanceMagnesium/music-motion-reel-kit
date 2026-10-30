@@ -1,0 +1,68 @@
+# TEMPORAL STABILITY AND WORD-LEVEL LYRIC TIMING
+
+Use this guide with `07_QUALITY_REVIEW_AND_ACCEPTANCE.txt`. It gives Claude and Codex a repeatable way to find frame-to-frame flicker/dropouts and to prepare accurate word-level lyric cues when the song’s creative treatment calls for them. It does not authorize a render or audio-analysis stage by itself.
+
+## Recommended order when both problems appear
+
+1. Stabilize the rendered picture first. A one-frame disappearance or a rapidly changing texture can make later lyric-reveal judgments unreliable. Diagnose it on the encoded candidate, correct the source or render condition, and confirm the correction on a fresh candidate.
+2. Then refine word-level lyric timing and highlight behavior. Keep the supplied lyric text authoritative; use machine alignment as an estimate and verify against the recording by listening whenever that capability is available.
+
+The order is a debugging sequence, not a rule that every song needs word-by-word captions. Line or phrase captions remain appropriate when they better serve the song. When the user explicitly asks for word-level timing, carry it through the authorized production.
+
+## A. Prevent and diagnose temporal artifacts
+
+### Before the first full candidate
+
+- Evaluate every frame from explicit frame/time inputs. Seed procedural geometry and texture deliberately; do not let `Math.random`, wall-clock time, animation history or frame visitation order decide a rendered frame.
+- Keep procedural texture seeds stable across adjacent frames unless visible texture animation is an intentional, song-specific effect. Rapidly reseeded turbulence, drawn texture or grain can read as flashing rather than material detail. If texture moves, choose a deliberate cadence and review the rendered sequence at normal speed.
+- Treat SVG filters, nested filtered groups, filter bounds, CSS transforms, external footage and parallel rendering as separate mechanisms. A source-level still can look correct while a full export has a one-frame defect.
+
+### After each authorized full candidate
+
+Run the shared low-resolution scan on the complete encoded candidate, especially when it uses SVG filters, animated texture, nested effects, frame-dependent overlays or a previous candidate showed flicker/dropouts:
+
+```sh
+node shared-animation-library/quality-review/temporal-stability-scan.mjs \
+  --video=productions/<song>/out/<candidate>.mp4 \
+  --out=productions/<song>/review/temporal-stability-candidate-01.json
+```
+
+The helper uses the existing local `ffprobe` and `ffmpeg`. It decodes the video to small grayscale frames, reports frames that differ sharply from both neighbors, and records per-second adjacent-frame luma-change summaries. It writes JSON only; it does not create stills, a contact sheet, or a new video. Choose a new output name for each run; it refuses to overwrite evidence.
+
+Interpret its report as a locator, not a verdict:
+
+- A flagged frame can be an intentional flash, cut, impact or single-frame action. Inspect the exact frame and its immediate neighbors from the encoded candidate.
+- An unflagged scan does not rule out multi-frame shimmer, periodic texture flicker, judder, a moving edge or a defect that disappears at the downscaled grayscale size. Use contiguous frame inspection and normal-speed playback for those questions.
+- The per-second luma values have no universal pass threshold. Compare like-for-like regions, frame sizes, frame rates and candidate versions; do not claim “flicker-free” from a number alone.
+- Playwright’s sparse risk frames and a contact sheet do not replace adjacent-frame review. Add a short contiguous sequence around the suspected time, using the candidate’s actual frame rate, and inspect the original frames.
+
+For every confirmed issue, record candidate hash/path, timestamp and frame index, scene/effect, exact evidence, render options, likely cause versus confirmed cause, correction and verification. Isolate causes with controlled comparisons: hold song code/config/assets constant, vary one render setting at a time, save to distinct outputs and compare the same frames. If a defect appears only in multi-worker renders, make a same-source comparison with `--workers=1`; use a one-worker workaround only for the affected production after evidence supports it. Do not change the shared default worker count or blame Remotion, GSAP, SVG or scene code from one correlation.
+
+After a correction, rescan the whole candidate when the symptom could occur anywhere in the song; compare the same range and parameters and review the flagged area in motion. Record render-time cost if the render mode changes. A successful scan checks this detector’s specific patterns only; it does not establish motion quality, browser playback performance, synchronization or creative acceptance.
+
+## B. Derive word-level lyric cues responsibly
+
+### Decide the display treatment
+
+- Keep text from the approved supplied lyrics or brief. ASR output is an alignment aid, not permission to rewrite the lyric.
+- Choose line, phrase or word display from the song and storyboard. Use word-by-word reveal/highlighting only when it supports this song or the user requests it; do not turn every lyric into karaoke by default.
+- Keep word starts, word ends, phrase starts and scene cuts distinct. A word timestamp does not automatically require a scene cut. Move a cut to a phrase start only when the musical/narrative transition supports it.
+
+### Build and check the timing map
+
+1. Identify the exact master by path/hash and measure its audio-stream duration. Preserve the master unchanged. Check embedded lyric/subtitle tracks, but mark their times provisional until compared with the recording.
+2. If a local aligner is already available, use a forced aligner or token-level DTW method on the matching recording and the approved lyric text. Record model/tool/version, settings, input identity and whether it aligned a supplied transcript or generated its own transcript. Do not install a new model or service as an assumed step.
+3. Map tokens onto the approved text in order. Resolve repeated lines with surrounding context; list unmatched, merged, split or interpolated words. Do not silently assign precise-looking timestamps to a poor match. Keep estimated, interpolated and listened/confirmed timings explicitly labeled.
+4. Cross-check phrase starts against another relevant signal when useful. A vocal-band mid/side rise can support a centered vocal entrance in some mixes, but stereo processing, accompaniment and voice placement can invalidate that assumption. RMS/onset energy is not proof of a sung word or lyric identity.
+5. Validate the cue map: exact lyric spelling, token order, unique IDs, monotonic times, plausible word durations, cue bounds inside the full recording, repeated-phrase assignment, and the scene’s actual cue-reading contract. Preserve source-analysis files and write the chosen production cues separately.
+6. Review word entrances/highlights at the selected frame rate and listen to the full candidate with sound when possible. Sample around phrase starts, fast words, repeated words, sustained vowels, instrumental gaps and final lyric holds. A still can confirm the visible word state at one frame; only listening to the candidate can substantiate sung-word alignment.
+
+If the session cannot listen, report word timing as estimated even when two computational checks agree. Leave the user a clear playback handoff; do not claim verified lyric/audio sync.
+
+## Case evidence and limits
+
+In one measured 24 fps, 4,273-frame candidate, the saved scan flagged 49 isolated-frame candidates in an early render, then 4, 6 and 4 in successive revisions. A later render with the same scene code and configuration but `--workers=1` flagged 0. A two-second static title-region comparison changed from mean adjacent-frame luma difference 1.205 to 0.308 and then 0.005. These anonymized measurements illustrate how a controlled render comparison can help isolate a cause; they are not universal thresholds or evidence that one worker is needed for other songs.
+
+In that timing study, heuristic word timing placed one verse about four seconds early. whisper.cpp DTW token starts plus a vocal-band mid/side cross-check better supported phrase starts, but word times and interpolations remained estimates without listening confirmation. Use this as a method example, not as a default lyric style or guaranteed alignment accuracy.
+
+The underlying scan, frame-comparison and cue-timing evidence remains with its originating production. This reusable guide contains no song-specific paths, lyrics, artwork or creative decisions.

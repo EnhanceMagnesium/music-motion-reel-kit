@@ -1,0 +1,654 @@
+REPOSITORY SOURCE PATH COMBINATION AUDIT
+Prepared 2026-10-07. Scope: the thirteen complete pinned repository checkouts.
+
+Compared 6312 tracked code/page/shader files by exact filename. 38 filenames occur in more than one repository.
+Evidence: source paths from the complete pinned-tree inventory; SHA-256 freshly computed from current local originals. Matching names are candidates, not compatibility verification.
+Original repositories remain unchanged. No combined runtime, code changes, media or Claude Code run was created.
+
+FIRST PRIORITY — EXACT SHARED R01/R02 FILES
+These are confirmed identical current contents; one canonical copy can serve a derived library with both provenance records. Keep immutable checkouts intact.
+
+repository-downloads/JohnHeibel/ClaudeAnimationBase/.gitignore
+repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/.gitignore
+Status: exact duplicate; SHA-256 cdb3767f6dfc37d7a5e34ccf184aa258a4a749f31ad6aa9af19538359a5a8ad0
+
+repository-downloads/JohnHeibel/ClaudeAnimationBase/ANIMATION_GUIDE.md
+repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/ANIMATION_GUIDE.md
+Status: exact duplicate; SHA-256 f638e1fb3876f587e39ec11a20e2df3aac91421c926d82c2743768642caab990
+
+repository-downloads/JohnHeibel/ClaudeAnimationBase/LICENSE
+repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/LICENSE
+Status: exact duplicate; SHA-256 7d25ae95b305b884c08ce898e53b58d2e180ff0119e5d203d8b4ae30420f3b33
+
+repository-downloads/JohnHeibel/ClaudeAnimationBase/README.md
+repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/README.md
+Status: exact duplicate; SHA-256 c383c6bf64add0bdd38c0244616faa4adf859e1aae93cb93223a8de822924801
+
+repository-downloads/JohnHeibel/ClaudeAnimationBase/docs/emotions.jpg
+repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/docs/emotions.jpg
+Status: exact duplicate; SHA-256 66a0337d8a9db6735b5fc2e5495bd1b8c9a3868d11d83d6b24add6cbfe32001d
+
+repository-downloads/JohnHeibel/ClaudeAnimationBase/docs/views.jpg
+repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/docs/views.jpg
+Status: exact duplicate; SHA-256 c067a20d24aa1f81edbc99f8fb0ee1f57a3cfd81786f99bc4070b90b37559d9e
+
+repository-downloads/JohnHeibel/ClaudeAnimationBase/gpu_probe.mjs
+repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/gpu_probe.mjs
+Status: exact duplicate; SHA-256 62b370f9687383870c69ad8edb2646211c32460fe2e779a5b02ff33786b01e42
+
+repository-downloads/JohnHeibel/ClaudeAnimationBase/package-lock.json
+repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/package-lock.json
+Status: exact duplicate; SHA-256 4c79bac79ca749472c0b9f74cef1c6409ef7ab0513417c9ba4b94838731667d1
+
+repository-downloads/JohnHeibel/ClaudeAnimationBase/package.json
+repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/package.json
+Status: exact duplicate; SHA-256 c14fb0dd2641a316e54b90c4658ba10b6ce3b02b1921417e8128368dbcd005cb
+
+repository-downloads/JohnHeibel/ClaudeAnimationBase/render.mjs
+repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/render.mjs
+Status: exact duplicate; SHA-256 1151ad59ad0c7bbe59e4e273465689d81d41f896d6bafc8981b527d110b77fe6
+
+repository-downloads/JohnHeibel/ClaudeAnimationBase/src/clawd.js
+repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/clawd.js
+Status: exact duplicate; SHA-256 578fbd46d21cdcc92b14806f3cc8c7b1b9e9f7ea53ddda7b1c150afa9f3c512a
+
+repository-downloads/JohnHeibel/ClaudeAnimationBase/src/config.js
+repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/config.js
+Status: exact duplicate; SHA-256 6d9374c59bd90bede9d4761eea6136b772a5883c414a67b8a5673510b8c1d435
+
+repository-downloads/JohnHeibel/ClaudeAnimationBase/src/scenes/demo.js
+repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/scenes/demo.js
+Status: exact duplicate; SHA-256 c783bd05af05875e014afd215d1945b189121910e8cef3218a5a8c7aac1dc361
+
+repository-downloads/JohnHeibel/ClaudeAnimationBase/src/sheets.js
+repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/sheets.js
+Status: exact duplicate; SHA-256 cdd9320e0cb5e1e5bbfdeac221e21b69714b96e4a9b05e62cda4817b4d80010c
+
+repository-downloads/JohnHeibel/ClaudeAnimationBase/src/timeline.js
+repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/timeline.js
+Status: exact duplicate; SHA-256 93d455142bf642355cb77cce64ad1a8397996be4f23e121bd18d6fce52bc1503
+
+Confirmed identical R01/R02 files: 15 total: seven executable code files, six documentation/configuration/license files, and two reference images. Image duplication does not establish adaptation rights; retain their asset-specific terms.
+
+SECOND PRIORITY — RELATED IMPLEMENTATION PATHS
+Candidate math module:
+R03 repository-downloads/lemomo-ai/lemo-opuscar/core/lib.js
+R02 repository-downloads/tuzhechen2005/opus-video-skills/skills/kinetic-reel/template/reel/reel.js
+Observed code: clamp, lerp, seg, smoothstep-style easing and hash use matching constructions; function names and surrounding modules differ. Full adapter and behavior checks are required before replacing either implementation.
+Candidate drawing/exposure/effects integration:
+R06 repository-downloads/buildwithhanif/claude-animation-skill/plugins/claude-animation/skills/claude-animation/lib/core.mjs
+R06 repository-downloads/buildwithhanif/claude-animation-skill/plugins/claude-animation/skills/claude-animation/lib/film.mjs
+R03 repository-downloads/lemomo-ai/lemo-opuscar/core/three/post.js
+R07 repository-downloads/bizarro/evangelion/app/src/engine/post.ts
+Status: related purpose, distinct Node Canvas / browser Canvas / WebGL / Three implementations. Group through explicit interfaces; retain engine-specific modules until checked.
+
+EXACT FILENAME GROUPS — COMPLETE PATH LIST
+Same basename can identify a shared concern, a related implementation, or a generic entry point. Group index/main/worker files by their dependency graph rather than treating their names as interchangeable.
+
+analyze.py — repositories R03, R07
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/cel-anime-80s/demo/music/analyze.py | sha256=93ee196cef66899e95c63ef56cd11436e191f936db1fe126951d7246b6b51cde | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/watercolor/demo/music/analyze.py | sha256=6205ca3a3d2701229014c52a9c9c3af2bb30559c950a6b7346564199819a8ecc | exact-content-group-count=1 | role=adaptable-code-and-style
+R07 | repository-downloads/bizarro/evangelion/analysis/analyze.py | sha256=15b40d6c73cd365a266c6814a52cfb7d689aaf4a8c584afee96c89328434d5d7 | exact-content-group-count=1 | role=adaptable-architecture-reference
+
+build.mjs — repositories R04, R11
+R04 | repository-downloads/heygen-com/hyperframes/packages/aws-lambda/build.mjs | sha256=47d5dedf4aca33d776d1d2531e222b016814882b06fbe140e004152e7111d05b | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/gcp-cloud-run/build.mjs | sha256=0f430efe799da072a0d4ef97dc10c1f5ca351ddf436813a4393f0d19b0feffd1 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/build.mjs | sha256=3b3b15d043a715bc3552a4b18f1508fda78d699f251faa26fcb34e6030a39568 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/registry/blocks/frost-sequence-camera-orbit/source/build.mjs | sha256=11f0b001e0da643a935db51f2df546e9e97773efbe108e37b0c5b63ef91df49c | exact-content-group-count=1 | role=timing-and-composition-reference
+R11 | repository-downloads/guanmo-ai/awesome-ai-motion/scripts/build.mjs | sha256=497c8964bf687a0d4db856d5356420828ec128718bdfea63bd013d6cddb68e13 | exact-content-group-count=1 | role=catalog-reference
+
+cast.js — repositories R03, R08
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/rubber-hose/demo/cast.js | sha256=f74a8a035971d781d41484117c86e13e122d389bf4b2b81dc76ab240adf6ba3f | exact-content-group-count=1 | role=adaptable-code-and-style
+R08 | repository-downloads/JohnHeibel/PDoomVideo/src/cast.js | sha256=b3bd792e151a1672c1ecb145d688d5dc377d7c10deee884280e7b794a00864b4 | exact-content-group-count=1 | role=read-only-architecture-study
+
+clawd.js — repositories R01, R02, R03, R08
+R01 | repository-downloads/JohnHeibel/ClaudeAnimationBase/src/clawd.js | sha256=578fbd46d21cdcc92b14806f3cc8c7b1b9e9f7ea53ddda7b1c150afa9f3c512a | exact-content-group-count=2 | role=adaptable-code
+R02 | repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/clawd.js | sha256=578fbd46d21cdcc92b14806f3cc8c7b1b9e9f7ea53ddda7b1c150afa9f3c512a | exact-content-group-count=2 | role=adaptable-code
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/living-screencast/demo/clawd.js | sha256=d3770de982269dce21803a00aea9b081a302021dcc8f32ae749d5eaf8370084a | exact-content-group-count=1 | role=adaptable-code-and-style
+R08 | repository-downloads/JohnHeibel/PDoomVideo/src/clawd.js | sha256=addc4c4bd4196efe6110a7c044b438cd0809eedf42752e29da2e939beeaaef8f | exact-content-group-count=1 | role=read-only-architecture-study
+
+common.ts — repositories R04, R07
+R04 | repository-downloads/heygen-com/hyperframes/packages/shader-transitions/src/shaders/common.ts | sha256=6ce641c3b00f35fa625f59252e6f588834c08f5eb6016c938d51721a3ee05692 | exact-content-group-count=1 | role=timing-and-composition-reference
+R07 | repository-downloads/bizarro/evangelion/app/src/engine/glsl/common.ts | sha256=dd0ff7a168644e232bcebc5c176996b00ccba951f1950743fbfa4ff3d23241cb | exact-content-group-count=1 | role=adaptable-architecture-reference
+
+config.js — repositories R01, R02
+R01 | repository-downloads/JohnHeibel/ClaudeAnimationBase/src/config.js | sha256=6d9374c59bd90bede9d4761eea6136b772a5883c414a67b8a5673510b8c1d435 | exact-content-group-count=2 | role=adaptable-code
+R02 | repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/config.js | sha256=6d9374c59bd90bede9d4761eea6136b772a5883c414a67b8a5673510b8c1d435 | exact-content-group-count=2 | role=adaptable-code
+
+core.js — repositories R01, R02, R05, R08
+R01 | repository-downloads/JohnHeibel/ClaudeAnimationBase/src/core.js | sha256=7d8942e917c35089a6db94610367c12e849fe51cbd56ab8e73489046852b0ae2 | exact-content-group-count=1 | role=adaptable-code
+R02 | repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/core.js | sha256=6367b03a09bb0650ad4161a6e0668ddaf64178ddf33bb57b8fe25536e7234c5b | exact-content-group-count=1 | role=adaptable-code
+R05 | repository-downloads/makevoid/motion-graphics-music-video-skill/.claude/skills/motion-graphics-music-video/scripts/tools/p5/lib/core.js | sha256=c8b0ae8dce0f02a054d3f441dbdd48ae35bf0e78d9339a232983795f3b4315f4 | exact-content-group-count=1 | role=planning-and-source-reference
+R08 | repository-downloads/JohnHeibel/PDoomVideo/src/core.js | sha256=f2dc54c6e098abb03305b79c1282cc30fcf593f181a549d0898815e1d4dda103 | exact-content-group-count=1 | role=read-only-architecture-study
+
+demo.js — repositories R01, R02
+R01 | repository-downloads/JohnHeibel/ClaudeAnimationBase/src/scenes/demo.js | sha256=c783bd05af05875e014afd215d1945b189121910e8cef3218a5a8c7aac1dc361 | exact-content-group-count=2 | role=adaptable-code
+R02 | repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/scenes/demo.js | sha256=c783bd05af05875e014afd215d1945b189121910e8cef3218a5a8c7aac1dc361 | exact-content-group-count=2 | role=adaptable-code
+
+events.js — repositories R03, R10
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/rubber-hose/demo/events.js | sha256=97215d9694c5ca6621445cdf00e41c79f0e3bfe1057ca3f8075ce1d6d1b0c030 | exact-content-group-count=1 | role=adaptable-code-and-style
+R10 | repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/web/events.js | sha256=69ebbc5737910cc283400d5e41a3833b2e6c2f35cd1727c5a8300bcf0cc85e7c | exact-content-group-count=1 | role=read-only-cinematic-study
+
+export.mjs — repositories R03, R10
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/dark-keynote/demo/tools/export.mjs | sha256=e06622b6ed77140b8fe9b2704418a6806e73920ec03dd1219f95f9e21ccfe889 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/hologram-hud/demo/tools/export.mjs | sha256=66f566cbddbe40ae8499e2d79b0b0257facc12883c498e6b7053c1696c4ce11f | exact-content-group-count=1 | role=adaptable-code-and-style
+R10 | repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/tools/export.mjs | sha256=562a48f909cbab9dffa4299f8029b160580b659da43d7fd8e67cc41e76ac677c | exact-content-group-count=1 | role=read-only-cinematic-study
+
+film.js — repositories R03, R10
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/art-deco/demo/film.js | sha256=3f2b16a0d4487ff135d07e1eb88efa732f1ae7fbe61b6b2aae93f213c6575966 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/blueprint/demo/film.js | sha256=d97a48bb1a3994cee0f43d3251ea85e6bd765b1c60a0865cfc10c8bc784179f8 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/crayon-book/demo/film.js | sha256=b55b779ced63fe5c866759bde9b4517b1e5dea979f497c88cabb06d858809770 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/dark-keynote/demo/film.js | sha256=d1eeacc879f1f728bc4d3569a92a8856601326cf8805a8d4447e04f65d0166bc | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/dataviz/demo/film.js | sha256=f8867fdbb6e4eb0344696194e36d063682111183043f16a74e0244c73da2608e | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/engraving/demo/film.js | sha256=2584571f559ff168001d0e647bab568182964db7c1b6fdae98d03fc397841002 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/hologram-hud/demo/film.js | sha256=884107c911fe2ac9675414f260fdb46da9bb3f5d8f2f21a02aaa5a1e4d34c58a | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/impasto/demo/film.js | sha256=622f7b960df7cc3d88ee191f932654a4cfeeb69d3b36031624a4d066a4a8c1ae | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/iso-infographic/demo/film.js | sha256=7104ea60548f7db397483d20d99b9c1db718451ed854f06846759216ae474008 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/living-screencast/demo/film.js | sha256=df58e834cc7b1aa420640826a438858f0e8643294773cbbfee8b8cd85335b77d | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/microgame/demo/film.js | sha256=ccbf9ca46743ac7b466a22c775a77b84bbfcdec0442f5b7974db64bf551a465e | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/midcentury-toon/demo/film.js | sha256=e2f17ee6dcd79440e3ba11e9e8d44f0121493d425359ccfb09b589362e276971 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/risograph/demo/film.js | sha256=a2f2dccdda62906cb23015d163027c6c889b95b92610a4930a61bbea44d75bca | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/rubber-hose/demo/film.js | sha256=95bc2c5749f011bbd44d5932882b7656ca7c63544dfe44e1be2fb12687b6d61f | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/silent-film/demo/engine/film.js | sha256=3a995abf9630df961497937bd38f239d14b938a5bcdb80eb1199f60a176ee3a1 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/silent-film/demo/film.js | sha256=9f20a81075d7b91c33fc44911049eb08a6e95325ad2bdb655fd5dff2028b470c | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/silkscreen-poster/demo/film.js | sha256=6d431fcf25c91ed9d3b7878ccd538fd4253a03258ae76a97ce237cf586144a35 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/spy-titles/demo/film.js | sha256=4cec6c6b77daf7617171bec712c3ad699073f492c155cf43b9743c8e2d7f3e98 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/swiss-motion/demo/film.js | sha256=69da97cb7f8e7d8856a282af85daf0b6f1c825d02e8fe4e369bdac55efb0d4be | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/urban-sketch/demo/film.js | sha256=5c0d59b2ebad8bcf3f3cf3859204581c89e3d1bfbcf46fb09900e315989aeb0e | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/whiteboard/demo/film.js | sha256=7bddcbd94a689f63f65e69277dd048c9d0345a1c51455abb7ab265490863d08e | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/woodcut/demo/film.js | sha256=86cd62a830ad3f1c7cb0001388e7874dddcb6693a21ab605c70d6731c3b26025 | exact-content-group-count=1 | role=adaptable-code-and-style
+R10 | repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/web/film.js | sha256=fca5a1c0998529c1e0fc02565b19e6b0e9edfd3825e459fafc13a6d0392ca6e0 | exact-content-group-count=1 | role=read-only-cinematic-study
+
+fonts.css — repositories R03, R04
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/core/fonts/fonts.css | sha256=99eb8024569ac263e7e0f27ffd2c54dcf8f877ebeec4873ae59a3eb0fe4dacb0 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/art-deco/demo/fonts/fonts.css | sha256=3b03da525e50c9171b97fe12c51c81d6035063aa8ce135b84913d0e57b70a56d | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/ascii-crt/demo/fonts/fonts.css | sha256=f6b16ab086784cfff2872ab689afdd4cf6b4174e602ef5ac08ca42d857f7f30e | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/backrooms/demo/fonts/fonts.css | sha256=5cdedae4ef5108318c214d741dcfbec89125da93db7a82a51cc975b185864e27 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/blueprint/demo/fonts/fonts.css | sha256=ea7079bdc69ef0b17c62b59663f0085e9a864421a3b8d7e7baee07120547f117 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/cel-anime-80s/demo/fonts/fonts.css | sha256=f998be76a90f8933d1a0de6885b8172743a84c0e8030e8c6563e5a43b98015e9 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/crayon-book/demo/fonts/fonts.css | sha256=72614b5a1b43862e2d688fd9601c9f438906c8a4e32c0818bce2b61119978a3f | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/dark-keynote/demo/fonts/fonts.css | sha256=19ba918990a38086dd0528f4e9ecbef903bd94fd7dddc44f6fe8a1dc5769bd3f | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/dataviz/demo/fonts/fonts.css | sha256=f5aeea1b2e36f6ca818adef3768ef3243835969f6e02064d42a6d33291e64785 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/engraving/demo/fonts/fonts.css | sha256=069583a9ccbfc267cc74298d4077af8a882c5ef6f87c1b15524032e71d1660b8 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/game-show/demo/fonts.css | sha256=1dbd9b01545b652a531fee065bd1130dbea748e48475a2283706079e2f1ca3ae | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/glass-product/demo/fonts/fonts.css | sha256=135f6b421204a907623cef9bdb7296b4c4adf791d875e90b216eb4a8cd0df000 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/halftone-dossier/demo/fonts.css | sha256=55f278bfcb7614d894c9c1ea1746205e96ba45f7b7e9e8e00544cf08e1f64ab5 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/hd-2d/demo/fonts/fonts.css | sha256=784773317570cd487293c3a373fa09a7cb41c5a2bcd5234178ee0e084708d965 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/hologram-hud/demo/fonts/fonts.css | sha256=11ebafc045d659f5a56e56873d78efd9c9e2501fc2b9e6abe734d4efd5643e43 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/impasto/demo/fonts/fonts.css | sha256=039b06646099605ab034f67e5c256f2dfe0f0d24dd91271249a101a9f4241e1f | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/ink-wash/demo/fonts/fonts.css | sha256=b1678ef5cf035e211444e7604b9af417f74e2901691c0bbb98d7ccf0dd9d6df6 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/lowpoly-island/demo/fonts/fonts.css | sha256=56c8e50c7a9011badb6e0788a19c82b762b9169046ae8c50126ccce12f8de789 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/microgame/demo/fonts/fonts.css | sha256=b4b24cb63b09171557a77483304f61046cf614e0ca1d84b8fb3aaa423e8c6315 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/midcentury-toon/demo/fonts/fonts.css | sha256=d45eb37574c02ff89b8d88b4218095273518fd978bcf9e171bad89981d24a8bb | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-popup/demo/fonts.css | sha256=d0e4245bea69dcfa0421e2f4b4db6d05e2800211c17b1e0bd963b0dfa65ad222 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/papercut-red/demo/fonts/fonts.css | sha256=c7e59923db62c5ae6fd5df9582f69b1fb775885736c0615079de59cdbf21c942 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/risograph/demo/fonts/fonts.css | sha256=87f4799b4e877d1f9c0b40ced9bd213747f286bea43bb74265c749ecc7b4e8e6 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/rubber-hose/demo/fonts/fonts.css | sha256=5ce6ffcbc98a28a1bc96ddd6f6579189bb2f0372639d37438a44ba18a896aaa6 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/scifi-toon/demo/fonts/fonts.css | sha256=b6a121ec3612dbc26685d0980f8da40c74640b8a189cfffc72cc7537be9908f8 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/shadow-puppet/demo/fonts/fonts.css | sha256=dd655e9959a90fc6abfb042c8567aa334f6da5967b85eb0505fe0e9ee1d4c84f | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/silent-film/demo/fonts/fonts.css | sha256=f24d8c3026890d68e3d6fc2a32136498d720577fe920487064ca032c51a68746 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/silkscreen-poster/demo/fonts/fonts.css | sha256=23421826bf0219e80c65e508dcac5958f7a21276d4bfcc72ddbbab72491202e0 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/spy-titles/demo/fonts/fonts.css | sha256=9bd04e9e2c3732b7aadb9c87fcae236893003cadf9978d0d3a371b73736a5706 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/stained-glass/demo/fonts/fonts.css | sha256=acac76ba38c218aac3dd28b60db9677064cc67c43e9ae45a5d9c94ff0debc8f3 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/swiss-motion/demo/fonts/fonts.css | sha256=3f7ddd60b84a15301dcd52b57e72765539354962afbb807584c82bd5fc4f614c | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/tilt-shift/demo/fonts/fonts.css | sha256=4e766d2de694e68d163c854e4e7fa19a5f9b61f6cbc027aafcc58c0a2aaee3fc | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/ukiyoe/demo/fonts/fonts.css | sha256=811fd30736291b2822690721315e4feccccee184664f7e48974e7fd389e1ac2c | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/watercolor/demo/fonts.css | sha256=c56b619330c460a2c339a244925ee58fd11a53c83e88dbc5de696b0ab933943a | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/woodcut/demo/fonts/fonts.css | sha256=776820ec7bdb90d0bf8b15a9ff59bd54f0db38428a2f4fccc4741fb62d8df9ae | exact-content-group-count=1 | role=adaptable-code-and-style
+R04 | repository-downloads/heygen-com/hyperframes/skills/embedded-captions/modes/standard/fonts/fonts.css | sha256=648d60c022ffb730c31a1091a4bee807f863e4979033fb8cb3ea1fdc9cb26277 | exact-content-group-count=1 | role=timing-and-composition-reference
+
+fx.js — repositories R03, R05, R10
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/cel-anime-80s/demo/fx.js | sha256=4adeaa969426290d70030b31ad6bcf47606d738ea417985b5952ebb7b813ccc5 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/hd-2d/demo/fx.js | sha256=b64d201c4201f806e948b2562472bffb2b7ac5ce898eba8d371541fc7bd9e7a7 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/woodcut/demo/fx.js | sha256=85097955c303babb24ee9ae5f256c543bc2eb89dc6cd51d5edf0aab34524e7ed | exact-content-group-count=1 | role=adaptable-code-and-style
+R05 | repository-downloads/makevoid/motion-graphics-music-video-skill/.claude/skills/motion-graphics-music-video/scripts/tools/p5/lib/fx.js | sha256=e884d8f811b8aa2509f22fe61964896d6b4d5a856511f4a91662fdbfe0ad203d | exact-content-group-count=1 | role=planning-and-source-reference
+R10 | repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/web/engine/fx.js | sha256=c5e303650d34aba02acc1c5701157245257eecea840547193bfa792c7fb698da | exact-content-group-count=1 | role=read-only-cinematic-study
+
+gl.js — repositories R03, R10
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/crayon-book/demo/gl.js | sha256=4ae0f6e2f72dad3554b856b59441d441683328e9711f83b4162c534758f95b0d | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/shadow-puppet/demo/gl.js | sha256=e2ef60ce02e2eae389c3a8613980d67c2e4f786e9567d9dceb62eb97e4b5c6fa | exact-content-group-count=1 | role=adaptable-code-and-style
+R10 | repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/web/engine/gl.js | sha256=ce5e1b17999f508b53259ffc20675bb3299afad8b0e3578b3d527b338f7ed6c3 | exact-content-group-count=1 | role=read-only-cinematic-study
+
+gpu_probe.mjs — repositories R01, R02
+R01 | repository-downloads/JohnHeibel/ClaudeAnimationBase/gpu_probe.mjs | sha256=62b370f9687383870c69ad8edb2646211c32460fe2e779a5b02ff33786b01e42 | exact-content-group-count=2 | role=adaptable-code
+R02 | repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/gpu_probe.mjs | sha256=62b370f9687383870c69ad8edb2646211c32460fe2e779a5b02ff33786b01e42 | exact-content-group-count=2 | role=adaptable-code
+
+index.html — repositories R02, R03, R04, R07, R10, R11
+R02 | repository-downloads/tuzhechen2005/opus-video-skills/skills/kinetic-reel/examples/site-intro/index.html | sha256=90a866b5d40f3e38528b7630694bc984683d3dc446b9983c372a6e7f195a5c1d | exact-content-group-count=1 | role=adaptable-code
+R02 | repository-downloads/tuzhechen2005/opus-video-skills/skills/kinetic-reel/template/reel/index.html | sha256=1df2971d7105719745f4ec32ab240a2586d8eeb462df19cdeff313c53ba86a69 | exact-content-group-count=1 | role=adaptable-code
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styleboard/index.html | sha256=57d04a03cd7d0572671652b3b89652faa82e7cb83dbe594f66be3935f68dd47e | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styleboard/opuscar98/index.html | sha256=7490e929a36f76d3a9a8fffe82d6bb0e7bcce7b6530fe5aff5e9070d2ffe683a | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/art-deco/demo/index.html | sha256=4bcec8f994190d3522f759c3a17f2fd3ae4be4a0d57bb52b4702af19de240c86 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/ascii-crt/demo/index.html | sha256=28d1398c8a44632461443505aa04f8afc98883ade0fb3ba64a8bb86088a25728 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/backrooms/demo/index.html | sha256=f0376cc4624fbd2543f318e1a6647e39848a8f97a4cb4545c5057675e088463f | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/blueprint/demo/index.html | sha256=363656cc02058402df3a02546fd24fd07437985fad3c53f8d9a7efa325577d1e | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/brick-toy/demo/index.html | sha256=9df380bab200e67fbe143019109a54ac3513b937d9ff65d6bc784ff959e235e2 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/cel-anime-80s/demo/index.html | sha256=35164a97857fa0c27482e20bffc2638118d8cd668c5201dd4642c4e6957916e1 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/crayon-book/demo/index.html | sha256=7386fd82e2197ee5366b6eba5bca197226e810ec341137592ffb2d475e2c78b8 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/dark-keynote/demo/index.html | sha256=088956cbefc28f29ada5f95f08446ef54b622cf85b085e063b02ba29fbb3f462 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/dataviz/demo/index.html | sha256=fe206672f628e7de94bb7d19342562a1ee3bcc9d95254a518691f4ddc01ab944 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/engraving/demo/example/index.html | sha256=f72d01a27371a7053fd9075d553d1b87967ae4750f8c13c136502d5445630207 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/engraving/demo/index.html | sha256=1c36203f39f0da816325b321b3616c538b043b3abf9175840cdf7d37972dfff4 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/engraving/demo/tools/readcheck/index.html | sha256=421e6bf9f4e3a3e51c4e9b4eb936ed96adfea1b3a9b74b34f50f382f2ade0887 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/game-show/demo/index.html | sha256=71d234ec01ff435261e38d195a4cb8ecb6dc4b184d694f3ae244d108b3c827d2 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/glass-product/demo/index.html | sha256=51d694f1aedd7afd29b7613efc7800c03a7966771089c768493077b8d323b0d4 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/halftone-dossier/demo/index.html | sha256=756f873cfd70569c01650bff77e08702eeb56498b040ad98ec344e8f3f67609c | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/hd-2d/demo/index.html | sha256=c9af799e3438d219daed91483e68e4e0b444ee2a564da6d0155f89fbae016241 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/hd-2d/demo/tools/sheet/index.html | sha256=72806575d20780ec85a454b8e6ab3674c5d61fd4171fc78109c9e65df1c097f2 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/hologram-hud/demo/index.html | sha256=0245235547b1489691fe92a72f6876dded1cdeac0d68277182cdcd0616b9a9c9 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/impasto/demo/index.html | sha256=9c43f15703c8b20d30e3f8df9fba2d394bc85bee96bfc5717341010f0c00aecb | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/ink-wash/demo/index.html | sha256=cc09f28cff27a78c3b79715dd02ff04abf9b55e2583a813ccfdf26df2751d809 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/iso-infographic/demo/index.html | sha256=ec5d3523a7912ef5722c6db6592b3008927816a40c2927859ec6ac3ee930d614 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/living-screencast/demo/index.html | sha256=e7af335609a40bafd207de1f7b8a42ff8257991ad9f2defa8bc85e98c4ae830a | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/lowpoly-island/demo/index.html | sha256=5072303a6c1eae89bdc9cdc883c9d90e0c70f5e91650bdbfb527c07d9ed0052a | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/microgame/demo/index.html | sha256=941cd9389d9ece364b9d08f64eada50c9cdcd3e4070a5ebe8acf8b9768b87346 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/midcentury-toon/demo/index.html | sha256=d15af43907f637b48a987ac0058c798ebe53c6d827282d9602835c8d5596bc51 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/one-line/demo/index.html | sha256=b867ae97661d976cae248e919e6c569d4418cf6f0ffd6973a05e61f9692a41f0 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-lantern/demo/index.html | sha256=ec900f193b86d7dc6caa410855e92fc6ff060769ee47b19e834c8351a39d2a98 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-popup/demo/index.html | sha256=2c1c4b0cde269a2353162afbc8bbe3c3b92b1b1bda23fa2ddeb1cc15ae3a8762 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/papercut-red/demo/index.html | sha256=d3997587391cd3ba2078721031745830be2007c50590411241a6aba03b0e8191 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/pictogram-motion/demo/index.html | sha256=2d00d21e8222df0effb87ff4437da18eb57e6b9bad0d69c5063157fd89bbfac1 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/pixel-rpg/demo/index.html | sha256=e88a32b0b46e315fd4a883641c0071a157a3182ecd29230580397a06ada3a365 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/risograph/demo/index.html | sha256=26b2c841049a32aa533fb5cb6ad9585f72372bc05133c27204daa5aa612e0a0a | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/rubber-hose/demo/index.html | sha256=d1a16ca6e8665ef532f0c5a676f4aa483965d0479d1a7698484ac6f9549aecf3 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/scifi-toon/demo/index.html | sha256=c551af8b70b0606d51c5d7eb5679cc5d63bb98b5e9ba190b539ccd853a43f902 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/shadow-puppet/demo/index.html | sha256=8b05155d6863b0c6e8123d88543e5b7bdac0bb0a16d6a422a86ce148ec8fe1a8 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/silent-film/demo/index.html | sha256=74b820539f8915f86fe64d4f55da417cb5801ef981d1a3e01e50fc44ff19f165 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/silkscreen-poster/demo/index.html | sha256=d131838a8876df5c11fa7f0e02e0ef527caefffa04aca8e1161b585957d364fb | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/spy-titles/demo/index.html | sha256=2bb14cfe7a7b6739cd6e6320efb09714ba2284783ca00beb99c61914e0a8f29c | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/stained-glass/demo/index.html | sha256=2d9fd1151d96370017fe2544e8d9e702f2ec32676a2eb2df3a54908a44a48502 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/swiss-motion/demo/index.html | sha256=ad41b5fbbb455619aa254be566f25b84d27f5a98f5c438a8d54a933952e5ed59 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/tilt-shift/demo/index.html | sha256=e526b4784990c8598f6d30ada5e18679e93063708b74038f2f0f79ca3837f3e7 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/ukiyoe/demo/index.html | sha256=a4ff7863a07fd5a6370112155b97e4f984321f3dd705174d383c39b5e8f4539d | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/urban-sketch/demo/index.html | sha256=8048371fca42e704bf1ac8765c049f1a653e3bd946166107119ab73789e655a1 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/watercolor/demo/index.html | sha256=1f208ed0304b9b9359a432a87b80d3a7b6734b1a3e633d4b0c2de48dbd0328c5 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/whiteboard/demo/index.html | sha256=f62391ea1ed557200231d6dfdf0d38bbb319b13c900b2523d9ff5e5e49e8a092 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/woodcut/demo/index.html | sha256=dd168bbd5cec7ca6df23ccfe45c147bf049fd8f86757b438c161e12e7187a6a9 | exact-content-group-count=1 | role=adaptable-code-and-style
+R04 | repository-downloads/heygen-com/hyperframes/packages/cli/src/templates/blank/index.html | sha256=1b8a7122c4208d02b152b6767bef6cac78f54e86f04895f00326e0e94cbfda17 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/cli/src/templates/from-file/index.html | sha256=f6c3e100ec8a664c1f8bdd35edfffab3f456fc42ff8543c4d93e53f6b6f8559a | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/player/tests/perf/fixtures/10-video-grid/index.html | sha256=6c52ab72a2e4bd3864c20ae1845d4ae1cbc2aef120e274aa08ea4bd9c34137c6 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/player/tests/perf/fixtures/gsap-heavy/index.html | sha256=f7b4152d167f2f7a12d1be3b00104c82b3b278d161de190769a227fb0307b71b | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/player/tests/perf/fixtures/sandbox-probe/index.html | sha256=b82bbeef7437d0ae6e7b12a1a3fb2eb9793cf9c99e0459f6b772c0caeb25ebcb | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/fixtures/plan-parity-size-pressure/index.html | sha256=8b494ac16c8e2426cd3341f3432acb9fea32032773b9c39f1b58d3313779e649 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/fixtures/plan-parity-visual-audio/index.html | sha256=a122515197129330c0bec1bdd511775c94f370afe70161c4ffc72c8ff7a16f9d | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/animejs-adapter/src/index.html | sha256=59714c1611848504620a1be1dae86abcf61f1024ab84f43852e2fd5d77a69157 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/audio-mux-parity/src/index.html | sha256=b3bf683e1427c3e7cdabc23484552bd4fa56b6c6570da5f3e23ddd4ba4c55d06 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/chat/src/index.html | sha256=e5c49db1014fa5c8f8619132bc03a2fd11debd25f76e92a84d82b85500cd94b7 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/chrome-screenshot-bottom-edge/src/index.html | sha256=ef10e8cac1674e9b6a251931fc89e26916b8af3507e2e58e38f66b68071a1805 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/css-import-scoping/src/index.html | sha256=4f26497c3251e57be64f09bfff00a3e57e66935e7948d11e9560c313918a9f2b | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/css-spinner-render-compat/src/index.html | sha256=389a5455ab0e1651d99ce56477d6a5e73a690a37ecfe5e981c18c8bf8b46f32e | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/d3-adapter/src/index.html | sha256=d3029796b175aaa326afe24fd46de261522de4031b69d1c900dd540ee6f2fb33 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/distributed/anime-boundary/src/index.html | sha256=2e15ad62c4bed27f22f7c3f5258c8c398f3c11666d87db1fe60f9c9f30a3f5fc | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/distributed/css-boundary/src/index.html | sha256=87637cb777eb2c20b4c832cdef47573d768d236a091657169a93898e40d14b0e | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/distributed/css-var-fonts/src/index.html | sha256=945f679b89365d761c89ad30d9dc3293c2c96051190c568182778fa8a43678eb | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/distributed/gsap-boundary/src/index.html | sha256=7abd21fe40639e0d851d619c85f949819822afe586e8814215634a5391fae4e9 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/distributed/lottie-boundary/src/index.html | sha256=801f4b4467c7ca7300b2baad5cf86b17ae3de20e1f226a3505ae7a885565568d | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/distributed/mov-prores/src/index.html | sha256=d008ea02649ecaf65fb9052a547b8c55495e7dafd48463421676dff2a909b109 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/distributed/mp4-h264-sdr/src/index.html | sha256=e2da4c99b565a77cc050ae9cc5081380b3fac8b6a7945ca2b8721442522e435a | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/distributed/mp4-h265-sdr/src/index.html | sha256=8f87cd1516a5d80634a325bbaa899a1a6204981f8b9ae995f63de111815733bf | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/distributed/plan-v2-partial-color/src/index.html | sha256=7930696aa4b79b02012ed64ac96e4ea9029335f1ffd845f73f4765285a4d64ca | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/distributed/png-sequence/src/index.html | sha256=558e6004fa7155410ddeded37eda46dd6c725d9a5da641c00d55977af123dfec | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/distributed/static-volume-future-set/src/index.html | sha256=2ad054ca43045b621ac453aafbaf7df2bd8e8e0b20cc845b3b6d1b9f6ff0df2a | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/distributed/three-boundary-deferred/src/index.html | sha256=14ba6e0464b1b8ee787b3d9954e77e9b6344e8ea15b9ca74844fae6bbad3a6d8 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/distributed/three-boundary/src/index.html | sha256=30699138d566a37da5c8d3008d5c980a0362c9e0b0138d68b1fd3a72cde2997c | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/distributed/waapi-boundary/src/index.html | sha256=2eea98f40ef8839cc0e712f01a24295407b9d11ad7106234f5529dfa79aa0233 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/distributed/webm-vp9/src/index.html | sha256=64b678c8d24eaf600af51be1e2ace89ad3d176075b624157866e4689bed8b2fa | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/dogs-captions/src/index.html | sha256=1050205042519c0f2aa7c5f4b19d0d1f9745d0fb7de58f9880114e8ebfe3e1b5 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/escape-hatch-fatal-fallback/src/index.html | sha256=694d6f3ceab7fa966084326794c51c8928471a86e009f165044a17a513c09489 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/fast-capture-3d/src/index.html | sha256=a0db6a666dd25811fb5c49de7e24c43fc556fd74384e6edb4255d36ff1f63d7e | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/fast-capture-gsap/src/index.html | sha256=62cb0eda2ba18a2cc480cb1a194bca4d6e26e879bdfbcb35c303c05a8077f58d | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/font-variant-numeric/src/index.html | sha256=558150904049fffd9751bb417ef80a491f32bb4658e540ca64dab7316fb55a1a | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/google-maps-adapter/src/index.html | sha256=942ef9e063fa8b5d6cff25843ff3a7b5c875f5d1145170825c3a7517bbb9a403 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/gsap-call-render-seek/src/index.html | sha256=ac48bce6c7d8df224343f8ce975739a5e3c4c2ba44e7f43bd004f7b944c65325 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/gsap-letters-render-compat/src/index.html | sha256=ff26c94cd8972f92e2d280a8bdb06c4baab4c2ca3876140f75bda9b5d5db79fe | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/hdr-hlg-regression/src/index.html | sha256=412fb356cb80bab21706839e948e8a43cec5ae36cd70aedc9cd4d984718aaa07 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/hdr-regression/src/index.html | sha256=d8c080dc60316b8932ce0509ae0c32c0aed9e1cd78c76137d95f2eb81f2e25ac | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/heygen-promo-preview-assets/src/index.html | sha256=0c26fb0db32b394aa2604871408c1703915fbb2ee7254147857823e1017ad8c3 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/hf2550-video-subcomposition-ghost/src/index.html | sha256=df2daf89b0fe9646669bebf269b5fc60ff0bc4923df07d0683c5f68ba730ebcf | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/iframe-render-compat/src/index.html | sha256=3f3bf843e791376368bdcea720471ec82a92bbf670bc752972e74809c79c29d1 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/leaflet-adapter/src/index.html | sha256=f9ceff05ee5aa0e05f71e9a02e5cdf2bd2725d54151bf1ff8274d49a8cbabcdf | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/many-cuts/src/index.html | sha256=ac1e7f5e3ebaccadfa22b90cf90659f225ce66032c328bfc6032570c1fb0fdd5 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/mapbox-adapter/src/index.html | sha256=d7f5593a1cb63e765869635285b9bb68efe6f1cf15482f04cdedc772162eac3d | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/maplibre-adapter/src/index.html | sha256=c46948edc14033dc6ab81e6cdd8a7ba4b683c993d81cac129647ef0f9c5e29ee | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/missing-host-comp-id/src/index.html | sha256=897b18e0a0d6f9d80d4bdcb3194bf0cfb58a61c91e144e185786cfe0d4a8c74a | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/nested-sequential-video-local-start/src/index.html | sha256=91d0303d451b37fc2c521bcbdc3272d800effbd38918a0c8f81194b882b646bb | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/nested-subcomp-depth-3/src/index.html | sha256=f5d6893bdd13a007cadb3135fc44bd5c6fe667891b5b77a9476ac7b5b8cdbc12 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/overlay-montage-prod/src/index.html | sha256=5db12878f877779a4f4ae2c4b6454cc613020e940f8c65d77d07b2454eee30f7 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/page-side-shader-compositor-render-compat/src/index.html | sha256=00e30afc3e6208f79571174cc11beebcd854134f79827506720c11c337e0b48d | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/parallel-capture-regression/src/index.html | sha256=9edf65db6e26d0642de915b66d26444de2cab7381ac586a5d760f5ca8314ae0c | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/pip-video-late-host/src/index.html | sha256=fc572fd7281149ccc24ada0f75f449338f500310312d6fbc4ecef289f42e01bc | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/portrait-edge-bleed/src/index.html | sha256=10793e0ed2f021a3e30c5c3042c1bc967a52857b7f522ca633cb06fca78ef474 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/raf-ball-render-compat/src/index.html | sha256=ac6be41bf604b8f82bdf93466efe6e43ba2b29d74452372449aa33b0d1da05ab | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/render-symlinked-assets/src/index.html | sha256=f42ce2b2150bfa1d4b45a32775e8b2f177735995493b338990581aeb0195d5c2 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/render-video-overlay-stretch/src/index.html | sha256=516a1811d1f634cf2dab791bc81da17635646768605eee7f88293017eb1d17b5 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/software-beginframe-yoyo-compositor/src/index.html | sha256=ccd3befc8a92b4646245c6f0e28bf76a7b756e58f8efd25dcec1d19520e5a69d | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/spanish-empire-cdn-inline/src/index.html | sha256=d9e10a2e13e94d64f08677c450d5989468124621e70d472e8883aafecd3be99a | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/speed-ramp/src/index.html | sha256=c97334274e07a5236c0e407f499fd7050555e4546b68231ed44374cdeb8d0788 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/static-dedup-nested-visibility/src/index.html | sha256=b312ddcaf66a4b3c77480bd3b8dc8fb7518cefedfa72e9b8fb31b61335253e01 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/style-1-prod/src/index.html | sha256=13121aaeb7fb6e122a366108cb93637b75f5431e57d236c843dfe660befe06bc | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/style-10-prod/src/index.html | sha256=8335886b326260377d6cded9dfb66e109efd9f4dd14bcd53d644fde636f98fbf | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/style-11-prod/src/index.html | sha256=d4fe9ca11967f96bec52057520d8a26bc2dd5b47a14c61d830ac30ec1820ac0c | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/style-12-prod/src/index.html | sha256=9ff80f050aef040b28dc213079fda1ad77818bc2d19a2aafe78231c0557c6e18 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/style-13-prod/src/index.html | sha256=63dcc499dcdbbf32e2c3cad175e36160726107aa6ce326f3d023d6195e84403a | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/style-15-prod/src/index.html | sha256=3ef3368e33311d92de2c8a623cbd82f9f943ea450891712639129c8d723dc23f | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/style-16-prod/src/index.html | sha256=2a177fc23584c2547a6578d647b64da711f018e718c9680120c9b1eb0d3a6f1d | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/style-17-prod/src/index.html | sha256=8f631ec8c233ad3ada95858bf4b5b8af585e5f2dcc6c27de39939cf9cf7d2e01 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/style-18-prod/src/index.html | sha256=7a3f85f1693d908686886866eca14de46ca54954f617097f29d0405ef238490e | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/style-2-prod/src/index.html | sha256=84267a8d105bef9a06370f975d52c1146f753c927a0d11d9338a7462df9c6d4e | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/style-3-prod/src/index.html | sha256=ab411a3672a3355679bceb083f37282c7484719924c6523df4d0ac42f6d96076 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/style-4-prod/src/index.html | sha256=462a3ad1c07f433e55cba581dd7177680f94a42783a2ed58416ab4a89ec1ae5a | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/style-5-prod/src/index.html | sha256=202370af0eba9f0042adc64618037fc7e1012a94257f421476eb7cc2cbf51153 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/style-6-prod/src/index.html | sha256=fcec772ae45050fe49d03bf398abbb9888d7fb269d4095153d1f8aab5639f100 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/style-7-prod/src/index.html | sha256=283a79bd90be5907d30b79d0c2646b5d63c8da3853fd83d9e64d195e0d29fb79 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/style-8-prod/src/index.html | sha256=af89ff32719ddf97522884272c1c6c258fccd3f4fefe88a67b217bf280ca5d17 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/style-9-prod/src/index.html | sha256=690cd1eb16cba7afc0a4163c00f81fe1f7b1b805ba459f17b7a4f33a5029b253 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/sub-comp-class-selector/src/index.html | sha256=f1a39f50edcd6b0acc00d0b50be4787db9574110efd10802cccda3b387bf57c5 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/sub-comp-height-percent/src/index.html | sha256=1c39088f340fe44be0b04d9393c2b482667254bf0298e3ab3d6a69809557496e | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/sub-comp-id-selector/src/index.html | sha256=c81b363101ceff5704d9be6416bddb0c12c15a417410b82f36f090ba7a9c6eb5 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/sub-comp-t0/src/index.html | sha256=109d06e6b0de264be933b96c3a0c937370996270bb8dd33ea14af91434cdf56b | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/sub-composition-video/src/index.html | sha256=3fdbb83f03c999198d0ba1edbea2666ac9a20a40dd6815b0b00a837af4934fa0 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/subcomp-bare-fragment/src/index.html | sha256=f3a654b3e2cb7d303d0cd2cc43061ad782dbbe9070f273bf9ba52b84ba0e30d3 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/timed-descendant-visibility/src/index.html | sha256=4ab70beb3bbc80dbe4da214673f5de9f5fd1d480248b7f313c15e1eaf7f9770f | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/transparency-regression-root-bg/src/index.html | sha256=94b492d9c142efb5d5be5a7b40f011f4a5e93c99e7991259d9bb25eb581284aa | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/transparency-regression/src/index.html | sha256=a9055fabe23ff5e6e257e53418048bb19c451e1ce067193622bd13d88a3952ef | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/typegpu-adapter/src/index.html | sha256=4b749f5100206263ae4ab97aa87944580b59a4d8551d09090807162d3c2c054a | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/variables-prod/src/index.html | sha256=1d72b1b0fd7866c4750c3ce73dfe4cd51485df19d9bcbbc1f4e9eb211495dbf2 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/vfr-screen-recording/src/index.html | sha256=8bfc7603905f7bf6c60bffdd1ddc27fbb61e2da967d6d877fa8aa8f4e3c17932 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/video-hfid-no-id/src/index.html | sha256=a44d0f69b5ad349ec7c7258b8a6ea1ef8ff8dbce32277ae55d40aa954cf9d7ab | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/vignelli-stacking/src/index.html | sha256=29c26d20c3145f2429f201f1107780d8c7ffbe47076d1b5df10308acdf78b9e0 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/webgl-video-texture-render-compat/src/index.html | sha256=54a530763462617a9caf6dfc8ef3d92e01a16df1a1c695f64fdd5e6123d03a20 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/webm-transparency/src/index.html | sha256=444a17f56555d7451b9f5e41a71ef6aba98bc89f49e06e2fd3d084e1b24ce9de | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/wysiwyg-subcomp-css/src/index.html | sha256=5827b44f9becaa270bd6deae46fbbe2c528bce0093ae3caaaf8db4b13f39554b | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/sdk-playground/index.html | sha256=98ab1926d38b93bc9d540118bbc2077b78f613aeae11cf5dcf9caefcfece2f63 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/studio-server/src/history/__fixtures__/history-0.8.78/index.html | sha256=5b342709000bfc0340dca6033d65a3db160e63e6561235afb834b82227ea9ef6 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/studio/index.html | sha256=0f6125f9d4e55d40718875afde2403756b7aee34301ced018be092d3840df4e2 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/studio/tests/e2e/fixtures/composition-reliability/index.html | sha256=3620756d0f2c6f19c060a601251d48ee1bb10e88d2772e5d31a0de8d39e02fd1 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/studio/tests/e2e/fixtures/design-panel-qa/index.html | sha256=22efb839c14b0f6eccc06e72c71b1c21139cd563cad700bb66783f4ca52b81db | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/studio/tests/e2e/fixtures/fade-handles/index.html | sha256=b560b3fedccd907010e724c97365442b29a449af7d466fc8f5771540af603abe | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/studio/tests/e2e/fixtures/ghost-lane/index.html | sha256=845679354979c875e47f9ed4f137639a6c620536f7b1b5ecc99ddec89c0e8a68 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/studio/tests/e2e/fixtures/inline-text-caret/index.html | sha256=f7cf30254f5f88dcb3fcc19cca2f718648049c807bf844974f2cae4c58bb1823 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/studio/tests/e2e/fixtures/studio-open/index.html | sha256=33252f8954ae754f2d208eb68972a2792c069a75acfc5b71b76a2dc2a40d34bf | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/studio/tests/e2e/fixtures/timeline-trim-snap/index.html | sha256=a8521112fbc6769d07e801503bbc5292066718b5f3caafe66ad704d2c436509d | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/studio/tests/e2e/fixtures/timeline-virtualization/index.html | sha256=2fce0bc6b3c591e39a28456a7ab7c70d536478a0deffef6ea074705ae5237d35 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/studio/tests/e2e/fixtures/undo-socket-pool/index.html | sha256=3fd8eaeb2a5cf16c196e7ca2c5d5975bc8b51c7ee42377dabac9c56618f64895 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/studio/tests/e2e/fixtures/webmcp-edit-loop/index.html | sha256=bbbd4876c94c192fd2f4ff7bd02eac8a82197185c690c5a84e66573efe42825a | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/registry/examples/decision-tree/index.html | sha256=1fcbe4d6226d36937d75d2a03e88a9cc695df5293f44087f122c8c8f60dfde39 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/registry/examples/kinetic-type/index.html | sha256=634fc92957107d053453388bbd70ed7aa22f051dc7d7379bfe6205ab7fa7973a | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/registry/examples/nyt-graph/index.html | sha256=7dbef284e58bb2f0db8050eb1d088f4ed1462f857985bd9c5f0de0d41fb34e1d | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/registry/examples/play-mode/index.html | sha256=8e679a41ab1300b5ac7820466beea05bd72b86a5d434f7078a6e66fca004d096 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/registry/examples/product-promo/index.html | sha256=e66d18050fa0863f31a1da06ad8564aed7f09b3c7b9cd59e08ed56f3fecb024e | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/registry/examples/swiss-grid/index.html | sha256=2136a513da2cccf0bbd3e1f14857c3186cf065c77c508037cce37e3acc3484bf | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/registry/examples/vignelli/index.html | sha256=52b2441166b82290664d2d66a5301704b56a43b8588a2d5b1567f9353913cb9c | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/registry/examples/warm-grain/index.html | sha256=11ee960a4cf5d2fc57c4e37a902920eee959ba05b507dcefd74dca2318d56859 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/scripts/page-side-compositing-smoke/fixture/index.html | sha256=27b3304a049036adc4a6bbad69e94b8d68f858226ea7f7924ee40abeef177d67 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/3d-card-flip/index.html | sha256=abc3d1f5301f604cb4d1a4ef6e4e0c8dfc68c3eb99cc78b2fdbaa38e0b05c580 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/bg-flow-field/index.html | sha256=eacfe75db7a23ac56172b98e567bbe683755668649cfafd691d9f445e54bd5fb | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/binary-decrypt/index.html | sha256=becab5350bc4bb42a1c0b19ec6d4e9e3b3632c91a75f87a498e1751dbdd87d06 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/blur-resolve/index.html | sha256=30daceac4303d2fc0bfa304a87120064e66c3ec01ca0fac52378547920d2af70 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/braam-punch/index.html | sha256=1621119821ed74967739d18ce5878ff4a249cf597d7e756838447d96db859220 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/chromatic-split/index.html | sha256=583b5b3389383efaf2521084ab74c7d99609236250bcc23e6faac723bf310d8a | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/chrome-sweep/index.html | sha256=8bafd57f91bba0a3b1c65bbcf3940af9a71530023161717985127ed9a2762442 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/counting-punch/index.html | sha256=dc4ef758bcdb3e9fc93c895c2355b06ad065c96ea7abd5c4b41ba082a6f1f586 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/crash-zoom-in/index.html | sha256=ec4d17f551a14126346b40a86b9316a73f95e05eb94ab9b6de0bc9b439706d75 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/datamosh-smear/index.html | sha256=01e63786eb27d6f00e7401a7da68f9f882c061f6ad27ebf571b53f80726dc61a | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/directional-fill/index.html | sha256=a5d76de0ca8f5e10ba623ab6b1f3f552ee1c77d47e9fb5ae7f63a2a7c49f2a87 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/dolly-zoom/index.html | sha256=018ef572f08037a8426eacbe7603666db1b7f76ca90a5b21f0adbbe148518576 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/electric-arc/index.html | sha256=86d2b5bd9e09b876705189e8421659ea35c822a89f3dd096c6ca6aac700219f2 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/flash-cut/index.html | sha256=a1efcdf5cbe981dc1911e54cfa0cd75005f26d1b82de76a779dc23589ad3c395 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/gooey-metaball/index.html | sha256=726e707fd39e299977b1e0e9885a54baf1968768e403273be5b39ad3ff646d97 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/hard-cut/index.html | sha256=854a42f1047c4651a587b15b4982085c752f0b29340cdb43a3dd8046c6479210 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/hypercut-whip/index.html | sha256=6d93e0f7cbb48f9d1a53c61024b26b3c37aaa48bdc40545e1a09b4f5b0681b72 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/iris-open/index.html | sha256=6480efa9f7993c58c6c492bc74caa5dcaa53adb11020846128320a23fd705b3d | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/kinetic-letter-in/index.html | sha256=48696b14561eaaea122e9fdbc5b4c904e3ea96c1831828975a95604ae857f385 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/liquid-morph/index.html | sha256=57257c3e5ea8ff5e45f417822f85ce224e8627e95ee55fdf470710cf6b6eced6 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/mask-reveal/index.html | sha256=e00aad2347daf781c78d2861ea903d2cd6f3d7b431b5c6f61a7958386831bb0a | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/mosaic-pack/index.html | sha256=9aab860e4f6f3abd0dcd45798c21da646e08b6e1ae15e7d91df0fa68a38de9e2 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/neon-flicker/index.html | sha256=e5c43bfbf61b9c2802a63b9043015812654534a023eeea997288e1e51bb5c44b | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/outline-to-fill/index.html | sha256=549734bada344a8d163d031e39b81795643b6cdbf3f402c0510c355b3b1abee3 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/palette-flip/index.html | sha256=5370742f3fd2d50fcc461cb00cf976809aa4b73d54b40d577ecfe8851ed21f2f | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/particle-burst/index.html | sha256=cf4044f27cbfe305d0390bed761f5f7eb8f05d3cf7d2a7aded96715f71cedd58 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/pixel-dissolve/index.html | sha256=8bb6318cf4e7e7ee7b4ac262d83d4dd8375d3181b9ae8dcdb382d9e7cfdf36c9 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/radial-burst-lines/index.html | sha256=a21616299a5b9600a1f141bb199c5df0ca3b5f9899b41c4ed9a5053ea9689276 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/screen-shake/index.html | sha256=92614b15efd1b209582c89f66417041d62306d86035329eec511d01258c4ce00 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/slot-machine-reveal/index.html | sha256=fa47780f62fffe7e722720ca41810c7117fd8d60e47844a394295d4009987cb3 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/spotlight-sweep/index.html | sha256=6ecbe12c5605997f0da94228969c562a772a5d9a80da6629a8a108dfe5b1368e | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/staggered-exit/index.html | sha256=758c91f492d9d25f0dff01f5a88d583bc88011dab2f2028f3c21e2a89a636b03 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/text-spectral-rays/index.html | sha256=12065d5e2fb12b68d9a960f704b64f403f4d604c3ab3b9a4aaedb53f5eee83eb | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/text-wave-distort/index.html | sha256=a4f76521bfcdbac18c21d8358c26b7290d73371d69e511f8963e521da505b235 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/tile-mosaic/index.html | sha256=ab05488e2236867bc774232e658ee558849d503ca9d11ba8f8dea670db9b36e8 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/typewriter-reveal/index.html | sha256=db6dd81852148a92f31f7c316bcad298bba1f12f9334a4a074d908dcb2106a30 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/motion-primitives/word-grid-burst/index.html | sha256=86d62e4b092ebcc4b4449ee7c4bef47f3474e3b6e86fbea36d1d67e0aeedc5bc | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/templates/card-flyby/index.html | sha256=22ee2bdc2eca84c124356e7b7d3e8d73f2db65641d5cbf1c7667a14d2ec457a4 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/templates/held-message-living-field/index.html | sha256=6cb86b99a3734cf41baccce4914907866ea74746577d5f912f280d3f266e4ea5 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/templates/held-text-strobe-burst/index.html | sha256=aa11432608a2672b62da03b19758f297c4dc3cda98dc7c74ffa22aee30030490 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/templates/intro-kinetic-cascade/index.html | sha256=7a69edbfd3cae461f233c934430d66791c11cb8d00d2979d9e15ff842159ab23 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/templates/logo-split-lockup-pulse/index.html | sha256=ec2c97b761011d0fe044ba0983b7ce4ec9943c2997b153b9029de414b9664511 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/templates/poster-tile-mosaic/index.html | sha256=5d4d85c626f79bf443ad8d76ac98b1b106ffc99408128b767475ce91a5cac85f | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/templates/roll-flipbook-word-cycle/index.html | sha256=fecd97e92610cc30f38e563ea2152727de8f82fed810debf5df64284f273fb61 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/templates/split-anchor-word-slot/index.html | sha256=dbd8dba3ca08d9ea2a8eca7cd23b9f2c9da27a4b8c092271534e1377270f0b83 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/music-to-video/references/templates/typewriter-phrase-keyword-shuffle/index.html | sha256=4c794931d075ca2e525c6023e5856ed36b29097d1454f69a1eb8dfaf24c2e88d | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/remotion-to-hyperframes/assets/test-corpus/tier-1-title-card/hf-src/index.html | sha256=bda6a0df4d5abf1fb129f708c7b1f2e79e2f6bbfb304fc937e681215d0f8fa51 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/remotion-to-hyperframes/assets/test-corpus/tier-2-multi-scene/hf-src/index.html | sha256=8c1695814c80cd6fe6bdb9b8fbe68660997bc0743fff0bb1f7ef51d6660560e3 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/remotion-to-hyperframes/assets/test-corpus/tier-3-data-driven/hf-src/index.html | sha256=aaec12aabff46337f7bfff2ea5d6c13e488b40f95868b1bd6c0657a56dd81910 | exact-content-group-count=1 | role=timing-and-composition-reference
+R07 | repository-downloads/bizarro/evangelion/app/index.html | sha256=f3c193c0b60ae111733c5790bfdb5e92af6463c9c988b2a8679f17f77968a447 | exact-content-group-count=1 | role=adaptable-architecture-reference
+R10 | repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/web/index.html | sha256=e7fdf1a686ee4eb06248339a862c26538550c1769257709f068d6e284cee6404 | exact-content-group-count=1 | role=read-only-cinematic-study
+R11 | repository-downloads/guanmo-ai/awesome-ai-motion/index.html | sha256=5d2864f9a48562dae30ff6afb6041a4ec6703c61139fe4411fc1f6074ce724dc | exact-content-group-count=1 | role=catalog-reference
+
+main.js — repositories R03, R10
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/art-deco/demo/main.js | sha256=52c9985e1d81ac162ba818e80f80a24a30d3f32702ffb9c295ea393ae1229e70 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/ascii-crt/demo/main.js | sha256=19bee3c5cb6f2aefb45cc4b705682651b4bba1fe2a8c4ed92a36acac79285132 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/backrooms/demo/main.js | sha256=165565744f4d6552db8fe70026bdc02b9649011edfe7b2a46d97e1ee9bb0960b | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/blueprint/demo/main.js | sha256=1f7f93d599c741d972a228ed0075b0d381ccadd631c0ce646f8153371f84368c | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/brick-toy/demo/main.js | sha256=7801a2c0bd21dc8045f1e1ce36c6a8b4d620b2753dd5097832f223bf20fb9346 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/cel-anime-80s/demo/main.js | sha256=71dc5d0d1bdb32b9e231e1824abc94a904bff9cb8484c1877e9d7d6663b8c11e | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/crayon-book/demo/main.js | sha256=0b8485694db77c4f644ea05e100bc30a0954762d7932fe4065d1b7d8ca3ca408 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/dark-keynote/demo/main.js | sha256=b0ef008fffc1c67d8e5cbc8f2905ad0fc1068ae831f2735d70f338f0d03aed89 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/dataviz/demo/main.js | sha256=202394f113e84b32d17ab0a29e1b9209998b26b4cc0f7d36c9b5dd1cba5846d9 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/engraving/demo/main.js | sha256=a2cc920bd11147f4ce84f9ffb4105045518286f2d4747f3bad9a4cc9cf42914f | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/game-show/demo/main.js | sha256=aebe1e70933f4a54f27838af811ba2da95b7d57a93a0222af87754d3e4c7b463 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/glass-product/demo/main.js | sha256=18fcbf0dcaac18934c7aa1ae0861839013dbac1f4d4eaf5bb8e9b77e755d4ba0 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/hd-2d/demo/main.js | sha256=4ec631d0222d661866beb52091dd78295e746be7d0a00e08139c2deb4bfb2ed8 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/hologram-hud/demo/main.js | sha256=c647b930573685c30a882ed33c2b7ac5ff77b22089a1d1a1e59e28c75910dad5 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/impasto/demo/main.js | sha256=a02d67a8fba2d5a9ddb830f29eb0c0e6160c36db9553c03a5020550d8cda90c9 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/ink-wash/demo/main.js | sha256=28aa1ced678c3b67d41b367ce8e02bfc84568576a5d84f56e459721a5ef2da98 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/iso-infographic/demo/main.js | sha256=84dee292534d5441dce1c20477cacd749aa2e6f8e678a39c153a36da6eaaec10 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/living-screencast/demo/main.js | sha256=54e39c63367d672fc34f12e8052e2aaa27c26bf7b2d411063b677052e167b88e | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/lowpoly-island/demo/main.js | sha256=7aa38605d6a496f8c500b2f1f4c4f3581a3ed5102bb8fd341e7f0016a6dff2dd | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/microgame/demo/main.js | sha256=ce43f8394d99d990bf7c952b7ce13d96d09ffd94e8465159e2ec87d2d573590a | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/midcentury-toon/demo/main.js | sha256=9457590fc7d528d7c51c22dac4b681d6ac0694e0aab853f419ba375cb8051c29 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/one-line/demo/main.js | sha256=bf142e6373159606c7595c18edf8034e3aff9723b17812c305745f6e074809fe | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-lantern/demo/src/main.js | sha256=90187a0dabc7839440a75b02be9f145221b72e33596ac5162c835f85894d5c00 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-popup/demo/main.js | sha256=81f29a147abfa410e69594a59bb63cd5fe5942acd5a451bfb43ff26e9c1eae8f | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/papercut-red/demo/main.js | sha256=aadf901f13725dc9b79b707a2721457767c4fadf83f84999c5d6e2fb6de84955 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/pixel-rpg/demo/main.js | sha256=84a7336be43cc1cfa6866ad20b4a248389674608f96e686b97020aacd7c7e8cf | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/risograph/demo/main.js | sha256=c55b67974573c87d4c564935b49bbf1c55de3f06cf9cc7653c0b89c6e5c83817 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/rubber-hose/demo/main.js | sha256=aa4b86bcb64ed2199053410944eace18eeaf5e42ef605194967e30229d362834 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/scifi-toon/demo/main.js | sha256=0db6cc9b18bd15fe785b8568b63aa419939aed048714e19a0bed20bae38b0e1c | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/shadow-puppet/demo/main.js | sha256=fb2028f85ae11164550453254fe3c2e507ea2d4f2b3497c211a75bd4b08ce51b | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/silent-film/demo/main.js | sha256=9de8eb40757dc3e90e0b31c937463db9919ceb53d17a71876d9509c421d45092 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/silkscreen-poster/demo/main.js | sha256=00190bd1bb8e890488efc5fdc3e51997cc8f4e955ce6e3d62858b28211724126 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/spy-titles/demo/main.js | sha256=6e0937d6f1fc1846d97354532c27b3269e994c2fbefe100a07702822e5a0b206 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/stained-glass/demo/main.js | sha256=92286ebdbf9364163a32ab12fc849f9c4aad0ec90813e79f3d5c941ff6455d14 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/swiss-motion/demo/main.js | sha256=fb7ad0b24ac2744ac98d2ff94e92467d2a7dfcc6910113808e08dba0de2b4adc | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/tilt-shift/demo/main.js | sha256=0d12708fc8f0fb3bc0f6d3ffa09a404eb789fdfc86b60984d66aa2848637bfb7 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/ukiyoe/demo/main.js | sha256=8957bce848e381ba0e03ce80f5d2ce608d72b829e9e63e0de93a1b105caa006e | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/urban-sketch/demo/main.js | sha256=87830128edd54fa10ccec8794653eda9a987177cb54e760a554c6064fca63151 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/watercolor/demo/main.js | sha256=51c6e2666188a3ca2b8b0b916e7598959681d8265263a20e5dc68d34bef5432e | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/whiteboard/demo/main.js | sha256=c1784ce55beffdf2c8bf94e08ab66bd35fe0087015e8097ebda24374afb0b2eb | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/woodcut/demo/main.js | sha256=6805a243b844f39fb7168a7b23354e3ab363ad67f987ed0203a982fdde482d3e | exact-content-group-count=1 | role=adaptable-code-and-style
+R10 | repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/web/main.js | sha256=f27e25593e89efe59f59522a8a5994acc2e3e508f6d7aa0a73807fa9380aee93 | exact-content-group-count=1 | role=read-only-cinematic-study
+
+main.ts — repositories R04, R07
+R04 | repository-downloads/heygen-com/hyperframes/packages/sdk-playground/src/main.ts | sha256=33c9567ece3ef99f8044eee4ee6bb69a3268325c006bccffb93a41ebf39d007d | exact-content-group-count=1 | role=timing-and-composition-reference
+R07 | repository-downloads/bizarro/evangelion/app/src/main.ts | sha256=428737b8cc48ac0b0ffda9cceea1b1eb0af708e3cac66b63ab1c714df70d8502 | exact-content-group-count=1 | role=adaptable-architecture-reference
+
+mix.py — repositories R03, R10
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/art-deco/demo/mix.py | sha256=f91f7f9d84df7ae5e373d2259bde3437388e675c658cda8ed07b01c025611e08 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/ascii-crt/demo/mix.py | sha256=dea9145f748f0232df3b12e137db54acd66c3d3fa1217e8fd492d002d3c7426c | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/backrooms/demo/mix.py | sha256=64381359d848430eed88a5425cd9f2ffadf95cf275d719ec827f77b92d5a607f | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/blueprint/demo/mix.py | sha256=0054766b9bfc27959f8e0c9a984da25bb4b6bc1d617e893f66fdab48b0bad7d5 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/brick-toy/demo/mix.py | sha256=ddc3c9e47daa62b70538c04536f3e6cef7b02b60d2c18d18f2b587f10f1ce157 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/cel-anime-80s/demo/mix.py | sha256=abc27fa36aa5afdda9eb419e069be7208bed397a1a021392657b68e62bc9c285 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/crayon-book/demo/mix.py | sha256=2d62c42e608928afcb8d8a0500ea53afc8a34e468c7c90a8d759358a28b35e87 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/dark-keynote/demo/mix.py | sha256=89a22630de6cd6af4fd88b0df29ccd99222552137b5eb35a77718409ca015f2c | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/dataviz/demo/mix.py | sha256=37534ddc1fe31f2da6d534ac90eefe4b2e154edf4809d103cb99f5f755944b43 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/engraving/demo/mix.py | sha256=3cc734c6a5856a544a3c66a0bb39ec8a10222909bac5c0dd1f94348d7186fc88 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/glass-product/demo/mix.py | sha256=79fdc461c6e99360b22f486c738539f6d81e87c6cd53bdb55459b0acc08e20b8 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/hd-2d/demo/mix.py | sha256=c63db8774743755c7ed6c55e09bfdc72a537b38f38b6f772d790a614f139d197 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/hologram-hud/demo/mix.py | sha256=28aa511eaad01255022ef8386e07a38072de1b7a3ca6a3b8acecb692cce6cdf7 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/impasto/demo/mix.py | sha256=da354d25bb5d431680b81644f6b57178d9bc4beeb5fdaf7c51771eda46751b8b | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/ink-wash/demo/mix.py | sha256=b7bb5d83f3d0c6a2bfa07b0e43a4c9e265825a153d67ef4bebb11ce62e5fdcce | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/iso-infographic/demo/mix.py | sha256=7c4fc488c277a6920f8fa7b0611f95ad0cb2ff93471f0d342d590e298866c73b | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/lowpoly-island/demo/mix.py | sha256=e9a99d94be3be2b586e5b37102be5d32a770b85db3079b4057ae3567904767a9 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/microgame/demo/mix.py | sha256=c87eba7081774c02a673f857454775083483b1d82ddff4519eefa79ea4926754 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/midcentury-toon/demo/mix.py | sha256=15970aafd0e2a8855d8648792310b990573ee397046bb694561b0b352c65ab97 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/one-line/demo/mix.py | sha256=452d3319a4a3591c50519157e93828390feffd849fea45d6bb5d88ce17a152de | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-lantern/demo/mix.py | sha256=540e9f5ac6bea4336b950ee29e8951a55d8c2f9c16cfd1433efd15a984aa6fda | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-popup/demo/mix.py | sha256=8ca2fd8c167b052842c9268da0a19e9c5458eacea40f8502bb93cc017f29dbe4 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/papercut-red/demo/mix.py | sha256=b4d3eb00dca5402a0423de0194adde660df26f0c945cfdcf1808879cfedd2780 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/pixel-rpg/demo/mix.py | sha256=445adf824a559318ae9f949ade9e55fb394e4efb52ef41af6b5851c68925bd5c | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/risograph/demo/mix.py | sha256=0c8c78773d7d23f821661f0f0e6fe470908bc203cabd5bb760c21c65185e4d63 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/rubber-hose/demo/mix.py | sha256=d44b25e95fe05c4de79b540358d24df75b7b03dc12998a863e90761a44a0f7bd | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/scifi-toon/demo/mix.py | sha256=94d73c7d7d2f5cb1b27e1b103421f8f90edf371665db9c878cfa19cda24a1a02 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/shadow-puppet/demo/mix.py | sha256=ee58155b8135bfb89f3a488dd22454d0336b083a63b6b274e830268fc447c24e | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/silent-film/demo/mix.py | sha256=0a4d7ae056907fa5d56faad01ba54ee3ef26f1bf6b4632d12b2e4b8e22f91058 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/silkscreen-poster/demo/mix.py | sha256=7204ef8e26e1368795f004ebae4866f7f709062a7124044e41aed3a5a7a70357 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/spy-titles/demo/mix.py | sha256=18566cc5edb59679a7d7e032bb8ec84466adc6e1a4ee901696e6ca273d329291 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/stained-glass/demo/mix.py | sha256=771b543f510cfd876c4af277e8a4ce09503f6a85b021ccae9ebce06e89aa787d | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/swiss-motion/demo/mix.py | sha256=34eebfb2b97452bdde2607de809751aa3da3d3d9f9c05c17f7f35e390610611e | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/tilt-shift/demo/mix.py | sha256=934dd049cbc0944a53a830eee501d6645615467e7de7217d86794ae166fac04d | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/ukiyoe/demo/mix.py | sha256=e4f2fae721143dc80ef5efb1592f469daa498cc4eb7ed6a9b7066a9262174447 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/urban-sketch/demo/audio/mix.py | sha256=38a4dd6106492ee16c3f8b049243ece549c6f36d2014bf5f5a610c7cbbdcc035 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/watercolor/demo/mix.py | sha256=9c9e8955a51160139d263868be79afe7355fdb95a702bf3d67cf48e670407486 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/whiteboard/demo/mix.py | sha256=d8b83bb85cd64e76e07d878306267e9c57401459e458b79aa6d755c28d71c85d | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/woodcut/demo/mix.py | sha256=8b1b422562fb7756cff9253e0e266c85d7708b06aab1b12e1d32a915507fe426 | exact-content-group-count=1 | role=adaptable-code-and-style
+R10 | repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/tools/mix.py | sha256=ea58e7eeef49b27027635e30d9e5da247cb0a1b30a1b0a4b7c65ab563e89db21 | exact-content-group-count=1 | role=read-only-cinematic-study
+
+page.mjs — repositories R03, R09
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/core/render/page.mjs | sha256=45796dc94e93fec177d3f162886e447292877971b695e6ebb0dbd6af43693d7a | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-lantern/demo/render/page.mjs | sha256=d79e38755e6c99646bfe55c658d246dd4ac82d6fe7ddf3a7b46e43f1b0550056 | exact-content-group-count=1 | role=adaptable-code-and-style
+R09 | repository-downloads/domenic/domenic.me/src/we-didnt-start-the-scaling/assets/page.mjs | sha256=cc1c2e3c9374e8df9c3dc382603bc54485ba2ee6e22f2587039a17b5ac7c6f29 | exact-content-group-count=1 | role=read-only-architecture-study
+
+paper.js — repositories R03, R05
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/blueprint/demo/paper.js | sha256=acb079c0036fa2b7e47e80843bcf422718cde2edd7b5957a5b9b6a7c252f222c | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/one-line/demo/paper.js | sha256=d9a218459f779643d6c75964a89256635799ed005706816190e15449bb600254 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-lantern/demo/src/paper.js | sha256=d63f0efdefe46604046bf202a86f8483928536c877af4687f441d8b8f637e17e | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-popup/demo/paper.js | sha256=dac9d62f8aa0261d5db397df9b8a57ed68c96634deed03fea47ddf476e95db10 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/papercut-red/demo/paper.js | sha256=ef897323cf3043c96091c1d4b8d83d59be772ac99afb5d3c3973af66827fe837 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/spy-titles/demo/paper.js | sha256=3fcb3b579d324337cce4b13739c7473fa4677358c4d4b7cfd0e3cdfab1c30528 | exact-content-group-count=1 | role=adaptable-code-and-style
+R05 | repository-downloads/makevoid/motion-graphics-music-video-skill/.claude/skills/motion-graphics-music-video/scripts/tools/p5/lib/paper.js | sha256=9e4cca6aff88a7a8b871d99dd2ef44ccceeb028ccb23bc4afa36ec196bb557e4 | exact-content-group-count=1 | role=planning-and-source-reference
+
+probe.mjs — repositories R03, R04
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/one-line/demo/tools/probe.mjs | sha256=34b3c34870ecacfc85a3559b9ad7df95a9cd91404ac2ed07ad7afa78b63b13d7 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-popup/demo/probe.mjs | sha256=bfa05e8bf08e8e47c20bb9252479ec6eb64bfba366b0261daeb464661462c7c3 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/shadow-puppet/demo/tools/probe.mjs | sha256=02c4ee1e250b74428584ec4a50c18dca2ba6ae95651fde0bb23561f5625ab35a | exact-content-group-count=1 | role=adaptable-code-and-style
+R04 | repository-downloads/heygen-com/hyperframes/packages/cli/src/media-use/lib/probe.mjs | sha256=7ee653b140a939ab909aa1059e61a682927ac90616acf1fa8fdab964eb6406fa | exact-content-group-count=1 | role=timing-and-composition-reference
+
+props.js — repositories R03, R08
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-lantern/demo/src/props.js | sha256=d93f7b6eb2ebaa0c2bc29f0932232078cf6b1f1db483b1afc5e04f4d10f524fe | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/pixel-rpg/demo/props.js | sha256=844943f3071ff13593d857ab300ad3ca121f9bedf698e6be89c8758265948afd | exact-content-group-count=1 | role=adaptable-code-and-style
+R08 | repository-downloads/JohnHeibel/PDoomVideo/src/props.js | sha256=f6da922f9694451f19aff8054a1efca0ae8987ed6343ab9e97b07dbe170748b1 | exact-content-group-count=1 | role=read-only-architecture-study
+
+render.mjs — repositories R01, R02, R03, R04, R05, R08, R10
+R01 | repository-downloads/JohnHeibel/ClaudeAnimationBase/render.mjs | sha256=1151ad59ad0c7bbe59e4e273465689d81d41f896d6bafc8981b527d110b77fe6 | exact-content-group-count=2 | role=adaptable-code
+R02 | repository-downloads/tuzhechen2005/opus-video-skills/skills/kinetic-reel/template/render.mjs | sha256=2112d356740263a5af68f81e18fdb4a2b3901665280cf5807d3e41d2b6e636f5 | exact-content-group-count=1 | role=adaptable-code
+R02 | repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/render.mjs | sha256=1151ad59ad0c7bbe59e4e273465689d81d41f896d6bafc8981b527d110b77fe6 | exact-content-group-count=2 | role=adaptable-code
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/game-show/demo/render.mjs | sha256=709d0ac596a5a166e72f204c625d4e3333dbefc9cbe2feceae7ce001978782d3 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/halftone-dossier/demo/render.mjs | sha256=95d233e7c54f350abd63feddc06b82a3ccce4f108fb6a8d6d1c598db6ab0336b | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-popup/demo/render.mjs | sha256=7964566341863252944bafad62b69fda3c69713b2ca81bc0ef15abe74cbc1cac | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/pictogram-motion/demo/render.mjs | sha256=7f2e2567c8fbaaee1ed0de555205cc79a27290ddf53081ac7ba7c76c4cf12d33 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/watercolor/demo/render.mjs | sha256=c448976c5308d65ac1ed13a8d09f9f159ab65ea1dde0bf977b037b2d073f4a9d | exact-content-group-count=1 | role=adaptable-code-and-style
+R04 | repository-downloads/heygen-com/hyperframes/packages/studio/tests/e2e/edit-accuracy/render.mjs | sha256=dadcc102062bacde12eb4b945e28d3e806b0053af6bceaf28097c14d42bcc685 | exact-content-group-count=1 | role=timing-and-composition-reference
+R05 | repository-downloads/makevoid/motion-graphics-music-video-skill/.claude/skills/motion-graphics-music-video/scripts/tools/p5/render.mjs | sha256=05fff8ff82b8e3aa385afe013225f45ae3202b57c6baae0af71958f4f5848683 | exact-content-group-count=1 | role=planning-and-source-reference
+R08 | repository-downloads/JohnHeibel/PDoomVideo/render.mjs | sha256=ecf23d3b2b1df9ee62b09127235484a922984a35b3d1d29eb57fd30f7c5af19b | exact-content-group-count=1 | role=read-only-architecture-study
+R10 | repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/tools/render.mjs | sha256=6ec23cca49f80004c79749c380d38198e0a3a4692a9486bb809542718b212a54 | exact-content-group-count=1 | role=read-only-cinematic-study
+
+render.ts — repositories R04, R07
+R04 | repository-downloads/heygen-com/hyperframes/packages/cli/src/commands/cloud/render.ts | sha256=919f0096b464388a084bbc30b7a674273d4ef792cd1d5d44a253cdd486d70426 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/cli/src/commands/lambda/render.ts | sha256=c482fc8760a6ea7d4009d6e3f356ed81e9c3f4a0568c7cd8ef5d332b16cac6fe | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/cli/src/commands/render.ts | sha256=9ad84a66a0f38e1de15200a447fcd5eb81d196e50e57ccf747093887ccd0d065 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/studio-server/src/routes/render.ts | sha256=91dc518a3b42c119b98f7297c7170d15faa02c112d3b84c15e7a7d39ee68e031 | exact-content-group-count=1 | role=timing-and-composition-reference
+R07 | repository-downloads/bizarro/evangelion/app/scripts/render.ts | sha256=7fc4fc852bb6d9332704c1f5136211ddd989a02c0634434aeb55310edb5eabbe | exact-content-group-count=1 | role=adaptable-architecture-reference
+
+riso.js — repositories R03, R05
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/risograph/demo/riso.js | sha256=33372178569914cbb0210e67901434e544db6b2fa32efcd3ac60275e9d62cbbd | exact-content-group-count=1 | role=adaptable-code-and-style
+R05 | repository-downloads/makevoid/motion-graphics-music-video-skill/.claude/skills/motion-graphics-music-video/scripts/tools/p5/lib/riso.js | sha256=5d73d29dc631ad2f114cd2a0db60aa6d5f89be35f4e51be8e268f33eac0e73bb | exact-content-group-count=1 | role=planning-and-source-reference
+
+script.js — repositories R04, R10
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/dogs-captions/src/script.js | sha256=693d41877e9e7c0ab01eaaf5265f436a7739036c5395f560c5f12e8d2850e1cc | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/producer/tests/many-cuts/src/script.js | sha256=47f4e101f27e78dd7d48674352a155806cb3e93f6d14fcbaea2a11715d672fd3 | exact-content-group-count=1 | role=timing-and-composition-reference
+R10 | repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/web/script.js | sha256=82078d91ac70d0591a5ab7bac4ee638c6bf8e87bcb08c7e3e2ebdea9699da601 | exact-content-group-count=1 | role=read-only-cinematic-study
+
+serve.mjs — repositories R03, R10, R11
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/core/render/serve.mjs | sha256=4c8cd80108a6aaf3158a0eec06145e9010fc203ea9b0ab094b3c3ff4f030c900 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-lantern/demo/render/serve.mjs | sha256=69d31ba5d8ba6ba7b5935985c3a501fb86d31c95fe55b04e4459ea57e240e9b9 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-popup/demo/serve.mjs | sha256=5c92f93e184113e5c0b11697740b5ac99009d02bdcc2d91ba6b74f00ded1479e | exact-content-group-count=1 | role=adaptable-code-and-style
+R10 | repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/tools/serve.mjs | sha256=c1694c1caccd405944fbf3fc74f3f47072a95289284aea7f60c4de8ae5f4955a | exact-content-group-count=1 | role=read-only-cinematic-study
+R11 | repository-downloads/guanmo-ai/awesome-ai-motion/scripts/serve.mjs | sha256=6cdb47c4ff8fa0c3c05815c5093846cd4d462c7a6e540d7b0eb573d0e1e2839f | exact-content-group-count=1 | role=catalog-reference
+
+sheets.js — repositories R01, R02, R03
+R01 | repository-downloads/JohnHeibel/ClaudeAnimationBase/src/sheets.js | sha256=cdd9320e0cb5e1e5bbfdeac221e21b69714b96e4a9b05e62cda4817b4d80010c | exact-content-group-count=2 | role=adaptable-code
+R02 | repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/sheets.js | sha256=cdd9320e0cb5e1e5bbfdeac221e21b69714b96e4a9b05e62cda4817b4d80010c | exact-content-group-count=2 | role=adaptable-code
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/silent-film/demo/sheets.js | sha256=9b6c957adcd60ce015ddc0c68c3882b894eb38237c4b62fbe984b92ef571e584 | exact-content-group-count=1 | role=adaptable-code-and-style
+
+sprites.js — repositories R03, R10
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/pixel-rpg/demo/sprites.js | sha256=b2cc0a4e2c895e21d09cabbb3fb3f7076d632b4260d6a856a873a3c89712e1c3 | exact-content-group-count=1 | role=adaptable-code-and-style
+R10 | repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/web/engine/sprites.js | sha256=34317ffdded1ad82b278b80b77d19fc4f05faaa62ca9ebdc9dee637804e0c75b | exact-content-group-count=1 | role=read-only-cinematic-study
+
+studio.html — repositories R01, R02, R08
+R01 | repository-downloads/JohnHeibel/ClaudeAnimationBase/studio.html | sha256=e5bf9fba40e75807ec616fb0af280b717e822b9838677120cd8557fcf0703b1b | exact-content-group-count=1 | role=adaptable-code
+R02 | repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/studio.html | sha256=edd47db6a1c914b10e3709cd2fac6dce502d033ae215fd1b06967d46eaf3809e | exact-content-group-count=1 | role=adaptable-code
+R08 | repository-downloads/JohnHeibel/PDoomVideo/studio.html | sha256=c8a9dbd2f7fcdb001713c64f1a525fe6732444033f85ce846ffd0d79ecfa99a1 | exact-content-group-count=1 | role=read-only-architecture-study
+
+template.html — repositories R03, R04
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styleboard/template.html | sha256=822d59a3f9bed02e895c40774f4f1e75877bdba3f2232cd46a075314d1c03702 | exact-content-group-count=1 | role=adaptable-code-and-style
+R04 | repository-downloads/heygen-com/hyperframes/skills/embedded-captions/modes/cinematic/_archive/champion/template.html | sha256=f374671528f43a2b0a3558f6a2da4dcec2ff5125cf67e1c5316f8f09c7ccaacf | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/embedded-captions/modes/cinematic/_archive/memory-wall/template.html | sha256=38b91ef473eb2e0f9057f304b54c8d90cbbd214c401c682a46dae77dcbedf7f2 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/embedded-captions/modes/cinematic/_archive/portrait-header/template.html | sha256=3f438cb37803f927faf9c9ee19c14f13fe8eec29289644f5cce157980f2fd149 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/skills/embedded-captions/modes/cinematic/cinematic-cream/template.html | sha256=2f81e4d34e9c4b0a61175d0241ac89bd147dc6e56c6b63a6f968873e972974f3 | exact-content-group-count=1 | role=timing-and-composition-reference
+
+timeline.js — repositories R01, R02, R03, R08
+R01 | repository-downloads/JohnHeibel/ClaudeAnimationBase/src/timeline.js | sha256=93d455142bf642355cb77cce64ad1a8397996be4f23e121bd18d6fce52bc1503 | exact-content-group-count=2 | role=adaptable-code
+R02 | repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/timeline.js | sha256=93d455142bf642355cb77cce64ad1a8397996be4f23e121bd18d6fce52bc1503 | exact-content-group-count=2 | role=adaptable-code
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/art-deco/demo/timeline.js | sha256=7eaa8b9fc733006a2237745dbc0c897089b894dfe8c2f53f0a1ba2544325a380 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/dark-keynote/demo/timeline.js | sha256=9de8b56b273b46b4b42543596f4ea6cf2f97ecdfa7cdcd943119c11777631e3f | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/dataviz/demo/timeline.js | sha256=a463c7bd47890d799d5351b4d9e508d0bc427a2e7175ac70ada95033d6c40c06 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/impasto/demo/timeline.js | sha256=fe2d540f5e89db8afa00dc14ed1d0f8b916e5d230c9e1354e18853240574d0c0 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/iso-infographic/demo/timeline.js | sha256=7b96865c9cf886581353818fe7c96e0a2273117d78fbc4ac9759a9fc1b742e79 | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/microgame/demo/timeline.js | sha256=793c8fe6277d1f5b8831ddf540a528f0a4522d166f71205fda9757a0f4651dde | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/silent-film/demo/timeline.js | sha256=9757c5d7e1fb7bf50ddd76adcce6cb92602b4d6f94f0f6a8cc5b8df7fa3089d6 | exact-content-group-count=1 | role=adaptable-code-and-style
+R08 | repository-downloads/JohnHeibel/PDoomVideo/src/timeline.js | sha256=b362dc9a4a6cf1935510dbabca813cf9db322880d9e6a73a56b0526dd557269e | exact-content-group-count=1 | role=read-only-architecture-study
+
+timeline.ts — repositories R04, R07
+R04 | repository-downloads/heygen-com/hyperframes/packages/cli/src/commands/timeline.ts | sha256=f9465f44f85f533d411ca410738ea9dc28e1e7e56daa7f4055b87f411056395f | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/core/src/runtime/timeline.ts | sha256=5e6aac686c72a0722e50b9950a8f1e297168a3759af97a75395134c4258565ec | exact-content-group-count=1 | role=timing-and-composition-reference
+R07 | repository-downloads/bizarro/evangelion/app/src/timeline.ts | sha256=6f9bd2b5286503566fc355380155be05adc42d37798ed58f8412ad86fe8989c0 | exact-content-group-count=1 | role=adaptable-architecture-reference
+
+tts.py — repositories R03, R10
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/core/tts/tts.py | sha256=bf4d02797c84fab2587c76270eac48a5547c178bb3f2c92f11cc6a11ce16365c | exact-content-group-count=1 | role=adaptable-code-and-style
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-lantern/demo/tts.py | sha256=18b0bdddf81662bcd9fa232fb02de93625875bf7982d432a6739655931275b15 | exact-content-group-count=1 | role=adaptable-code-and-style
+R10 | repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/tools/tts.py | sha256=5fc59035b551eaf6b3a759821725d1c80be69c6faca97ef0ae2b237e5cd78bbd | exact-content-group-count=1 | role=read-only-cinematic-study
+
+type.js — repositories R03, R05
+R03 | repository-downloads/lemomo-ai/lemo-opuscar/styles/art-deco/demo/engine/type.js | sha256=9e0fca667d1d83cf8344abec286cd356bf50dfb1f54a383f461dd48a0fc816f5 | exact-content-group-count=1 | role=adaptable-code-and-style
+R05 | repository-downloads/makevoid/motion-graphics-music-video-skill/.claude/skills/motion-graphics-music-video/scripts/tools/p5/lib/type.js | sha256=0709eca04597380d706d550c84093dc7328ff7b295366e7ab8f6fd26048e9566 | exact-content-group-count=1 | role=planning-and-source-reference
+
+vite.config.ts — repositories R04, R07
+R04 | repository-downloads/heygen-com/hyperframes/packages/sdk-playground/vite.config.ts | sha256=224e5c33d2ce109d943ae4b17d9dc7f461c1245078da92e3acddcfb708f449f6 | exact-content-group-count=1 | role=timing-and-composition-reference
+R04 | repository-downloads/heygen-com/hyperframes/packages/studio/vite.config.ts | sha256=2ac470617e82252727897c75d5fbb9efdd6980f4eb31428be6b20a71b8b89937 | exact-content-group-count=1 | role=timing-and-composition-reference
+R07 | repository-downloads/bizarro/evangelion/app/vite.config.ts | sha256=55eecfe08b2d7f8b0cba3743657e559352d402ab6d14a418d57b8796a7d8c748 | exact-content-group-count=1 | role=adaptable-architecture-reference
+
+worker.js — repositories R02, R09
+R02 | repository-downloads/tuzhechen2005/opus-video-skills/skills/kinetic-reel/examples/site-intro/worker.js | sha256=a5be3ea59150e7e2da6c624de4bb8ed93b91069555455058e986928a7b47500d | exact-content-group-count=1 | role=adaptable-code
+R09 | repository-downloads/domenic/domenic.me/src/we-didnt-start-the-scaling/assets/worker.js | sha256=f466a29b2f5be258c82b864bb10568c246c806e6ed02fb6e75d77673189ccdd4 | exact-content-group-count=1 | role=read-only-architecture-study
+
+
+CONSOLIDATION RULES
+1. Exact duplicates: canonical content with each source path, pinned commit, license and attribution retained.
+2. Matching names with different hashes: inspect complete functions, imports, coordinates, units, timing, state and dependency expectations before merging.
+3. Small compatible primitives: a shared implementation can replace duplication after behavior comparison.
+4. Rendering/material/character systems: retain complete functional modules and combine through adapters and explicit loading order.
+5. Study-only R08–R10: keep these source comparisons in the study/reference layer under the existing resource decision.
+6. Genre engines and style films contain scene-specific content. Extract reusable mechanisms only when they are suitable and permitted; a shared filename is insufficient.
+7. Catalogs R11–R13 support discovery rather than contributing equivalent animation runtimes.
+8. Fewer context uploads do not automatically reduce text size. Reuse real identical content and remove redundant wrappers; retain complete implementation bodies and provenance.

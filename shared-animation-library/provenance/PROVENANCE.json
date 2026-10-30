@@ -1,0 +1,609 @@
+{
+ "library": "shared-animation-library",
+ "created": "2026-10-07",
+ "canonical_base": "R02 painted-animation/template @59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1 (R01 JohnHeibel/ClaudeAnimationBase @0ac8bf2b31942376cb6b8c4074715595d512acd2 = verified upstream/shared-base; seven byte-identical code files: gpu_probe.mjs, render.mjs, src/clawd.js, src/config.js, src/scenes/demo.js, src/sheets.js, src/timeline.js)",
+ "licenses": {
+  "base": "licenses: base/LICENSE (MIT, R01=R02 byte-identical); provenance/licenses/R02-root-LICENSE",
+  "R03": "provenance/licenses/R03-LICENSE (MIT LemoLab)",
+  "R06": "provenance/licenses/R06-LICENSE (MIT Hanif @hanifproduktif)"
+ },
+ "staged_manifest": "compatibility-preparation/candidate-sources/STAGED_SOURCE_MANIFEST.json (26 records re-verified)",
+ "files": [
+  {
+   "path": "base/LICENSE",
+   "status": "verbatim",
+   "sha256": "7d25ae95b305b884c08ce898e53b58d2e180ff0119e5d203d8b4ae30420f3b33",
+   "upstream_sha256": "7d25ae95b305b884c08ce898e53b58d2e180ff0119e5d203d8b4ae30420f3b33",
+   "R02": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/LICENSE",
+   "R01": "repository-downloads/JohnHeibel/ClaudeAnimationBase/LICENSE",
+   "identical_R01_R02": true
+  },
+  {
+   "path": "base/README.md",
+   "status": "verbatim",
+   "sha256": "c383c6bf64add0bdd38c0244616faa4adf859e1aae93cb93223a8de822924801",
+   "upstream_sha256": "c383c6bf64add0bdd38c0244616faa4adf859e1aae93cb93223a8de822924801",
+   "R02": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/README.md",
+   "R01": "repository-downloads/JohnHeibel/ClaudeAnimationBase/README.md",
+   "identical_R01_R02": true
+  },
+  {
+   "path": "base/ANIMATION_GUIDE.md",
+   "status": "verbatim",
+   "sha256": "f638e1fb3876f587e39ec11a20e2df3aac91421c926d82c2743768642caab990",
+   "upstream_sha256": "f638e1fb3876f587e39ec11a20e2df3aac91421c926d82c2743768642caab990",
+   "R02": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/ANIMATION_GUIDE.md",
+   "R01": "repository-downloads/JohnHeibel/ClaudeAnimationBase/ANIMATION_GUIDE.md",
+   "identical_R01_R02": true
+  },
+  {
+   "path": "base/package.json",
+   "status": "verbatim",
+   "sha256": "c14fb0dd2641a316e54b90c4658ba10b6ce3b02b1921417e8128368dbcd005cb",
+   "upstream_sha256": "c14fb0dd2641a316e54b90c4658ba10b6ce3b02b1921417e8128368dbcd005cb",
+   "R02": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/package.json",
+   "R01": "repository-downloads/JohnHeibel/ClaudeAnimationBase/package.json",
+   "identical_R01_R02": true
+  },
+  {
+   "path": "base/package-lock.json",
+   "status": "verbatim",
+   "sha256": "4c79bac79ca749472c0b9f74cef1c6409ef7ab0513417c9ba4b94838731667d1",
+   "upstream_sha256": "4c79bac79ca749472c0b9f74cef1c6409ef7ab0513417c9ba4b94838731667d1",
+   "R02": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/package-lock.json",
+   "R01": "repository-downloads/JohnHeibel/ClaudeAnimationBase/package-lock.json",
+   "identical_R01_R02": true
+  },
+  {
+   "path": "base/.gitignore",
+   "status": "verbatim",
+   "sha256": "cdb3767f6dfc37d7a5e34ccf184aa258a4a749f31ad6aa9af19538359a5a8ad0",
+   "upstream_sha256": "cdb3767f6dfc37d7a5e34ccf184aa258a4a749f31ad6aa9af19538359a5a8ad0",
+   "R02": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/.gitignore",
+   "R01": "repository-downloads/JohnHeibel/ClaudeAnimationBase/.gitignore",
+   "identical_R01_R02": true
+  },
+  {
+   "path": "base/gpu_probe.mjs",
+   "status": "verbatim",
+   "sha256": "62b370f9687383870c69ad8edb2646211c32460fe2e779a5b02ff33786b01e42",
+   "upstream_sha256": "62b370f9687383870c69ad8edb2646211c32460fe2e779a5b02ff33786b01e42",
+   "R02": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/gpu_probe.mjs",
+   "R01": "repository-downloads/JohnHeibel/ClaudeAnimationBase/gpu_probe.mjs",
+   "identical_R01_R02": true
+  },
+  {
+   "path": "base/src/clawd.js",
+   "status": "verbatim",
+   "sha256": "578fbd46d21cdcc92b14806f3cc8c7b1b9e9f7ea53ddda7b1c150afa9f3c512a",
+   "upstream_sha256": "578fbd46d21cdcc92b14806f3cc8c7b1b9e9f7ea53ddda7b1c150afa9f3c512a",
+   "R02": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/clawd.js",
+   "R01": "repository-downloads/JohnHeibel/ClaudeAnimationBase/src/clawd.js",
+   "identical_R01_R02": true
+  },
+  {
+   "path": "base/src/timeline.js",
+   "status": "verbatim",
+   "sha256": "93d455142bf642355cb77cce64ad1a8397996be4f23e121bd18d6fce52bc1503",
+   "upstream_sha256": "93d455142bf642355cb77cce64ad1a8397996be4f23e121bd18d6fce52bc1503",
+   "R02": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/timeline.js",
+   "R01": "repository-downloads/JohnHeibel/ClaudeAnimationBase/src/timeline.js",
+   "identical_R01_R02": true
+  },
+  {
+   "path": "base/src/sheets.js",
+   "status": "verbatim",
+   "sha256": "cdd9320e0cb5e1e5bbfdeac221e21b69714b96e4a9b05e62cda4817b4d80010c",
+   "upstream_sha256": "cdd9320e0cb5e1e5bbfdeac221e21b69714b96e4a9b05e62cda4817b4d80010c",
+   "R02": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/sheets.js",
+   "R01": "repository-downloads/JohnHeibel/ClaudeAnimationBase/src/sheets.js",
+   "identical_R01_R02": true
+  },
+  {
+   "path": "base/src/karaoke.js",
+   "status": "verbatim",
+   "sha256": "fa68bb6ed9169ab945716cf1ad451ce9c36205d277f7921ed85e00735a91b0ae",
+   "upstream_sha256": "fa68bb6ed9169ab945716cf1ad451ce9c36205d277f7921ed85e00735a91b0ae",
+   "R02": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/karaoke.js",
+   "R01": null,
+   "identical_R01_R02": false
+  },
+  {
+   "path": "base/src/scenes/demo.js",
+   "status": "verbatim",
+   "sha256": "c783bd05af05875e014afd215d1945b189121910e8cef3218a5a8c7aac1dc361",
+   "upstream_sha256": "c783bd05af05875e014afd215d1945b189121910e8cef3218a5a8c7aac1dc361",
+   "R02": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/scenes/demo.js",
+   "R01": "repository-downloads/JohnHeibel/ClaudeAnimationBase/src/scenes/demo.js",
+   "identical_R01_R02": true
+  },
+  {
+   "path": "base/docs/emotions.jpg",
+   "status": "verbatim",
+   "sha256": "66a0337d8a9db6735b5fc2e5495bd1b8c9a3868d11d83d6b24add6cbfe32001d",
+   "upstream_sha256": "66a0337d8a9db6735b5fc2e5495bd1b8c9a3868d11d83d6b24add6cbfe32001d",
+   "R02": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/docs/emotions.jpg",
+   "R01": "repository-downloads/JohnHeibel/ClaudeAnimationBase/docs/emotions.jpg",
+   "identical_R01_R02": true
+  },
+  {
+   "path": "base/docs/views.jpg",
+   "status": "verbatim",
+   "sha256": "c067a20d24aa1f81edbc99f8fb0ee1f57a3cfd81786f99bc4070b90b37559d9e",
+   "upstream_sha256": "c067a20d24aa1f81edbc99f8fb0ee1f57a3cfd81786f99bc4070b90b37559d9e",
+   "R02": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/docs/views.jpg",
+   "R01": "repository-downloads/JohnHeibel/ClaudeAnimationBase/docs/views.jpg",
+   "identical_R01_R02": true
+  },
+  {
+   "path": "base/src/core.js",
+   "status": "modified",
+   "change": "R02 core.js + (1) normalizeProject(PROJECT) -> CFG drives W/H, BPM/OFF/DUR (2) READY_PROMISES in setup readiness wait; R02 EXTRA_FONTS and overlayHook retained",
+   "sha256": "1ef9a74de209f38e0d057a32cd8a4a58c0560ff9e1ed9ac2543486cd51e5e40e",
+   "upstream_R02_sha256": "6367b03a09bb0650ad4161a6e0668ddaf64178ddf33bb57b8fe25536e7234c5b",
+   "R02": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/core.js",
+   "R01": "repository-downloads/JohnHeibel/ClaudeAnimationBase/src/core.js",
+   "also_identical_R01_R02": false
+  },
+  {
+   "path": "base/src/config.js",
+   "status": "modified",
+   "change": "R01/R02 config.js (identical) + width,height,fps,seed,sourceAudioOffsetSeconds; portrait 1080x1920 default",
+   "sha256": "880d76bbb8683752eaf92b4f227d740c2402e1b3c5ac67139cc08adc5f1c3877",
+   "upstream_R02_sha256": "6d9374c59bd90bede9d4761eea6136b772a5883c414a67b8a5673510b8c1d435",
+   "R02": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/config.js",
+   "R01": "repository-downloads/JohnHeibel/ClaudeAnimationBase/src/config.js",
+   "also_identical_R01_R02": true
+  },
+  {
+   "path": "base/studio.html",
+   "status": "modified",
+   "change": "R02 studio.html (fonts CSS retained) + project-config.js, normalized sizing script, adapter readiness registration (normalized PROJECT), demo.js not loaded",
+   "sha256": "d63671cfb80b39ba91d34bbb74ad17d5e7b6d4013055abadb893b73540a6c300",
+   "upstream_R02_sha256": "edd47db6a1c914b10e3709cd2fac6dce502d033ae215fd1b06967d46eaf3809e",
+   "R02": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/studio.html",
+   "R01": "repository-downloads/JohnHeibel/ClaudeAnimationBase/studio.html",
+   "also_identical_R01_R02": false,
+   "sources": [
+    "2026-10-25: additive edit (production contract / chained production install / declared-file identity / linear gradient in recorder); see IMPLEMENTATION_REPORT.md"
+   ]
+  },
+  {
+   "path": "base/render.mjs",
+   "status": "modified",
+   "change": "R01/R02 render.mjs (identical) REWRITTEN IN PART: --root/--entry, config-derived viewport via normalizeProject, export planning (one audio/frame contract), production-bound frame cache + manifest, supervised ffmpeg; original sheet/strip/stills/png modes and Chrome/GPU launch logic retained",
+   "sha256": "cb16b14b249d58f4cb3588479861f05e9fa8b02e81cb887c5d7ccb4ba35795d5",
+   "upstream_R02_sha256": "1151ad59ad0c7bbe59e4e273465689d81d41f896d6bafc8981b527d110b77fe6",
+   "R02": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/render.mjs",
+   "R01": "repository-downloads/JohnHeibel/ClaudeAnimationBase/render.mjs",
+   "also_identical_R01_R02": true
+  },
+  {
+   "path": "base/examples/landscape/config.js",
+   "status": "derived",
+   "from": "src/config.js, width 1920 height 1080",
+   "sha256": "d8b8ca699cfa6f75718095f42fa76d5e3c69c1075332b4e116632aaa275b065e"
+  },
+  {
+   "path": "base/examples/landscape/studio.html",
+   "status": "derived",
+   "from": "R02 studio.html with ../../ paths, own config, demo.js loaded",
+   "sha256": "dcb5980e912e87148f1a2ff08130b30acf891b64275678729bc3275883e5227a"
+  },
+  {
+   "path": "numeric/numeric.mjs",
+   "status": "new/adapted",
+   "sources": [
+    "R02 kinetic reel.js math block (commit 59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1)",
+    "R02 painted core.js backOut",
+    "R03 lemomo-ai/lemo-opuscar core/lib.js (MIT, LemoLab)",
+    "R06 core.mjs, film.mjs exposure (commit 4ddb8c80fdec96dc9f55d4b9bdee60bde6f0134b)",
+    "added beatPulseR02ForBpm (tempo-bound form with the source call shape); r02.beatPulse keeps an EXPLICIT beatSeconds argument (documented API exception)"
+   ],
+   "sha256": "297cbea828c9cc8f47e010ea08eafc5b04e2d73a1e23107bfedc84cd28dec4d4"
+  },
+  {
+   "path": "numeric/timebase.mjs",
+   "status": "new/adapted",
+   "sources": [
+    "new; 2026-10-08: safe-integer frames, finite outputs, cue conversions snapped to 1e-9 s"
+   ],
+   "sha256": "aacdd1032398b61e846b5ea5fab928c1a012ac32924cc66c883c1163be10f82f"
+  },
+  {
+   "path": "adapters/r06-burst-particles.mjs",
+   "status": "new/adapted",
+   "sources": [
+    "R06 lib/fx.mjs burstParticles (verbatim) + lib/core.mjs closure clamp,rng,poly,ellipse,stroke,fill,line,at,INK (MIT, Hanif)",
+    "INTENTIONAL ADAPTATION (2026-10-08): save()/restore() pairs in line(), at() and the per-particle block wrapped as save(); try { ... } finally { restore(); } so a throwing draw call cannot leak nested Canvas state. Success-path call sequence identical to the pinned source; verified by reversing the textual change and by trace comparison."
+   ],
+   "sha256": "651c97487d3ae12281212ea82edf3bcd9d5b3f0f728b3323f1ed4c4611344425"
+  },
+  {
+   "path": "adapters/overlay-dispatcher.mjs",
+   "status": "new/adapted",
+   "sources": [
+    "new; seam = R02 core.js composite() overlayHook"
+   ],
+   "sha256": "d5edb5f1829dc348a05fc825489520cc8d8f28b1913dd8f3935d9281e12ad403"
+  },
+  {
+   "path": "adapters/host-integration.mjs",
+   "status": "new/adapted",
+   "sources": [
+    "new"
+   ],
+   "sha256": "65547de410814447c9c89a503e65df111c16b341452930f3df792f55ba0f761d"
+  },
+  {
+   "path": "base/src/project-config.js",
+   "status": "new",
+   "sources": [
+    "new; single normalization/validation of PROJECT (classic script + CommonJS)",
+    "2026-10-25: additive edit (production contract / chained production install / declared-file identity / linear gradient in recorder); see IMPLEMENTATION_REPORT.md"
+   ],
+   "sha256": "ed40cd6ac521e3b7017e9b899fafb29c3632401f61e385101bc3a7262647554e"
+  },
+  {
+   "path": "export/export-plan.mjs",
+   "status": "new",
+   "sources": [
+    "new; pure export timing contract and ffmpeg argument planning (pattern: renderer/render.v3.mjs audioStart handling, generalized)"
+   ],
+   "sha256": "fb9b38321dbfd024a97d85ffe9a219206e4a7a12e129d8282840ebdcc0b0b122"
+  },
+  {
+   "path": "export/cache-identity.mjs",
+   "status": "new",
+   "sources": [
+    "new; identity pattern from renderer/render.v3.mjs (sha256 over spec+scenes+cues+assets -> 12 hex), closure discovered from the entry page",
+    "2026-10-25: additive edit (production contract / chained production install / declared-file identity / linear gradient in recorder); see IMPLEMENTATION_REPORT.md"
+   ],
+   "sha256": "1d87c5535cb48cb5b72385db7c369952a8bb26da1d34fd9da06fb52df50c7fbb"
+  },
+  {
+   "path": "export/process-runner.mjs",
+   "status": "new",
+   "sources": [
+    "new; supervised ffmpeg process handling"
+   ],
+   "sha256": "9413658588c132f58dbbe8777dea08ed96d90b5237043bdfb70b2de4bc30fde9"
+  },
+  {
+   "path": "tests/recording-context.mjs",
+   "status": "new",
+   "sources": [
+    "new; Canvas2D recorder with affine bookkeeping",
+    "2026-10-25: additive edit (production contract / chained production install / declared-file identity / linear gradient in recorder); see IMPLEMENTATION_REPORT.md"
+   ],
+   "sha256": "75a8064dd2a6cf05773b92c7a34e4f08f258ce8de3a49f0b47440eb3279fc1c3"
+  },
+  {
+   "path": "tests/verify.mjs",
+   "status": "new",
+   "sources": [
+    "new"
+   ],
+   "sha256": "4dc3763d72ca6d9f56e608b28b007943a03781393a0440ef49f9c9eee2f99f0c"
+  },
+  {
+   "path": "tests/verify-reuse.mjs",
+   "status": "new",
+   "sources": [
+    "new; synthetic multi-production regressions"
+   ],
+   "sha256": "abaff8e7a2301be8ab82865a5e5e114122e804c842bbdc5396df5c19dede371c"
+  },
+  {
+   "path": "adapters/r06-critter-rig.mjs",
+   "status": "new/adapted",
+   "sources": [
+    "R06 rigs/critter.mjs function critter (body adapted) + lib/core.mjs closure clamp,lerp,rad,rrect,poly,ellipse,stroke,fill,line,hatch,INK (MIT, Hanif) @4ddb8c80fdec96dc9f55d4b9bdee60bde6f0134b",
+    "INTENTIONAL ADAPTATION (2026-10-25): every save()/restore() pair is scoped(ctx,fn)=save();try{}finally{restore()} in critter(), line(), hatch(); @napi-rs/canvas import and unused `at` import not carried. Success-path Canvas call sequence identical to the pinned text for 9 poses (tests/verify-production.mjs).",
+    "Scene-facing createCritterRig/poseAt/draw is new code (keyframed pose track, closed-form gait)."
+   ],
+   "upstream": {
+    "critter.mjs": "repository-downloads/buildwithhanif/claude-animation-skill/plugins/claude-animation/skills/claude-animation/lib/rigs/critter.mjs",
+    "core.mjs": "repository-downloads/buildwithhanif/claude-animation-skill/plugins/claude-animation/skills/claude-animation/lib/core.mjs"
+   },
+   "upstream_sha256": {
+    "critter.mjs": "cd796d09bdc28b4504231546c6bc0209a457ac69cc2bbc6894314b1d6970848b",
+    "core.mjs": "df85c88458057c1fa061881bfd77d82bd6830e2038f96c452394f8a4fd250c9e"
+   },
+   "license": "provenance/licenses/R06-LICENSE",
+   "sha256": "53eb2a55b2eabc2dcf2a14796d3183db3e1bc59714803ef29163aa503cf01b9f"
+  },
+  {
+   "path": "production/manifest.mjs",
+   "status": "new",
+   "sources": [
+    "new; declared-file list shared by identity and loader"
+   ],
+   "sha256": "392dc51557fd76c77e36614ccc7d10118f380736bb0bd63db5e5b6673916e88b"
+  },
+  {
+   "path": "production/scene-runtime.mjs",
+   "status": "new",
+   "sources": [
+    "new; scene registry, load/readiness/init/dispose orchestration, SceneTime (timeline.js shots() contract preserved)"
+   ],
+   "sha256": "229414917dd27a1c0e238cf1921f4d489ddce28b6315f3360d94be000c469afc"
+  },
+  {
+   "path": "production/cue-schema.mjs",
+   "status": "new",
+   "sources": [
+    "new; cue evidence schema + importers (R04 analyze-beatgrid.py / R07 audio.json shapes read, never run)"
+   ],
+   "sha256": "d803cc0c81b5cb0866fe1cece846a250292bdac7f50e413f761b06497794e195"
+  },
+  {
+   "path": "production/production-host.mjs",
+   "status": "new",
+   "sources": [
+    "new; installProduction, browser loaders"
+   ],
+   "sha256": "7bcfb86530732aad0713fdd47b2b82e37cda1c6d0b0d9e3578338f77b574989f"
+  },
+  {
+   "path": "production/fontsource.mjs",
+   "status": "new",
+   "sources": [
+    "new; Node authoring helper over the local @fontsource install"
+   ],
+   "sha256": "18b94aaeba29651f8cf1dd53334a19b2b4cb2ed991bf040f5db036a3555d7d7f"
+  },
+  {
+   "path": "tests/verify-production.mjs",
+   "status": "new",
+   "sources": [
+    "new; 22 non-rendering checks"
+   ],
+   "sha256": "35a6840e060b47b518a5a2fee882011ca3dc6a00bba1507a7b032a09e81c266e"
+  },
+  {
+   "path": "examples/neutral-production/config.js",
+   "status": "new",
+   "sources": [
+    "new; synthetic example declaration"
+   ],
+   "sha256": "0c23ce4d795c7ba4ad1d8d8decc6a45b6bcba6074db094d794a9279403fd640d"
+  },
+  {
+   "path": "examples/neutral-production/studio.html",
+   "status": "new",
+   "sources": [
+    "new; example entry (same load order as base/studio.html)"
+   ],
+   "sha256": "79238fa7ecebb1270fdc843b3bca86cd0c6c203607f92da2cd57354750f94c61"
+  },
+  {
+   "path": "examples/neutral-production/scenes/palette.js",
+   "status": "new",
+   "sources": [
+    "new"
+   ],
+   "sha256": "c474f76ee14f848b116a5343b084bfc4892c41a78588cd98f18687e62792f5eb"
+  },
+  {
+   "path": "examples/neutral-production/scenes/scene-a.js",
+   "status": "new",
+   "sources": [
+    "new"
+   ],
+   "sha256": "2e0f26e3658647e0dd1c3bdd986e0f526fa00725d2671315d411ea62de2703f1"
+  },
+  {
+   "path": "examples/neutral-production/scenes/scene-b.mjs",
+   "status": "new",
+   "sources": [
+    "new; calls the critter rig"
+   ],
+   "sha256": "7d9b1f20255da0a33614d72b4eccc683f543e08a3d93194780c682434f9f0e09"
+  }
+ ],
+ "updated": "2026-10-25 (production shell + R06 critter adapter; static verification only)",
+ "source_reads_2026-10-25": [
+  {
+   "repo": "R06",
+   "commit": "4ddb8c80fdec96dc9f55d4b9bdee60bde6f0134b",
+   "license": "MIT",
+   "path": "repository-downloads/buildwithhanif/claude-animation-skill/plugins/claude-animation/skills/claude-animation/lib/rigs/critter.mjs",
+   "scope": "read in full (82 lines)",
+   "symbols": [
+    "critter",
+    "shade"
+   ],
+   "status": "adapted -> adapters/r06-critter-rig.mjs",
+   "clock": "pose.t / pose.gait supplied by caller (no internal clock)",
+   "coordinates": "local: +x facing, feet y=0, body 130x100 at s=1; placed in canvas pixels"
+  },
+  {
+   "repo": "R06",
+   "commit": "4ddb8c80fdec96dc9f55d4b9bdee60bde6f0134b",
+   "license": "MIT",
+   "path": "repository-downloads/buildwithhanif/claude-animation-skill/plugins/claude-animation/skills/claude-animation/lib/core.mjs",
+   "scope": "read in full (116 lines)",
+   "symbols": [
+    "clamp",
+    "lerp",
+    "rad",
+    "rrect",
+    "poly",
+    "ellipse",
+    "stroke",
+    "fill",
+    "line",
+    "hatch",
+    "INK"
+   ],
+   "status": "helpers adapted (closure of critter); other helpers (catmull, pathOf, ik, grainCanvas, ...) read but not carried"
+  },
+  {
+   "repo": "R02",
+   "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+   "license": "MIT",
+   "path": "repository-downloads/tuzhechen2005/opus-video-skills/skills/kinetic-reel/template/reel/reel.js",
+   "scope": "lines 1-140 read in full; lines 140-527 inspected as function/comment index only",
+   "symbols_read": [
+    "THREE renderers RA/RP",
+    "terrain",
+    "liquid",
+    "knot",
+    "cloud",
+    "post (index)",
+    "txt/letters/measure/line (index)"
+   ],
+   "status": "NOT adapted: hard-coded 1920x1080, global KCUE, owns #out WebGL, window.DUR/PROJECT, transition buffers -> separate-engine route"
+  },
+  {
+   "repo": "R02",
+   "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+   "path": ".../kinetic-reel/template/reel/cues.js",
+   "scope": "lines 1-30 read",
+   "status": "cue format reference only (B(n) beat helper, S scene starts, hits)"
+  },
+  {
+   "repo": "R03",
+   "commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+   "license": "MIT",
+   "path": "repository-downloads/lemomo-ai/lemo-opuscar/styles/risograph/demo/riso.js",
+   "scope": "read in full (154 lines)",
+   "symbols": [
+    "INK",
+    "PAPER",
+    "makeRiso",
+    "FS shader"
+   ],
+   "status": "NOT adapted: takes a WebGL2 context on the output canvas; shared #out is 2D; readback bridge unverifiable without a browser"
+  },
+  {
+   "repo": "R03",
+   "commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+   "license": "MIT",
+   "path": "repository-downloads/lemomo-ai/lemo-opuscar/core/three/post.js",
+   "scope": "read (102 lines; long shader lines truncated at ~170 columns when displayed)",
+   "symbols": [
+    "cocShader",
+    "gatherShader",
+    "DofScenePass",
+    "vignetteShader",
+    "makePost"
+   ],
+   "status": "NOT adapted: needs three.js renderer/scene/camera + three/addons composer passes"
+  },
+  {
+   "repo": "R04",
+   "commit": "6791ea580c811fe3f1a532a2ced4bbed29008ee7",
+   "license": "Apache-2.0",
+   "path": "repository-downloads/heygen-com/hyperframes/skills/music-to-video/scripts/analyze-beatgrid.py",
+   "scope": "docstring/imports/function index read; analyze() lines 408-490 read in full; band/classification bodies not read",
+   "symbols": [
+    "analyze",
+    "audiomap schema: grid.beats_sec, grid.downbeats_sec, events[], key_moments, energy_phases, silences, rolls"
+   ],
+   "status": "output shape mapped in cue-schema.mjs fromBeatgridAudiomap; script never run"
+  },
+  {
+   "repo": "R04",
+   "commit": "6791ea580c811fe3f1a532a2ced4bbed29008ee7",
+   "path": "repository-downloads/heygen-com/hyperframes/skills/hyperframes-animation/adapters/lottie.md",
+   "scope": "lines 1-60 read (located by targeted grep)",
+   "status": "Lottie seek contract noted (autoplay:false, window.__hfLottie, goToAndStop); no adapter built"
+  },
+  {
+   "repo": "R07",
+   "commit": "8f670f3262c75a454d26e01e062da96db7eefb05",
+   "license": "MIT code; media/font terms separate",
+   "path": "repository-downloads/bizarro/evangelion/analysis/analyze.py",
+   "scope": "imports and function index read (lines 1-240 by grep); bodies not read",
+   "status": "architecture reference only; never run"
+  },
+  {
+   "repo": "R07",
+   "commit": "8f670f3262c75a454d26e01e062da96db7eefb05",
+   "path": "repository-downloads/bizarro/evangelion/app/src/engine/audio.ts",
+   "scope": "lines 1-60 read in full; remainder by symbol grep",
+   "symbols": [
+    "AudioJSON",
+    "AudioData"
+   ],
+   "status": "audio.json shape mapped in cue-schema.mjs fromAudioJson; no TypeScript ported"
+  }
+ ],
+ "woodcut_adapter_2026-10-25": {
+  "repo": "lemomo-ai/lemo-opuscar",
+  "commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+  "license": "MIT (adapters/remotion/woodcut/LICENSE.lemo-opuscar)",
+  "scope": "knife.js, hatch.js, print.js, selected index.js helpers, retained core/lib.js helpers; filter.js and demo content not taken",
+  "files": [
+   {
+    "adapted": "adapters/remotion/woodcut/lib.mjs",
+    "upstream": "core/lib.js",
+    "upstream_sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907",
+    "adapted_sha256": "4d6b0f20fc2b75b1ef5a80f18241f36f2172c57512a2c39d2997ead652d4bac1"
+   },
+   {
+    "adapted": "adapters/remotion/woodcut/knife.mjs",
+    "upstream": "styles/woodcut/demo/engine/knife.js",
+    "upstream_sha256": "4e5a29c14cf564625d5d3cad29966c289eee0aad4701cdc3f5728a960d91b431",
+    "adapted_sha256": "38ab804d381e492ecf4a8993d3fe8af46fb4154ab61f2ed6e1e1eb42b1485f37"
+   },
+   {
+    "adapted": "adapters/remotion/woodcut/hatch.mjs",
+    "upstream": "styles/woodcut/demo/engine/hatch.js",
+    "upstream_sha256": "4327d8b90fa799edd92961f7764bf47790aa2d346b1995e5fbf6a6d1a935e862",
+    "adapted_sha256": "a19a2362e00311f5170ae559454ad89aec55a167523b8c69517fcc3c2d6503c5"
+   },
+   {
+    "adapted": "adapters/remotion/woodcut/print.mjs",
+    "upstream": "styles/woodcut/demo/engine/print.js",
+    "upstream_sha256": "7a1314ee1de99b330c463e543b0eb7b1b9dcd59d232fabe184d49ff9c4ee26e3",
+    "adapted_sha256": "10cc1a0ccd0145d27f8dd772d98c74b867d516dd5d5a7934cc93bc6909d46cb9"
+   },
+   {
+    "adapted": "adapters/remotion/woodcut/index.mjs",
+    "upstream": "styles/woodcut/demo/engine/index.js",
+    "upstream_sha256": "c153e7c96c79d920b360242d6eccc8b64046066389e2c90a29030d2f22114b97",
+    "adapted_sha256": "203154fb725178109939f9a96181a5198c2f77eca066f72b91e22a1cfea52c07"
+   }
+  ],
+  "record": "adapters/remotion/woodcut/UPSTREAM_SOURCE_RECORD.md",
+  "status": "adapted (written); focused non-browser checks in tests/verify-woodcut-adapter.mjs; browser integration pending until the native runner is executed"
+ },
+ "will_not_fade_song_implementation_2026-10-25": {
+  "scope": "productions/will-not-fade original song scenes, figure model, caption overlay and local EB Garamond fonts; written, non-rendering checks only (no stills, video, audio processing or visual acceptance)",
+  "engine_used_unchanged": "shared-animation-library/adapters/remotion/woodcut (lemomo-ai/lemo-opuscar b65efe6ea393fdc71212898ea4c57c754cfefa46, MIT); no adapter file changed in this pass",
+  "original_files_sha256": {
+   "config.js": "e7f918a2b71724614fcfe4e5ce74d05422913ea32ff063680721b186619cdf1c",
+   "remotion/scenes.mjs": "9cff4e8904561f631fe1ef118b70b09728de40f944a5335cef09b961a24d963d",
+   "remotion/art/kit.mjs": "249a463b2735752619eb4e087f4f23daf601c80820dc9120dff3141b1a12b19b",
+   "remotion/art/figures.mjs": "5be055266c53b9004549dd40aeda9dc063b173444502328693b0069a862b55f7",
+   "remotion/art/s01.mjs": "4c8d08ce1ab9838d404890997871e02e7028520cffabfe9d32c16e2d8c7bac05",
+   "remotion/art/s02.mjs": "b6257c7318f8d4889b81d59baac29b8c71a1c67cfba5e9549831e032e84d3483",
+   "remotion/art/s03.mjs": "ac15071c6a4b1510c7badaf89eb540e5656053f4ee4763d822c7147970813041",
+   "remotion/art/s04.mjs": "a21716d3e16810b88b19c243492657adc7db6bcd08a275932d97c31b62faa8c4",
+   "remotion/art/s05.mjs": "45d888a1d9ac3bebd77f6bea940d7d7f1841864114da0c61861d368628b45d35",
+   "remotion/art/s06.mjs": "acdaa11497f4c5501224711d0f87337e11495f722977db57c29b22c148a46e63",
+   "remotion/art/s07.mjs": "9c67c26de0c842b64f61f2dcdfbe08b7ffb2e7f7aeb919d867ddd7d72fc26438",
+   "remotion/art/s08.mjs": "7aa4ae80c8fdd8ef17b8faacfbedbf2f6ef72e483cdc84d03b7cc68e11d4131f",
+   "remotion/art/s09.mjs": "f1e80ee9c456e07c4e78cc9a1368f20c1b10cbce2352e1ebda420baffb08e536",
+   "remotion/art/s10.mjs": "66d9e3291f55667190b853addbe4ba0746cc2c353be69fae4738278435d4137a"
+  },
+  "fonts": {
+   "family": "EB Garamond",
+   "version": "5.2.7 (Fontsource)",
+   "license": "SIL OFL-1.1",
+   "source": "repository-preparation/additional-resources/javascript/node_modules/@fontsource/eb-garamond/files",
+   "copied_to": "productions/will-not-fade/public/fonts/",
+   "sha256": {
+    "public/fonts/eb-garamond-latin-400-italic.woff2": "1bd1b20fd55986b334ba42dbcb0d9bed7e2d08fd7a713000e8041bfafa37e8ec",
+    "public/fonts/eb-garamond-latin-500-normal.woff2": "d2bb3f624516d0233ef8a03bd7b2be47489c36809a02e83ac1bc859e85f4874a",
+    "public/fonts/eb-garamond-latin-400-normal.woff2": "b63448e2680a0dbde70ebb2f3de78f6c515122835491f938e8a8595b46f29210",
+    "public/fonts/EB-Garamond-OFL-LICENSE.txt": "f03c8eda63076cd52317dcd40aa04db8472d4cb592dfaafa385129dfdafc7f9c"
+   }
+  },
+  "record": "productions/will-not-fade/technical-review/implementation_20261025/SOURCE_ATTRIBUTION.md",
+  "status": "written; checked non-visually (implementation_check_run6_final.json); not browser-drawn for this song, not visually reviewed, not encoded"
+ }
+}

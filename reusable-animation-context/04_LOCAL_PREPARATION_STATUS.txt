@@ -1,0 +1,23 @@
+HISTORICAL LOCAL DEPENDENCY PREPARATION — 2026-10-05
+
+Thirteen complete checkouts match their recorded commits. All 13,674 tracked entries were independently verified. 171 LFS entries retrieved. See repository-preparation/ for detailed checks and deferred scopes.
+
+Source repository-preparation/activate.sh in a terminal session to expose isolated Git LFS/Bun and existing Chrome variables without changing the shell profile. R01/R02 use CHROME_PATH; R03 uses PLAYWRIGHT_CHROME. R08 accepts --chrome. R10 has a separate R10_CHROME_PRELOAD.mjs adapter. Use each Python environment through its own .venv/bin/python. Exact package versions and entry paths are in the detailed receipts.
+
+The prepared local engines cover illustrated, painted, kinetic, printed, dimensional, HTML and native Canvas work. Future theme selection should compare these capabilities using the actual song and desired image/motion craft. Read the chosen original implementation and initialize it under the appropriate environment. A catalog entry or dependency installation is not proof of visual quality.
+
+As of 2026-10-05, optional voice/music models, paid-service branches, cloud deployment, R05 Ruby/ImageMagick, R07 audio analysis, website build and collection maintenance remained documented choices. R07 analysis was subsequently prepared as recorded below. Evangelion has no supplied licensed soundtrack; its successful compilation skipped public-audio copying and is not a complete playable production.
+
+No new media was produced. The next production stage remains governed by current user authorization. No chat context connections were changed by local preparation.
+
+CURRENT ADDENDUM — 2026-10-24 (ORIGINAL ACTIVE KIT)
+The following resources were installed or prepared after the historical 2026-10-05 snapshot. Detailed versions, licenses, commands and checks are in repository-preparation/additional-resources/README.md and ADDITIONAL_RESOURCE_INSTALLS.csv.
+
+- R07 analysis: repository-downloads/bizarro/evangelion/analysis/.venv was created from the existing pyproject.toml and uv.lock using Python 3.12.13. Librosa 1.0.0 imports. The locked R07 environment also prepares its declared Demucs, MLX Whisper and Torch stack. No song audio was processed and no model weights were downloaded.
+- Optional isolated JavaScript set: repository-preparation/additional-resources/javascript/ contains Flubber 0.4.2, Lottie Web 5.13.0, Pixelmatch 8.0.0, pngjs 7.0.0 and Fontsource Archivo Black, EB Garamond, Inter, League Gothic, Noto Sans JP and Space Mono. The package tree resolves; none is integrated into the shared renderer.
+- WhisperX 3.8.6 is installed in repository-preparation/additional-resources/whisperx/.venv on Python 3.12.13 with CPU PyTorch. Model weights were not downloaded; singing alignment is unassessed.
+- Khronos RiggedSimple is a sparse fixture at repository-preparation/additional-resources/gltf-sample-assets/Models/RiggedSimple, pinned to commit 8f492390ddc7a2ae221a1369ef560589cf8c70fb. It is CC-BY-4.0 with model-level attribution. It is not a general asset-rights clearance.
+- Approximate added logical storage: JS set 118 MB; WhisperX environment 975 MB; R07 environment 1.1 GB; glTF fixture 168 KB. These additions are in the original active kit. The Downloads migration copy predates them and is not the current source of truth.
+
+BOUNDARIES
+Installation/import checks establish package readiness only. No added package has been integrated into the shared renderer except the already-recorded R06 particle adaptation. No audio analysis, WhisperX inference, media generation, rendering, visual baseline, browser appearance review or audiovisual acceptance was performed in this preparation pass.

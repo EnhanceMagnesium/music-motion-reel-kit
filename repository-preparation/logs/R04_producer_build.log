@@ -1,0 +1,10 @@
+@hyperframes/producer build: $ bun run scripts/build-hf-early-stub.ts
+@hyperframes/producer build: {"event":"hf_early_stub_generated","stubEntry":"<ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/producer/stubs/hf-early-stub.ts","outPath":"<ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/producer/src/generated/hf-early-stub-inline.ts","bytes":3323}
+@hyperframes/producer build: $ bun run --filter @hyperframes/core build:hyperframes-runtime:modular
+@hyperframes/producer build: @hyperframes/core build:hyperframes-runtime:modular: {"event":"hyperframe_runtime_artifacts_generated","buildId":"dev","distDir":"<ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/core/dist","iifePath":"<ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/core/dist/hyperframe.runtime.iife.js","esmPath":"<ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/core/dist/hyperframe.runtime.mjs","manifestPath":"<ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/core/dist/hyperframe.manifest.json","inlineModulePath":"<ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/core/src/generated/runtime-inline.ts","sourceBytes":487089,"esmBytes":487065,"sha256":"767f9ae12880fb1cfb79c85be8f4b951040c712386e9c433d90fd63f4f1b2d1d"}
+@hyperframes/producer build: @hyperframes/core build:hyperframes-runtime:modular: (node:45792) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+@hyperframes/producer build: @hyperframes/core build:hyperframes-runtime:modular: (Use `node --trace-deprecation ...` to show where the warning was created)
+@hyperframes/producer build: @hyperframes/core build:hyperframes-runtime:modular: Exited with code 0
+@hyperframes/producer build: [Build] Copied runtime: hyperframe.manifest.json, hyperframe.runtime.iife.js
+@hyperframes/producer build: [Build] Complete: dist/index.js, dist/public-server.js, *.d.ts
+@hyperframes/producer build: Exited with code 0

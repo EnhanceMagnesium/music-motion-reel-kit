@@ -1,0 +1,352 @@
+{
+  "sha": "86dae32d20f0a0f2395e7dc8938846fd51e355a6",
+  "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/trees/86dae32d20f0a0f2395e7dc8938846fd51e355a6",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f7c130b3bf5f78f365da6f3bcfa147686923dbf",
+      "size": 40,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/8f7c130b3bf5f78f365da6f3bcfa147686923dbf"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e99477368d49e96a308e4228ba1a30fc8582a4a6",
+      "size": 6143,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/e99477368d49e96a308e4228ba1a30fc8582a4a6"
+    },
+    {
+      "path": "assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cb68912a7370bd3739ba6299e6ccd51368fac536",
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/trees/cb68912a7370bd3739ba6299e6ccd51368fac536"
+    },
+    {
+      "path": "assets/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "befb3a9cbf04d888691d54c4b02d61fb2d4bef4a",
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/trees/befb3a9cbf04d888691d54c4b02d61fb2d4bef4a"
+    },
+    {
+      "path": "assets/fonts/CormorantSC-Bold.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36688de1d7ff95068e70b4505460d8ff8283006b",
+      "size": 290852,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/36688de1d7ff95068e70b4505460d8ff8283006b"
+    },
+    {
+      "path": "assets/fonts/CormorantSC-Medium.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9e93f16ab94ac922a2414ed2f657b91ee84c935",
+      "size": 290336,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/a9e93f16ab94ac922a2414ed2f657b91ee84c935"
+    },
+    {
+      "path": "assets/fonts/EBGaramond-Italic.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1e9b8cc1dec5bb04c1afcf98a0d112749c4ba8e",
+      "size": 339240,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/f1e9b8cc1dec5bb04c1afcf98a0d112749c4ba8e"
+    },
+    {
+      "path": "assets/fonts/EBGaramond-Regular.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db375c8bc0a53986932430dc4262722c1172e6db",
+      "size": 389868,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/db375c8bc0a53986932430dc4262722c1172e6db"
+    },
+    {
+      "path": "assets/fonts/EBGaramond-SemiBold.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c964693dd622b88d3c2beece44768d905fb816e",
+      "size": 392328,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/1c964693dd622b88d3c2beece44768d905fb816e"
+    },
+    {
+      "path": "data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e7019a2245f8026fc1e6a160173144bf5cfbfd72",
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/trees/e7019a2245f8026fc1e6a160173144bf5cfbfd72"
+    },
+    {
+      "path": "data/europe.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07c79d1460c80858990fb49d6f0d4efb37b7b3bd",
+      "size": 162506,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/07c79d1460c80858990fb49d6f0d4efb37b7b3bd"
+    },
+    {
+      "path": "data/mix.m4a",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcc7210ccef0bf0cd0fd19a90d65884d08dc0f25",
+      "size": 5024593,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/fcc7210ccef0bf0cd0fd19a90d65884d08dc0f25"
+    },
+    {
+      "path": "data/terrain.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "469d2a1f0eccee2eebdbec358143049043d79e42",
+      "size": 609175,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/469d2a1f0eccee2eebdbec358143049043d79e42"
+    },
+    {
+      "path": "data/timings.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "083e34d12edb3891cab06c76b7a4d1c3b1e826ca",
+      "size": 350,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/083e34d12edb3891cab06c76b7a4d1c3b1e826ca"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "feb5e20b9a36f05c46752348a9db0e332e53a75b",
+      "size": 389,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/feb5e20b9a36f05c46752348a9db0e332e53a75b"
+    },
+    {
+      "path": "tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "77cc618360f48fef9f6fb61290849febb40771a3",
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/trees/77cc618360f48fef9f6fb61290849febb40771a3"
+    },
+    {
+      "path": "tools/build_europe.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3f4ca12b25c9b4d1a03033fa80e63c0643eb629",
+      "size": 2305,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/d3f4ca12b25c9b4d1a03033fa80e63c0643eb629"
+    },
+    {
+      "path": "tools/export.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d94ccbbcedc95555dc8cdb7465d5566b3fe030b",
+      "size": 1213,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/4d94ccbbcedc95555dc8cdb7465d5566b3fe030b"
+    },
+    {
+      "path": "tools/fetch_terrain.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9a48bd08069b45558de1823f6feb593b4890279",
+      "size": 2797,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/c9a48bd08069b45558de1823f6feb593b4890279"
+    },
+    {
+      "path": "tools/frames.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a129def82f5dcfae01ebdf9ca5dd108e305d8dae",
+      "size": 1355,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/a129def82f5dcfae01ebdf9ca5dd108e305d8dae"
+    },
+    {
+      "path": "tools/mix.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccd5a329ed217d98f6d9fceb0cae82f13aa4201b",
+      "size": 26288,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/ccd5a329ed217d98f6d9fceb0cae82f13aa4201b"
+    },
+    {
+      "path": "tools/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6201df63e7dc0f1bf49ad27fdca5d9c522c38b42",
+      "size": 4827,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/6201df63e7dc0f1bf49ad27fdca5d9c522c38b42"
+    },
+    {
+      "path": "tools/serve.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24ac983b1f99a31b17df79c139c28889503ec22e",
+      "size": 1006,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/24ac983b1f99a31b17df79c139c28889503ec22e"
+    },
+    {
+      "path": "tools/tts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0844d330bfcfe6ceadaa546bc95fb6abaee29b7",
+      "size": 2407,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/a0844d330bfcfe6ceadaa546bc95fb6abaee29b7"
+    },
+    {
+      "path": "video",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3a45c22cb445a35e26348f7d2560b8b2b94acd0c",
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/trees/3a45c22cb445a35e26348f7d2560b8b2b94acd0c"
+    },
+    {
+      "path": "video/austerlitz.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0b0c939b821eef3d3e3bdaf973a2331f8f6df44",
+      "size": 89298864,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/d0b0c939b821eef3d3e3bdaf973a2331f8f6df44"
+    },
+    {
+      "path": "video/austerlitz.srt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6b53f0c9030331286a6193048bc8c2002d4dcdb",
+      "size": 5872,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/a6b53f0c9030331286a6193048bc8c2002d4dcdb"
+    },
+    {
+      "path": "web",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "67c5afef5f7e4cfc3f58f31d04e16fd951e6e99b",
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/trees/67c5afef5f7e4cfc3f58f31d04e16fd951e6e99b"
+    },
+    {
+      "path": "web/engine",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "28482421353c62213e1f098922d6005599462836",
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/trees/28482421353c62213e1f098922d6005599462836"
+    },
+    {
+      "path": "web/engine/army.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4413184a85a774974eed026add1ae989e6bb30b0",
+      "size": 7170,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/4413184a85a774974eed026add1ae989e6bb30b0"
+    },
+    {
+      "path": "web/engine/env.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c48f5d748c02bac5081c0be5887da7dda3061139",
+      "size": 6055,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/c48f5d748c02bac5081c0be5887da7dda3061139"
+    },
+    {
+      "path": "web/engine/europe.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2683be5ebd6abcbe64f9606fe2840ea5c08128c0",
+      "size": 9189,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/2683be5ebd6abcbe64f9606fe2840ea5c08128c0"
+    },
+    {
+      "path": "web/engine/fx.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1737b3530fd4243fbd05596fc6a60c6eafe33fc5",
+      "size": 10775,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/1737b3530fd4243fbd05596fc6a60c6eafe33fc5"
+    },
+    {
+      "path": "web/engine/gl.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ac824c1661a3590e490ce0757bf2430e950c852",
+      "size": 8403,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/4ac824c1661a3590e490ce0757bf2430e950c852"
+    },
+    {
+      "path": "web/engine/overlay.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a11e43ef637ed96b1b12d8929c006e889f7194d0",
+      "size": 8138,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/a11e43ef637ed96b1b12d8929c006e889f7194d0"
+    },
+    {
+      "path": "web/engine/renderer.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b30f936ae7ad0f19a527657f7c20a6076af84e8b",
+      "size": 22100,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/b30f936ae7ad0f19a527657f7c20a6076af84e8b"
+    },
+    {
+      "path": "web/engine/shaders.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed520e00972d3c13beaab632985caf6c4257c88e",
+      "size": 26428,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/ed520e00972d3c13beaab632985caf6c4257c88e"
+    },
+    {
+      "path": "web/engine/sprites.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8569cffaac65baead440ac55dbbd6dfa55a24643",
+      "size": 38521,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/8569cffaac65baead440ac55dbbd6dfa55a24643"
+    },
+    {
+      "path": "web/engine/terrain.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0d8200782b838008a6d0b9f289b9bbb632c1e24",
+      "size": 13791,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/c0d8200782b838008a6d0b9f289b9bbb632c1e24"
+    },
+    {
+      "path": "web/events.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ff93599f256a36e5606e650eaaa3d82afab04ee",
+      "size": 3697,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/8ff93599f256a36e5606e650eaaa3d82afab04ee"
+    },
+    {
+      "path": "web/film.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ed73edef10e2f5aeffcc42fa373a88a7a34d97b",
+      "size": 53102,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/9ed73edef10e2f5aeffcc42fa373a88a7a34d97b"
+    },
+    {
+      "path": "web/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f933a0e94c61b4d207b169ff459257b43cea2106",
+      "size": 3158,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/f933a0e94c61b4d207b169ff459257b43cea2106"
+    },
+    {
+      "path": "web/main.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcec84d5ca9298c710d09f69114b61560c5688bb",
+      "size": 4404,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/bcec84d5ca9298c710d09f69114b61560c5688bb"
+    },
+    {
+      "path": "web/script.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b94740146d3d6423f9d7a291506c358b6011f0b",
+      "size": 5475,
+      "url": "https://api.github.com/repos/WinterArc21/Battle-of-Austerlitz-Film/git/blobs/1b94740146d3d6423f9d7a291506c358b6011f0b"
+    }
+  ],
+  "truncated": false
+}

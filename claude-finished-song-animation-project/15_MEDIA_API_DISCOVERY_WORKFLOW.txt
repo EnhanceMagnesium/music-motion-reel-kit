@@ -1,0 +1,109 @@
+REQUIRED PER-SONG API FOOTAGE — WIKIMEDIA COMMONS + INTERNET ARCHIVE
+
+Status: each finished song must integrate at least one relevant, rights-cleared clip found through Wikimedia Commons and at least one through Internet Archive. Prelinger is a collection within Internet Archive and may be used when relevant. The Moving Image Archive separately remains required, so the finished reel must include suitable, reviewed footage from all three sources. The shared pre-render helper is implemented in shared-animation-library/media-discovery/. Search and metadata inspection do not render, visually review, license-certify or integrate footage into a scene.
+
+## Sources and scope
+
+Use the shared local Node helper for required per-song search and inspection from:
+
+- Wikimedia Commons, MediaWiki Action API: https://commons.wikimedia.org/w/api.php
+- Internet Archive Advanced Search and item metadata APIs: https://archive.org/advancedsearch.php and https://archive.org/metadata/<identifier>
+- Prelinger Archives Online, the dedicated searchable discovery site: https://prelingerarchives.online/
+- Internet Archive's Prelinger collection, where selected digital film records and downloadable files are hosted: https://archive.org/details/prelinger
+
+For Prelinger footage, use Prelinger Archives Online as a collection-specific, human-facing search and discovery route. Search its titles, subjects and descriptions for this song's shot needs; open and preview the matching film, then follow the film's Internet Archive record to inspect the item, available files and item-level rights. The existing Internet Archive CLI/API integration remains the metadata/download path (`--collection prelinger`); `prelingerarchives.online` is not a third API provider and does not replace that integration. Prelinger is one Internet Archive collection, not a separate API or the R10 film-study repository. Do not assume every Prelinger item is public domain: check each film's own rights/license record and any relevant embedded material before selecting it.
+
+The Moving Image Archive remains a separate website workflow and at least one relevant Moving Image Archive clip is also required in each finished reel. Use its search page, https://www.movingimagearchive.com/#search, to find song-specific footage. The three sources have separate search and provenance workflows; none can substitute for another. Do not assume the Moving Image Archive has a public API.
+
+Do not conflate these footage sources with R01–R16 code repositories, R10 or R12/Skillry. Search Commons and Internet Archive for every song and integrate at least one suitable clip from each. Do not meet the source requirement with unrelated footage: if no relevant clip clears preview and rights review, record the source requirement as unmet and do not label the reel finished.
+
+## Authentication and client identity
+
+The intended API operations are public search, public metadata reads and selected public file downloads. They require no API key, OAuth consumer, logged-in account, browser session or secret. Do not register an OAuth consumer or ask the user to sign in to make these read-only calls work. Internet Archive login is not passed from Claude's browser pane to the local Node helper.
+
+Wikimedia still requires a meaningful HTTP User-Agent with truthful operator contact information under its current API policy. This is different from OAuth. Before a Commons request, configure one truthful public URL or email either in MEDIA_DISCOVERY_CONTACT or with --contact. The helper refuses to make the request when neither is present; it does not guess, invent or publish a local filesystem path. Do not place private credentials or account tokens in this value. If no suitable contact route is available, use Internet Archive search and continue Commons work only after the contact requirement is resolved.
+
+### Contact supplied for this kit
+
+The user supplied `YOUR_PUBLIC_CONTACT_EMAIL` as the truthful Wikimedia API contact and authorized its use for Commons searches. Use it with `--contact` on every Commons search, inspect and download command. It is contact information in the outgoing User-Agent, not a login credential; no Wikimedia sign-in, OAuth app or profile is needed for the public read workflow. Because `--contact` is passed to each request, do not save the address in a shell profile, environment file, shared default, or another settings file. The address is intentionally retained here so future song tasks do not have to ask for it again. Use it only while the user continues to authorize it.
+
+Keep requests low-volume. The helper caps a single result page at eight, makes Commons file metadata requests through the Action API, retrieves only the returned Internet Archive item metadata, caches small successful search/metadata JSON responses in the OS temporary directory for up to 24 hours, and re-fetches selected metadata without cache before download. It honors Wikimedia 429/503 Retry-After; no more than one item metadata request is in flight at a time. Never bulk crawl either service.
+
+## Per-song workflow
+
+1. Derive concrete footage needs from this song's planned scenes: visible subject/action, setting, period, framing, duration/quality, and why footage improves the moment. Search the Moving Image Archive separately through its existing guide.
+2. Search both Commons and Internet Archive for each song, using a small set of grounded, natural-language shot descriptions tied to actual planned shots. Search results are provider-indexed metadata matches, not semantic understanding or visual assessment. For Prelinger-specific discovery, also search `https://prelingerarchives.online/`; use it to locate and preview relevant collection items, then verify and retrieve the selected record/file through Internet Archive. The helper's `--collection prelinger` filter is useful for API shortlist searches but is not a substitute for visually checking the Prelinger search result and film page.
+3. Preview candidates on their original item/file pages in the local browser. Confirm the actual imagery, complete clip, dimensions, timing usability, subject/context and crop before selection. API titles, descriptions, thumbnails and match labels do not establish what the clip visibly contains.
+4. A film surfaced in Prelinger Archives Online is an available footage-source candidate for this workflow; the “Download Options” list is not the basis for deciding whether the archive makes it available. Use that list to identify the actual retrievable video file and format, not a torrent, log, subtitle or metadata file, and use its exact filename with the shared helper. Preserve and inspect the selected item's own rights/reuse statement and creator/credit fields; route inclusion is not a blanket claim that every item is public domain or free of item-specific conditions. The helper re-fetches metadata, applies its rights allowlist, checks media type/size/host, hashes the original file, refuses overwrites and writes only under the selected song folder. Complete the required MIA, Commons and Internet Archive selections before labeling the full production complete.
+5. Review the saved supplemental archive/API_CLIP_MANIFEST.json and archive/API_CLIP_MANIFEST.md. Keep the existing Moving Image Archive archive/CLIP_MANIFEST.md and its entries intact. Record exact clip in/out and every later transformation after review; the download command preserves the untrimmed source and does not add it to config.js or a scene.
+6. After the song's authorized scene implementation stage, add the path to the song's PROJECT.assets and scene contract as appropriate, verify the shared runtime's public-file mapping, preview the footage, and keep its original sound muted under the supplied master unless separately authorized.
+7. If no candidate from a required source clears relevance, item-level rights and preview review, do not use it or substitute another source. Record queries/results, mark that requirement unmet and do not mark the reel finished. Do not treat an archive, uploader or collection as certifying rights.
+
+## Commands
+
+Run from the active kit root. The tool is pre-render and does not load Remotion:
+
+    node shared-animation-library/media-discovery/cli.mjs --help
+
+Internet Archive search, with optional Prelinger collection filter:
+
+    node shared-animation-library/media-discovery/cli.mjs search --provider ia --query "night stadium searchlights" --collection prelinger --limit 5
+
+Commons search requires a truthful contact URL or email. Set it in the session environment once, or pass it for an individual request:
+
+    node shared-animation-library/media-discovery/cli.mjs search --provider commons --query "night stadium searchlights" --limit 5 --contact "YOUR_PUBLIC_CONTACT_EMAIL"
+
+An Internet Archive result includes an id, a list of actual video files and their exact names. Re-inspect the selected item immediately before an explicitly selected download:
+
+    node shared-animation-library/media-discovery/cli.mjs inspect --provider ia --id ITEM_IDENTIFIER
+    node shared-animation-library/media-discovery/cli.mjs download --provider ia --id ITEM_IDENTIFIER --file "exact video filename.mp4" --root productions/SONG_ID
+
+For Commons, use the exact file title from search:
+
+    node shared-animation-library/media-discovery/cli.mjs inspect --provider commons --id "File:Exact title.webm" --contact "YOUR_PUBLIC_CONTACT_EMAIL"
+    node shared-animation-library/media-discovery/cli.mjs download --provider commons --id "File:Exact title.webm" --root productions/SONG_ID --contact "YOUR_PUBLIC_CONTACT_EMAIL"
+
+Optional filters include --mime, --min-width, --min-height, --min-duration, --max-duration, --duration-seconds with --duration-tolerance, and --year-from/--year-to. A filter excludes candidates whose metadata is missing the field needed to evaluate it. Results are bounded; use the returned next-page/offset field for another deliberate small page rather than increasing the cap.
+
+For a durable song shortlist, save the CLI JSON output to a new, uniquely named file under productions/SONG_ID/research/ and include query, provider and date in the filename. Do not redirect over an existing evidence file.
+
+## Rights gate
+
+The helper allows only:
+
+- item-level Public Domain evidence;
+- CC0;
+- CC BY 1.0, 2.0, 2.5, 3.0 or 4.0, with complete creator/title/source/license attribution.
+
+The helper excludes CC BY-SA, NC, ND, other restrictive licenses, ambiguous/missing metadata, unknown license URLs and conflicting rights fields. A rights result of rights_unverified or not_allowed blocks download. Do not bypass it by manually copying a file.
+
+Commons stores much license/creator data as HTML/free text and its extmetadata may be missing or incomplete. The helper retains the relevant raw fields; verify the exact Commons file page before use. Internet Archive's rights statement is generally supplied by the item uploader and is not guaranteed by the Archive. A clear metadata statement is a research basis, not legal certification. Preserve the item page, rights text, exact license/version and required attribution in the song manifest.
+
+## Limits and evidence
+
+- Search results, metadata, candidate counts, file MIME and dimensions are not visual review.
+- A preview page does not establish full-resolution image quality or suitable edit points.
+- A checksum proves bytes saved; it does not prove rights or visual suitability.
+- Selected downloads are complete unmodified source files. Do not crop, trim, mute, grade, re-encode or otherwise alter them as part of discovery.
+- API discovery is separate from Remotion rendering, Playwright candidate QA, FFmpeg contact-sheet generation and the Moving Image Archive website workflow.
+- Public API access does not establish rights for every item. The item-level gate and human preview remain required before satisfying the mandatory Commons and Internet Archive source requirements.
+
+## Official references
+
+- Prelinger Archives Online search and collection information: https://prelingerarchives.online/
+- Internet Archive Prelinger collection records and item pages: https://archive.org/details/prelinger
+- MediaWiki explains OAuth as an application requesting permission to act through a user's wiki account: https://www.mediawiki.org/wiki/OAuth/For_Developers#OAuth_2
+- Wikimedia's API policy requires a User-Agent and permits a wiki user page, relevant website URL or email as contact; authentication raises rate limits but is not required for this public read workflow: https://www.mediawiki.org/wiki/Wikimedia_APIs/Access_policy
+- Internet Archive documents read APIs and item/file metadata: https://archive.org/developers/
+- Internet Archive says it does not guarantee item-rights statements and that uploaders often supply them: https://archivesupport.zendesk.com/hc/en-us/articles/360014759692-Rights
+- The exact legacy Creative Commons URI `http://creativecommons.org/licenses/publicdomain/` is listed as the Public Domain special case in CC's machine-readable license properties documentation: https://wiki.creativecommons.org/wiki/License_Properties
+
+## Shared implementation
+
+- CLI: shared-animation-library/media-discovery/cli.mjs
+- Provider adapters: commons.mjs, internet-archive.mjs
+- Shared rights, filters, HTTP/cache/retry and selected-download safeguards: rights.mjs, filters.mjs, http.mjs, download.mjs
+- Deterministic offline checks: shared-animation-library/media-discovery/tests/media-discovery.test.mjs
+- Integration report: repository-preparation/MEDIA_API_IMPLEMENTATION_REPORT_2026-10-27.md
+
+No provider call is made during shared-animation-library/render.mjs, a Remotion bundle, or a scene render. No dependency is installed per song.

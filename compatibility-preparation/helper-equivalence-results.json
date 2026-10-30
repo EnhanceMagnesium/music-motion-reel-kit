@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": 97024,
+  "node": "v26.7.0",
+  "scope": "numeric extraction only; no rendering or source mutation",
+  "sampling": "6001 scalar samples [-1,2], 1000 Park-Miller draws, boundary probes",
+  "maxBackDelta": 5.551115123125783e-16,
+  "maxNoiseAdapterDelta": 4.440892098500626e-16,
+  "backDefaultAtHalf": {
+    "R03": 1.1,
+    "R02": 1.0875,
+    "R06": 1.1
+  },
+  "firstSeed7": {
+    "mulberry": 0.011704753153026104,
+    "parkMiller": 0.000054784584815979276
+  },
+  "rngDegenerateSeed": 0
+}

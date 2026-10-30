@@ -1,0 +1,210 @@
+[
+  {
+    "command": [
+      "npm",
+      "ls",
+      "--depth=0",
+      "--json"
+    ],
+    "cwd": "repository-downloads/makevoid/motion-graphics-music-video-skill/.claude/skills/motion-graphics-music-video/scripts",
+    "exit": 0,
+    "stdout": "{\n  \"name\": \"motion-graphics-music-video-tools\",\n  \"dependencies\": {\n    \"p5\": {\n      \"version\": \"2.3.3\",\n      \"resolved\": \"https://registry.npmjs.org/p5/-/p5-2.3.3.tgz\",\n      \"overridden\": false\n    },\n    \"puppeteer-core\": {\n      \"version\": \"25.12.0\",\n      \"resolved\": \"https://registry.npmjs.org/puppeteer-core/-/puppeteer-core-25.12.0.tgz\",\n      \"overridden\": false\n    }\n  }\n}\n",
+    "stderr": "",
+    "id": "R05"
+  },
+  {
+    "command": [
+      "npm",
+      "ls",
+      "--depth=0",
+      "--json"
+    ],
+    "cwd": "repository-downloads/buildwithhanif/claude-animation-skill/plugins/claude-animation/skills/claude-animation",
+    "exit": 0,
+    "stdout": "{\n  \"version\": \"1.0.0\",\n  \"name\": \"claude-animation\",\n  \"dependencies\": {\n    \"@napi-rs/canvas\": {\n      \"version\": \"0.1.100\",\n      \"resolved\": \"https://registry.npmjs.org/@napi-rs/canvas/-/canvas-0.1.100.tgz\",\n      \"overridden\": false\n    }\n  }\n}\n",
+    "stderr": "",
+    "id": "R06"
+  },
+  {
+    "command": [
+      "npm",
+      "ls",
+      "--depth=0",
+      "--json"
+    ],
+    "cwd": "repository-downloads/JohnHeibel/PDoomVideo",
+    "exit": 0,
+    "stdout": "{\n  \"version\": \"1.0.0\",\n  \"name\": \"pdoomvideo\",\n  \"dependencies\": {\n    \"p5.brush\": {\n      \"version\": \"2.2.3\",\n      \"resolved\": \"https://registry.npmjs.org/p5.brush/-/p5.brush-2.2.3.tgz\",\n      \"overridden\": false\n    },\n    \"p5\": {\n      \"version\": \"2.3.3\",\n      \"resolved\": \"https://registry.npmjs.org/p5/-/p5-2.3.3.tgz\",\n      \"overridden\": false\n    },\n    \"puppeteer-core\": {\n      \"version\": \"25.11.0\",\n      \"resolved\": \"https://registry.npmjs.org/puppeteer-core/-/puppeteer-core-25.11.0.tgz\",\n      \"overridden\": false\n    }\n  }\n}\n",
+    "stderr": "",
+    "id": "R08"
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "repository-downloads/domenic/domenic.me/src/we-didnt-start-the-scaling/assets/worker.js"
+    ],
+    "cwd": "repository-downloads/domenic/domenic.me",
+    "exit": 0,
+    "stdout": "",
+    "stderr": "",
+    "id": "R09"
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "repository-downloads/domenic/domenic.me/src/we-didnt-start-the-scaling/assets/page.mjs"
+    ],
+    "cwd": "repository-downloads/domenic/domenic.me",
+    "exit": 0,
+    "stdout": "",
+    "stderr": "",
+    "id": "R09"
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "repository-downloads/domenic/domenic.me/src/we-didnt-start-the-scaling/assets/engine/pop-punk.js"
+    ],
+    "cwd": "repository-downloads/domenic/domenic.me",
+    "exit": 0,
+    "stdout": "",
+    "stderr": "",
+    "id": "R09"
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "repository-downloads/domenic/domenic.me/src/we-didnt-start-the-scaling/assets/engine/piano-rock.js"
+    ],
+    "cwd": "repository-downloads/domenic/domenic.me",
+    "exit": 0,
+    "stdout": "",
+    "stderr": "",
+    "id": "R09"
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "repository-downloads/domenic/domenic.me/src/we-didnt-start-the-scaling/assets/engine/k-pop.js"
+    ],
+    "cwd": "repository-downloads/domenic/domenic.me",
+    "exit": 0,
+    "stdout": "",
+    "stderr": "",
+    "id": "R09"
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "repository-downloads/domenic/domenic.me/src/we-didnt-start-the-scaling/assets/engine/indie-folk.js"
+    ],
+    "cwd": "repository-downloads/domenic/domenic.me",
+    "exit": 0,
+    "stdout": "",
+    "stderr": "",
+    "id": "R09"
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "repository-downloads/domenic/domenic.me/src/we-didnt-start-the-scaling/assets/engine/anisong.js"
+    ],
+    "cwd": "repository-downloads/domenic/domenic.me",
+    "exit": 0,
+    "stdout": "",
+    "stderr": "",
+    "id": "R09"
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "repository-downloads/domenic/domenic.me/src/we-didnt-start-the-scaling/assets/engine/eurodance.js"
+    ],
+    "cwd": "repository-downloads/domenic/domenic.me",
+    "exit": 0,
+    "stdout": "",
+    "stderr": "",
+    "id": "R09"
+  },
+  {
+    "command": [
+      "npm",
+      "ls",
+      "--depth=0",
+      "--json"
+    ],
+    "cwd": "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film",
+    "exit": 0,
+    "stdout": "{\n  \"name\": \"battle-of-austerlitz-film\",\n  \"dependencies\": {\n    \"playwright\": {\n      \"version\": \"1.63.0\",\n      \"resolved\": \"https://registry.npmjs.org/playwright/-/playwright-1.63.0.tgz\",\n      \"overridden\": false\n    }\n  }\n}\n",
+    "stderr": "",
+    "id": "R10"
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/tools/frames.mjs"
+    ],
+    "cwd": "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film",
+    "exit": 0,
+    "stdout": "",
+    "stderr": "",
+    "id": "R10"
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/tools/render.mjs"
+    ],
+    "cwd": "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film",
+    "exit": 0,
+    "stdout": "",
+    "stderr": "",
+    "id": "R10"
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/tools/export.mjs"
+    ],
+    "cwd": "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film",
+    "exit": 0,
+    "stdout": "",
+    "stderr": "",
+    "id": "R10"
+  },
+  {
+    "command": [
+      "node",
+      "--check",
+      "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/tools/serve.mjs"
+    ],
+    "cwd": "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film",
+    "exit": 0,
+    "stdout": "",
+    "stderr": "",
+    "id": "R10"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/build.mjs",
+      "--check"
+    ],
+    "cwd": "repository-downloads/guanmo-ai/awesome-ai-motion",
+    "exit": 0,
+    "stdout": "校验通过：464 个案例，README、案例页与纯文本提示词。\n",
+    "stderr": "",
+    "id": "R11"
+  }
+]

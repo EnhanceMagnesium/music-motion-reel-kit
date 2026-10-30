@@ -1,0 +1,78 @@
+REPOSITORY ATLAS POINTER
+For each song, follow `claude-finished-song-animation-project/13_REPOSITORY_NAVIGATION_AND_USE.txt` and its atlas. Save `productions/<song>/research/REPOSITORY_REVIEW.md` with ranked dispositions for all R01–R16 and exact paths opened. Deep-inspect source/dependency/license closure only for plausible candidates; selected mechanisms need a concrete scene/helper caller. The atlas is a locator, not proof of per-song inspection. Do not force all repositories into one production.
+
+TECHNIQUE ROUTER — AUTHOR-WRITTEN SYNTHESIS
+
+Use this map to choose a source working set for each new theme. It describes candidate capabilities and integration considerations. It does not certify every example's visual quality or runtime on this Mac. For export planning and quality acceptance, use `claude-finished-song-animation-project/07_QUALITY_REVIEW_AND_ACCEPTANCE.txt`; after authorized full render, use `11_HEADLESS_BROWSER_FRAME_REVIEW.txt` for Playwright-decoded frame evidence and FFmpeg contact sheets.
+
+CURRENT RENDER ENGINE ROUTE
+Keep the song inside this connected kit and use `shared-animation-library/render.mjs`. New songs select installed Remotion with `PROJECT.renderEngine: 'remotion'`, use a song-local React `scenes` registry and put the unchanged audio and declared media in the song's `public/` folder. Existing p5 productions use the same entry through the legacy p5 route. Shared `PROJECT` timing, dimensions, cues, assets/fonts and export planning do not make React and p5 scene code interchangeable. Claude may choose a HyperFrames Player child composition per scene when its inspected HTML/GSAP or nested-composition model helps; Remotion remains the master clock and final composition/encoder. See `claude-finished-song-animation-project/14_HYPERFRAMES_SUBCOMPOSITION_GUIDE.txt` and the hybrid comparison example. Consult the two shared-animation-library READMEs for exact configuration and commands.
+
+PER-SONG FRAME CHOICE
+For each song, recommend 4:5 (1080×1350) or 9:16 (1080×1920) from its visual direction. Explain the choice before storyboarding and set explicit dimensions in that song's PROJECT config. Compose and review its scenes and overlays natively for the selected frame; do not crop a layout from the other ratio. The renderer's dimension flow is configurable; scene responsiveness must be checked separately.
+
+DRAWN CHARACTERS AND NARRATIVE ACTION
+R01 ClaudeAnimationBase and R02 painted-animation contain character-film architecture, drawing helpers and shot organization. Consider these when a song benefits from characters, acting, expressive poses or an illustrated environment. Read the selected rig, drawing and camera functions together. Keep scene-specific action authored for the new song.
+
+PAINTED AND HANDMADE SURFACES
+R02 painted-animation and R03 styles include watercolor, impasto, ink-wash, woodcut, engraving, papercut and risograph directions. R06 offers reusable texture and drawing machinery. Distinguish a style guide from its implementing demo. Read its material system and representative shot before deciding whether it can produce the requested finish.
+
+KINETIC TYPE AND GRAPHIC COMPOSITION
+R02 kinetic-reel supplies glyph animation, two-buffer transitions and optional WebGL post effects. R03 swiss-motion and related graphic styles offer layout vocabulary. R04 offers HTML/timeline planning and composition guidance. Preserve readable text and phrase-specific action. Recompose landscape examples for the selected native 4:5 or 9:16 frame; inspect actual coordinate assumptions and never crop the landscape layout.
+
+PRINT, PAPER AND MIXED MATERIALS
+R03 silkscreen, risograph, engraving, paper-popup and halftone-dossier provide different systems. Their differences matter: overprint compositing, plate geometry, tone fields, line shading, shadows and 3D lighting are distinct mechanisms. R09 anisong provides study material for zine-like compositions. Select a coherent combination and identify the actual source implementing each visible effect.
+
+DIMENSIONAL SCENES AND CAMERA MOVEMENT
+R02 kinetic examples, R03 relevant demos and R07 architecture provide candidate WebGL/three.js paths. R10 is cinematic study material. Evaluate spatial staging, object/light/shader requirements and browser/GPU compatibility for a selected scene. Choose Canvas parallax where it achieves the visual objective; choose 3D where geometry, lighting or camera motion materially improves it.
+
+PARTICLES, TRAILS AND EFFECTS
+R06 effects, R02 examples and R03 style demos contain possible mechanisms. Inspect time/state/randomness dependencies. Closed-form trajectories and per-index seeds support arbitrary-time rendering. A source effect that depends on frame history requires a reproducible seek/reset strategy. Surface effects complement subject action and composition.
+
+SONG TIMING AND AUDIO FEATURES
+R04 music-to-video and R05 motion-graphics-music-video offer planning/audio/VFX procedures. R07 supplies audio-feature architecture; R02 painted-animation has beat-grid tooling. Read the actual analysis implementation and distinguish onsets, pulses, downbeats, subtitle times and word timing. Build the new song's cues from its own recording; reuse architecture rather than another song's timeline.
+
+RENDERING, CACHING AND RECOVERY
+R01 and R02 renderers, R03 core/render/video.mjs and R04 tooling show different pipelines. The shared library provides Remotion for new songs and legacy p5 for existing work through one render entry. R04 HyperFrames can also inform or supply a selected child composition within Remotion, but is not a second full-song route in this kit. Claude makes that per-scene implementation choice without a routine user gate. Inspect which outputs persist across interruptions and what identity invalidates them. Seekability and retained-frame resume are separate capabilities.
+
+STYLE AND CODE-ANIMATION DISCOVERY
+R03 contains 43 indexed style guides excluding its template. R11–R13 are discovery catalogs; useful entries can lead to additional creator sources and prompts. For each song, complete the R12/Skillry shortlist in `claude-finished-song-animation-project/12_CODE_ANIMATION_REFERENCE_WORKFLOW.txt` before storyboarding. Assess all initialized R14–R16 motion resources before storyboard lock using `claude-finished-song-animation-project/17_FOOTAGE_FRAME_FOOTPRINT_AND_CODE_ACTION.txt`; record exact files opened and the decision informed using guide 16. Consultation is required; direct code reuse is selective. Catalog descriptions and skill availability do not establish code reuse rights or inspected motion. Verify any underlying source and its license before adapting it.
+
+GENRE AND THEME SELECTION
+Choose each future treatment from that song's brief, recording and user direction. Repository genre labels and examples are discovery cues, not standing user preferences or production templates. R09 domenic.me is study-only; do not adapt its code or assets without an applicable reuse grant. More generally, R08–R10 are study-only, and R11–R13 catalog licenses do not license linked creator works. Assess R14–R16 guidance for each song; its consultation does not require adopting a technique, install runtime packages, or license linked media.
+
+CURRENT SHARED-LIBRARY CAPABILITY MAP (updated 2026-10-25: production shell, cue schema, font/asset declarations, R06 critter adapter and shared Remotion route)
+The implemented system is shared-animation-library/. Read its README, implementation report and checkpoint before proposing work. New songs use the installed Remotion engine through the shared render entry; existing p5 productions remain a separate legacy engine on that entry. Current verified architecture also includes a dimension-configurable R02-derived base (technical fallback 1080×1920; authored scene responsiveness is not implied), normalizeProject(PROJECT), time-pure shots([[start, fn], ...]), source/video/frame time conversion, export/cache planning, supervised FFmpeg handling and an adapted R06 five-kind particle overlay. The current Remotion duration checks and earlier shared-library checks are non-rendering evidence only; they do not establish browser pixels, actual font appearance, a real encode, A/V sync by listening or creative acceptance.
+
+PRIORITY 1 — SONG-NEUTRAL PRODUCTION SHELL (implemented 2026-10-25; static checks plus one Claude-reported local browser load of the neutral example)
+Declared in PROJECT and validated by normalizeProject: productionId, modules (id, src, classic|module, requires), scenes (id, start, end, impl, needs, params; contiguous, no gaps/overlaps, exact coverage of the intended interval), cues, assets, fonts. production/production-host.mjs installProduction loads modules in stable dependency order, resolves cues/fonts/assets, initializes scene implementations, then registers them through the unmodified shots() API (scene overlays join the single overlay dispatcher at order 15). A neutral synthetic example is shared-animation-library/examples/neutral-production/. Outside the half-open coverage [start,end) no scene draws or overlays; failed installs restore the host incl. host.PRODUCTION (verified cases; a failure after shots() partially mutates cannot be rolled back). Every new production must set duration explicitly. The current production suite passes 27 non-rendering checks. Claude-reported browser readiness for the neutral p5 example is detailed in `shared-animation-library/BROWSER_READINESS_CHECK_2026-10-25.md`; no raw log was saved. By p5/project source the opening scene's draw likely ran once at startup (T=0), unobserved in a log; renderAt was never called, overlay drawing and the later hop/critter scene were not exercised. Not established: appearance, pixels, phone-size quality, saved stills, fonts and assets (example declares none), glyph coverage, audio, encoding, audiovisual review; the 8 s example does not test full-song duration or audio synchronization. Read shared-animation-library/README.md first.
+
+PRIORITY 2 — SELECTED MOTION ADAPTERS (R06 particles and R06 critter rig adapted; other rigs not integrated)
+R06 burst particles: adapters/r06-burst-particles.mjs. R06 critter rig (rigs/critter.mjs + core.mjs helpers, commit 4ddb8c80, MIT): adapters/r06-critter-rig.mjs with createCritterRig({poseTrack}) — scene-local keyframed pose, Canvas2D overlay in native screen pixels, closed-form (seek-safe) — called by the neutral example scene-b.mjs. Other rigs (ant, bean, bug, chibi) and R06 film/lowpoly/nature/pen modules were not read or adapted. Adapt only a rig and dependency closure required by a named treatment.
+
+PRIORITY 3 — KINETIC TYPE (separate engine route; read, deliberately NOT adapted)
+R02 kinetic-reel reel.js (527 lines): lines 1-140 were read in full and lines 140-527 only as a function/comment index. The read portion hard-codes W=1920,H=1080, reads a global KCUE, sets window.DUR/PROJECT, creates its own three.js WebGL renderer on #out plus a second WebGL canvas, and swaps ctx for transition buffers. Those conflict with the shared host (2D #out, normalizeProject sizing, p5 painter). Keep it as its own entry/host (its template render.mjs). A narrow glyph-only port (letters/txt/measure helpers, math) is possible later but is not done. Do not assume the optional Lottie package supplies an asset.
+
+PRIORITY 4 — 3D, MATERIALS AND COMPOSITING (read; separate-host routes with exact incompatibilities)
+R03 risograph riso.js (154 lines): makeRiso(out,W,H) takes WebGL2 on the output canvas it is given and reads a three-plate 2D canvas; the shared #out is a 2D canvas read by toDataURL, so it needs its own canvas plus a readback/drawImage bridge that is unverified without a browser. R03 core/three/post.js makePost(renderer,scene,camera,...) needs a three.js renderer, scene and camera plus three/addons (EffectComposer, GTAO, bloom). Neither is integrated. Define canvas ownership and a verified readback path with a browser stage before bridging. Khronos RiggedSimple remains a technical fixture.
+
+PRIORITY 5 — RECORDING-BOUND CUES AND LYRICS (cue interface defined; no analysis run)
+production/cue-schema.mjs normalizeCues: source→production conversion once via numeric/timebase.mjs; evidence classes measured / estimated / inferred / supplied / confirmed; supplied lyric text (textSource 'supplied') separate from its timing evidence; optional recording id/sha256. Importers fromBeatgridAudiomap (R04 analyze-beatgrid.py output shape) and fromAudioJson (R07 audio.json shape) were written from the source code, not from real analysis output. No song has been analyzed with Librosa; WhisperX singing alignment remains unassessed.
+
+PRIORITY 6 — LOCAL FONTS AND VISUAL ACCEPTANCE (declaration + loader implemented; no rendering; the neutral example declares no fonts or assets, so loading is unexercised by any example)
+PROJECT.fonts entries ({family, src, weight, style, unicodeRange}) are loaded with FontFace before ready and hashed into cache identity. production/fontsource.mjs generates entries from the local @fontsource install (Inter 700 latin/latin-ext checked against the package CSS and woff2 magic bytes). Glyph coverage is only the package's declared unicode-range, never a cmap check. base/studio.html still references Google Fonts CSS for the legacy demo faces. Pixelmatch has no baseline. Browser/font/glyph review, phone-size stills, complete-candidate playback and audiovisual acceptance remain separate authorized stages.
+
+INSTALLATION IS NOT INTEGRATION
+Flubber, Lottie Web, Pixelmatch, selected Fontsource packages, WhisperX, Librosa and one glTF fixture are installed or locally prepared as detailed in repository-preparation/additional-resources/README.md. Most are optional and isolated; none, by itself, closes the integration gaps above. Prefer existing repo implementations where they meet the visual need, and do not install more dependencies without a named capability and scoped preparation plan.
+
+TECHNIQUE CARD FOR A NEW SONG
+For each chosen technique record:
+visible objective; source repo/commit/path/symbol; complete reading scope; required helpers/assets/dependencies; time/coordinate model; guidance/original/adapted classification; local destination; shot call site; attribution; technical verification; later visual acceptance question.
+
+COMBINATION CRITERIA
+Combine techniques where visual language, coordinates, rendering API, frame-time evaluation and licenses are compatible. Preserve each original system as a reference. Integrate through explicit local adapters and load order. Select fewer coherent mechanisms when they satisfy the treatment; broaden the working set when the intended images require it.
+
+
+REPOSITORY NAVIGATION DETAIL
+Use the R01–R16 atlas at `repository-preparation/REPOSITORY_NAVIGATION_AND_USE_GUIDE.md` for exact paths, symbols, preparation, reading scope, compatibility and rights. For each song, link the required ranked R01–R16 `productions/<song>/research/REPOSITORY_REVIEW.md`; inspect only plausible candidates deeply and connect selected mechanisms to local scene/helper callers. Repository count is not a quality metric.
+

@@ -1,0 +1,20 @@
+Using Python 3.12.13 environment at: music-motion-reel-kit/repository-downloads/lemomo-ai/lemo-opuscar/.venv
+Resolved 8 packages in 1.49s
+Downloading soundfile (1.1MiB)
+Downloading pillow (4.6MiB)
+Downloading scipy (19.5MiB)
+Downloading numpy (5.2MiB)
+ Downloaded soundfile
+ Downloaded pillow
+ Downloaded numpy
+ Downloaded scipy
+Prepared 8 packages in 7.83s
+Installed 8 packages in 38ms
+ + cffi==2.1.1
+ + numpy==2.5.3
+ + pillow==12.3.0
+ + pycparser==3.0
+ + scipy==1.18.1
+ + soundfile==0.14.0
+ + soxr==1.1.0
+ + typing-extensions==4.16.0

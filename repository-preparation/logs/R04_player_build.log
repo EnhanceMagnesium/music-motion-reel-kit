@@ -1,0 +1,34 @@
+@hyperframes/player build: CLI Building entry: src/hyperframes-player.ts, src/slideshow/hyperframes-slideshow.ts
+@hyperframes/player build: CLI Using tsconfig: tsconfig.json
+@hyperframes/player build: CLI tsup v8.5.1
+@hyperframes/player build: CLI Using tsup config: <ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/player/tsup.config.ts
+@hyperframes/player build: CLI Target: es2022
+@hyperframes/player build: CLI Cleaning output folder
+@hyperframes/player build: ESM Build start
+@hyperframes/player build: CJS Build start
+@hyperframes/player build: IIFE Build start
+@hyperframes/player build: IIFE dist/hyperframes-player.global.js                  100.40 KB
+@hyperframes/player build: IIFE dist/slideshow/hyperframes-slideshow.global.js     40.36 KB
+@hyperframes/player build: IIFE dist/slideshow/hyperframes-slideshow.global.js.map 127.68 KB
+@hyperframes/player build: IIFE dist/hyperframes-player.global.js.map              486.30 KB
+@hyperframes/player build: IIFE ⚡️ Build success in 39ms
+@hyperframes/player build: CJS dist/slideshow/hyperframes-slideshow.cjs     40.43 KB
+@hyperframes/player build: CJS dist/hyperframes-player.cjs                  100.44 KB
+@hyperframes/player build: CJS dist/slideshow/hyperframes-slideshow.cjs.map 127.71 KB
+@hyperframes/player build: CJS dist/hyperframes-player.cjs.map              486.33 KB
+@hyperframes/player build: CJS ⚡️ Build success in 54ms
+@hyperframes/player build: ESM dist/slideshow/hyperframes-slideshow.js     37.04 KB
+@hyperframes/player build: ESM dist/hyperframes-player.js                  99.93 KB
+@hyperframes/player build: ESM dist/chunk-QJ3QTT32.js                      2.91 KB
+@hyperframes/player build: ESM dist/slideshow/hyperframes-slideshow.js.map 113.18 KB
+@hyperframes/player build: ESM dist/chunk-QJ3QTT32.js.map                  14.33 KB
+@hyperframes/player build: ESM dist/hyperframes-player.js.map              486.12 KB
+@hyperframes/player build: ESM ⚡️ Build success in 57ms
+@hyperframes/player build: DTS Build start
+@hyperframes/player build: DTS ⚡️ Build success in 1339ms
+@hyperframes/player build: DTS dist/hyperframes-player.d.ts               14.34 KB
+@hyperframes/player build: DTS dist/slideshow/hyperframes-slideshow.d.ts  8.94 KB
+@hyperframes/player build: DTS dist/hyperframes-player.d.cts              14.34 KB
+@hyperframes/player build: DTS dist/slideshow/hyperframes-slideshow.d.cts 8.94 KB
+@hyperframes/player build: Verified Player runtime injection is pinned to @hyperframes/core@0.8.130.
+@hyperframes/player build: Exited with code 0

@@ -1,0 +1,9 @@
+{
+  "name": "music-motion-reel-quality-review",
+  "private": true,
+  "type": "module",
+  "description": "Headless Playwright review helpers for rendered song candidates.",
+  "devDependencies": {
+    "playwright-core": "1.63.0"
+  }
+}

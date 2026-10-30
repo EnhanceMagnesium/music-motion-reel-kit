@@ -1,0 +1,67 @@
+# Footage Frame Footprint and Code-Built Action
+
+Canonical cross-song guidance for balancing selected archival footage with original animation. Use with `04_REUSABLE_PRODUCTION_STANDARD.txt`, the scene contract, `07_QUALITY_REVIEW_AND_ACCEPTANCE.txt`, and the R14–R16 resource guide. Applies to Claude and Codex Local; it does not authorize a media stage by itself.
+
+## Core distinction
+
+Plan two independent properties for every clip and scene:
+
+1. **Timeline use:** which chosen clip is shown, how many placements it has, its production-time start/end, source in/out, and total screen-time coverage. Preserve successful clip choices, count and planned duration when improving composition. Change these only for a song-specific story, rights, quality or technical reason. A visual-footprint revision does not call for shortening a clip.
+2. **Frame footprint and prominence:** how much of the output frame footage visibly occupies and how strongly it draws the viewer’s attention. Record its viewport or mask geometry and area share at representative states, then identify whether footage is focal, supporting, environmental or textural. Consider size, contrast, centrality, movement, brightness and duration of emphasis; pixel area alone is not a visual-quality score.
+
+The footage may remain in every planned passage and play for the same length while code-built action takes more of the composition’s storytelling and visual attention. Do not treat successful archival selection or runtime coverage as a reason to make footage full-frame or dominant by default. Conversely, do not impose a universal maximum footage percentage or make a strong documentary shot small merely to meet a quota. An intentionally footage-led moment is appropriate when the song’s evidence and story call for it; state why, and balance the larger sequence with original animated scenes.
+
+## Storyboard each scene as an animated composition
+
+Before implementation, create the visual storyboard specified in `19_VISUAL_STORYBOARD_AND_SCENE_COVERAGE.txt`, using `repository-preparation/templates/SONG_VISUAL_STORYBOARD_TEMPLATE.md`. This guide's footprint/action table supplements that board; a scene schedule or post-code still set is not a substitute.
+
+Before coding, give each shot a readable code-authored action with setup, development and resolution. Name its subject, focal role, spatial path, transformation or interaction, and how it advances the song’s idea. Plan animated environment, figures, props, typography, graphic systems, parallax, camera, choreography or transitions where those carry meaning. Let the selected footage support, complicate, reveal or interact with that action.
+
+For a scene containing footage, identify at least one visible, song-specific code-built action that does more than decorate the footage. A border, tint, label, grain, static HUD, lyric caption or generic particles alone do not count as the scene’s main animation. Examples of meaningful relationships include a code-built figure or object responding to footage, an authored environment that frames and transforms a clip, an animated motif that carries across the clip boundary, or code-led scenes that advance the same section before and after the footage window. Choose a relationship that fits the song; do not copy another production’s story or visual treatment.
+
+Make the first visual read intentional. Across every major song section, include moments where original code animation carries the focal action, not only captions, framing or texture. A clip can still be large and clearly readable while code-created action elsewhere in the composition supplies the visual arc. Use native scene composition, not a small picture-in-picture overlay added mechanically to satisfy a rule.
+
+## Record time and space separately
+
+Put a compact footprint/action table in the song’s `research/PLAN.md` or equivalent storyboard. If the plan already records clip timing, link to it rather than duplicating values. Include:
+
+| Scene/shot | Clip and production interval(s) | Source interval(s) and reuse count | Visible viewport/mask and frame-area share | Footage attention role | Code-built focal action (setup → development → resolution) | Reason for any footage-led exception |
+|---|---|---|---|---|---|---|
+| [ID] | [start–end; seconds retained] | [source in–out; placements] | [x/y/w/h or shape; % of configured frame] | [focal/support/environment/texture] | [concrete animated action] | [song-specific reason or none] |
+
+Use the configured output dimensions. For a rectangular viewport, calculate `visible width × visible height ÷ (frame width × frame height)`; for multiple clips, report each viewport and the visible union where overlap matters. For a changing camera or mask, record representative min/typical/max states or the relevant frame range. Do not substitute source-file resolution for on-screen size. Add a separate short summary of total footage screen time or coverage if useful; never combine that temporal number with frame area into one score.
+
+If the shot plan changes only because footage feels too prominent, keep the clip’s selected source interval and scheduled duration stable while revising layout, mask, crop, contrast, depth, code action, staging or visual hierarchy. Document any exception and update the plan before implementation.
+
+## Consult R14–R16 to strengthen code animation
+
+For every song, assess all three initialized resource families in the source review before storyboard lock. Read only the relevant skill/source bodies, record exact local paths opened and the decision they informed, and allow a reasoned “no direct reuse” result. Planning consultation is required; code adoption is selective.
+
+- **R14 `claude-motion` / `motion-craft`:** use its motion-craft principles and, when useful, inspect exact Remotion helpers such as `src/lib.ts` (`prog`, `sp`, `effortAt`) and `src/components/primitives.tsx` (`Mask`, `Roll`, `Spark`, `Grain`, `WobbleFilter`). These can inform frame-driven easing, masked reveals and authored motion. Adapt dimensions, timing and colors for this song. Do not use R14’s independent capture/render or synthetic-audio pipeline.
+- **R15 `motion-design-skill` / `lottiefiles-motion-principles`:** use its emotional intent, micro-narrative, hero/support/ambient hierarchy and choreography prompts to give the code-built action a story role beyond decoration. It is design guidance, not a runtime or code library.
+### Choreograph with GSAP
+
+GSAP's job in this kit is to **choreograph code-built action**: sequence entrances, stagger groups, shape accents, hold beats, and coordinate visual emphasis. It is an optional craft tool, not a default style or a replacement for scene design.
+
+The shared Remotion runtime now includes `@remotion/gsap` 4.0.538 and its `gsap` peer dependency 3.15.0. For DOM/SVG choreography, use `useGsapTimeline` from `@remotion/gsap`; its paused, scoped timeline is driven by Remotion's frame. Keep Canvas/WebGL drawing and numeric simulation values directly frame-derived. Follow the usage rules and limits in `shared-animation-library/remotion-runtime/README.md`.
+
+For a song-neutral implementation reference, see `shared-animation-library/examples/remotion-gsap-choreography/`. Its fixture was bundled and still-rendered through the shared entry in both portrait formats, with two requests quantizing to the same frame producing matching PNG hashes. Use it to understand the mechanism only; choose choreography and visual design from each song's material.
+
+- **R16 `gsap-skills`:** assess its timeline, React lifecycle and performance guidance when a scene benefits from choreography. R16 remains an agent-guidance repository; it does not contain or install the shared runtime packages. Use GSAP selectively, attach tweens to the adapter's timeline, and keep the timeline synchronous, deterministic and reasonably small. Do not use its unsupported plugin patterns or a free-running GSAP clock.
+
+Use `.claude/skills/` in Claude Code and `.agents/skills/` in Codex. Follow `repository-preparation/ANIMATION_AGENT_SKILL_RESOURCES_GUIDE.md`, `16_SOURCE_PROVENANCE_AND_BUILD_TRACE.txt` and the install manifest for provenance. Distinguish available, opened, consulted, influential, copied/adapted and integrated. Link a selected mechanism to its concrete song-local helper and scene caller. Skill visibility or a repo rank is not proof of scene use.
+
+## Evidence from existing implementations
+
+These are implementation-structure observations used to improve the workflow, not creative templates or claims of visual acceptance:
+
+- In `productions/i-am-promethean-comparison/claude/remotion/scenes.jsx`, the reusable `PLATE` is `{ x: 54, y: 150, w: 972, h: 729 }` in a 1080×1350 frame, about 48.6% of frame area. Its plan says archive film carries story information while code supplies continuity such as the stitch frame, rail, braid, flame and tree.
+- In `productions/the-series-dplus/remotion/scenes.jsx`, footage appears in six of twelve named scenes. Its full-width windows vary by scene/camera (for example 760–1000 px high in a 1080×1920 frame, with one pull-back to 600 px), approximately 31–52% of frame area. The same composition includes code-built arena lighting, crowd, keycaps, fans, pick/ban panels, minimap, stage controls and effects, while other scenes are code-only.
+
+The frame-area ranges overlap. The reusable lesson is to judge the role of code-built action and the hierarchy of the combined composition, not merely box size or clip duration. Neither case establishes how another song should look; inspect and review each new song on its own evidence.
+
+## Review and evidence boundary
+
+At planning time, check that runtime coverage and frame footprint are separately stated and that footage-bearing scenes have actual story-carrying code animation. In the authorized still review, inspect the complete composition at full and phone size: what reads first, whether code action is visible and meaningful, whether footage is an appropriate supporting/focal element, and whether neither is obscured. During full-candidate playback, review how the code action and clip work over time and through transitions.
+
+Source inspection and a storyboard establish intended layout only. A plan or code listing does not establish appearance, prominence, animation quality or audience comprehension. Preserve the distinct evidence stages in guide 07. Do not claim visual acceptance until the relevant candidate has been reviewed.

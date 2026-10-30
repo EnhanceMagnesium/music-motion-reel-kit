@@ -1,0 +1,123 @@
+MISSING RESOURCES RESEARCH — CODE-RENDERED MUSIC ANIMATION
+GPT audit and source search: October 24, 2026, America/Chicago
+
+PURPOSE AND SCOPE
+Identify actual gaps in the current local project, then select resources that address them. Preserve the established 35–40-second target, 45-second ceiling, text-derived Grok brief and Suno recording supplied directly to Claude. Current stage remains text audit and direction. This research reads source documents; it authorizes no installation, implementation, audio processing, still extraction or rendering.
+
+SUMMARY DECISION
+Prioritize a verified lyric-cue workflow, portable font files and actual integration/visual review of the existing implementation. Keep the current renderer and acquired animation library. Add focused source references for WhisperX, wavesurfer.js and Google Fonts to the next scoped acquisition plan. Treat vocal separation and singing-specific alignment as conditional analysis aids. Existing source already covers most general animation techniques.
+
+CURRENT LOCAL EVIDENCE
+- source-library/import-ledger.json contains 23 acquisition records; raw storage has 5,421 files at this audit. The repository-only source collection is already acquired.
+- renderer/render.v3.mjs already provides audioStart, scene modules, cue data, local font/assets loading and hashing, selected stills, saved-frame recovery, the duration cap and post-export checks.
+- renderer/scenes/his-line-v2r1/ contains 12 shot implementations. productions/his-line/R1_IMPLEMENTATION_REPORT.md establishes preflight and code/stub checks; its visual appearance, real-browser drawing behavior, performance and creative acceptance remain unverified.
+- shared-animation-library includes a painted engine, timebase, numeric helpers, particles, export planning and cache identity. Its 43 passed non-rendering checks establish code contracts. Its README still identifies browser/p5 output, offline fonts, portrait layouts and real encoding as unresolved integration work.
+- PRODUCTION_READINESS_REPORT.md lists old v1 gaps that later renderer revisions implement. Use current source and dated reports to decide capability; preserve the older report as historical evidence.
+
+GAPS THAT A NEW REPOSITORY CAN ADDRESS
+
+A. VERIFIED LYRICS-TO-AUDIO CUES — HIGHEST PRIORITY
+Existing beat grids, energy events and metadata do not verify the identity and onset of a sung word. A useful timing resource must accept the approved words, preserve the exact recording, expose word/phrase intervals and support correction. The desired production record stores source start/end, video-local start/end, lyric identity, alignment method, evidence status and review notes. Alignments remain hypotheses until checked against the supplied performance.
+
+A1. WhisperX — recommended first automated alignment candidate
+https://github.com/m-bain/whisperX
+https://github.com/m-bain/whisperX/blob/main/README.md
+Its official source documents word-level forced alignment and CPU int8 execution, as well as GPU operation. This makes it a practical candidate for the local Mac without assuming CUDA availability. Keep the approved lyrics as authority and inspect/correct the alignment output; use the supplied text/segments rather than accepting an automatic transcription as the displayed lyric.
+Fit: create a reviewed cue map consumed by the existing renderer.
+Boundary: speech-oriented models do not establish accuracy on this sung performance; singing, accompaniment, repeated phrases and sustained syllables need validation. Model downloads, language-specific aligners and environment dependencies must be measured during a later authorized setup. Speaker diarization is outside this song task.
+Code license recorded by current repository metadata: BSD-2-Clause. Model weights retain their own terms. Repository is active/unarchived at audit.
+
+A2. SOFA — specialist fallback for singing
+https://github.com/qiuqiao/SOFA
+https://github.com/qiuqiao/SOFA/discussions/31
+This project specifically targets singing voice. It supports aligned audio/text pairs, confidence output and annotation formats including TextGrid. Its README requires a checkpoint and phoneme/dictionary or grapheme-to-phoneme configuration; English model sharing is documented separately.
+Fit: investigate if the first alignment route fails on singing and a suitable English checkpoint is available.
+Boundary: the source instructions use an older Python environment; local Mac compatibility, checkpoint licensing and language configuration need specific verification. Exported phoneme intervals require a deliberate conversion to this project's word/phrase cues. Source claims of better performance are author claims, not a measurement on His Line.
+Code license metadata: MIT. Repository unarchived at audit. Keep checkpoint selection and model terms separate from code licensing.
+
+A3. python-audio-separator — optional vocal analysis copy
+https://github.com/nomadkaraoke/python-audio-separator
+https://nomadkaraoke.github.io/python-audio-separator/
+Provides local vocal/instrument separation through pretrained models, with CPU and Apple Silicon paths documented. Use it when accompaniment prevents reliable lyric inspection or alignment.
+Fit: derive a clearly labeled vocal-only analysis file and retain its relation to the exact master.
+Boundary: separation can introduce artifacts. Preserve the selected Suno master as the production soundtrack; compare any derived timing against the original mix. Model and dependency selection has a separate setup/resource cost. Its current dependency requirements must be checked on the Mac before adoption.
+Code license metadata: MIT. Active/unarchived at audit; inspect each selected model's provenance and terms.
+
+B. CORRECTABLE CUE REVIEW — HIGH PRIORITY
+B1. wavesurfer.js — selected browser component for an eventual cue-review tool
+https://github.com/katspaugh/wavesurfer.js
+https://wavesurfer.xyz/docs/plugins/
+Waveform playback plus Regions/Timeline plugins can support a local review interface with draggable lyric/event boundaries. The project-specific adapter would load the original audio and existing cue JSON, display evidence status and save corrected times in the established source/video time bases.
+Fit: reusable human-review UI alongside the current renderer; keep the rendering engine unchanged.
+Boundary: waveform display and draggable regions are review controls. They do not perform lyric recognition or establish verified timing by themselves. This editor is not currently integrated.
+Code license metadata: BSD-3-Clause. Active/unarchived at audit.
+
+B2. Audacity — immediate desktop alternative to building a review UI
+https://github.com/audacity/audacity
+https://manual.audacityteam.org/man/importing_and_exporting_labels.html
+The established label-track workflow exports text timestamps. It can provide reviewed phrase/word anchors with a small label-to-cue conversion step, useful for one short recording before investing in a custom editor.
+Fit: optional independent desktop tool, using its stable release's label import/export support.
+Boundary: verify the installed version's supported export behavior; development/alpha UI may differ. Preserve the original recording and export label data separately. This is a tool-use option, not an instruction to embed its engine in our JavaScript source.
+Current source identifies GPLv3. Check dependency notices if copying application code; this recommendation is for using the standalone tool.
+
+C. PORTABLE TYPOGRAPHY — HIGH PRIORITY
+C1. Google Fonts source repository — selected font source
+https://github.com/google/fonts
+https://github.com/google/fonts/blob/main/README.md
+Provides actual family files with metadata and license records. Choose the approved face and necessary weights/glyphs, save them locally, record the family license and hash the files used by the render.
+Fit: close the shared library's reliance on remote Google Fonts CSS and provide repeatable offline appearance. Existing His Line font placeholders are already local, so the gap is the approved design face and reusable-library portability.
+Boundary: fonts have family-specific licenses; the repository does not carry one blanket font license. Select only needed families, not the entire multi-gigabyte collection. A chosen serif or sans face still requires the user's design direction and phone-scale review.
+
+C2. OpenType.js — available source, conditional typography helper
+https://github.com/opentypejs/opentype.js
+Supports font parsing, glyph paths and metrics in JavaScript. Useful if a selected shot needs outlines for printing, masks or deliberate type deformation.
+Local source already exists at:
+source-library/raw/github/lemomo-ai/lemo-opuscar/b65efe6ea393fdc71212898ea4c57c754cfefa46/styles/spy-titles/demo/vendor/opentype.min.js
+Its license notice is beside it as opentype-LICENSE.txt. Check that vendored version against the required feature before adopting a newer package.
+Fit: reuse this acquired source when the shot requires glyph geometry. Ordinary editable text can remain on the current canvas/text path.
+Code license metadata: MIT. Upstream unarchived at audit.
+
+D. VISUAL REGRESSION AND TRANSFORMATION HELPERS — CONDITIONAL
+D1. pixelmatch
+https://github.com/mapbox/pixelmatch
+Compares rendered pixel arrays and can make changes in fonts, compositing or a deterministic frame visible during authorized regression review.
+Fit: a later small integration check around fixed representative frames when visual review is authorized.
+Boundary: pixel agreement is not a test of attractive animation, narrative development or musical expression. Reference frames, stable seeds and a controlled browser environment are prerequisites; current stage does not authorize generating those frames.
+Code license metadata: ISC. Active/unarchived at audit.
+
+D2. Flubber
+https://github.com/veltman/flubber
+Produces shape interpolators evaluated at a normalized progress value. That maps naturally to a pure time-based scene when a chosen motif needs a genuine shape transformation.
+Fit: optional single-shot helper for a named transition or object transformation.
+Boundary: holes and multi-part paths have limitations; complex lettering requires care. Last recorded push is 2022; this is a mature, older codebase rather than an actively developed dependency. Retain existing hand-authored paths when they already express the shot.
+Code license metadata: MIT; unarchived at audit.
+
+E. RESOURCE EVALUATED AND LEFT OUT OF THE NEW DEPENDENCY PLAN
+stable-ts
+https://github.com/jianfch/stable-ts
+https://github.com/jianfch/stable-ts/discussions/389
+It has useful known-text alignment APIs and a creator discussion of singing/vocal-separation behavior. The current upstream is archived (May 30, 2026). Preserve it as a research reference, while selecting maintained alternatives for a new environment. Speech/singing alignment limitations remain even when a tool returns plausible timestamps.
+Code license metadata: MIT; archived true verified through GitHub API.
+
+GAPS CLOSED THROUGH EXISTING WORK RATHER THAN SOURCE ACQUISITION
+1. His Line R1 visual acceptance: obtain the user-authorized still/drawing review, then review the full 35–40-second candidate under the established stage gates. A source-library import alone cannot establish image craft.
+2. Shared painted library adoption: verify native portrait coordinates, font loading, browser/p5.brush operation, cue mapping, exact master offset and real encoding before using it for a production. Existing R01/R02 code supplies the engine.
+3. Render performance: measure representative authorized frame work before adding a GPU stack. The R1 report identifies heavy hatch/halftone loops; caching/batching in the existing code may be sufficient.
+4. Canonical status: reconcile active instruction/context summaries with renderer v3 and the R1 checkpoint so Claude does not redo implemented capabilities.
+5. Production-specific art: choose required typeface, drawing detail, texture, character/prop or image plates from the approved shot table. Existing R03 material guides already supply broad style vocabulary. Acquire an additional asset only for a named scene need and with recorded provenance.
+
+GPT'S RECOMMENDED ORDER
+First: select the lyric verification route and approved local typography plan through text decisions. Next: scope any authorized setup to the chosen aligner/review tool and font files. Then: perform the separately authorized visual/integration stage using the existing renderer. Use vocal separation, SOFA, glyph paths, pixel comparison or shape morphing only when a concrete result requires them.
+
+ACQUISITION SCOPE FOR THE NEXT RESOURCE UPDATE
+- WhisperX: README/license, known-text alignment API/implementation, CPU environment requirements, model list and output schema.
+- wavesurfer.js: README/license, Regions and Timeline API/examples and local audio loading.
+- Google Fonts: only the chosen family files, required weights/glyphs, metadata and its license.
+- Optional tools: acquire their specific implementation/model/reference only when the approved plan names their use.
+This report proposes these additions; the existing import manifest and context ZIP were left unchanged during the search.
+
+EVIDENCE AND VERIFICATION LIMITS
+Primary-source web search, GitHub README inspection and GitHub repository metadata were checked for this research. Repository metadata was saved with the research notes. Dependencies and models were not installed or executed. No audio was processed; no frames were extracted, rendered or generated. Performance and singing alignment on the user's recording remain unmeasured. Sources were retrieved as read-only research material in temporary storage.
+
+LOCAL READ SCOPE
+CLAUDE_ANIMATION_VIDEO_RUNBOOK.txt; PROJECT_INSTRUCTIONS.md; PRODUCTION_READINESS_REPORT.md; SESSION_CHECKPOINT.md; renderer v3 capability points; productions/his-line/R1_IMPLEMENTATION_REPORT.md and implementation handoff; shared-animation-library/README.md, implementation/checkpoint and test results; source-library/import-ledger.json and relevant source paths.

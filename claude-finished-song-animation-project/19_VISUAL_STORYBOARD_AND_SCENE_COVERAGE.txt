@@ -1,0 +1,153 @@
+# Visual Storyboard and Scene Coverage
+
+Canonical pre-code visual-planning guide for every finished-song production. Applies to Claude and Codex Local. Use with `04_REUSABLE_PRODUCTION_STANDARD.txt`, `17_FOOTAGE_FRAME_FOOTPRINT_AND_CODE_ACTION.txt`, the Remotion scene contract and `07_QUALITY_REVIEW_AND_ACCEPTANCE.txt`. This guide does not authorize media rendering.
+
+## The two-layer storyboard rule
+
+Plan the whole song with two linked artifacts, in this order:
+
+1. **Second-by-second coverage map:** one timecoded row for every second-long interval of the measured recording, including the final partial second. This is the complete temporal index. Each row says what the viewer sees and what code-driven action is occurring, changing or intentionally holding at that point.
+2. **Drawn scene panels:** low-fidelity SVG panels for every distinct visual setup and every meaningful action-state change. Panels show designed compositions and key poses; they are connected to the seconds they explain.
+
+The map answers, “What is the visual state and action throughout the complete song?” The panels answer, “What are the important compositions and action states, and how do they change?” Neither artifact replaces the other. Several consecutive seconds may point to one panel when the same designed setup continues, while the map still records the specific progression or reasoned hold in each second. One second may contain a sub-second scene boundary and refer to two panels. Do not add a cut or a separate drawing merely because the clock advanced by one second.
+
+The supplied reference-set counts (90–301 sampled images per video) motivate complete time coverage at roughly one-second resolution only. They are not evidence about how those videos were planned, do not establish their storyboard-panel counts, and do not require that many detailed drawings. Do not study or imitate those productions as part of this rule. Post-render QA frame sampling remains a separate, risk-based process under guide 07.
+
+## Required song-local files
+
+Before writing scene artwork, copy:
+
+- `repository-preparation/templates/SONG_SECOND_BY_SECOND_COVERAGE_TEMPLATE.csv` to `productions/<song>/storyboard/SECOND_BY_SECOND_COVERAGE.csv`;
+- `repository-preparation/templates/SONG_VISUAL_STORYBOARD_TEMPLATE.md` to `productions/<song>/storyboard/STORYBOARD.md`.
+
+Create original low-fidelity SVG panels at `productions/<song>/storyboard/boards/<SCENE_ID>.svg`. Draw at the song’s selected 4:5 or 9:16 composition ratio and show the actual safe areas and intended framing. Simple vector shapes, stick figures and labels are enough. These are authored planning drawings, not rendered frames, generated images, archive previews or QA stills. Finish the coverage map and boards before implementing scene artwork. Keep the recording, exact lyrics, timing evidence, plan and all song decisions in this song’s folder.
+
+## Part A — Build the complete second-by-second map
+
+### 1. Establish the timeline and evidence labels
+
+Use the measured duration of the supplied audio stream, not a container duration inflated by subtitles or other tracks. Record the master identity and duration source in `STORYBOARD.md`. Record the chosen fps separately; the coverage grid is in seconds and is not rounded to video frames. Do not trim or pad the master to make the grid or frame count convenient.
+
+Keep the provenance of each event time explicit. Use labels such as `supplied`, `audio-measured`, `machine-estimated`, `listening-confirmed`, or `inferred`, and note confidence. Embedded subtitle/lyric starts are supplied timing until checked against the vocal. An audio-energy or beat estimate does not establish a sung word boundary. When timing remains uncertain, show the estimated range and uncertainty; do not create false precision to fill a row. The map can still plan the visual state across that range.
+
+### 2. Create an exact one-second interval grid
+
+Let `D` be the measured audio-stream duration in seconds. Create rows with integer `second_index` values `n = 0` through `ceil(D) - 1`. Each row covers the half-open interval:
+
+`[n, min(n + 1, D))`
+
+The first row starts at `0`. Each full row is one second. The last row ends exactly at `D` and is shorter when `D` is not an integer. For example, if `D = 78.4`, the final row is `[78, 78.4)`; if `D = 78`, the final row is `[77, 78)`. Do not round the endpoint up or leave a gap at the end. Keep decimal precision sufficient to preserve the measured endpoint. Any later conversion to frames belongs to the config/export plan and must report frame quantization separately.
+
+Exactly one CSV row represents each interval. Never omit quiet, instrumental, transition, repeated or apparently static seconds. Never insert extra subsecond rows: describe a boundary inside that second in the row’s scene/boundary field with its exact time, and list both active panel references where necessary.
+
+### 3. Map song events before inventing pictures
+
+Work through the audio from beginning to end. Identify section changes, pickups, pauses, fills, instrumental passages, lyric phrases, repeated lines, vocal entrances, endings and any meaningful change in energy or texture. Link to cue IDs and source evidence rather than copying large lyric/transcription tables into every row. One row may name multiple events if they overlap within that second.
+
+For every interval, fill each CSV field using the following definitions:
+
+- **`second_index`, `interval_start_seconds`, `interval_end_seconds`:** consecutive integer index and exact half-open bounds from the grid above.
+- **`section_id`, `lyric_or_instrumental_event`:** named song section plus phrase, fill, pause, pickup, sustained note, instrumental action or ending state. State “instrumental” or “intentional silence/pause” where applicable; do not leave the event blank.
+- **`cue_ids`, `timing_evidence_and_confidence`:** cue identifiers, timing source, confidence and a short note. If no cue exists yet, say so and link the provisional event/range in research notes.
+- **`scene_id_or_intra_second_boundary`:** the scene covering the interval. If a cut falls inside it, list both scenes and the exact cut time, for example `S03 [21.000–21.420] → S04 [21.420–22.000]`.
+- **`setup_and_focal_composition`:** camera distance/angle, orientation, subject grouping, depth, focal hierarchy, relevant safe area and whether the visual setup carries over from the prior second. Use concrete visual terms rather than “same scene.”
+- **`visible_state_at_interval_start`:** the starting composition/state. Describe its end state and evolution in the action field when they differ.
+- **`code_action_and_state_progression`:** what the named subject/object does through this interval and how its state evolves. Identify the phase (entering, assembling, resisting, revealing, transforming, colliding, resolving, etc.). Record progression already underway rather than repeating “continues.”
+- **`meaningful_change_from_previous_interval`:** actual change in composition, subject state, action progress, lyric emphasis, camera, light, color role or consequence. At the opening say `opening state`. If no meaningful change occurs, identify the stable state; the hold rationale belongs in its own field.
+- **`footage_asset_and_source_interval`, `footage_frame_footprint_and_attention_role`:** asset/manifest ID and source interval, then its visible viewport/area and attention role separately under guide 17. Use `none` when absent; do not force footage into a row.
+- **`board_panel_refs`:** stable SVG panel ID(s) and time/beat range. List multiple panels when an interval crosses a meaningful state change. A panel may be referenced in many rows.
+- **`continuity_or_hold_reason`:** explain why one panel/setup spans seconds, how an evolving action advances through them, or why a deliberate hold serves the song. A repeated panel reference alone is not a sufficient reason.
+- **`implementation_trace_after_coding`:** after implementation, fill the scene component/caller, cue/frame range, helper or animation mechanism and footage caller. Until then mark it `pending`. Keep the trace aligned with the map; it does not replace the code or source-provenance record.
+
+A generic “animated,” “pulses,” “particles move,” or “caption appears” is insufficient as a code action without a named subject, action and visible result, even when archive footage is present.
+
+Write each row so a reader who has not seen the code can reconstruct the intended visual progression. Use brief, specific language, but do not use a single word such as `continues` to cover a second without stating what continues and what changes or why it holds. If an interval truly has no change, record the stable composition, any continuing subtle code motion, the panel reference and a song-specific hold rationale.
+
+### 4. Give lyrics and instrumental passages visual coverage
+
+Connect every lyric phrase and meaningful instrumental event to one or more rows, scene IDs and board panels. A scene can cover several phrases, but each phrase must have a planned visual interpretation. Identify what changes when a key word or phrase matters: subject action, formation, scale, camera, visual metaphor, typography integrated into the scene, or another deliberate event. Do not let captions carry the entire story by default.
+
+Instrumental passages need purposeful visual development too. Plan the action, image transition, build, release or intentional tableau across the actual duration. Avoid long ranges described only as “music continues,” “more footage,” “same caption,” or “hold.” A repeated section may return to a motif, but specify the changed framing, scale, grouping, depth, orientation, action, consequence or point of view that makes the return meaningful. If a musical repeat intentionally repeats the image, explain why the reprise is useful and show how timing/action still feels intentional.
+
+## Part B — Draw panels for setups and meaningful changes
+
+### 5. Decide when an action needs a new panel
+
+Create a new panel whenever the viewer’s intended reading changes materially. This includes a meaningful change to:
+
+- camera distance, angle, viewpoint, orientation or composition;
+- focal subject, subject grouping, scale, location, depth plane or dominant silhouette;
+- the subject’s pose/state, the direction or phase of an action, an interaction, reveal, response, collision, transformation or consequence;
+- the relationship between code-built art and an archive viewport;
+- a visual metaphor, scene-defining type treatment or other graphic event that changes the scene’s meaning.
+
+Use a separate panel for each distinct setup even when the same character or archive clip continues. Within a setup, add panels for meaningful action changes such as anticipation, initiation, development, impact and payoff when those are distinct readable states. Long scenes can contain many such beats; a scene label or a wide establishing frame does not replace them.
+
+Do not create a panel solely because one second passed, an interpolation reached another numeric value, a small decorative element moved, or a renderer can export another still. Continuous movement can be shown with a path, numbered key poses and start/end states in one panel when the composition and reading remain the same. Add another panel when the movement reaches a materially different pose, composition, interaction or consequence. The number of panels follows the song’s actual visual changes; there is no universal panel quota or one-panel-per-second rule.
+
+### 6. Give each scene an understandable action arc
+
+For each scene, board the action at its meaningful stages: normally **entry**, **development**, and **payoff/resolution**, with added panels for every other distinct setup or meaningful action-state change. State what causes the action, what changes as it unfolds, and what the viewer sees as a result. If a short transition has only two clear states, two panels can be enough. If a scene is intentionally static, show its held composition and the entry/exit relationship, then explain why the hold is musically or narratively useful. These are reasoned exceptions, not permission to leave a long scene unplanned.
+
+Every panel needs a stable ID, a scene ID and a time/beat range. Use readable identifiers such as `S04-P01`, `S04-P02`. Record the IDs in `STORYBOARD.md` and reference them from each applicable second-row. A panel may cover multiple rows; a row may reference multiple panels when it spans a cut or action change. Ensure every panel corresponds to one or more coverage rows and every row points to a panel or a specifically justified hold. Where a boundary falls within a second, retain both state references and the boundary time.
+
+### 7. What each SVG panel must communicate
+
+Each panel should be a compact, legible storyboard card with:
+
+- the chosen output-frame ratio and safe areas;
+- subject, props, graphic objects and their approximate placement/scale;
+- focal hierarchy and useful foreground/middle/background separation;
+- viewpoint, crop and composition; show camera direction or a reframing path when relevant;
+- the current action pose/state and, when useful, a prior/next numbered pose or motion arrow;
+- the lyric, instrumental event or story beat and its timing confidence;
+- the code-built focal action and the causal change it produces;
+- archive footage in its own screen-space viewport/mask, if present, plus the code action that relates to it;
+- type placement only when type is a designed part of the visual story; include safe margins and hierarchy.
+
+Show what changes between panels, not just a collection of attractive but unrelated frames. Use directional arrows, paths, simple ghost poses, scale marks or short annotations when they clarify motion. A panel is not required to predict every in-between frame. Do not use the SVG as a substitute for source assets or as evidence that the implemented scene works.
+
+### 8. Write the scene register and action notes
+
+In `STORYBOARD.md`, keep a full-song beat/scene map and a scene-board register. For each scene, record its interval, purpose, represented lyrics/events, panel IDs and ranges, entry/development/payoff, code-built focal action, footage relationship, difference from neighboring/repeated scenes and later component caller. In per-scene notes, describe the action causally (`what initiates it → how it changes → what results`). Name the intended visual change at the scene boundary and how the outgoing state leads into the next one.
+
+For every major section, identify at least one code-led focal moment. A border, tint, caption, texture, static HUD, decorative particle field or an archive window by itself is not an action arc. Secondary movement should help the focal action read. Archive footage may remain large and legible; do not reduce it just to satisfy an invented code/footage ratio. Instead plan and record the separate frame footprint and the adjacent or layered code action under guide 17.
+
+## Coverage and board gate before implementation
+
+Before writing production scene art, audit both layers together:
+
+### Coverage-map checks
+
+- The number of CSV rows equals `ceil(measured_audio_duration_seconds)`; indexes start at zero and are consecutive.
+- The first interval starts at 0, each row starts where the prior row ends, each non-final row spans one second, and the final row ends exactly at the measured audio-stream duration.
+- There are no duplicate, missing or overlapping row intervals. Any scene/cue boundary inside a row has its exact time recorded.
+- Every second names its lyric or instrumental/story event, timing evidence, scene/state, code action, panel(s) or reasoned hold, and change/continuity rationale.
+- Every lyric phrase, section, instrumental passage, pause, pickup and ending is represented; uncertain timing is marked as uncertain rather than silently guessed.
+- Repeated motifs have an explicit comparison or intentional reprise reason. Major sections have planned image/action development.
+
+### Panel-board checks
+
+- Every scene has a clear purpose, frame composition, focal subject and code-led action arc; purposeful exceptions have a written rationale.
+- Each distinct setup and meaningful action-state change has a panel; rows with stable composition can reuse a panel without forcing a cut.
+- Panel IDs/time ranges agree with the CSV and beat/scene register; no panel or row is orphaned.
+- Panels show the selected dimensions, safe areas, depth/composition as relevant, action path/state and any footage viewport.
+- Every footage-bearing scene names how code-built action advances or transforms the scene’s idea; footage duration and footprint are separately recorded under guide 17.
+
+If either layer has a gap, resolve it before implementation or explicitly document why the missing information cannot yet be established and what evidence is needed. Do not treat a perfect row count as proof of meaningful art; read the entries for concrete staging and causality.
+
+## Translate the storyboard into Remotion code
+
+After the gate passes, implement the storyboard’s visual states in the song-local React scene components. Keep a trace from `panel ID → time/cue interval → scene component → code-created subject/action → animation mechanism/helper → footage asset/caller`. Record the caller in the map or scene register after implementation. If the implementation differs from the plan, update the storyboard/map with the actual design decision and reason rather than leaving stale references.
+
+Derive motion from Remotion frame/time and explicit seeds. Ensure arbitrary frame order gives the same result; avoid wall-clock playback, frame-visit-order dependence, `Math.random` fallbacks and hidden mutable state. Use supported frame-readiness and cleanup patterns for asynchronous work and Canvas/WebGL resources. Choose SVG, DOM/CSS, Canvas, WebGL, GSAP choreography or an inspected library mechanism because it serves the planned action; do not add a technique only for decoration. Keep the supplied master and shared renderer contract unchanged.
+
+## Compare the implemented work with the plan
+
+After the no-media plan, use the authorized risk-based pre-export still set to compare representative outputs against the board: opening/ending, distinct setups and visual states, action payoffs, lyric-critical treatments, risky seams and any fixes. Inspect original stills at full size and phone-display size as required by guide 07. Do not render a still for every second or automatically export every panel.
+
+Still review shows sampled composition; it cannot establish motion between samples, choreography, pacing, sync, rights, full-song playback or creative acceptance. Once an authorized full candidate exists, use the distinct technical, temporal, browser-frame, playback/listening, synchronization and creative-review stages in guide 07. Do not use the storyboard map as a post-render QA sample schedule, and do not use a QA contact sheet as a substitute for pre-code design.
+
+## Limits and required handoff
+
+The coverage map and boards express planned visual intent. They do not prove implementation, temporal stability, readability, font/glyph support, media rights, audio synchronization, render success or acceptance. Save both artifacts and all supporting scene/action notes in `productions/<song>/storyboard/`; keep evidence and outputs in that song’s folder. In the final report, identify the measured duration, expected row count, completed panel inventory, unresolved timing/staging gaps and any later plan-to-code deviations. Do not carry another song’s narrative, palette, characters, timing or camera as a default.

@@ -1,0 +1,24 @@
+
+COMMAND ['git', 'init', '-q']
+
+COMMAND ['git', 'remote', 'add', 'origin', 'https://github.com/yihui-dev/awesome-opus5-5-videos']
+
+COMMAND ['git', 'fetch', '--depth=1', 'origin', '3d54892e2ae5b0e8d337171e6508bba4cec01ab8']
+From https://github.com/yihui-dev/awesome-opus5-5-videos
+ * branch            3d54892e2ae5b0e8d337171e6508bba4cec01ab8 -> FETCH_HEAD
+
+COMMAND ['git', 'checkout', '--detach', '3d54892e2ae5b0e8d337171e6508bba4cec01ab8']
+HEAD is now at 3d54892 Add 86 videos from the 2026-09-29 batch (Opus 5.5 + Remotion / HyperFrames, 475 total)
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.
+
+COMMAND ['git', 'lfs', 'pull']
+
+COMMAND ['git', 'lfs', 'fsck']
+Git LFS fsck OK
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.

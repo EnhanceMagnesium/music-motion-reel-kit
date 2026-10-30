@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Shared library studio (portrait production)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Shantell+Sans:wght@800&family=Ma+Shan+Zheng&display=block">
+<style>
+  html, body { margin: 0; background: #1b1820; color: #eee; font: 13px system-ui, sans-serif; }
+  main { padding: 12px; display: grid; gap: 8px; }
+  /* DERIVED: width/height/aspect-ratio are set from PROJECT by the sizing script below (no hard-coded 16 / 9). */
+  #out { height: auto; background: #F3EBDC; }
+  .p5Canvas { display: none !important; }
+  .bar { display: flex; gap: 10px; align-items: center; max-width: 1280px; }
+  #scrub { flex: 1; }
+  #tt { font-variant-numeric: tabular-nums; min-width: 190px; }
+</style>
+<script src="node_modules/p5/lib/p5.min.js"></script>
+<script src="node_modules/p5.brush/dist/p5.brush.js"></script>
+</head>
+<body>
+<main>
+  <canvas id="out" width="1080" height="1920"></canvas>   <!-- attributes overwritten from PROJECT by the sizing script -->
+  <div class="bar"><input id="scrub" type="range" min="0" max="11" step="0.0417" value="0"><span id="tt">loading…</span></div>
+</main>
+<!-- engine -->
+<script src="src/config.js"></script>
+<script src="src/project-config.js"></script>
+<script>
+  // DERIVED: one dimension path. PROJECT.width/height -> #out pixel size, CSS aspect ratio and display width.
+  // (core.js reads the same PROJECT for W/H; render.mjs reads the same config.js for the browser viewport.)
+  (() => { const o = document.getElementById('out'), N = normalizeProject(PROJECT), w = N.width, h = N.height;
+    o.width = w; o.height = h; o.style.aspectRatio = w + ' / ' + h; o.style.width = 'min(100%, ' + (w >= h ? 1280 : 540) + 'px)'; })();
+</script>
+<script src="src/core.js"></script>
+<script src="src/clawd.js"></script>
+<script src="src/timeline.js"></script>
+<!-- reference sheets (standalone loops) -->
+<script src="src/sheets.js"></script>
+<!-- your video: add a script per scene file, in order. Optional karaoke: load src/karaoke.js after core.js and BEFORE the overlay install below (landscape-authored layout; namespacing is the production's job). -->
+<!-- Example scenes are authored 1920x1080: the landscape demo is NOT loaded by the portrait production entry (see examples/landscape/studio.html).
+     A production adds its own portrait scene scripts here, in order. -->
+<script>
+  // Open studio.html?loop=emotions (or views) to scrub a standalone loop instead of the video.
+  const q = new URLSearchParams(location.search).get('loop'); if (q && LOOPS[q]) window.LOOP = LOOPS[q];
+</script>
+<!-- Shared-library adapters (ES modules) register a load promise that core.js awaits before window.ready.
+     Add them after all classic scripts above (the dispatcher captures any existing window.overlayHook when it installs). -->
+<script>
+  // ONE chained promise (core.js awaits READY_PROMISES in parallel): overlay dispatcher first, then the declared production (PROJECT.modules/scenes/cues/assets/fonts).
+  // installProduction is a no-op for a config without `scenes`; with scenes, DO NOT also add per-scene script tags here.
+  (window.READY_PROMISES = window.READY_PROMISES || []).push(
+    import('../adapters/host-integration.mjs').then(m => m.installLibraryOverlays(window, normalizeProject(PROJECT)))
+      .then(() => import('../production/production-host.mjs'))
+      .then(m => m.installProduction(window, normalizeProject(PROJECT), { configUrl: new URL('src/config.js', location.href).href })));
+</script>
+</body>
+</html>

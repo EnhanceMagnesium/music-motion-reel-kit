@@ -1,0 +1,123 @@
+{
+  "query": "threejs shader particles camera",
+  "catalog_root": "repository-downloads/yihui-dev/awesome-opus5-5-videos-20261026",
+  "catalog_records": 703,
+  "result_count": 5,
+  "ranking": "Exact technology-tag match > category > creator/slug > prompt text; all matching terms add score.",
+  "tag_scope_note": "A technology tag may describe a Skillry remake. Read the local prompt file and creator source before attributing a technique to the original creator or adapting any code.",
+  "rights_note": "The catalog license covers its authored compilation, not creator videos, linked code, music, images, or other assets.",
+  "matches": [
+    {
+      "score": 19,
+      "matched_terms": [
+        "threejs",
+        "shader",
+        "particles"
+      ],
+      "slug": "kgonia7-746268",
+      "author": "kgonia7",
+      "category": "explainer",
+      "tech_tags": [
+        "threejs",
+        "shader",
+        "canvas",
+        "particles"
+      ],
+      "prompt_partial": true,
+      "has_remake": true,
+      "prompt_file": "repository-downloads/yihui-dev/awesome-opus5-5-videos-20261026/prompts/kgonia7-746268.md",
+      "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/kgonia7-746268",
+      "creator_post_url": "https://x.com/kgonia7/status/2103835848575746268",
+      "prompt_excerpt": "From Cabo da Roca to observable universe. I gave opus 5.5 old prompt I prepared for Fable but I was not satisfied with the results. I asked model to create a cinematic film that zooms out from a hillside on Earth to the full observable universe using @threejs No external assets. Time: ~3h Output tokens: 662,769 Cache: 125.6M read, 2.0M written; API-equivalent cost: about $54.52: output $13.26, cache reads $25.12, cac"
+    },
+    {
+      "score": 19,
+      "matched_terms": [
+        "threejs",
+        "shader",
+        "particles"
+      ],
+      "slug": "mayuresh-empire-687553",
+      "author": "mayuresh_empire",
+      "category": "interactive",
+      "tech_tags": [
+        "threejs",
+        "shader",
+        "canvas",
+        "particles"
+      ],
+      "prompt_partial": true,
+      "has_remake": true,
+      "prompt_file": "repository-downloads/yihui-dev/awesome-opus5-5-videos-20261026/prompts/mayuresh-empire-687553.md",
+      "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/mayuresh-empire-687553",
+      "creator_post_url": "https://x.com/mayuresh_empire/status/2104207365008687553",
+      "prompt_excerpt": "Claude Opus 5.5 built this game from a single prompt - a mythic action game inspired by ancient Indian epics. No engine. No assets. Every temple, tree, enemy, shader, and sound is generated in code. Even this trailer was designed by Claude. The future is crazy."
+    },
+    {
+      "score": 19,
+      "matched_terms": [
+        "threejs",
+        "shader",
+        "particles"
+      ],
+      "slug": "ryzoft-887481",
+      "author": "Ryzoft",
+      "category": "interactive",
+      "tech_tags": [
+        "threejs",
+        "shader",
+        "particles"
+      ],
+      "prompt_partial": false,
+      "has_remake": true,
+      "prompt_file": "repository-downloads/yihui-dev/awesome-opus5-5-videos-20261026/prompts/ryzoft-887481.md",
+      "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/ryzoft-887481",
+      "creator_post_url": "https://x.com/Ryzoft/status/2102989395359887481",
+      "prompt_excerpt": "I want you to imagine a story. And then using threejs I want you to create full animation, star wars 80s-level quality 90s cartoon out of the story you imagine."
+    },
+    {
+      "score": 18,
+      "matched_terms": [
+        "threejs",
+        "shader",
+        "particles"
+      ],
+      "slug": "fornyapayzeka-795431",
+      "author": "FornYapayZeka",
+      "category": "motion",
+      "tech_tags": [
+        "threejs",
+        "shader",
+        "particles"
+      ],
+      "prompt_partial": false,
+      "has_remake": true,
+      "prompt_file": "repository-downloads/yihui-dev/awesome-opus5-5-videos-20261026/prompts/fornyapayzeka-795431.md",
+      "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/fornyapayzeka-795431",
+      "creator_post_url": "https://x.com/FornYapayZeka/status/2102888241443795431",
+      "prompt_excerpt": "Yapabileceğin en etkileyici havai fişek veya ışıklı parçacık gösterisini üret. Ortamı ve sanat yönünü sen seç. Tek tip küçük patlamaları çoğaltmak yerine ritmi, derinliği, ışığın çevreye etkisini ve unutulmaz bir final anını tasarla. Gösteri canlı çalışsın; kullanıcı finali tekrar oynatabilsin. Yaratıcı seçimler senin: sahne, sanat yönü, kamera, mekanik, teknoloji ve etkileşimi önceden belirlenmiş sıradan kalıplara s"
+    },
+    {
+      "score": 18,
+      "matched_terms": [
+        "threejs",
+        "shader",
+        "particles"
+      ],
+      "slug": "ishuagra02-678129",
+      "author": "ishuagra02",
+      "category": "3d",
+      "tech_tags": [
+        "threejs",
+        "shader",
+        "particles"
+      ],
+      "prompt_partial": false,
+      "has_remake": true,
+      "prompt_file": "repository-downloads/yihui-dev/awesome-opus5-5-videos-20261026/prompts/ishuagra02-678129.md",
+      "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/ishuagra02-678129",
+      "creator_post_url": "https://x.com/ishuagra02/status/2102920408743678129",
+      "prompt_excerpt": "Create a stylistic 3D environment of a busy Santa Monica beach that adapts to the time of day. The art style must be a particle illustration, which uses thousands of tiny glowing specks rather than solid fills with flowing ribbon strokes behind figures to suggest motion. I had 2-3 more prompts on top of this, but this is a good starting point. Repo link: https://github.com/ishuagrawal/particle-beach"
+    }
+  ]
+}

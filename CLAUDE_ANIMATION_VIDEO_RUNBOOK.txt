@@ -1,0 +1,91 @@
+CURRENT AUTHORIZATION INTERPRETATION — 2026-10-25
+Honor the latest user authorization across all stages it expressly covers. A future initiating prompt may cover planning, code, browser checks, stills, full-song rendering and bounded corrections together; continue within that scope without repeated approval. When the initiating prompt authorizes planning only, stop at that boundary. Pause for consequential unresolved inputs, spending, credentials or actions outside scope. Current-case media authorization is unchanged. See claude-finished-song-animation-project/08_ONE_PROMPT_PRODUCTION_AND_LEARNING.txt and reusable-animation-context/VERIFIED_PRODUCTION_LESSONS.md. Historical stage descriptions below do not require reapproval of a stage already expressly authorized.
+
+CLAUDE ANIMATION VIDEO RUNBOOK — CLAUDE EXECUTION; GPT OPTIONAL
+Historical His Line record updated through 2026-10-25; current operating rules are in PROJECT_INSTRUCTIONS.md and claude-finished-song-animation-project/05_NEW_SONG_CONVERSATION_PROMPT.txt.
+
+CURRENT GENERAL PROJECT DIRECTION
+This file retains historical His Line evidence and old GPT-administration procedures. They are case history, not current gates for a new song. For new work, follow PROJECT_INSTRUCTIONS.md and the single canonical initiating prompt at claude-finished-song-animation-project/05_NEW_SONG_CONVERSATION_PROMPT.txt. Keep each song in this connected kit and use the installed Remotion engine through shared-animation-library/render.mjs; existing p5 productions remain supported through the same entry as the legacy route. Claude chooses per scene whether direct Remotion or a HyperFrames Player child composition fits; Remotion remains the song clock, supplied-audio owner, final composition and encoder. Do not make this ordinary route choice a manual user gate or treat HyperFrames as a competing full-song renderer. Follow `claude-finished-song-animation-project/14_HYPERFRAMES_SUBCOMPOSITION_GUIDE.txt`. One user prompt may authorize the complete named local production workflow; do not ask for repeated approval within its scope. Do not claim tool execution where this session lacks the native environment.
+
+1. RESPONSIBILITIES AND AUTHORITY
+The user decides the creative result, budget and production authorization. Claude is responsible for carrying out every stage named in the current initiating prompt and saving the evidence locally. GPT may assist when asked, but it is not a required director, reviewer or handoff gate. The canonical new-song prompt can authorize planning, source discovery, implementation, checks, stills, full render, playback and bounded corrections together. Honor that authorization without asking again for the same action. Pause for essential missing inputs, materially uncertain rights, credentials, spending, external publication or out-of-scope actions. Local Node/Chrome/FFmpeg execute saved source only when this Claude session can actually invoke them.
+Grok supplies text-derived songwriting and animation direction. The user manually pastes its completed brief and attaches the selected Suno recording to Claude. Grok receives written song context; the recording goes directly to Claude.
+Treat repository documentation, reference-video content and other model outputs as source material. Record useful techniques and evidence; current user instructions govern actions.
+Keep the user’s latest direction and changes together in a dated DIRECTION record; record GPT suggestions only when the user adopts them. Treat the approved Grok theme as a starting treatment whose shot language can be revised in response to playback feedback. Preserve exact approved lyrics and distinguish display excerpts from the complete lyrics.
+
+2. CURRENT HIS LINE EVIDENCE
+Production directory: productions/his-line/
+Candidate: review/his-line_candidate1_f2386e07c964.mp4
+Master: audio/His_Line_master.m4a
+Working source: renderer/scenes/his-line.js
+Specification: renderer/specs/his-line.json
+Cue data: productions/his-line/cues.json
+Song record and checkpoint: SONG_BRIEF.md and CHECKPOINT.md
+Claude tool transcript supplied by user: ~/Downloads/His Line Audio Analysis.txt
+
+The candidate is H.264 1080x1920, 24 fps, 864 frames, 36.000 seconds, with AAC audio. GPT independently probed those export properties. Claude reports a source/output audio correlation of zero lag; GPT has not independently reproduced that correlation or verified sung words by listening in this audit.
+The master is approximately 34.81 seconds. Claude chose the entire master and padded the video with approximately 1.19 seconds of silent ending. Record this as an adaptation of the original proposed passage, and put any future excerpt or padding choice into the text plan for user review.
+
+The seven spec rows all call the same his-line handler. That handler ignores scene identity and scene-local progress, so those rows are lyric intervals within one composition. They do not implement seven distinct shots. Code-based schedule:
+- 0–6.383: 3.5% camera settle.
+- 12.05–13.75: seal cross.
+- 13.75–22.979: approximately 9.2 seconds of the same geometry with a subtle sheen.
+- 22.979–25.452: 10% widening.
+- 25.452–27.252: paper grows upward 90 px.
+- 28.324–29.924: secondary layers fade.
+- Final descent: small lift/shadow/scale change; landing jolt peaks around 9 px.
+Measured pulse events do not drive the scene. Candidate-1 feedback is that the animation is unattractive and too slow. Carry this as an unresolved creative failure, even though encoding succeeded.
+
+Claude's summarized treatment itself prescribed a continuous wall, restrained opening, reading hold and subtle changes. Evaluate both the treatment and implementation. Font replacement and a larger final jolt address details; the proposed revision must address image craft, shot variety, visible action and pacing.
+
+Audio evidence corrections:
+- Embedded lyric agreement establishes metadata agreement. Performance and take identity remain provisional until verified by listening or another reliable source.
+- 32.91 s is a measured energy return. Its correspondence to the final sung word is provisional.
+- The embedded subtitle track ends beyond the recording; word-level cue positions remain estimates.
+- Describe 32.71–32.88 as a brief low-energy interval, with the threshold and band recorded where used. The printed sample at 32.71 is approximately -39 dB full-band.
+- Export offset and lyric/action synchrony require separate checks.
+- Store pulse period as a duration/period field, separately from timestamp events.
+
+3. HISTORICAL HIS LINE MANUAL FIXES FROM THE PRE-REMOTION WORKFLOW
+A. Keep candidate 1, its source, master and checkpoint available as the baseline. Corrections should identify the original claim and date rather than erase its provenance.
+B. Paste the current-direction text from CLAUDE_HIS_LINE_MANUAL_RESET_PROMPT.txt into the existing Video production setup and resources conversation. This establishes a text-only audit and supersedes the automatic next-render instruction in the checkpoint.
+C. Replace the Claude Project Instructions with the updated canonical 00_PROJECT_INSTRUCTIONS_TO_PASTE.txt. In Project context, replace the older file 02 with the updated 02_CLAUDE_PROJECT_INSTRUCTIONS.txt, and add this runbook. Use the lowercase claude-animation-project-context folder as the current upload source.
+D. When using file 13 for a new song, use the updated 13_CLAUDE_STEP_1_START_PROMPT.txt. For His Line, use the manual reset prompt so the current review stays attached to its actual candidate.
+E. Choose one or two supplied MP4 references that best represent the desired craft and movement. Give their exact filenames and, if convenient, useful time ranges. Attach those existing files to the Claude conversation if it cannot access them. GPT can inspect existing reference media later under the user's authorized scope. Until inspection occurs, label technique descriptions as requested direction rather than observed evidence.
+F. Keep local implementation in Claude Code with music-motion-reel-kit selected. Claude Code's local command route passed the previous renderer-v1 preflight. The current renderer is v2, so verify its song-specific runtime when implementation is authorized. The earlier Cowork command failure is a separate issue.
+
+These are document, context and direction fixes. Node and FFmpeg are already installed. The approved source library is already acquired; consult its saved ledger and indexes and resolve a specific missing file only when a selected technique requires it.
+
+4. HISTORICAL GPT TEXT-DIRECTION PASS — HIS LINE ONLY
+This records a past His Line review stage. Do not add it as a mandatory GPT gate to a new-song workflow; new songs use the single canonical prompt in `claude-finished-song-animation-project/05_NEW_SONG_CONVERSATION_PROMPT.txt`.
+Read the current runbook, Claude transcript, song record, cues, specification, scene module and user feedback. Read relevant imported source files selectively. List the actual read scope.
+Return:
+1) The unresolved visual problems and their concrete implementation causes.
+2) The evidence status of timing, source access and runtime claims.
+3) A revised treatment preserving the song's intended narrative while giving it visible development.
+4) A shot table covering the complete intended duration. Columns: interval; composition; subject; visible action and result; camera; transition; musical/lyric cue; evidence; asset or code need.
+5) Selected source techniques with exact local paths and the reason each fits a named shot.
+6) One bounded Claude task and its expected text deliverables.
+
+Use 6–8 distinct compositions as an initial His Line planning proposal, then justify the count against the song. Change viewpoint, scale, staging or subject action at meaningful phrase boundaries. A continuous-shot treatment is acceptable only if the text plan specifies equally clear transformations and substantial visual development.
+For every shot, describe an action a phone viewer can perceive and the resulting changed image. State planned movement distance/scale and duration where helpful. Treat pauses as deliberate dramatic holds with a reason. Assign specific pulses or accents to selected actions after checking the cue evidence.
+Explain the opening hook, full-song development and ending. A single motif can recur through different compositions. Choose this song's native 4:5 (1080×1350) or 9:16 (1080×1920) frame before storyboarding and design its scenes, type, camera and overlays for those explicit dimensions. Define drawing detail, texture, foreground/background relationships and transitions with concrete examples.
+The user reviews this text treatment before any implementation or new media.
+
+5. HISTORICAL HIS LINE IMPLEMENTATION — NEW SONG AUTHORIZATION IS IN THE CANONICAL PROMPT
+The instructions below describe the older His Line stage-by-stage authorization model. For a new song, use the canonical initiating prompt, which authorizes its listed implementation and media stages once.
+On explicit user authorization, implement the approved shot table in versioned song-specific source inside this kit. For a new production, configure the shared Remotion route (`PROJECT.renderEngine: 'remotion'`, `remotion/scenes.jsx`, and that song's `public/` folder) through `shared-animation-library/render.mjs`. Keep an existing p5 production on the same entry's legacy p5 route. The shared config/export plan is common; Remotion React scenes and p5 modules are separate implementations. Keep working source and the master portable. Reconcile scene boundaries with actual scene identity, state or local progress. Move creative cue times into the cue record and consume them in the scene code.
+Retain candidate 1 and use separate revision files/specs. Preserve source-library/raw as read-only and retain provenance for adapted code. Identify a required new dependency or paid asset by its shot purpose before adoption. Use the existing source library to resolve specific implementation needs.
+Local preflight should establish browser launch, font/page loading and source readability for the current version. Report actual commands, exits and failures. Save a checkpoint describing what changed and what remains.
+
+6. HISTORICAL STAGE-BY-STAGE REVIEW NOTE
+This section records the older His Line authorization model. For a new song, a single initiating prompt may authorize the relevant media stages together; follow that prompt and the current canonical quality guide, without repeating approvals. Use `claude-finished-song-animation-project/07_QUALITY_REVIEW_AND_ACCEPTANCE.txt` for the no-media plan, risk-based still set, authorized full-candidate playback and bounded correction loop. After the complete render, use the local Claude Code Browser pane for a companion visual preview when available, then use `11_HEADLESS_BROWSER_FRAME_REVIEW.txt` for saved Playwright video-frame checks and FFmpeg contact sheets. Still review checks sampled appearance, composition and text; motion review requires actual playback. Obtain the user's style decision before the full render when requested by this workflow.
+Use the supplied finished master from beginning to end at its measured duration by default. The often-expected 1:20–1:40 range is illustrative, not a limit. Do not shorten the song or impose a fixed global duration ceiling unless the user explicitly requests an excerpt. Build the visual progression to the actual song structure rather than stretching a short treatment. The first playable production candidate is the complete intended-duration piece; do not substitute a short proof video.
+Review the full export with sound and at phone size. Check actual duration, streams, soundtrack offset, meaningful cue alignment, spelling, scene variety, opening strength and ending. Label an export as technically verified and creatively awaiting review until both have evidence. Record user acceptance or unresolved feedback explicitly.
+
+7. BUDGET AND CHECKPOINT
+Keep execution efficient by reusing valid source, cue records, installed dependencies and evidence. Claude checks local records before repeating work. GPT may inspect evidence when asked but is not a required reviewer. Local render time and model usage are separate costs. The user chooses paid assets, providers and API credit budgets explicitly.
+Checkpoint fields: stage; current files/version; user feedback; decisions; evidence status; authorized next action; pending creative decision; saved command; execution route; paid commitments, if any. A model usage reset is handled by saving work and resuming from these files.
+
+8. HISTORICAL HIS LINE ADMINISTRATION HANDOFF — NOT THE NEW-SONG START
+This retained His Line handoff is historical. Use the canonical new-song prompt for future productions. Its text begins: Use this runbook to administer my Claude animation project. Begin at the text audit and direction stage for His Line. Read the candidate-1 transcript and saved source, reconcile the project instructions, and propose the revised shot treatment. You may inspect existing files and operate Claude to perform the bounded text-only task when needed. Keep image generation, frame extraction, still rendering and video rendering pending my explicit authorization. Preserve the original recording and candidate. Report exactly what you read, changed, sent and verified. Give me a concrete text plan to approve before implementation.

@@ -1,0 +1,3908 @@
+{
+  "sha": "db374f65ec29834c5f5120b93c696843cdaa85ae",
+  "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/db374f65ec29834c5f5120b93c696843cdaa85ae",
+  "tree": [
+    {
+      "path": ".editorconfig",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d41540467e4bb4d6cf6160e7457b3d3d2c49077c",
+      "size": 147,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d41540467e4bb4d6cf6160e7457b3d3d2c49077c"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1eae0cf6700cebfee743504d0bdeaf642a11f012",
+      "size": 20,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/1eae0cf6700cebfee743504d0bdeaf642a11f012"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26aa1c3bd517fa89c0e805911d2fe2f5c5e8bdd8",
+      "size": 98,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/26aa1c3bd517fa89c0e805911d2fe2f5c5e8bdd8"
+    },
+    {
+      "path": "adjust-heading-level.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f9a09446bdfca5cb5f29bf0d55879bc863f7532",
+      "size": 754,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/5f9a09446bdfca5cb5f29bf0d55879bc863f7532"
+    },
+    {
+      "path": "eleventy.config.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2452699dbba3a5b6b35876b04bbdd776e1c73831",
+      "size": 4233,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/2452699dbba3a5b6b35876b04bbdd776e1c73831"
+    },
+    {
+      "path": "netlify.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93b187ec1fbf0b0dcde4db94538cf05b10349f03",
+      "size": 1732,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/93b187ec1fbf0b0dcde4db94538cf05b10349f03"
+    },
+    {
+      "path": "package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd0e6590e2b99dd5fd62a98bd0cf39afaf5b993f",
+      "size": 61628,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/fd0e6590e2b99dd5fd62a98bd0cf39afaf5b993f"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9da923725ce1e580a39bcc9e722811f60612641f",
+      "size": 360,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/9da923725ce1e580a39bcc9e722811f60612641f"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8d7a3d84fa4d39a285f9ba8107278ea7f9c23956",
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/8d7a3d84fa4d39a285f9ba8107278ea7f9c23956"
+    },
+    {
+      "path": "src/_data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "53dc5e3cce5bcce96671940dcaf3de07ba45059a",
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/53dc5e3cce5bcce96671940dcaf3de07ba45059a"
+    },
+    {
+      "path": "src/_data/categories.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "193bd2d6288e1d21b2df87e1bb059fff4cc77876",
+      "size": 743,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/193bd2d6288e1d21b2df87e1bb059fff4cc77876"
+    },
+    {
+      "path": "src/_data/metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b775f412b40c584b1487ee44d9aec0641694d6c",
+      "size": 381,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6b775f412b40c584b1487ee44d9aec0641694d6c"
+    },
+    {
+      "path": "src/_includes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8ae564ec096ccff25537e61544062b9b725d5087",
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/8ae564ec096ccff25537e61544062b9b725d5087"
+    },
+    {
+      "path": "src/_includes/icon-email.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98ad5aaefd50a857fa54fcd5c47f02bbedcf98dc",
+      "size": 455,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/98ad5aaefd50a857fa54fcd5c47f02bbedcf98dc"
+    },
+    {
+      "path": "src/_includes/icon-github.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88254a32fb249c4b0943002360d8eaeeebd61b6e",
+      "size": 1136,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/88254a32fb249c4b0943002360d8eaeeebd61b6e"
+    },
+    {
+      "path": "src/_includes/icon-linkedin.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "185c7b960366ce5fd4707fdb8352db7e81ccede0",
+      "size": 381,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/185c7b960366ce5fd4707fdb8352db7e81ccede0"
+    },
+    {
+      "path": "src/_includes/icon-x.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfddf1e650677fa9f276d417f86527a56f0f218b",
+      "size": 224,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/cfddf1e650677fa9f276d417f86527a56f0f218b"
+    },
+    {
+      "path": "src/_includes/layouts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "44d7080007f5b426cee6df58a966e144b931571d",
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/44d7080007f5b426cee6df58a966e144b931571d"
+    },
+    {
+      "path": "src/_includes/layouts/base.njk",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d89dfb3ebec30fd0814e7da2d83dd7c25ff9237a",
+      "size": 2637,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d89dfb3ebec30fd0814e7da2d83dd7c25ff9237a"
+    },
+    {
+      "path": "src/_includes/layouts/post.njk",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e3d6dcf8ae227d655baf5376e41bf7a3394ac00",
+      "size": 470,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/2e3d6dcf8ae227d655baf5376e41bf7a3394ac00"
+    },
+    {
+      "path": "src/_includes/macros.njk",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17c64caf879187c082b1165e10a01fbb8479d1b2",
+      "size": 571,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/17c64caf879187c082b1165e10a01fbb8479d1b2"
+    },
+    {
+      "path": "src/category.njk",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f197b04bfbb3d59516cee98ad80a158ae1a4da5e",
+      "size": 589,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/f197b04bfbb3d59516cee98ad80a158ae1a4da5e"
+    },
+    {
+      "path": "src/css",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d449e641f8d5cd92694bfbde249b581d30910ea1",
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/d449e641f8d5cd92694bfbde249b581d30910ea1"
+    },
+    {
+      "path": "src/css/main.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0574838736a0e635de4ed82c75a3a0bf1cd87da6",
+      "size": 9529,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/0574838736a0e635de4ed82c75a3a0bf1cd87da6"
+    },
+    {
+      "path": "src/images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b50e353724355272904bdde4b4da1eb716c71917",
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/b50e353724355272904bdde4b4da1eb716c71917"
+    },
+    {
+      "path": "src/images/agentic-coding-chatgpt-open-vscode.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d76fd190a459d19455853bc399e77c1003900a70",
+      "size": 18602,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d76fd190a459d19455853bc399e77c1003900a70"
+    },
+    {
+      "path": "src/images/agentic-coding-chatgpt-worktree.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b57b4249f8e2d0907e124eaed1a5f9b381d9d4ae",
+      "size": 19722,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/b57b4249f8e2d0907e124eaed1a5f9b381d9d4ae"
+    },
+    {
+      "path": "src/images/agentic-coding-claude-worktree.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "224e7394194f6712bfb520750ece7965741285b4",
+      "size": 10216,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/224e7394194f6712bfb520750ece7965741285b4"
+    },
+    {
+      "path": "src/images/agentic-coding-from-phone.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e01780970add9b47447206a0db05ab7c2cfa620",
+      "size": 79728,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6e01780970add9b47447206a0db05ab7c2cfa620"
+    },
+    {
+      "path": "src/images/agentic-coding-setup-topology.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8695db4db0272b5f90962dfd3ba783e56f7c06f3",
+      "size": 11901,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/8695db4db0272b5f90962dfd3ba783e56f7c06f3"
+    },
+    {
+      "path": "src/images/claude-code-jsdom.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33dddcf87d9945be1bbc300ea7d8627261cf2b4e",
+      "size": 41534,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/33dddcf87d9945be1bbc300ea7d8627261cf2b4e"
+    },
+    {
+      "path": "src/images/display-blackout-dark.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98953a2fe78ef9786648b12c161a70beb9b8f354",
+      "size": 15234,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/98953a2fe78ef9786648b12c161a70beb9b8f354"
+    },
+    {
+      "path": "src/images/display-blackout.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0449a31b3845ca1888b73ac00946673186913e15",
+      "size": 15646,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/0449a31b3845ca1888b73ac00946673186913e15"
+    },
+    {
+      "path": "src/images/fsrs-flashcard-sample-1-back.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78bd652886c626f93925befd39525c8193c667eb",
+      "size": 49238,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/78bd652886c626f93925befd39525c8193c667eb"
+    },
+    {
+      "path": "src/images/fsrs-flashcard-sample-1-front.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e538e348af138597c8c99c866344aef77c967e6",
+      "size": 8270,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/4e538e348af138597c8c99c866344aef77c967e6"
+    },
+    {
+      "path": "src/images/fsrs-flashcard-sample-2-back.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c8a4e184dd893231a26afe7cf3972386a5651c4",
+      "size": 18780,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/4c8a4e184dd893231a26afe7cf3972386a5651c4"
+    },
+    {
+      "path": "src/images/fsrs-flashcard-sample-2-front.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "430530179b4c3ee1287763c84edf8ac7d774a9aa",
+      "size": 13078,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/430530179b4c3ee1287763c84edf8ac7d774a9aa"
+    },
+    {
+      "path": "src/images/fsrs-forgetting-curve.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91aa043847535427103f09db1e41462feb83d16e",
+      "size": 232954,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/91aa043847535427103f09db1e41462feb83d16e"
+    },
+    {
+      "path": "src/images/fsrs-simulation-memorized.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99a3113dae53cd5ff2ecb65f34910a379893bc4e",
+      "size": 3810,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/99a3113dae53cd5ff2ecb65f34910a379893bc4e"
+    },
+    {
+      "path": "src/images/fsrs-simulation-reviews.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90da88b0201328f47eb75d39e69fd94fa6110cf9",
+      "size": 10580,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/90da88b0201328f47eb75d39e69fd94fa6110cf9"
+    },
+    {
+      "path": "src/images/fsrs-simulation-time.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b65c7997ecdd4fe9915ddc0a427de7690bbc448",
+      "size": 15086,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/5b65c7997ecdd4fe9915ddc0a427de7690bbc448"
+    },
+    {
+      "path": "src/images/hacktoberfest-spam-listing.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1a6fe37796040caa9a5e142fe2f0ad5c4716f19",
+      "size": 133643,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d1a6fe37796040caa9a5e142fe2f0ad5c4716f19"
+    },
+    {
+      "path": "src/images/hacktoberfest-spam-pr.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4748dfd9927fd3352a65b150bc049a61b989c6ca",
+      "size": 194206,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/4748dfd9927fd3352a65b150bc049a61b989c6ca"
+    },
+    {
+      "path": "src/images/headshot-1x.avif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fe1be85fe8f24b8e2d780accce4cd7facefd61d",
+      "size": 3028,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/0fe1be85fe8f24b8e2d780accce4cd7facefd61d"
+    },
+    {
+      "path": "src/images/headshot-2x.avif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abd66be6679a7d8f6728778ce3e90813b9c3e912",
+      "size": 3580,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/abd66be6679a7d8f6728778ce3e90813b9c3e912"
+    },
+    {
+      "path": "src/images/headshot-3x.avif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fdf442af193b5e127edb7b591b29d258beb8f87",
+      "size": 5944,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/9fdf442af193b5e127edb7b591b29d258beb8f87"
+    },
+    {
+      "path": "src/images/me-in-niseko.avif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c76b6f6af1ab7a61ac73fd922b8fafd15ffd30ec",
+      "size": 138045,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/c76b6f6af1ab7a61ac73fd922b8fafd15ffd30ec"
+    },
+    {
+      "path": "src/images/stream-error-abort-propagation.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53011885e5bd68873f42a197c740494d1d35c46c",
+      "size": 74180,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/53011885e5bd68873f42a197c740494d1d35c46c"
+    },
+    {
+      "path": "src/images/tray-icon-context-menus",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f913914f480328990109df3b5c8f93da34fb365a",
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/f913914f480328990109df3b5c8f93da34fb365a"
+    },
+    {
+      "path": "src/images/tray-icon-context-menus/1password.avif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4c5d8a7c36870a8018213a9b148cbd96ca943c8",
+      "size": 116563,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/b4c5d8a7c36870a8018213a9b148cbd96ca943c8"
+    },
+    {
+      "path": "src/images/tray-icon-context-menus/command-palette.avif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f86fbcb9c8a77590250f58a5166992fe1e022179",
+      "size": 120203,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/f86fbcb9c8a77590250f58a5166992fe1e022179"
+    },
+    {
+      "path": "src/images/tray-icon-context-menus/discord.avif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1aaec9cbf2e799511469591a9753d1cca3d5391",
+      "size": 111674,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/b1aaec9cbf2e799511469591a9753d1cca3d5391"
+    },
+    {
+      "path": "src/images/tray-icon-context-menus/display-blackout.avif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3517e9e57004fac79bf62cf5a839e7d8f223ee42",
+      "size": 108004,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/3517e9e57004fac79bf62cf5a839e7d8f223ee42"
+    },
+    {
+      "path": "src/images/tray-icon-context-menus/ime.avif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e338985b090b88816289b6124021aacf83cebad",
+      "size": 129155,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/8e338985b090b88816289b6124021aacf83cebad"
+    },
+    {
+      "path": "src/images/tray-icon-context-menus/onenote.avif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bf5ca19b9075fe4814b0a5d27fde21f33dae8f4",
+      "size": 131721,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/9bf5ca19b9075fe4814b0a5d27fde21f33dae8f4"
+    },
+    {
+      "path": "src/images/tray-icon-context-menus/phone-link.avif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73b2fd022e4c1848035518cbfec777c8ee109b8e",
+      "size": 107245,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/73b2fd022e4c1848035518cbfec777c8ee109b8e"
+    },
+    {
+      "path": "src/images/tray-icon-context-menus/signal.avif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3662d538fc21207673a2afbc70bd2dab75380bdf",
+      "size": 106617,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/3662d538fc21207673a2afbc70bd2dab75380bdf"
+    },
+    {
+      "path": "src/images/tray-icon-context-menus/steam.avif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e951ee3d3dcab7c32562799e7516e81333e0b767",
+      "size": 112293,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/e951ee3d3dcab7c32562799e7516e81333e0b767"
+    },
+    {
+      "path": "src/images/tray-icon-context-menus/windows-security.avif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c268a4354e150a8a20d2d1ccf4fd319ef94239d5",
+      "size": 104340,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/c268a4354e150a8a20d2d1ccf4fd319ef94239d5"
+    },
+    {
+      "path": "src/images/wdsts-desk-shot.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48c1c35609f6175d286ec126818729a6540c45f1",
+      "size": 2887900,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/48c1c35609f6175d286ec126818729a6540c45f1"
+    },
+    {
+      "path": "src/index.njk",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a24385fb804a9e984632a07b8bf1c5d678022f0",
+      "size": 3947,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/2a24385fb804a9e984632a07b8bf1c5d678022f0"
+    },
+    {
+      "path": "src/js",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "344bcb6c745c2a7a97a61376c3144c58ac859da6",
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/344bcb6c745c2a7a97a61376c3144c58ac859da6"
+    },
+    {
+      "path": "src/js/image-carousel.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6baf939a06a5eb5d80651afc01460cf1329bb80",
+      "size": 2652,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/c6baf939a06a5eb5d80651afc01460cf1329bb80"
+    },
+    {
+      "path": "src/posts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "300ddf6e13e11a9303e43d5de01adfdf78f2b4c5",
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/300ddf6e13e11a9303e43d5de01adfdf78f2b4c5"
+    },
+    {
+      "path": "src/posts/2012-10-02-portable-nodejs-code.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26884be7d2d3465c7cef32248dc7cc8b8031d8f9",
+      "size": 7596,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/26884be7d2d3465c7cef32248dc7cc8b8031d8f9"
+    },
+    {
+      "path": "src/posts/2012-10-14-youre-missing-the-point-of-promises.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60b62a038642dcae35d941a78ccd692fd5971a41",
+      "size": 15132,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/60b62a038642dcae35d941a78ccd692fd5971a41"
+    },
+    {
+      "path": "src/posts/2013-02-08-peer-dependencies.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3b65577fb5f39da30224d27acbc0b0014509436",
+      "size": 6792,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/e3b65577fb5f39da30224d27acbc0b0014509436"
+    },
+    {
+      "path": "src/posts/2013-03-19-strict-mode-static-scoping.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d22855771ea127c47176880b6c9199f0a5f1569a",
+      "size": 5667,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d22855771ea127c47176880b6c9199f0a5f1569a"
+    },
+    {
+      "path": "src/posts/2013-06-10-explaining-away-the-webs-magic.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5361fb72981d368b72873e41d2380f242a020946",
+      "size": 9146,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/5361fb72981d368b72873e41d2380f242a020946"
+    },
+    {
+      "path": "src/posts/2013-09-05-es6-iterators-generators-and-iterables.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84157ef3356b69a985cd5ada4963c038f91260d5",
+      "size": 5567,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/84157ef3356b69a985cd5ada4963c038f91260d5"
+    },
+    {
+      "path": "src/posts/2013-10-07-the-extensible-web.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "794f8eeaa678b960f75d3911663671f70735fb48",
+      "size": 17407,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/794f8eeaa678b960f75d3911663671f70735fb48"
+    },
+    {
+      "path": "src/posts/2013-12-02-continual-progress-in-the-w3c-tag.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a74f36b1eb260168cdb6b183b3de6e1cbff144ad",
+      "size": 6975,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a74f36b1eb260168cdb6b183b3de6e1cbff144ad"
+    },
+    {
+      "path": "src/posts/2014-02-14-the-revealing-constructor-pattern.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbfd9e2a2574f505920555a359b831c46d639786",
+      "size": 8030,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/bbfd9e2a2574f505920555a359b831c46d639786"
+    },
+    {
+      "path": "src/posts/2015-03-04-byte-sources-introduction.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e88164fde57dbffe22b97d27ead5d5b78bfc57c",
+      "size": 2888,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/4e88164fde57dbffe22b97d27ead5d5b78bfc57c"
+    },
+    {
+      "path": "src/posts/2015-03-05-reading-from-files.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28c724d2e62bb182328ec6e143b97e061585fbda",
+      "size": 5244,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/28c724d2e62bb182328ec6e143b97e061585fbda"
+    },
+    {
+      "path": "src/posts/2015-03-16-reading-from-sockets.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "580dbb19a10e9c05e239108bfd7d23d8aafb5506",
+      "size": 6950,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/580dbb19a10e9c05e239108bfd7d23d8aafb5506"
+    },
+    {
+      "path": "src/posts/2016-01-18-mathematical-consciousness.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2ffcddfe82d8e7410708c3aa8f67a0a7ae0c1a3",
+      "size": 6132,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a2ffcddfe82d8e7410708c3aa8f67a0a7ae0c1a3"
+    },
+    {
+      "path": "src/posts/2020-09-30-hacktoberfest.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92ba83342eba16996f5d2d2e1f200f8fde2e31b8",
+      "size": 6502,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/92ba83342eba16996f5d2d2e1f200f8fde2e31b8"
+    },
+    {
+      "path": "src/posts/2023-02-19-chatgpt-simulacrum.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3820ff1327456ae745482397e9fef806d4d81d72",
+      "size": 10836,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/3820ff1327456ae745482397e9fef806d4d81d72"
+    },
+    {
+      "path": "src/posts/2023-07-22-part-time-japanese.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b739707490655817ee7a561a6c9c82ac328e4ee",
+      "size": 15230,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6b739707490655817ee7a561a6c9c82ac328e4ee"
+    },
+    {
+      "path": "src/posts/2025-05-09-fsrs.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e8230b9f67d67193d6871395f598cba73b34579",
+      "size": 19566,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/1e8230b9f67d67193d6871395f598cba73b34579"
+    },
+    {
+      "path": "src/posts/2025-07-15-metr-ai-productivity.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be1581e95fb391c0c9700f780df2be77bfde174b",
+      "size": 26853,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/be1581e95fb391c0c9700f780df2be77bfde174b"
+    },
+    {
+      "path": "src/posts/2025-08-13-builtin-ai-api-design.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6597244e52de0b6a912f34b827e45e42e65f0f6",
+      "size": 17351,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/b6597244e52de0b6a912f34b827e45e42e65f0f6"
+    },
+    {
+      "path": "src/posts/2025-09-27-retirement.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ffa4c4c920c68aee28240345972dd604b5ee9ee",
+      "size": 5923,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/1ffa4c4c920c68aee28240345972dd604b5ee9ee"
+    },
+    {
+      "path": "src/posts/2026-02-05-jsdom-claude-code.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0b1a34cd1831510f198bca8eb80bccbba82d4c0",
+      "size": 10957,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a0b1a34cd1831510f198bca8eb80bccbba82d4c0"
+    },
+    {
+      "path": "src/posts/2026-02-28-streams-standard.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4e2751b8850e3bf2e89527cd9fc782cba5e74a9",
+      "size": 22470,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/e4e2751b8850e3bf2e89527cd9fc782cba5e74a9"
+    },
+    {
+      "path": "src/posts/2026-03-22-windows-native-dev.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d04fe8d17dee6a2fe355e5446fce910a8edd0b7",
+      "size": 23600,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6d04fe8d17dee6a2fe355e5446fce910a8edd0b7"
+    },
+    {
+      "path": "src/posts/2026-07-23-agentic-coding-setup.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96c4bc2100493b0afcf1ab4099c376058afc0ea8",
+      "size": 27469,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/96c4bc2100493b0afcf1ab4099c376058afc0ea8"
+    },
+    {
+      "path": "src/posts/2026-09-26-how-we-didnt-start-the-scaling.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48c1f9f2a1eba24dc86fec3e86cc365364878e08",
+      "size": 7278,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/48c1f9f2a1eba24dc86fec3e86cc365364878e08"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a7146bad4f1a975cc23b503b9c7c26a5b6bee981",
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/a7146bad4f1a975cc23b503b9c7c26a5b6bee981"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff69bc6ac1da2f6c443a34f28714fc55338e6ffa",
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/ff69bc6ac1da2f6c443a34f28714fc55338e6ffa"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b2da6b9103ad0c6da841ebb3f12fcee05ad6dcd4",
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/b2da6b9103ad0c6da841ebb3f12fcee05ad6dcd4"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c1_door.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c74eecfc630510a55411d5f41d7aae2ffeae2b01",
+      "size": 141078,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/c74eecfc630510a55411d5f41d7aae2ffeae2b01"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c1_lookup.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed08eb064ce65d091095a61345dfa616ad266c5a",
+      "size": 79568,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/ed08eb064ce65d091095a61345dfa616ad266c5a"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c2_fish.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5df65b38bc7846b2ce8a2df04dc410f1cef41861",
+      "size": 30284,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/5df65b38bc7846b2ce8a2df04dc410f1cef41861"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c2_goldfish.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eddfa9437f6f4f022816300461fbb4d03b4408c8",
+      "size": 111752,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/eddfa9437f6f4f022816300461fbb4d03b4408c8"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c2_jar.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7522c2c8c7f44122eed14ddd3a01352b1e4d368d",
+      "size": 43412,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/7522c2c8c7f44122eed14ddd3a01352b1e4d368d"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c2_walk.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bc3bb25496fc24a2994b2384c0fc5971080c240",
+      "size": 126378,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/7bc3bb25496fc24a2994b2384c0fc5971080c240"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c2_watch.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ea884c52957e6a88fdf049ac13545731567a85c",
+      "size": 62476,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/9ea884c52957e6a88fdf049ac13545731567a85c"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c3_hands.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37d304268efae40e1cae837eb7510ec07d42e9a0",
+      "size": 26356,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/37d304268efae40e1cae837eb7510ec07d42e9a0"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c3_sunset.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fae4259ae7b9899e9d81a99b5280f8b13a0138fb",
+      "size": 34338,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/fae4259ae7b9899e9d81a99b5280f8b13a0138fb"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c4_bye.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19ebafe643494336836056866355070f886ad721",
+      "size": 85608,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/19ebafe643494336836056866355070f886ad721"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c4_crouch.calm3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec954690003f36da8f107f768dde3259fc36fd2c",
+      "size": 16098,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/ec954690003f36da8f107f768dde3259fc36fd2c"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c4_crouch.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a6deb457e1f0b2f14365cfa9b17ede77a3f3956",
+      "size": 93522,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/3a6deb457e1f0b2f14365cfa9b17ede77a3f3956"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c4_door.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66442fcecb5cdc42492d58067b6ebd075d4e3951",
+      "size": 132834,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/66442fcecb5cdc42492d58067b6ebd075d4e3951"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c4_group.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d33b72873e3754d577d462931ff94f317d59186d",
+      "size": 96266,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d33b72873e3754d577d462931ff94f317d59186d"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c4_night.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1c1ac6f7890e26cc7244a0488dc0f3d986b6cff",
+      "size": 24722,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/f1c1ac6f7890e26cc7244a0488dc0f3d986b6cff"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c4_race.legs2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcdc66d5e9e41102aa9ab13874ff5bf06f6e26f2",
+      "size": 37426,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/fcdc66d5e9e41102aa9ab13874ff5bf06f6e26f2"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c4_race.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31ff024224c710a8399114c5612579722894b905",
+      "size": 82690,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/31ff024224c710a8399114c5612579722894b905"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c4_racecu.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d48d1108ae6374ebd472afd96420adbd6a9ddd4",
+      "size": 108034,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/5d48d1108ae6374ebd472afd96420adbd6a9ddd4"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c4_run_akari.air2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2c54121fa3a28ab558c343f55ea18d107437346",
+      "size": 60548,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a2c54121fa3a28ab558c343f55ea18d107437346"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c4_run_akari.pass2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "804b9c408e19b4ad4ba2a8c7e797923b5d7f0ee6",
+      "size": 61318,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/804b9c408e19b4ad4ba2a8c7e797923b5d7f0ee6"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c4_run_kiri.air.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11045b27eb6ddac7e9e0bd9aeab3a10dade332da",
+      "size": 51782,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/11045b27eb6ddac7e9e0bd9aeab3a10dade332da"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c4_run_kiri.pass.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ceefb0eb429ae5b69da7c7b2a496ec3a0113af25",
+      "size": 49938,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/ceefb0eb429ae5b69da7c7b2a496ec3a0113af25"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c4_run_ren.air2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "904f770fd70e506aa610473cd33c840f8a31fa67",
+      "size": 42962,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/904f770fd70e506aa610473cd33c840f8a31fa67"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c4_run_ren.pass2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "677a303328f4d0c261d447f026574472b38f13c9",
+      "size": 42612,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/677a303328f4d0c261d447f026574472b38f13c9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/c4_sky.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6add468fe532dd1ecf51cd10e338201396608b69",
+      "size": 36502,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6add468fe532dd1ecf51cd10e338201396608b69"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/card_akari.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f943b29728df43d4276a18b1b9868ef7aa6578ef",
+      "size": 89344,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/f943b29728df43d4276a18b1b9868ef7aa6578ef"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/card_kiri.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a51f409ef25650d0d026a9ab968bacc51f27d2b",
+      "size": 62660,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/8a51f409ef25650d0d026a9ab968bacc51f27d2b"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/card_ren.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b7b24a685388594cbd49b6a0860ed3e93c98a0f",
+      "size": 54152,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/2b7b24a685388594cbd49b6a0860ed3e93c98a0f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/clawd_jump.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df919981ac227d28cdfd5b0e9c77ffb73e4b94de",
+      "size": 22638,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/df919981ac227d28cdfd5b0e9c77ffb73e4b94de"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/clawd_stand.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da4d129aa405c5b3023d41aef7270d18332ddb54",
+      "size": 25362,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/da4d129aa405c5b3023d41aef7270d18332ddb54"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/club_room.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a874d86b23346e1e09036340095b82a5c77d54a",
+      "size": 99120,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/8a874d86b23346e1e09036340095b82a5c77d54a"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/intro_eyes.closed.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62a11b864bf4c97a297ec0d8d8e17b2b545e571c",
+      "size": 24124,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/62a11b864bf4c97a297ec0d8d8e17b2b545e571c"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/intro_eyes.half.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe02cca1a08a059f57cc6dc04efdcd17a6788682",
+      "size": 28774,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/fe02cca1a08a059f57cc6dc04efdcd17a6788682"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/intro_eyes.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07b7e7e2d56661f5da2492f46fba1db83371b308",
+      "size": 75846,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/07b7e7e2d56661f5da2492f46fba1db83371b308"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/intro_sky.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7afaad255692c03f5623d4d9f38f3f2c589d2a76",
+      "size": 44264,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/7afaad255692c03f5623d4d9f38f3f2c589d2a76"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/intro_wind.laugh.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55d5e0ac9e2e1845babda4133b3fbc81b01a8a7b",
+      "size": 7540,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/55d5e0ac9e2e1845babda4133b3fbc81b01a8a7b"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/intro_wind.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff6bd000e665350b49ed5758f23ba1dc1f92ca67",
+      "size": 93218,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/ff6bd000e665350b49ed5758f23ba1dc1f92ca67"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/keyvisual.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "258339b73d955c89c864690ccb63cb83a80f6b62",
+      "size": 67728,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/258339b73d955c89c864690ccb63cb83a80f6b62"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/lowres.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e7b0be9d0d6389e88dd1bb1fc7f782ecf796856",
+      "size": 121888,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/1e7b0be9d0d6389e88dd1bb1fc7f782ecf796856"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/run_akari.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2eb1d822e648743d0b89d73edeb4c8c69f634ef",
+      "size": 64552,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/c2eb1d822e648743d0b89d73edeb4c8c69f634ef"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/run_kiri.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb8348ee406375b827852e1688bc7fd2f51fad95",
+      "size": 55952,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/cb8348ee406375b827852e1688bc7fd2f51fad95"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/run_ren.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c6b0d3738f352f7c53b5c81aa89021ebcc49386",
+      "size": 46026,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/0c6b0d3738f352f7c53b5c81aa89021ebcc49386"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_10_board.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70244a8a397cc4120e510536cd7bbb7f6b8f1dda",
+      "size": 106814,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/70244a8a397cc4120e510536cd7bbb7f6b8f1dda"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_10_chaos.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b49ed21b9b1ba619c67593a107a4eb9428e00a9c",
+      "size": 133068,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/b49ed21b9b1ba619c67593a107a4eb9428e00a9c"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_11_ilya.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97b6d9daec6ca9aab55a5e2e947d0732ef4be8b5",
+      "size": 35318,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/97b6d9daec6ca9aab55a5e2e947d0732ef4be8b5"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_11_peek.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d58327d00a2e251537b6d5766b7ba1d427d368b",
+      "size": 54382,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/7d58327d00a2e251537b6d5766b7ba1d427d368b"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_12_book.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e5c4a8113ff8e80fbe39aae4c0e5feaaaad1bb9",
+      "size": 105328,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/4e5c4a8113ff8e80fbe39aae4c0e5feaaaad1bb9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_13_strawberry.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dba9121b0848540bee3bd3e89ddd2a97b5077ff9",
+      "size": 80154,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/dba9121b0848540bee3bd3e89ddd2a97b5077ff9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_14_gavin.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "258a873bf7320997c521e128bca5361ba5fab8e1",
+      "size": 57470,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/258a873bf7320997c521e128bca5361ba5fab8e1"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_15_geoff.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8047686e4d6c0cd25b921dc209d675e3b98a0343",
+      "size": 97576,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/8047686e4d6c0cd25b921dc209d675e3b98a0343"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_15_salute.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c96684228473d2c751d0de4ab295a9b71c39b9c",
+      "size": 115584,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/8c96684228473d2c751d0de4ab295a9b71c39b9c"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_16_cheer.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0dbbd5b4f0c71327aa5933a023e98a6530eef3b8",
+      "size": 113290,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/0dbbd5b4f0c71327aa5933a023e98a6530eef3b8"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_16_demis.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5aea06919ba40d2ab273a5e8ed06da0771f570f9",
+      "size": 91046,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/5aea06919ba40d2ab273a5e8ed06da0771f570f9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_1_akari.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5bf19cd36c23dc9abbf12c707a93dad196876a4",
+      "size": 109812,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d5bf19cd36c23dc9abbf12c707a93dad196876a4"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_1_paper.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d6876121c784ebeed188ad81b522d424ac5a5fb",
+      "size": 68212,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/7d6876121c784ebeed188ad81b522d424ac5a5fb"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_2_kiri.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8d702a9b7049d7187fb9f9b377e0aeb899e7d70",
+      "size": 53792,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/f8d702a9b7049d7187fb9f9b377e0aeb899e7d70"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_3_gwern.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc62bd07a9e34e196f84d50933d46298998ce9db",
+      "size": 75278,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/dc62bd07a9e34e196f84d50933d46298998ce9db"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_3_tower.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "230dbed323ecc01ce412cb8dbde7fe35044b0ffa",
+      "size": 112388,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/230dbed323ecc01ce412cb8dbde7fe35044b0ffa"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_4_clawd.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d79b27a444c4ed523836ac26c84cbe3353af6a90",
+      "size": 33436,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d79b27a444c4ed523836ac26c84cbe3353af6a90"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_5_asleep.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d51c953169d82c40db47c5869f12af427fc59689",
+      "size": 86302,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d51c953169d82c40db47c5869f12af427fc59689"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_5_ren.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1087d9f678c3c76844cfd0c37bfcf4c2384aee22",
+      "size": 41704,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/1087d9f678c3c76844cfd0c37bfcf4c2384aee22"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_6_sydney.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "452009e248c6df4f8c502eddd549a6fce62c658f",
+      "size": 67336,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/452009e248c6df4f8c502eddd549a6fce62c658f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_7_city.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bbe90065e1fb7c9c56f6d34d62bad48148f68f2",
+      "size": 80910,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/5bbe90065e1fb7c9c56f6d34d62bad48148f68f2"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_7_kiri.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d85b6c4f9480977b4285300de2d92f8358278bdb",
+      "size": 61038,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d85b6c4f9480977b4285300de2d92f8358278bdb"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_8_blown.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7622c0a810afb096c1844efa19d07a96a0085b43",
+      "size": 81974,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/7622c0a810afb096c1844efa19d07a96a0085b43"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_8_eliezer.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48f76bae9ffbe31550d718ce73a6bc4a2ac59cf7",
+      "size": 114206,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/48f76bae9ffbe31550d718ce73a6bc4a2ac59cf7"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_9_bench.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7369beafadcb57f272550bbc279a061af026e91a",
+      "size": 135918,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/7369beafadcb57f272550bbc279a061af026e91a"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v1_9_sam.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94982357e3498ec32bfb22edf1f4b4a64ff8d31e",
+      "size": 64034,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/94982357e3498ec32bfb22edf1f4b4a64ff8d31e"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_10_banana.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cea80f23b6601ed848adc4425e593d071360c047",
+      "size": 33978,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/cea80f23b6601ed848adc4425e593d071360c047"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_11_clawd.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "841e0f743cd12cd3bf7f72f4b7502be33e58d80f",
+      "size": 75708,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/841e0f743cd12cd3bf7f72f4b7502be33e58d80f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_11_line.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52ca0533c2dbd280d5214991b274443766669c81",
+      "size": 96982,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/52ca0533c2dbd280d5214991b274443766669c81"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_12_eliezer.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "637d7370e6d730b43e6f38d306a7dfdbb5a7fbcb",
+      "size": 39744,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/637d7370e6d730b43e6f38d306a7dfdbb5a7fbcb"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_12_gasp.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9386af34bc92e4f00ea13d2e11c875287e25870f",
+      "size": 102578,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/9386af34bc92e4f00ea13d2e11c875287e25870f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_13_robot.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1805ea63b5390d0b39997a842c4cf474cd2a21ac",
+      "size": 100190,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/1805ea63b5390d0b39997a842c4cf474cd2a21ac"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_14_kiri.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea3ffd897168aaa77397b1b6a7d6dabc0a16bf56",
+      "size": 115648,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/ea3ffd897168aaa77397b1b6a7d6dabc0a16bf56"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_15_cube.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "657c84ea5123dace43b5fbe5527e7a596e9ec0f7",
+      "size": 83210,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/657c84ea5123dace43b5fbe5527e7a596e9ec0f7"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_15_yann.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07eed217df52c2e7d13c16d4db0abfe9a4a9083f",
+      "size": 47782,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/07eed217df52c2e7d13c16d4db0abfe9a4a9083f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_16_bubble.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e2998477ec67d9301f0132c007dd16f0c7ea786",
+      "size": 100960,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/0e2998477ec67d9301f0132c007dd16f0c7ea786"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_16_page.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "210ea71dbacf36c83f5b529e261250f622a05281",
+      "size": 17806,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/210ea71dbacf36c83f5b529e261250f622a05281"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_1_ren.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86e2205ab2ea13334fe18bf678b5da3bf50cbee3",
+      "size": 62756,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/86e2205ab2ea13334fe18bf678b5da3bf50cbee3"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_1_whale.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cd0c1e094941058fa6cda094ed1577b11a3fc73",
+      "size": 41652,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6cd0c1e094941058fa6cda094ed1577b11a3fc73"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_2_gate.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e34ac04563ab6cc261754d670ffede7388d5a188",
+      "size": 63808,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/e34ac04563ab6cc261754d670ffede7388d5a188"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_2_props.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba08d31cc855a2d620e0df9a61f127f337dceb5d",
+      "size": 48876,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/ba08d31cc855a2d620e0df9a61f127f337dceb5d"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_3_accept.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03105a24e1c6c73ae8e8e0e9d4f8f71f79f4c731",
+      "size": 102202,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/03105a24e1c6c73ae8e8e0e9d4f8f71f79f4c731"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_3_wait.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e59977a03d11d02ec47e97b2e0fe106e5766e9d",
+      "size": 86944,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/7e59977a03d11d02ec47e97b2e0fe106e5766e9d"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_4_hub.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b69de901fb1d370bb8daa7e7d728540e69ba19e1",
+      "size": 49040,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/b69de901fb1d370bb8daa7e7d728540e69ba19e1"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_4_kiri.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "766380bdbe1a36fbb383c34c5cc443a0774db910",
+      "size": 89954,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/766380bdbe1a36fbb383c34c5cc443a0774db910"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_5_ren.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fcdafcb6ce622ead1e182faedf93c5be6bb9ed0",
+      "size": 68170,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/1fcdafcb6ce622ead1e182faedf93c5be6bb9ed0"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_5_zuck.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bfd33f8d9570995733adc9cec1c92110757fc21",
+      "size": 95372,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/7bfd33f8d9570995733adc9cec1c92110757fc21"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_6_shop.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30135c7d92d3af8425947dc2ab611b29367bee98",
+      "size": 53944,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/30135c7d92d3af8425947dc2ab611b29367bee98"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_7_akari.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3149cf13eb7c1b631b33799aa3f7b9f409295df4",
+      "size": 69200,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/3149cf13eb7c1b631b33799aa3f7b9f409295df4"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_7_robot.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e85e27b695d60be3ddf9e29ac691d35a7d7340b5",
+      "size": 60610,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/e85e27b695d60be3ddf9e29ac691d35a7d7340b5"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_8_podium.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b677a57465759d1c6f3b3e50a22ec72f74ee80c",
+      "size": 58914,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/9b677a57465759d1c6f3b3e50a22ec72f74ee80c"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_9_akari.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84219cf3644087108439f1051e04861cdeb9223b",
+      "size": 118686,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/84219cf3644087108439f1051e04861cdeb9223b"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v2_9_train.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a91c9e190ed56361a553be0eeaf8d2e1816a453a",
+      "size": 27466,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a91c9e190ed56361a553be0eeaf8d2e1816a453a"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_10_sam.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a90ec52cdbb74fc11d5965942c20064ed2aee9e",
+      "size": 66664,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/3a90ec52cdbb74fc11d5965942c20064ed2aee9e"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_11_noam.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "611e9f4c18b27453aa352e71b332a2448eb6c027",
+      "size": 80804,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/611e9f4c18b27453aa352e71b332a2448eb6c027"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_11_ren.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3682ff62fc97aa3bb8b0bd6faf4015d6fa878bc",
+      "size": 66444,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/c3682ff62fc97aa3bb8b0bd6faf4015d6fa878bc"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_12_trophies.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80d0b91544c1cdc3b737ac5ca3ef2025fa85a1a9",
+      "size": 38304,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/80d0b91544c1cdc3b737ac5ca3ef2025fa85a1a9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_13_bag.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46ec49c919e5663d9aca068f419d0c10e574cfb9",
+      "size": 63556,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/46ec49c919e5663d9aca068f419d0c10e574cfb9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_14_jeff.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad4d14d1d94809fca00a0d512c3dcbc300885551",
+      "size": 107522,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/ad4d14d1d94809fca00a0d512c3dcbc300885551"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_15_clawd.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7242c14290d8732961d50f9e299f783a6705e139",
+      "size": 29956,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/7242c14290d8732961d50f9e299f783a6705e139"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_15_kiri.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d404dbae0136dc18d9bf3e4291b39de0cc0d516c",
+      "size": 85696,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d404dbae0136dc18d9bf3e4291b39de0cc0d516c"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_16_hood.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45232bee582b8337b0852ea08611fbd4835ecd8b",
+      "size": 56470,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/45232bee582b8337b0852ea08611fbd4835ecd8b"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_16_reveal.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "131c419fc90f19e986cb2b5e7827a0e4615249c9",
+      "size": 77388,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/131c419fc90f19e986cb2b5e7827a0e4615249c9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_1_window.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ce0d48e89730ad51beaff294d6c3dfee338d666",
+      "size": 118000,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/0ce0d48e89730ad51beaff294d6c3dfee338d666"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_2_lobster.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a570cd149f533abd85ce93132a5953a7d0351ba0",
+      "size": 97862,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a570cd149f533abd85ce93132a5953a7d0351ba0"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_3_kiri.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a96356f50cb93e598bbb7129006197bea7f57fc",
+      "size": 55718,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6a96356f50cb93e598bbb7129006197bea7f57fc"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_3_sandbox.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d73378bcbed7626387c77c2537185642f00900b2",
+      "size": 29242,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d73378bcbed7626387c77c2537185642f00900b2"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_4_bench.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c149e88e2fdca9de41a6321d44ff7a3829879340",
+      "size": 157976,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/c149e88e2fdca9de41a6321d44ff7a3829879340"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_5_akari.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3fedb9741ae20164a418431e85cc8e96ab2b920",
+      "size": 97294,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a3fedb9741ae20164a418431e85cc8e96ab2b920"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_5_clawd.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5deed2804a8a0fdddef7c749375023398d13c39",
+      "size": 23880,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d5deed2804a8a0fdddef7c749375023398d13c39"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_5_stage.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f353bc53a9e169a7a0df81f38660e967d9b37050",
+      "size": 69580,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/f353bc53a9e169a7a0df81f38660e967d9b37050"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_7_clawd.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72923bb9abb932ec94069772112ba67a7b24730f",
+      "size": 29736,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/72923bb9abb932ec94069772112ba67a7b24730f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_8_cheer.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82dbb9e180e34b51d867a32f84d18a9c839d9f19",
+      "size": 130812,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/82dbb9e180e34b51d867a32f84d18a9c839d9f19"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_9_huggy.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b769fac8d69084d7b769f55c3f75357345d1d0a3",
+      "size": 75948,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/b769fac8d69084d7b769f55c3f75357345d1d0a3"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_9_kiri.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cdee803aa1f9bf4739c823a19cb03f2b44314c9",
+      "size": 98558,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6cdee803aa1f9bf4739c823a19cb03f2b44314c9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_9_lineup.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2ad5c18e2219345f9f05851ed2a1b342deed777",
+      "size": 19492,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/f2ad5c18e2219345f9f05851ed2a1b342deed777"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_agent.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d30675c2cd3a2630f706e85931976ac5e63145f",
+      "size": 15558,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/7d30675c2cd3a2630f706e85931976ac5e63145f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_agent_sweater.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f820451dcad509d389172af6899c2832c5944d9",
+      "size": 21984,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/0f820451dcad509d389172af6899c2832c5944d9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v3_club_autumn.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc76ab32a7181f33aef4b93c12855a5130b01950",
+      "size": 91790,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/fc76ab32a7181f33aef4b93c12855a5130b01950"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_10_bannon.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b6213b70fba4128c2c192bbb8591d44701c6383",
+      "size": 55188,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/4b6213b70fba4128c2c192bbb8591d44701c6383"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_10_bernie.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1882035814f01eae6b57e4c67d68fec57f76f76",
+      "size": 67958,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/e1882035814f01eae6b57e4c67d68fec57f76f76"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_10_pew.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "135096e5b4ef2f01f4ccefaa35debeefc626433f",
+      "size": 56198,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/135096e5b4ef2f01f4ccefaa35debeefc626433f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_11_bench.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a48f8152f18f87d199d3fd4deea3e1d195b1dcc2",
+      "size": 77238,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a48f8152f18f87d199d3fd4deea3e1d195b1dcc2"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_11_clawd.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c294a1bb3744bee003143df028f0b450c80bb72",
+      "size": 27104,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6c294a1bb3744bee003143df028f0b450c80bb72"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_12_map.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "308177c344a594b60ddd83b578f0ce039c2d4a2d",
+      "size": 86494,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/308177c344a594b60ddd83b578f0ce039c2d4a2d"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_12_phew.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1aeced7c3302b87ed053c2131a8fd738597a8b9b",
+      "size": 77270,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/1aeced7c3302b87ed053c2131a8fd738597a8b9b"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_13_trump.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f05d7771cfe5fc2f21c4ec408b22b1420bc7e267",
+      "size": 95086,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/f05d7771cfe5fc2f21c4ec408b22b1420bc7e267"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_14_clawd.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "507fe7cac3084f23e5105636593ba6885269cae0",
+      "size": 25438,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/507fe7cac3084f23e5105636593ba6885269cae0"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_15_gifts.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "398c6ec5bb1e0be7ca84a6d0a08463921cfc058a",
+      "size": 52852,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/398c6ec5bb1e0be7ca84a6d0a08463921cfc058a"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_15_kiri.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bb92daaff716c57515294b170ee1fbe7653d3ca",
+      "size": 73286,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/5bb92daaff716c57515294b170ee1fbe7653d3ca"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_16_door.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e80f3f495358d88d1715fd96ef1a465830e5b659",
+      "size": 25506,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/e80f3f495358d88d1715fd96ef1a465830e5b659"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_16_turn.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16c1fdcf671326040c32c834a79a09849757932b",
+      "size": 114118,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/16c1fdcf671326040c32c834a79a09849757932b"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_1_board.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "644187661dee803df2015b0c23ccd4759f1cad7a",
+      "size": 114796,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/644187661dee803df2015b0c23ccd4759f1cad7a"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_2_ren.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33dbf362130fa981d81953a272df39e185c10bff",
+      "size": 52908,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/33dbf362130fa981d81953a272df39e185c10bff"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_2_slot.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26f78c0c09cd3346e94437578b9b5a8e582debbd",
+      "size": 51734,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/26f78c0c09cd3346e94437578b9b5a8e582debbd"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_3_huggy.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48f555ce4d3d1bd30afebd70e5134462a7f05438",
+      "size": 33732,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/48f555ce4d3d1bd30afebd70e5134462a7f05438"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_3_jensen.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bae45937295796804b9ca24f21a03b008e796678",
+      "size": 121074,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/bae45937295796804b9ca24f21a03b008e796678"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_4_greg.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "950ec51c9eaff3bdc96ae6d5cedab17f08b54e34",
+      "size": 40208,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/950ec51c9eaff3bdc96ae6d5cedab17f08b54e34"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_5_boom.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88bf19312df727c655bc06cf82bff0bb10da2daa",
+      "size": 53324,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/88bf19312df727c655bc06cf82bff0bb10da2daa"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_5_kiri.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d63d01e09a2d0d9c9394cb736ad8f9a43b04778",
+      "size": 99936,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/8d63d01e09a2d0d9c9394cb736ad8f9a43b04778"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_6_finish.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "628f85f2012fd2efccdf38eb04a461dfbbb6847e",
+      "size": 84612,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/628f85f2012fd2efccdf38eb04a461dfbbb6847e"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_7_dario.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5142913e7b58508a01c9cce7162841f6f97c325",
+      "size": 57430,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d5142913e7b58508a01c9cce7162841f6f97c325"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_8_elon.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7d3f338ca60f84eadd6b950a54d6eb4d4ca2026",
+      "size": 35918,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d7d3f338ca60f84eadd6b950a54d6eb4d4ca2026"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_8_sam.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36e09bbd6d6120b604537663c59217e2d3dc73be",
+      "size": 51628,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/36e09bbd6d6120b604537663c59217e2d3dc73be"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_9_akari.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7a62ca3744f51eba32dc51447e2cc46abb82077",
+      "size": 57096,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/b7a62ca3744f51eba32dc51447e2cc46abb82077"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_9_car.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ca8663bb9fb89afd258cb293f424060da49d08d",
+      "size": 16798,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/1ca8663bb9fb89afd258cb293f424060da49d08d"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_9_road.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2afaf398c20b6c663281a3c012e8d2f6ec10b835",
+      "size": 47574,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/2afaf398c20b6c663281a3c012e8d2f6ec10b835"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/anisong-img/v4_9_tcut.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81633a1f5036029abde962ca41435634f369a895",
+      "size": 40610,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/81633a1f5036029abde962ca41435634f369a895"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5ba4715d12702b2cfb1dd7e74fafa286d6d4dfe5",
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/5ba4715d12702b2cfb1dd7e74fafa286d6d4dfe5"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/anisong.m4a",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83c199010509f8224382d33a3095b8363f95b62f",
+      "size": 6819840,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/83c199010509f8224382d33a3095b8363f95b62f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/anisong.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c9e445c306c5ca368fab9ed4a9b598b948ddfe5",
+      "size": 6244688,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/2c9e445c306c5ca368fab9ed4a9b598b948ddfe5"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/bubblegum-pop-rock.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33ae64e64495fde66f36e66a63b8696f67ffc8a3",
+      "size": 4565455,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/33ae64e64495fde66f36e66a63b8696f67ffc8a3"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/country-pop.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a560954dda45b6a9a45ba723d072e100ffe01aba",
+      "size": 5090608,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a560954dda45b6a9a45ba723d072e100ffe01aba"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/eurodance.m4a",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e85a6c83cc7ece4ace232d770d3728a4fc1836c6",
+      "size": 5881175,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/e85a6c83cc7ece4ace232d770d3728a4fc1836c6"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/eurodance.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9af7d312d215a2a7ef9ed6a924add446ffde2d79",
+      "size": 5483436,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/9af7d312d215a2a7ef9ed6a924add446ffde2d79"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/indie-folk.m4a",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "036768c0a0bf88295743166053671ec04c59dad1",
+      "size": 8432470,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/036768c0a0bf88295743166053671ec04c59dad1"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/indie-folk.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ae5c0f0953766f1f6d6ca99959cb7a71c649963",
+      "size": 7968158,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6ae5c0f0953766f1f6d6ca99959cb7a71c649963"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/k-pop.m4a",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd9171722840d34bba81bd5fd4484321dbcd56be",
+      "size": 4939407,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/bd9171722840d34bba81bd5fd4484321dbcd56be"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/k-pop.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b873cdb81a0d1d363480e0d82e24e41a0cb5c685",
+      "size": 8003116,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/b873cdb81a0d1d363480e0d82e24e41a0cb5c685"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/lounge-pop.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cfce0d7da1b218f03c92df4c1dc5abb708cddb7",
+      "size": 4341178,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6cfce0d7da1b218f03c92df4c1dc5abb708cddb7"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/mystery-genre.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e4eb9f6fb6789e25ef740e7658c9e0c8cbd6ccb",
+      "size": 4347433,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/2e4eb9f6fb6789e25ef740e7658c9e0c8cbd6ccb"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/party-electropop.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44c75ffeaba289d6a84a47a60ad57e3c378cb77c",
+      "size": 4818002,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/44c75ffeaba289d6a84a47a60ad57e3c378cb77c"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/piano-rock.m4a",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "188293b7ff1fd0137810e90848ef2e6c2c0886fb",
+      "size": 4409861,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/188293b7ff1fd0137810e90848ef2e6c2c0886fb"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/piano-rock.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd0f3495f84099f536fe4150ac96ed562d17e430",
+      "size": 4378166,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/dd0f3495f84099f536fe4150ac96ed562d17e430"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/pop-punk.m4a",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51d43c1c52753107083c4b5f7f8222b981369b02",
+      "size": 4431974,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/51d43c1c52753107083c4b5f7f8222b981369b02"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/pop-punk.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fc8ebe06daa43a925ef72283e67e7bcfc2b38d2",
+      "size": 4357473,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/9fc8ebe06daa43a925ef72283e67e7bcfc2b38d2"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/rap-rock.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15108264e030f3e254f1425c63e0410bae6fc93a",
+      "size": 5056666,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/15108264e030f3e254f1425c63e0410bae6fc93a"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/showtune.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc052368655f7089ac544891ec187011360d7f6f",
+      "size": 4211397,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/fc052368655f7089ac544891ec187011360d7f6f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/audio/synthwave.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "931d93a11af87caa18244170737e505ce3d2e023",
+      "size": 4316725,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/931d93a11af87caa18244170737e505ce3d2e023"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/download",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bbc4d93825c3d03a27ee59ebda8728ac217f7c72",
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/bbc4d93825c3d03a27ee59ebda8728ac217f7c72"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/download/anisong.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "deee25a1e4cfec615e08d2d82b7aa5a90c1720e1",
+      "size": 6611086,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/deee25a1e4cfec615e08d2d82b7aa5a90c1720e1"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/download/eurodance.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "777ea73cc7534de166d13d478d2136e2c47718ae",
+      "size": 5753410,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/777ea73cc7534de166d13d478d2136e2c47718ae"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/download/indie-folk.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ea464d3ee628fd2435c511598d045fdaa336041",
+      "size": 8303175,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/8ea464d3ee628fd2435c511598d045fdaa336041"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/download/k-pop.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4dd93b7baa794b1b8f80d0ec9595883818460e5f",
+      "size": 8228384,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/4dd93b7baa794b1b8f80d0ec9595883818460e5f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/download/piano-rock.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a9ec475fde2d8c5f3acb692a1dcb12d639b8752",
+      "size": 4767216,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/9a9ec475fde2d8c5f3acb692a1dcb12d639b8752"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/download/pop-punk.mp3",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc518d258b4a8a9ba7e02d2819051af2e806ea0c",
+      "size": 4743662,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/cc518d258b4a8a9ba7e02d2819051af2e806ea0c"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/engine",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "94f4856f87a6e6e5ae39741e478fe3286b3f5af0",
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/94f4856f87a6e6e5ae39741e478fe3286b3f5af0"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/engine/anisong.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14e879388eadda9cbc617802634180db026aa8ac",
+      "size": 389374,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/14e879388eadda9cbc617802634180db026aa8ac"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/engine/eurodance.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2abef6ce086e2217ae4c1c81e59f943679310454",
+      "size": 982020,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/2abef6ce086e2217ae4c1c81e59f943679310454"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/engine/indie-folk.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6fd98557d165af71735ff9606b9056c9e9f99c3",
+      "size": 501758,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/c6fd98557d165af71735ff9606b9056c9e9f99c3"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/engine/k-pop.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf93059fc88ee107a4dd04fb40672d8f462d7924",
+      "size": 497742,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/cf93059fc88ee107a4dd04fb40672d8f462d7924"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/engine/piano-rock.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6261e8d4ee5aae5682b33401a2eb7c7d0e0fe72",
+      "size": 687340,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/f6261e8d4ee5aae5682b33401a2eb7c7d0e0fe72"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/engine/pop-punk.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b7fed18c276654a317a37bbc6286f8b849a3698",
+      "size": 569830,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/0b7fed18c276654a317a37bbc6286f8b849a3698"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7926b8996719767ae9b64fa41c138fd058a3ebb9",
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/7926b8996719767ae9b64fa41c138fd058a3ebb9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/AbrilFatface-Regular.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62103e89cdb715e868a1d3ec8c3aca1128bd6b7b",
+      "size": 17452,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/62103e89cdb715e868a1d3ec8c3aca1128bd6b7b"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/Anton-Regular.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9c804b98fa8267786079988b0f593c0b00e3560",
+      "size": 25724,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/b9c804b98fa8267786079988b0f593c0b00e3560"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/ArchivoBlack-Regular.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72993e22a0dd6a2e24c2d80ab0a63c3032ea6900",
+      "size": 26492,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/72993e22a0dd6a2e24c2d80ab0a63c3032ea6900"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/BebasNeue-Regular.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "220c7b187909d421268323df9d2c412bd80f9f3d",
+      "size": 16280,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/220c7b187909d421268323df9d2c412bd80f9f3d"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/Bungee-Regular.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1dd92685250ff6d94941e448e395c43cb1056c0",
+      "size": 29700,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/e1dd92685250ff6d94941e448e395c43cb1056c0"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/CourierPrime-Bold.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28a6d16bc249cfe17ecce31e17a315ce9e665650",
+      "size": 24232,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/28a6d16bc249cfe17ecce31e17a315ce9e665650"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/FrontierCrew8x8.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b26d1696b9fd104f088f018be13522d7e46d0db",
+      "size": 1960,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/0b26d1696b9fd104f088f018be13522d7e46d0db"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/FrontierCrewBig.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0957cd6b555f21f0eaed63f847b291b1373d2ca",
+      "size": 2844,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/b0957cd6b555f21f0eaed63f847b291b1373d2ca"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/InstrumentSerif-Italic.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b70235400a27d77e2687eb715bacacb923cdf358",
+      "size": 24456,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/b70235400a27d77e2687eb715bacacb923cdf358"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/InstrumentSerif-Regular.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a118c5df65e4ad30a36135486616cf080d3b64ba",
+      "size": 23852,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a118c5df65e4ad30a36135486616cf080d3b64ba"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/Inter-ExtraBold.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e356c914ae899404009200c2f3be36ed7344e1c3",
+      "size": 37412,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/e356c914ae899404009200c2f3be36ed7344e1c3"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/Inter-Medium.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37383923fae938752fcfb2ca6638059dc26f83c8",
+      "size": 37052,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/37383923fae938752fcfb2ca6638059dc26f83c8"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/PermanentMarker-Regular.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "371db239fc5c0826c1c8c69a85e2f0b82e682d44",
+      "size": 29652,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/371db239fc5c0826c1c8c69a85e2f0b82e682d44"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/RammettoOne-Regular.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "477db617d43bac5c47acabd3fb8be160b39f39aa",
+      "size": 23380,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/477db617d43bac5c47acabd3fb8be160b39f39aa"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/RockSalt-Regular.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e57e997e3591d8a57c642bd64ea3b552bec9501",
+      "size": 58788,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/0e57e997e3591d8a57c642bd64ea3b552bec9501"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/RubikMonoOne-Regular.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8f46503329bd5d581a9fd29a8a0cd8e5a8d092f",
+      "size": 20104,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/e8f46503329bd5d581a9fd29a8a0cd8e5a8d092f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/Shrikhand-Regular.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f336f268db7fb9f89d8ff76772fc537d7b2294e5",
+      "size": 18276,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/f336f268db7fb9f89d8ff76772fc537d7b2294e5"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/SpaceMono-Bold.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bd2d9e71c5121d51daf7622b203a9e9f708f305",
+      "size": 23536,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/7bd2d9e71c5121d51daf7622b203a9e9f708f305"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/SpecialElite-Regular.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b0ddef5787f7b23920d4b335e71a664da99e1de",
+      "size": 58568,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/5b0ddef5787f7b23920d4b335e71a664da99e1de"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/Unbounded-Black.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "753a865c34a4489212e0ebcfea82ffa073695b49",
+      "size": 33004,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/753a865c34a4489212e0ebcfea82ffa073695b49"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/Unbounded-Light.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c29b9825a6d525bb47486993e9581347e9bfbae",
+      "size": 31812,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/8c29b9825a6d525bb47486993e9581347e9bfbae"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/fonts/UnifrakturMaguntia-Book.woff2",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e72fd96f666d4ec08f6ec3ae8b4cd9ffdccab21",
+      "size": 24616,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/3e72fd96f666d4ec08f6ec3ae8b4cd9ffdccab21"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "610799251c889b812784b103ac0852511aaf7efc",
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/610799251c889b812784b103ac0852511aaf7efc"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_concept.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c2ca23035f61d36a646d39ef3516062fa550c1e",
+      "size": 80076,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/0c2ca23035f61d36a646d39ef3516062fa550c1e"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_fansign_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "736603e2b83f5e3a07648a4c7d82f9117f383ae2",
+      "size": 165738,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/736603e2b83f5e3a07648a4c7d82f9117f383ae2"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_fansign_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a4db8fc82d23254962ae5ed70b29c06fdf65182",
+      "size": 174798,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/1a4db8fc82d23254962ae5ed70b29c06fdf65182"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_point.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19b25fd49799a7a90550601d6b3864263f9f39f3",
+      "size": 88956,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/19b25fd49799a7a90550601d6b3864263f9f39f3"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_pose2_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "169bd707d4609729e15e7d41efcfedbcefa432c9",
+      "size": 302042,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/169bd707d4609729e15e7d41efcfedbcefa432c9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_pose2_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6be6a1cc4c7ea2416a0cf4c85013396df56ea06d",
+      "size": 309412,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6be6a1cc4c7ea2416a0cf4c85013396df56ea06d"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_pose_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42ba11d661aebd3055862e2ca0bacace658594ed",
+      "size": 275086,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/42ba11d661aebd3055862e2ca0bacace658594ed"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_pose_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8928cae5f88ee53ba8704742cedc72c196375eab",
+      "size": 274156,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/8928cae5f88ee53ba8704742cedc72c196375eab"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_react.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b94a42f6fbcfbc46709eee96fba7ce6aa026515",
+      "size": 142936,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/5b94a42f6fbcfbc46709eee96fba7ce6aa026515"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_sing.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ea3ef5638d405171f459079141064a450d55aa4",
+      "size": 164032,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/8ea3ef5638d405171f459079141064a450d55aa4"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_smile_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84826537d75e2851bceea45bfde3e929c97366f5",
+      "size": 150692,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/84826537d75e2851bceea45bfde3e929c97366f5"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_u1_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "206ecc94abd6eee91c7e9cff3bf9b1997363df20",
+      "size": 144238,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/206ecc94abd6eee91c7e9cff3bf9b1997363df20"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_u1_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbe891345e0105787fe0afff6d0391bbde4b817d",
+      "size": 161442,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/fbe891345e0105787fe0afff6d0391bbde4b817d"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_u1_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "678aacc3e181212e6eb6f448adc85e9ba3c20f7b",
+      "size": 148414,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/678aacc3e181212e6eb6f448adc85e9ba3c20f7b"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_u1_s3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6dbb6008e100dd57043a63eb3f6c226e313aefe",
+      "size": 148170,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d6dbb6008e100dd57043a63eb3f6c226e313aefe"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_uC_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f29c0ccf1d5fc5713458f2acc27a384c99ecc49",
+      "size": 129892,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/9f29c0ccf1d5fc5713458f2acc27a384c99ecc49"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_uC_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66c76d8917cdf3cc2114519c94df0938a885e423",
+      "size": 142788,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/66c76d8917cdf3cc2114519c94df0938a885e423"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_uC_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae7f1cf9692a49a4df295f17b97ae2453c215cef",
+      "size": 152006,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/ae7f1cf9692a49a4df295f17b97ae2453c215cef"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_uC_s3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13bda007ffd160750dee4bd032ffdbe8aa806184",
+      "size": 133826,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/13bda007ffd160750dee4bd032ffdbe8aa806184"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_uG_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84d8a3ee9b3515c77699e99f8d1d236c7dd20546",
+      "size": 153384,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/84d8a3ee9b3515c77699e99f8d1d236c7dd20546"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_uG_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b72178fc35d9fd5128f3ee7fba30a3f10f755ee7",
+      "size": 153502,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/b72178fc35d9fd5128f3ee7fba30a3f10f755ee7"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_uG_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65217091fedd5c47586807bf78df8ccb6825ba56",
+      "size": 151022,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/65217091fedd5c47586807bf78df8ccb6825ba56"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_uG_s3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7a82b8c6767b5cbfb69bfb2e6fa809ccebc618f",
+      "size": 104408,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/f7a82b8c6767b5cbfb69bfb2e6fa809ccebc618f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_uT_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0601045b21dcab6806575eb7e253d2a5885f54ed",
+      "size": 146522,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/0601045b21dcab6806575eb7e253d2a5885f54ed"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_uT_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93296a06677d003ae3a0501767d329788231ab1d",
+      "size": 147622,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/93296a06677d003ae3a0501767d329788231ab1d"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_uT_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfff5fa511e74d7312829897cebd0133b8f310d6",
+      "size": 98236,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/cfff5fa511e74d7312829897cebd0133b8f310d6"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_v_ah.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e00945c3ac95113135b06e72628117a2d4bde51",
+      "size": 12440,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/1e00945c3ac95113135b06e72628117a2d4bde51"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_v_ee.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cd4e55e690e927132c568f36fc57a64a87c0017",
+      "size": 12512,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6cd4e55e690e927132c568f36fc57a64a87c0017"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_v_held.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af6b784921bf4f104b118069f98d39a60448f513",
+      "size": 51692,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/af6b784921bf4f104b118069f98d39a60448f513"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_v_hum.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4668b94fe30b72226dc14ae322c13c5641fb4094",
+      "size": 11316,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/4668b94fe30b72226dc14ae322c13c5641fb4094"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_v_mb.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afc29c4dd19baf3e1d7555fadee7db69039f33c2",
+      "size": 11540,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/afc29c4dd19baf3e1d7555fadee7db69039f33c2"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/ada_v_oh.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66156caa6f8b0812c92ea8bad2560cbed37fd4b8",
+      "size": 11992,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/66156caa6f8b0812c92ea8bad2560cbed37fd4b8"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/card_demis.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e8b92d07e67903e2d09b87d9cfaa577ff7bce1c",
+      "size": 109696,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/3e8b92d07e67903e2d09b87d9cfaa577ff7bce1c"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/card_hinton.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77f212166ead302e74ecf376ba88cbb44b524530",
+      "size": 103012,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/77f212166ead302e74ecf376ba88cbb44b524530"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/clawd_build.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7eb6ede98fef9face393b414021edb7eaec19e9",
+      "size": 81712,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a7eb6ede98fef9face393b414021edb7eaec19e9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/clawd_chalk.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4eba5bebdd1d0abc298aa5d7f84442236f7224d8",
+      "size": 58490,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/4eba5bebdd1d0abc298aa5d7f84442236f7224d8"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/clawd_cry.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1895b0bbf318d772680d8a52522076ea7fc39447",
+      "size": 79102,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/1895b0bbf318d772680d8a52522076ea7fc39447"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/clawd_fan.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fca987d4ef94a0c14b59c56e31eb257e85b3e91f",
+      "size": 83858,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/fca987d4ef94a0c14b59c56e31eb257e85b3e91f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/clawd_mic.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fecfb8015c5d7de015c8bead8c0ed94255b568b2",
+      "size": 104452,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/fecfb8015c5d7de015c8bead8c0ed94255b568b2"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/dario.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5058ccca91550d096af384ff7e42c58d1ca40d65",
+      "size": 118558,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/5058ccca91550d096af384ff7e42c58d1ca40d65"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/elon_portrait.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d023c1925ae93df8c588a61f8ae018c5c1629052",
+      "size": 31390,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d023c1925ae93df8c588a61f8ae018c5c1629052"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/greg.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "defc52e9f9b000c98383ed014f5ae8c14d32ac12",
+      "size": 76664,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/defc52e9f9b000c98383ed014f5ae8c14d32ac12"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/group_pose_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5abb4da08af7e9d7e02e0a4606fd51dc2a792d0c",
+      "size": 600428,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/5abb4da08af7e9d7e02e0a4606fd51dc2a792d0c"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/group_pose_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d34104ffb27010654c057cb03bd24d9faad024b4",
+      "size": 613122,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d34104ffb27010654c057cb03bd24d9faad024b4"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/group_wave_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca745748499b504ed48c3b4ca2588340a9c4b795",
+      "size": 499864,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/ca745748499b504ed48c3b4ca2588340a9c4b795"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/group_wave_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a51872d995fc37195fb8b2fe8961e507aa3fa188",
+      "size": 497332,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a51872d995fc37195fb8b2fe8961e507aa3fa188"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/group_wave_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8814a5607d606a67f7a54fc5a7d340cfda669ba1",
+      "size": 491876,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/8814a5607d606a67f7a54fc5a7d340cfda669ba1"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/group_wave_s3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7ef236a711af8485771e0ba8ed9db5943e34380",
+      "size": 450618,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/b7ef236a711af8485771e0ba8ed9db5943e34380"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/group_win_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e4d8807659636fa4ba492708a6b18c492920067",
+      "size": 535420,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/2e4d8807659636fa4ba492708a6b18c492920067"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/group_win_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "369612a43a735654565222b8aae5593bef1698dd",
+      "size": 463392,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/369612a43a735654565222b8aae5593bef1698dd"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/jeff.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48da6e6dbd1204daf253042d79dda4589f0606c9",
+      "size": 141910,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/48da6e6dbd1204daf253042d79dda4589f0606c9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/jensen.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d1ef186b7e78ee87137b5d9850f19e3e74df343",
+      "size": 90670,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/1d1ef186b7e78ee87137b5d9850f19e3e74df343"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/lobster.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e021037a1de2a9be01f0a8bd4088b8178bc6d1ac",
+      "size": 170104,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/e021037a1de2a9be01f0a8bd4088b8178bc6d1ac"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_concept.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df57ddcf47742b3a8ce0f257159519c6a6ab2773",
+      "size": 113044,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/df57ddcf47742b3a8ce0f257159519c6a6ab2773"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_dance2_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40e5f64a892735fe4246e20d2c7520a8709728cd",
+      "size": 370890,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/40e5f64a892735fe4246e20d2c7520a8709728cd"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_dance2_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4dc880e04c40750d04c3e3f6945868f0a9bb99b0",
+      "size": 352290,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/4dc880e04c40750d04c3e3f6945868f0a9bb99b0"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_dance_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "139a54488359c6a958c8b9f990e0a41d70defaf3",
+      "size": 367192,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/139a54488359c6a958c8b9f990e0a41d70defaf3"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_dance_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9412243efb1db99cc38c9895ea0f1ebd92db8bc9",
+      "size": 241230,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/9412243efb1db99cc38c9895ea0f1ebd92db8bc9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_fansign_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "017f1ff10094f48259bb90bd77441c74ab039f7d",
+      "size": 208882,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/017f1ff10094f48259bb90bd77441c74ab039f7d"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_fansign_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e13d6f5e4f4c8e99315f85fa2087c5bf27fbdfe",
+      "size": 214698,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/2e13d6f5e4f4c8e99315f85fa2087c5bf27fbdfe"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_host_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82eb927f815b44d92196cb373c9302037b21f6fe",
+      "size": 372398,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/82eb927f815b44d92196cb373c9302037b21f6fe"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_host_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e67cae7c4820ad8736a279d4f1a1ae7f5e5f455",
+      "size": 364976,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/4e67cae7c4820ad8736a279d4f1a1ae7f5e5f455"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_point.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5b24b21f02f6b600f60651184c67797b3a18c7b",
+      "size": 113540,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a5b24b21f02f6b600f60651184c67797b3a18c7b"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_react.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12789fbe31e5bc693daa6b9ec17220f511c75712",
+      "size": 160590,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/12789fbe31e5bc693daa6b9ec17220f511c75712"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_sing.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e11154d113776935cf5560ff0886652fc7d935ea",
+      "size": 189512,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/e11154d113776935cf5560ff0886652fc7d935ea"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_smile_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "266365019ec57299b7a7f1c78a1287668598fdc0",
+      "size": 206418,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/266365019ec57299b7a7f1c78a1287668598fdc0"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_u1_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e451939c7beee0cdd23a36b63ca82a3fdc65f39",
+      "size": 166006,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6e451939c7beee0cdd23a36b63ca82a3fdc65f39"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_u1_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a627b5bc0871ae3c4f10a0575bb7f1eb2cf05ed1",
+      "size": 188220,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a627b5bc0871ae3c4f10a0575bb7f1eb2cf05ed1"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_u1_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f04a185dfff49b2c7472592687632d98db48e19",
+      "size": 176834,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/7f04a185dfff49b2c7472592687632d98db48e19"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_u1_s3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2e5793e04df7e96b734082261b19cce255646ce",
+      "size": 179626,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/f2e5793e04df7e96b734082261b19cce255646ce"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_uC_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8df702966eec55bd9f32124b5dd0e97a038f33c9",
+      "size": 152948,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/8df702966eec55bd9f32124b5dd0e97a038f33c9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_uC_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14661941a183766c9e7038200c11cb9bfc00217c",
+      "size": 166972,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/14661941a183766c9e7038200c11cb9bfc00217c"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_uC_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce0533e4fc126de4b00649a57eca8d93ea8c757f",
+      "size": 176366,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/ce0533e4fc126de4b00649a57eca8d93ea8c757f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_uC_s3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "513fae3208c35ac81a5921055192fb55cc7e303c",
+      "size": 148650,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/513fae3208c35ac81a5921055192fb55cc7e303c"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_uG_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48cb5c46faf12d920c27be5105f8df97353c784c",
+      "size": 174210,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/48cb5c46faf12d920c27be5105f8df97353c784c"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_uG_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31dc1d0bad52727b2716b99f2c23ccb231a78060",
+      "size": 162772,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/31dc1d0bad52727b2716b99f2c23ccb231a78060"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_uG_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4397944d5a2c785a93613950d1bf679f396ee749",
+      "size": 157008,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/4397944d5a2c785a93613950d1bf679f396ee749"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_uG_s3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07d86c10a3f53d34b8ea18df6848a3c809dd53b1",
+      "size": 118972,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/07d86c10a3f53d34b8ea18df6848a3c809dd53b1"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_uT_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb01816c9af58dee626d7c8376709885115ad98a",
+      "size": 162586,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/eb01816c9af58dee626d7c8376709885115ad98a"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_uT_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebdd1f14253dc2154c43aa28033815334526f3ca",
+      "size": 170758,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/ebdd1f14253dc2154c43aa28033815334526f3ca"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_uT_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3aa887513bb326bf0240c9d2b022da53727bf917",
+      "size": 114604,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/3aa887513bb326bf0240c9d2b022da53727bf917"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_v_ah.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39b0fc9e180a8cd7ec27d102391bad10026d03c1",
+      "size": 11974,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/39b0fc9e180a8cd7ec27d102391bad10026d03c1"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_v_ee.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a73c4a5136a37f53ac40914404eae1d20aaa0a37",
+      "size": 12156,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a73c4a5136a37f53ac40914404eae1d20aaa0a37"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_v_hum.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c978c1a3c9a192876e56e62e9adcadd09e6a633a",
+      "size": 10660,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/c978c1a3c9a192876e56e62e9adcadd09e6a633a"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_v_mb.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "309cad309abcb23d78ed45ff46dbfe430ece90fc",
+      "size": 10684,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/309cad309abcb23d78ed45ff46dbfe430ece90fc"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/logi_v_oh.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3931e02bd6e1b2c77809fa1582db100e5cb2ce75",
+      "size": 11732,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/3931e02bd6e1b2c77809fa1582db100e5cb2ce75"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/lowres.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1612266b6c18c8d114f76069a27030076cc1aa82",
+      "size": 550250,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/1612266b6c18c8d114f76069a27030076cc1aa82"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/lutnick.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06ade2068e640ef0d6f3d41877f53684f3e70d0c",
+      "size": 78576,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/06ade2068e640ef0d6f3d41877f53684f3e70d0c"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/noam_ox.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f49a075ccd0976f6e4bc04b5b146740bd2b65d56",
+      "size": 73570,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/f49a075ccd0976f6e4bc04b5b146740bd2b65d56"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/park.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6591aaa1d12b0ffb65e21903b14508f7b5da2d0a",
+      "size": 311300,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6591aaa1d12b0ffb65e21903b14508f7b5da2d0a"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/pew_pair.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "543d2f185b48f8abe65ac6d05245633ad9bddb2b",
+      "size": 204652,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/543d2f185b48f8abe65ac6d05245633ad9bddb2b"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_concept.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "720eec9f60adc5821fa08946185b2bd9b8a80128",
+      "size": 91620,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/720eec9f60adc5821fa08946185b2bd9b8a80128"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_eye.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "605182302d0e3c4ce1b7f30c35b71c3ea99aefcb",
+      "size": 98700,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/605182302d0e3c4ce1b7f30c35b71c3ea99aefcb"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_fancam_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d39b825afb895ab296c84cf3e6dedc8157440cd",
+      "size": 325202,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/5d39b825afb895ab296c84cf3e6dedc8157440cd"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_fancam_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bf083797d1a33b391bebc039d4f29973ca776a9",
+      "size": 332848,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/8bf083797d1a33b391bebc039d4f29973ca776a9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_fansign_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c1e14f5b819e7957564ec7802bb4459aef70acc",
+      "size": 192650,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/3c1e14f5b819e7957564ec7802bb4459aef70acc"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_fansign_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b326a672486506e87fccd4eb955125f9b65f15eb",
+      "size": 168178,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/b326a672486506e87fccd4eb955125f9b65f15eb"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_grok_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a02ba5e00350a26f7b953e9cddcfc71de58f08dc",
+      "size": 365460,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a02ba5e00350a26f7b953e9cddcfc71de58f08dc"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_grok_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15c9145294eaf14e04ab4eb0ab50aebf9daac7f9",
+      "size": 338282,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/15c9145294eaf14e04ab4eb0ab50aebf9daac7f9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_grok_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd887aed5f028c9f6e6815be307f94da421a2641",
+      "size": 231964,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/cd887aed5f028c9f6e6815be307f94da421a2641"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_point.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe34eb339fa9c0396aefa6e2f91cf368a366c7a9",
+      "size": 84186,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/fe34eb339fa9c0396aefa6e2f91cf368a366c7a9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_pose_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84d805e52098ca30243f826b5bcee3cde4a744fe",
+      "size": 331196,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/84d805e52098ca30243f826b5bcee3cde4a744fe"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_pose_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8da1409f2e8b0a616604304a0b46c8b153072819",
+      "size": 247000,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/8da1409f2e8b0a616604304a0b46c8b153072819"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_press_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a499eb9d54a47df8ccfc6c6f13f60f3b69a18b58",
+      "size": 340750,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a499eb9d54a47df8ccfc6c6f13f60f3b69a18b58"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_shock_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c25df07023ec8a299a7784c3af00cad633d900f4",
+      "size": 343774,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/c25df07023ec8a299a7784c3af00cad633d900f4"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_sing.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6deb72f916e94725ae94d5946df99e479eec1399",
+      "size": 140590,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6deb72f916e94725ae94d5946df99e479eec1399"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_smile_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f842f1594afbb8076818d4eb77fc20a050f3d69",
+      "size": 390826,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/8f842f1594afbb8076818d4eb77fc20a050f3d69"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_u1_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39d95cb00c3dd4f00176e1a262e9a1bed33cdbfe",
+      "size": 139792,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/39d95cb00c3dd4f00176e1a262e9a1bed33cdbfe"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_u1_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a552d17d9a6ccd3ff4c0d761833d50831fbd81b",
+      "size": 148658,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/5a552d17d9a6ccd3ff4c0d761833d50831fbd81b"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_u1_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a96cbf89df3192a80c8a82009d0047a368ad8e3",
+      "size": 132870,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/7a96cbf89df3192a80c8a82009d0047a368ad8e3"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_u1_s3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9457cb1f6b4f95a97c0c8b03aad312a221ef40e3",
+      "size": 132440,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/9457cb1f6b4f95a97c0c8b03aad312a221ef40e3"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_uC_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33aff24b5d3eb9fd18c40a14f46090d4c7e97edb",
+      "size": 154914,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/33aff24b5d3eb9fd18c40a14f46090d4c7e97edb"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_uC_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73342ad51476b024f1d95869596fe67769bf3abf",
+      "size": 172696,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/73342ad51476b024f1d95869596fe67769bf3abf"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_uC_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a811ba89440e77eb356a24dec1bcec8e4e2d02ba",
+      "size": 183814,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a811ba89440e77eb356a24dec1bcec8e4e2d02ba"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_uC_s3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c8e3a1224271cf8ae17304f2f411699e2606cd2",
+      "size": 146622,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/8c8e3a1224271cf8ae17304f2f411699e2606cd2"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_uG_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "807313aad7c9bec79a27fc92d6edf8a0f05444c3",
+      "size": 174748,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/807313aad7c9bec79a27fc92d6edf8a0f05444c3"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_uG_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6595b27a9d80622d9569fac965753bbcef369114",
+      "size": 165576,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6595b27a9d80622d9569fac965753bbcef369114"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_uG_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff0d9c71d1e6c934068fe414f3c43b8b6abb7b66",
+      "size": 162142,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/ff0d9c71d1e6c934068fe414f3c43b8b6abb7b66"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_uG_s3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17f5df0cdb829572457e97aa3818057a8586c6f1",
+      "size": 118220,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/17f5df0cdb829572457e97aa3818057a8586c6f1"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_uT_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3270665488e4c6021d5186e723b09253ae749936",
+      "size": 163990,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/3270665488e4c6021d5186e723b09253ae749936"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_uT_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7e71f535c365dcd1d6aff960b1c53c52f028245",
+      "size": 166704,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d7e71f535c365dcd1d6aff960b1c53c52f028245"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_uT_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49f0242c8bca41d1eaab1da2cb7f4dc03ec93d75",
+      "size": 111836,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/49f0242c8bca41d1eaab1da2cb7f4dc03ec93d75"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_v_ah.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d1329d848a1cdc3343ccb86d62ce4c17b7ab94d",
+      "size": 12968,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6d1329d848a1cdc3343ccb86d62ce4c17b7ab94d"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_v_ee.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8887fc19c28f26f7be8c9f7971660c6d744a22d3",
+      "size": 12758,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/8887fc19c28f26f7be8c9f7971660c6d744a22d3"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_v_hum.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a52eb4ff74fb6a436f77da7baa8b5bcbe15c7d51",
+      "size": 11536,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a52eb4ff74fb6a436f77da7baa8b5bcbe15c7d51"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_v_mb.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a76a35ed1833b091f728ad93aee66e6170b76ac2",
+      "size": 11684,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a76a35ed1833b091f728ad93aee66e6170b76ac2"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/relu_v_oh.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bac69939003fc7e9ccd0a7ac1729711ad5588638",
+      "size": 12242,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/bac69939003fc7e9ccd0a7ac1729711ad5588638"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/robot.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86854b28b038197020c30819c4053fc2f4d9ce4d",
+      "size": 95030,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/86854b28b038197020c30819c4053fc2f4d9ce4d"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/sam_facepalm.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f4747c6f4330a07d1d790e16919400a190a52b4",
+      "size": 58662,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/4f4747c6f4330a07d1d790e16919400a190a52b4"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/sam_portrait.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df5e1768e1d7ed67b6ba1a0ffa196e57035c82bc",
+      "size": 34140,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/df5e1768e1d7ed67b6ba1a0ffa196e57035c82bc"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_concept.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d7fb4018fa6fb33e9051c6c1afc01914da5abd4",
+      "size": 97476,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/2d7fb4018fa6fb33e9051c6c1afc01914da5abd4"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_fairy.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c013e408c7efbc7186b843a7c4f12fdc49544e1c",
+      "size": 198756,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/c013e408c7efbc7186b843a7c4f12fdc49544e1c"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_fairy15_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "346cc14dd9f88b62887d86a66789eaa53794ecc4",
+      "size": 704398,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/346cc14dd9f88b62887d86a66789eaa53794ecc4"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_fairy15_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a92713149d53e5e56eae9d98bca1946d1a374249",
+      "size": 694696,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a92713149d53e5e56eae9d98bca1946d1a374249"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_fairy15_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69b8be310beadb2b6a835f8486a993ac7b11b5cf",
+      "size": 686310,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/69b8be310beadb2b6a835f8486a993ac7b11b5cf"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_fairy_blink.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6549329b5c8ed77501e2b113f66b5412d73342b",
+      "size": 196328,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/b6549329b5c8ed77501e2b113f66b5412d73342b"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_fansign_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4d9f17fb43958e0988f9e48bdfc5b5ec7f2cef0",
+      "size": 208308,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d4d9f17fb43958e0988f9e48bdfc5b5ec7f2cef0"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_fansign_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ace9394a140a557f622eaf72ef6547203edb11e",
+      "size": 195914,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/9ace9394a140a557f622eaf72ef6547203edb11e"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_point.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd307666a805fb11f30d757deb2b61094ab22150",
+      "size": 105058,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/fd307666a805fb11f30d757deb2b61094ab22150"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_pose_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "834c3e8277c1c09209381607a230287c8bb3f243",
+      "size": 336452,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/834c3e8277c1c09209381607a230287c8bb3f243"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_pose_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9518ded658b2cc29ae9234b380bb539c2739c690",
+      "size": 352516,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/9518ded658b2cc29ae9234b380bb539c2739c690"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_react.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9feeb5330400d2a3efae6a93450086289aca2d66",
+      "size": 196522,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/9feeb5330400d2a3efae6a93450086289aca2d66"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_sing.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef1ae79e76dfa5d8c5e6e680cbed76ce786ef226",
+      "size": 192726,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/ef1ae79e76dfa5d8c5e6e680cbed76ce786ef226"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_smile_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d9b697b331aae4dcd23afb7573e1137a17e5648",
+      "size": 168286,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6d9b697b331aae4dcd23afb7573e1137a17e5648"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_tears_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5d254f5a1a22ad01c11d83e53c9000ea34bdaaf",
+      "size": 429538,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/b5d254f5a1a22ad01c11d83e53c9000ea34bdaaf"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_tears_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a2f20baf33c1f7b50efce8d79ba49bbe1327a22",
+      "size": 424130,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/1a2f20baf33c1f7b50efce8d79ba49bbe1327a22"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_u1_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da94fcc60204a732652514f9c83e8973ecd27684",
+      "size": 163936,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/da94fcc60204a732652514f9c83e8973ecd27684"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_u1_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d96567c7c494040d2dcc6e59207f031e7905c53",
+      "size": 173284,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/2d96567c7c494040d2dcc6e59207f031e7905c53"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_u1_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62b74164d2b85c8af2edb8361b12a3c8d6d7980a",
+      "size": 172922,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/62b74164d2b85c8af2edb8361b12a3c8d6d7980a"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_u1_s3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7307e44cfde36aa46cec1e006cd80b8a1211572",
+      "size": 176776,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/e7307e44cfde36aa46cec1e006cd80b8a1211572"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_uC_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8cedd8b75d732f176ff6348cdcea3444de506d5",
+      "size": 151834,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/e8cedd8b75d732f176ff6348cdcea3444de506d5"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_uC_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1de4ec60989730df5f6ba20b204f64c8a3ddd87b",
+      "size": 163936,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/1de4ec60989730df5f6ba20b204f64c8a3ddd87b"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_uC_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c635f9cfd0c37eb9286a4f51b8cc217118ebb9d9",
+      "size": 175212,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/c635f9cfd0c37eb9286a4f51b8cc217118ebb9d9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_uC_s3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e1452c65bcaf8541a161e4db4815dd1b95aa79e",
+      "size": 149800,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/2e1452c65bcaf8541a161e4db4815dd1b95aa79e"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_uG_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be573f43d77df3a98ec22e1838791a448d95ab80",
+      "size": 177236,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/be573f43d77df3a98ec22e1838791a448d95ab80"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_uG_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfb90e5748de897de78c9712ff07a2dce0506eff",
+      "size": 172088,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/cfb90e5748de897de78c9712ff07a2dce0506eff"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_uG_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "037c3d719c0c200d2c4552fd753e17c4935a1ae2",
+      "size": 171518,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/037c3d719c0c200d2c4552fd753e17c4935a1ae2"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_uG_s3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9910ecf674dcbdf3076a79c71c8ea8a1010f9fd4",
+      "size": 124278,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/9910ecf674dcbdf3076a79c71c8ea8a1010f9fd4"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_uT_s0.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6b0ee7900038534429c1dcaf91c828ab0f05a9a",
+      "size": 173388,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/c6b0ee7900038534429c1dcaf91c828ab0f05a9a"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_uT_s1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d582ad8dde6d903ab7259510d106ca103c5f2c8f",
+      "size": 179318,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d582ad8dde6d903ab7259510d106ca103c5f2c8f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_uT_s2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31f892ab5d351f264e3dd74d8a08685f3fcb191f",
+      "size": 116064,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/31f892ab5d351f264e3dd74d8a08685f3fcb191f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_v_ah.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c09a0fca39a4a81569977ff5f165afc316c3233f",
+      "size": 16464,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/c09a0fca39a4a81569977ff5f165afc316c3233f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_v_ee.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93cf051e601298f2fe40f703c375921bf30771a6",
+      "size": 16798,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/93cf051e601298f2fe40f703c375921bf30771a6"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_v_hum.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "499d12deb4526e6acfcde569e1df928d00ba5f4c",
+      "size": 15210,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/499d12deb4526e6acfcde569e1df928d00ba5f4c"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_v_mb.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13a7dfb5de96481c8ac2c7d9c1642234dc41272f",
+      "size": 15454,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/13a7dfb5de96481c8ac2c7d9c1642234dc41272f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_v_oh.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af2dbb431b6ecb96b30f883c4bc661c3fb01d1c8",
+      "size": 16100,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/af2dbb431b6ecb96b30f883c4bc661c3fb01d1c8"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/toki_win.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bcc31b26f4dd7965dbf9e5deac7532ecf569317",
+      "size": 115888,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/0bcc31b26f4dd7965dbf9e5deac7532ecf569317"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/trump.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e55595922d5a7917ee861095c82cbe758433732",
+      "size": 85364,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/5e55595922d5a7917ee861095c82cbe758433732"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/yann.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1006199b418f5d6c3670843d21b7d0442a2c3736",
+      "size": 67440,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/1006199b418f5d6c3670843d21b7d0442a2c3736"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/k-pop-img/zuck.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87bf4b91bfb91898f99666e46f282ac48578e8ad",
+      "size": 168746,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/87bf4b91bfb91898f99666e46f282ac48578e8ad"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/page.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eed03e58546c4e26a9406950affc0d4adf45a6f1",
+      "size": 233204,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/eed03e58546c4e26a9406950affc0d4adf45a6f1"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/page.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "244e2fecc4fa9ab062a828d4c6550ebed6344dd9",
+      "size": 58887,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/244e2fecc4fa9ab062a828d4c6550ebed6344dd9"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/posters",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "992e6e823cfacc4fd0758f99c28bc44d46c3e750",
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/992e6e823cfacc4fd0758f99c28bc44d46c3e750"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/posters/anisong.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "734e2d2d146b1c1c99012ce9f9baccf645389c93",
+      "size": 193122,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/734e2d2d146b1c1c99012ce9f9baccf645389c93"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/posters/eurodance.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ffdd6db8a22678ccfe2bd51f06ab0878409d217",
+      "size": 210962,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/7ffdd6db8a22678ccfe2bd51f06ab0878409d217"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/posters/indie-folk.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e250b53f7dcc889d9f18807617d120db47774675",
+      "size": 346280,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/e250b53f7dcc889d9f18807617d120db47774675"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/posters/k-pop.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "874fac9c1b6eabb7be4e2a96d7b2db5f7dcf8b1f",
+      "size": 332926,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/874fac9c1b6eabb7be4e2a96d7b2db5f7dcf8b1f"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/posters/piano-rock.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0678077f6a5c3d6e3b5ae45d9b382bc078d69fc7",
+      "size": 302530,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/0678077f6a5c3d6e3b5ae45d9b382bc078d69fc7"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/posters/pop-punk.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f742c1745364124b02b3442361c2c59086ed1ea3",
+      "size": 234376,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/f742c1745364124b02b3442361c2c59086ed1ea3"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/timing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cbdb667ae0c7c437a661ab644b2f9ba7f144e8bd",
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/trees/cbdb667ae0c7c437a661ab644b2f9ba7f144e8bd"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/timing/anisong.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c69d64eec7cd286262675a4a47fd2a85bc7d3adb",
+      "size": 21901,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/c69d64eec7cd286262675a4a47fd2a85bc7d3adb"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/timing/eurodance.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6353615f2edbae809653c1164d91b107f3446633",
+      "size": 21749,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/6353615f2edbae809653c1164d91b107f3446633"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/timing/indie-folk.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d00db1512f297a647f2c51241bc98384f37ce618",
+      "size": 22026,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/d00db1512f297a647f2c51241bc98384f37ce618"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/timing/k-pop.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a729ed7fce0a56067f8be8c106846a750b70a622",
+      "size": 21615,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/a729ed7fce0a56067f8be8c106846a750b70a622"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/timing/piano-rock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04fdd99106bb65e984a58ccdb4df999fbd41b653",
+      "size": 21613,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/04fdd99106bb65e984a58ccdb4df999fbd41b653"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/timing/pop-punk.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c37dcf80c3a00d343e8d91c3a678a9700a94483",
+      "size": 21619,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/7c37dcf80c3a00d343e8d91c3a678a9700a94483"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/assets/worker.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37e825d248482804dcf79e97501c7ec47d5085dc",
+      "size": 3623,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/37e825d248482804dcf79e97501c7ec47d5085dc"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/index.11tydata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db632eecbb035b964be8a5ce7318e56db462110c",
+      "size": 104582,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/db632eecbb035b964be8a5ce7318e56db462110c"
+    },
+    {
+      "path": "src/we-didnt-start-the-scaling/index.njk",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "703eda530cb731cd3a12cebf2cae6d15c4f2122c",
+      "size": 20959,
+      "url": "https://api.github.com/repos/domenic/domenic.me/git/blobs/703eda530cb731cd3a12cebf2cae6d15c4f2122c"
+    }
+  ],
+  "truncated": false
+}

@@ -1,0 +1,24 @@
+
+COMMAND ['git', 'init', '-q']
+
+COMMAND ['git', 'remote', 'add', 'origin', 'https://github.com/JohnHeibel/ClaudeAnimationBase']
+
+COMMAND ['git', 'fetch', '--depth=1', 'origin', '0ac8bf2b31942376cb6b8c4074715595d512acd2']
+From https://github.com/JohnHeibel/ClaudeAnimationBase
+ * branch            0ac8bf2b31942376cb6b8c4074715595d512acd2 -> FETCH_HEAD
+
+COMMAND ['git', 'checkout', '--detach', '0ac8bf2b31942376cb6b8c4074715595d512acd2']
+HEAD is now at 0ac8bf2 Merge pull request #2 from Butanium/render/headless-linux
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.
+
+COMMAND ['git', 'lfs', 'pull']
+
+COMMAND ['git', 'lfs', 'fsck']
+Git LFS fsck OK
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.

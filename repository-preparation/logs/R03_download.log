@@ -1,0 +1,24 @@
+
+COMMAND ['git', 'init', '-q']
+
+COMMAND ['git', 'remote', 'add', 'origin', 'https://github.com/lemomo-ai/lemo-opuscar']
+
+COMMAND ['git', 'fetch', '--depth=1', 'origin', 'b65efe6ea393fdc71212898ea4c57c754cfefa46']
+From https://github.com/lemomo-ai/lemo-opuscar
+ * branch            b65efe6ea393fdc71212898ea4c57c754cfefa46 -> FETCH_HEAD
+
+COMMAND ['git', 'checkout', '--detach', 'b65efe6ea393fdc71212898ea4c57c754cfefa46']
+HEAD is now at b65efe6 README split: English README.md (bilingual intro, link for Chinese readers) and README.zh-CN.md; build.py writes both grids; core tools' errors, --help and instrument descriptions in English
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.
+
+COMMAND ['git', 'lfs', 'pull']
+
+COMMAND ['git', 'lfs', 'fsck']
+Git LFS fsck OK
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.

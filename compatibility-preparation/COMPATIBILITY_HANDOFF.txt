@@ -1,0 +1,62 @@
+SHARED ANIMATION LIBRARY — GPT COMPATIBILITY HANDOFF
+Prepared 2026-10-07. Read this first; consult supporting evidence selectively.
+
+WHAT GPT COMPLETED
+1. Current source baseline for all thirteen pinned checkouts: recorded commits match, tracked originals clean, 5,053 executable/shader files match their Git blobs, zero content mismatches.
+2. Cross-repository executable-content comparison: exactly seven shared code groups, all R01/R02 painted-template files. Full paths and hashes are saved.
+3. Complete canonical-base import/API/dependency comparison and near-duplicate decisions.
+4. Complete selected numeric-helper comparison and 97,024 passing exact numeric assertions, plus documented near-equivalence and differing variants.
+5. First adapter selection, complete source dependency closure, timing/coordinate/lifecycle contract and non-rendering acceptance criteria.
+6. Complete unmodified candidate source copies, verified by SHA-256, staged under candidate-sources/. These copies supply source material; dependencies and a merged runtime have not been added there.
+
+EVIDENCE
+BASELINE_SUMMARY.json: compact current integrity result.
+CURRENT_BASELINE.json: full per-repository code paths/hashes; use for a changed path or precise verification, rather than reading every record into model context.
+EXACT_CODE_DUPLICATES.txt: seven exact code groups and provenance paths.
+canonical-base.txt: full source comparison, exact diffs, installed dependency versions and complete classic-script load graph.
+helper-compatibility.txt and helper-equivalence-results.json: compared semantics and actual numeric results.
+check-helper-equivalence.mjs: repeatable original-source numeric comparison, no canvas/browser imports or images.
+adapter-compatibility.txt: full selected adapter contract and acceptance criteria.
+candidate-sources/STAGED_SOURCE_MANIFEST.json: original/staged paths and hashes.
+
+CANONICAL BASE DECISION
+Use the complete R02 skills/painted-animation/template as the initial illustrated/painted engine family. R01 is its verified upstream/shared-base provenance. The seven exact code files are gpu_probe.mjs, render.mjs, src/clawd.js, src/config.js, src/scenes/demo.js, src/sheets.js and src/timeline.js.
+Retain R02 core.js additions: EXTRA_FONTS readiness and overlayHook. Retain expanded font support in studio.html. Optional karaoke.js is present but is not loaded automatically; load and namespace it explicitly when a production needs it.
+Canonical lock and actual installed versions agree: p5 2.3.3, p5.brush 2.2.3, puppeteer-core 25.11.0. Puppeteer requires Node >=22.12. Current Mac Node is 26.7.0. Existing Chrome is supplied separately.
+Preserve the complete classic-script dependency order; loading both engines into the same page creates global collisions. Keep example scenes distinct from future song scenes.
+
+SHARED NUMERIC CORE DECISION
+Candidates with tested exact sampled agreement: clamp, lerp, seg (R02/R03), unary/window smoothstep through explicit signatures, cubic in/out/in-out, exponential out and hash. TAU is the common Math.PI*2 constant.
+Keep explicit source variants for R02 backOut default 1.7 versus R03/R06 1.8, source arithmetic ordering, unsigned/signed noise, Mulberry32 versus Park–Miller, beatPulse remainder semantics and track-relative exposure epsilon. Smoothstep ss(k) and ss(a,b,x) have different signatures. A random generator replacement changes trajectories.
+Extract and name the shared helpers only after checking the selected caller closures. Common numeric results do not establish canvas/pixel equivalence.
+
+FIRST ADAPTER DECISION
+Implement R06 burstParticles, retaining all five original kinds: spark, debris, dust, confetti and ember. Source is the complete staged r06-original/fx.mjs.
+Required closure from r06-original/core.mjs: clamp, rng, ellipse, line, poly, fill, stroke, at and INK. Preserve defaults and source seed construction. Direct imports of upstream fx/core would load native @napi-rs/canvas; the browser adaptation uses only this Canvas2D-compatible closure. film.mjs is inspected reference for time/exposure; its native/Node renderer harness is outside the browser module graph.
+Use R02's existing post-grain overlayHook(ctx, videoSeconds). Preserve any prior hook through a controlled dispatcher. Save/restore state per layer, establish explicit ordering, prevent duplicate installation and restore the prior hook on disposal. Resolve adapter imports before host readiness.
+No new package is needed for the selected browser adapter. It uses the canonical host and browser Canvas2D. Keep the source native environment for original comparison where needed.
+
+INTERFACE DECISIONS FOR THIS FIRST INTEGRATION
+Production configuration: width, height, fps, duration, seed, sourceAudioOffsetSeconds and explicit font/asset declarations. Record optional tempo/cue evidence independently.
+Output samples: integer frameIndex i; videoSeconds=i/fps; sourceSeconds=sourceAudioOffsetSeconds+videoSeconds. Convert cues from source time to video time once on loading.
+Drawing exposure is a separate clock; preserve continuous camera/root/effect time. Keep per-style cadence explicit.
+Shots: register finite start times and evaluate with continuous video time, local shot time and duration. Preserve each shot's actual scene code and ordered loading.
+Particle events: id, atVideoSeconds, native screen-pixel x/y, and complete source options. Validate event definitions once; keep output independent of evaluation order. Derive event seeds from a documented stable method or retain explicit event seeds; never invocation order.
+Canvas host owns #out, clearing, scene evaluation, readiness and render output. Adapter owns only its layer and returns no encoded media. Screen coordinates are the first adapter's contract. World anchors require explicit pure camera transformation by the production.
+Asset/font paths and measured cue provenance stay in each production. Optional lyric timing can use a common data record while retaining its engine-specific drawing layer.
+
+PORTRAIT AND HOST REQUIREMENTS STILL TO IMPLEMENT
+Original base hard-codes W/H=1920/1080, #out dimensions and landscape layout. Create one coherent configurable dimension path for core, output canvas, CSS aspect ratio and browser viewport. Default future production is native 1080x1920; redesign scene layouts for it. Keep source examples available in their authored dimensions as examples.
+Original render driver resolves relative to current working directory. Define the derived entry's root/dependency/asset resolution explicitly. Preserve the prepared upstream lock and document any derived dependency link/install strategy.
+Fonts currently depend on external Google Fonts CSS. Record actual readiness and paths; stage any required offline font files with provenance if chosen. A resolved package or completed fonts.load promise does not prove every glyph or visual result.
+The existing music-reel renderer and productions remain separate, preserved working assets. This pass creates an isolated library; adoption into a production is a subsequent explicit decision.
+
+NON-RENDERING ACCEPTANCE
+Compare original versus adapted particle recording-context traces across all five kinds, defaults/nondefaults, several seeds, active and inactive times, and differing evaluation order. Record Canvas calls/state without allocating/drawing pixels.
+Check shared helper behavior against original extracted source and named variants; reuse the existing numeric comparison instead of repeating discovery.
+Check dispatcher lifecycle/state restoration including injected failure; cue source/video round-trip; configuration propagation; shot registration; browser graph free of Node/native imports; source/license mapping; complete import and asset paths.
+Use syntax/module checks and proportionate stub-based checks. setup/draw/redraw/renderAt, screenshots, stills, pixel-hash comparisons and image/video encoding produce scene pixels and remain pending media-stage authorization.
+
+WHAT REMAINS FOR CLAUDE
+Construct the derived canonical library, implement the selected helper exports and variant adapters, configure portrait dimensions and paths, implement the complete particle adapter and hook lifecycle, run derived-code checks, update source mappings/router and save a checkpoint.
+The source investigation and selection above are complete for this bounded candidate set. Broader engine families remain fully downloaded and routed for future themes. Their combined runtime compatibility has not been established.

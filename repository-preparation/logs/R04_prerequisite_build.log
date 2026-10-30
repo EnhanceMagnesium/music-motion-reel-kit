@@ -1,0 +1,178 @@
+@hyperframes/parsers build: CLI Building entry: {"index":"src/index.ts","gsapParserExports":"src/gsapParserExports.ts","gsapParserAcorn":"src/gsapParserAcorn.ts","gsapWriterAcorn":"src/gsapWriterAcorn.ts","gsapConstants":"src/gsapConstants.ts","springEase":"src/springEase.ts","hfIds":"src/hfIds.ts","gsapParser":"src/gsapParser.ts","slideshow":"src/slideshow/index.ts","assets":"src/assets.ts","composition":"src/composition.ts","compositionContract":"src/compositionContract.ts","compositionDuration":"src/compositionDuration.ts","mediaDuration":"src/mediaDuration.ts","mediaDurationFixtures":"src/mediaDurationFixtures.ts","topLevelElements":"src/topLevelElements.ts","colorGradingContract":"src/colorGradingContract.ts","subCompositionValidity":"src/subCompositionValidity.ts","ffBinaries":"src/ffBinaries.ts","assetResolution":"src/assetResolution.ts"}
+@hyperframes/parsers build: CLI Using tsconfig: tsconfig.json
+@hyperframes/parsers build: CLI tsup v8.5.1
+@hyperframes/parsers build: CLI Using tsup config: <ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/parsers/tsup.config.ts
+@hyperframes/parsers build: CLI Target: node22
+@hyperframes/parsers build: CLI Cleaning output folder
+@hyperframes/parsers build: ESM Build start
+@hyperframes/parsers build: ESM dist/gsapConstants.js              4.42 KB
+@hyperframes/parsers build: ESM dist/gsapParser.js                 106.79 KB
+@hyperframes/parsers build: ESM dist/gsapWriterAcorn.js            130.50 KB
+@hyperframes/parsers build: ESM dist/assets.js                     3.05 KB
+@hyperframes/parsers build: ESM dist/compositionContract.js        11.45 KB
+@hyperframes/parsers build: ESM dist/slideshow.js                  5.58 KB
+@hyperframes/parsers build: ESM dist/index.js                      157.17 KB
+@hyperframes/parsers build: ESM dist/composition.js                25.38 KB
+@hyperframes/parsers build: ESM dist/compositionDuration.js        923.00 B
+@hyperframes/parsers build: ESM dist/mediaDurationFixtures.js      2.61 KB
+@hyperframes/parsers build: ESM dist/mediaDuration.js              3.90 KB
+@hyperframes/parsers build: ESM dist/topLevelElements.js           1.69 KB
+@hyperframes/parsers build: ESM dist/colorGradingContract.js       17.41 KB
+@hyperframes/parsers build: ESM dist/subCompositionValidity.js     1.70 KB
+@hyperframes/parsers build: ESM dist/ffBinaries.js                 3.64 KB
+@hyperframes/parsers build: ESM dist/assetResolution.js            5.80 KB
+@hyperframes/parsers build: ESM dist/springEase.js                 1.77 KB
+@hyperframes/parsers build: ESM dist/hfIds.js                      3.40 KB
+@hyperframes/parsers build: ESM dist/gsapParserAcorn.js            74.55 KB
+@hyperframes/parsers build: ESM dist/gsapParserExports.js          80.30 KB
+@hyperframes/parsers build: ESM dist/gsapConstants.js.map          9.34 KB
+@hyperframes/parsers build: ESM dist/gsapParser.js.map             249.05 KB
+@hyperframes/parsers build: ESM dist/assets.js.map                 9.92 KB
+@hyperframes/parsers build: ESM dist/compositionContract.js.map    24.63 KB
+@hyperframes/parsers build: ESM dist/slideshow.js.map              14.24 KB
+@hyperframes/parsers build: ESM dist/composition.js.map            69.60 KB
+@hyperframes/parsers build: ESM dist/mediaDurationFixtures.js.map  4.96 KB
+@hyperframes/parsers build: ESM dist/compositionDuration.js.map    2.33 KB
+@hyperframes/parsers build: ESM dist/topLevelElements.js.map       3.83 KB
+@hyperframes/parsers build: ESM dist/mediaDuration.js.map          25.30 KB
+@hyperframes/parsers build: ESM dist/ffBinaries.js.map             8.57 KB
+@hyperframes/parsers build: ESM dist/gsapWriterAcorn.js.map        360.44 KB
+@hyperframes/parsers build: ESM dist/springEase.js.map             4.74 KB
+@hyperframes/parsers build: ESM dist/assetResolution.js.map        16.05 KB
+@hyperframes/parsers build: ESM dist/hfIds.js.map                  10.88 KB
+@hyperframes/parsers build: ESM dist/colorGradingContract.js.map   31.69 KB
+@hyperframes/parsers build: ESM dist/gsapParserAcorn.js.map        197.70 KB
+@hyperframes/parsers build: ESM dist/subCompositionValidity.js.map 7.17 KB
+@hyperframes/parsers build: ESM dist/gsapParserExports.js.map      336.63 KB
+@hyperframes/parsers build: ESM dist/index.js.map                  642.90 KB
+@hyperframes/parsers build: ESM ⚡️ Build success in 69ms
+@hyperframes/parsers build: DTS Build start
+@hyperframes/parsers build: DTS ⚡️ Build success in 2223ms
+@hyperframes/parsers build: DTS dist/gsapParserAcorn.d.ts        2.57 KB
+@hyperframes/parsers build: DTS dist/gsapParser.d.ts             10.59 KB
+@hyperframes/parsers build: DTS dist/springEase.d.ts             1.12 KB
+@hyperframes/parsers build: DTS dist/compositionContract.d.ts    3.74 KB
+@hyperframes/parsers build: DTS dist/compositionDuration.d.ts    1.10 KB
+@hyperframes/parsers build: DTS dist/mediaDurationFixtures.d.ts  569.00 B
+@hyperframes/parsers build: DTS dist/mediaDuration.d.ts          3.86 KB
+@hyperframes/parsers build: DTS dist/topLevelElements.d.ts       1.11 KB
+@hyperframes/parsers build: DTS dist/colorGradingContract.d.ts   4.22 KB
+@hyperframes/parsers build: DTS dist/subCompositionValidity.d.ts 4.24 KB
+@hyperframes/parsers build: DTS dist/ffBinaries.d.ts             1.50 KB
+@hyperframes/parsers build: DTS dist/assetResolution.d.ts        5.73 KB
+@hyperframes/parsers build: DTS dist/gsapWriterAcorn.d.ts        11.34 KB
+@hyperframes/parsers build: DTS dist/hfIds.d.ts                  1.52 KB
+@hyperframes/parsers build: DTS dist/assets.d.ts                 4.65 KB
+@hyperframes/parsers build: DTS dist/slideshow.d.ts              3.20 KB
+@hyperframes/parsers build: DTS dist/index.d.ts                  11.15 KB
+@hyperframes/parsers build: DTS dist/gsapParserExports.d.ts      1.54 KB
+@hyperframes/parsers build: DTS dist/composition.d.ts            8.91 KB
+@hyperframes/parsers build: DTS dist/gsapConstants.d.ts          397.00 B
+@hyperframes/parsers build: DTS dist/types-Ejqndkej.d.ts         14.60 KB
+@hyperframes/parsers build: DTS dist/gsapSerialize-CfSXM_Ez.d.ts 10.17 KB
+@hyperframes/parsers build: Exited with code 0
+@hyperframes/lint build: CLI Building entry: {"index":"src/index.ts"}
+@hyperframes/lint build: CLI Using tsconfig: tsconfig.json
+@hyperframes/lint build: CLI Building entry: {"browser":"src/browser.ts"}
+@hyperframes/lint build: CLI Using tsconfig: tsconfig.json
+@hyperframes/lint build: CLI tsup v8.5.1
+@hyperframes/lint build: CLI Using tsup config: <ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/lint/tsup.config.ts
+@hyperframes/lint build: CLI tsup v8.5.1
+@hyperframes/lint build: CLI Using tsup config: <ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/lint/tsup.config.ts
+@hyperframes/studio-server build: CLI Building entry: {"index":"src/index.ts","helpers/screenshotClip":"src/helpers/screenshotClip.ts","helpers/mediaCodecMap":"src/helpers/mediaCodecMap.ts","helpers/proxyTranscoder":"src/helpers/proxyTranscoder.ts","helpers/loudness":"src/helpers/loudness.ts","helpers/mediaProxyPreview":"src/helpers/mediaProxyPreview.ts","helpers/manualEditsRenderScript":"src/helpers/manualEditsRenderScript.ts","helpers/studioMotionRenderScript":"src/helpers/studioMotionRenderScript.ts","helpers/draftMarkers":"src/helpers/draftMarkers.ts","helpers/finiteMutation":"src/helpers/finiteMutation.ts","helpers/sourceMutation":"src/helpers/sourceMutation.ts","helpers/safePath":"src/helpers/safePath.ts","helpers/hfIdPersist":"src/helpers/hfIdPersist.ts","history/index":"src/history/index.ts"}
+@hyperframes/studio-server build: CLI Using tsconfig: tsconfig.json
+@hyperframes/studio-server build: CLI tsup v8.5.1
+@hyperframes/studio-server build: CLI Using tsup config: <ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/studio-server/tsup.config.ts
+@hyperframes/lint build: CLI Target: es2022
+@hyperframes/lint build: ESM Build start
+@hyperframes/studio-server build: CLI Target: node22
+@hyperframes/lint build: CLI Target: node22
+@hyperframes/lint build: CLI Cleaning output folder
+@hyperframes/studio-server build: CLI Cleaning output folder
+@hyperframes/lint build: ESM Build start
+@hyperframes/studio-server build: ESM Build start
+@hyperframes/lint build: ESM dist/browser.js     284.49 KB
+@hyperframes/lint build: ESM dist/browser.js.map 530.96 KB
+@hyperframes/lint build: ESM ⚡️ Build success in 40ms
+@hyperframes/lint build: ESM dist/index.js     314.69 KB
+@hyperframes/lint build: ESM dist/index.js.map 590.45 KB
+@hyperframes/lint build: ESM ⚡️ Build success in 46ms
+@hyperframes/studio-server build: ESM dist/chunk-X62ASOGO.js                       1007.00 B
+@hyperframes/studio-server build: ESM dist/helpers/mediaCodecMap.js                794.00 B
+@hyperframes/studio-server build: ESM dist/chunk-36F5I56K.js                       65.13 KB
+@hyperframes/studio-server build: ESM dist/helpers/screenshotClip.js               218.00 B
+@hyperframes/studio-server build: ESM dist/index.js                                240.35 KB
+@hyperframes/studio-server build: ESM dist/chunk-CLWFZQUU.js                       19.34 KB
+@hyperframes/studio-server build: ESM dist/chunk-7ON477WG.js                       2.89 KB
+@hyperframes/studio-server build: ESM dist/chunk-DSVQ2U7J.js                       13.67 KB
+@hyperframes/studio-server build: ESM dist/chunk-IMG2GSY6.js                       1.74 KB
+@hyperframes/studio-server build: ESM dist/helpers/mediaProxyPreview.js            450.00 B
+@hyperframes/studio-server build: ESM dist/chunk-WK3ZL3SN.js                       2.00 KB
+@hyperframes/studio-server build: ESM dist/chunk-TTWLTYSQ.js                       2.30 KB
+@hyperframes/studio-server build: ESM dist/helpers/proxyTranscoder.js              903.00 B
+@hyperframes/studio-server build: ESM dist/chunk-YOBWV2CY.js                       16.66 KB
+@hyperframes/studio-server build: ESM dist/helpers/manualEditsRenderScript.js      325.00 B
+@hyperframes/studio-server build: ESM dist/helpers/studioMotionRenderScript.js     222.00 B
+@hyperframes/studio-server build: ESM dist/chunk-I3DRHG52.js                       12.36 KB
+@hyperframes/studio-server build: ESM dist/chunk-4ETS2LXI.js                       8.04 KB
+@hyperframes/studio-server build: ESM dist/helpers/loudness.js                     602.00 B
+@hyperframes/studio-server build: ESM dist/chunk-6XMC64FJ.js                       21.64 KB
+@hyperframes/studio-server build: ESM dist/history/index.js                        571.00 B
+@hyperframes/studio-server build: ESM dist/helpers/safePath.js                     488.00 B
+@hyperframes/studio-server build: ESM dist/helpers/draftMarkers.js                 128.00 B
+@hyperframes/studio-server build: ESM dist/helpers/sourceMutation.js               742.00 B
+@hyperframes/studio-server build: ESM dist/helpers/hfIdPersist.js                  244.00 B
+@hyperframes/studio-server build: ESM dist/helpers/finiteMutation.js               204.00 B
+@hyperframes/studio-server build: ESM dist/chunk-X62ASOGO.js.map                   2.00 KB
+@hyperframes/studio-server build: ESM dist/chunk-36F5I56K.js.map                   143.42 KB
+@hyperframes/studio-server build: ESM dist/helpers/screenshotClip.js.map           71.00 B
+@hyperframes/studio-server build: ESM dist/helpers/mediaCodecMap.js.map            71.00 B
+@hyperframes/studio-server build: ESM dist/chunk-CLWFZQUU.js.map                   44.02 KB
+@hyperframes/studio-server build: ESM dist/chunk-DSVQ2U7J.js.map                   28.53 KB
+@hyperframes/studio-server build: ESM dist/helpers/proxyTranscoder.js.map          71.00 B
+@hyperframes/studio-server build: ESM dist/helpers/mediaProxyPreview.js.map        71.00 B
+@hyperframes/studio-server build: ESM dist/chunk-7ON477WG.js.map                   6.59 KB
+@hyperframes/studio-server build: ESM dist/chunk-YOBWV2CY.js.map                   34.58 KB
+@hyperframes/studio-server build: ESM dist/helpers/manualEditsRenderScript.js.map  71.00 B
+@hyperframes/studio-server build: ESM dist/helpers/studioMotionRenderScript.js.map 71.00 B
+@hyperframes/studio-server build: ESM dist/index.js.map                            500.88 KB
+@hyperframes/studio-server build: ESM dist/chunk-WK3ZL3SN.js.map                   7.06 KB
+@hyperframes/studio-server build: ESM dist/chunk-IMG2GSY6.js.map                   3.98 KB
+@hyperframes/studio-server build: ESM dist/chunk-TTWLTYSQ.js.map                   4.89 KB
+@hyperframes/studio-server build: ESM dist/chunk-I3DRHG52.js.map                   31.85 KB
+@hyperframes/studio-server build: ESM dist/chunk-6XMC64FJ.js.map                   41.08 KB
+@hyperframes/studio-server build: ESM dist/chunk-4ETS2LXI.js.map                   15.08 KB
+@hyperframes/studio-server build: ESM dist/helpers/loudness.js.map                 71.00 B
+@hyperframes/studio-server build: ESM dist/history/index.js.map                    71.00 B
+@hyperframes/studio-server build: ESM dist/helpers/draftMarkers.js.map             322.00 B
+@hyperframes/studio-server build: ESM dist/helpers/safePath.js.map                 71.00 B
+@hyperframes/studio-server build: ESM dist/helpers/hfIdPersist.js.map              71.00 B
+@hyperframes/studio-server build: ESM dist/helpers/sourceMutation.js.map           71.00 B
+@hyperframes/studio-server build: ESM dist/helpers/finiteMutation.js.map           71.00 B
+@hyperframes/studio-server build: ESM ⚡️ Build success in 65ms
+@hyperframes/lint build: DTS Build start
+@hyperframes/lint build: DTS Build start
+@hyperframes/studio-server build: DTS Build start
+@hyperframes/lint build: DTS ⚡️ Build success in 1116ms
+@hyperframes/lint build: DTS dist/browser.d.ts 2.79 KB
+@hyperframes/lint build: DTS ⚡️ Build success in 1163ms
+@hyperframes/lint build: DTS dist/index.d.ts 3.90 KB
+@hyperframes/lint build: Exited with code 0
+@hyperframes/studio-server build: DTS ⚡️ Build success in 4382ms
+@hyperframes/studio-server build: DTS dist/helpers/draftMarkers.d.ts             57.00 B
+@hyperframes/studio-server build: DTS dist/helpers/screenshotClip.d.ts           361.00 B
+@hyperframes/studio-server build: DTS dist/helpers/proxyTranscoder.d.ts          3.63 KB
+@hyperframes/studio-server build: DTS dist/helpers/loudness.d.ts                 3.82 KB
+@hyperframes/studio-server build: DTS dist/helpers/manualEditsRenderScript.d.ts  839.00 B
+@hyperframes/studio-server build: DTS dist/helpers/studioMotionRenderScript.d.ts 502.00 B
+@hyperframes/studio-server build: DTS dist/helpers/finiteMutation.d.ts           499.00 B
+@hyperframes/studio-server build: DTS dist/helpers/sourceMutation.d.ts           4.60 KB
+@hyperframes/studio-server build: DTS dist/helpers/safePath.d.ts                 1.36 KB
+@hyperframes/studio-server build: DTS dist/helpers/hfIdPersist.d.ts              1.36 KB
+@hyperframes/studio-server build: DTS dist/helpers/mediaCodecMap.d.ts            7.08 KB
+@hyperframes/studio-server build: DTS dist/index.d.ts                            11.47 KB
+@hyperframes/studio-server build: DTS dist/history/index.d.ts                    2.33 KB
+@hyperframes/studio-server build: DTS dist/helpers/mediaProxyPreview.d.ts        413.00 B
+@hyperframes/studio-server build: DTS dist/mediaProxyPreview-CCxjB3rf.d.ts       12.79 KB
+@hyperframes/studio-server build: DTS dist/projectHistory-Cm8Mdmmv.d.ts          6.44 KB
+@hyperframes/studio-server build: Exited with code 0

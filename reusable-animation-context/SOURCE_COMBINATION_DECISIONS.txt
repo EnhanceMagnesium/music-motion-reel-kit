@@ -1,0 +1,41 @@
+SOURCE COMBINATION DECISIONS — PATH-FIRST REVIEW
+Prepared 2026-10-07. Analysis only; originals unchanged.
+
+1. VERIFIED EXACT SHARED BASE
+Prefixes under music-motion-reel-kit:
+repository-downloads/JohnHeibel/ClaudeAnimationBase/
+repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/
+Seven byte-identical executable files at both prefixes:
+gpu_probe.mjs
+render.mjs
+src/clawd.js
+src/config.js
+src/scenes/demo.js
+src/sheets.js
+src/timeline.js
+Decision: suitable for a canonical shared base with original source provenance and license retained. A resulting derived library still needs its own dependency/import readiness check.
+
+2. NEAR DUPLICATES WITH EXTENSIONS
+src/core.js at both prefixes: R02 adds expanded font loading and overlayHook support.
+studio.html at both prefixes: R02 expands its font stylesheet URL.
+Decision: plausible consolidation retaining the additions. Inspect integration and preserve drawing/font/overlay behavior before replacing either version.
+
+3. RELATED HELPERS IN DIFFERENT MODULES
+repository-downloads/lemomo-ai/lemo-opuscar/core/lib.js
+repository-downloads/tuzhechen2005/opus-video-skills/skills/kinetic-reel/template/reel/reel.js
+Matching constructions include clamp, lerp, seg, smoothstep-style easing and hash. Names and module surroundings vary.
+Decision: extract compatible pure helpers into one shared module after checking parameter defaults, units, boundary behavior and deterministic output. Remaining functions retain distinct semantics until checked.
+
+4. SHARED DATA FORMATS / ENGINE ADAPTERS
+Timeline, cue, lyric and renderer families share responsibilities but have different interfaces. Candidate common formats include song seconds, video seconds, shot start/end, cue evidence and lyric start/end.
+Decision: retain the full original engine modules and integrate through explicit interfaces. Inspect imports, dependencies, initialization, drawing backend, coordinate units, time/state/randomness and output contracts. Matching filenames establish candidates rather than runtime compatibility.
+
+5. SOURCE ROLES
+R08–R10 retain their existing study-only roles. Reference comparison does not authorize copying their implementation into a derived runtime.
+R11–R13 are discovery/catalog sources; consolidate discovery metadata with attribution and provenance as appropriate.
+
+6. MERGE ACCEPTANCE
+Exact-content hashes; preserved license/source records; complete import graph; function behavior comparisons; syntax/module checks; deterministic timing and seed behavior. Later authorized still/playback review verifies appearance and motion.
+No combined runtime or visual compatibility has been claimed by this path audit.
+
+The full SOURCE_PATH_COMBINATION_AUDIT.txt lists 38 matching filenames across thirteen pinned repositories, all original absolute paths and freshly calculated hashes.

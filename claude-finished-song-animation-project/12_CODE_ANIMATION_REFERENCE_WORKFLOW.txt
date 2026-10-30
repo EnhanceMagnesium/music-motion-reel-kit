@@ -1,0 +1,47 @@
+# CODE-ANIMATION REFERENCE WORKFLOW — R12 / SKILLRY
+
+Use this as a required discovery stage for each new song, alongside the required R01–R16 repository scan in Project Instructions. Its purpose is to prevent useful JavaScript animation techniques from being overlooked. It is a discovery and adaptation guide, not a renderer, engine install or requirement to imitate a reference.
+
+## Where to search
+
+1. Use the current local corpus first: `repository-downloads/yihui-dev/awesome-opus5-5-videos-20261026/` (upstream commit `92aee2f586ac0715cb3cbcb6384834f98a33383d`). Begin with its `README.md` and `data/videos.json`; open matching `prompts/<slug>.md` files. The previous September snapshot remains at `repository-downloads/yihui-dev/awesome-opus5-5-videos/` and is historical, not the current search root.
+2. Search the local catalog without network access using the zero-dependency helper from the kit root:
+
+   `node repository-preparation/tools/search-r12-skillry.mjs --limit=12 "scene need technique terms"`
+
+   For example: `node repository-preparation/tools/search-r12-skillry.mjs --limit=8 "kinetic lyric typography reveal"`. Read each shortlisted prompt file itself; the helper is a locator, not a replacement for source review. To query a different snapshot, pass `--root=/absolute/path/to/checkout`.
+3. The local snapshot contains 703 prompt/reference records, including all 418 entries with a Skillry URL from the 11-page gallery observed on 2026-10-26. The live [Skillry Opus 5.5 gallery](https://skillry.dev/ai-videos/opus-5-5) may change; browse it only when an up-to-date preview or new entry matters, and record access date plus exact URL. Do not label all 703 catalog records as Skillry videos.
+4. Search with this song's actual visual needs: scene subject/action, composition, motion type, material, typography, transition, camera, and likely fit with Canvas, SVG, CSS, GSAP or Three.js. Use several focused queries; do not browse the collection without a shot question.
+
+If a future refresh is needed, clone the official linked catalog into a new dated sibling and verify its commit, license, tracked prompt/metadata counts and media contents before changing this pointer. Preserve the prior checkout and its reports as historical evidence; do not replace it with `git pull` or bulk-download creator previews.
+
+## Snapshot and reuse boundaries
+
+R12 is a searchable prompt and metadata catalog, not an animation package or source-code engine. The refresh has 703 prompt Markdown files and 703 JSON records; 418 records have a `skillry_url`, and 207 are marked `prompt_partial`. No preview video files, creator source projects, media assets, submodules or runtime dependencies are included. The local clone installs no packages. The MIT license covers the catalog's authored compilation; it does not grant rights to creators' videos, linked implementations/code, music, images or other assets. The gallery says prompts are free to copy, but for this project use them to discover and compare mechanisms, then author original song-specific scenes. Do not download or embed creator previews as footage.
+
+The `tech_tags` field can describe a Skillry remake rather than the creator's original. Check the matching Markdown prompt's wording, creator post and Skillry entry before attributing a tool or mechanism. `prompt_partial: true` means the available prompt text is incomplete; treat summaries and original-post descriptions as leads, not as a complete implementation brief. The historical source extract `claude-repository-context/R12_REPOSITORY_SOURCE_CONTEXT.txt` still documents the older 475-entry commit; follow its banner to the current checkout and this workflow.
+
+## Required shortlist for each song
+
+Before storyboarding is finalized, search the local R12 catalog and, when reachable, Skillry. Create `productions/<song>/research/CODE_ANIMATION_REFERENCE_SHORTLIST.md` with a concise shortlist of the strongest relevant examples (normally three to five):
+
+- title/creator and exact local prompt path, pinned catalog entry, and external URL;
+- which planned scene or visual problem it may inform;
+- the specific transferable mechanism (for example: procedural line growth, layered parallax, mask/reveal logic, type staging, particle field, camera path, or Canvas/SVG drawing strategy);
+- which parts should be reauthored for this song;
+- implementation fit with the shared Remotion React scene contract, complexity/performance risk and any additional dependency;
+- license/provenance status for any code or asset considered for direct adaptation.
+
+Compare those examples against the other relevant repository candidates and the shared Remotion runtime. If the scan finds no useful fit, record the search terms and why the closest candidates do not help. This is a legitimate result; do not force a reference into the design.
+
+## Adapt as original song scenes
+
+Use references to learn implementation and craft patterns, not to copy a finished creator's video, story, characters, layout, wording, branding, soundtrack, timing or palette. Derive the new scene from this song's supplied recording, lyrics and brief. Keep every song's visuals and decisions local to its production.
+
+The shared renderer remains `shared-animation-library/render.mjs`, with Remotion as the new-song engine. Claude chooses per scene whether to adapt a mechanism directly into the song-local React scene registry and its `{ project, scene, time, cues, assets, fonts, role }` contract or host it as a HyperFrames Player child composition. The user does not need to pick that ordinary route. Follow `14_HYPERFRAMES_SUBCOMPOSITION_GUIDE.txt` for the latter; Remotion continues to drive the child's time and own full-song audio, dimensions, composition and encoding. Prefer browser-native Canvas/SVG/DOM and installed libraries already present in the kit when those fit. Do not create a competing full-song pipeline or add a dependency just because a reference used it. Every animated value must be reproducible from the supplied frame/time, explicit project seed and scene parameters; do not use wall-clock time, visit-order state or an unseeded `Math.random()` fallback. Compose for the song's selected native 4:5 or 9:16 dimensions and its full measured duration.
+
+If adapting source code rather than learning a technique, read the exact source and dependency closure, preserve commit and license provenance, classify copied versus modified versus newly written parts, and follow the repository's license record. R12's catalog/license does not automatically license creators' linked videos, prompts, code or external assets. Skillry describes creator prompts as free to copy; that statement is not blanket permission to copy finished media or every linked implementation. Keep external examples as references unless the applicable terms permit direct reuse.
+
+## Evidence boundary
+
+A catalog entry, prompt, creator preview, or Skillry remake is not evidence that the technique fits this song, runs in this kit, or looks good in the selected frame. Verify adapted code at the authorized stage. Use Remotion's no-media plan, pre-export still review, the post-render Playwright frame check and FFmpeg contact sheet as described in `07_QUALITY_REVIEW_AND_ACCEPTANCE.txt` and `11_HEADLESS_BROWSER_FRAME_REVIEW.txt`. A still cannot establish smooth motion or synchronization; only actual candidate playback with sound can support those conclusions.

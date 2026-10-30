@@ -1,0 +1,48 @@
+[submodule "R01"]
+	path = repository-downloads/JohnHeibel/ClaudeAnimationBase
+	url = https://github.com/JohnHeibel/ClaudeAnimationBase
+[submodule "R02"]
+	path = repository-downloads/tuzhechen2005/opus-video-skills
+	url = https://github.com/tuzhechen2005/opus-video-skills
+[submodule "R03"]
+	path = repository-downloads/lemomo-ai/lemo-opuscar
+	url = https://github.com/lemomo-ai/lemo-opuscar
+[submodule "R04"]
+	path = repository-downloads/heygen-com/hyperframes
+	url = https://github.com/heygen-com/hyperframes
+[submodule "R05"]
+	path = repository-downloads/makevoid/motion-graphics-music-video-skill
+	url = https://github.com/makevoid/motion-graphics-music-video-skill
+[submodule "R06"]
+	path = repository-downloads/buildwithhanif/claude-animation-skill
+	url = https://github.com/buildwithhanif/claude-animation-skill
+[submodule "R07"]
+	path = repository-downloads/bizarro/evangelion
+	url = https://github.com/bizarro/evangelion
+[submodule "R08"]
+	path = repository-downloads/JohnHeibel/PDoomVideo
+	url = https://github.com/JohnHeibel/PDoomVideo
+[submodule "R09"]
+	path = repository-downloads/domenic/domenic.me
+	url = https://github.com/domenic/domenic.me
+[submodule "R10"]
+	path = repository-downloads/WinterArc21/Battle-of-Austerlitz-Film
+	url = https://github.com/WinterArc21/Battle-of-Austerlitz-Film
+[submodule "R11"]
+	path = repository-downloads/guanmo-ai/awesome-ai-motion
+	url = https://github.com/guanmo-ai/awesome-ai-motion
+[submodule "R12"]
+	path = repository-downloads/yihui-dev/awesome-opus5-5-videos-20261026
+	url = https://github.com/yihui-dev/awesome-opus5-5-videos
+[submodule "R13"]
+	path = repository-downloads/athemeroy/awesome-claude-5-5-videos
+	url = https://github.com/athemeroy/awesome-claude-5-5-videos
+[submodule "R14"]
+	path = repository-downloads/whaleyxbt/claude-motion
+	url = https://github.com/whaleyxbt/claude-motion
+[submodule "R15"]
+	path = repository-downloads/LottieFiles/motion-design-skill
+	url = https://github.com/LottieFiles/motion-design-skill
+[submodule "R16"]
+	path = repository-downloads/greensock/gsap-skills
+	url = https://github.com/greensock/gsap-skills

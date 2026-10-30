@@ -1,0 +1,11 @@
+bun install v1.4.2 (744846f84)
+
++ @hyperframes/player@workspace:packages/player
++ @types/node@25.7.0
++ happy-dom@20.9.0
++ tsx@4.21.0
++ typescript@5.9.3
++ vitest@4.1.11
++ yaml@2.9.0
+
+662 packages installed [54.43s]

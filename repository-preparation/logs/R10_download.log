@@ -1,0 +1,24 @@
+
+COMMAND ['git', 'init', '-q']
+
+COMMAND ['git', 'remote', 'add', 'origin', 'https://github.com/WinterArc21/Battle-of-Austerlitz-Film']
+
+COMMAND ['git', 'fetch', '--depth=1', 'origin', '86dae32d20f0a0f2395e7dc8938846fd51e355a6']
+From https://github.com/WinterArc21/Battle-of-Austerlitz-Film
+ * branch            86dae32d20f0a0f2395e7dc8938846fd51e355a6 -> FETCH_HEAD
+
+COMMAND ['git', 'checkout', '--detach', '86dae32d20f0a0f2395e7dc8938846fd51e355a6']
+HEAD is now at 86dae32 Austerlitz, 2 December 1805: a historical film rendered entirely in code
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.
+
+COMMAND ['git', 'lfs', 'pull']
+
+COMMAND ['git', 'lfs', 'fsck']
+Git LFS fsck OK
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.

@@ -1,0 +1,257 @@
+{
+ "generated": "2026-10-25",
+ "node": "v26.7.0",
+ "checks": 27,
+ "passed": 27,
+ "failed": 0,
+ "results": [
+  {
+   "group": "config",
+   "name": "neutral example config normalizes; legacy defaults remain intentional",
+   "status": "PASS",
+   "establishes": "The example declaration is valid; legacy duration remains 11 s and an omitted maximum follows the resolved duration",
+   "detail": {
+    "scenes": [
+     "opening",
+     "hop"
+    ]
+   }
+  },
+  {
+   "group": "config",
+   "name": "scene schedule rejections (overlap, gap, lead-in, tail, durations, ids, past duration)",
+   "status": "PASS",
+   "establishes": "Invalid timing is refused at normalizeProject, before any renderer work",
+   "detail": {
+    "rejected": 15
+   }
+  },
+  {
+   "group": "export",
+   "name": "whole-master Remotion plan preserves a fractional full-song endpoint without a global duration ceiling",
+   "status": "PASS",
+   "establishes": "Full zero-offset source rounds video frames up, reports the sub-frame difference and carries selected dimensions; explicit ranges keep nearest-frame behavior",
+   "detail": {
+    "checkedDimensions": [
+     "1080x1350",
+     "1080x1920"
+    ],
+    "fractionalFullSongSeconds": [
+     80.01,
+     80.02
+    ],
+    "fullAudioSpanFrames": [
+     1920.2400000000002,
+     1920.48
+    ]
+   }
+  },
+  {
+   "group": "config",
+   "name": "coverage can be a sub-interval; modules: order, cycles, unknown refs, duplicates",
+   "status": "PASS",
+   "establishes": "Deterministic stable topological load order and refusal of impossible module graphs",
+   "detail": {
+    "order": [
+     "a",
+     "b",
+     "c",
+     "z"
+    ]
+   }
+  },
+  {
+   "group": "config",
+   "name": "asset / font / cue declarations: paths, ids, shapes",
+   "status": "PASS",
+   "establishes": "Absolute/URL/backslash paths, duplicate ids and ambiguous cue sources are refused"
+  },
+  {
+   "group": "cues",
+   "name": "source -> production conversion once, through the shared timebase",
+   "status": "PASS",
+   "establishes": "Cues keep their source time, gain exactly one production time, and land on their frame"
+  },
+  {
+   "group": "cues",
+   "name": "evidence classes, supplied text, confirmation, interval/excerpt flags",
+   "status": "PASS",
+   "establishes": "Measured/estimated/inferred/supplied/confirmed are distinct and enforced; lyric text must be supplied"
+  },
+  {
+   "group": "cues",
+   "name": "analysis importers produce raw source-clock cues (shapes read from R04/R07 source)",
+   "status": "PASS",
+   "establishes": "Estimate-labelled cues from synthetic documents in the shape the pinned code writes/reads; real analysis output NOT exercised"
+  },
+  {
+   "group": "runtime",
+   "name": "load order, readiness order, init order, reverse dispose",
+   "status": "PASS",
+   "establishes": "Modules load in moduleLoadOrder, then cues/fonts/assets, then scene init in schedule order; dispose is the reverse",
+   "detail": [
+    "load:lib",
+    "load:sc",
+    "font:F",
+    "asset:img",
+    "init:I1",
+    "init:I2",
+    "dispose:I2",
+    "dispose:I1"
+   ]
+  },
+  {
+   "group": "runtime",
+   "name": "failures: module load, missing impl, font, asset, init (with rollback)",
+   "status": "PASS",
+   "establishes": "Every failure is a ProductionLoadError naming the stage and id; a failed init disposes what was initialized"
+  },
+  {
+   "group": "runtime",
+   "name": "arbitrary-time determinism: SceneTime, seek contract, out-of-order frames",
+   "status": "PASS",
+   "establishes": "draw gets authoritative t, local t, duration, source t; results do not depend on call order; seek() runs before every draw/overlay"
+  },
+  {
+   "group": "runtime",
+   "name": "integration with the REAL base/src/timeline.js shots()/drawWorld",
+   "status": "PASS",
+   "establishes": "Scenes registered through shots() are chosen and timed by the unmodified R02 timeline code"
+  },
+  {
+   "group": "host",
+   "name": "installProduction: success wiring, layer order, no-op without scenes",
+   "status": "PASS",
+   "establishes": "Shots registered after load; scene overlays sit between particles (10) and the previous hook/karaoke (20); no scenes = no-op"
+  },
+  {
+   "group": "host",
+   "name": "installProduction failure leaves the host untouched and records the error",
+   "status": "PASS",
+   "establishes": "A failed load registers no shots and adds no overlay layer"
+  },
+  {
+   "group": "coverage",
+   "name": "half-open coverage [start,end) through the real timeline.js shots()/drawWorld and the overlay path",
+   "status": "PASS",
+   "establishes": "Outside coverage no scene draws or overlays; the later scene owns an internal boundary; timeline.js is unmodified",
+   "detail": {
+    "cases": 8
+   }
+  },
+  {
+   "group": "host",
+   "name": "failed-install cleanup: registerSceneImpl, overlay layer, dispatcher, disposal (fresh and preconfigured hosts)",
+   "status": "PASS",
+   "establishes": "Verified failure cases restore the host; a pre-existing dispatcher and layers are never disposed or altered"
+  },
+  {
+   "group": "host",
+   "name": "failed-install cleanup at the addEventListener stage (after scene init)",
+   "status": "PASS",
+   "establishes": "A late failure leaves no stale host.PRODUCTION, restores registration hook, removes layer, disposes created dispatcher and initialized scenes, keeps pre-existing state"
+  },
+  {
+   "group": "host",
+   "name": "browser loaders against fakes: classic script, ES module, cues, font, assets",
+   "status": "PASS",
+   "establishes": "URL resolution against the config URL; script/FontFace/Image paths work with fake DOM objects; real ES-module import of the example scene"
+  },
+  {
+   "group": "critter",
+   "name": "adapted critter = pinned text on the success path (recorded Canvas traces)",
+   "status": "PASS",
+   "establishes": "For 9 poses incl. kick, aura, flash, rotation, flip the adapter issues the identical Canvas call/property sequence as the unmodified R06 critter",
+   "detail": {
+    "poses": 9,
+    "canvasCalls": 5102
+   }
+  },
+  {
+   "group": "critter",
+   "name": "exception safety: a throwing draw call restores save depth and transform",
+   "status": "PASS",
+   "establishes": "try/finally adaptation: every injected failure point leaves depth 0 and the host matrix; the unadapted original leaks",
+   "detail": {
+    "total": 693,
+    "injections": 17,
+    "originalLeakingRuns": 17
+   }
+  },
+  {
+   "group": "critter",
+   "name": "pose track: interpolation, holds, closed-form gait, arbitrary-time purity, validation",
+   "status": "PASS",
+   "establishes": "poseAt is a pure function of scene-local time; keyframe rules are exactly as documented"
+  },
+  {
+   "group": "critter",
+   "name": "no hidden state or randomness in the adapter",
+   "status": "PASS",
+   "establishes": "Static source scan of the adapter and production modules"
+  },
+  {
+   "group": "identity",
+   "name": "declared modules, cue module, assets and fonts participate in cache identity",
+   "status": "PASS",
+   "establishes": "Editing any declared file (or an ES module it imports) changes the identity; a missing declared file is an explicit error"
+  },
+  {
+   "group": "cli",
+   "name": "render.mjs --plan on the neutral example (no Chrome, no ffmpeg, no media)",
+   "status": "PASS",
+   "establishes": "The real driver normalizes the example, resolves declared files and reports an identity whose closure includes the runtime-loaded scene modules and the critter adapter",
+   "detail": {
+    "identity12": "7260bc2ba6ce",
+    "frames": 192
+   }
+  },
+  {
+   "group": "cli",
+   "name": "shared Remotion entry --plan uses full audio, selected dimensions and frame quantization without browser/media",
+   "status": "PASS",
+   "establishes": "Synthetic audio file paths and project configs traverse the real shared entry and Remotion planning path; no audio is decoded and no composition bundle, browser, still or video is produced",
+   "detail": {
+    "engine": "remotion",
+    "plans": [
+     {
+      "dimensions": "1080x1350",
+      "audioSeconds": 80.01,
+      "frames": 1921,
+      "videoSeconds": 80.04166666666667,
+      "endpointDifferenceSeconds": 0.03166666666666629
+     },
+     {
+      "dimensions": "1080x1920",
+      "audioSeconds": 80.02,
+      "frames": 1921,
+      "videoSeconds": 80.04166666666667,
+      "endpointDifferenceSeconds": 0.021666666666675383
+     }
+    ]
+   }
+  },
+  {
+   "group": "fonts",
+   "name": "Fontsource helper against the recorded local install (declaration only)",
+   "status": "PASS",
+   "establishes": "Package CSS parsed; subset/weight resolve to existing woff2 files; entries pass normalizeProject and hash into identity; glyph coverage NOT checked",
+   "detail": {
+    "family": "Inter 700",
+    "subsets": [
+     "latin",
+     "latin-ext"
+    ]
+   }
+  },
+  {
+   "group": "syntax",
+   "name": "node --check on every new/changed library file",
+   "status": "PASS",
+   "establishes": "New modules and the edited classic script parse",
+   "detail": {
+    "files": 14
+   }
+  }
+ ]
+}

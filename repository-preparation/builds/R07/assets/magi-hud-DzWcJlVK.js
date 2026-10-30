@@ -1,0 +1,16 @@
+import{t as e}from"./rolldown-runtime-DK3Fl9T5.js";import{n as t}from"./util-C3PkC1mi.js";import{g as n,h as r,m as i,p as a,r as o}from"./index-BBsgxCGr.js";import{GLSL_EVA as s,chamferPath as c,jp as l,sevenSeg as u,songBar as d,ticker as f}from"./_eva-Ycn4hoBe.js";var p=e({chrome:()=>g,fadeIn:()=>y,lin:()=>m,makeHexGround:()=>h,meta:()=>v,segWidth:()=>_}),m=(e,t=1)=>[a[e][0]*t,a[e][1]*t,a[e][2]*t];function h(e=36){return new o(`
+    ${s}
+    uniform float t, k, a, seed;
+    uniform vec3 col;
+    void main() {
+      vec2 p = FRAG_PX;
+      vec4 h = hexCell(p, ${e.toFixed(1)});
+      float e = hexEdge(h.xy, ${e.toFixed(1)});
+      float line = pxLine(e, 0.5, 1.5);
+      float n = hash12(h.zw + seed * 1.37);
+      float cell = step(0.985, n) * smoothstep(0.0, 8.0, e);
+      vec2 uv = p / vec2(1920.0, 1080.0) - 0.5;
+      float fall = 1.0 - smoothstep(0.25, 0.75, length(uv * vec2(1.0, 1.4)));
+      vec3 c = C_INK + col * (line * a * (0.55 + 0.45 * fall) * (1.0 + 1.2 * k) + cell * a * 0.35);
+      fragColor = vec4(c, 1.0);
+    }`,{t:{value:0},k:{value:0},a:{value:.05},seed:{value:0},col:{value:[...a.orange]}})}function g(e,t,a,o){let s=o.color??i(`orange`,1),p=o.reveal??1,m=1864;e.save(),e.fillStyle=s,c(e,56,34,78,52,[0,16,0,0]),e.fill(),e.fillStyle=i(`ink`,1),e.font=n(r.mono(700),30),e.textBaseline=`middle`,e.textAlign=`center`,e.fillText(o.no,92,62),e.textAlign=`left`,e.textBaseline=`alphabetic`,e.fillStyle=s,e.font=n(r.mono(700),22),e.letterSpacing=`5px`,e.fillText(o.en,152,60);let h=e.measureText(o.en).width;e.letterSpacing=`0px`,e.font=l(22,700,!1),e.fillText(o.jpText,152+h+18,60),o.sub&&(e.font=n(r.mono(500),12),e.letterSpacing=`2.4px`,e.globalAlpha=.75,e.fillText(o.sub,152,82),e.globalAlpha=1,e.letterSpacing=`0px`);let g=1808*p;e.fillRect(56,100,g,2),e.globalAlpha=.6;for(let t=56;t<=56+g;t+=24)e.fillRect(t,102,1,(t-56)%120==0?8:4);e.globalAlpha=1;let v=Math.floor(t/60),y=t-v*60,b=`${String(v).padStart(2,`0`)}:${y.toFixed(2).padStart(5,`0`)}`,x=_(b,30,3.6);u(e,b,m-x,40,30,s,i(`orange`,.08),{thick:3.6});let S=d(a,t),C=Math.floor(S),w=Math.floor((S-C)*4)+1;e.font=n(r.mono(600),12),e.letterSpacing=`2.4px`,e.textAlign=`right`,e.fillText(`BAR ${String(C).padStart(3,`0`)}  BEAT ${w}  133.33 BPM`,m-x-24,58),e.font=l(13,600,!1),e.letterSpacing=`0px`,e.fillText(`経過時間  小節  拍`,m-x-24,80);for(let t=0;t<4;t++)e.globalAlpha=t+1===w?1:.18,e.fillRect(m-x-24-150+t*18,86,12,5);e.globalAlpha=1,e.textAlign=`left`,e.fillRect(56,1028,g,1),o.tick&&f(e,306,1054,1558,o.tick,t,{speed:70,color:i(`orange`,.6),size:12}),e.fillStyle=s,c(e,56,1036,230,26,[0,0,10,0]),e.fill(),e.fillStyle=i(`ink`,1),e.font=n(r.mono(700),12),e.letterSpacing=`2px`,e.textBaseline=`middle`,e.fillText(`NERV HQ  中央作戦室`,66,1050),e.restore()}function _(e,t,n=t*.11){let r=0;for(let i of e)r+=i===`:`||i===`.`?n*2.6:t*.52+n*1.2;return r}function v(e,t,a,o,s={}){let c=s.size??13,l=s.lead??c*1.65,u=s.keyW??118;e.save(),e.fillStyle=s.color??i(`orange`,1),e.font=n(r.mono(600),c),e.letterSpacing=`1.5px`,e.textBaseline=`alphabetic`,o.forEach(([n,r],i)=>{e.fillText(n,t,a+i*l),e.fillText(`: `+r,t+u,a+i*l)}),e.restore()}var y=(e,n,r=.25)=>t((e-n)/r);export{_ as a,v as i,p as n,h as r,g as t};

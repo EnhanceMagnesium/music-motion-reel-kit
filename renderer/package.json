@@ -1,0 +1,13 @@
+{
+  "name": "music-motion-reel-renderer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "preflight": "node render.mjs --spec specs/demo.json --preflight",
+    "demo": "node render.mjs --spec specs/demo.json",
+    "demo:background": "node render.mjs --spec specs/demo.json --detach"
+  },
+  "dependencies": {
+    "puppeteer-core": "^25.11.0"
+  }
+}

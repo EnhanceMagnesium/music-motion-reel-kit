@@ -1,0 +1,28 @@
+LOCAL HANDOFF AND GPT REVIEW
+Updated 2026-10-25
+
+CANONICAL LOCATION
+Save production work directly in the original connected kit:
+
+
+For each song use productions/<song>/. This folder holds its plans, config, scenes, cues, reports, review evidence and outputs. GPT can inspect this original local kit directly. Do not make the Downloads migration copy the working destination.
+
+SAVE BEFORE REPORTING COMPLETION
+Write every substantive handoff, implementation result, decision record and check result into the song folder before returning the completion message. Use technical-review/ for technical evidence and review/ for creative review evidence. Preserve exact commands, environments, exit statuses, errors and limitations in the saved record. Store media only when its production stage is authorized.
+
+Maintain productions/<song>/CHECKPOINT.md as the current entry point. It should name the latest report and raw evidence paths, completed stage, changed source paths, unresolved decisions, blockers and recommended next action. Keep previous evidence; use new report/run filenames rather than silently replacing history. Describe shared changes in the song handoff as well as any applicable shared record.
+
+COMPOSER RESPONSE
+Return a concise result with absolute local paths to the checkpoint and latest report. The composer response supplements the saved handoff; it must not be the only record. The saved record should be readable by another authorized helper without the user manually saving messages, downloading artifacts, re-uploading files or copying lengthy outputs.
+
+VERIFY THE DESTINATION
+Confirm that the destination is the connected original kit and that saved files can be read back through the available device/file tools. A cloud-only artifact, /mnt/project-files/ attachment or claimed save is not evidence that a file reached the Mac folder. Use supported staging/commit tools where needed to persist writes to the device. If local persistence is unavailable, state the exact limitation; do not claim the handoff is locally saved. An attachment is a fallback, not the intended workflow.
+
+OPTIONAL GPT ASSISTANCE
+When the user asks for GPT review, GPT reads the song checkpoint and follows its report/evidence paths from the active kit. GPT independently inspects consequential implementation claims and labels unsupported claims. It does not require a duplicate upload of files already accessible locally. Local filesystem access does not grant GPT automatic live access to every Claude message or permission to operate Claude.
+
+AUTHORIZATION
+Saving authorized work and its handoff locally is part of completing the authorized pass. This rule does not expand permission to generate media, install dependencies or modify unrelated files. Keep song facts isolated and promote only verified reusable lessons into shared guidance.
+
+ONGOING VERIFIED LESSONS
+Maintain reusable-animation-context/VERIFIED_PRODUCTION_LESSONS.md after every substantive pass when evidence supports a general lesson or changes an earlier conclusion. Save the song handoff locally and update its current checkpoint even when no new shared lesson arises. This requirement continues across future songs; read the lessons selectively before repeating setup or diagnosing a known failure.

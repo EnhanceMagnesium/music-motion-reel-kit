@@ -1,0 +1,21 @@
+@hyperframes/core build: $ node scripts/build-fonts.mjs
+@hyperframes/core build: [build:fonts] skipped — fontData.generated.ts already exists
+@hyperframes/core build: $ tsx scripts/build-hyperframes-runtime-artifact.ts
+@hyperframes/core build: {"event":"hyperframe_runtime_artifacts_generated","buildId":"dev","distDir":"<ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/core/dist","iifePath":"<ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/core/dist/hyperframe.runtime.iife.js","esmPath":"<ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/core/dist/hyperframe.runtime.mjs","manifestPath":"<ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/core/dist/hyperframe.manifest.json","inlineModulePath":"<ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/core/src/generated/runtime-inline.ts","sourceBytes":487089,"esmBytes":487065,"sha256":"767f9ae12880fb1cfb79c85be8f4b951040c712386e9c433d90fd63f4f1b2d1d"}
+@hyperframes/core build: (node:45029) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+@hyperframes/core build: (Use `node --trace-deprecation ...` to show where the warning was created)
+@hyperframes/core build: $ tsx scripts/build-position-edits-render.ts
+@hyperframes/core build: Resolving dependencies
+@hyperframes/core build: Resolved, downloaded and extracted [46]
+@hyperframes/core build: Saved lockfile
+@hyperframes/core build: {"event":"position_edits_render_generated","outPath":"<ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/core/src/generated/position-edits-render-inline.ts","bytes":3817}
+@hyperframes/core build: (node:45036) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+@hyperframes/core build: (Use `node --trace-deprecation ...` to show where the warning was created)
+@hyperframes/core build: $ tsx scripts/build-audio-fx-runtime.ts
+@hyperframes/core build: {"event":"audio_fx_runtime_generated","outPath":"<ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/core/src/generated/audio-fx-runtime-inline.ts","bytes":38874}
+@hyperframes/core build: (node:45080) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+@hyperframes/core build: (Use `node --trace-deprecation ...` to show where the warning was created)
+@hyperframes/core build: {"event":"core_esm_extensions_rewritten","distDir":"<ACTIVE_KIT_ROOT>/repository-downloads/heygen-com/hyperframes/packages/core/dist","changedFiles":49}
+@hyperframes/core build: (node:45124) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+@hyperframes/core build: (Use `node --trace-deprecation ...` to show where the warning was created)
+@hyperframes/core build: Exited with code 0

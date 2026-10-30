@@ -1,0 +1,1069 @@
+{
+  "sha": "1a06e673e3266f8ba94f9aad55669b00fd3a9fca",
+  "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/1a06e673e3266f8ba94f9aad55669b00fd3a9fca",
+  "tree": [
+    {
+      "path": ".claude-plugin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cbaab469b3daba01a8afa35afcc14d96abb3a08c",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/cbaab469b3daba01a8afa35afcc14d96abb3a08c"
+    },
+    {
+      "path": ".claude-plugin/icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a39f412dce1b8f8fe1fc58cfcfaf165b824371d",
+      "size": 56518,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/9a39f412dce1b8f8fe1fc58cfcfaf165b824371d"
+    },
+    {
+      "path": ".claude-plugin/icon.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1378e3337f3e195790eda75757309b3f57fac611",
+      "size": 182003,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/1378e3337f3e195790eda75757309b3f57fac611"
+    },
+    {
+      "path": ".claude-plugin/marketplace.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a302acaa22f26b2869441c074e4052242b96130",
+      "size": 410,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/4a302acaa22f26b2869441c074e4052242b96130"
+    },
+    {
+      "path": ".claude-plugin/plugin.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "190694dd5fe03b092722b98b074e1bd719025334",
+      "size": 1135,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/190694dd5fe03b092722b98b074e1bd719025334"
+    },
+    {
+      "path": ".claude",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "24a2d25df93d5a4c020098c8b7bafc4fbc8b4ad2",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/24a2d25df93d5a4c020098c8b7bafc4fbc8b4ad2"
+    },
+    {
+      "path": ".claude/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7eebfda9355be501ac7d489910b834a34802160c",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/7eebfda9355be501ac7d489910b834a34802160c"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7fb5e7f8eab3bd16be037ed9605f6a19a70b175f",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/7fb5e7f8eab3bd16be037ed9605f6a19a70b175f"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57aa72f759c624ffe721f1dc419e4bf7036365b9",
+      "size": 13262,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/57aa72f759c624ffe721f1dc419e4bf7036365b9"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a043679e3e01645b4f13bccdcdcdab239cebb746",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/a043679e3e01645b4f13bccdcdcdab239cebb746"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/assets/plan-template.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c12ad956ad65c89ee169c55d5051b39ca0069a3",
+      "size": 3679,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/0c12ad956ad65c89ee169c55d5051b39ca0069a3"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3c2bc02b2b9ffce40be54ddd344700566a9ae323",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/3c2bc02b2b9ffce40be54ddd344700566a9ae323"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/references/animation-audio-vfx.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b78836f3b17599c8daeda1ec60a49b105aabf7f",
+      "size": 10426,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/5b78836f3b17599c8daeda1ec60a49b105aabf7f"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/references/credentials.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b8bec1bd0d51524ffb2b0ae7eecce1dff3ed3c9",
+      "size": 4195,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/4b8bec1bd0d51524ffb2b0ae7eecce1dff3ed3c9"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/references/planning.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9bb78c064b88abee5fabe9ba5b855b5b77ffdc7",
+      "size": 4186,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/c9bb78c064b88abee5fabe9ba5b855b5b77ffdc7"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/references/production.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02c24bd416c18f97dee3df85ae597823482ec760",
+      "size": 7785,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/02c24bd416c18f97dee3df85ae597823482ec760"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/references/prompts.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "954904d2f4dab61e949c17bfe3789190022a5a38",
+      "size": 8992,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/954904d2f4dab61e949c17bfe3789190022a5a38"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/references/tasks.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ca34f38f697a35acd96d7f9c1772820db95031e",
+      "size": 14793,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/1ca34f38f697a35acd96d7f9c1772820db95031e"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/references/testing.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c229e963a6085484e2c4f870d9d88c7010098921",
+      "size": 5645,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/c229e963a6085484e2c4f870d9d88c7010098921"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "801210819a1c21f08774aa56c1b811212219fbcd",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/801210819a1c21f08774aa56c1b811212219fbcd"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cf163d93f4335187b3efdbd94f006c49041a127",
+      "size": 144,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/7cf163d93f4335187b3efdbd94f006c49041a127"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/Gemfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f0a3e87940cd68255234e2647cf87c6501d3785",
+      "size": 118,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/5f0a3e87940cd68255234e2647cf87c6501d3785"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/Gemfile.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2a6521d991775fbfc3952d276faef290fb11b92",
+      "size": 979,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/c2a6521d991775fbfc3952d276faef290fb11b92"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/Rakefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd247428901cea858b1edcef98b8fc99092a866f",
+      "size": 52,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/bd247428901cea858b1edcef98b8fc99092a866f"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f149490d1cd20f3f5c4415f325f7f82977be04e6",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/f149490d1cd20f3f5c4415f325f7f82977be04e6"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/fal",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "742f312f1f8217550d5f32b54eaf0237234ac7ae",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/742f312f1f8217550d5f32b54eaf0237234ac7ae"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/fal/client.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33548b4c699f1114227dadcac68bf8bcc2e23b76",
+      "size": 5866,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/33548b4c699f1114227dadcac68bf8bcc2e23b76"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/fal/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5fd9c25390981713117bf977a13bc1dd638b0d90",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/5fd9c25390981713117bf977a13bc1dd638b0d90"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/fal/models/base.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d65709a9defe9a6a6b681997c7e774abeb9d7c12",
+      "size": 1888,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/d65709a9defe9a6a6b681997c7e774abeb9d7c12"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/fal/models/demucs.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b94ae4c57a27704ad94b5b2a3d6cf7032d2fcd84",
+      "size": 536,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/b94ae4c57a27704ad94b5b2a3d6cf7032d2fcd84"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/fal/models/gpt_image25.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ee0914025be7a7ec47077ae77e83b17aa396ce0",
+      "size": 729,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/0ee0914025be7a7ec47077ae77e83b17aa396ce0"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/fal/models/gpt_image25_edit.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54c38427640dc37851e7656520abaae4b13cffe9",
+      "size": 551,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/54c38427640dc37851e7656520abaae4b13cffe9"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/fal/models/h3_max_image_to_video.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06fb3eda40d598e45141cf2771eb38f0cd2e8aae",
+      "size": 538,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/06fb3eda40d598e45141cf2771eb38f0cd2e8aae"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/fal/models/music3.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e0658fef27e7b903e69daae3ef40e11c64809e9",
+      "size": 392,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/4e0658fef27e7b903e69daae3ef40e11c64809e9"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/fal/models/nano_banana2.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b403db11a3cf38dece192fc4c6fae4e45963e638",
+      "size": 867,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/b403db11a3cf38dece192fc4c6fae4e45963e638"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/fal/models/stable_audio_sfx.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d460884fcc232a89fbae5b0e6514da0428efea53",
+      "size": 373,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/d460884fcc232a89fbae5b0e6514da0428efea53"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/fal/models/whisper.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbd36776694ec87ce879e21907fe9bdbbe360f81",
+      "size": 404,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/cbd36776694ec87ce879e21907fe9bdbbe360f81"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/fal/openapi.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d404090c81c503713aa18cb29a9e3d4a7b7e72bb",
+      "size": 2469,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/d404090c81c503713aa18cb29a9e3d4a7b7e72bb"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/fal_mv_gen.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44ac1cb33f0afcfd6d351a035c2394842c90ecb9",
+      "size": 1017,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/44ac1cb33f0afcfd6d351a035c2394842c90ecb9"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/media",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7efa72bcc60b4facc7eec5106edb79f12a55fade",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/7efa72bcc60b4facc7eec5106edb79f12a55fade"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/media/anim.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3ac0e3e6ae1af84566ada4e7f1bfdf1269acafa",
+      "size": 927,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/a3ac0e3e6ae1af84566ada4e7f1bfdf1269acafa"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/media/ffmpeg.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7faf50155f324a8b13e6df00e6322469980a1ba1",
+      "size": 12400,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/7faf50155f324a8b13e6df00e6322469980a1ba1"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/media/image_magick.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7442d9be5e478d2f3b1a184bcc4aa3cdaeb40e2d",
+      "size": 1548,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/7442d9be5e478d2f3b1a184bcc4aa3cdaeb40e2d"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/media/python.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f91522320cf210f384a99eb2cebc9e44a91e9b0e",
+      "size": 1708,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/f91522320cf210f384a99eb2cebc9e44a91e9b0e"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/media/sfx.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd311c3e49d0ee958fa35c0b39e9ff02c01a2d81",
+      "size": 5403,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/cd311c3e49d0ee958fa35c0b39e9ff02c01a2d81"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/media/shell.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b0fce6296a6bdc0cb83c6395441e44fd6672c96",
+      "size": 1248,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/3b0fce6296a6bdc0cb83c6395441e44fd6672c96"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/media/sprite_components.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6edf66f2c954e38c79342e7d6564d192fe766415",
+      "size": 673,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/6edf66f2c954e38c79342e7d6564d192fe766415"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/media/vfx.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc6941be80f9b9aaaa3a3d0c74a0e889b7e96611",
+      "size": 5726,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/fc6941be80f9b9aaaa3a3d0c74a0e889b7e96611"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/pipeline",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0fb54b411d203975d1f5266d8f951315044166b0",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/0fb54b411d203975d1f5266d8f951315044166b0"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/pipeline/items_step.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f6f4d4debcfea99e709ae0f29909f631835ec2c",
+      "size": 3100,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/0f6f4d4debcfea99e709ae0f29909f631835ec2c"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/pipeline/project.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34ad388523f0ad3e0490c37ae26744674be4eead",
+      "size": 3131,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/34ad388523f0ad3e0490c37ae26744674be4eead"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/pipeline/reference_importer.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1ac7e358503478b41e0d02a81a62b184606b681",
+      "size": 1611,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/e1ac7e358503478b41e0d02a81a62b184606b681"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/pipeline/step.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73b7677f0c0aad3f208c3088f6b47f75536d3fed",
+      "size": 4503,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/73b7677f0c0aad3f208c3088f6b47f75536d3fed"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/pipeline/steps",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "812514eb68f70948a5c2117968c897b88550b85f",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/812514eb68f70948a5c2117968c897b88550b85f"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/pipeline/steps/clips.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f029396864041140bda720e3d06330c5fa1aca42",
+      "size": 5661,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/f029396864041140bda720e3d06330c5fa1aca42"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/pipeline/steps/keyframes.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6703d2141062b689714d972ab6991e170610ed5",
+      "size": 2512,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/c6703d2141062b689714d972ab6991e170610ed5"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/pipeline/steps/music.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "441b9d38898197d741efbfbbd86fafad4e7c8013",
+      "size": 4648,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/441b9d38898197d741efbfbbd86fafad4e7c8013"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/pipeline/steps/overlay.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0eeb1fdcccbb1ad98ca43b9f4e1ae48ea0c9a72",
+      "size": 7208,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/e0eeb1fdcccbb1ad98ca43b9f4e1ae48ea0c9a72"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/pipeline/steps/ref_base.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22ffc0cb546a0d458668ec39092bf2819380bfc3",
+      "size": 2003,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/22ffc0cb546a0d458668ec39092bf2819380bfc3"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/pipeline/steps/ref_torn.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "270507b10904ccdbd1dc16344879c5e4f79521a8",
+      "size": 2431,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/270507b10904ccdbd1dc16344879c5e4f79521a8"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/pipeline/steps/shots.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2de5976a1d20352d0f264f33a27071de53b550a2",
+      "size": 4471,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/2de5976a1d20352d0f264f33a27071de53b550a2"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/pipeline/steps/video.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "482e5aec4fa2d0843f5cbe8d20ff99e3cf055f4d",
+      "size": 3380,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/482e5aec4fa2d0843f5cbe8d20ff99e3cf055f4d"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/tasks.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de5c140ade1824a0715e0c3c729bc9becd8a95be",
+      "size": 689,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/de5c140ade1824a0715e0c3c729bc9becd8a95be"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/toolkit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d63dcbd3386b414976424f0a5ff0d6d396bfba44",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/d63dcbd3386b414976424f0a5ff0d6d396bfba44"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/toolkit/fonts.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba42f2520598221e7ec6a76f526d7d783674db72",
+      "size": 1781,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/ba42f2520598221e7ec6a76f526d7d783674db72"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/toolkit/initializer.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "188b8c872e6d92b84406a77d7de95f0a525e6807",
+      "size": 2165,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/188b8c872e6d92b84406a77d7de95f0a525e6807"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/toolkit/mcp_server.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef30c912a4b678fc00f7e0a5c7fdee56234bfa29",
+      "size": 10455,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/ef30c912a4b678fc00f7e0a5c7fdee56234bfa29"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/toolkit/operations.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f7279af90f0aac85e50b5bc848058e5da3d83c1",
+      "size": 13676,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/9f7279af90f0aac85e50b5bc848058e5da3d83c1"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/toolkit/test_runner.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0d5f15156dd56f87d9d3ed15985b661bd8e1930",
+      "size": 760,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/f0d5f15156dd56f87d9d3ed15985b661bd8e1930"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/workflow",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff869e5fe38d6059cfd6b6e176ea7c7a797c73b3",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/ff869e5fe38d6059cfd6b6e176ea7c7a797c73b3"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/workflow/approval.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f39d9efab09b20d4d7b3e164c582f2d32974f2ed",
+      "size": 1219,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/f39d9efab09b20d4d7b3e164c582f2d32974f2ed"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/workflow/journal.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8088461182604ffed0451c026428f6ad9a8d2cb6",
+      "size": 1526,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/8088461182604ffed0451c026428f6ad9a8d2cb6"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/lib/workflow/waves.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e1f31c560d07c254fc21b3ef49834b136f0bc42",
+      "size": 2813,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/5e1f31c560d07c254fc21b3ef49834b136f0bc42"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/mcp.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86e7e29bfa1853c86aa28c6ede5882f1e79c87e0",
+      "size": 202,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/86e7e29bfa1853c86aa28c6ede5882f1e79c87e0"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/mv.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d76a1a57251f44f8f06bd1f5162bbc172841545",
+      "size": 2293,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/5d76a1a57251f44f8f06bd1f5162bbc172841545"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffac3a311a5bb17939923f270d949f3139de325f",
+      "size": 19180,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/ffac3a311a5bb17939923f270d949f3139de325f"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae4a48bbf67afc75ef08e1e03aaa74bbab6bbd17",
+      "size": 237,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/ae4a48bbf67afc75ef08e1e03aaa74bbab6bbd17"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "477f22ccef74574822e7e002bc257544c81ba938",
+      "size": 29,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/477f22ccef74574822e7e002bc257544c81ba938"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/spec",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "25571b41c41d364f03bffc59f9b8451337698b96",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/25571b41c41d364f03bffc59f9b8451337698b96"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/spec/core_spec.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c9ca18e7cc7b7735ad6fba0cb90d5bba0a21ab4",
+      "size": 9312,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/8c9ca18e7cc7b7735ad6fba0cb90d5bba0a21ab4"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/spec/credentials_spec.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8afd1615e72d42e31bfb7ce7b2b3acbf7c2dcedd",
+      "size": 9576,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/8afd1615e72d42e31bfb7ce7b2b3acbf7c2dcedd"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/spec/fonts_spec.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d24abae19330be08154f02dd1287e2183f31d999",
+      "size": 2126,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/d24abae19330be08154f02dd1287e2183f31d999"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/spec/journal_spec.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6f21723e988c5bae2459d66b3e12bd9bc2a5f0e",
+      "size": 928,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/b6f21723e988c5bae2459d66b3e12bd9bc2a5f0e"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/spec/live_spec.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "607835a04e3615041030147f985130f1b3b496e5",
+      "size": 5389,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/607835a04e3615041030147f985130f1b3b496e5"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/spec/local_workflow_spec.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0bce9efa35766d142e8e5f78470a2b8e053bc59",
+      "size": 1871,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/f0bce9efa35766d142e8e5f78470a2b8e053bc59"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/spec/media_spec.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f2b2d2e4380d63bbbd1d74037f94393df3647fa",
+      "size": 6642,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/5f2b2d2e4380d63bbbd1d74037f94393df3647fa"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/spec/pipeline_spec.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0369903b5e71a88f702e8ff1ee4da47da6d64232",
+      "size": 6184,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/0369903b5e71a88f702e8ff1ee4da47da6d64232"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/spec/reference_importer_spec.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "208cc0b3fcd00da8037aeaf5c00825075f68994c",
+      "size": 1367,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/208cc0b3fcd00da8037aeaf5c00825075f68994c"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/spec/spec_helper.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "459f486dd02734b61834a3d94b3f3529d8fdfcee",
+      "size": 2688,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/459f486dd02734b61834a3d94b3f3529d8fdfcee"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/spec/sprite_components_spec.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66f434e3fd50f0005257dd08aedad4174a37964a",
+      "size": 3636,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/66f434e3fd50f0005257dd08aedad4174a37964a"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/spec/swift_spec.rb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "062b167c3d0ebe168116f789bdce093128bc3579",
+      "size": 2613,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/062b167c3d0ebe168116f789bdce093128bc3579"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2c85210f7b577995e80f92f72009047a1d8c6def",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/2c85210f7b577995e80f92f72009047a1d8c6def"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/p5",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "958063642fadb0dea951184ab8824a00ac612fd0",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/958063642fadb0dea951184ab8824a00ac612fd0"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/p5/examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4fb6d0d3c939fe728138bdf8e45bd70058e2ce8a",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/4fb6d0d3c939fe728138bdf8e45bd70058e2ce8a"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/p5/examples/lights.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "213c1d07080db293433e99058e02fc60fe9f921c",
+      "size": 6581,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/213c1d07080db293433e99058e02fc60fe9f921c"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/p5/examples/smoke.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ccaecc33fe71c7db6be080016f7314ab6122238",
+      "size": 1633,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/9ccaecc33fe71c7db6be080016f7314ab6122238"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/p5/lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "55053013bf4ba8b6726646a17c0c05e5bd9ac5f5",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/55053013bf4ba8b6726646a17c0c05e5bd9ac5f5"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/p5/lib/core.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97f7e640665aafa49d394861b7beeeb0fda60b2a",
+      "size": 4929,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/97f7e640665aafa49d394861b7beeeb0fda60b2a"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/p5/lib/fx.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "155cb9120ef7a0d40ab30b9677f922371855ea04",
+      "size": 4171,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/155cb9120ef7a0d40ab30b9677f922371855ea04"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/p5/lib/paper.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "228e301d14efedd7f26b43786201f20b91729e45",
+      "size": 1934,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/228e301d14efedd7f26b43786201f20b91729e45"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/p5/lib/riso.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fa7abcf20095c876baf23ad442edef646159a61",
+      "size": 1303,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/5fa7abcf20095c876baf23ad442edef646159a61"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/p5/lib/time.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a5a0eb3d6188905e509ea510760511d00ab1000",
+      "size": 1895,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/1a5a0eb3d6188905e509ea510760511d00ab1000"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/p5/lib/type.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e69673d0eaa15015877c485f3307885ee7d8935",
+      "size": 3114,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/8e69673d0eaa15015877c485f3307885ee7d8935"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/p5/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e272011706a6d88e21b585cd99a28f617c6aafd",
+      "size": 5554,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/3e272011706a6d88e21b585cd99a28f617c6aafd"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/python",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "708aceff326ce8d67d84f02033ee5c1c1123ee52",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/708aceff326ce8d67d84f02033ee5c1c1123ee52"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/python/audio_energy.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a6c62927e34d15b024ad0a1ce380b0627a2ee6c",
+      "size": 1673,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/9a6c62927e34d15b024ad0a1ce380b0627a2ee6c"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/python/beats.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "269c1e41d260a7064fe19b926f771c55694448d1",
+      "size": 4515,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/269c1e41d260a7064fe19b926f771c55694448d1"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/python/cutout.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "120e627a6e09a2ee18344e0a158fa932378e346d",
+      "size": 5222,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/120e627a6e09a2ee18344e0a158fa932378e346d"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/python/cuts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b23ddc89d38e28695160b855309daca2d4123568",
+      "size": 1282,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/b23ddc89d38e28695160b855309daca2d4123568"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/python/keep_component.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "319c3a0c0ba64f2bbf87e2730044f555d537bd17",
+      "size": 3419,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/319c3a0c0ba64f2bbf87e2730044f555d537bd17"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/python/mouth_sync.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4df9b69faeb8bc86ba69f1d1c48300623bceb1d8",
+      "size": 3632,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/4df9b69faeb8bc86ba69f1d1c48300623bceb1d8"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/python/sfx_mix.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cdeb2e6122c95a4c6bb0bc4ee8ab6cbcf2b0a78",
+      "size": 5738,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/0cdeb2e6122c95a4c6bb0bc4ee8ab6cbcf2b0a78"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/python/split_row.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5f9308ea02332a83c96d2344fd8c7ab6e82f119",
+      "size": 3704,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/a5f9308ea02332a83c96d2344fd8c7ab6e82f119"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/python/sprite_box.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46353622128629fd6f2474d741266f35271c9824",
+      "size": 2539,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/46353622128629fd6f2474d741266f35271c9824"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/python/style_split.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "245fd1df8d294d78ed056f5c5e79f2be0b0ba383",
+      "size": 1613,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/245fd1df8d294d78ed056f5c5e79f2be0b0ba383"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/python/track_template.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2eb7bbed57fbd0823c9fa4989eb8fa9be6706bc3",
+      "size": 3818,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/2eb7bbed57fbd0823c9fa4989eb8fa9be6706bc3"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/vfx",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ba09eebd86f420ec33ff7aaa4177f7ae8d6bce6f",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/ba09eebd86f420ec33ff7aaa4177f7ae8d6bce6f"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/vfx/Package.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88845001b4c41096bdcc1d4556ecc43ad212e0bc",
+      "size": 448,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/88845001b4c41096bdcc1d4556ecc43ad212e0bc"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/vfx/Sources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5926a8d365bb86558c7d6cec5075298345810191",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/5926a8d365bb86558c7d6cec5075298345810191"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/vfx/Sources/mvfx",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c5cefc7af28e8d8f6b4666906cecadc845770581",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/c5cefc7af28e8d8f6b4666906cecadc845770581"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/vfx/Sources/mvfx/Cues.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "034f6ebe64e72bd6d598a039b33f744c609546f5",
+      "size": 2459,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/034f6ebe64e72bd6d598a039b33f744c609546f5"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/vfx/Sources/mvfx/Effects.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "890994356bade0dcd9bd796796a9016b8406f570",
+      "size": 18008,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/890994356bade0dcd9bd796796a9016b8406f570"
+    },
+    {
+      "path": ".claude/skills/motion-graphics-music-video/scripts/tools/vfx/Sources/mvfx/main.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a044ee50c3151e7511e84279f32b9361365ff7f2",
+      "size": 8987,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/a044ee50c3151e7511e84279f32b9361365ff7f2"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "918844274e36aeb2ce00b66e3d48bd6b3b131abd",
+      "size": 235,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/918844274e36aeb2ce00b66e3d48bd6b3b131abd"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb3562bd0b4482604c1f2f31833fbfce4f41253f",
+      "size": 1065,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/bb3562bd0b4482604c1f2f31833fbfce4f41253f"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6275e8658183c616100c5d3607658c17e149dacd",
+      "size": 15798,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/6275e8658183c616100c5d3607658c17e149dacd"
+    },
+    {
+      "path": "Rakefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c792644e96d899a472c64d68e0f1430aa4b1e771",
+      "size": 194,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/c792644e96d899a472c64d68e0f1430aa4b1e771"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8da1abebd0df38f6f39510503ab2d28c78bbd52c",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/8da1abebd0df38f6f39510503ab2d28c78bbd52c"
+    },
+    {
+      "path": "docs/examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7884ce13ed2c361bbc76ebed9c179c7005b6f382",
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/trees/7884ce13ed2c361bbc76ebed9c179c7005b6f382"
+    },
+    {
+      "path": "docs/examples/parterre-girl.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16a169bb53ae592d7833257d48b9a3dbc16dbc58",
+      "size": 93566,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/16a169bb53ae592d7833257d48b9a3dbc16dbc58"
+    },
+    {
+      "path": "docs/examples/symphony.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a455af3e4f0c2f1e540516b79892114403dc218b",
+      "size": 12724,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/a455af3e4f0c2f1e540516b79892114403dc218b"
+    },
+    {
+      "path": "docs/examples/the-math-of-you.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45ea6cf8625049b74d6c9724594ff974495b8568",
+      "size": 12573,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/45ea6cf8625049b74d6c9724594ff974495b8568"
+    },
+    {
+      "path": "docs/examples/upping-my-p-doom-remix-2.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "040c4ff8f5cdac7db1ab97e503cc7ea6bef74958",
+      "size": 17411,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/040c4ff8f5cdac7db1ab97e503cc7ea6bef74958"
+    },
+    {
+      "path": "docs/examples/you-knew-how-to-fork-take-2.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dede61813681277243a46afdeb1ca0f8ba9cb9cd",
+      "size": 14318,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/dede61813681277243a46afdeb1ca0f8ba9cb9cd"
+    },
+    {
+      "path": "docs/examples/you-knew-how-to-fork.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e112753ffb76f2bc9d53bf622001f807c209299",
+      "size": 18009,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/9e112753ffb76f2bc9d53bf622001f807c209299"
+    },
+    {
+      "path": "docs/icon-generation.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44e8589ec4da1479669cb1f0bd20f8f3850c7902",
+      "size": 1745,
+      "url": "https://api.github.com/repos/makevoid/motion-graphics-music-video-skill/git/blobs/44e8589ec4da1479669cb1f0bd20f8f3850c7902"
+    }
+  ],
+  "truncated": false
+}

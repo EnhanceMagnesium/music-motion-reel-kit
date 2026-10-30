@@ -1,0 +1,154 @@
+[
+  {
+    "repo_id": "R01",
+    "source_media_bytes": 7893469,
+    "git_metadata_logical_bytes": 7810689,
+    "git_metadata_allocated_bytes": 7966720,
+    "installed_dependencies_logical_bytes": 66205409,
+    "installed_dependencies_allocated_bytes": 77316096,
+    "dependency_paths": [
+      "repository-downloads/JohnHeibel/ClaudeAnimationBase/node_modules"
+    ]
+  },
+  {
+    "repo_id": "R02",
+    "source_media_bytes": 8843310,
+    "git_metadata_logical_bytes": 8532208,
+    "git_metadata_allocated_bytes": 8863744,
+    "installed_dependencies_logical_bytes": 122084770,
+    "installed_dependencies_allocated_bytes": 141574144,
+    "dependency_paths": [
+      "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/node_modules",
+      "repository-downloads/tuzhechen2005/opus-video-skills/skills/kinetic-reel/template/node_modules"
+    ]
+  },
+  {
+    "repo_id": "R03",
+    "source_media_bytes": 88003667,
+    "git_metadata_logical_bytes": 74861674,
+    "git_metadata_allocated_bytes": 74948608,
+    "installed_dependencies_logical_bytes": 193228166,
+    "installed_dependencies_allocated_bytes": 205758464,
+    "dependency_paths": [
+      "repository-downloads/lemomo-ai/lemo-opuscar/node_modules",
+      "repository-downloads/lemomo-ai/lemo-opuscar/.venv",
+      "repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-popup/demo/node_modules"
+    ]
+  },
+  {
+    "repo_id": "R04",
+    "source_media_bytes": 808803750,
+    "git_metadata_logical_bytes": 635215941,
+    "git_metadata_allocated_bytes": 635666432,
+    "installed_dependencies_logical_bytes": 1295461461,
+    "installed_dependencies_allocated_bytes": 1466593280,
+    "dependency_paths": [
+      "repository-downloads/heygen-com/hyperframes/node_modules",
+      "repository-downloads/heygen-com/hyperframes/packages/studio/node_modules",
+      "repository-downloads/heygen-com/hyperframes/packages/producer/node_modules",
+      "repository-downloads/heygen-com/hyperframes/packages/lint/node_modules",
+      "repository-downloads/heygen-com/hyperframes/packages/parsers/node_modules",
+      "repository-downloads/heygen-com/hyperframes/packages/core/node_modules",
+      "repository-downloads/heygen-com/hyperframes/packages/gcp-cloud-run/node_modules",
+      "repository-downloads/heygen-com/hyperframes/packages/aws-lambda/node_modules",
+      "repository-downloads/heygen-com/hyperframes/packages/cli/node_modules",
+      "repository-downloads/heygen-com/hyperframes/packages/sdk/node_modules",
+      "repository-downloads/heygen-com/hyperframes/packages/studio-server/node_modules",
+      "repository-downloads/heygen-com/hyperframes/packages/engine/node_modules",
+      "repository-downloads/heygen-com/hyperframes/packages/shader-transitions/node_modules",
+      "repository-downloads/heygen-com/hyperframes/packages/player/node_modules"
+    ]
+  },
+  {
+    "repo_id": "R05",
+    "source_media_bytes": 799410,
+    "git_metadata_logical_bytes": 490279,
+    "git_metadata_allocated_bytes": 581632,
+    "installed_dependencies_logical_bytes": 100362700,
+    "installed_dependencies_allocated_bytes": 114225152,
+    "dependency_paths": [
+      "repository-downloads/makevoid/motion-graphics-music-video-skill/.claude/skills/motion-graphics-music-video/scripts/node_modules",
+      "repository-downloads/makevoid/motion-graphics-music-video-skill/.claude/skills/motion-graphics-music-video/scripts/.venv"
+    ]
+  },
+  {
+    "repo_id": "R06",
+    "source_media_bytes": 2936120,
+    "git_metadata_logical_bytes": 2713199,
+    "git_metadata_allocated_bytes": 2973696,
+    "installed_dependencies_logical_bytes": 26425769,
+    "installed_dependencies_allocated_bytes": 26464256,
+    "dependency_paths": [
+      "repository-downloads/buildwithhanif/claude-animation-skill/plugins/claude-animation/skills/claude-animation/node_modules"
+    ]
+  },
+  {
+    "repo_id": "R07",
+    "source_media_bytes": 13822913,
+    "git_metadata_logical_bytes": 5322702,
+    "git_metadata_allocated_bytes": 5414912,
+    "installed_dependencies_logical_bytes": 113454207,
+    "installed_dependencies_allocated_bytes": 123281408,
+    "dependency_paths": [
+      "repository-downloads/bizarro/evangelion/app/node_modules"
+    ]
+  },
+  {
+    "repo_id": "R08",
+    "source_media_bytes": 4161352,
+    "git_metadata_logical_bytes": 3752017,
+    "git_metadata_allocated_bytes": 3907584,
+    "installed_dependencies_logical_bytes": 66205398,
+    "installed_dependencies_allocated_bytes": 77316096,
+    "dependency_paths": [
+      "repository-downloads/JohnHeibel/PDoomVideo/node_modules"
+    ]
+  },
+  {
+    "repo_id": "R09",
+    "source_media_bytes": 200203989,
+    "git_metadata_logical_bytes": 159405204,
+    "git_metadata_allocated_bytes": 159494144,
+    "installed_dependencies_logical_bytes": 0,
+    "installed_dependencies_allocated_bytes": 0,
+    "dependency_paths": []
+  },
+  {
+    "repo_id": "R10",
+    "source_media_bytes": 97073160,
+    "git_metadata_logical_bytes": 95477530,
+    "git_metadata_allocated_bytes": 95678464,
+    "installed_dependencies_logical_bytes": 18548883,
+    "installed_dependencies_allocated_bytes": 18989056,
+    "dependency_paths": [
+      "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/node_modules"
+    ]
+  },
+  {
+    "repo_id": "R11",
+    "source_media_bytes": 27690580,
+    "git_metadata_logical_bytes": 22880175,
+    "git_metadata_allocated_bytes": 22970368,
+    "installed_dependencies_logical_bytes": 0,
+    "installed_dependencies_allocated_bytes": 0,
+    "dependency_paths": []
+  },
+  {
+    "repo_id": "R12",
+    "source_media_bytes": 1152948,
+    "git_metadata_logical_bytes": 549331,
+    "git_metadata_allocated_bytes": 638976,
+    "installed_dependencies_logical_bytes": 0,
+    "installed_dependencies_allocated_bytes": 0,
+    "dependency_paths": []
+  },
+  {
+    "repo_id": "R13",
+    "source_media_bytes": 7734515,
+    "git_metadata_logical_bytes": 4237388,
+    "git_metadata_allocated_bytes": 4329472,
+    "installed_dependencies_logical_bytes": 0,
+    "installed_dependencies_allocated_bytes": 0,
+    "dependency_paths": []
+  }
+]

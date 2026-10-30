@@ -1,0 +1,58 @@
+HELPER COMPATIBILITY — pinned local candidate sources, 2026-10-07
+
+Scope: R03 lemomo-ai/lemo-opuscar/core/lib.js (complete file), R02 tuzhechen2005/opus-video-skills/skills/kinetic-reel/template/reel/reel.js (all numeric helpers plus relevant frame/post/transition call sites), R06 buildwithhanif/claude-animation-skill/plugins/claude-animation/skills/claude-animation/lib/{core,film}.mjs (complete files). All paths below are relative to repository-downloads/. Originals are preserved. This is preparation evidence, not an installed shared library.
+
+RESULT
+The scalar common core can be shared with source-specific aliases. RNG algorithms, noise ranges, back-easing defaults, smoothstep signatures and frame/exposure contracts must remain explicit variants. Sharing renderer or drawing APIs would require a separate adapter and image verification.
+
+TESTED NUMERIC COMMON CORE
+Run: node compatibility-preparation/check-helper-equivalence.mjs
+Result: helper-equivalence-results.json; PASS, 97,024 exact assertions under Node v26.7.0. 6,001 scalar samples from -1 to 2 and 1,000 matching Park–Miller draws. Tests extract actual pinned code into isolated VM contexts; no browser/canvas imports or media generation.
+* clamp(x,a=0,b=1), lerp(a,b,k), hash(n): exact agreement in sampled R02/R03/R06 functions.
+* R03 seg(t,a,b) = R02 seg(t,a,b): exact agreement; no R06 exported seg.
+* R03 ss(k) = R02 ease(k) = R06 ss(0,1,k): exact agreement. R06 ss(a,b,x) is a WINDOW API; never alias directly to unary ss. Adapter: unarySmooth(k); windowSmooth(a,b,x) = unarySmooth(seg(x,a,b)).
+* R03 eo / R02 easeOut / R06 eOut: cubic out, exact sampled agreement.
+* R03 ei / R02 easeIn / R06 eIn: cubic in, exact sampled agreement.
+* R03 eio / R02 easeInOut / R06 eIO: cubic in-out, exact sampled agreement. R02 easeInOut is defined later beside transitions, not in its first math block.
+* R02 expoOut / R06 eExpo: exponential out, exact sampled agreement, explicit x===1 endpoint.
+* R03 back(k,s=1.8) and R06 eBack(k,s=1.8): mathematically equivalent but differently grouped arithmetic. Maximum sampled double delta 5.55e-16. Preserve original evaluation order if exact numeric equality is required.
+* R03 vnoise(x)*2-1 and R06 noise1(x): mathematically equivalent, maximum sampled delta 4.44e-16; lerp form versus weighted sum changes rounding. R03 vnoise is unsigned [0,1], R06 noise1 signed [-1,1]. Retain named variants for range and exact source arithmetic.
+* R02 cloud's inline Park–Miller seed 7 recurrence equals R06 rng(7) for the first 1,000 draws. This establishes the positive integer seed case, not every seed normalization case.
+
+DIFFERENCES REQUIRING VARIANTS
+Back: R02 backOut fixes s=1.7. R03/R06 default s=1.8. At k=.5: 1.0875 versus 1.1. A common parameterized implementation needs an R02 wrapper supplying 1.7, and numeric tolerance/pixel validation before adoption.
+RNG: R03 mulberry(seed) is Mulberry32 with signed 32-bit coercion and wrapping addition, output /2^32. R06 rng(seed) is Park–Miller modulo 2147483647 with floor/max(1,seed) normalization. Seed 7 first output: .011704753153026104 versus .000054784584815979276. Never replace one with the other. R02 cloud uses inline Park–Miller seed=7 and does not expose a general seed normalization API.
+R06 degenerate RNG: seed 2147483647 (and its positive integer multiples) normalizes to zero and returns zero forever. Seed 0 instead normalizes to 1. Correcting this while unifying would change current source output; retain compatibility behavior and separately define strict validated APIs if needed.
+R03 spring(t,k=7,z=.35): negative time is clamped only to zero; positive t may exceed 1 and oscillates with damping, including a 1.6 frequency factor. Not R06 eElastic, eBounce or eBack. z>1 yields an invalid square root. No parameter validation present.
+R02 beatPulse(t,k=7): exp(-((t/BEAT)%1)*k), BEAT=60/KCUE.bpm. JavaScript remainder is negative for negative t; tested t=-.25 at bpm120 returns exp(3.5)>1. Positive-modulo conversion changes behavior. Keep BPM or seconds-per-beat explicit rather than implicit global closure in a shared helper.
+R02 ioExpo: separate exponential IN-OUT helper with both endpoint branches. Not expoOut/eExpo.
+R03 TAU and R02 TAU match Math.PI*2. R06 uses inline Math.PI*2, no TAU export.
+
+COMPLETE PURE HELPER INVENTORY AND INSPECTED CONTRACTS
+R03-only:
+monotone(keys): scalar Fritsch–Carlson-style Hermite interpolation, endpoint hold, endpoint slopes = first/last secants, interior average slopes zeroed at reversals, radius-3 slope limiter. This is not Catmull–Rom. A single key returns a constant. Assumes nonempty, ascending, distinct key times; duplicates/empty data are not validated. Shared implementation should preserve this exact limiter and endpoint policy.
+track(keys): builds one monotone interpolant for each dimension from first key value length; returns vector; inherits key validation limitations.
+env(t,a,b,fi=.3,fo=.3): minimum of linear fade-in and fade-out segments. Not smoothstep, not product envelope; overlapping fades do not automatically reach one.
+R06-only pure helpers:
+rad(d); mid(a,b); centroid(P); ellPts(cx,cy,rx,ry,n=24,a0=0); rrect(x,y,w,h,r) returns 20 polygon points in four corners with five samples each. R02 rrect draws a clamped-radius canvas roundRect: same name, different API/result/geometry.
+catmull(P,closed=false,step=7): uniform Catmull–Rom; per-segment sample count max(2,ceil(endpoint chord length/step)); open end points repeated through clamped indices, closed end duplicates first point. Not arc-length uniform and not guaranteed monotone.
+densify(P,step=7): straight-segment subdivision based on Euclidean length, retaining final point.
+pathOf(pts): catmull(open,step5) followed by cumulative polyline distance; at(u) returns x,y,tangent angle; slice(u) returns points through interpolated position. Clamps u. Requires enough points; empty/singleton behavior is not a supported validated API.
+ik(a,c,l1,l2,pref=true): 2-bone joint selection, distance constrained to |l1-l2|+.01 through l1+l2-.01; pref boolean or vector selects larger directional dot product. Lengths/invalid values not validated. No counterpart in R02/R03.
+popS(t,t0,d=.38,s=2.2): returns zero before t0 then eBack normalized by duration; preserve its s=2.2 and defaults.
+eElastic and eBounce: separate clamped ease curves, inspected only. No counterparts in R02/R03.
+lerpColor(a,b,k): hex #RRGGBB parsing, clamped interpolation and integer channel rounding, returns rgb(...). Pure function located among canvas helpers; no counterpart in R02/R03. Strict input format is implicit.
+R02-only additional pure helpers: bez(p0,c0,c1,p1,u) evaluates a 2D cubic Bézier polynomial without clamping u; unlike R06 pathOf it uses parameter distance, not arc length. font(fam,size,weight) and pad2(n) format strings. sec(i,name) formats a section label using the closed-over C.CH configuration. These are inspected, not numeric equivalence tested. Additional scalar helpers: tc(t) floors t*KCUE.fps for displayed time code; count(t,t0,t1,v0,v1) rounds lerp through expoOut(seg(...)); beatPulse and ioExpo as above. text font/measurement, drawing, transition closures and WebGL uniform setters are context-dependent APIs, not pure scalar common-core candidates.
+R06 canvas helpers poly/smooth/ellipse/stroke/fill/line/at/taper, grainCanvas/grainOver/hatch/fibre/burst/speedLines are context-dependent. grainOver caches a CanvasPattern by amount in module-global _grain, creating potential ownership issues across canvas contexts. Preserve behind a rendering adapter; numeric tests do not validate these pixels.
+
+TIME AND EXPOSURE — INSPECTED PLUS NUMERIC BOUNDARY PROBES
+R02 reel frame(t): supplied t is continuous. Scene selection uses t>=next scene start; transition outgoing frame freezes at s0-1/KCUE.fps; a hard cut flash lasts 1/KCUE.fps. Postprocess shader time and finale FX seed use floor(t*KCUE.fps). Browser renderer --fps independently defaults to30. Changing output sampling fps without matching cue fps changes cadence and cut behavior. Renderer sample times vary by mode: snapshot/sheet arbitrary times, strip rounded endpoint frames, encode/range a+i/fps, clip rounded first frame through bounded last frame.
+R03 core/render/video.mjs defaults fps24, TOTAL=round(DUR*FPS); browser renderer calls window.render(f/FPS) for integer f from zero through TOTAL-1 (R02 instead exports renderAt). Core lib has no exposure helper. Actual style code may locally quantize time (e.g. woodcut/interior.js uses floor(t*12) to seed Mulberry32). Thus a universal output fps cannot replace style-local drawing cadence.
+R06 film.run: fps=F.fps||24; N=round(F.dur*fps); regular samples t=i/fps. Sheets/strips round requested start times to indices, so sheet(t) may not equal browser renderAt(t). Optional temporal blur samples t+(k/S-.5)/fps*.9 and passes the SAME integer i to all subframes. A drawing implementation using time versus i can therefore behave differently during blur. setup once; context is reset but frame-owned state can persist. Built-in verify checks a handful of frames for order dependence, not all frames.
+R06 exposure(t,track,fps): picks last qualifying entry in array iteration order (not sorted lookup), defaults cur=track[0] even before first entry; hold returns entry.at. Otherwise f=floor((t-at)*fps+1e-6), n=on||1, drawT=at+floor(f/n)*n/fps. Assumes nonempty track, meaningful positive fps/on values. No validation. Track-relative anchoring is intentional; not simply floor(t*fps/n)*n/fps. Epsilon changes values just below frame boundaries. Tested on-twos first-frame hold, second-frame advance, transition at4.5, hold at8, and epsilon boundary. Template film uses exposure only for drawings while lightBands uses continuous t and filmFinish integer i; preserve separate camera/root/drawing clocks.
+
+ADOPTION RECOMMENDATION
+1. Establish a standalone dependency-free numeric common core: clamp, lerp, seg, smoothstep unary/window forms, cubic in/out/in-out, expoOut, hash, TAU.
+2. Keep source adapters and explicit variants: R02 backOut(1.7), R03 back grouping, R06 back grouping, unsigned/signed noise arithmetic, mulberry32, parkMiller with original seed semantics, exposure track, R02 beatPulse remainder behavior. Preserve ambiguous short names only in source-specific adapters.
+3. Admit R03 interpolation/envelope and R06 geometry/exposure as independently named optional modules. Document preconditions and source provenance; strict validation should be a separate API so invalid-input compatibility is not silently changed.
+4. Exact sampled agreement is useful evidence, not proof across all doubles or pixels. Current report has NO rendering, screenshot comparison, GPU/font/browser parity, full-film order-independence or installed shared-library test. Those remain for Claude's implementation/adoption pass after selecting sources and licensing.

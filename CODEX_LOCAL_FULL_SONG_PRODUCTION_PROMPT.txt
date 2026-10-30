@@ -1,0 +1,95 @@
+CODEX LOCAL — ONE-PROMPT FULL-SONG PRODUCTION
+
+Use this as the initiating message in a new **Codex task** with the **Local** environment and the original `music-motion-reel-kit` folder selected as the working folder. Do not use Cloud/SSH or create a worktree. It is reusable for any new song. Supply that song's finished recording and approved lyrics, plus an optional creative brief, either as task attachments or as exact local paths. If the files are already in the active kit, give their folder path; do not make duplicate uploads. The user-provided inputs for this task are authoritative. Do not search other song conversations or carry over another song's creative choices. This is the Codex production workflow; do not route the work to a Claude conversation or depend on a Claude session.
+
+## Task and destination
+
+Produce one original, full-song code-animated video using the supplied recording. This is a Codex-only production, not a Claude/Codex comparison. Create or resume only this song's folder at `productions/<song-slug>/` inside the active kit. Derive a clear slug from the song title. Before writing, check whether that destination already exists: resume it only if its checkpoint establishes that it is this same unfinished production; otherwise choose a new non-overwriting song-specific sibling and record why. Keep all song-specific code, assets, audio copies, plans, reports, review evidence and outputs in that folder.
+
+Active source of truth:
+
+``
+
+Do not use the Downloads migration copy. Treat shared renderer code, installed packages, pinned repositories, source checkouts, project guidance and visual references as read-only, except for appending an evidence-backed cross-song technical lesson to `reusable-animation-context/VERIFIED_PRODUCTION_LESSONS.md` when the lesson meets its documented standard. Do not edit Claude's settings, Project Library, other song folders or comparison scaffolds.
+
+## One-time authorization
+
+By submitting this prompt with the song inputs, I authorize the complete local workflow for this song: inspect and measure the master; listen to it where this session genuinely supports listening; inspect lyrics and brief; research relevant local code sources; search, preview, rights-check and download suitable footage from the Moving Image Archive, Wikimedia Commons and Internet Archive/Prelinger; plan and implement original Remotion scenes; run the no-media plan and focused checks; render and inspect risk-based pre-export stills; render a complete full-song candidate; run the installed post-render Playwright and FFmpeg review; review available playback; make up to two focused correction rounds; rerender the complete candidate when an integrated change requires it; and save all source, output, evidence, report and checkpoint locally. Carry out these named, reversible, in-scope stages without asking me to authorize the same stage again.
+
+Each candidate called finished must include at least one relevant, rights-cleared clip from each of the three required footage sources. Prelinger is part of Internet Archive, not an additional provider. Keep provenance records separate. If a source is unavailable or no suitable item clears the rights/relevance check, record the requirement as unmet. Continue independent work that remains safe, but do not call the result finished or imply the required source was integrated.
+
+This authorization excludes spending or purchases, paid assets/services, entering or requesting credentials, using footage with materially uncertain rights, publishing/sharing externally, changing system settings or permissions, installing/updating packages or browsers, altering the supplied master, changing shared renderer code, and modifying pinned repositories. Pause only for a missing essential input, a genuine material rights uncertainty, credentials/payment, an out-of-scope action, or a consequential issue that cannot reasonably be resolved from the supplied song. State the issue and recommendation, and continue unrelated work that does not depend on it. Do not ask routine questions about palette, frame, font, shot count, source technique or ordinary composition.
+
+## Native execution check
+
+Before planning or media work, verify this task can access the active kit on native macOS arm64. Record the actual working path, OS/architecture, Node path/version/architecture, Chrome and FFmpeg paths/versions, and the shared Remotion and isolated QA paths. Use the existing local tools only. If this task is Cloud, remote, Linux, or cannot access the native kit/toolchain, record the exact boundary and do not switch to SSH, another computer, another checkout or the Downloads copy. Instructions cannot grant access that the task session does not have.
+
+## Codex instruction order and local guides
+
+For this task, use this instruction order: the current user request and its authorization boundaries; the kit's `AGENTS.md` and `PROJECT_INSTRUCTIONS.md`; this Codex production prompt; then the relevant technical guides and current source code. This is a direct instruction to Codex, not a request to infer Codex behavior from Claude procedures.
+
+Read these files before implementation:
+
+- `AGENTS.md`
+- `PROJECT_INSTRUCTIONS.md`
+- `claude-finished-song-animation-project/04_REUSABLE_PRODUCTION_STANDARD.txt`
+- `claude-finished-song-animation-project/07_QUALITY_REVIEW_AND_ACCEPTANCE.txt`
+- `claude-finished-song-animation-project/10_MOVING_IMAGE_ARCHIVE_WORKFLOW.txt`
+- `claude-finished-song-animation-project/11_HEADLESS_BROWSER_FRAME_REVIEW.txt`
+- `claude-finished-song-animation-project/12_CODE_ANIMATION_REFERENCE_WORKFLOW.txt`
+- `claude-finished-song-animation-project/13_REPOSITORY_NAVIGATION_AND_USE.txt`
+- `claude-finished-song-animation-project/16_SOURCE_PROVENANCE_AND_BUILD_TRACE.txt`
+- `claude-finished-song-animation-project/17_FOOTAGE_FRAME_FOOTPRINT_AND_CODE_ACTION.txt`
+- `repository-preparation/templates/SONG_RESOURCE_PROVENANCE_TEMPLATE.md`
+- `repository-preparation/ANIMATION_AGENT_SKILL_RESOURCES_GUIDE.md`
+- `claude-finished-song-animation-project/14_HYPERFRAMES_SUBCOMPOSITION_GUIDE.txt`
+- `claude-finished-song-animation-project/15_MEDIA_API_DISCOVERY_WORKFLOW.txt`
+- `repository-preparation/REPOSITORY_NAVIGATION_AND_USE_GUIDE.md`
+- `shared-animation-library/README.md`
+- `shared-animation-library/remotion-runtime/README.md`
+- `shared-animation-library/media-discovery/README.md`
+- the applicable entries in `reusable-animation-context/VERIFIED_PRODUCTION_LESSONS.md`
+
+The `claude-finished-song-animation-project/` directory name is a legacy filing label; the specifically listed files above contain shared production standards and technical procedures. You are Codex, the executing production agent for this task. Apply shared production responsibilities in the listed guides to Codex. In guides 07 and 11, follow the shared review and Playwright/FFmpeg procedures; skip app-specific preview steps that are unavailable in Codex. Use only playback tools actually available to this Codex Local task and do not claim unavailable playback. Do not read or use `CLAUDE.md`, `CLAUDE_ANIMATION_VIDEO_RUNBOOK.txt`, or `05_NEW_SONG_CONVERSATION_PROMPT.txt` as operating instructions; they are Claude-specific project/app launch materials, not Codex workflow requirements.
+
+If the project's read-only visual reference folders are available, inspect only references relevant to this song and record their paths and the specific craft question they informed. Treat them as references, not assets to copy.
+
+If a referenced path has moved, locate its current canonical equivalent in the active kit and record the path used. Read the actual task attachments or paths. If an input file combines lyrics and a creative brief, preserve it unchanged and identify which supplied passages serve each purpose; do not reconstruct, silently rewrite or invent lyrics. If multiple recordings are plausible masters or the lyrics are materially ambiguous, report the ambiguity and ask only the necessary question.
+
+## Production rules
+
+### Recording, lyrics and format
+
+Identify the master, compute its SHA-256, and measure the audio stream's duration and properties rather than trusting a container duration that may include subtitles or other streams. Copy it bit-for-bit into this song's `public/audio/` and verify the copy hash. Use the full recording at its measured duration by default. Do not excerpt, cap, trim, pad, fade, remix or otherwise alter it to fit video frames. Set the song's full duration explicitly and do not add a fixed global ceiling. Report frame rate, video frame count/duration and planned frame-quantization difference; after rendering, verify actual encoded endpoints separately.
+
+Use supplied lyrics as the textual source of truth. Listen to the recording if this session has actual audio playback/listening capability. Mark embedded subtitle or supplied lyric timestamps provisional until they are checked against the song. Keep measured signal events, supplied claims, estimates, inference and listening observations distinct. Choose line, phrase or word-level lyric display for this song; if word-by-word reveal/highlight is selected or requested, follow `claude-finished-song-animation-project/18_TEMPORAL_STABILITY_AND_WORD_TIMING.txt` and record machine estimates separately from listening-confirmed cues. Grok/text-only outputs cannot establish what is audible or when a lyric is sung.
+
+Before storyboarding, independently recommend either 4:5 (1080×1350) or 9:16 (1080×1920), explain its composition consequences, and set explicit dimensions in this song's config. Compose natively for that format. Choose this song's palette from its own recording, lyrics, brief and narrative. Never default to Claude's brand orange, a house palette or another song's colors; orange is fine with a song-specific rationale. Assign color roles and judge readability from reviewed images. Make and record ordinary creative decisions without asking me to choose.
+
+### Repository and footage discovery
+
+Derive this song's scene needs first. Before storyboarding, initialize `research/REPOSITORY_REVIEW.md` from `repository-preparation/templates/SONG_RESOURCE_PROVENANCE_TEMPLATE.md` and scan/rank all catalogued R01–R16 using the local router, preparation records and atlas. Record exact paths actually opened, relevance rank, fit/disposition and song-specific reason for every row. Deep-read only relevant source bodies and their dependency/import/license closure. Assess R14–R16 motion resources before storyboard lock using guide 17; inspect the relevant `.agents/skills/<name>/SKILL.md`, `KIT_INTEGRATION.md`, `PROVENANCE.md` and needed support files. Record actual paths and whether they were available, opened or consulted, plus the decision they informed or why not used. Use the central install manifest for source identity/hashes. For every adapted or influential mechanism, connect scene need → repository or skill/commit/path/symbol → observed mechanism → copied/modified/re-authored/guidance-only status → concrete production helper and scene caller. Add a concise source/license notice beside materially copied or adapted helpers. A reasoned no-fit is valid; do not force code use or claim every source file was read. Separately search the local R12/Skillry catalog. Do not copy a creator's video, prompt-linked assets, demo, characters or composition wholesale.
+
+Plan actual shot needs, then use the three canonical footage workflows. For Prelinger-specific Internet Archive discovery, search and preview at https://prelingerarchives.online/, then follow the selected film to its Internet Archive item page and use the shared media-discovery helper for item/file checks and download. Do not treat the Prelinger search site as a separate provider or assume collection membership proves rights. Inspect item pages/previews and rights details. Record source URL, title, creator/date, rights basis and wording, downloaded file/hash, source clip range, resolution/duration, audio handling and scene call site. Rights metadata is evidence to assess, not legal certification. Never fabricate rights, reuse terms, sources or clip details. Do not let archive audio replace the supplied master. Save Moving Image Archive provenance separately from Commons/Internet Archive records.
+
+### Implementation and review
+
+Use `shared-animation-library/render.mjs` and the installed Remotion route for new songs (`PROJECT.renderEngine: 'remotion'`). Keep the named React scene registry, audio, assets, config and outputs inside this production. Existing p5 productions remain on the supported legacy route; do not mix p5 modules into the React registry. Remotion remains the master clock, complete composition, audio owner and sole final encoder. At your discretion, use a HyperFrames HTML/GSAP child only when it materially serves a scene; keep it deterministically driven by Remotion with no competing song clock, and follow guide 14. Do not create another project or renderer.
+
+Before coding, follow guide 19 and copy both storyboard templates into this song's `storyboard/` folder. Fill one CSV row for every one-second interval from 0 to measured duration; each row links time/cue, scene, timing evidence, visible state/action and a board panel or reasoned hold. Draw scene SVG panels for entry, development, payoff and every distinct setup or meaningful action change; do not force cuts or drawings each second. Link panels to component callers. Use guide 17 for footage time/footprint and code action. Preserve successful clip choices, make code the story action, and assess R14–R16 selectively.
+
+Render every scene from explicit frame/time and seeds, not frame visitation order or `Math.random` fallbacks. Respect the scene contract, asynchronous frame readiness and resource cleanup for Canvas/WebGL. Do not install packages or modify shared code. Run `--plan` before spending render time; save the exact command, stdout, stderr and exit status. Confirm engine, dimensions, fps, full duration, frame count, scene/overlay coverage, assets/audio and output path/overwrite protection.
+
+Follow guide 07 for a compact risk-based pre-export `--stills` set. Cover opening/end, each distinct scene/state and typography treatment, important lyric emphasis, required footage, risky seams and concrete fixes. Inspect original frames at full and phone size. Stills establish sampled appearance only, not motion, pacing or lyric/audio sync.
+
+After the still stage is clean, render the complete full-song candidate to a new versioned output path. Save its exact command, output hash and exit status. Check video/audio streams, dimensions, frame rate, duration, decoded frame count and errors. Run the shared temporal scan on the complete candidate with `node shared-animation-library/quality-review/temporal-stability-scan.mjs --video=productions/<song>/out/<candidate>.mp4 --out=productions/<song>/review/temporal-stability-candidate-01.json`; inspect flagged times using contiguous decoded frames. If a multi-worker-only defect is supported, compare a new render with `--workers=1` while holding the source/config fixed; do not change the shared default. Follow `claude-finished-song-animation-project/18_TEMPORAL_STABILITY_AND_WORD_TIMING.txt`; stabilize temporal artifacts before word-level cue refinement. Then run the existing isolated Playwright candidate review and FFmpeg contact sheet according to guide 11; inspect the original captured frames, not only the contact sheet. Playwright is post-render QA, not the renderer. Use only preview and playback tools actually available to this Codex Local task. If this task cannot display the candidate and play its sound for full review, record that limitation and give me the exact local candidate path for my own playback; do not claim preview, listening or sync review occurred.
+
+Review the full candidate at normal speed with sound and check actual alignment only if this task can genuinely play and assess both picture and sound. If it cannot, clearly label listening, motion playback and sync as unverified and give me the exact candidate path for my review. A plan, stills, probe, decode, contact sheet or frame sample does not establish sync or creative acceptance. Do not claim that I accepted the video; acceptance remains mine.
+
+Make no more than two focused correction rounds, recording timestamp/frame, scene, observed evidence, severity and fix. Use targeted stills for a local still-only change; render a full new candidate when motion, timing, audio or integration changes. Stop when blocking issues are resolved and no important evidence-supported defect remains; list residual risks rather than promising perfection.
+
+## Save and report
+
+Keep the production self-contained at `productions/<song-slug>/`. Save its plan, source review, manifests, config, React scenes, assets, output, exact command logs, stills, Playwright/FFmpeg evidence, correction notes, technical report and current `CHECKPOINT.md`. Preserve prior outputs and reports; never silently overwrite. Update the checkpoint after each meaningful stage so another task can continue without asking me to transfer outputs. Promote only verified cross-song technical lessons to `reusable-animation-context/VERIFIED_PRODUCTION_LESSONS.md`; never promote this song's palette, story, timing, characters or art as a universal default.
+
+In your final response, give the candidate and checkpoint paths, the selected frame/dimensions/fps, measured audio and video duration/frame count/quantization, repository and footage-source coverage, exact checks and outcomes, correction rounds, and any unmet or unverified requirements. Separate source evidence, plan, rendered-file checks, sampled visual review, actual playback/listening, synchronization and my creative acceptance. If a stage could not run, explain the exact environment or rights boundary and what remains.

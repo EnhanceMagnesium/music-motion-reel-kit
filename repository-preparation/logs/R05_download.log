@@ -1,0 +1,24 @@
+
+COMMAND ['git', 'init', '-q']
+
+COMMAND ['git', 'remote', 'add', 'origin', 'https://github.com/makevoid/motion-graphics-music-video-skill']
+
+COMMAND ['git', 'fetch', '--depth=1', 'origin', '1a06e673e3266f8ba94f9aad55669b00fd3a9fca']
+From https://github.com/makevoid/motion-graphics-music-video-skill
+ * branch            1a06e673e3266f8ba94f9aad55669b00fd3a9fca -> FETCH_HEAD
+
+COMMAND ['git', 'checkout', '--detach', '1a06e673e3266f8ba94f9aad55669b00fd3a9fca']
+HEAD is now at 1a06e67 Update README with no-image version link
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.
+
+COMMAND ['git', 'lfs', 'pull']
+
+COMMAND ['git', 'lfs', 'fsck']
+Git LFS fsck OK
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.

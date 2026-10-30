@@ -1,0 +1,24 @@
+
+COMMAND ['git', 'init', '-q']
+
+COMMAND ['git', 'remote', 'add', 'origin', 'https://github.com/tuzhechen2005/opus-video-skills']
+
+COMMAND ['git', 'fetch', '--depth=1', 'origin', '59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1']
+From https://github.com/tuzhechen2005/opus-video-skills
+ * branch            59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1 -> FETCH_HEAD
+
+COMMAND ['git', 'checkout', '--detach', '59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1']
+HEAD is now at 59744a6 Turn the repo into opus-video-skills, a collection of video-style skills
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.
+
+COMMAND ['git', 'lfs', 'pull']
+
+COMMAND ['git', 'lfs', 'fsck']
+Git LFS fsck OK
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.

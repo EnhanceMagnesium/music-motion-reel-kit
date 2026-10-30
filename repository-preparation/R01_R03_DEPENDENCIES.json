@@ -1,0 +1,390 @@
+{
+  "node_installs": [
+    {
+      "scope": "R01",
+      "path": "repository-downloads/JohnHeibel/ClaudeAnimationBase",
+      "command": [
+        "npm",
+        "ci",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "--cache",
+        "repository-preparation/cache/npm"
+      ],
+      "exit_code": 0,
+      "log": "repository-preparation/logs/R01_npm.log",
+      "manifest": {
+        "name": "claude-animation-base",
+        "version": "1.0.0",
+        "private": true,
+        "license": "MIT",
+        "description": "Clawd, painted in p5.brush: a character kit and guide for making hand-painted Clawd animations",
+        "scripts": {
+          "sheet": "node render.mjs --sheet=0,1,2,3,4,5 --out=out/sheet.jpg",
+          "video": "node render.mjs --clip --out=out/video.mp4"
+        },
+        "dependencies": {
+          "p5": "^2.3.3",
+          "p5.brush": "^2.2.3",
+          "puppeteer-core": "^25.11.0"
+        }
+      },
+      "npm_ls_exit": 0,
+      "installed_versions": {
+        "version": "1.0.0",
+        "name": "claude-animation-base",
+        "dependencies": {
+          "p5.brush": {
+            "version": "2.2.3",
+            "resolved": "https://registry.npmjs.org/p5.brush/-/p5.brush-2.2.3.tgz",
+            "overridden": false
+          },
+          "p5": {
+            "version": "2.3.3",
+            "resolved": "https://registry.npmjs.org/p5/-/p5-2.3.3.tgz",
+            "overridden": false
+          },
+          "puppeteer-core": {
+            "version": "25.11.0",
+            "resolved": "https://registry.npmjs.org/puppeteer-core/-/puppeteer-core-25.11.0.tgz",
+            "overridden": false
+          }
+        }
+      },
+      "lock_preserved": "npm ci",
+      "dependency_lifecycle_scripts_suppressed": []
+    },
+    {
+      "scope": "R02_kinetic",
+      "path": "repository-downloads/tuzhechen2005/opus-video-skills/skills/kinetic-reel/template",
+      "command": [
+        "npm",
+        "install",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "--cache",
+        "repository-preparation/cache/npm",
+        "--package-lock=false"
+      ],
+      "exit_code": 0,
+      "log": "repository-preparation/logs/R02_kinetic_npm.log",
+      "manifest": {
+        "name": "kinetic-reel",
+        "version": "1.0.0",
+        "private": true,
+        "description": "Kinetic-typography reel: canvas 2D type + three.js layers + WebGL post, rendered frame by frame in headless Chrome",
+        "scripts": {
+          "sheet": "node render.mjs --sheet=1,4,7,10,13,15.5 --cols=3 --w=640 --out=out/check/sheet.jpg",
+          "frames": "node render.mjs --frames --workers=4",
+          "score": "node music/score.mjs",
+          "encode": "node render.mjs --encode --audio=assets/score.m4a --out=out/reel.mp4"
+        },
+        "dependencies": {
+          "puppeteer-core": "^25.11.0",
+          "three": "0.160.0"
+        }
+      },
+      "npm_ls_exit": 0,
+      "installed_versions": {
+        "version": "1.0.0",
+        "name": "kinetic-reel",
+        "dependencies": {
+          "puppeteer-core": {
+            "version": "25.12.0",
+            "resolved": "https://registry.npmjs.org/puppeteer-core/-/puppeteer-core-25.12.0.tgz",
+            "overridden": false
+          },
+          "three": {
+            "version": "0.160.0",
+            "resolved": "https://registry.npmjs.org/three/-/three-0.160.0.tgz",
+            "overridden": false
+          }
+        }
+      },
+      "lock_preserved": "package-lock disabled",
+      "dependency_lifecycle_scripts_suppressed": []
+    },
+    {
+      "scope": "R02_painted",
+      "path": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template",
+      "command": [
+        "npm",
+        "ci",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "--cache",
+        "repository-preparation/cache/npm"
+      ],
+      "exit_code": 0,
+      "log": "repository-preparation/logs/R02_painted_npm.log",
+      "manifest": {
+        "name": "claude-animation-base",
+        "version": "1.0.0",
+        "private": true,
+        "license": "MIT",
+        "description": "Clawd, painted in p5.brush: a character kit and guide for making hand-painted Clawd animations",
+        "scripts": {
+          "sheet": "node render.mjs --sheet=0,1,2,3,4,5 --out=out/sheet.jpg",
+          "video": "node render.mjs --clip --out=out/video.mp4"
+        },
+        "dependencies": {
+          "p5": "^2.3.3",
+          "p5.brush": "^2.2.3",
+          "puppeteer-core": "^25.11.0"
+        }
+      },
+      "npm_ls_exit": 0,
+      "installed_versions": {
+        "version": "1.0.0",
+        "name": "claude-animation-base",
+        "dependencies": {
+          "p5.brush": {
+            "version": "2.2.3",
+            "resolved": "https://registry.npmjs.org/p5.brush/-/p5.brush-2.2.3.tgz",
+            "overridden": false
+          },
+          "p5": {
+            "version": "2.3.3",
+            "resolved": "https://registry.npmjs.org/p5/-/p5-2.3.3.tgz",
+            "overridden": false
+          },
+          "puppeteer-core": {
+            "version": "25.11.0",
+            "resolved": "https://registry.npmjs.org/puppeteer-core/-/puppeteer-core-25.11.0.tgz",
+            "overridden": false
+          }
+        }
+      },
+      "lock_preserved": "npm ci",
+      "dependency_lifecycle_scripts_suppressed": []
+    },
+    {
+      "scope": "R03",
+      "path": "repository-downloads/lemomo-ai/lemo-opuscar",
+      "command": [
+        "npm",
+        "ci",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "--cache",
+        "repository-preparation/cache/npm"
+      ],
+      "exit_code": 0,
+      "log": "repository-preparation/logs/R03_npm.log",
+      "manifest": {
+        "name": "lemo-opuscar",
+        "version": "0.1.0",
+        "private": true,
+        "type": "module",
+        "description": "Film styles for coding agents: each style ships a prompt and a demo film made entirely in code, on a shared toolkit.",
+        "engines": {
+          "node": ">=20"
+        },
+        "license": "MIT",
+        "dependencies": {
+          "playwright-core": "^1.63.0",
+          "three": "^0.170.0"
+        }
+      },
+      "npm_ls_exit": 0,
+      "installed_versions": {
+        "version": "0.1.0",
+        "name": "lemo-opuscar",
+        "dependencies": {
+          "playwright-core": {
+            "version": "1.63.0",
+            "resolved": "https://registry.npmjs.org/playwright-core/-/playwright-core-1.63.0.tgz",
+            "overridden": false
+          },
+          "three": {
+            "version": "0.170.0",
+            "resolved": "https://registry.npmjs.org/three/-/three-0.170.0.tgz",
+            "overridden": false
+          }
+        }
+      },
+      "lock_preserved": "npm ci",
+      "dependency_lifecycle_scripts_suppressed": []
+    }
+  ],
+  "python": {
+    "venv": "repository-downloads/lemomo-ai/lemo-opuscar/.venv",
+    "install_exit_code": 0,
+    "command": "uv pip install --python .venv/bin/python --cache-dir repository-preparation/cache/uv -r requirements.txt",
+    "log": "repository-preparation/logs/R03_python.log",
+    "import_check": {
+      "exit": 0,
+      "stdout": "{\"numpy\": \"2.5.3\", \"scipy\": \"1.18.1\", \"soundfile\": \"0.14.0\", \"soxr\": \"1.1.0\", \"PIL\": \"12.3.0\"}\n",
+      "stderr": ""
+    }
+  },
+  "checks": [
+    {
+      "scope": "R01",
+      "test": "Node module resolution",
+      "exit": 0,
+      "stdout": "[{\"name\":\"p5\",\"path\":\"repository-downloads/JohnHeibel/ClaudeAnimationBase/node_modules/p5/dist/app.js\"},{\"name\":\"p5.brush\",\"path\":\"repository-downloads/JohnHeibel/ClaudeAnimationBase/node_modules/p5.brush/dist/p5.brush.js\"},{\"name\":\"puppeteer-core\",\"path\":\"repository-downloads/JohnHeibel/ClaudeAnimationBase/node_modules/puppeteer-core/lib/puppeteer/puppeteer-core.js\"}]\n",
+      "stderr": ""
+    },
+    {
+      "scope": "R02_kinetic",
+      "test": "Node module resolution",
+      "exit": 0,
+      "stdout": "[{\"name\":\"puppeteer-core\",\"path\":\"repository-downloads/tuzhechen2005/opus-video-skills/skills/kinetic-reel/template/node_modules/puppeteer-core/lib/puppeteer/puppeteer-core.js\"},{\"name\":\"three\",\"path\":\"repository-downloads/tuzhechen2005/opus-video-skills/skills/kinetic-reel/template/node_modules/three/build/three.cjs\"}]\n",
+      "stderr": ""
+    },
+    {
+      "scope": "R02_painted",
+      "test": "Node module resolution",
+      "exit": 0,
+      "stdout": "[{\"name\":\"p5\",\"path\":\"repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/node_modules/p5/dist/app.js\"},{\"name\":\"p5.brush\",\"path\":\"repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/node_modules/p5.brush/dist/p5.brush.js\"},{\"name\":\"puppeteer-core\",\"path\":\"repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/node_modules/puppeteer-core/lib/puppeteer/puppeteer-core.js\"}]\n",
+      "stderr": ""
+    },
+    {
+      "scope": "R03",
+      "test": "Node module resolution",
+      "exit": 0,
+      "stdout": "[{\"name\":\"playwright-core\",\"path\":\"repository-downloads/lemomo-ai/lemo-opuscar/node_modules/playwright-core/index.js\"},{\"name\":\"three\",\"path\":\"repository-downloads/lemomo-ai/lemo-opuscar/node_modules/three/build/three.cjs\"}]\n",
+      "stderr": ""
+    },
+    {
+      "scope": "R01",
+      "test": "Existing Chrome launch/version/close only, no scene loaded",
+      "exit": 0,
+      "stdout": "Chrome/154.0.8037.98\n",
+      "stderr": ""
+    },
+    {
+      "scope": "R03",
+      "test": "Existing Chrome launch/version/close only, no scene loaded",
+      "exit": 0,
+      "stdout": "154.0.8037.98\n",
+      "stderr": ""
+    }
+  ],
+  "paper_popup": {
+    "path": "repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-popup/demo",
+    "command": "npm ci --ignore-scripts --no-audit --no-fund --cache repository-preparation/cache/npm",
+    "exit": 0,
+    "npm_ls_exit": 0,
+    "installed": {
+      "version": "1.0.0",
+      "name": "paper-sprite",
+      "dependencies": {
+        "playwright-core": {
+          "version": "1.63.0",
+          "resolved": "https://registry.npmjs.org/playwright-core/-/playwright-core-1.63.0.tgz",
+          "overridden": false
+        },
+        "three": {
+          "version": "0.170.0",
+          "resolved": "https://registry.npmjs.org/three/-/three-0.170.0.tgz",
+          "overridden": false
+        }
+      }
+    },
+    "reason": "index.html imports ./node_modules/three/build/three.module.js and addons",
+    "log": "repository-preparation/logs/R03_paper_popup_npm.log"
+  },
+  "other_demo_manifests": [
+    {
+      "path": "repository-downloads/lemomo-ai/lemo-opuscar/styles/halftone-dossier/demo",
+      "manifest": {
+        "name": "cat-case",
+        "version": "1.0.0",
+        "description": "",
+        "main": "index.js",
+        "scripts": {
+          "test": "echo \"Error: no test specified\" && exit 1"
+        },
+        "keywords": [],
+        "author": "",
+        "license": "ISC",
+        "type": "commonjs",
+        "dependencies": {
+          "playwright-core": "^1.63.0"
+        }
+      },
+      "status": "satisfied via ancestor root node_modules; separate redundant install deferred",
+      "resolution_exit": 0,
+      "resolved_path": "repository-downloads/lemomo-ai/lemo-opuscar/node_modules/playwright-core/index.js",
+      "scripts_not_executed": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      }
+    },
+    {
+      "path": "repository-downloads/lemomo-ai/lemo-opuscar/styles/game-show/demo",
+      "manifest": {
+        "name": "game-show-demo",
+        "version": "1.0.0",
+        "description": "",
+        "main": "index.js",
+        "scripts": {
+          "test": "echo \"Error: no test specified\" && exit 1"
+        },
+        "keywords": [],
+        "author": "",
+        "license": "ISC",
+        "type": "commonjs",
+        "dependencies": {
+          "playwright-core": "^1.63.0"
+        }
+      },
+      "status": "satisfied via ancestor root node_modules; separate redundant install deferred",
+      "resolution_exit": 0,
+      "resolved_path": "repository-downloads/lemomo-ai/lemo-opuscar/node_modules/playwright-core/index.js",
+      "scripts_not_executed": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      }
+    }
+  ],
+  "browser": {
+    "path": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "version": "154.0.8037.98",
+    "R01_R02_env": "CHROME_PATH",
+    "R03_env": "PLAYWRIGHT_CHROME",
+    "download": "skipped; installed Chrome successfully launched through both Puppeteer and Playwright, no page content loaded"
+  },
+  "representative_capabilities": {
+    "illustrated_painted": [
+      "R01/src/core.js",
+      "R01/studio.html",
+      "R02/skills/painted-animation/template/studio.html"
+    ],
+    "kinetic_dimensional": [
+      "R02/skills/kinetic-reel/template/render.mjs",
+      "R02/skills/kinetic-reel/template/package.json"
+    ],
+    "print": [
+      "R03/styles/risograph/demo/riso.js",
+      "R03/styles/engraving/demo/engine/burin.js",
+      "R03/styles/woodcut/demo/engine/hatch.js"
+    ],
+    "dimensional": [
+      "R03/styles/paper-popup/demo/index.html",
+      "R03/styles/paper-popup/demo/render.mjs"
+    ],
+    "shared": [
+      "R03/core/lib.js",
+      "R03/core/render/browser.mjs"
+    ]
+  },
+  "deferred": [
+    "R03 voice tier requirements-voice.txt and voice models (outside core animation dependency scope)",
+    "R03 optional music tier requirements-music.txt (numba physical pluck synthesis)",
+    "R03 requirements-dev.txt maintainer tier",
+    "Other style demos use shared root core JS, Three and Python requirements; no duplicate per-style installation"
+  ],
+  "media_generated": false,
+  "versions_checks_note": "Module resolution and browser launch verified. No scene rendered; visual suitability/performance remains unverified.",
+  "entrypoint_missing": [],
+  "source_git_status": {
+    "R01": "",
+    "R02": "",
+    "R03": ""
+  }
+}

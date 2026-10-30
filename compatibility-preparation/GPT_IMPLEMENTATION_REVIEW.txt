@@ -1,0 +1,54 @@
+GPT IMPLEMENTATION REVIEW — 2026-10-07
+
+VERDICT
+The repository-derived library is a useful, real implementation. Keep it as the current draft. It needs targeted export/cache and exception-safety corrections before production adoption or a rendered verification pass.
+
+Source reuse is substantive: the complete R02 painted base is adopted with recorded R01 provenance; the full five-kind R06 particle mechanism and dependency closure are adapted; R02/R03/R06 numeric variants are retained. The library is more than a source router or a stub.
+
+REVIEW EVIDENCE
+Three concurrent source reviews cover the base/export driver, numeric modules and adapter/test integration.
+GPT independently ran node shared-animation-library/tests/verify.mjs: exit 0, 25/25 checks pass. This rewrote its normal verify-results.json result file; implementation source was not edited.
+Reviewed the implementation report, checkpoint, README, provenance map and tests. Focused non-rendering adapter probes reproduced the nested Canvas-save failure and partial installation after rejection.
+No browser drawing, images, screenshots, frames, audio processing or video were produced.
+
+PRIORITY FINDINGS
+
+P1 — Soundtrack does not follow the configured master excerpt
+shared-animation-library/base/render.mjs:155–158 and60–65
+Particle cues convert source time using sourceAudioOffsetSeconds, but clip audio seeks only by range start a; separate-frame encoding applies no source seek. A recording offset10 with a source cue12.4 places a visual cue at local2.4 while exporting audio from source0. Use offset plus selected local start in both export modes. Inspect actual FFmpeg arguments in non-rendering tests.
+
+P1 — Cached frames are not bound to a production identity
+shared-animation-library/base/render.mjs:53,135–145 and60–65
+Every root/entry writes cwd-relative out/frames. Resume trusts any prior JPEG larger than1000bytes, and encoding reads an unbounded sequence. Another source/config/fps/dimension/range can silently reuse earlier images or retain a longer video's tail. Define a manifest tied to entry/config/source/assets and output parameters, with bounded selected indices. Reuse the existing production renderer's identity approach where suitable rather than introducing a second untracked cache convention.
+
+P1 — A nonzero frame range cannot be encoded reliably
+shared-animation-library/base/render.mjs:134–145 and60–65
+At24fps, range2:4 produces f00048..f00095 while --encode has no -start_number and no selected-range metadata. Record the first frame, count, fps, local range and audio offset, then use them for sequence input and soundtrack alignment.
+
+P2 — Clip export can report success after encoder failure
+shared-animation-library/base/render.mjs:157–168
+The driver prints wrote after a close event without requiring zero exit. Attach error/close handling at spawn time, propagate failure, stop feeding on failed child processes and report success only for a completed successful encode. These driver limitations are largely inherited upstream, but remain actionable in the reusable derived library.
+
+P2 — Particle draw failures leak nested Canvas state
+shared-animation-library/adapters/r06-burst-particles.mjs:17–18,30–36
+shared-animation-library/adapters/overlay-dispatcher.mjs:31–32
+The dispatcher restores one save; original particle helpers can leave additional saves when a real drawing operation throws. Reproduced spark stroke failure leaves depth2, alpha.8100406195 and source-over instead of sentinel depth0, alpha.3 and multiply. Make the adapter's nested saves exception-safe while recording the intentional source adaptation. Test failures inside actual spark/debris/confetti/ember paths, not only an independent failing layer.
+
+OTHER ACTIONABLE GAPS
+- Normalize/validate one PROJECT configuration before sizing the core, output canvas and viewport. Missing/invalid dimensions currently receive inconsistent handling.
+- Validate a particle layer before mutating the host hook, or roll back a newly created dispatcher if installation fails.
+- Upgrade the recording context's affine transform bookkeeping; translate/rotate/scale currently do not change its matrix, weakening transform restoration claims.
+- Document the explicit beatPulse seconds-per-beat argument in the r02 namespace; it differs from the original global closure's calling convention.
+- Use precise sampled-equality wording in numeric evidence; the current comparator accepts signed-zero differences. Extreme time-input validation is a low-priority hardening issue, outside ordinary reel inputs.
+
+DOCUMENTED PENDING PRODUCTION WORK
+Actual browser module loading/readiness/font availability is still unverified. Portrait scene layouts are still unauthored; reference loops/placeholder/karaoke retain landscape coordinates. Offline fonts remain optional preparation. These are accurately disclosed rather than new hidden runtime claims.
+The adapter is installed empty in the default host; a song must supply its own particle events and scene code. The numeric common module is available but the preserved base still contains its own upstream helpers; further caller migration must be deliberate and tested.
+
+RECOMMENDED NEXT ACTION
+GPT can repair the export planning/cache and adapter cleanup, add focused non-rendering regression checks and update the evidence. Another Claude investigation pass is unnecessary for these findings. Keep media generation/rendering pending its existing stage authorization. No fixes were applied during this review.
+
+DETAIL REPORTS
+REVIEW_BASE.txt
+REVIEW_ADAPTER.txt
+REVIEW_NUMERIC.txt

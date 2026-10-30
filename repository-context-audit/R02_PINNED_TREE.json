@@ -1,0 +1,655 @@
+{
+  "sha": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+  "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+  "tree": [
+    {
+      "path": ".claude-plugin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "62679334ecd2ccf9a12f3c5147959a3577655c66",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/62679334ecd2ccf9a12f3c5147959a3577655c66"
+    },
+    {
+      "path": ".claude-plugin/marketplace.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9085a182a3049526d63a69b5c3b9fd2450ec3b1c",
+      "size": 1454,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/9085a182a3049526d63a69b5c3b9fd2450ec3b1c"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bc97e084e590926365a45999e26ef33f7854752",
+      "size": 48,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/1bc97e084e590926365a45999e26ef33f7854752"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b115fac360c75bd9e19cc1ddef2e286a4e69da0",
+      "size": 1265,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/3b115fac360c75bd9e19cc1ddef2e286a4e69da0"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "455ae90b2a04b97fb6c04738be76cacd52cf2dde",
+      "size": 4953,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/455ae90b2a04b97fb6c04738be76cacd52cf2dde"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4870843cedc940016d565931361881bda84b75e6",
+      "size": 4930,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/4870843cedc940016d565931361881bda84b75e6"
+    },
+    {
+      "path": "skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9d9cce8a1b673cb0c34857f64d15b528318d94f1",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/9d9cce8a1b673cb0c34857f64d15b528318d94f1"
+    },
+    {
+      "path": "skills/kinetic-reel",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fd6c3135201bfaa4d9a3e6d8f3b3f386b3deb5ea",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/fd6c3135201bfaa4d9a3e6d8f3b3f386b3deb5ea"
+    },
+    {
+      "path": "skills/kinetic-reel/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "954886455398e7a88d9a788954f201ffe6ebe898",
+      "size": 5269,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/954886455398e7a88d9a788954f201ffe6ebe898"
+    },
+    {
+      "path": "skills/kinetic-reel/README.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cae83cb7aa0b8c547e4f2de519207b7144b7b269",
+      "size": 5062,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/cae83cb7aa0b8c547e4f2de519207b7144b7b269"
+    },
+    {
+      "path": "skills/kinetic-reel/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37f735d9c494a617381396bfd0c7816643be5d34",
+      "size": 7421,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/37f735d9c494a617381396bfd0c7816643be5d34"
+    },
+    {
+      "path": "skills/kinetic-reel/docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c6f5776dc50ef7aef22883b19000ea361631b1b",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/7c6f5776dc50ef7aef22883b19000ea361631b1b"
+    },
+    {
+      "path": "skills/kinetic-reel/docs/work-reel-sheet.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d53172cfd33612cf7454b1415bdd5d6d4a9cea4",
+      "size": 226491,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/8d53172cfd33612cf7454b1415bdd5d6d4a9cea4"
+    },
+    {
+      "path": "skills/kinetic-reel/docs/work-reel.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4d2b27bbc314c355d470bf57394b4c8a58647d4",
+      "size": 2031064,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/c4d2b27bbc314c355d470bf57394b4c8a58647d4"
+    },
+    {
+      "path": "skills/kinetic-reel/examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f03a8b1a8121d04f74bacce363a9bd9efb9a558a",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/f03a8b1a8121d04f74bacce363a9bd9efb9a558a"
+    },
+    {
+      "path": "skills/kinetic-reel/examples/site-intro",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1774bd58ea134fc9e6444a5db2a704824a0d2c9f",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/1774bd58ea134fc9e6444a5db2a704824a0d2c9f"
+    },
+    {
+      "path": "skills/kinetic-reel/examples/site-intro/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4dfd508d594cf12aa99b1dd1d93b08707e977003",
+      "size": 1219,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/4dfd508d594cf12aa99b1dd1d93b08707e977003"
+    },
+    {
+      "path": "skills/kinetic-reel/examples/site-intro/css",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f3d3a48146a028130e9ce11954bd6f1fc66d27e5",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/f3d3a48146a028130e9ce11954bd6f1fc66d27e5"
+    },
+    {
+      "path": "skills/kinetic-reel/examples/site-intro/css/intro-reel.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "acc4e1cac7d6faa70128afdfd32d7083ff1f013c",
+      "size": 16587,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/acc4e1cac7d6faa70128afdfd32d7083ff1f013c"
+    },
+    {
+      "path": "skills/kinetic-reel/examples/site-intro/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac5c5b940668ed21f5b288cb21e5e224090ca89e",
+      "size": 5118,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/ac5c5b940668ed21f5b288cb21e5e224090ca89e"
+    },
+    {
+      "path": "skills/kinetic-reel/examples/site-intro/js",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4c4086a99679027c2d908b94a267f3cbd3e9fb40",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/4c4086a99679027c2d908b94a267f3cbd3e9fb40"
+    },
+    {
+      "path": "skills/kinetic-reel/examples/site-intro/js/intro-reel.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6968d71c6aa8bef5667e98d209ecc5bc39dfae54",
+      "size": 8882,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/6968d71c6aa8bef5667e98d209ecc5bc39dfae54"
+    },
+    {
+      "path": "skills/kinetic-reel/examples/site-intro/worker.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d07d369ad8bf5bad2fb7bf8103b7323bec287ae",
+      "size": 2815,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/1d07d369ad8bf5bad2fb7bf8103b7323bec287ae"
+    },
+    {
+      "path": "skills/kinetic-reel/examples/work-reel-26",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c33350f989d9bb3551c7a3b2d785e1ab0b00829c",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/c33350f989d9bb3551c7a3b2d785e1ab0b00829c"
+    },
+    {
+      "path": "skills/kinetic-reel/examples/work-reel-26/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a22a225be0d775e3f1aac5c55a051571e618937",
+      "size": 1194,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/9a22a225be0d775e3f1aac5c55a051571e618937"
+    },
+    {
+      "path": "skills/kinetic-reel/examples/work-reel-26/STORYBOARD.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6428fa3450f05ba08f28f4d1c7638230b1790336",
+      "size": 5159,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/6428fa3450f05ba08f28f4d1c7638230b1790336"
+    },
+    {
+      "path": "skills/kinetic-reel/examples/work-reel-26/cues.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4baa66c3b57568e53e25c503b767f9137212604d",
+      "size": 2400,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/4baa66c3b57568e53e25c503b767f9137212604d"
+    },
+    {
+      "path": "skills/kinetic-reel/examples/work-reel-26/reel.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "963ee22df3393d925c2afe353c1a94c682fa937d",
+      "size": 97821,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/963ee22df3393d925c2afe353c1a94c682fa937d"
+    },
+    {
+      "path": "skills/kinetic-reel/examples/work-reel-26/score.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbc4fc474c41d9d118df39ad7679e990a3b3b21b",
+      "size": 20043,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/cbc4fc474c41d9d118df39ad7679e990a3b3b21b"
+    },
+    {
+      "path": "skills/kinetic-reel/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3816d9187638b3ed0ec54cf7bafe840053ad698d",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/3816d9187638b3ed0ec54cf7bafe840053ad698d"
+    },
+    {
+      "path": "skills/kinetic-reel/references/sound.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "399a126aabe120ac8e2038aa148ce714cd47b2ab",
+      "size": 2967,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/399a126aabe120ac8e2038aa148ce714cd47b2ab"
+    },
+    {
+      "path": "skills/kinetic-reel/references/style-guide.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94ad72d81831c4262b8f69ea56f89238c8a5d75b",
+      "size": 5813,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/94ad72d81831c4262b8f69ea56f89238c8a5d75b"
+    },
+    {
+      "path": "skills/kinetic-reel/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "02204931b0bdbc7b13e15a77a52591f4bad26947",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/02204931b0bdbc7b13e15a77a52591f4bad26947"
+    },
+    {
+      "path": "skills/kinetic-reel/scripts/new_project.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "2cb4826db1d84a5fc343d7e3120c134c09ca8937",
+      "size": 1163,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/2cb4826db1d84a5fc343d7e3120c134c09ca8937"
+    },
+    {
+      "path": "skills/kinetic-reel/template",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ce4793c98b8035e68196716fe38df80b65352e8d",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/ce4793c98b8035e68196716fe38df80b65352e8d"
+    },
+    {
+      "path": "skills/kinetic-reel/template/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3c57a29bb0cf7edf020b0e2dbd4e19735cb899d",
+      "size": 31,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/f3c57a29bb0cf7edf020b0e2dbd4e19735cb899d"
+    },
+    {
+      "path": "skills/kinetic-reel/template/STORYBOARD.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8708c2f5a9ca3ce0a171aa23ceef5a6bd35ab644",
+      "size": 951,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/8708c2f5a9ca3ce0a171aa23ceef5a6bd35ab644"
+    },
+    {
+      "path": "skills/kinetic-reel/template/music",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "672df1941fe54abe72f9481fd94e2a61305ca9b6",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/672df1941fe54abe72f9481fd94e2a61305ca9b6"
+    },
+    {
+      "path": "skills/kinetic-reel/template/music/score.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a6ee838a3d4016c965e9d05121dc61ae192d9ec",
+      "size": 12272,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/7a6ee838a3d4016c965e9d05121dc61ae192d9ec"
+    },
+    {
+      "path": "skills/kinetic-reel/template/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2447ea2ef2aeaeb6d54680f6e9598c6e7c648073",
+      "size": 583,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/2447ea2ef2aeaeb6d54680f6e9598c6e7c648073"
+    },
+    {
+      "path": "skills/kinetic-reel/template/reel",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1aa9094a67d54ede4f8bbe9b04a20e4885753424",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/1aa9094a67d54ede4f8bbe9b04a20e4885753424"
+    },
+    {
+      "path": "skills/kinetic-reel/template/reel/cues.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02cd7729a3cfcfdb0a54fb7772547e6a495250ff",
+      "size": 964,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/02cd7729a3cfcfdb0a54fb7772547e6a495250ff"
+    },
+    {
+      "path": "skills/kinetic-reel/template/reel/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61dff6490c4eed341477b42e930c167697100aa9",
+      "size": 1030,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/61dff6490c4eed341477b42e930c167697100aa9"
+    },
+    {
+      "path": "skills/kinetic-reel/template/reel/reel.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9258972e9ba60456d50fab16735c8cfb0c758b3",
+      "size": 39146,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/c9258972e9ba60456d50fab16735c8cfb0c758b3"
+    },
+    {
+      "path": "skills/kinetic-reel/template/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "659112143e7cb57ddcc7ea8fc6f02a5ba0ca7df0",
+      "size": 11874,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/659112143e7cb57ddcc7ea8fc6f02a5ba0ca7df0"
+    },
+    {
+      "path": "skills/painted-animation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c78585e361fe14e62c24f14487fddc09049c628a",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/c78585e361fe14e62c24f14487fddc09049c628a"
+    },
+    {
+      "path": "skills/painted-animation/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b50a5c727891cf502c933897c1c0d3819240b3be",
+      "size": 5773,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/b50a5c727891cf502c933897c1c0d3819240b3be"
+    },
+    {
+      "path": "skills/painted-animation/README.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f602a8b582e8fcb5175a76c2d09b5fcb5a8bfaf2",
+      "size": 5305,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/f602a8b582e8fcb5175a76c2d09b5fcb5a8bfaf2"
+    },
+    {
+      "path": "skills/painted-animation/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54772e60f20d1cc7911a3aa02099e4700a8a1bf6",
+      "size": 7570,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/54772e60f20d1cc7911a3aa02099e4700a8a1bf6"
+    },
+    {
+      "path": "skills/painted-animation/docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7d17436498386a33ce602359bf79f2bfd2820ed5",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/7d17436498386a33ce602359bf79f2bfd2820ed5"
+    },
+    {
+      "path": "skills/painted-animation/docs/koi-gag.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4430b8f1e9eddbcdfdf7d621ebd6d0dd702d4f4",
+      "size": 4720659,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/c4430b8f1e9eddbcdfdf7d621ebd6d0dd702d4f4"
+    },
+    {
+      "path": "skills/painted-animation/docs/xiaozhen-sheet.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82ab8ef88e1ef9bf82523af4e3111d90fb1f7ce0",
+      "size": 297994,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/82ab8ef88e1ef9bf82523af4e3111d90fb1f7ce0"
+    },
+    {
+      "path": "skills/painted-animation/examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "47b40b1c38a0af5523e05c179d1d371d6a23e468",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/47b40b1c38a0af5523e05c179d1d371d6a23e468"
+    },
+    {
+      "path": "skills/painted-animation/examples/xiaozhen",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4e6c9517329e4253423e04e0a30ae0347f352a82",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/4e6c9517329e4253423e04e0a30ae0347f352a82"
+    },
+    {
+      "path": "skills/painted-animation/examples/xiaozhen/STORYBOARD.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1356afe20b1d8ee395ea3593d3eef04f97b19ea4",
+      "size": 3535,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/1356afe20b1d8ee395ea3593d3eef04f97b19ea4"
+    },
+    {
+      "path": "skills/painted-animation/examples/xiaozhen/xz_set.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ba2f07551082f380e7bbec554a2618bd8eb017e",
+      "size": 22032,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/2ba2f07551082f380e7bbec554a2618bd8eb017e"
+    },
+    {
+      "path": "skills/painted-animation/examples/xiaozhen/xz_shots.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "002c7e94380ecb4e3305f869c47d7cb25f4dfd32",
+      "size": 24332,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/002c7e94380ecb4e3305f869c47d7cb25f4dfd32"
+    },
+    {
+      "path": "skills/painted-animation/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dcf675d79dce78e7c9810a85148d5d969caace6f",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/dcf675d79dce78e7c9810a85148d5d969caace6f"
+    },
+    {
+      "path": "skills/painted-animation/references/music-video.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cea67f3be511202bcf68df4a7295be1552fa486e",
+      "size": 6846,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/cea67f3be511202bcf68df4a7295be1552fa486e"
+    },
+    {
+      "path": "skills/painted-animation/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0fd00abb503a50598b85a5617f9f59bdca9b9109",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/0fd00abb503a50598b85a5617f9f59bdca9b9109"
+    },
+    {
+      "path": "skills/painted-animation/scripts/beat_grid.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "fc358a6ab09b7d82c2394fafb65dd05eaf3222dc",
+      "size": 2176,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/fc358a6ab09b7d82c2394fafb65dd05eaf3222dc"
+    },
+    {
+      "path": "skills/painted-animation/scripts/new_project.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "f169df838ba07a5088a3fe3df517f368b12ade83",
+      "size": 1507,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/f169df838ba07a5088a3fe3df517f368b12ade83"
+    },
+    {
+      "path": "skills/painted-animation/template",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ca5f3e7c558b063ea34dcd4e9424ed89f9f44ce6",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/ca5f3e7c558b063ea34dcd4e9424ed89f9f44ce6"
+    },
+    {
+      "path": "skills/painted-animation/template/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4bc71e82a7827c326a6aacb6a47692bf3e23cf7",
+      "size": 18,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/f4bc71e82a7827c326a6aacb6a47692bf3e23cf7"
+    },
+    {
+      "path": "skills/painted-animation/template/ANIMATION_GUIDE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "055bf10bb1d1e86963e4429665130ddbd1026b3e",
+      "size": 36029,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/055bf10bb1d1e86963e4429665130ddbd1026b3e"
+    },
+    {
+      "path": "skills/painted-animation/template/LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1215a850be1ff927938e0cbd7d633cc68c9a397d",
+      "size": 1068,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/1215a850be1ff927938e0cbd7d633cc68c9a397d"
+    },
+    {
+      "path": "skills/painted-animation/template/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53816fa825aad75212c43f6145abdd77d55c2064",
+      "size": 3786,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/53816fa825aad75212c43f6145abdd77d55c2064"
+    },
+    {
+      "path": "skills/painted-animation/template/docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0e4503494e3db457e01d54b5af906f5bf8b2fbd4",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/0e4503494e3db457e01d54b5af906f5bf8b2fbd4"
+    },
+    {
+      "path": "skills/painted-animation/template/docs/emotions.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2de20208f90c119c7681cf6a64670a2d336b822",
+      "size": 557572,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/e2de20208f90c119c7681cf6a64670a2d336b822"
+    },
+    {
+      "path": "skills/painted-animation/template/docs/views.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3304f3ff2eb29e08c9e815bbcabfc8ba98f18c5d",
+      "size": 491103,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/3304f3ff2eb29e08c9e815bbcabfc8ba98f18c5d"
+    },
+    {
+      "path": "skills/painted-animation/template/gpu_probe.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebffd767226e8abfd642730a82edf75fffe9052e",
+      "size": 1299,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/ebffd767226e8abfd642730a82edf75fffe9052e"
+    },
+    {
+      "path": "skills/painted-animation/template/package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5e5f2fc492ed321d474f1ce05d0895aa52c376c",
+      "size": 19940,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/e5e5f2fc492ed321d474f1ce05d0895aa52c376c"
+    },
+    {
+      "path": "skills/painted-animation/template/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c64bfd2c0e99b25528733643b4e731d351c53d67",
+      "size": 468,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/c64bfd2c0e99b25528733643b4e731d351c53d67"
+    },
+    {
+      "path": "skills/painted-animation/template/render.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e675a87f91ce72bf61cb8f93a998fb97e76a25c0",
+      "size": 11754,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/e675a87f91ce72bf61cb8f93a998fb97e76a25c0"
+    },
+    {
+      "path": "skills/painted-animation/template/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6e057511b6875f145bb9323894730d9eeccf494e",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/6e057511b6875f145bb9323894730d9eeccf494e"
+    },
+    {
+      "path": "skills/painted-animation/template/src/clawd.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "138e16a125187ac617d83f5449514e152098a235",
+      "size": 50584,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/138e16a125187ac617d83f5449514e152098a235"
+    },
+    {
+      "path": "skills/painted-animation/template/src/config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "276c3689725426ac99deebbf659c9e99d03433e5",
+      "size": 363,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/276c3689725426ac99deebbf659c9e99d03433e5"
+    },
+    {
+      "path": "skills/painted-animation/template/src/core.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0eaaf5ed5d9c070dfb70cc8a8792a787f49c8407",
+      "size": 22143,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/0eaaf5ed5d9c070dfb70cc8a8792a787f49c8407"
+    },
+    {
+      "path": "skills/painted-animation/template/src/karaoke.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0b67c3f5f09c0ea91964f4abb0601802b101cac",
+      "size": 4220,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/e0b67c3f5f09c0ea91964f4abb0601802b101cac"
+    },
+    {
+      "path": "skills/painted-animation/template/src/scenes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d2836c4a65c069b063a54819c243ad9c04fa5ce7",
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/trees/d2836c4a65c069b063a54819c243ad9c04fa5ce7"
+    },
+    {
+      "path": "skills/painted-animation/template/src/scenes/demo.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c494bb0e4fe1c3dfebed1109d222c51afa4be0bf",
+      "size": 11982,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/c494bb0e4fe1c3dfebed1109d222c51afa4be0bf"
+    },
+    {
+      "path": "skills/painted-animation/template/src/sheets.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86897a9eb8329914c51614b96ff3247fcee60c23",
+      "size": 2651,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/86897a9eb8329914c51614b96ff3247fcee60c23"
+    },
+    {
+      "path": "skills/painted-animation/template/src/timeline.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd93bbce57fc313d80eb8b7c9b0d459d417b3453",
+      "size": 2994,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/fd93bbce57fc313d80eb8b7c9b0d459d417b3453"
+    },
+    {
+      "path": "skills/painted-animation/template/studio.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "192d550a684e798cc83ec5a26e07b1e8114a3db6",
+      "size": 1618,
+      "url": "https://api.github.com/repos/tuzhechen2005/opus-video-skills/git/blobs/192d550a684e798cc83ec5a26e07b1e8114a3db6"
+    }
+  ],
+  "truncated": false
+}

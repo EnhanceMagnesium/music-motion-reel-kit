@@ -1,0 +1,172 @@
+GPT RESOURCE SELECTION REPORT — CLAUDE MUSIC ANIMATION PROJECT
+Decision date: October 5, 2026
+
+DECISION OWNER AND PURPOSE
+This is GPT's source-selection report for the user's project. Claude imports the approved material and applies the assigned roles below. Source suitability and the current implementation route have been decided here. A retrieval failure or tool limitation changes the import ledger status; it leaves this selection intact.
+
+PROJECT CONTRACT
+Create a complete 35–40-second code-rendered music animation video with a hard maximum of 45 seconds. Native 9:16, 1080×1920. The user manually pastes Grok's returned brief and attaches the selected Suno recording in Claude's conversation composer. Grok's brief is text-derived creative direction; Claude measures the actual excerpt and timing. Stills and keyframes precede the complete first video candidate.
+
+IMPLEMENTATION DECISION
+Keep the existing music-motion-reel-kit renderer as the source and rendering baseline. It has demonstrated deterministic frame capture and missing-frame recovery in its prior technical demo. It still requires song-specific drawing code, exact excerpt preparation or source-offset support, and a duration gate for the 45-second production cap. Resource imports supply techniques and implementation references for those tasks.
+
+Use ClaudeAnimationBase, opus-video-skills and Lemo as the main animation-technique library. Use HyperFrames for timing/audio-map/composition knowledge. Use makevoid and Hanif for targeted planning and drawing methods. Use the MIT code portions of Evangelion for original instrument/data architecture where the approved song needs them. Preserve source notices in adapted code.
+
+PDoomVideo, Domenic and Austerlitz are approved for source study. Their reviewed trees and metadata establish no general reuse grant, so this plan assigns them an architecture/cinematic-reference role. Use separately licensed helpers or original project implementation for the deliverable. Catalogs are approved for indexing and technique examples, with creator media and each original work tracked separately.
+
+HyperFrames, Remotion, Lemo's exporter, Hanif's exporter and the reference-film pipelines are documentation or source references within this plan. The working local renderer remains the adopted engine. Optional future framework migration or paid generated performance is a separate project decision supported by a concrete requirement.
+
+SOURCE-BY-SOURCE DECISIONS
+
+R01 — https://github.com/JohnHeibel/ClaudeAnimationBase
+Approved role: adaptable-code.
+Import scope: README LICENSE ANIMATION_GUIDE.md render.mjs src/ and dependency manifests.
+Assigned use: Use character acting, pure-time motion helpers, stable drawing seeds and saved-frame patterns; integrate selected helpers into the existing renderer.
+Observed rights boundary: MIT.
+
+R02 — https://github.com/tuzhechen2005/opus-video-skills
+Approved role: adaptable-code.
+Import scope: README LICENSE and complete skills/painted-animation/ and skills/kinetic-reel/ source trees.
+Assigned use: Use the two style families, modular cues and scene functions; lyric line-fill is a visual effect, with word timing measured separately.
+Observed rights boundary: MIT.
+
+R03 — https://github.com/lemomo-ai/lemo-opuscar
+Approved role: adaptable-code-and-style.
+Import scope: README LICENSE DIRECTOR.md TECHNIQUE.md core/ and all 43 styles/ guide and demo source directories.
+Assigned use: Use material rules, signature transitions and selected deterministic drawing helpers. Retain the existing resumable encoder as the baseline.
+Observed rights boundary: MIT.
+
+R04 — https://github.com/heygen-com/hyperframes
+Approved role: timing-and-composition-reference.
+Import scope: README LICENSE docs/ and skills/ including music-to-video and composition timing references; retrieve any directly referenced analysis source.
+Assigned use: Use the audio-map schema, supplied-audio analysis and explicit seeking concepts. Renderer migration remains outside the current approved implementation.
+Observed rights boundary: Apache-2.0.
+
+R05 — https://github.com/makevoid/motion-graphics-music-video-skill
+Approved role: planning-and-source-reference.
+Import scope: README LICENSE and complete .claude/skills/motion-graphics-music-video/ source tree.
+Assigned use: Use character staging, callbacks, job ownership and source/derived-audio records. Keep its paid generation and new-music branches as attributed optional examples.
+Observed rights boundary: MIT.
+
+R06 — https://github.com/buildwithhanif/claude-animation-skill
+Approved role: adaptable-drawing-reference.
+Import scope: README LICENSE and complete plugins/claude-animation/ skill source tree.
+Assigned use: Use drawing helpers, stable seeds, style-bible and still-review methods. Keep the existing saved-frame export and selected Suno soundtrack.
+Observed rights boundary: MIT.
+
+R07 — https://github.com/bizarro/evangelion
+Approved role: adaptable-architecture-reference.
+Import scope: README LICENSE docs/ app source and package manifests; inventory bundled media separately.
+Assigned use: Use original audio-feature/data modules and instrument scene patterns for the user song. Recompose portrait scenes and produce song-specific data and original visual labels.
+Observed rights boundary: MIT code; media/font terms separate.
+
+R08 — https://github.com/JohnHeibel/PDoomVideo
+Approved role: read-only-architecture-study.
+Import scope: README ANIMATION_GUIDE.md render.mjs src/ and dependency manifests; record media inventory.
+Assigned use: Study chapter development, lyric/prop relationships and frame recovery. Implement original project code or use separately licensed base helpers.
+Observed rights boundary: Reuse grant not established.
+
+R09 — https://github.com/domenic/domenic.me
+Approved role: read-only-architecture-study.
+Import scope: src/we-didnt-start-the-scaling/; related author post src/posts/2026-09-26-how-we-didnt-start-the-scaling.md; root license metadata if present.
+Assigned use: Study separate per-recording timing and per-style engines. Inventory anisong assets as creator-owned references and author new project assets.
+Observed rights boundary: Reuse grant not established.
+
+R10 — https://github.com/WinterArc21/Battle-of-Austerlitz-Film
+Approved role: read-only-cinematic-study.
+Import scope: README render/scene/camera source and tools/render.mjs with referenced source/config files; inventory media and dependencies.
+Assigned use: Study camera paths, coherent environments and chunk scheduling. Develop a short song-specific arc through original project code.
+Observed rights boundary: Reuse grant not established.
+
+R11 — https://github.com/guanmo-ai/awesome-ai-motion
+Approved role: catalog-reference.
+Import scope: README variants LICENSE THIRD_PARTY and tracked catalog/analysis data.
+Assigned use: Use discovery categories and source-linked technique descriptions. Record original works as references with individual provenance.
+Observed rights boundary: MIT authored catalog; third-party material separate.
+
+R12 — https://github.com/yihui-dev/awesome-opus5-5-videos
+Approved role: catalog-and-prompt-reference.
+Import scope: README LICENSE complete data/ and prompts/.
+Assigned use: Import the 475 catalog records and prompt/post files; retain partial-prompt and original/remake evidence labels; adapt portal, morph and paper-theatre mechanisms.
+Observed rights boundary: MIT authored repository; creator works separate.
+
+R13 — https://github.com/athemeroy/awesome-claude-5-5-videos
+Approved role: catalog-and-production-reference.
+Import scope: README LICENSE THIRD_PARTY complete data/ and docs/.
+Assigned use: Use annotated cases, production-route descriptions and effect-fit guidance with attribution; preserve the difference between posts, files and reviewed cases.
+Observed rights boundary: CC BY 4.0 authored annotations; THIRD_PARTY exclusions.
+
+W01 — https://www.remotion.dev/docs/ai/skills
+Approved role: documentation-reference.
+Import scope: Supplied skills page and directly linked timing/audio/caption/render documentation.
+Assigned use: Use frame-based timing and editable caption concepts as technical references. Retain the current engine rather than creating a parallel React production stack.
+Observed rights boundary: Official documentation; underlying code has its own terms.
+
+W02 — https://www.remotion.dev/docs/license/pricing
+Approved role: license-reference.
+Import scope: Current pricing/license page and linked license text.
+Assigned use: Record the published individual/small-team terms for provenance; engine adoption is outside this current import decision.
+Observed rights boundary: Published license terms.
+
+W03 — https://domenic.me/how-we-didnt-start-the-scaling/
+Approved role: creative-architecture-reference.
+Import scope: Article text with author/date/source and linked project relation.
+Assigned use: Summarize useful timing/style separation and asset organization with attribution.
+Observed rights boundary: Author-owned article.
+
+W04 — https://evangelion-neon-overdrive.vercel.app/
+Approved role: visual-reference.
+Import scope: Available readable page structure and visual-reference record linked to R07.
+Assigned use: Use the interface hierarchy as visual context; repository files supply the importable source. Record retrieval failures accurately.
+Observed rights boundary: Code source MIT; demo media terms separate.
+
+W05 — https://www.movingimagearchive.com/gallery
+Approved role: discovery-reference.
+Import scope: Gallery index text and source-metadata structure.
+Assigned use: Use this index for named archival shot needs; individual footage candidates retain their own source records.
+Observed rights boundary: Per-item rights.
+
+W06 — https://www.movingimagearchive.com/sources/oud-amsterdam?clip=dfb09b7c-62fd-58e6-ab61-f82b557049f0&t=83.28,89.16
+Approved role: metadata-and-candidate-reference.
+Import scope: Film/clip metadata; source range 83.28–89.16; original provenance and rights record.
+Assigned use: Import the metadata now. The 5.88-second clip is a footage candidate when the approved song theme specifically needs that historical city imagery.
+Observed rights boundary: Specific film marked public domain.
+
+W07 — https://openbeelden.nl/media/1480062/Oud_Amsterdam
+Approved role: rights-and-source-reference.
+Import scope: Primary metadata; preserve redirect/resolved mirror such as openimages.eu for item1480062.
+Assigned use: Record title, producer/collection, item identity, duration and rights evidence.
+Observed rights boundary: Public Domain Mark on item1480062.
+
+W08 — https://x.com/0xMovez/status/2104216919033192746?s=20
+Approved role: provenance-reference.
+Import scope: Accessible post text or a reference-only record of the unavailable post.
+Assigned use: Use for provenance of the HyperFrames discussion; use the inspected repository/docs for operating facts.
+Observed rights boundary: Creator post.
+
+WHY THESE CHOICES FIT THIS PROJECT
+- ClaudeAnimationBase and opus-video-skills provide a direct path to stable character drawing, expressive motion, separate cue data and durable frames. Their code is MIT; project output still needs original portrait staging and the selected audio.
+- Lemo provides 43 actual style guides and a shared style vocabulary. Its renderer clears temporary segments on interruption, so the material and drawing techniques are more useful here than replacing the tested recovery path.
+- HyperFrames provides a useful supplied-audio map and modular composition model. Current CLI segmented recovery is documented but untested in this kit. Default 3000-frame segments are longer than a 40-second reel at 30 fps; meaningful partial recovery would require an eligible route and smaller configured segments. That extra engine work is deferred in this implementation decision.
+- makevoid combines paid generation with local compositing. Its planning, acting and receipts are relevant; the supplied Suno recording remains the soundtrack. The import is source acquisition, with paid services and generated replacement music recorded as external example paths.
+- Hanif has useful pure-time Node-canvas drawing and review methods. Its streamed export offers a different recovery profile, so retain the baseline durable frame export.
+- Evangelion's actual LICENSE is MIT although GitHub's classifier reports an ambiguous category. Its song/font/franchise material has separate provenance. Use the verified code license and original song-specific content.
+- PDoomVideo, Domenic and Austerlitz expose useful architecture but have no verified reuse license in the audited source trees. Keep their imported source in read-only study storage. Their assigned use is private source study and architecture reference; the deliverable uses separately licensed or original implementation and assets.
+- The three catalogs support creative discovery. Yihui has 475 entries with 196 partial prompt flags; Athemeroy distinguishes 1,401 files, 1,119 classified yes/likely files and 168 reviewed cases. Catalog counts describe evidence units, not complete buildable films.
+- Remotion's documentation describes a viable frame-based alternative, with published free terms for individuals and small teams. A second engine adds project work; retain these docs as reference within the selected route.
+- The Oud-Amsterdam item's primary indexed record carries a Public Domain Mark. Its metadata supports a candidate archive shot, while the song-specific brief determines whether that location/time is useful. Playback of the exact supplied clip was not verified during this review.
+
+WHAT IS APPROVED TO IMPORT
+Import every listed resource within the explicit scope in file 15. Preserve original URLs, redirected aliases, pinned source-file URLs, repository commit identity and retrieval dates. File 19 inventories every referenced exact HTTP URL, including deep links and metadata endpoints. Resolve duplicate repository/file references to one source snapshot with indexed paths.
+
+WHAT THE IMPORT PRODUCES
+A local or downloadable source-library containing actual retrieved source text/code, snapshot identities, rights evidence, a source catalog and an import ledger. Store raw source separately from project adaptations. Save a practical animation-method index connected to the approved roles and file paths. The link list is an input manifest; imported contents are the retrieved and saved files recorded in that ledger.
+
+CURRENT EVIDENCE LIMITS
+All listed repositories have been examined through documentation, file inventories and selected implementation. This review does not claim that all tracked files have already been imported. The approved import pass performs that scoped acquisition. Repository software was not installed or executed for this report. The live Evangelion page and exact archival clip had retrieval errors in the verification tool; their source/metadata records remain available references. Report actual access outcomes during import.
+
+LOCAL RESOURCES
+The earlier Movez course PDF and pasted conversation text are optional one-time reference resources listed in file 20. A local path identifies a file, while a Claude conversation uses files actually available through its tools or attached by the user. The removed supplied-MP4 supplemental section stays outside the default context pack.
+
+EVIDENCE AND ATTRIBUTION
+Use file 12 for the prior six-source inspection and file 21 for the current original-source/framework verification. Preserve MIT/Apache notices in adapted code and attribute Athemeroy's authored annotation guidance under CC BY 4.0. Each media asset, font, prompt disclosure, music file and outside video retains its own provenance record. The user's Suno recording supplies this project's soundtrack.

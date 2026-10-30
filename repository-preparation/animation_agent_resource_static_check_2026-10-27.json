@@ -1,0 +1,587 @@
+{
+  "active_kit": ".",
+  "date": "2026-10-27",
+  "check_count": 114,
+  "failure_count": 0,
+  "checks": [
+    {
+      "check": "catalog_has_unique_R01_R16",
+      "passed": true,
+      "detail": "rows=16; ids=['R01', 'R02', 'R03', 'R04', 'R05', 'R06', 'R07', 'R08', 'R09', 'R10', 'R11', 'R12', 'R13', 'R14', 'R15', 'R16']"
+    },
+    {
+      "check": "R14_checkout_catalog_commit_clean",
+      "passed": true,
+      "detail": "commit=e627941543d9988b155dc610bb9cc0115a5e365e; shallow=false; tracked=66; clean=True; catalog_path_match=True"
+    },
+    {
+      "check": "R14_license_lfs_submodule",
+      "passed": true,
+      "detail": "license_sha_ok=True; lfs_pointers=0; gitlinks=0; .gitmodules=False; .gitattributes=False"
+    },
+    {
+      "check": "R15_checkout_catalog_commit_clean",
+      "passed": true,
+      "detail": "commit=f9a8a041b85185ee4881b3471d3415e939aac772; shallow=false; tracked=20; clean=True; catalog_path_match=True"
+    },
+    {
+      "check": "R15_license_lfs_submodule",
+      "passed": true,
+      "detail": "license_sha_ok=True; lfs_pointers=0; gitlinks=0; .gitmodules=False; .gitattributes=False"
+    },
+    {
+      "check": "R16_checkout_catalog_commit_clean",
+      "passed": true,
+      "detail": "commit=aed9cfd3277740755f6bfc1155c7aa645403b760; shallow=false; tracked=44; clean=True; catalog_path_match=True"
+    },
+    {
+      "check": "R16_license_lfs_submodule",
+      "passed": true,
+      "detail": "license_sha_ok=True; lfs_pointers=0; gitlinks=0; .gitmodules=False; .gitattributes=False"
+    },
+    {
+      "check": "dependency_matrix_R14_R16",
+      "passed": true,
+      "detail": "new row counts={'R14': 1, 'R15': 1, 'R16': 1}"
+    },
+    {
+      "check": "manifest_has_16_skill_copies",
+      "passed": true,
+      "detail": "copies=16"
+    },
+    {
+      "check": ".claude/skills_contains_expected_skill_dirs",
+      "passed": true,
+      "detail": "['gsap-core', 'gsap-performance', 'gsap-plugins', 'gsap-react', 'gsap-timeline', 'gsap-utils', 'lottiefiles-motion-principles', 'motion-craft']"
+    },
+    {
+      "check": ".agents/skills_contains_expected_skill_dirs",
+      "passed": true,
+      "detail": "['gsap-core', 'gsap-performance', 'gsap-plugins', 'gsap-react', 'gsap-timeline', 'gsap-utils', 'lottiefiles-motion-principles', 'motion-craft']"
+    },
+    {
+      "check": ".claude/skills/motion-craft_frontmatter_and_sidecars",
+      "passed": true,
+      "detail": "name=motion-craft; skill_exists=True"
+    },
+    {
+      "check": ".claude/skills/motion-craft_installed_hash",
+      "passed": true,
+      "detail": "actual=1a5c6d3adb08411dc456d87ebb7ba5ce5f5f7b8171fed1bcc6a3a0c77c03fa2c"
+    },
+    {
+      "check": ".claude/skills/motion-craft_KIT_INTEGRATION.md_hash",
+      "passed": true,
+      "detail": "actual=4d7ce494ae72d5ad1c5d94800c32c52242485ababb828f814fdf7640a58b87c7"
+    },
+    {
+      "check": ".claude/skills/motion-craft_PROVENANCE.md_hash",
+      "passed": true,
+      "detail": "actual=733ec69814ca84d75cb15f580a67a3c9b50b56c8eb333dd0222695df3a9ce1d5"
+    },
+    {
+      "check": ".claude/skills/motion-craft_LICENSE_hash",
+      "passed": true,
+      "detail": "actual=ca02fba63bfcc89f475a8672dd852a220005a17325fc05d7f2299f5adf7f10a4"
+    },
+    {
+      "check": ".claude/skills/motion-craft_source_copy_hashes",
+      "passed": true,
+      "detail": "source_skill=.claude/skills/motion-design; files=1"
+    },
+    {
+      "check": ".claude/skills/lottiefiles-motion-principles_frontmatter_and_sidecars",
+      "passed": true,
+      "detail": "name=lottiefiles-motion-principles; skill_exists=True"
+    },
+    {
+      "check": ".claude/skills/lottiefiles-motion-principles_installed_hash",
+      "passed": true,
+      "detail": "actual=5022a91565a7794446fe5bf529e53bcad3054095d02b392b7c06d4dd217c05d7"
+    },
+    {
+      "check": ".claude/skills/lottiefiles-motion-principles_KIT_INTEGRATION.md_hash",
+      "passed": true,
+      "detail": "actual=4d7ce494ae72d5ad1c5d94800c32c52242485ababb828f814fdf7640a58b87c7"
+    },
+    {
+      "check": ".claude/skills/lottiefiles-motion-principles_PROVENANCE.md_hash",
+      "passed": true,
+      "detail": "actual=c6ca4b4cf7a44482209141cafb2cefd818f0e988bc76a7c9b21f86cdd8005ef9"
+    },
+    {
+      "check": ".claude/skills/lottiefiles-motion-principles_LICENSE_hash",
+      "passed": true,
+      "detail": "actual=9fc2e8685daa09e28d54b6afa8a38f168417c5735a3cd676c80c159785e93a80"
+    },
+    {
+      "check": ".claude/skills/lottiefiles-motion-principles_source_copy_hashes",
+      "passed": true,
+      "detail": "source_skill=skills/motion-design; files=17"
+    },
+    {
+      "check": ".claude/skills/gsap-core_frontmatter_and_sidecars",
+      "passed": true,
+      "detail": "name=gsap-core; skill_exists=True"
+    },
+    {
+      "check": ".claude/skills/gsap-core_installed_hash",
+      "passed": true,
+      "detail": "actual=8963a3699c17ee92e0f33d621a78adaacfa3974131648eb504cc114b4a356e91"
+    },
+    {
+      "check": ".claude/skills/gsap-core_KIT_INTEGRATION.md_hash",
+      "passed": true,
+      "detail": "actual=2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53"
+    },
+    {
+      "check": ".claude/skills/gsap-core_PROVENANCE.md_hash",
+      "passed": true,
+      "detail": "actual=28324f92e540664154567d05d8add33eedd5a2b052d64bd18a194e8567f6405c"
+    },
+    {
+      "check": ".claude/skills/gsap-core_LICENSE_hash",
+      "passed": true,
+      "detail": "actual=51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "check": ".claude/skills/gsap-core_source_copy_hashes",
+      "passed": true,
+      "detail": "source_skill=skills/gsap-core; files=1"
+    },
+    {
+      "check": ".claude/skills/gsap-timeline_frontmatter_and_sidecars",
+      "passed": true,
+      "detail": "name=gsap-timeline; skill_exists=True"
+    },
+    {
+      "check": ".claude/skills/gsap-timeline_installed_hash",
+      "passed": true,
+      "detail": "actual=0c3f4f3ee462f6ba12c2e97514b75ef0dbdbb6f4e1c557de1f8c3f43a094aea2"
+    },
+    {
+      "check": ".claude/skills/gsap-timeline_KIT_INTEGRATION.md_hash",
+      "passed": true,
+      "detail": "actual=2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53"
+    },
+    {
+      "check": ".claude/skills/gsap-timeline_PROVENANCE.md_hash",
+      "passed": true,
+      "detail": "actual=504683098407dc1c363cc13dc12d7b41cca8b37fcbffd13627f518b8eb38e09d"
+    },
+    {
+      "check": ".claude/skills/gsap-timeline_LICENSE_hash",
+      "passed": true,
+      "detail": "actual=51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "check": ".claude/skills/gsap-timeline_source_copy_hashes",
+      "passed": true,
+      "detail": "source_skill=skills/gsap-timeline; files=1"
+    },
+    {
+      "check": ".claude/skills/gsap-react_frontmatter_and_sidecars",
+      "passed": true,
+      "detail": "name=gsap-react; skill_exists=True"
+    },
+    {
+      "check": ".claude/skills/gsap-react_installed_hash",
+      "passed": true,
+      "detail": "actual=45f9292c0bf4d60bdc245772aa48971917a13729de9f0cf877533bb54c04141f"
+    },
+    {
+      "check": ".claude/skills/gsap-react_KIT_INTEGRATION.md_hash",
+      "passed": true,
+      "detail": "actual=2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53"
+    },
+    {
+      "check": ".claude/skills/gsap-react_PROVENANCE.md_hash",
+      "passed": true,
+      "detail": "actual=fa362a270a3ffbbe4307918cdc2b8e290d03613182ca9edf13bd7e7b92ae2a4b"
+    },
+    {
+      "check": ".claude/skills/gsap-react_LICENSE_hash",
+      "passed": true,
+      "detail": "actual=51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "check": ".claude/skills/gsap-react_source_copy_hashes",
+      "passed": true,
+      "detail": "source_skill=skills/gsap-react; files=1"
+    },
+    {
+      "check": ".claude/skills/gsap-performance_frontmatter_and_sidecars",
+      "passed": true,
+      "detail": "name=gsap-performance; skill_exists=True"
+    },
+    {
+      "check": ".claude/skills/gsap-performance_installed_hash",
+      "passed": true,
+      "detail": "actual=bcd3fe72a501df9cc65a639e35f42f268092d074fefc3d6e8fe4f5d583596eba"
+    },
+    {
+      "check": ".claude/skills/gsap-performance_KIT_INTEGRATION.md_hash",
+      "passed": true,
+      "detail": "actual=2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53"
+    },
+    {
+      "check": ".claude/skills/gsap-performance_PROVENANCE.md_hash",
+      "passed": true,
+      "detail": "actual=24e20ab8133387a03aea5eb4e8345cc99dc9d3b27e788fa5b9f456bf28f628fb"
+    },
+    {
+      "check": ".claude/skills/gsap-performance_LICENSE_hash",
+      "passed": true,
+      "detail": "actual=51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "check": ".claude/skills/gsap-performance_source_copy_hashes",
+      "passed": true,
+      "detail": "source_skill=skills/gsap-performance; files=1"
+    },
+    {
+      "check": ".claude/skills/gsap-plugins_frontmatter_and_sidecars",
+      "passed": true,
+      "detail": "name=gsap-plugins; skill_exists=True"
+    },
+    {
+      "check": ".claude/skills/gsap-plugins_installed_hash",
+      "passed": true,
+      "detail": "actual=7574a88f325b5765d2d8dcc9fa68205e119a84fe2ea1b930c29edcfd44833f09"
+    },
+    {
+      "check": ".claude/skills/gsap-plugins_KIT_INTEGRATION.md_hash",
+      "passed": true,
+      "detail": "actual=a50bc1b371833cb9c5ab2d388774c0682ca9076b7d70d8cd0486746c1d1a30c8"
+    },
+    {
+      "check": ".claude/skills/gsap-plugins_PROVENANCE.md_hash",
+      "passed": true,
+      "detail": "actual=6e6f405ace596b23ea0f3155bed4fbddc97a2bff85975de4ef2cff51025d5e49"
+    },
+    {
+      "check": ".claude/skills/gsap-plugins_LICENSE_hash",
+      "passed": true,
+      "detail": "actual=51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "check": ".claude/skills/gsap-plugins_source_copy_hashes",
+      "passed": true,
+      "detail": "source_skill=skills/gsap-plugins; files=1"
+    },
+    {
+      "check": ".claude/skills/gsap-utils_frontmatter_and_sidecars",
+      "passed": true,
+      "detail": "name=gsap-utils; skill_exists=True"
+    },
+    {
+      "check": ".claude/skills/gsap-utils_installed_hash",
+      "passed": true,
+      "detail": "actual=3a6703379b3bfd536e3d279c5116b3aec792d3148a1a9c92bf029b3518fbe074"
+    },
+    {
+      "check": ".claude/skills/gsap-utils_KIT_INTEGRATION.md_hash",
+      "passed": true,
+      "detail": "actual=2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53"
+    },
+    {
+      "check": ".claude/skills/gsap-utils_PROVENANCE.md_hash",
+      "passed": true,
+      "detail": "actual=f08b51e8efa455c72e0d7cb16d317ea7b4ae344a98e6442625996ed79d095a5f"
+    },
+    {
+      "check": ".claude/skills/gsap-utils_LICENSE_hash",
+      "passed": true,
+      "detail": "actual=51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "check": ".claude/skills/gsap-utils_source_copy_hashes",
+      "passed": true,
+      "detail": "source_skill=skills/gsap-utils; files=1"
+    },
+    {
+      "check": ".agents/skills/motion-craft_frontmatter_and_sidecars",
+      "passed": true,
+      "detail": "name=motion-craft; skill_exists=True"
+    },
+    {
+      "check": ".agents/skills/motion-craft_installed_hash",
+      "passed": true,
+      "detail": "actual=1a5c6d3adb08411dc456d87ebb7ba5ce5f5f7b8171fed1bcc6a3a0c77c03fa2c"
+    },
+    {
+      "check": ".agents/skills/motion-craft_KIT_INTEGRATION.md_hash",
+      "passed": true,
+      "detail": "actual=4d7ce494ae72d5ad1c5d94800c32c52242485ababb828f814fdf7640a58b87c7"
+    },
+    {
+      "check": ".agents/skills/motion-craft_PROVENANCE.md_hash",
+      "passed": true,
+      "detail": "actual=bdd2cddc9ccfef322a1717201f4ac67b490003c37676c8cd4fdf7a46a0f91df4"
+    },
+    {
+      "check": ".agents/skills/motion-craft_LICENSE_hash",
+      "passed": true,
+      "detail": "actual=ca02fba63bfcc89f475a8672dd852a220005a17325fc05d7f2299f5adf7f10a4"
+    },
+    {
+      "check": ".agents/skills/motion-craft_source_copy_hashes",
+      "passed": true,
+      "detail": "source_skill=.claude/skills/motion-design; files=1"
+    },
+    {
+      "check": ".agents/skills/lottiefiles-motion-principles_frontmatter_and_sidecars",
+      "passed": true,
+      "detail": "name=lottiefiles-motion-principles; skill_exists=True"
+    },
+    {
+      "check": ".agents/skills/lottiefiles-motion-principles_installed_hash",
+      "passed": true,
+      "detail": "actual=5022a91565a7794446fe5bf529e53bcad3054095d02b392b7c06d4dd217c05d7"
+    },
+    {
+      "check": ".agents/skills/lottiefiles-motion-principles_KIT_INTEGRATION.md_hash",
+      "passed": true,
+      "detail": "actual=4d7ce494ae72d5ad1c5d94800c32c52242485ababb828f814fdf7640a58b87c7"
+    },
+    {
+      "check": ".agents/skills/lottiefiles-motion-principles_PROVENANCE.md_hash",
+      "passed": true,
+      "detail": "actual=681ec997de859f12b47b28b69bb499f93bc4563fae7829c8779af4bba59c43f6"
+    },
+    {
+      "check": ".agents/skills/lottiefiles-motion-principles_LICENSE_hash",
+      "passed": true,
+      "detail": "actual=9fc2e8685daa09e28d54b6afa8a38f168417c5735a3cd676c80c159785e93a80"
+    },
+    {
+      "check": ".agents/skills/lottiefiles-motion-principles_source_copy_hashes",
+      "passed": true,
+      "detail": "source_skill=skills/motion-design; files=17"
+    },
+    {
+      "check": ".agents/skills/gsap-core_frontmatter_and_sidecars",
+      "passed": true,
+      "detail": "name=gsap-core; skill_exists=True"
+    },
+    {
+      "check": ".agents/skills/gsap-core_installed_hash",
+      "passed": true,
+      "detail": "actual=8963a3699c17ee92e0f33d621a78adaacfa3974131648eb504cc114b4a356e91"
+    },
+    {
+      "check": ".agents/skills/gsap-core_KIT_INTEGRATION.md_hash",
+      "passed": true,
+      "detail": "actual=2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53"
+    },
+    {
+      "check": ".agents/skills/gsap-core_PROVENANCE.md_hash",
+      "passed": true,
+      "detail": "actual=5e2ad6fc5499428cfb2b57be5dc498eea47328ee1d72738574fe46d08600fa1a"
+    },
+    {
+      "check": ".agents/skills/gsap-core_LICENSE_hash",
+      "passed": true,
+      "detail": "actual=51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "check": ".agents/skills/gsap-core_source_copy_hashes",
+      "passed": true,
+      "detail": "source_skill=skills/gsap-core; files=1"
+    },
+    {
+      "check": ".agents/skills/gsap-timeline_frontmatter_and_sidecars",
+      "passed": true,
+      "detail": "name=gsap-timeline; skill_exists=True"
+    },
+    {
+      "check": ".agents/skills/gsap-timeline_installed_hash",
+      "passed": true,
+      "detail": "actual=0c3f4f3ee462f6ba12c2e97514b75ef0dbdbb6f4e1c557de1f8c3f43a094aea2"
+    },
+    {
+      "check": ".agents/skills/gsap-timeline_KIT_INTEGRATION.md_hash",
+      "passed": true,
+      "detail": "actual=2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53"
+    },
+    {
+      "check": ".agents/skills/gsap-timeline_PROVENANCE.md_hash",
+      "passed": true,
+      "detail": "actual=258fe031ae1442ab3ed962ee4dede34ed00c97d7c9c59c6bcb723165a33fa328"
+    },
+    {
+      "check": ".agents/skills/gsap-timeline_LICENSE_hash",
+      "passed": true,
+      "detail": "actual=51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "check": ".agents/skills/gsap-timeline_source_copy_hashes",
+      "passed": true,
+      "detail": "source_skill=skills/gsap-timeline; files=1"
+    },
+    {
+      "check": ".agents/skills/gsap-react_frontmatter_and_sidecars",
+      "passed": true,
+      "detail": "name=gsap-react; skill_exists=True"
+    },
+    {
+      "check": ".agents/skills/gsap-react_installed_hash",
+      "passed": true,
+      "detail": "actual=45f9292c0bf4d60bdc245772aa48971917a13729de9f0cf877533bb54c04141f"
+    },
+    {
+      "check": ".agents/skills/gsap-react_KIT_INTEGRATION.md_hash",
+      "passed": true,
+      "detail": "actual=2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53"
+    },
+    {
+      "check": ".agents/skills/gsap-react_PROVENANCE.md_hash",
+      "passed": true,
+      "detail": "actual=b56d035ef56e239c7e27b9d81b278b2ce627032b9ed7d2b2d9b638424a586d33"
+    },
+    {
+      "check": ".agents/skills/gsap-react_LICENSE_hash",
+      "passed": true,
+      "detail": "actual=51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "check": ".agents/skills/gsap-react_source_copy_hashes",
+      "passed": true,
+      "detail": "source_skill=skills/gsap-react; files=1"
+    },
+    {
+      "check": ".agents/skills/gsap-performance_frontmatter_and_sidecars",
+      "passed": true,
+      "detail": "name=gsap-performance; skill_exists=True"
+    },
+    {
+      "check": ".agents/skills/gsap-performance_installed_hash",
+      "passed": true,
+      "detail": "actual=bcd3fe72a501df9cc65a639e35f42f268092d074fefc3d6e8fe4f5d583596eba"
+    },
+    {
+      "check": ".agents/skills/gsap-performance_KIT_INTEGRATION.md_hash",
+      "passed": true,
+      "detail": "actual=2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53"
+    },
+    {
+      "check": ".agents/skills/gsap-performance_PROVENANCE.md_hash",
+      "passed": true,
+      "detail": "actual=f5e89f3e5153bb189536fdf291d4f311f64d1493fcc61ccdfc6b13cd2252cd17"
+    },
+    {
+      "check": ".agents/skills/gsap-performance_LICENSE_hash",
+      "passed": true,
+      "detail": "actual=51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "check": ".agents/skills/gsap-performance_source_copy_hashes",
+      "passed": true,
+      "detail": "source_skill=skills/gsap-performance; files=1"
+    },
+    {
+      "check": ".agents/skills/gsap-plugins_frontmatter_and_sidecars",
+      "passed": true,
+      "detail": "name=gsap-plugins; skill_exists=True"
+    },
+    {
+      "check": ".agents/skills/gsap-plugins_installed_hash",
+      "passed": true,
+      "detail": "actual=7574a88f325b5765d2d8dcc9fa68205e119a84fe2ea1b930c29edcfd44833f09"
+    },
+    {
+      "check": ".agents/skills/gsap-plugins_KIT_INTEGRATION.md_hash",
+      "passed": true,
+      "detail": "actual=a50bc1b371833cb9c5ab2d388774c0682ca9076b7d70d8cd0486746c1d1a30c8"
+    },
+    {
+      "check": ".agents/skills/gsap-plugins_PROVENANCE.md_hash",
+      "passed": true,
+      "detail": "actual=e9e27608d9da1d3e309ef0b37f9dee80f0f098c424084858c9631b1317a0404b"
+    },
+    {
+      "check": ".agents/skills/gsap-plugins_LICENSE_hash",
+      "passed": true,
+      "detail": "actual=51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "check": ".agents/skills/gsap-plugins_source_copy_hashes",
+      "passed": true,
+      "detail": "source_skill=skills/gsap-plugins; files=1"
+    },
+    {
+      "check": ".agents/skills/gsap-utils_frontmatter_and_sidecars",
+      "passed": true,
+      "detail": "name=gsap-utils; skill_exists=True"
+    },
+    {
+      "check": ".agents/skills/gsap-utils_installed_hash",
+      "passed": true,
+      "detail": "actual=3a6703379b3bfd536e3d279c5116b3aec792d3148a1a9c92bf029b3518fbe074"
+    },
+    {
+      "check": ".agents/skills/gsap-utils_KIT_INTEGRATION.md_hash",
+      "passed": true,
+      "detail": "actual=2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53"
+    },
+    {
+      "check": ".agents/skills/gsap-utils_PROVENANCE.md_hash",
+      "passed": true,
+      "detail": "actual=fccf85885baf3d6bd37ff1b5262fdcb4d23c720b995402bc8aa8fe6d6cd8b203"
+    },
+    {
+      "check": ".agents/skills/gsap-utils_LICENSE_hash",
+      "passed": true,
+      "detail": "actual=51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "check": ".agents/skills/gsap-utils_source_copy_hashes",
+      "passed": true,
+      "detail": "source_skill=skills/gsap-utils; files=1"
+    },
+    {
+      "check": "lottie_local_relative_links_resolve",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "current_guidance_no_stale_R01_R13_total",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "paste_template_char_limits",
+      "passed": true,
+      "detail": {
+        "goal": 7922,
+        "project_instructions": 15787,
+        "limits": [
+          8000,
+          16000
+        ]
+      }
+    },
+    {
+      "check": "required_navigation_path_repository-preparation/ANIMATION_AGENT_SKILL_RESOURCES_GUIDE.md",
+      "passed": true,
+      "detail": "repository-preparation/ANIMATION_AGENT_SKILL_RESOURCES_GUIDE.md"
+    },
+    {
+      "check": "required_navigation_path_repository-preparation/ANIMATION_AGENT_SKILL_INSTALL_MANIFEST.json",
+      "passed": true,
+      "detail": "repository-preparation/ANIMATION_AGENT_SKILL_INSTALL_MANIFEST.json"
+    },
+    {
+      "check": "required_navigation_path_repository-preparation/REPOSITORY_NAVIGATION_AND_USE_GUIDE.md",
+      "passed": true,
+      "detail": "repository-preparation/REPOSITORY_NAVIGATION_AND_USE_GUIDE.md"
+    },
+    {
+      "check": "required_navigation_path_claude-finished-song-animation-project/13_REPOSITORY_NAVIGATION_AND_USE.txt",
+      "passed": true,
+      "detail": "claude-finished-song-animation-project/13_REPOSITORY_NAVIGATION_AND_USE.txt"
+    }
+  ],
+  "failures": [],
+  "note": "Read-only/static checks only; this does not load an agent app, run animation code, open a browser, or render media."
+}

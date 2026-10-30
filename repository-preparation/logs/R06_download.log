@@ -1,0 +1,24 @@
+
+COMMAND ['git', 'init', '-q']
+
+COMMAND ['git', 'remote', 'add', 'origin', 'https://github.com/buildwithhanif/claude-animation-skill']
+
+COMMAND ['git', 'fetch', '--depth=1', 'origin', '4ddb8c80fdec96dc9f55d4b9bdee60bde6f0134b']
+From https://github.com/buildwithhanif/claude-animation-skill
+ * branch            4ddb8c80fdec96dc9f55d4b9bdee60bde6f0134b -> FETCH_HEAD
+
+COMMAND ['git', 'checkout', '--detach', '4ddb8c80fdec96dc9f55d4b9bdee60bde6f0134b']
+HEAD is now at 4ddb8c8 Add chibi person rig and a two-character adventure example
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.
+
+COMMAND ['git', 'lfs', 'pull']
+
+COMMAND ['git', 'lfs', 'fsck']
+Git LFS fsck OK
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.

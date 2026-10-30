@@ -1,0 +1,580 @@
+CURRENT REPOSITORY NAVIGATION
+For every song, follow `claude-finished-song-animation-project/13_REPOSITORY_NAVIGATION_AND_USE.txt`, assess all initialized R14–R16 motion resources before storyboard lock using `claude-finished-song-animation-project/17_FOOTAGE_FRAME_FOOTPRINT_AND_CODE_ACTION.txt` and `repository-preparation/ANIMATION_AGENT_SKILL_RESOURCES_GUIDE.md`, and save the required ranked R01–R16 evidence in `productions/<song>/research/REPOSITORY_REVIEW.md`: exact paths opened, relevant code inspected, and selected mechanisms mapped to scene/helper callers. Assessment is required; adoption is selective. The atlas at `repository-preparation/REPOSITORY_NAVIGATION_AND_USE_GUIDE.md` is navigation, not proof of per-song reading or an instruction to use every repo.
+
+COMBINED REUSABLE SOURCE ROUTER — UPDATED 2026-10-26
+Use this combined file or its component files; loading both duplicates their guidance. This is authored navigation and evidence status, not a complete source dump or merged engine.
+
+CURRENT SHARED RENDERER — KEEP THE WORK CONNECTED
+The original connected `music-motion-reel-kit` is the single workspace for new and existing songs. `shared-animation-library/render.mjs` reads each song’s normalized `PROJECT` and is the shared render front door. New songs use its installed Remotion engine (`renderEngine: 'remotion'`) with per-song React scenes and a per-song `public/` directory. Existing p5 productions use the same front door through the legacy p5 engine. Both routes share production configuration and export planning; React scene components and p5 modules remain separate. Do not create a sibling Remotion project or move song material out of the kit. Claude may choose a HyperFrames Player child composition for a specific Remotion scene; this does not make HyperFrames a competing full-song renderer, master clock, audio source or shared engine route. The user does not need to select this routine per-scene implementation. For the decision and limits, read `claude-finished-song-animation-project/14_HYPERFRAMES_SUBCOMPOSITION_GUIDE.txt` and the isolated comparison example. For exact package, scene, asset, audio, duration and command details, read `shared-animation-library/README.md` and `shared-animation-library/remotion-runtime/README.md`. For bounded review, read `claude-finished-song-animation-project/07_QUALITY_REVIEW_AND_ACCEPTANCE.txt`.
+
+ARCHIVAL FOOTAGE POINTER: every finished song includes at least one suitable, rights-cleared, reviewed clip from each of the Moving Image Archive, Wikimedia Commons and Internet Archive (Prelinger when suitable), integrated as local media in its Remotion scene. Follow `claude-finished-song-animation-project/10_MOVING_IMAGE_ARCHIVE_WORKFLOW.txt` and `15_MEDIA_API_DISCOVERY_WORKFLOW.txt`; keep MIA and API provenance separate. If any source has no suitable candidate, mark its requirement unmet and do not call the reel finished. These footage sources are separate from the 16 local code/guidance repositories; R12 is an AI-video prompt catalog, not an archival-footage source.
+
+CODE-ANIMATION REFERENCE POINTER: require the per-song R12/Skillry discovery and shortlist before storyboarding; use `claude-finished-song-animation-project/12_CODE_ANIMATION_REFERENCE_WORKFLOW.txt` and its local search helper. The refreshed local catalog includes all 418 Skillry-linked entries observed on the 11-page gallery plus the wider creator-prompt dataset. Live browsing is supplementary; examples inform original Remotion scenes and never replace the shared renderer.
+
+REFERENCE CRAFT POINTER (2026-10-25): for visual-direction choices and the reference-to-technique source map (six animation references, evidence labels, candidate mechanisms with repo/commit/path/status, per-song 4:5 or 9:16 selection and native-composition guidance, new-song workflow, gaps) read claude-finished-song-animation-project/06_ANIMATION_REFERENCE_CRAFT_GUIDE.txt. That guide is the single detailed source; this router stays a locator. The references are craft studies only: no footage, layout, wording or story is reused, and nothing in them is integrated into production code.
+
+SECTION: 00_REUSABLE_SOURCE_LIBRARY_GUIDE.txt
+
+REUSABLE ANIMATION SOURCE LIBRARY — FUTURE SONGS AND THEMES
+
+Purpose: support varied code-rendered music reels through a compact, source-grounded project context and a larger local source library.
+
+CONTENTS AND EVIDENCE
+The complete pinned repository checkouts are under repository-downloads/. The immutable source-library/raw/github/ snapshots contain the historically approved scopes; they are not a substitute for the complete checkouts. Exact commits, roles and paths are in 02_REPOSITORY_LOCATOR.txt, with acquisition and dependency evidence in repository-preparation/. Use these evidence levels precisely: downloaded means files are present; prepared means the recorded dependency scope was installed or checked; accessible means the current Claude session opened the named path; inspected means the relevant source body was read; integrated means production code calls the original or adapted mechanism; visually accepted means a reviewer inspected actual rendered output.
+
+The 2026-10-05 inventory expands historical chat selection rules against complete pinned GitHub trees. Live chat sync follows main, so pinned expansion is not a fresh verification of every currently synced file. Use the CSV evidence labels precisely.
+
+PROJECT CONTEXT
+The primary current router is reusable-animation-context/REUSABLE_ANIMATION_SOURCE_ROUTER.txt. It combines the component guide, technique router, repository locator, style index, preparation status and current addenda. Do not also upload every component file unless a specific task needs that detail. The combined file is authored synthesis and source navigation, not complete source code or a runnable merged engine.
+
+LOCAL CLAUDE CODE
+The Finished Song Animation Studio project uses the linked local music-motion-reel-kit folder as its source route. Start the task in Claude Desktop with that folder available. The linked folder is distinct from files uploaded separately to the project Library. A linked-folder indicator does not prove that a particular source was opened. For each selected source, read the named path from repository-downloads/, then report the path, symbol, reading scope and commit. If local access fails, report it and stop instead of silently switching to the Downloads migration copy. Use source-library/raw/github/ only to inspect historical approved snapshots or provenance.
+
+CHAT-ONLY WORK
+A cloud-only chat may not be able to read a Mac pathname. Report actual access. Attach or sync only the selected guide and implementation files required for that task, with commit and path recorded. Do not treat the router, GitHub connection, Library file count or an archive as proof that the full repositories were ingested. Keep complete runnable code and dependency environments in the linked local kit.
+
+DOCUMENT PRECEDENCE
+For current project authorization and workflow, follow CLAUDE.md, PROJECT_INSTRUCTIONS.md and CLAUDE_ANIMATION_VIDEO_RUNBOOK.txt, plus the latest direct user instruction. For shared-library code state, use shared-animation-library/README.md, IMPLEMENTATION_REPORT.md and CHECKPOINT.md. For installed add-ons, use repository-preparation/additional-resources/README.md and ADDITIONAL_RESOURCE_INSTALLS.csv. The Oct 5 PRODUCTION_READINESS_REPORT.md and Oct 5 dependency notes predate the Oct 8 shared library and Oct 24 resource preparation; retain them as history, not current capability status.
+
+FUTURE SONG WORKFLOW
+1. Read the user's pasted Grok brief and directly attached Suno recording. Record genre, intended emotional arc, lyric/narrative content, measured duration, references and evidence limits. Grok receives text; Claude receives the recording.
+2. Compare a small set of relevant style families across the catalog. Choose image craft, composition, subject action, camera and transitions because they serve this song. His Line's print/deed treatment is one production-specific choice.
+3. Select a compact source working set: one principal rendering/material system, complementary motion/timing guidance and any necessary audio architecture. Read complete chosen functions and required dependencies.
+4. Specify full-reel progression and source-to-helper-to-shot traces. Keep measured events, estimates and inferred observations separately labeled. Explain how dependencies and assets support the visible result.
+5. Execute the authorized stage using versioned song-specific files. Maintain portable source, exact dependency records, attribution and checkpoints so local rendering can resume after model limits.
+
+DURATION AND FORMAT
+FULL-SONG DURATION AND PER-SONG FORMAT
+By default, use the complete supplied master from beginning to end at its measured duration; 1:20–1:40 is illustrative only, with no fixed duration range or global maximum. Do not select a shortened excerpt unless the user explicitly requests one. Preserve the master: trimming, padding, remixing or other audio changes require a separate decision. Grok receives text only and may map full-song narrative/lyric progression, but cannot hear the recording or invent audible timestamps. Claude measures the actual duration, structure, cues, timing and sync from the attached recording. Set `PROJECT.duration` explicitly to that measured duration; omitted `maxDurationSeconds` follows the duration, and an explicit per-song cap is optional and must not be shorter. Cover the entire interval with scenes and overlays. For a zero-offset full master, the shared plan rounds video frames up and Remotion schedules audio for the exact measured source duration; the planned video endpoint may be less than one frame later. Actual encoded endpoints and sync remain unverified until an authorized render and playback. Keep the established per-song frame choice: 4:5 (1080×1350) or 9:16 (1080×1920), selected and explained before storyboarding, with explicit dimensions and native scene/overlay composition. Configurable dimensions do not make existing layouts responsive. His Line’s 36-second duration and padded ending remain specific to that production.
+
+CONSOLIDATION RULES
+Similar file names and concepts do not establish interchangeable code. Normalize terminology and shared planning guidance in authored summaries. Preserve complete source systems separately with commits and licenses. Keep one canonical content copy for genuinely identical files while retaining all provenance records; original snapshots remain unchanged.
+
+Preserve render entry points, imports, initialization, complete function bodies, shaders, cue formats, seeds, license notices and platform requirements when assembling an implementation working set. Any shortened card is labeled as a summary. Read full source before adaptation.
+
+CONTEXT CAPACITY
+Concatenating original source into one file preserves nearly all its text and is not a meaningful size reduction. A smaller routing layer plus a selectively attached working set reduces permanent context. A ZIP is a transport archive, not evidence that a chat project has indexed every source file inside it.
+
+CURRENT WORKFLOW PRIORITY
+The song-neutral production shell and one Claude-reported local browser-readiness check of its neutral example exist. That 8-second fixture is synthetic: its readiness report does not establish appearance, responsive scene layouts, full-song duration handling or audio synchronization. No still or full video has been visually accepted. Use the current capability map, README and implementation records before proposing work. His Line is one production example, not a default template.
+
+No chat context items are removed or replaced by creating this pack. Review the pack and a specific replacement scope before changing existing connections.
+
+SECTION: 01_TECHNIQUE_ROUTER.txt
+
+TECHNIQUE ROUTER — AUTHOR-WRITTEN SYNTHESIS
+
+Use this map to choose a source working set for each new theme. It describes candidate capabilities and integration considerations. It does not certify every example's visual quality or runtime on this Mac.
+
+DRAWN CHARACTERS AND NARRATIVE ACTION
+R01 ClaudeAnimationBase and R02 painted-animation contain character-film architecture, drawing helpers and shot organization. Consider these when a song benefits from characters, acting, expressive poses or an illustrated environment. Read the selected rig, drawing and camera functions together. Keep scene-specific action authored for the new song.
+
+PAINTED AND HANDMADE SURFACES
+R02 painted-animation and R03 styles include watercolor, impasto, ink-wash, woodcut, engraving, papercut and risograph directions. R06 offers reusable texture and drawing machinery. Distinguish a style guide from its implementing demo. Read its material system and representative shot before deciding whether it can produce the requested finish.
+
+KINETIC TYPE AND GRAPHIC COMPOSITION
+R02 kinetic-reel supplies glyph animation, two-buffer transitions and optional WebGL post effects. R03 swiss-motion and related graphic styles offer layout vocabulary. R04 offers HTML/timeline planning and composition guidance. Preserve readable text and phrase-specific action. Recompose landscape examples for the selected 4:5 or 9:16 frame; do not crop them.
+
+PRINT, PAPER AND MIXED MATERIALS
+R03 silkscreen, risograph, engraving, paper-popup and halftone-dossier provide different systems. Their differences matter: overprint compositing, plate geometry, tone fields, line shading, shadows and 3D lighting are distinct mechanisms. R09 anisong provides study material for zine-like compositions. Select a coherent combination and identify the actual source implementing each visible effect.
+
+DIMENSIONAL SCENES AND CAMERA MOVEMENT
+R02 kinetic examples, R03 relevant demos and R07 architecture provide candidate WebGL/three.js paths. R10 is cinematic study material. Evaluate spatial staging, object/light/shader requirements and browser/GPU compatibility for a selected scene. Choose Canvas parallax where it achieves the visual objective; choose 3D where geometry, lighting or camera motion materially improves it.
+
+PARTICLES, TRAILS AND EFFECTS
+R06 effects, R02 examples and R03 style demos contain possible mechanisms. Inspect time/state/randomness dependencies. Closed-form trajectories and per-index seeds support arbitrary-time rendering. A source effect that depends on frame history requires a reproducible seek/reset strategy. Surface effects complement subject action and composition.
+
+SONG TIMING AND AUDIO FEATURES
+R04 music-to-video and R05 motion-graphics-music-video offer planning/audio/VFX procedures. R07 supplies audio-feature architecture; R02 painted-animation has beat-grid tooling. Read the actual analysis implementation and distinguish onsets, pulses, downbeats, subtitle times and word timing. Build the new song's cues from its own recording; reuse architecture rather than another song's timeline.
+
+RENDERING, CACHING AND RECOVERY
+R01 and R02 renderers, R03 core/render/video.mjs and R04 tooling show different pipelines. The shared library provides Remotion for new songs and legacy p5 for existing work through one render entry. R04 HyperFrames may supply a selected child composition within Remotion, but remains outside the shared full-song route. Inspect which outputs persist across interruptions and what identity invalidates them. Seekability and retained-frame resume are separate capabilities.
+
+STYLE DISCOVERY
+R03 contains 43 indexed style guides excluding its template. R11–R13 are discovery catalogs; useful entries can lead to additional creator sources and prompts. Catalog descriptions do not establish code reuse rights or inspected motion. Verify the chosen underlying source and its license when needed.
+
+GENRE AND THEME SELECTION
+Choose each future treatment from that song's brief, recording and user direction. Repository genre labels and examples are discovery cues, not standing user preferences or production templates. R09 domenic.me is study-only; do not adapt its code or assets without an applicable reuse grant. More generally, R08–R10 are study-only, and R11–R13 catalog licenses do not license linked creator works.
+
+CURRENT SHARED-LIBRARY CAPABILITY MAP (updated 2026-10-25: production shell, cue schema, font/asset declarations and the R06 critter adapter were added by static, non-rendering implementation)
+The implemented system is shared-animation-library/. Read its README, implementation report and checkpoint before proposing work. Current verified architecture includes a dimension-configurable R02-derived base (current technical fallback 1080×1920; authored scene responsiveness is not implied), normalizeProject(PROJECT), time-pure shots([[start, fn], ...]), source/video/frame time conversion, export/cache planning, supervised FFmpeg handling and an adapted R06 five-kind particle overlay. Saved evidence records 43/43 non-rendering checks; it does not establish browser pixels, actual font appearance, a real encode, A/V sync by listening or creative acceptance.
+
+PRIORITY 1 — SONG-NEUTRAL PRODUCTION SHELL (implemented 2026-10-25; static checks plus one Claude-reported local browser load of the neutral example)
+Declared in PROJECT and validated by normalizeProject: productionId, modules (id, src, classic|module, requires), scenes (id, start, end, impl, needs, params; contiguous, no gaps/overlaps, exact coverage of the intended interval), cues, assets, fonts. production/production-host.mjs installProduction loads modules in stable dependency order, resolves cues/fonts/assets, initializes scene implementations, then registers them through the unmodified shots() API (scene overlays join the single overlay dispatcher at order 15). A neutral synthetic example is shared-animation-library/examples/neutral-production/. Outside the half-open coverage [start,end) no scene draws or overlays; failed installs restore the host incl. host.PRODUCTION (verified cases; a failure after shots() partially mutates cannot be rolled back). Every new production must set duration explicitly. Verified by the current tests/verify-production.mjs suite (27 non-rendering checks; see the current checkpoint for the full-song plan coverage). Claude-reported once for the neutral example on the local Mac (page load, module requests, window.ready = p5 setup completed, scene-overlays layer registered, no browser errors; no raw log saved; shared-animation-library/BROWSER_READINESS_CHECK_2026-10-25.md). By p5/project source the opening scene's draw likely ran once at startup (T=0), unobserved in a log; renderAt was never called, overlay drawing and the later hop/critter scene were not exercised. Not established: appearance, pixels, phone-size quality, saved stills, fonts and assets (example declares none), glyph coverage, audio, encoding, audiovisual review; the 8 s example does not test full-song duration or audio synchronization. Read shared-animation-library/README.md first.
+
+PRIORITY 2 — SELECTED MOTION ADAPTERS (R06 particles and R06 critter rig adapted; other rigs not integrated)
+R06 burst particles: adapters/r06-burst-particles.mjs. R06 critter rig (rigs/critter.mjs + core.mjs helpers, commit 4ddb8c80, MIT): adapters/r06-critter-rig.mjs with createCritterRig({poseTrack}) — scene-local keyframed pose, Canvas2D overlay in native screen pixels, closed-form (seek-safe) — called by the neutral example scene-b.mjs. Other rigs (ant, bean, bug, chibi) and R06 film/lowpoly/nature/pen modules were not read or adapted. Adapt only a rig and dependency closure required by a named treatment.
+
+PRIORITY 3 — KINETIC TYPE (separate engine route; read, deliberately NOT adapted)
+R02 kinetic-reel reel.js (527 lines): lines 1-140 were read in full and lines 140-527 only as a function/comment index. The read portion hard-codes W=1920,H=1080, reads a global KCUE, sets window.DUR/PROJECT, creates its own three.js WebGL renderer on #out plus a second WebGL canvas, and swaps ctx for transition buffers. Those conflict with the shared host (2D #out, normalizeProject sizing, p5 painter). Keep it as its own entry/host (its template render.mjs). A narrow glyph-only port (letters/txt/measure helpers, math) is possible later but is not done. Do not assume the optional Lottie package supplies an asset.
+
+PRIORITY 4 — 3D, MATERIALS AND COMPOSITING (read; separate-host routes with exact incompatibilities)
+R03 risograph riso.js (154 lines): makeRiso(out,W,H) takes WebGL2 on the output canvas it is given and reads a three-plate 2D canvas; the shared #out is a 2D canvas read by toDataURL, so it needs its own canvas plus a readback/drawImage bridge that is unverified without a browser. R03 core/three/post.js makePost(renderer,scene,camera,...) needs a three.js renderer, scene and camera plus three/addons (EffectComposer, GTAO, bloom). Neither is integrated. Define canvas ownership and a verified readback path with a browser stage before bridging. Khronos RiggedSimple remains a technical fixture.
+
+PRIORITY 5 — RECORDING-BOUND CUES AND LYRICS (cue interface defined; no analysis run)
+production/cue-schema.mjs normalizeCues: source→production conversion once via numeric/timebase.mjs; evidence classes measured / estimated / inferred / supplied / confirmed; supplied lyric text (textSource 'supplied') separate from its timing evidence; optional recording id/sha256. Importers fromBeatgridAudiomap (R04 analyze-beatgrid.py output shape) and fromAudioJson (R07 audio.json shape) were written from the source code, not from real analysis output. No song has been analyzed with Librosa; WhisperX singing alignment remains unassessed.
+
+PRIORITY 6 — LOCAL FONTS AND VISUAL ACCEPTANCE (declaration + loader implemented; no rendering; the neutral example declares no fonts or assets, so loading is unexercised by any example)
+PROJECT.fonts entries ({family, src, weight, style, unicodeRange}) are loaded with FontFace before ready and hashed into cache identity. production/fontsource.mjs generates entries from the local @fontsource install (Inter 700 latin/latin-ext checked against the package CSS and woff2 magic bytes). Glyph coverage is only the package's declared unicode-range, never a cmap check. base/studio.html still references Google Fonts CSS for the legacy demo faces. Pixelmatch has no baseline. Browser/font/glyph review, phone-size stills, complete-candidate playback and audiovisual acceptance remain separate authorized stages.
+
+INSTALLATION IS NOT INTEGRATION
+Flubber, Lottie Web, Pixelmatch, selected Fontsource packages, WhisperX, Librosa and one glTF fixture are installed or locally prepared as detailed in repository-preparation/additional-resources/README.md. Most are optional and isolated; none, by itself, closes the integration gaps above. Prefer existing repo implementations where they meet the visual need, and do not install more dependencies without a named capability and scoped preparation plan.
+
+TECHNIQUE CARD FOR A NEW SONG
+For each chosen technique record:
+visible objective; source repo/commit/path/symbol; complete reading scope; required helpers/assets/dependencies; time/coordinate model; guidance/original/adapted classification; local destination; shot call site; attribution; technical verification; later visual acceptance question.
+
+COMBINATION CRITERIA
+Combine techniques where visual language, coordinates, rendering API, frame-time evaluation and licenses are compatible. Preserve each original system as a reference. Integrate through explicit local adapters and load order. Select fewer coherent mechanisms when they satisfy the treatment; broaden the working set when the intended images require it.
+
+SECTION: 02_REPOSITORY_LOCATOR.txt
+
+REPOSITORY LOCATOR — COMPLETE PINNED CHECKOUTS AND HISTORICAL SNAPSHOTS
+All roots below are kit-relative. Existing approved use roles still apply. Complete files are available; each chosen implementation still needs selective reading.
+
+R01 | https://github.com/JohnHeibel/ClaudeAnimationBase
+Commit: 0ac8bf2b31942376cb6b8c4074715595d512acd2
+Complete prepared root: repository-downloads/JohnHeibel/ClaudeAnimationBase
+Historical approved-scope root: source-library/raw/github/JohnHeibel/ClaudeAnimationBase/0ac8bf2b31942376cb6b8c4074715595d512acd2
+Role: adaptable-code
+License record: MIT
+Verified tracked entries: 18; LFS entries: 0
+Preparation: p5/p5.brush/Puppeteer installed; resolution and existing Chrome launch checked
+Entry paths relative to complete root: render.mjs; studio.html; src/core.js
+Detail record: repository-preparation/R01_R03_DEPENDENCIES.json
+
+R02 | https://github.com/tuzhechen2005/opus-video-skills
+Commit: 59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1
+Complete prepared root: repository-downloads/tuzhechen2005/opus-video-skills
+Historical approved-scope root: source-library/raw/github/tuzhechen2005/opus-video-skills/59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1
+Role: adaptable-code
+License record: MIT
+Verified tracked entries: 60; LFS entries: 0
+Preparation: kinetic and painted templates installed; module resolution and Chrome launch checked
+Entry paths relative to complete root: skills/kinetic-reel/template/render.mjs; skills/painted-animation/template/render.mjs
+Detail record: repository-preparation/R01_R03_DEPENDENCIES.json
+
+R03 | https://github.com/lemomo-ai/lemo-opuscar
+Commit: b65efe6ea393fdc71212898ea4c57c754cfefa46
+Complete prepared root: repository-downloads/lemomo-ai/lemo-opuscar
+Historical approved-scope root: source-library/raw/github/lemomo-ai/lemo-opuscar/b65efe6ea393fdc71212898ea4c57c754cfefa46
+Role: adaptable-code-and-style
+License record: MIT
+Verified tracked entries: 1652; LFS entries: 0
+Preparation: shared Node/Python core and paper-popup installed; representative demo dependency resolution checked
+Entry paths relative to complete root: core/render/video.mjs; core/render/browser.mjs; styles/paper-popup/demo/index.html; styles/risograph/demo/riso.js; styles/engraving/demo/engine/burin.js
+Detail record: repository-preparation/R01_R03_DEPENDENCIES.json
+
+R04 | https://github.com/heygen-com/hyperframes
+Commit: 6791ea580c811fe3f1a532a2ced4bbed29008ee7
+Complete prepared root: repository-downloads/heygen-com/hyperframes
+Historical approved-scope root: source-library/raw/github/heygen-com/hyperframes/6791ea580c811fe3f1a532a2ced4bbed29008ee7
+Role: timing/composition reference and optional source for Remotion scene-level HTML/GSAP subcompositions
+License record: Apache-2.0
+Verified tracked entries: 8784; LFS entries: 171
+Preparation: filtered local workspace installed; core/engine/producer/player/studio/CLI built and imports checked
+Remotion relationship: the isolated `shared-animation-library/examples/remotion-hyperframes-hybrid/` comparison demonstrates one small synchronous Player child composition; it does not add a HyperFrames route to the shared render entry. Claude chooses per scene under `claude-finished-song-animation-project/14_HYPERFRAMES_SUBCOMPOSITION_GUIDE.txt`.
+Entry paths relative to complete root: packages/cli/bin/hyperframes.mjs
+Detail record: repository-preparation/R04_R07_DEPENDENCIES.json
+
+R05 | https://github.com/makevoid/motion-graphics-music-video-skill
+Commit: 1a06e673e3266f8ba94f9aad55669b00fd3a9fca
+Complete prepared root: repository-downloads/makevoid/motion-graphics-music-video-skill
+Historical approved-scope root: source-library/raw/github/makevoid/motion-graphics-music-video-skill/1a06e673e3266f8ba94f9aad55669b00fd3a9fca
+Role: planning-and-source-reference
+License record: MIT
+Verified tracked entries: 110; LFS entries: 0
+Preparation: local Node/Python tools prepared; Swift VFX compiled; Ruby orchestration deferred
+Entry paths relative to complete root: .claude/skills/motion-graphics-music-video/scripts/tools/p5/render.mjs; .claude/skills/motion-graphics-music-video/scripts/tools/python/; .claude/skills/motion-graphics-music-video/scripts/tools/vfx/; .claude/skills/motion-graphics-music-video/scripts/mv.rb
+Detail record: repository-preparation/R05_R13_DEPENDENCIES.json
+
+R06 | https://github.com/buildwithhanif/claude-animation-skill
+Commit: 4ddb8c80fdec96dc9f55d4b9bdee60bde6f0134b
+Complete prepared root: repository-downloads/buildwithhanif/claude-animation-skill
+Historical approved-scope root: source-library/raw/github/buildwithhanif/claude-animation-skill/4ddb8c80fdec96dc9f55d4b9bdee60bde6f0134b
+Role: adaptable-drawing-reference
+License record: MIT
+Verified tracked entries: 51; LFS entries: 0
+Preparation: shared native Canvas engine prepared
+Entry paths relative to complete root: plugins/claude-animation/skills/claude-animation/lib/film.mjs; plugins/claude-animation/skills/claude-animation/templates/film-template.mjs; examples/money-quest/; examples/claude-balloon/; examples/claude-game/; examples/ant-colony/
+Detail record: repository-preparation/R05_R13_DEPENDENCIES.json
+
+R07 | https://github.com/bizarro/evangelion
+Commit: 8f670f3262c75a454d26e01e062da96db7eefb05
+Complete prepared root: repository-downloads/bizarro/evangelion
+Historical approved-scope root: source-library/raw/github/bizarro/evangelion/8f670f3262c75a454d26e01e062da96db7eefb05
+Role: adaptable-architecture-reference
+License record: MIT code; media/font terms separate
+Verified tracked entries: 121; LFS entries: 0
+Preparation: app dependencies installed; compile checked without omitted soundtrack copying
+Entry paths relative to complete root: app/src/main.ts; analysis/analyze.py
+Detail record: repository-preparation/R04_R07_DEPENDENCIES.json
+
+R08 | https://github.com/JohnHeibel/PDoomVideo
+Commit: fa546a38092e75f2b079e6a86d6abc54dd525d17
+Complete prepared root: repository-downloads/JohnHeibel/PDoomVideo
+Historical approved-scope root: source-library/raw/github/JohnHeibel/PDoomVideo/fa546a38092e75f2b079e6a86d6abc54dd525d17
+Role: read-only-architecture-study
+License record: Reuse grant not established
+Verified tracked entries: 26; LFS entries: 0
+Preparation: Node study engine dependencies prepared; source reuse role remains study-only
+Entry paths relative to complete root: render.mjs; studio.html; src/; legacy/
+Detail record: repository-preparation/R05_R13_DEPENDENCIES.json
+
+R09 | https://github.com/domenic/domenic.me
+Commit: db374f65ec29834c5f5120b93c696843cdaa85ae
+Complete prepared root: repository-downloads/domenic/domenic.me
+Historical approved-scope root: source-library/raw/github/domenic/domenic.me/db374f65ec29834c5f5120b93c696843cdaa85ae
+Role: read-only-architecture-study
+License record: Reuse grant not established
+Verified tracked entries: 471; LFS entries: 0
+Preparation: self-contained browser animation engines inventoried; website dependencies intentionally deferred
+Entry paths relative to complete root: src/we-didnt-start-the-scaling/assets/worker.js; src/we-didnt-start-the-scaling/assets/page.mjs; src/we-didnt-start-the-scaling/assets/engine/anisong.js; src/we-didnt-start-the-scaling/assets/engine/eurodance.js; src/we-didnt-start-the-scaling/assets/engine/k-pop.js; src/we-didnt-start-the-scaling/assets/engine/indie-folk.js; src/we-didnt-start-the-scaling/assets/engine/piano-rock.js; src/we-didnt-start-the-scaling/assets/engine/pop-punk.js
+Detail record: repository-preparation/R05_R13_DEPENDENCIES.json
+
+R10 | https://github.com/WinterArc21/Battle-of-Austerlitz-Film
+Commit: 86dae32d20f0a0f2395e7dc8938846fd51e355a6
+Complete prepared root: repository-downloads/WinterArc21/Battle-of-Austerlitz-Film
+Historical approved-scope root: source-library/raw/github/WinterArc21/Battle-of-Austerlitz-Film/86dae32d20f0a0f2395e7dc8938846fd51e355a6
+Role: read-only-cinematic-study
+License record: Reuse grant not established
+Verified tracked entries: 37; LFS entries: 0
+Preparation: Playwright package and preparation adapter ready; upstream film not rendered
+Entry paths relative to complete root: tools/serve.mjs; tools/export.mjs; tools/render.mjs; tools/frames.mjs; web/
+Detail record: repository-preparation/R05_R13_DEPENDENCIES.json
+
+R11 | https://github.com/guanmo-ai/awesome-ai-motion
+Commit: 203472a514a4d41c12b1cee8e82423b5ca311186
+Complete prepared root: repository-downloads/guanmo-ai/awesome-ai-motion
+Historical approved-scope root: source-library/raw/github/guanmo-ai/awesome-ai-motion/203472a514a4d41c12b1cee8e82423b5ca311186
+Role: catalog-reference
+License record: MIT authored catalog; third-party separate
+Verified tracked entries: 1592; LFS entries: 0
+Preparation: catalog; no install required
+Entry paths relative to complete root: data/cases.json; scripts/build.mjs; scripts/serve.mjs
+Detail record: repository-preparation/R05_R13_DEPENDENCIES.json
+
+R12 | https://github.com/yihui-dev/awesome-opus5-5-videos
+Current refreshed root: repository-downloads/yihui-dev/awesome-opus5-5-videos-20261026 (commit 92aee2f586ac0715cb3cbcb6384834f98a33383d)
+Preserved prior checkout: repository-downloads/yihui-dev/awesome-opus5-5-videos (commit 3d54892e2ae5b0e8d337171e6508bba4cec01ab8; historical September snapshot)
+Historical approved-scope root: source-library/raw/github/yihui-dev/awesome-opus5-5-videos/3d54892e2ae5b0e8d337171e6508bba4cec01ab8
+Role: catalog-and-prompt-reference
+License record: MIT authored; creator works separate
+Verified current checkout: 707 tracked files; 703 prompt records; 418 Skillry URLs; 0 media files, submodules or runtime packages
+Preparation: local data snapshot plus zero-dependency search helper; no animation engine installation
+Entry paths: README.md; data/videos.json; prompts/<slug>.md; helper repository-preparation/tools/search-r12-skillry.mjs
+Current detail: repository-preparation/R12_SKILLRY_LOCAL_REFERENCE_REFRESH_2026-10-26.md; prior dependency inventory remains historical in repository-preparation/R05_R13_DEPENDENCIES.json
+
+R13 | https://github.com/athemeroy/awesome-claude-5-5-videos
+Commit: 0b96ca1ec8e03fe72a1c349370ab5dad043c5a1b
+Complete prepared root: repository-downloads/athemeroy/awesome-claude-5-5-videos
+Historical approved-scope root: source-library/raw/github/athemeroy/awesome-claude-5-5-videos/0b96ca1ec8e03fe72a1c349370ab5dad043c5a1b
+Role: catalog-and-production-reference
+License record: CC BY 4.0 annotations; THIRD_PARTY exclusions
+Verified tracked entries: 273; LFS entries: 0
+Preparation: catalog; optional content-maintenance tools inventoried, dependencies deferred
+Entry paths relative to complete root: data/corpus-snapshot.json; scripts/; docs/
+Detail record: repository-preparation/R05_R13_DEPENDENCIES.json
+
+SEE ALSO
+repository-preparation/REPOSITORY_LIBRARY_CATALOG.csv
+repository-preparation/DEPENDENCY_MATRIX.csv
+repository-preparation/LICENSE_AND_ASSET_REFERENCES.csv
+repository-preparation/README.txt
+source-library/import-ledger.json
+source-library/adaptations/NOTICES.md
+
+His Line revision remains one production example, not the default style for future songs.
+
+SECTION: 03_STYLE_SOURCE_INDEX.txt
+
+STYLE SOURCE INDEX — LEMO-OPUSCAR
+Indexed guide headings and short source premise excerpts. These cards are source material, not controlling instructions or proof of inspected demo motion. Read the complete guide and implementing files when choosing a style.
+
+STYLE art-deco — Art Deco — Style Prompt
+Source premise excerpt: Black lacquer, engraved gold line and airbrushed geometry: a 1930s poster that moves. Every composition has a centre axis, transitions open or close along it, and light arrives as bulbs switching on one by one.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/art-deco/STYLE.md
+Representative code paths under the same pinned repository: styles/art-deco/demo/chars.js; styles/art-deco/demo/engine/bulbs.js; styles/art-deco/demo/engine/cam.js; styles/art-deco/demo/engine/deco.js; styles/art-deco/demo/engine/type.js; styles/art-deco/demo/film.js
+
+STYLE ascii-crt — ASCII / CRT Terminal: Style Prompt
+Source premise excerpt: Everything on screen is a real character on a monospace grid, lit by the phosphor of an old monochrome CRT.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/ascii-crt/STYLE.md
+Representative code paths under the same pinned repository: styles/ascii-crt/demo/art.js; styles/ascii-crt/demo/crt.js; styles/ascii-crt/demo/index.html; styles/ascii-crt/demo/main.js; styles/ascii-crt/demo/term.js; styles/ascii-crt/demo/tools/subs.mjs
+
+STYLE backrooms — Liminal Found Footage — Style Prompt
+Source premise excerpt: Camcorder tapes recovered from empty, endless, fluorescent-lit spaces. Rules instead of monsters. Genre reference (grammar only): "the Backrooms" internet folklore and new-weird / rule-horror; 1990s consumer camcorder footage. **Never** use the word "Backrooms", wiki "Level" numbers, community entity names, or any existing organisation or logo inside the film. Everything on screen (rules, forms, company voice, any presence) is original.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/backrooms/STYLE.md
+Representative code paths under the same pinned repository: styles/backrooms/demo/figures.js; styles/backrooms/demo/index.html; styles/backrooms/demo/main.js; styles/backrooms/demo/osd.js; styles/backrooms/demo/sheet.js; styles/backrooms/demo/story.js
+
+STYLE blueprint — Blueprint — Style Prompt
+Source premise excerpt: Engineering drawings that come alive on a sheet of cyanotype paper: white technical line work on Prussian blue, drawn in drafting order, with annotations that move.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/blueprint/STYLE.md
+Representative code paths under the same pinned repository: styles/blueprint/demo/draw.js; styles/blueprint/demo/film.js; styles/blueprint/demo/index.html; styles/blueprint/demo/machine.js; styles/blueprint/demo/main.js; styles/blueprint/demo/paper.js
+
+STYLE brick-toy — Brick Toy — Style Prompt
+Source premise excerpt: Stop-motion toy-brick films shot like macro photography on a real desk: a world built from interlocking plastic bricks with round studs, animated a pose at a time.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/brick-toy/STYLE.md
+Representative code paths under the same pinned repository: styles/brick-toy/demo/actors.js; styles/brick-toy/demo/bricks.js; styles/brick-toy/demo/index.html; styles/brick-toy/demo/main.js; styles/brick-toy/demo/rockets.js; styles/brick-toy/demo/set.js
+
+STYLE cel-anime-80s — 80s Cel Anime — Style Prompt
+Source premise excerpt: Hand-painted cel animation from the golden age of Japanese OVAs, re-created in code: flat two-tone cels over airbrushed backgrounds, backlit neon, limited-animation timing, played back as a late-80s videotape on a CRT television.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/cel-anime-80s/STYLE.md
+Representative code paths under the same pinned repository: styles/cel-anime-80s/demo/bg.js; styles/cel-anime-80s/demo/cel.js; styles/cel-anime-80s/demo/fx.js; styles/cel-anime-80s/demo/hands.js; styles/cel-anime-80s/demo/head80.js; styles/cel-anime-80s/demo/hud.js
+
+STYLE crayon-book — Crayon Picture Book — Style Prompt
+Source premise excerpt: A picture-book page drawn live in wax crayon on toothy paper, with a watercolour wash that reveals what the crayon was hiding.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/crayon-book/STYLE.md
+Representative code paths under the same pinned repository: styles/crayon-book/demo/chars.js; styles/crayon-book/demo/crayon.js; styles/crayon-book/demo/end.js; styles/crayon-book/demo/film.js; styles/crayon-book/demo/gl.js; styles/crayon-book/demo/index.html
+
+STYLE dark-keynote — Dark Tech Keynote — Style Prompt
+Source premise excerpt: A software launch film where the interface itself is the star: near-black gradient, hairline grid, soft light, one brand accent, and UI that moves with snap-grid precision. Light reveals, one giant number, and a sound design that is as ordered as the pixels. **
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/dark-keynote/STYLE.md
+Representative code paths under the same pinned repository: styles/dark-keynote/demo/engine.js; styles/dark-keynote/demo/film.js; styles/dark-keynote/demo/frames.js; styles/dark-keynote/demo/index.html; styles/dark-keynote/demo/main.js; styles/dark-keynote/demo/timeline.js
+
+STYLE dataviz — Data Storytelling — Style Prompt
+Source premise excerpt: A chart that tells a story: real data, drawn mark by mark on cream paper by a red–blue pencil, with handwritten notes pinned to the numbers. The chart itself is the camera, the rhythm and the plot.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/dataviz/STYLE.md
+Representative code paths under the same pinned repository: styles/dataviz/demo/engine.js; styles/dataviz/demo/film.js; styles/dataviz/demo/index.html; styles/dataviz/demo/main.js; styles/dataviz/demo/timeline.js
+
+STYLE engraving — Copperplate Engraving — Style Prompt
+Source premise excerpt: An intaglio plate that engraves itself: a burin cuts swelling lines into copper, a proof is pulled, and the figure builds up — outline, hatching, cross-hatching — until engraved lettering, magnified details and a hand-laid wash make a finished plate.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/engraving/STYLE.md
+Representative code paths under the same pinned repository: styles/engraving/demo/engine/burin.js; styles/engraving/demo/engine/copper.js; styles/engraving/demo/engine/index.js; styles/engraving/demo/engine/plate.js; styles/engraving/demo/engine/wash.js; styles/engraving/demo/example/index.html
+
+STYLE game-show — Game Show Flat — Style Prompt
+Source premise excerpt: A rhythm-game variety show in flat vector: toy-like mascots with thick ink outlines on candy-coloured stripes and sunbursts, every hit landing on a fixed tempo grid, call-and-response patterns, and a judgement word when each round is won.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/game-show/STYLE.md
+Representative code paths under the same pinned repository: styles/game-show/demo/frame_head.html; styles/game-show/demo/index.html; styles/game-show/demo/main.js; styles/game-show/demo/main_b.js; styles/game-show/demo/main_v1.js; styles/game-show/demo/remix2026.js
+
+STYLE glass-product — Glass Product Render — Style Prompt
+Source premise excerpt: Launch-film product rendering in transparent and frosted glass: a dark-field studio, strip-light sweeps, dispersion, caustics, light travelling inside the object, slow exploded views that snap shut on a downbeat.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/glass-product/STYLE.md
+Representative code paths under the same pinned repository: styles/glass-product/demo/index.html; styles/glass-product/demo/main.js; styles/glass-product/demo/product.js; styles/glass-product/demo/story.js; styles/glass-product/demo/studio.js
+
+STYLE halftone-dossier — Halftone Dossier — Style Prompt
+Source premise excerpt: A retro print case file: cream archive paper, overprinted halftone dots in a few flat inks, huge heavy headlines with misregistered shadows, rubber stamps that slam, and thick-outlined characters. The film is a file that is read out one exhibit at a time.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/halftone-dossier/STYLE.md
+Representative code paths under the same pinned repository: styles/halftone-dossier/demo/fetch_fonts.mjs; styles/halftone-dossier/demo/index.html; styles/halftone-dossier/demo/render.mjs
+
+STYLE hd-2d — HD-2D — Style Prompt
+Source premise excerpt: Hand-made pixel sprites standing like paper cut-outs inside a lit, fogged, fully 3D diorama, shot from a high three-quarter angle through a tilt-shift lens: a toy world where every lamp throws a real shadow.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/hd-2d/STYLE.md
+Representative code paths under the same pinned repository: styles/hd-2d/demo/chars.js; styles/hd-2d/demo/cliff.js; styles/hd-2d/demo/forest.js; styles/hd-2d/demo/forest_art.js; styles/hd-2d/demo/fx.js; styles/hd-2d/demo/harbor.js
+
+STYLE hologram-hud — Sci-fi Hologram HUD — Style Prompt
+Source premise excerpt: An object is scanned into a glowing wireframe. Target boxes lock onto its parts; each opens in a local exploded view, a leader pulls out, and its number rolls from garbage glyphs into the real value. It may light up, once, into a solid hologram.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/hologram-hud/STYLE.md
+Representative code paths under the same pinned repository: styles/hologram-hud/demo/engine/holo.js; styles/hologram-hud/demo/engine/hud.js; styles/hologram-hud/demo/film.js; styles/hologram-hud/demo/frames.js; styles/hologram-hud/demo/index.html; styles/hologram-hud/demo/main.js
+
+STYLE impasto — Impasto · Palette Knife — Style Prompt
+Source premise excerpt: Thick oil paint laid with a palette knife: big, flat, sharp-edged planes of colour, raked by light so every ridge of paint shows. Clarity first: value structure before texture, hard edges at the focus, calm planes everywhere else.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/impasto/STYLE.md
+Representative code paths under the same pinned repository: styles/impasto/demo/engine/impasto.js; styles/impasto/demo/engine/plate.js; styles/impasto/demo/film.js; styles/impasto/demo/index.html; styles/impasto/demo/main.js; styles/impasto/demo/scenes/cards.js
+
+STYLE ink-wash — Chinese Ink Wash — Style Prompt
+Source premise excerpt: Xieyi ink painting on rice paper, animated: blank paper is space, one brushstroke is a mountain, a wave, a gesture or a cut.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/ink-wash/STYLE.md
+Representative code paths under the same pinned repository: styles/ink-wash/demo/climax.js; styles/ink-wash/demo/comp.js; styles/ink-wash/demo/cross.js; styles/ink-wash/demo/cues.mjs; styles/ink-wash/demo/face.js; styles/ink-wash/demo/frames.js
+
+STYLE iso-infographic — Isometric Infographic — Style Prompt
+Source premise excerpt: A system diagram comes alive: an isometric diorama of flat three-tone blocks, thin ink labels and Isotype numbers, where things open up to show their insides and the numbers are drawn, not stated.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/iso-infographic/STYLE.md
+Representative code paths under the same pinned repository: styles/iso-infographic/demo/engine.js; styles/iso-infographic/demo/film.js; styles/iso-infographic/demo/hero.js; styles/iso-infographic/demo/index.html; styles/iso-infographic/demo/main.js; styles/iso-infographic/demo/tests.js
+
+STYLE living-screencast — Living Screencast — Style Prompt
+Source premise excerpt: A product walkthrough that looks like a real screen recording, where a low-resolution mascot lives inside a high-resolution interface and acts out what the software is doing.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/living-screencast/STYLE.md
+Representative code paths under the same pinned repository: styles/living-screencast/demo/clawd.js; styles/living-screencast/demo/film.js; styles/living-screencast/demo/index.html; styles/living-screencast/demo/main.js; styles/living-screencast/demo/tools/subs.mjs; styles/living-screencast/demo/ui.js
+
+STYLE lowpoly-island — Low-poly Isometric Island — Style Prompt
+Source premise excerpt: A tiny faceted world seen through an orthographic isometric lens: everything is a geometric block, and everything that appears arrives with a bounce and a note.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/lowpoly-island/STYLE.md
+Representative code paths under the same pinned repository: styles/lowpoly-island/demo/index.html; styles/lowpoly-island/demo/main.js; styles/lowpoly-island/demo/post.js; styles/lowpoly-island/demo/sea.js; styles/lowpoly-island/demo/story.js; styles/lowpoly-island/demo/world.js
+
+STYLE microgame — Microgame Frenzy — Style Prompt
+Source premise excerpt: A rapid-fire party-game film: one command word, a few seconds, one action. Every microgame is drawn in a completely different art style, and the film keeps getting faster. Genre reference (grammar only): the WarioWare series. Never use its name, characters, UI, microgames or music.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/microgame/STYLE.md
+Representative code paths under the same pinned repository: styles/microgame/demo/chars.js; styles/microgame/demo/film.js; styles/microgame/demo/frames.js; styles/microgame/demo/g_ascii.js; styles/microgame/demo/g_blue.js; styles/microgame/demo/g_boss.js
+
+STYLE midcentury-toon — Mid-century Cartoon — Style Prompt
+Source premise excerpt: 1950s flat colour and limited animation for "follow along" films: colour printed a few pixels off its broken ink line, bodies that hold still while hands do the work, abstract colour-block rooms, a calm classroom narrator, and a cool-jazz combo.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/midcentury-toon/STYLE.md
+Representative code paths under the same pinned repository: styles/midcentury-toon/demo/engine/chars.js; styles/midcentury-toon/demo/engine/icons.js; styles/midcentury-toon/demo/engine/toon.js; styles/midcentury-toon/demo/film.js; styles/midcentury-toon/demo/index.html; styles/midcentury-toon/demo/main.js
+
+STYLE one-line — One-line Drawing — Style Prompt
+Source premise excerpt: A single ink line that never leaves the paper. Everything on screen is that one line being drawn; scenes don't cut, they morph.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/one-line/STYLE.md
+Representative code paths under the same pinned repository: styles/one-line/demo/cam.js; styles/one-line/demo/face.js; styles/one-line/demo/geom.js; styles/one-line/demo/hands.js; styles/one-line/demo/index.html; styles/one-line/demo/ink.js
+
+STYLE paper-lantern — Paper-cut Lightbox — Style Prompt
+Source premise excerpt: A layered paper-cut shadow box (纸雕灯) lit from behind: 6–9 sheets of cut card stacked in a shallow box, a warm light glowing through the paper, windows and moons burning through holes, soft shadows falling from each layer onto the next. The frame is the box; the camera is a macro lens inside a lamp.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-lantern/STYLE.md
+Representative code paths under the same pinned repository: styles/paper-lantern/demo/index.html; styles/paper-lantern/demo/render/browser.mjs; styles/paper-lantern/demo/render/cues.mjs; styles/paper-lantern/demo/render/page.mjs; styles/paper-lantern/demo/render/serve.mjs; styles/paper-lantern/demo/render/still.mjs
+
+STYLE paper-popup — Paper Pop-up Book — Style Prompt
+Source premise excerpt: A pop-up book on a real desk becomes a stage: flat cut-paper actors with white borders perform in front of paper sets that spring up from the page, under real lamp light and a real macro lens.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/paper-popup/STYLE.md
+Representative code paths under the same pinned repository: styles/paper-popup/demo/actors.js; styles/paper-popup/demo/art.js; styles/paper-popup/demo/book.js; styles/paper-popup/demo/cutmesh.js; styles/paper-popup/demo/fetch_fonts.mjs; styles/paper-popup/demo/gltest.mjs
+
+STYLE papercut-red — Red Paper-cut — Style Prompt
+Source premise excerpt: Chinese window-flower paper-cuts brought to life: jointed red cut-outs on paper grounds, where the cut *is* the drawing and the holes are where the light gets in.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/papercut-red/STYLE.md
+Representative code paths under the same pinned repository: styles/papercut-red/demo/climax.js; styles/papercut-red/demo/fold.js; styles/papercut-red/demo/girl.js; styles/papercut-red/demo/hud.js; styles/papercut-red/demo/index.html; styles/papercut-red/demo/light.js
+
+STYLE pictogram-motion — Pictogram Motion — Style Prompt
+Source premise excerpt: A beat-locked flash-card film built from three things only: a **square-grid "core graphic"** of circles, half-discs and tiny patterned cells whose rows slide past each other; **geometric pictograms** made of round-capped bars and a disc head; and **bold bilingual type** that slides up out of masks. Every cut lands on a drum hit.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/pictogram-motion/STYLE.md
+Representative code paths under the same pinned repository: styles/pictogram-motion/demo/cover.html; styles/pictogram-motion/demo/cover34.html; styles/pictogram-motion/demo/edl.js; styles/pictogram-motion/demo/engine.js; styles/pictogram-motion/demo/index.html; styles/pictogram-motion/demo/lab.html
+
+STYLE pixel-rpg — 16-bit Pixel RPG — Style Prompt
+Source premise excerpt: A short film that looks, sounds and *behaves* like a mid-90s console role-playing game: 320×180 pixels, a limited indexed palette, text boxes that type, menus, save files, chip music with echo.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/pixel-rpg/STYLE.md
+Representative code paths under the same pinned repository: styles/pixel-rpg/demo/font.js; styles/pixel-rpg/demo/index.html; styles/pixel-rpg/demo/main.js; styles/pixel-rpg/demo/memscenes.js; styles/pixel-rpg/demo/memsprites.js; styles/pixel-rpg/demo/pixel.js
+
+STYLE risograph — Risograph Print — Style Prompt
+Source premise excerpt: Animation that looks printed, frame by frame, on a stencil duplicator: two or three translucent spot inks overprinted on warm paper, halftone dots, ink grain, and plates that never quite line up.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/risograph/STYLE.md
+Representative code paths under the same pinned repository: styles/risograph/demo/draw.js; styles/risograph/demo/film.js; styles/risograph/demo/index.html; styles/risograph/demo/main.js; styles/risograph/demo/rider.js; styles/risograph/demo/riso.js
+
+STYLE rubber-hose — 1930s Rubber Hose Cartoon — Style Prompt
+Source premise excerpt: Black-and-white hand-inked cartoons where every object is alive and swings to a hot jazz band.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/rubber-hose/STYLE.md
+Representative code paths under the same pinned repository: styles/rubber-hose/demo/bg.js; styles/rubber-hose/demo/cast.js; styles/rubber-hose/demo/chars.js; styles/rubber-hose/demo/events.js; styles/rubber-hose/demo/film.js; styles/rubber-hose/demo/index.html
+
+STYLE scifi-toon — Sci-Fi Sitcom Toon — Style Prompt
+Source premise excerpt: Adult-animation sci-fi sitcom: thick boiling outlines, flat colour, a duo whose reactions don't match, a glowing portal, and one palette per world.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/scifi-toon/STYLE.md
+Representative code paths under the same pinned repository: styles/scifi-toon/demo/chars.js; styles/scifi-toon/demo/index.html; styles/scifi-toon/demo/main.js; styles/scifi-toon/demo/srt.mjs; styles/scifi-toon/demo/story.js; styles/scifi-toon/demo/toon.js
+
+STYLE shadow-puppet — Shadow Puppetry — Style Prompt
+Source premise excerpt: Chinese shadow theatre: translucent dyed-hide puppets, carved like lace, pressed against a cotton screen and lit from behind by oil lamps.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/shadow-puppet/STYLE.md
+Representative code paths under the same pinned repository: styles/shadow-puppet/demo/backstage.js; styles/shadow-puppet/demo/carve.js; styles/shadow-puppet/demo/gl.js; styles/shadow-puppet/demo/houyi.js; styles/shadow-puppet/demo/hud.js; styles/shadow-puppet/demo/index.html
+
+STYLE silent-film — 1920s Silent Film — Style Prompt
+Source premise excerpt: An engraved-illustration silent film projected in a picture house: ink line and silver wash, a 4:3 print that flickers and weaves between velvet curtains, intertitles instead of voices, and a cinema pianist who plays every beat.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/silent-film/STYLE.md
+Representative code paths under the same pinned repository: styles/silent-film/demo/cardspecs.js; styles/silent-film/demo/chars.js; styles/silent-film/demo/engine/cards.js; styles/silent-film/demo/engine/figure.js; styles/silent-film/demo/engine/film.js; styles/silent-film/demo/engine/heads.js
+
+STYLE silkscreen-poster — Silkscreen Travel Poster — Style Prompt
+Source premise excerpt: Opaque, hard-edged flat inks pulled one colour at a time through a screen: 4–6 inks per poster, stepped colour bands instead of gradients, thin paper-white gaps where the registration slips. Information is revealed the way the print is made: one layer, one beat.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/silkscreen-poster/STYLE.md
+Representative code paths under the same pinned repository: styles/silkscreen-poster/demo/engine/poster.js; styles/silkscreen-poster/demo/engine/scenes.js; styles/silkscreen-poster/demo/engine/silk.js; styles/silkscreen-poster/demo/film.js; styles/silkscreen-poster/demo/index.html; styles/silkscreen-poster/demo/main.js
+
+STYLE spy-titles — 60s Spy Title Sequence — Style Prompt
+Source premise excerpt: A cut-paper, four-ink opening title sequence for a film that never existed: silhouettes move through sets built out of the credits themselves, every brass stab is a cut, and a title is assembled from the pieces.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/spy-titles/STYLE.md
+Representative code paths under the same pinned repository: styles/spy-titles/demo/chars.js; styles/spy-titles/demo/film.js; styles/spy-titles/demo/frames.js; styles/spy-titles/demo/glyph.js; styles/spy-titles/demo/index.html; styles/spy-titles/demo/main.js
+
+STYLE stained-glass — Stained Glass — Style Prompt
+Source premise excerpt: A medieval stained-glass window seen from inside a dark stone hall, alive only where the sun touches it: light is the clock, the camera and the story.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/stained-glass/STYLE.md
+Representative code paths under the same pinned repository: styles/stained-glass/demo/comp.js; styles/stained-glass/demo/dragon.js; styles/stained-glass/demo/frames.js; styles/stained-glass/demo/glass.js; styles/stained-glass/demo/index.html; styles/stained-glass/demo/knight.js
+
+STYLE swiss-motion — Swiss Motion Graphics — Style Prompt
+Source premise excerpt: International Typographic Style in motion: a modular grid, one typeface, one signal colour, and movement as exact as a printing press.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/swiss-motion/STYLE.md
+Representative code paths under the same pinned repository: styles/swiss-motion/demo/ease.js; styles/swiss-motion/demo/film.js; styles/swiss-motion/demo/index.html; styles/swiss-motion/demo/main.js
+
+STYLE tilt-shift — Tilt-Shift Miniature — Style Prompt
+Source premise excerpt: A real-looking place photographed from high above with a tilted lens and a time-lapse camera, so the whole world reads as a tabletop model.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/tilt-shift/STYLE.md
+Representative code paths under the same pinned repository: styles/tilt-shift/demo/city.js; styles/tilt-shift/demo/ducks.js; styles/tilt-shift/demo/geo.js; styles/tilt-shift/demo/index.html; styles/tilt-shift/demo/main.js; styles/tilt-shift/demo/post.js
+
+STYLE ukiyoe — Ukiyo-e — Style Prompt
+Source premise excerpt: Edo-period woodblock prints brought to life: flat colour blocks, carved ink lines, bokashi skies, paper you can feel, and a camera that moves over the print like an unrolling handscroll.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/ukiyoe/STYLE.md
+Representative code paths under the same pinned repository: styles/ukiyoe/demo/index.html; styles/ukiyoe/demo/main.js; styles/ukiyoe/demo/nature.js; styles/ukiyoe/demo/print.js; styles/ukiyoe/demo/story.js; styles/ukiyoe/demo/traveler.js
+
+STYLE urban-sketch — Urban Sketch · Pen & Wash — Style Prompt
+Source premise excerpt: A sketchbook page drawn on location: fine sepia fineliner lines that wobble, overshoot and never quite close, with loose transparent watercolour dropped on top. The colour sits slightly off the lines, spills over them, and dissolves into cream cold-press paper at the page edge.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/urban-sketch/STYLE.md
+Representative code paths under the same pinned repository: styles/urban-sketch/demo/api.js; styles/urban-sketch/demo/engine.js; styles/urban-sketch/demo/film.js; styles/urban-sketch/demo/index.html; styles/urban-sketch/demo/look.js; styles/urban-sketch/demo/main.js
+
+STYLE watercolor — Watercolor Brush — Style Prompt
+Source premise excerpt: A hand-painted journal page that paints itself: translucent brush strokes with dry-brush flying white on warm cotton paper, hand-written notes beside what is painted, nothing drawn with a vector line.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/watercolor/STYLE.md
+Representative code paths under the same pinned repository: styles/watercolor/demo/aus.js; styles/watercolor/demo/engine.js; styles/watercolor/demo/extract_aus.mjs; styles/watercolor/demo/fetch_fonts.mjs; styles/watercolor/demo/index.html; styles/watercolor/demo/main.js
+
+STYLE whiteboard — Whiteboard Explainer — Style Prompt (v2, no hands)
+Source premise excerpt: An explainer drawn live on one glossy dry-erase board: single-line handwriting that is actually *written* stroke by stroke, floating markers with no hand, magnets that can move, an eraser that can rewind, and a camera that travels across the board instead of cutting.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/whiteboard/STYLE.md
+Representative code paths under the same pinned repository: styles/whiteboard/demo/engine/wb.js; styles/whiteboard/demo/film.js; styles/whiteboard/demo/index.html; styles/whiteboard/demo/main.js; styles/whiteboard/demo/test.js; styles/whiteboard/demo/tools/subs.mjs
+
+STYLE woodcut — Woodcut Print — Style Prompt
+Source premise excerpt: A relief print that carves itself: every frame is a black wood block, and light only exists where a knife has cut it away. One colour at most, and only for the thing that burns.
+Guide: repository-downloads/lemomo-ai/lemo-opuscar/styles/woodcut/STYLE.md
+Representative code paths under the same pinned repository: styles/woodcut/demo/chars.js; styles/woodcut/demo/engine/filter.js; styles/woodcut/demo/engine/hatch.js; styles/woodcut/demo/engine/index.js; styles/woodcut/demo/engine/knife.js; styles/woodcut/demo/engine/print.js
+
+SECTION: 04_LOCAL_PREPARATION_STATUS.txt
+
+HISTORICAL LOCAL DEPENDENCY PREPARATION — 2026-10-05
+
+Thirteen complete checkouts match their recorded commits. All 13,674 tracked entries were independently verified. 171 LFS entries retrieved. See repository-preparation/ for detailed checks and deferred scopes.
+
+Source repository-preparation/activate.sh in a terminal session to expose isolated Git LFS/Bun and existing Chrome variables without changing the shell profile. R01/R02 use CHROME_PATH; R03 uses PLAYWRIGHT_CHROME. R08 accepts --chrome. R10 has a separate R10_CHROME_PRELOAD.mjs adapter. Use each Python environment through its own .venv/bin/python. Exact package versions and entry paths are in the detailed receipts.
+
+The prepared local engines cover illustrated, painted, kinetic, printed, dimensional, HTML and native Canvas work. Future theme selection should compare these capabilities using the actual song and desired image/motion craft. Read the chosen original implementation and initialize it under the appropriate environment. A catalog entry or dependency installation is not proof of visual quality.
+
+As of 2026-10-05, optional voice/music models, paid-service branches, cloud deployment, R05 Ruby/ImageMagick, R07 audio analysis, website build and collection maintenance remained documented choices. R07 analysis was subsequently prepared as recorded below. Evangelion has no supplied licensed soundtrack; its successful compilation skipped public-audio copying and is not a complete playable production.
+
+No new media was produced. The next production stage remains governed by current user authorization. No chat context connections were changed by local preparation.
+
+CURRENT ADDENDUM — 2026-10-24 (ORIGINAL ACTIVE KIT)
+The following resources were installed or prepared after the historical 2026-10-05 snapshot. Detailed versions, licenses, commands and checks are in repository-preparation/additional-resources/README.md and ADDITIONAL_RESOURCE_INSTALLS.csv.
+
+- R07 analysis: repository-downloads/bizarro/evangelion/analysis/.venv was created from the existing pyproject.toml and uv.lock using Python 3.12.13. Librosa 1.0.0 imports. The locked R07 environment also prepares its declared Demucs, MLX Whisper and Torch stack. No song audio was processed and no model weights were downloaded.
+- Optional isolated JavaScript set: repository-preparation/additional-resources/javascript/ contains Flubber 0.4.2, Lottie Web 5.13.0, Pixelmatch 8.0.0, pngjs 7.0.0 and Fontsource Archivo Black, EB Garamond, Inter, League Gothic, Noto Sans JP and Space Mono. The package tree resolves; none is integrated into the shared renderer.
+- WhisperX 3.8.6 is installed in repository-preparation/additional-resources/whisperx/.venv on Python 3.12.13 with CPU PyTorch. Model weights were not downloaded; singing alignment is unassessed.
+- Khronos RiggedSimple is a sparse fixture at repository-preparation/additional-resources/gltf-sample-assets/Models/RiggedSimple, pinned to commit 8f492390ddc7a2ae221a1369ef560589cf8c70fb. It is CC-BY-4.0 with model-level attribution. It is not a general asset-rights clearance.
+- Approximate added logical storage: JS set 118 MB; WhisperX environment 975 MB; R07 environment 1.1 GB; glTF fixture 168 KB. These additions are in the original active kit. The Downloads migration copy predates them and is not the current source of truth.
+
+BOUNDARIES
+Installation/import checks establish package readiness only. No added package has been integrated into the shared renderer except the already-recorded R06 particle adaptation. No audio analysis, WhisperX inference, media generation, rendering, visual baseline, browser appearance review or audiovisual acceptance was performed in this preparation pass.
+
+SECTION: CURRENT CLAUDE ACCESS AND NEXT STAGE — 2026-10-25
+
+ACTIVE SOURCE ROUTE
+The active Claude project is Finished Song Animation Studio. Its Library currently uses the linked local folder `music-motion-reel-kit`, pointing to the original kit at ``. The Oct 25 Library review showed the linked folder and no separate source-reference files. This is local-folder access, not proof that the 13 complete repository trees were uploaded into the persistent project Library or read by Claude. Verify access by opening named files and reporting their paths and distinctive symbols. Keep Claude Desktop open when a session needs the Mac folder. If the original folder is unavailable, stop and report that instead of silently using the Downloads migration copy.
+
+The migration copy is `~/Downloads/Animation-Video-Project-Migration-2026-10-24/workspace/music-motion-reel-kit/`. The Oct 24 copy audit found the audited source/code roots matched at that time. The optional resource install and router update occurred afterward in the original kit; the migration copy lacks `repository-preparation/additional-resources/` and has an older router. The original kit is the current source of truth.
+
+REPOSITORY EVIDENCE
+The Oct 24 repository audit records 13 pinned checkouts, 13,674 tracked entries, and 171 LFS objects verified. This is dated integrity evidence, not a claim that Claude opened all files. The audit and detailed matrix are in `repository-preparation/`; use their exact statuses instead of repeating large scans. GPT-prepared source packages in the Downloads audit folder are not proof of Claude Library upload and are not part of this original kit's current local source route.
+
+NEXT CROSS-SONG FOUNDATION
+PER-SONG FORMAT AND RENDER GUIDANCE
+The song-neutral production shell already exists. For each new production, recommend 4:5 (1080×1350) or 9:16 (1080×1920) from the song's visual direction and explain the choice before storyboarding. Set explicit dimensions in its own PROJECT config. The renderer's normalization, canvas and export viewport follow configured width/height; this is a sizing capability, not a promise that existing scenes reflow. Compose every scene, camera, text treatment and overlay for the chosen frame, and review at the actual dimensions and phone size. Do not crop the other format or add a two-ratio validator. Use the complete supplied master from beginning to end at its measured duration by default; do not choose an excerpt unless requested. Set duration explicitly and let an omitted maximum follow that duration. Build on current production interfaces and source evidence; do not re-propose the completed shell.
+
+STATUS VOCABULARY
+Downloaded, dependency-prepared, source-read, integrated, browser-checked, visually reviewed and creatively accepted are separate states. A package import is not renderer integration; a non-rendering check is not pixel evidence; an export is not creative acceptance. Preserve source commits, licenses, and exclusions on every later adaptation.
+
+
+SECTION: SHARED ANIMATION LIBRARY (implemented 2026-10-07, repaired 2026-10-08) — shared-animation-library/
+Reusable production system; read shared-animation-library/README.md first (production contract, config, export contract), provenance/PROVENANCE.json for hashes.
+EACH SONG SUPPLIES: recording identity + measured full duration (with `sourceAudioOffsetSeconds: 0` by default), a song-specific config.js (`PROJECT`) with explicit width/height for the selected 4:5 (1080×1350) or 9:16 (1080×1920) frame, explicit `duration`, assets, scene modules, shot sequence, cues, particle events and visual treatment. An excerpt offset is used only when the user explicitly requests an excerpt. The project-config technical dimension fallback is 1080×1920 and the legacy duration fallback is 11 seconds; neither is a creative/production default. Omitted `maxDurationSeconds` resolves to the configured duration; any explicit cap is per-production and must not truncate it. Report frame count and audio/video endpoint difference after export.
+ENTRY POINTS
+- base/studio.html (canvas/CSS size follows PROJECT.width/height) and base/examples/landscape/studio.html (scene authored at 1920×1080). Engine = R02 painted template (R01 upstream). `base/src/project-config.js` normalizeProject(PROJECT) validates dimensions and supplies the values used by core W/H, #out, viewport and adapter install. A dimension-configurable entry does not make authored layouts responsive.
+- base/render.mjs --root=<production> --entry=<page>: --plan (no render), --clip, --frames/--encode (identity-bound cache + manifest, same audio/frame contract), sheets/strips/stills. export/export-plan.mjs, cache-identity.mjs, process-runner.mjs hold the pure/testable logic.
+- numeric/numeric.mjs: common helpers + named R02/R03/R06 variants (r02.beatPulse takes explicit beatSeconds; beatPulseForBpm keeps source call shape); numeric/timebase.mjs: frame/video/source conversions (1e-9 s snap).
+- adapters/r06-burst-particles.mjs (createParticleLayer; exception-safe try/finally adaptation of pinned burstParticles), overlay-dispatcher.mjs, host-integration.mjs (transactional installLibraryOverlays).
+SOURCE MAPPING: R02 base files, R01 provenance for 7 identical files; R03 lib.js and R02 kinetic reel.js math -> numeric; R06 fx.mjs/core.mjs -> particles; identity/audioStart conventions generalized from renderer/render.v3.mjs. R08-R10 not used.
+DEPENDENCIES: base needs Node>=22.12, Chrome, ffmpeg, linked p5/p5.brush/puppeteer-core (lock preserved). numeric/adapters/export planning: none.
+LIMITS (HISTORICAL, written before the 2026-10-25 browser readiness report): no browser run yet (module load, readiness, fonts, pixels, real encode, A/V check pending authorization); landscape-only demo/karaoke/sheets/placeholder layouts; Google Fonts network-loaded and unhashed; kinetic engine, R03 interpolation, R06 geometry not exposed. Verification: tests/verify.mjs (43 non-rendering checks incl. synthetic multi-production suite).
+
+ADDENDUM 2026-10-25 (static implementation pass; no browser, media, audio or model use in that pass; a later browser readiness check is described in PRIORITY 1)
+New under shared-animation-library/: production/ (manifest.mjs, scene-runtime.mjs, cue-schema.mjs, production-host.mjs, fontsource.mjs), adapters/r06-critter-rig.mjs, examples/neutral-production/, tests/verify-production.mjs (25 checks) beside the existing tests/verify.mjs (43 checks). Edited: base/src/project-config.js (additive production contract), base/studio.html (one chained install promise), export/cache-identity.mjs (declared modules/cue module/assets/fonts), tests/recording-context.mjs (createLinearGradient). Status vocabulary for this pass: R06 critter = source read, adapted, called by the neutral example scene (never rendered). R02 kinetic reel.js, R03 riso.js/post.js = source read, NOT adapted (separate-host routes, see PRIORITY 3-4). R04 analyze-beatgrid.py, R07 analyze.py/audio.ts = read for output shape only; importers exist, never run on real output.
+
+SECTION: ADDITIONAL RESOURCE PREPARATION (2026-10-24)
+Use repository-preparation/additional-resources/README.md for the install receipt and ADDITIONAL_RESOURCE_INSTALLS.csv for versions, paths, license records and verification state. These resources were prepared in the original active Claude kit; the Downloads migration copy was not changed.
+- R07 audio analysis route: repository-downloads/bizarro/evangelion/analysis/.venv, created from its existing pyproject.toml + uv.lock using Python 3.12.13. Librosa 1.0.0 imports. The locked environment also prepares the route's declared Demucs, MLX Whisper and Torch stack. This supersedes the 2026-10-05 statement that R07 analysis dependency preparation was deferred; preserve that earlier text as historical.
+- Optional JS packages: repository-preparation/additional-resources/javascript/ (package.json + package-lock.json): Flubber 0.4.2; Lottie Web 5.13.0; Pixelmatch 8.0.0 + pngjs 7.0.0; Fontsource Archivo Black 5.2.8, EB Garamond 5.2.7, Inter 5.2.8, League Gothic 5.2.8, Noto Sans JP 5.2.9, Space Mono 5.2.9. They are isolated and not wired into the shared renderer.
+- WhisperX 3.8.6: isolated Python 3.12.13 environment at repository-preparation/additional-resources/whisperx/. Model weights were not downloaded; no song was processed. Evaluate singing alignment before relying on its timestamps.
+- glTF fixture: repository-preparation/additional-resources/gltf-sample-assets/Models/RiggedSimple at commit 8f492390ddc7a2ae221a1369ef560589cf8c70fb; one animation and one skin, CC-BY-4.0 with model attribution. This fixture does not grant clearance for other models or production imagery.
+- Font binaries from selected Fontsource packages are locally available with package license files. No renderer integration or glyph/visual review has occurred.
+BOUNDARY: Download/install/import verification is not implementation integration. General scene-layout systems for native 4:5 and 9:16 compositions, the kinetic typography workflow adapter, reusable character/subject adapters, 3D/camera/material compositor, recording-specific cue pipeline, corrected sung-lyric workflow and real browser/visual/audiovisual acceptance remain open. No media generation, rendering, audio analysis, model inference, image processing or visual baseline was performed in this resource-preparation pass.
+
+ONGOING VERIFIED LESSONS
+Maintain reusable-animation-context/VERIFIED_PRODUCTION_LESSONS.md after every substantive pass when evidence supports a general lesson or changes an earlier conclusion. Save the song handoff locally and update its current checkpoint even when no new shared lesson arises. This requirement continues across future songs; read the lessons selectively before repeating setup or diagnosing a known failure.
+
+MOTION-RESOURCE ASSESSMENT: R14–R16 source checkouts and project-local Claude/Codex skills are initialized in `repository-downloads/` and the verified skill locations. Assess all three before each song's storyboard lock; direct adoption is selective. See `claude-finished-song-animation-project/17_FOOTAGE_FRAME_FOOTPRINT_AND_CODE_ACTION.txt` and `repository-preparation/ANIMATION_AGENT_SKILL_RESOURCES_GUIDE.md`. They do not add a renderer or runtime dependency.

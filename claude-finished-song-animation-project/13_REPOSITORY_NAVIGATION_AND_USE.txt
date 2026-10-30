@@ -1,0 +1,32 @@
+REPOSITORY NAVIGATION — REQUIRED FOR EVERY NEW SONG
+
+Canonical detailed atlas:
+../repository-preparation/REPOSITORY_NAVIGATION_AND_USE_GUIDE.md
+Song-local provenance template:
+../repository-preparation/templates/SONG_RESOURCE_PROVENANCE_TEMPLATE.md
+Canonical provenance/build-trace rules:
+16_SOURCE_PROVENANCE_AND_BUILD_TRACE.txt
+Source router and reuse roles:
+../reusable-animation-context/REUSABLE_ANIMATION_SOURCE_ROUTER.txt
+Repository catalog/preparation records:
+../repository-preparation/README.txt
+
+REQUIRED SONG-LOCAL EVIDENCE
+Before finalizing the storyboard, create `productions/<song>/research/REPOSITORY_REVIEW.md`. This is the required proof of discovery and source selection, not an optional summary. Use the song’s actual scene needs and the shared Remotion contract.
+
+1. Read this song’s recording, lyrics and brief; turn them into concrete scene/technical requirements before choosing techniques.
+2. Inspect the current router, catalog and atlas. Open local checkout evidence for each catalogued R01–R16; do not treat a router entry, catalog record or checkout presence as a source read. Give every accessible repo a distinct overall relevance rank (1 = strongest fit for this song, 16 = weakest), a fit label (strong, plausible, weak or no fit) and a brief reason tied to actual needs. Record exact local paths opened for every row. If an entry is inaccessible, mark it unverified/unranked and state the blocker; do not count it as scanned or call it no-fit.
+3. The report must contain all 16 IDs in one ranked table with: rank; R ID/name; scene need(s); fit and reason; exact local evidence/source paths opened; inspection depth; disposition (shortlisted/adapted, relevant but not selected, no fit, study/catalog-only or inaccessible) and reason. Do not claim a complete repository review without this table.
+4. Deep-read actual source bodies, follow imports, and inspect complete relevant dependency and license/asset closure for promising candidates. The required deep-read is selective: inspect only mechanisms that plausibly fit a real scene. Record symbols and reading scope. For catalog-only or study-only entries, state the actual material inspected and the applicable reuse boundary; do not invent executable code.
+5. Add a mechanism-to-scene table for every selected technique: scene/need → repo URL and pinned commit → exact path/symbol → observed mechanism → dependency/license and compatibility notes → copied/modified/re-authored status → song-local helper/scene file and concrete caller. If no technique is selected, say so and justify why. A shortlist with no implementation call site must be labeled proposed, not integrated.
+6. Keep repository discovery distinct from the Moving Image Archive clip search and from the separate R12/Skillry shortlist. R10 is a read-only film-study repo; respect every recorded study-only role and creator license. Never force repository usage, copy a demo wholesale, or equate packages installed with production integration.
+7. Use the canonical provenance template as the single `research/REPOSITORY_REVIEW.md`. Include its separate R14–R16 skill-consultation table: exact project-local skill/support paths actually opened, read/consulted state, the song decision it informed, or a reason it was not used. Resolve upstream identity and hashes through the install manifest; do not confuse skill availability with consultation or a skill with a runtime dependency. For copied or materially adapted code, add a concise source/license notice beside the song-local helper.
+8. Link `REPOSITORY_REVIEW.md` from the song plan/report and `CHECKPOINT.md`. In the final handoff, state the report path and summarize the strongest candidates, actual source files read, selected scene call sites, non-use reasons and unresolved access. Keep read, prepared, adapted, integrated, checked, browser-reviewed and visually accepted as separate evidence states.
+
+R04 / HyperFrames may supply a scene-level HTML/GSAP subcomposition inside Remotion when a specific scene benefits. It remains a Claude implementation choice, not a user selection gate. Remotion retains the master clock, song audio, full duration, final composition and encoder. Inspect `14_HYPERFRAMES_SUBCOMPOSITION_GUIDE.txt` and the limited comparison fixture before adopting; do not describe R04 as already integrated into the shared render front door.
+
+Choose only mechanisms that solve real scene problems. The shared Remotion route remains the new-song master renderer; a HyperFrames child composition is optional per scene, and p5 remains the legacy route. Use the atlas’s scene-need index to find likely source paths.
+
+REQUIRED R14–R16 MOTION-RESOURCE ASSESSMENT
+
+Before storyboard lock, assess all three initialized R14–R16 resources against this song's actual scene needs. Read `17_FOOTAGE_FRAME_FOOTPRINT_AND_CODE_ACTION.txt` and `repository-preparation/ANIMATION_AGENT_SKILL_RESOURCES_GUIDE.md`; inspect the project-local skill copies available to this agent and record exact paths opened, the decision each informed, and a reason for any no-use decision in the template's skill table. Deep reading and code adaptation remain selective. The skill copies do not add a renderer or runtime. The shared Remotion runtime separately includes `@remotion/gsap` and `gsap`; use the frame-driven adapter selectively for DOM/SVG choreography. See `shared-animation-library/remotion-runtime/README.md`.

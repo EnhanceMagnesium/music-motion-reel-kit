@@ -1,0 +1,637 @@
+{
+  "generated": "2026-10-27",
+  "active_kit": ".",
+  "installation_model": "project-local copied agent references; no global skill/settings changes",
+  "repositories": [
+    {
+      "id": "R14",
+      "url": "https://github.com/whaleyxbt/claude-motion",
+      "commit": "e627941543d9988b155dc610bb9cc0115a5e365e",
+      "checkout": "repository-downloads/whaleyxbt/claude-motion",
+      "tracked_file_count": 66,
+      "tracked_bytes": 15708150,
+      "git_metadata_bytes": 15251944,
+      "lfs_pointer_count": 0,
+      "gitlink_count": 0,
+      "license": "MIT",
+      "license_sha256": "ca02fba63bfcc89f475a8672dd852a220005a17325fc05d7f2299f5adf7f10a4"
+    },
+    {
+      "id": "R15",
+      "url": "https://github.com/LottieFiles/motion-design-skill",
+      "commit": "f9a8a041b85185ee4881b3471d3415e939aac772",
+      "checkout": "repository-downloads/LottieFiles/motion-design-skill",
+      "tracked_file_count": 20,
+      "tracked_bytes": 61257,
+      "git_metadata_bytes": 65159,
+      "lfs_pointer_count": 0,
+      "gitlink_count": 0,
+      "license": "MIT",
+      "license_sha256": "9fc2e8685daa09e28d54b6afa8a38f168417c5735a3cd676c80c159785e93a80"
+    },
+    {
+      "id": "R16",
+      "url": "https://github.com/greensock/gsap-skills",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "checkout": "repository-downloads/greensock/gsap-skills",
+      "tracked_file_count": 44,
+      "tracked_bytes": 148588,
+      "git_metadata_bytes": 137019,
+      "lfs_pointer_count": 0,
+      "gitlink_count": 0,
+      "license": "MIT",
+      "license_sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    }
+  ],
+  "skills": [
+    {
+      "agent_directory": ".claude/skills",
+      "name": "motion-craft",
+      "repository_id": "R14",
+      "source_url": "https://github.com/whaleyxbt/claude-motion",
+      "commit": "e627941543d9988b155dc610bb9cc0115a5e365e",
+      "license": "MIT",
+      "upstream_skill_path": ".claude/skills/motion-design",
+      "installed_path": ".claude/skills/motion-craft",
+      "upstream_skill_sha256": "241b4949d4dfc5a489b98399892a1b7e80abbe1e977ddbec612403d45997fd57",
+      "installed_skill_sha256": "1a5c6d3adb08411dc456d87ebb7ba5ce5f5f7b8171fed1bcc6a3a0c77c03fa2c",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "source_sha256": "241b4949d4dfc5a489b98399892a1b7e80abbe1e977ddbec612403d45997fd57",
+          "installed_sha256": "1a5c6d3adb08411dc456d87ebb7ba5ce5f5f7b8171fed1bcc6a3a0c77c03fa2c",
+          "modified": true
+        }
+      ],
+      "kit_integration_sha256": "4d7ce494ae72d5ad1c5d94800c32c52242485ababb828f814fdf7640a58b87c7",
+      "provenance_sha256": "733ec69814ca84d75cb15f580a67a3c9b50b56c8eb333dd0222695df3a9ce1d5",
+      "license_copy_sha256": "ca02fba63bfcc89f475a8672dd852a220005a17325fc05d7f2299f5adf7f10a4"
+    },
+    {
+      "agent_directory": ".claude/skills",
+      "name": "lottiefiles-motion-principles",
+      "repository_id": "R15",
+      "source_url": "https://github.com/LottieFiles/motion-design-skill",
+      "commit": "f9a8a041b85185ee4881b3471d3415e939aac772",
+      "license": "MIT",
+      "upstream_skill_path": "skills/motion-design",
+      "installed_path": ".claude/skills/lottiefiles-motion-principles",
+      "upstream_skill_sha256": "8729ecbc7e5736c1295baaa8ba0384bb4b1aac9cf91b83fcdc64d9548a57bb19",
+      "installed_skill_sha256": "5022a91565a7794446fe5bf529e53bcad3054095d02b392b7c06d4dd217c05d7",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "source_sha256": "8729ecbc7e5736c1295baaa8ba0384bb4b1aac9cf91b83fcdc64d9548a57bb19",
+          "installed_sha256": "5022a91565a7794446fe5bf529e53bcad3054095d02b392b7c06d4dd217c05d7",
+          "modified": true
+        },
+        {
+          "path": "director/choreography.md",
+          "source_sha256": "c81257b56160b9b2f3d99f78d4b8172b425c22d9ca73be06d3ffaa7305a34deb",
+          "installed_sha256": "c81257b56160b9b2f3d99f78d4b8172b425c22d9ca73be06d3ffaa7305a34deb",
+          "modified": false
+        },
+        {
+          "path": "director/context-adaptation.md",
+          "source_sha256": "550e96a1c8c369513304ee74c0e89b63168bc7287b83e9ed5685bb65609986b3",
+          "installed_sha256": "550e96a1c8c369513304ee74c0e89b63168bc7287b83e9ed5685bb65609986b3",
+          "modified": false
+        },
+        {
+          "path": "director/core-philosophy.md",
+          "source_sha256": "7aaa8a065d9940dad0198cf9cfe74979008495e6daf87f46f9022fff1b6a85e9",
+          "installed_sha256": "7aaa8a065d9940dad0198cf9cfe74979008495e6daf87f46f9022fff1b6a85e9",
+          "modified": false
+        },
+        {
+          "path": "director/decision-framework.md",
+          "source_sha256": "4b6758da6742475c928b4f8be8c662f4b5ed0964468ba7760df8f7635c779358",
+          "installed_sha256": "4b6758da6742475c928b4f8be8c662f4b5ed0964468ba7760df8f7635c779358",
+          "modified": false
+        },
+        {
+          "path": "director/disney-principles.md",
+          "source_sha256": "39024711890c2684a3434659a4d95a52ca8231facea74e87e79503054aaca671",
+          "installed_sha256": "39024711890c2684a3434659a4d95a52ca8231facea74e87e79503054aaca671",
+          "modified": false
+        },
+        {
+          "path": "director/emotion-mapping.md",
+          "source_sha256": "a279e55a3f52a9f5830d38dc54679c652d9a5c26f0dd360700c16e23766d468b",
+          "installed_sha256": "a279e55a3f52a9f5830d38dc54679c652d9a5c26f0dd360700c16e23766d468b",
+          "modified": false
+        },
+        {
+          "path": "director/motion-personality.md",
+          "source_sha256": "66a3623b6654869482c02157ca791034a614ca6dcb02a8112049e28d292ee18a",
+          "installed_sha256": "66a3623b6654869482c02157ca791034a614ca6dcb02a8112049e28d292ee18a",
+          "modified": false
+        },
+        {
+          "path": "director/narrative-structure.md",
+          "source_sha256": "d49db19db40425dec027c3012d553b50fd74ed79e27ace9dec1226796469061b",
+          "installed_sha256": "d49db19db40425dec027c3012d553b50fd74ed79e27ace9dec1226796469061b",
+          "modified": false
+        },
+        {
+          "path": "patterns/ambient-continuous.md",
+          "source_sha256": "f9cfa00d3325dceadcb9ffd77dcb5dcbc51d34121f3b1f162979939006056773",
+          "installed_sha256": "f9cfa00d3325dceadcb9ffd77dcb5dcbc51d34121f3b1f162979939006056773",
+          "modified": false
+        },
+        {
+          "path": "patterns/entrance-exit.md",
+          "source_sha256": "70b3fc3a8d58ebe58e293e643b78fd13750d9c8ef1c8fc5fe85e52f7378cbd91",
+          "installed_sha256": "70b3fc3a8d58ebe58e293e643b78fd13750d9c8ef1c8fc5fe85e52f7378cbd91",
+          "modified": false
+        },
+        {
+          "path": "patterns/multi-element.md",
+          "source_sha256": "46c8da91843c593deb763a4a7fa32849bdaeb7a7ecd4d559e3b21bcc976f2c46",
+          "installed_sha256": "46c8da91843c593deb763a4a7fa32849bdaeb7a7ecd4d559e3b21bcc976f2c46",
+          "modified": false
+        },
+        {
+          "path": "patterns/state-feedback.md",
+          "source_sha256": "dac86388c2d8fcdfc2f194b4f8877caedcdc010df9ce29d27dfc99d08cf8c60e",
+          "installed_sha256": "dac86388c2d8fcdfc2f194b4f8877caedcdc010df9ce29d27dfc99d08cf8c60e",
+          "modified": false
+        },
+        {
+          "path": "reference/property-selection.md",
+          "source_sha256": "053d830795fc824fed27618fbd18084207af6aeed55b73c0a6e1d5665de894ae",
+          "installed_sha256": "053d830795fc824fed27618fbd18084207af6aeed55b73c0a6e1d5665de894ae",
+          "modified": false
+        },
+        {
+          "path": "reference/quality-checklist.md",
+          "source_sha256": "c11bf193b700d9c9ebc5d871f1d5f193bccc441c4eccc0509b53a40d6e8dc558",
+          "installed_sha256": "c11bf193b700d9c9ebc5d871f1d5f193bccc441c4eccc0509b53a40d6e8dc558",
+          "modified": false
+        },
+        {
+          "path": "reference/timing-easing-tables.md",
+          "source_sha256": "e478f3b99c4cac3f96eca008e20f8808d4cfae165f5799f260092baf9b6ebcff",
+          "installed_sha256": "e478f3b99c4cac3f96eca008e20f8808d4cfae165f5799f260092baf9b6ebcff",
+          "modified": false
+        },
+        {
+          "path": "reference/troubleshooting.md",
+          "source_sha256": "69e5aaeee108231d51187143ae3fce4db7a42936f10682908ca9462a008a047a",
+          "installed_sha256": "69e5aaeee108231d51187143ae3fce4db7a42936f10682908ca9462a008a047a",
+          "modified": false
+        }
+      ],
+      "kit_integration_sha256": "4d7ce494ae72d5ad1c5d94800c32c52242485ababb828f814fdf7640a58b87c7",
+      "provenance_sha256": "c6ca4b4cf7a44482209141cafb2cefd818f0e988bc76a7c9b21f86cdd8005ef9",
+      "license_copy_sha256": "9fc2e8685daa09e28d54b6afa8a38f168417c5735a3cd676c80c159785e93a80"
+    },
+    {
+      "agent_directory": ".claude/skills",
+      "name": "gsap-core",
+      "repository_id": "R16",
+      "source_url": "https://github.com/greensock/gsap-skills",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "license": "MIT",
+      "upstream_skill_path": "skills/gsap-core",
+      "installed_path": ".claude/skills/gsap-core",
+      "upstream_skill_sha256": "3887b47e050ab5afbe2a9a820f23d39fa02ab785e06a343be44c6f91d84d12b3",
+      "installed_skill_sha256": "8963a3699c17ee92e0f33d621a78adaacfa3974131648eb504cc114b4a356e91",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "source_sha256": "3887b47e050ab5afbe2a9a820f23d39fa02ab785e06a343be44c6f91d84d12b3",
+          "installed_sha256": "8963a3699c17ee92e0f33d621a78adaacfa3974131648eb504cc114b4a356e91",
+          "modified": true
+        }
+      ],
+      "kit_integration_sha256": "2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53",
+      "provenance_sha256": "28324f92e540664154567d05d8add33eedd5a2b052d64bd18a194e8567f6405c",
+      "license_copy_sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "agent_directory": ".claude/skills",
+      "name": "gsap-timeline",
+      "repository_id": "R16",
+      "source_url": "https://github.com/greensock/gsap-skills",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "license": "MIT",
+      "upstream_skill_path": "skills/gsap-timeline",
+      "installed_path": ".claude/skills/gsap-timeline",
+      "upstream_skill_sha256": "1a8b0f39cc4be3ed3d834b89672e4ae2f151b901dc3450bebf10bbc45379fe02",
+      "installed_skill_sha256": "0c3f4f3ee462f6ba12c2e97514b75ef0dbdbb6f4e1c557de1f8c3f43a094aea2",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "source_sha256": "1a8b0f39cc4be3ed3d834b89672e4ae2f151b901dc3450bebf10bbc45379fe02",
+          "installed_sha256": "0c3f4f3ee462f6ba12c2e97514b75ef0dbdbb6f4e1c557de1f8c3f43a094aea2",
+          "modified": true
+        }
+      ],
+      "kit_integration_sha256": "2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53",
+      "provenance_sha256": "504683098407dc1c363cc13dc12d7b41cca8b37fcbffd13627f518b8eb38e09d",
+      "license_copy_sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "agent_directory": ".claude/skills",
+      "name": "gsap-react",
+      "repository_id": "R16",
+      "source_url": "https://github.com/greensock/gsap-skills",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "license": "MIT",
+      "upstream_skill_path": "skills/gsap-react",
+      "installed_path": ".claude/skills/gsap-react",
+      "upstream_skill_sha256": "88e2a5312b45e8cc7b3c496637ff5bc9af2ae9c925b555c8b235b34cbc989d74",
+      "installed_skill_sha256": "45f9292c0bf4d60bdc245772aa48971917a13729de9f0cf877533bb54c04141f",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "source_sha256": "88e2a5312b45e8cc7b3c496637ff5bc9af2ae9c925b555c8b235b34cbc989d74",
+          "installed_sha256": "45f9292c0bf4d60bdc245772aa48971917a13729de9f0cf877533bb54c04141f",
+          "modified": true
+        }
+      ],
+      "kit_integration_sha256": "2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53",
+      "provenance_sha256": "fa362a270a3ffbbe4307918cdc2b8e290d03613182ca9edf13bd7e7b92ae2a4b",
+      "license_copy_sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "agent_directory": ".claude/skills",
+      "name": "gsap-performance",
+      "repository_id": "R16",
+      "source_url": "https://github.com/greensock/gsap-skills",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "license": "MIT",
+      "upstream_skill_path": "skills/gsap-performance",
+      "installed_path": ".claude/skills/gsap-performance",
+      "upstream_skill_sha256": "cb5408d6fba707aabcbfe3320317a14c1f8fca6070074e5261047930f50d441e",
+      "installed_skill_sha256": "bcd3fe72a501df9cc65a639e35f42f268092d074fefc3d6e8fe4f5d583596eba",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "source_sha256": "cb5408d6fba707aabcbfe3320317a14c1f8fca6070074e5261047930f50d441e",
+          "installed_sha256": "bcd3fe72a501df9cc65a639e35f42f268092d074fefc3d6e8fe4f5d583596eba",
+          "modified": true
+        }
+      ],
+      "kit_integration_sha256": "2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53",
+      "provenance_sha256": "24e20ab8133387a03aea5eb4e8345cc99dc9d3b27e788fa5b9f456bf28f628fb",
+      "license_copy_sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "agent_directory": ".claude/skills",
+      "name": "gsap-plugins",
+      "repository_id": "R16",
+      "source_url": "https://github.com/greensock/gsap-skills",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "license": "MIT",
+      "upstream_skill_path": "skills/gsap-plugins",
+      "installed_path": ".claude/skills/gsap-plugins",
+      "upstream_skill_sha256": "5838b856c74c07fbc9fa99b6dfd1eee34ea554c3e530c30e0d58014b707d70a4",
+      "installed_skill_sha256": "7574a88f325b5765d2d8dcc9fa68205e119a84fe2ea1b930c29edcfd44833f09",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "source_sha256": "5838b856c74c07fbc9fa99b6dfd1eee34ea554c3e530c30e0d58014b707d70a4",
+          "installed_sha256": "7574a88f325b5765d2d8dcc9fa68205e119a84fe2ea1b930c29edcfd44833f09",
+          "modified": true
+        }
+      ],
+      "kit_integration_sha256": "a50bc1b371833cb9c5ab2d388774c0682ca9076b7d70d8cd0486746c1d1a30c8",
+      "provenance_sha256": "6e6f405ace596b23ea0f3155bed4fbddc97a2bff85975de4ef2cff51025d5e49",
+      "license_copy_sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "agent_directory": ".claude/skills",
+      "name": "gsap-utils",
+      "repository_id": "R16",
+      "source_url": "https://github.com/greensock/gsap-skills",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "license": "MIT",
+      "upstream_skill_path": "skills/gsap-utils",
+      "installed_path": ".claude/skills/gsap-utils",
+      "upstream_skill_sha256": "1927bcc4ea95b38203404ad5ea1d060b15c4a886c65ae53e885ff1793aabe0ba",
+      "installed_skill_sha256": "3a6703379b3bfd536e3d279c5116b3aec792d3148a1a9c92bf029b3518fbe074",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "source_sha256": "1927bcc4ea95b38203404ad5ea1d060b15c4a886c65ae53e885ff1793aabe0ba",
+          "installed_sha256": "3a6703379b3bfd536e3d279c5116b3aec792d3148a1a9c92bf029b3518fbe074",
+          "modified": true
+        }
+      ],
+      "kit_integration_sha256": "2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53",
+      "provenance_sha256": "f08b51e8efa455c72e0d7cb16d317ea7b4ae344a98e6442625996ed79d095a5f",
+      "license_copy_sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "agent_directory": ".agents/skills",
+      "name": "motion-craft",
+      "repository_id": "R14",
+      "source_url": "https://github.com/whaleyxbt/claude-motion",
+      "commit": "e627941543d9988b155dc610bb9cc0115a5e365e",
+      "license": "MIT",
+      "upstream_skill_path": ".claude/skills/motion-design",
+      "installed_path": ".agents/skills/motion-craft",
+      "upstream_skill_sha256": "241b4949d4dfc5a489b98399892a1b7e80abbe1e977ddbec612403d45997fd57",
+      "installed_skill_sha256": "1a5c6d3adb08411dc456d87ebb7ba5ce5f5f7b8171fed1bcc6a3a0c77c03fa2c",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "source_sha256": "241b4949d4dfc5a489b98399892a1b7e80abbe1e977ddbec612403d45997fd57",
+          "installed_sha256": "1a5c6d3adb08411dc456d87ebb7ba5ce5f5f7b8171fed1bcc6a3a0c77c03fa2c",
+          "modified": true
+        }
+      ],
+      "kit_integration_sha256": "4d7ce494ae72d5ad1c5d94800c32c52242485ababb828f814fdf7640a58b87c7",
+      "provenance_sha256": "bdd2cddc9ccfef322a1717201f4ac67b490003c37676c8cd4fdf7a46a0f91df4",
+      "license_copy_sha256": "ca02fba63bfcc89f475a8672dd852a220005a17325fc05d7f2299f5adf7f10a4"
+    },
+    {
+      "agent_directory": ".agents/skills",
+      "name": "lottiefiles-motion-principles",
+      "repository_id": "R15",
+      "source_url": "https://github.com/LottieFiles/motion-design-skill",
+      "commit": "f9a8a041b85185ee4881b3471d3415e939aac772",
+      "license": "MIT",
+      "upstream_skill_path": "skills/motion-design",
+      "installed_path": ".agents/skills/lottiefiles-motion-principles",
+      "upstream_skill_sha256": "8729ecbc7e5736c1295baaa8ba0384bb4b1aac9cf91b83fcdc64d9548a57bb19",
+      "installed_skill_sha256": "5022a91565a7794446fe5bf529e53bcad3054095d02b392b7c06d4dd217c05d7",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "source_sha256": "8729ecbc7e5736c1295baaa8ba0384bb4b1aac9cf91b83fcdc64d9548a57bb19",
+          "installed_sha256": "5022a91565a7794446fe5bf529e53bcad3054095d02b392b7c06d4dd217c05d7",
+          "modified": true
+        },
+        {
+          "path": "director/choreography.md",
+          "source_sha256": "c81257b56160b9b2f3d99f78d4b8172b425c22d9ca73be06d3ffaa7305a34deb",
+          "installed_sha256": "c81257b56160b9b2f3d99f78d4b8172b425c22d9ca73be06d3ffaa7305a34deb",
+          "modified": false
+        },
+        {
+          "path": "director/context-adaptation.md",
+          "source_sha256": "550e96a1c8c369513304ee74c0e89b63168bc7287b83e9ed5685bb65609986b3",
+          "installed_sha256": "550e96a1c8c369513304ee74c0e89b63168bc7287b83e9ed5685bb65609986b3",
+          "modified": false
+        },
+        {
+          "path": "director/core-philosophy.md",
+          "source_sha256": "7aaa8a065d9940dad0198cf9cfe74979008495e6daf87f46f9022fff1b6a85e9",
+          "installed_sha256": "7aaa8a065d9940dad0198cf9cfe74979008495e6daf87f46f9022fff1b6a85e9",
+          "modified": false
+        },
+        {
+          "path": "director/decision-framework.md",
+          "source_sha256": "4b6758da6742475c928b4f8be8c662f4b5ed0964468ba7760df8f7635c779358",
+          "installed_sha256": "4b6758da6742475c928b4f8be8c662f4b5ed0964468ba7760df8f7635c779358",
+          "modified": false
+        },
+        {
+          "path": "director/disney-principles.md",
+          "source_sha256": "39024711890c2684a3434659a4d95a52ca8231facea74e87e79503054aaca671",
+          "installed_sha256": "39024711890c2684a3434659a4d95a52ca8231facea74e87e79503054aaca671",
+          "modified": false
+        },
+        {
+          "path": "director/emotion-mapping.md",
+          "source_sha256": "a279e55a3f52a9f5830d38dc54679c652d9a5c26f0dd360700c16e23766d468b",
+          "installed_sha256": "a279e55a3f52a9f5830d38dc54679c652d9a5c26f0dd360700c16e23766d468b",
+          "modified": false
+        },
+        {
+          "path": "director/motion-personality.md",
+          "source_sha256": "66a3623b6654869482c02157ca791034a614ca6dcb02a8112049e28d292ee18a",
+          "installed_sha256": "66a3623b6654869482c02157ca791034a614ca6dcb02a8112049e28d292ee18a",
+          "modified": false
+        },
+        {
+          "path": "director/narrative-structure.md",
+          "source_sha256": "d49db19db40425dec027c3012d553b50fd74ed79e27ace9dec1226796469061b",
+          "installed_sha256": "d49db19db40425dec027c3012d553b50fd74ed79e27ace9dec1226796469061b",
+          "modified": false
+        },
+        {
+          "path": "patterns/ambient-continuous.md",
+          "source_sha256": "f9cfa00d3325dceadcb9ffd77dcb5dcbc51d34121f3b1f162979939006056773",
+          "installed_sha256": "f9cfa00d3325dceadcb9ffd77dcb5dcbc51d34121f3b1f162979939006056773",
+          "modified": false
+        },
+        {
+          "path": "patterns/entrance-exit.md",
+          "source_sha256": "70b3fc3a8d58ebe58e293e643b78fd13750d9c8ef1c8fc5fe85e52f7378cbd91",
+          "installed_sha256": "70b3fc3a8d58ebe58e293e643b78fd13750d9c8ef1c8fc5fe85e52f7378cbd91",
+          "modified": false
+        },
+        {
+          "path": "patterns/multi-element.md",
+          "source_sha256": "46c8da91843c593deb763a4a7fa32849bdaeb7a7ecd4d559e3b21bcc976f2c46",
+          "installed_sha256": "46c8da91843c593deb763a4a7fa32849bdaeb7a7ecd4d559e3b21bcc976f2c46",
+          "modified": false
+        },
+        {
+          "path": "patterns/state-feedback.md",
+          "source_sha256": "dac86388c2d8fcdfc2f194b4f8877caedcdc010df9ce29d27dfc99d08cf8c60e",
+          "installed_sha256": "dac86388c2d8fcdfc2f194b4f8877caedcdc010df9ce29d27dfc99d08cf8c60e",
+          "modified": false
+        },
+        {
+          "path": "reference/property-selection.md",
+          "source_sha256": "053d830795fc824fed27618fbd18084207af6aeed55b73c0a6e1d5665de894ae",
+          "installed_sha256": "053d830795fc824fed27618fbd18084207af6aeed55b73c0a6e1d5665de894ae",
+          "modified": false
+        },
+        {
+          "path": "reference/quality-checklist.md",
+          "source_sha256": "c11bf193b700d9c9ebc5d871f1d5f193bccc441c4eccc0509b53a40d6e8dc558",
+          "installed_sha256": "c11bf193b700d9c9ebc5d871f1d5f193bccc441c4eccc0509b53a40d6e8dc558",
+          "modified": false
+        },
+        {
+          "path": "reference/timing-easing-tables.md",
+          "source_sha256": "e478f3b99c4cac3f96eca008e20f8808d4cfae165f5799f260092baf9b6ebcff",
+          "installed_sha256": "e478f3b99c4cac3f96eca008e20f8808d4cfae165f5799f260092baf9b6ebcff",
+          "modified": false
+        },
+        {
+          "path": "reference/troubleshooting.md",
+          "source_sha256": "69e5aaeee108231d51187143ae3fce4db7a42936f10682908ca9462a008a047a",
+          "installed_sha256": "69e5aaeee108231d51187143ae3fce4db7a42936f10682908ca9462a008a047a",
+          "modified": false
+        }
+      ],
+      "kit_integration_sha256": "4d7ce494ae72d5ad1c5d94800c32c52242485ababb828f814fdf7640a58b87c7",
+      "provenance_sha256": "681ec997de859f12b47b28b69bb499f93bc4563fae7829c8779af4bba59c43f6",
+      "license_copy_sha256": "9fc2e8685daa09e28d54b6afa8a38f168417c5735a3cd676c80c159785e93a80"
+    },
+    {
+      "agent_directory": ".agents/skills",
+      "name": "gsap-core",
+      "repository_id": "R16",
+      "source_url": "https://github.com/greensock/gsap-skills",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "license": "MIT",
+      "upstream_skill_path": "skills/gsap-core",
+      "installed_path": ".agents/skills/gsap-core",
+      "upstream_skill_sha256": "3887b47e050ab5afbe2a9a820f23d39fa02ab785e06a343be44c6f91d84d12b3",
+      "installed_skill_sha256": "8963a3699c17ee92e0f33d621a78adaacfa3974131648eb504cc114b4a356e91",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "source_sha256": "3887b47e050ab5afbe2a9a820f23d39fa02ab785e06a343be44c6f91d84d12b3",
+          "installed_sha256": "8963a3699c17ee92e0f33d621a78adaacfa3974131648eb504cc114b4a356e91",
+          "modified": true
+        }
+      ],
+      "kit_integration_sha256": "2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53",
+      "provenance_sha256": "5e2ad6fc5499428cfb2b57be5dc498eea47328ee1d72738574fe46d08600fa1a",
+      "license_copy_sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "agent_directory": ".agents/skills",
+      "name": "gsap-timeline",
+      "repository_id": "R16",
+      "source_url": "https://github.com/greensock/gsap-skills",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "license": "MIT",
+      "upstream_skill_path": "skills/gsap-timeline",
+      "installed_path": ".agents/skills/gsap-timeline",
+      "upstream_skill_sha256": "1a8b0f39cc4be3ed3d834b89672e4ae2f151b901dc3450bebf10bbc45379fe02",
+      "installed_skill_sha256": "0c3f4f3ee462f6ba12c2e97514b75ef0dbdbb6f4e1c557de1f8c3f43a094aea2",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "source_sha256": "1a8b0f39cc4be3ed3d834b89672e4ae2f151b901dc3450bebf10bbc45379fe02",
+          "installed_sha256": "0c3f4f3ee462f6ba12c2e97514b75ef0dbdbb6f4e1c557de1f8c3f43a094aea2",
+          "modified": true
+        }
+      ],
+      "kit_integration_sha256": "2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53",
+      "provenance_sha256": "258fe031ae1442ab3ed962ee4dede34ed00c97d7c9c59c6bcb723165a33fa328",
+      "license_copy_sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "agent_directory": ".agents/skills",
+      "name": "gsap-react",
+      "repository_id": "R16",
+      "source_url": "https://github.com/greensock/gsap-skills",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "license": "MIT",
+      "upstream_skill_path": "skills/gsap-react",
+      "installed_path": ".agents/skills/gsap-react",
+      "upstream_skill_sha256": "88e2a5312b45e8cc7b3c496637ff5bc9af2ae9c925b555c8b235b34cbc989d74",
+      "installed_skill_sha256": "45f9292c0bf4d60bdc245772aa48971917a13729de9f0cf877533bb54c04141f",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "source_sha256": "88e2a5312b45e8cc7b3c496637ff5bc9af2ae9c925b555c8b235b34cbc989d74",
+          "installed_sha256": "45f9292c0bf4d60bdc245772aa48971917a13729de9f0cf877533bb54c04141f",
+          "modified": true
+        }
+      ],
+      "kit_integration_sha256": "2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53",
+      "provenance_sha256": "b56d035ef56e239c7e27b9d81b278b2ce627032b9ed7d2b2d9b638424a586d33",
+      "license_copy_sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "agent_directory": ".agents/skills",
+      "name": "gsap-performance",
+      "repository_id": "R16",
+      "source_url": "https://github.com/greensock/gsap-skills",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "license": "MIT",
+      "upstream_skill_path": "skills/gsap-performance",
+      "installed_path": ".agents/skills/gsap-performance",
+      "upstream_skill_sha256": "cb5408d6fba707aabcbfe3320317a14c1f8fca6070074e5261047930f50d441e",
+      "installed_skill_sha256": "bcd3fe72a501df9cc65a639e35f42f268092d074fefc3d6e8fe4f5d583596eba",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "source_sha256": "cb5408d6fba707aabcbfe3320317a14c1f8fca6070074e5261047930f50d441e",
+          "installed_sha256": "bcd3fe72a501df9cc65a639e35f42f268092d074fefc3d6e8fe4f5d583596eba",
+          "modified": true
+        }
+      ],
+      "kit_integration_sha256": "2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53",
+      "provenance_sha256": "f5e89f3e5153bb189536fdf291d4f311f64d1493fcc61ccdfc6b13cd2252cd17",
+      "license_copy_sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "agent_directory": ".agents/skills",
+      "name": "gsap-plugins",
+      "repository_id": "R16",
+      "source_url": "https://github.com/greensock/gsap-skills",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "license": "MIT",
+      "upstream_skill_path": "skills/gsap-plugins",
+      "installed_path": ".agents/skills/gsap-plugins",
+      "upstream_skill_sha256": "5838b856c74c07fbc9fa99b6dfd1eee34ea554c3e530c30e0d58014b707d70a4",
+      "installed_skill_sha256": "7574a88f325b5765d2d8dcc9fa68205e119a84fe2ea1b930c29edcfd44833f09",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "source_sha256": "5838b856c74c07fbc9fa99b6dfd1eee34ea554c3e530c30e0d58014b707d70a4",
+          "installed_sha256": "7574a88f325b5765d2d8dcc9fa68205e119a84fe2ea1b930c29edcfd44833f09",
+          "modified": true
+        }
+      ],
+      "kit_integration_sha256": "a50bc1b371833cb9c5ab2d388774c0682ca9076b7d70d8cd0486746c1d1a30c8",
+      "provenance_sha256": "e9e27608d9da1d3e309ef0b37f9dee80f0f098c424084858c9631b1317a0404b",
+      "license_copy_sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    },
+    {
+      "agent_directory": ".agents/skills",
+      "name": "gsap-utils",
+      "repository_id": "R16",
+      "source_url": "https://github.com/greensock/gsap-skills",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "license": "MIT",
+      "upstream_skill_path": "skills/gsap-utils",
+      "installed_path": ".agents/skills/gsap-utils",
+      "upstream_skill_sha256": "1927bcc4ea95b38203404ad5ea1d060b15c4a886c65ae53e885ff1793aabe0ba",
+      "installed_skill_sha256": "3a6703379b3bfd536e3d279c5116b3aec792d3148a1a9c92bf029b3518fbe074",
+      "files": [
+        {
+          "path": "SKILL.md",
+          "source_sha256": "1927bcc4ea95b38203404ad5ea1d060b15c4a886c65ae53e885ff1793aabe0ba",
+          "installed_sha256": "3a6703379b3bfd536e3d279c5116b3aec792d3148a1a9c92bf029b3518fbe074",
+          "modified": true
+        }
+      ],
+      "kit_integration_sha256": "2177c744552bbd08257b833fd6d55ab2f38daf30454b31f3610d2d1fb46b9c53",
+      "provenance_sha256": "fccf85885baf3d6bd37ff1b5262fdcb4d23c720b995402bc8aa8fe6d6cd8b203",
+      "license_copy_sha256": "51b04b06556662dd817e8f4aa6d06bc7139dc73739e1319a7233cfde3e147b90"
+    }
+  ],
+  "declined_skills": [
+    {
+      "repository": "claude-motion",
+      "skill": "review-loop",
+      "reason": "duplicates/conflicts with bounded canonical kit review"
+    },
+    {
+      "repository": "claude-motion",
+      "skill": "sound-design",
+      "reason": "inconsistent with supplied-master-only audio policy"
+    },
+    {
+      "repository": "claude-motion",
+      "skill": "web-sims",
+      "reason": "parallel capture/render route"
+    },
+    {
+      "repository": "gsap-skills",
+      "skill": "gsap-scrolltrigger",
+      "reason": "scroll-bound UI, not song timeline behavior"
+    },
+    {
+      "repository": "gsap-skills",
+      "skill": "gsap-frameworks",
+      "reason": "Vue/Svelte guidance not needed for React/Remotion"
+    }
+  ],
+  "runtime_changes": [],
+  "media_actions": []
+}

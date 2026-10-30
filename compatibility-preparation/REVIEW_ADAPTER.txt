@@ -1,0 +1,33 @@
+ADAPTER IMPLEMENTATION REVIEW
+Prepared 2026-10-07. Read-only review and focused recording-context probes; no browser, Canvas allocation, pixels or media.
+Paths/line numbers are relative to shared-animation-library/ as inspected.
+
+P2 — Drawing errors inside the particle kernel leak Canvas state and save frames
+adapters/r06-burst-particles.mjs:17–18, 30–36
+adapters/overlay-dispatcher.mjs:31–32
+tests/verify.mjs:202–204
+
+The dispatcher promises restoration even when a layer throws, but its single restore() only pops the most recent save(). burstParticles adds a save per particle, spark line() adds another save, and debris/confetti at() adds another. Those helpers do not use finally. A throw from stroke(), fill() or gradient construction occurs before their restore calls; the dispatcher's finally pops an inner frame, leaving its own saved state and at least one particle state active. Host state remains modified and future context operations inherit the wrong state.
+
+Reproduction: installLibraryOverlays with one spark event at 0, screen anchor [10,10], production seed 1 and dimensions 1080x1920. recordingContext starts with alpha .3 and compositing multiply. A Proxy replaces only stroke with a function throwing Error('drawing failure'); all other calls use recordingContext. Invoke host.overlayHook(context,.1), catch the error. Result: __depth=2, alpha=0.8100406195011768 and compositing='source-over', instead of depth 0, alpha .3 and multiply. This is a direct non-rendering probe of the actual installed adapter.
+
+Fix: make every internally balanced particle/helper save exception-safe with try/finally, recording this intentional adaptation against the pinned body, or introduce a bounded context wrapper which reliably unwinds all saves introduced by the particle layer on error. The dispatcher alone cannot infer Canvas save depth. Add an injected error inside the real particle draw path for spark, debris/confetti and ember, with sentinel context state and stack depth checked afterward. The existing test throws from an independent 'boom' layer before any nested saves, so it cannot establish the documented particle failure guarantee.
+
+P3 — Failed installation changes the host before event validation succeeds
+adapters/host-integration.mjs:13–17
+
+installOverlayDispatcher(host) runs before createParticleLayer validates events. A rejected event list leaves the host hook wrapped and a dispatcher mark installed, despite installLibraryOverlays rejecting. Focused probe with life:0 confirms host.overlayHook changes and the Symbol.for('shared-animation-library.overlayDispatcher') mark remains after rejection. This is recoverable and default valid configuration works, but failed installs are not transactional and callers cannot assume a rejected readiness promise leaves their host unchanged.
+
+Fix: construct/validate the candidate layer before installing the dispatcher, or roll back a newly installed dispatcher on failure while preserving any preexisting one. Test both invalid events on a fresh host and invalid events on a host with existing layers. If intentional, document the partial-install contract explicitly. Production readiness still remains false on the rejected promise; there is no false ready claim from this code path.
+
+TEST LIMITATIONS THAT SHOULD BE LABELED PRECISELY
+tests/recording-context.mjs:18–19 tracks setTransform but not the matrices produced by translate/rotate/scale. Therefore tests/verify.mjs:198–200's matrix assertion is weak: translate/rotate calls do not modify the tracked matrix. Add affine matrix updates to the recorder and start with a nonidentity sentinel if claiming meaningful transform restoration. The recorder's gradient addColorStop accepts arbitrary strings and offsets; it does not establish browser CSS-color validity or real Canvas exception behavior.
+
+tests/verify.mjs:217–225 proves host wiring on a plain object and promises resolve; tests/verify.mjs:78–80 uses source inclusion/order checks for readiness. Together they do not execute the browser's actual classic-script/global/module load order or setup's readiness wait. README correctly labels browser loading and setup/draw as pending. For a non-rendering readiness probe, evaluate just the extracted wait expression against delayed/rejected READY_PROMISES and fake font promises; do not invoke setup, which allocates/draws scene resources.
+
+POSITIVE COMPATIBILITY EVIDENCE
+The complete R06 burst kernel and required helper closure are preserved; no native Canvas or Node dependency enters the browser graph. Native screen pixels and local time are forwarded without hidden landscape scaling; source cues convert once at construction. Production seed/event id derivation and explicit source seed priority are stable across invocation order. Event/options used by drawing are copied/frozen and ordered by time/id. Particle tails are not reset by shot boundaries.
+
+The actual base studio registers the dynamic import promise in a classic inline script, whose PROJECT reference resolves the preceding classic config's global lexical binding. The adapter captures the preceding optional karaoke hook, orders particles below it, and preserves renderer output ownership. Default studio installs an empty dispatcher intentionally; a production must supply particleEvents as documented. The core awaits registered readiness promises before setting ready. Source inspection supports that route; actual file:// module/browser behavior is appropriately deferred.
+
+No issue found requiring extra GPU renderers, Three, @napi-rs/canvas, new fonts or another output canvas for the selected capability. The remaining material correctness fix is exception safety in the nested Canvas helper/kernel saves.

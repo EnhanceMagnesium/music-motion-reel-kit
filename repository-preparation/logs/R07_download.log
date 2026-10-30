@@ -1,0 +1,24 @@
+
+COMMAND ['git', 'init', '-q']
+
+COMMAND ['git', 'remote', 'add', 'origin', 'https://github.com/bizarro/evangelion']
+
+COMMAND ['git', 'fetch', '--depth=1', 'origin', '8f670f3262c75a454d26e01e062da96db7eefb05']
+From https://github.com/bizarro/evangelion
+ * branch            8f670f3262c75a454d26e01e062da96db7eefb05 -> FETCH_HEAD
+
+COMMAND ['git', 'checkout', '--detach', '8f670f3262c75a454d26e01e062da96db7eefb05']
+HEAD is now at 8f670f3 README: link the track on Pixabay
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.
+
+COMMAND ['git', 'lfs', 'pull']
+
+COMMAND ['git', 'lfs', 'fsck']
+Git LFS fsck OK
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.

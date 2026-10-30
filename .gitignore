@@ -1,0 +1,11 @@
+# Per-song media and generated outputs stay outside the reusable source workspace.
+productions/
+share-packages/
+**/node_modules/
+**/.venv/
+**/venv/
+**/__pycache__/
+**/.DS_Store
+**/out/
+**/.cache/
+repository-preparation/cache/

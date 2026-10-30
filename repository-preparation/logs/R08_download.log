@@ -1,0 +1,24 @@
+
+COMMAND ['git', 'init', '-q']
+
+COMMAND ['git', 'remote', 'add', 'origin', 'https://github.com/JohnHeibel/PDoomVideo']
+
+COMMAND ['git', 'fetch', '--depth=1', 'origin', 'fa546a38092e75f2b079e6a86d6abc54dd525d17']
+From https://github.com/JohnHeibel/PDoomVideo
+ * branch            fa546a38092e75f2b079e6a86d6abc54dd525d17 -> FETCH_HEAD
+
+COMMAND ['git', 'checkout', '--detach', 'fa546a38092e75f2b079e6a86d6abc54dd525d17']
+HEAD is now at fa546a3 Update README.md with osmarks interpretation
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.
+
+COMMAND ['git', 'lfs', 'pull']
+
+COMMAND ['git', 'lfs', 'fsck']
+Git LFS fsck OK
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.

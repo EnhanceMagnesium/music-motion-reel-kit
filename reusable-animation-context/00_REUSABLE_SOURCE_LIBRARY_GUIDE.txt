@@ -1,0 +1,51 @@
+REPOSITORY ATLAS POINTER
+For each song, follow `claude-finished-song-animation-project/13_REPOSITORY_NAVIGATION_AND_USE.txt` and its atlas. Save a ranked R01–R16 `productions/<song>/research/REPOSITORY_REVIEW.md` with exact paths opened; deep-inspect source/dependency/license closure only for plausible candidates. Use a mechanism only when its inspected behavior fits a real scene and has a concrete caller. The atlas is a locator, not proof of reading; do not force repo usage.
+
+REUSABLE ANIMATION SOURCE LIBRARY — FUTURE SONGS AND THEMES
+
+Purpose: support varied code-rendered music reels through a compact, source-grounded project context and a larger local source library.
+
+CURRENT SHARED RENDERER (2026-10-25)
+The connected `music-motion-reel-kit` is the single workspace. New song productions use the installed Remotion engine in `shared-animation-library/remotion-runtime/` through `shared-animation-library/render.mjs`; each song keeps its React scene registry, unchanged master, declared media and outputs in its own production folder. Existing p5 productions remain on the legacy engine through the same entry. Both routes share the normalized `PROJECT` and export planning, while their scene implementations remain separate. Claude may choose a HyperFrames Player child composition inside a Remotion scene where its HTML/GSAP or nested/footage-layering model helps; Remotion remains the song clock and final composition/encoder, and this is not a second shared renderer. Read `claude-finished-song-animation-project/14_HYPERFRAMES_SUBCOMPOSITION_GUIDE.txt` and both shared-library READMEs; do not create a separate renderer project.
+
+CONTENTS AND EVIDENCE
+The complete R01–R16 pinned repository checkouts are under repository-downloads/. The immutable source-library/raw/github/ snapshots contain historically approved R01–R13 scopes; they are not a substitute for current complete checkouts. Exact commits, roles and paths are in the current atlas and repository-preparation records. R14–R16 project-local skills have a separate install manifest. Use these evidence levels precisely: available means files exist; accessible means this task opened the named path; inspected means the relevant source/skill body was read; integrated means production code calls the original or adapted mechanism; visually reviewed means a person inspected rendered output.
+
+The 2026-10-05 inventory expands historical chat selection rules against complete pinned GitHub trees. Live chat sync follows main, so pinned expansion is not a fresh verification of every currently synced file. Use the CSV evidence labels precisely.
+
+PROJECT CONTEXT
+The primary current router is reusable-animation-context/REUSABLE_ANIMATION_SOURCE_ROUTER.txt. It combines the component guide, technique router, repository locator, style index, preparation status and current addenda. Do not also upload every component file unless a specific task needs that detail. The combined file is authored synthesis and source navigation, not complete source code or a runnable merged engine.
+
+LOCAL CLAUDE CODE
+The Finished Song Animation Studio project uses the linked local music-motion-reel-kit folder as its source route. Start the task in Claude Desktop with that folder available. The linked folder is distinct from files uploaded separately to the project Library. A linked-folder indicator does not prove that a particular source was opened. For each selected source, read the named path from repository-downloads/, then report the path, symbol, reading scope and commit. If local access fails, report it and stop instead of silently switching to the Downloads migration copy. Use source-library/raw/github/ only to inspect historical approved snapshots or provenance.
+
+CHAT-ONLY WORK
+A cloud-only chat may not be able to read a Mac pathname. Report actual access. Attach or sync only the selected guide and implementation files required for that task, with commit and path recorded. Do not treat the router, GitHub connection, Library file count or an archive as proof that the full repositories were ingested. Keep complete runnable code and dependency environments in the linked local kit.
+
+DOCUMENT PRECEDENCE
+For current project authorization and workflow, follow CLAUDE.md, PROJECT_INSTRUCTIONS.md and CLAUDE_ANIMATION_VIDEO_RUNBOOK.txt, plus the latest direct user instruction. For shared-library code state, use shared-animation-library/README.md, IMPLEMENTATION_REPORT.md and CHECKPOINT.md. For installed add-ons, use repository-preparation/additional-resources/README.md and ADDITIONAL_RESOURCE_INSTALLS.csv. The Oct 5 PRODUCTION_READINESS_REPORT.md and Oct 5 dependency notes predate the Oct 8 shared library and Oct 24 resource preparation; retain them as history, not current capability status.
+
+FUTURE SONG WORKFLOW
+1. Read the user's pasted Grok brief and directly attached finished recording. Record genre, intended emotional arc, lyric/narrative content, measured duration, references and evidence limits. Grok receives text; Claude receives the recording.
+2. Before storyboarding, recommend either native 4:5 (1080×1350) or native 9:16 (1080×1920) based on this song's visual direction, focal hierarchy, lyric density, spatial composition and intended use. Explain the choice and layout consequences. Record ratio and exact dimensions in this song's plan and PROJECT config.
+3. Compare a small set of relevant style families across the catalog. Choose image craft, composition, subject action, camera and transitions because they serve this song. His Line's print/deed treatment is one production-specific choice.
+4. Before finalizing the storyboard, complete the required per-song R12/Skillry code-animation reference shortlist in `claude-finished-song-animation-project/12_CODE_ANIMATION_REFERENCE_WORKFLOW.txt`. Use it to find transferable JavaScript/Canvas/SVG/DOM techniques; keep Remotion as the renderer and author original song-specific scenes.
+5. Select a compact source working set: one principal rendering/material system, complementary motion/timing guidance and any necessary audio architecture. Read complete chosen functions and required dependencies.
+6. Specify full-reel progression and source-to-helper-to-shot traces. Keep measured events, estimates and inferred observations separately labeled. Explain how dependencies and assets support the visible result.
+7. Execute the authorized stage using versioned song-specific files. Maintain portable source, exact dependency records, attribution and checkpoints so local rendering can resume after model limits.
+
+DURATION AND FORMAT
+By default, use the supplied finished master from beginning to end at its measured duration; the common 1:20–1:40 range is illustrative only, with no fixed range or global maximum. Do not select a shortened excerpt unless the user explicitly requests one, and do not trim, pad, remix or otherwise alter the master without a separate decision. Grok receives text only and cannot hear or invent audible timestamps; Claude measures duration, structure, cues, timing and sync from the attached recording. Set `PROJECT.duration` explicitly to the full measured duration; if `maxDurationSeconds` is omitted, it resolves to that duration, while any explicit per-song maximum is opt-in and must not be shorter. Ensure scenes and overlays cover the full interval. For a zero-offset full master, the shared plan rounds the video frame count up and schedules Remotion audio for the exact measured duration; the video endpoint can be less than one frame later. This is planned timing only: actual encoded endpoints and sync require an authorized render and playback. His Line's 36-second duration and padded ending are production-specific. Choose one native frame per production: 4:5 at 1080×1350 or 9:16 at 1080×1920. Compose scenes and overlays for the selected frame from the start; do not crop the other ratio. Explicitly set width and height in each song's config; the renderer's dimension fallback is not a creative decision. Configured dimensions do not prove existing scene layouts adapt. For pre-export review, post-render Playwright browser-decoded frames, FFmpeg contact sheets and evidence labels, follow `claude-finished-song-animation-project/07_QUALITY_REVIEW_AND_ACCEPTANCE.txt` and `11_HEADLESS_BROWSER_FRAME_REVIEW.txt`.
+
+CONSOLIDATION RULES
+Similar file names and concepts do not establish interchangeable code. Normalize terminology and shared planning guidance in authored summaries. Preserve complete source systems separately with commits and licenses. Keep one canonical content copy for genuinely identical files while retaining all provenance records; original snapshots remain unchanged.
+
+Preserve render entry points, imports, initialization, complete function bodies, shaders, cue formats, seeds, license notices and platform requirements when assembling an implementation working set. Any shortened card is labeled as a summary. Read full source before adaptation.
+
+CONTEXT CAPACITY
+Concatenating original source into one file preserves nearly all its text and is not a meaningful size reduction. A smaller routing layer plus a selectively attached working set reduces permanent context. A ZIP is a transport archive, not evidence that a chat project has indexed every source file inside it.
+
+CURRENT WORKFLOW PRIORITY
+The song-neutral production shell already supports explicit per-song width/height, declared modules/scenes, cues/assets/fonts and readiness. Its shared canvas and export sizing follow config dimensions; this is not proof that existing scene artwork adapts to both 4:5 and 9:16. Before a new storyboard, select the ratio for that song and inspect or author every scene and overlay for the chosen frame. See the current capability map in Section 01 and the implementation records. His Line is one production example, not a default template.
+
+No chat context items are removed or replaced by creating this pack. Review the pack and a specific replacement scope before changing existing connections.

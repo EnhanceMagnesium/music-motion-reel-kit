@@ -1,0 +1,187 @@
+{
+  "status": "Unmodified source candidates; no merged runtime or installed dependency graph.",
+  "records": [
+    {
+      "repo_id": "R02",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "original": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/.gitignore",
+      "staged": "compatibility-preparation/candidate-sources/painted-base/.gitignore",
+      "sha256": "cdb3767f6dfc37d7a5e34ccf184aa258a4a749f31ad6aa9af19538359a5a8ad0"
+    },
+    {
+      "repo_id": "R02",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "original": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/ANIMATION_GUIDE.md",
+      "staged": "compatibility-preparation/candidate-sources/painted-base/ANIMATION_GUIDE.md",
+      "sha256": "f638e1fb3876f587e39ec11a20e2df3aac91421c926d82c2743768642caab990"
+    },
+    {
+      "repo_id": "R02",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "original": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/LICENSE",
+      "staged": "compatibility-preparation/candidate-sources/painted-base/LICENSE",
+      "sha256": "7d25ae95b305b884c08ce898e53b58d2e180ff0119e5d203d8b4ae30420f3b33"
+    },
+    {
+      "repo_id": "R02",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "original": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/README.md",
+      "staged": "compatibility-preparation/candidate-sources/painted-base/README.md",
+      "sha256": "c383c6bf64add0bdd38c0244616faa4adf859e1aae93cb93223a8de822924801"
+    },
+    {
+      "repo_id": "R02",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "original": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/docs/emotions.jpg",
+      "staged": "compatibility-preparation/candidate-sources/painted-base/docs/emotions.jpg",
+      "sha256": "66a0337d8a9db6735b5fc2e5495bd1b8c9a3868d11d83d6b24add6cbfe32001d"
+    },
+    {
+      "repo_id": "R02",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "original": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/docs/views.jpg",
+      "staged": "compatibility-preparation/candidate-sources/painted-base/docs/views.jpg",
+      "sha256": "c067a20d24aa1f81edbc99f8fb0ee1f57a3cfd81786f99bc4070b90b37559d9e"
+    },
+    {
+      "repo_id": "R02",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "original": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/gpu_probe.mjs",
+      "staged": "compatibility-preparation/candidate-sources/painted-base/gpu_probe.mjs",
+      "sha256": "62b370f9687383870c69ad8edb2646211c32460fe2e779a5b02ff33786b01e42"
+    },
+    {
+      "repo_id": "R02",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "original": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/package-lock.json",
+      "staged": "compatibility-preparation/candidate-sources/painted-base/package-lock.json",
+      "sha256": "4c79bac79ca749472c0b9f74cef1c6409ef7ab0513417c9ba4b94838731667d1"
+    },
+    {
+      "repo_id": "R02",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "original": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/package.json",
+      "staged": "compatibility-preparation/candidate-sources/painted-base/package.json",
+      "sha256": "c14fb0dd2641a316e54b90c4658ba10b6ce3b02b1921417e8128368dbcd005cb"
+    },
+    {
+      "repo_id": "R02",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "original": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/render.mjs",
+      "staged": "compatibility-preparation/candidate-sources/painted-base/render.mjs",
+      "sha256": "1151ad59ad0c7bbe59e4e273465689d81d41f896d6bafc8981b527d110b77fe6"
+    },
+    {
+      "repo_id": "R02",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "original": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/clawd.js",
+      "staged": "compatibility-preparation/candidate-sources/painted-base/src/clawd.js",
+      "sha256": "578fbd46d21cdcc92b14806f3cc8c7b1b9e9f7ea53ddda7b1c150afa9f3c512a"
+    },
+    {
+      "repo_id": "R02",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "original": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/config.js",
+      "staged": "compatibility-preparation/candidate-sources/painted-base/src/config.js",
+      "sha256": "6d9374c59bd90bede9d4761eea6136b772a5883c414a67b8a5673510b8c1d435"
+    },
+    {
+      "repo_id": "R02",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "original": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/core.js",
+      "staged": "compatibility-preparation/candidate-sources/painted-base/src/core.js",
+      "sha256": "6367b03a09bb0650ad4161a6e0668ddaf64178ddf33bb57b8fe25536e7234c5b"
+    },
+    {
+      "repo_id": "R02",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "original": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/karaoke.js",
+      "staged": "compatibility-preparation/candidate-sources/painted-base/src/karaoke.js",
+      "sha256": "fa68bb6ed9169ab945716cf1ad451ce9c36205d277f7921ed85e00735a91b0ae"
+    },
+    {
+      "repo_id": "R02",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "original": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/scenes/demo.js",
+      "staged": "compatibility-preparation/candidate-sources/painted-base/src/scenes/demo.js",
+      "sha256": "c783bd05af05875e014afd215d1945b189121910e8cef3218a5a8c7aac1dc361"
+    },
+    {
+      "repo_id": "R02",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "original": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/sheets.js",
+      "staged": "compatibility-preparation/candidate-sources/painted-base/src/sheets.js",
+      "sha256": "cdd9320e0cb5e1e5bbfdeac221e21b69714b96e4a9b05e62cda4817b4d80010c"
+    },
+    {
+      "repo_id": "R02",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "original": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/src/timeline.js",
+      "staged": "compatibility-preparation/candidate-sources/painted-base/src/timeline.js",
+      "sha256": "93d455142bf642355cb77cce64ad1a8397996be4f23e121bd18d6fce52bc1503"
+    },
+    {
+      "repo_id": "R02",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "original": "repository-downloads/tuzhechen2005/opus-video-skills/skills/painted-animation/template/studio.html",
+      "staged": "compatibility-preparation/candidate-sources/painted-base/studio.html",
+      "sha256": "edd47db6a1c914b10e3709cd2fac6dce502d033ae215fd1b06967d46eaf3809e"
+    },
+    {
+      "repo_id": "R02",
+      "commit": "59744a69c7b916cfbe4c4ec84006b0c2f5e2fde1",
+      "original": "repository-downloads/tuzhechen2005/opus-video-skills/LICENSE",
+      "staged": "compatibility-preparation/candidate-sources/licenses/R02-root-LICENSE",
+      "sha256": "ea30fc6f274c0c2b325db2d5b4bc196b51292cf85215b4da67c5fb0b1b0d89fa"
+    },
+    {
+      "repo_id": "R03",
+      "commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "original": "repository-downloads/lemomo-ai/lemo-opuscar/core/lib.js",
+      "staged": "compatibility-preparation/candidate-sources/math/R03-lib.js",
+      "sha256": "770c8fde7c43e6a8aa9f69235869eb2a6ef5dc43453d0e56d4ff0da576c83907"
+    },
+    {
+      "repo_id": "R03",
+      "commit": "b65efe6ea393fdc71212898ea4c57c754cfefa46",
+      "original": "repository-downloads/lemomo-ai/lemo-opuscar/LICENSE",
+      "staged": "compatibility-preparation/candidate-sources/licenses/R03-LICENSE",
+      "sha256": "f6d14d5ea5f60387eff5e7916f490e9d743986be48138d9ce187d69cbe536756"
+    },
+    {
+      "repo_id": "R06",
+      "commit": "4ddb8c80fdec96dc9f55d4b9bdee60bde6f0134b",
+      "original": "repository-downloads/buildwithhanif/claude-animation-skill/plugins/claude-animation/skills/claude-animation/lib/core.mjs",
+      "staged": "compatibility-preparation/candidate-sources/r06-original/core.mjs",
+      "sha256": "df85c88458057c1fa061881bfd77d82bd6830e2038f96c452394f8a4fd250c9e"
+    },
+    {
+      "repo_id": "R06",
+      "commit": "4ddb8c80fdec96dc9f55d4b9bdee60bde6f0134b",
+      "original": "repository-downloads/buildwithhanif/claude-animation-skill/plugins/claude-animation/skills/claude-animation/lib/fx.mjs",
+      "staged": "compatibility-preparation/candidate-sources/r06-original/fx.mjs",
+      "sha256": "ffa92fa119c160f3e11d84baa4b1e094e499a855745d744e0f034093684ecfbb"
+    },
+    {
+      "repo_id": "R06",
+      "commit": "4ddb8c80fdec96dc9f55d4b9bdee60bde6f0134b",
+      "original": "repository-downloads/buildwithhanif/claude-animation-skill/plugins/claude-animation/skills/claude-animation/lib/film.mjs",
+      "staged": "compatibility-preparation/candidate-sources/r06-original/film.mjs",
+      "sha256": "2c999da159b476d3b735cfbd78c010d501b9f03f198bca14b61fe2eaa977c937"
+    },
+    {
+      "repo_id": "R06",
+      "commit": "4ddb8c80fdec96dc9f55d4b9bdee60bde6f0134b",
+      "original": "repository-downloads/buildwithhanif/claude-animation-skill/LICENSE",
+      "staged": "compatibility-preparation/candidate-sources/licenses/R06-LICENSE",
+      "sha256": "22613aa5bd8808d19a66479717a0a88dd3e0dd199e0b48bed3fadb9ee327280b"
+    },
+    {
+      "repo_id": "R06",
+      "commit": "4ddb8c80fdec96dc9f55d4b9bdee60bde6f0134b",
+      "original": "repository-downloads/buildwithhanif/claude-animation-skill/plugins/claude-animation/skills/claude-animation/package.json",
+      "staged": "compatibility-preparation/candidate-sources/r06-original/package.json",
+      "sha256": "8be3adbdd622355f622d53aa7fef66865bf74eb0ddeb7cd3c0fa1890110dc418"
+    }
+  ]
+}

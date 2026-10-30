@@ -1,0 +1,2282 @@
+{
+  "sha": "0b96ca1ec8e03fe72a1c349370ab5dad043c5a1b",
+  "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/trees/0b96ca1ec8e03fe72a1c349370ab5dad043c5a1b",
+  "tree": [
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b0def19cba673fb76cc81ef9c41fe4f7aec090a",
+      "size": 99,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/3b0def19cba673fb76cc81ef9c41fe4f7aec090a"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e63eacbc95b83a293e89128b533c4f44e5b82b8a",
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/trees/e63eacbc95b83a293e89128b533c4f44e5b82b8a"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9faae5d5f845778efc6c18bc1196cc2c5815bce4",
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/trees/9faae5d5f845778efc6c18bc1196cc2c5815bce4"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/new-case.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6342c35e8c82d7db29136b896f1e22aa38d45efe",
+      "size": 1545,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/6342c35e8c82d7db29136b896f1e22aa38d45efe"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/new-resource.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7fec0645db9745343b305c0948f81c97e4597ce5",
+      "size": 1788,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/7fec0645db9745343b305c0948f81c97e4597ce5"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7dd7640bf97592e6d69ff9fbe127e1aca580c90e",
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/trees/7dd7640bf97592e6d69ff9fbe127e1aca580c90e"
+    },
+    {
+      "path": ".github/workflows/check-case-index.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d29329a9e5cd5c546be5c7d0572b6116a1a97389",
+      "size": 1074,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/d29329a9e5cd5c546be5c7d0572b6116a1a97389"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bbc7de0f3bc8de474375c92bd01ce239a8a9b71",
+      "size": 95,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/4bbc7de0f3bc8de474375c92bd01ce239a8a9b71"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a3bf24c17e7c6a8beeed1b71d53150b9569c3fc",
+      "size": 7671,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/3a3bf24c17e7c6a8beeed1b71d53150b9569c3fc"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da6ab6cc8f333d7e89a99812866df8f24374d47c",
+      "size": 18657,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/da6ab6cc8f333d7e89a99812866df8f24374d47c"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e2095fc259895a63457e84e41bb09e594c45793",
+      "size": 22277,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/5e2095fc259895a63457e84e41bb09e594c45793"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f8f797523f72de24b06ce4e92fc939dec84edcd",
+      "size": 20327,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/4f8f797523f72de24b06ce4e92fc939dec84edcd"
+    },
+    {
+      "path": "THIRD_PARTY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b94d7fd0e12560a076debbb337fdc9913a3e77b",
+      "size": 2421,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/0b94d7fd0e12560a076debbb337fdc9913a3e77b"
+    },
+    {
+      "path": "assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "40b59b567b1bb11870b9ac80a7a9b07aa247d7a3",
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/trees/40b59b567b1bb11870b9ac80a7a9b07aa247d7a3"
+    },
+    {
+      "path": "assets/case-thumbnails",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "85bceed259f7bb61c0ad504c25e8bfdd37aec684",
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/trees/85bceed259f7bb61c0ad504c25e8bfdd37aec684"
+    },
+    {
+      "path": "assets/case-thumbnails/2102436001473786054.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae6437dbf0160aef88397e86b22126de82d9d40a",
+      "size": 39384,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/ae6437dbf0160aef88397e86b22126de82d9d40a"
+    },
+    {
+      "path": "assets/case-thumbnails/2102436464323661880.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75dee57ef65816973963f450df14779893fcbe7b",
+      "size": 3546,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/75dee57ef65816973963f450df14779893fcbe7b"
+    },
+    {
+      "path": "assets/case-thumbnails/2102437977435893771.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e886fbbfb5723e20c93568a63d0e7140b66870f8",
+      "size": 9892,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/e886fbbfb5723e20c93568a63d0e7140b66870f8"
+    },
+    {
+      "path": "assets/case-thumbnails/2102440678282412195.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c32f2fe23b16a012bc4bc79ea3f70a91c5381a3e",
+      "size": 8480,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/c32f2fe23b16a012bc4bc79ea3f70a91c5381a3e"
+    },
+    {
+      "path": "assets/case-thumbnails/2102441708395041170.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f2c88599bf0d4619086613bd1e8d9fae638433e",
+      "size": 3766,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/5f2c88599bf0d4619086613bd1e8d9fae638433e"
+    },
+    {
+      "path": "assets/case-thumbnails/2102458348511879448.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9377249d31717ee905fd6302569df94d88a1b4df",
+      "size": 5710,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/9377249d31717ee905fd6302569df94d88a1b4df"
+    },
+    {
+      "path": "assets/case-thumbnails/2102462889160286423.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d8f47607eb5c5baccfa1829f1ba9c6538447c45",
+      "size": 7950,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/2d8f47607eb5c5baccfa1829f1ba9c6538447c45"
+    },
+    {
+      "path": "assets/case-thumbnails/2102463091959288264.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c62b7687b9288989b2b90aa418effa3235de4ee",
+      "size": 6780,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/7c62b7687b9288989b2b90aa418effa3235de4ee"
+    },
+    {
+      "path": "assets/case-thumbnails/2102463796149440888.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b225a382c1fbd59c2e95b47289425297e9d8d819",
+      "size": 8694,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/b225a382c1fbd59c2e95b47289425297e9d8d819"
+    },
+    {
+      "path": "assets/case-thumbnails/2102471841046786153.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "285296fa5c5f9b2454ce79fc87742f850f6f5b72",
+      "size": 6020,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/285296fa5c5f9b2454ce79fc87742f850f6f5b72"
+    },
+    {
+      "path": "assets/case-thumbnails/2102472218269900876.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6922721acfcd01b32143e9b3e6fd9a234fc7f310",
+      "size": 3206,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/6922721acfcd01b32143e9b3e6fd9a234fc7f310"
+    },
+    {
+      "path": "assets/case-thumbnails/2102477340920152162.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc5d6fb668f4e2eed5460591672f00d378f45186",
+      "size": 5446,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/fc5d6fb668f4e2eed5460591672f00d378f45186"
+    },
+    {
+      "path": "assets/case-thumbnails/2102493303388475855.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91fd23e5d8e69895af1d4b5bcbfec36417ebdebc",
+      "size": 8228,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/91fd23e5d8e69895af1d4b5bcbfec36417ebdebc"
+    },
+    {
+      "path": "assets/case-thumbnails/2102495989194236158.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18fc84d3933c50dd16f8406072c06ca5b10f96a3",
+      "size": 26678,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/18fc84d3933c50dd16f8406072c06ca5b10f96a3"
+    },
+    {
+      "path": "assets/case-thumbnails/2102503027340988559.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "baf6071cf64ca328b29af64531bc8316f7d4a77c",
+      "size": 30106,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/baf6071cf64ca328b29af64531bc8316f7d4a77c"
+    },
+    {
+      "path": "assets/case-thumbnails/2102514581684052169.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0a2f3098dd5a5f7357d8c866fc49ca49e309bda",
+      "size": 11944,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/b0a2f3098dd5a5f7357d8c866fc49ca49e309bda"
+    },
+    {
+      "path": "assets/case-thumbnails/2102515055116063144.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9696745b2f9cc8c157c9c1f65a4b4193dc3d1119",
+      "size": 6578,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/9696745b2f9cc8c157c9c1f65a4b4193dc3d1119"
+    },
+    {
+      "path": "assets/case-thumbnails/2102531681450119426.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "831254b3cb6c615e252136d4d633c8c9fcd41307",
+      "size": 16492,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/831254b3cb6c615e252136d4d633c8c9fcd41307"
+    },
+    {
+      "path": "assets/case-thumbnails/2102533401110802552.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9579563c597199471e32483a34b552d448bbf5ea",
+      "size": 8428,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/9579563c597199471e32483a34b552d448bbf5ea"
+    },
+    {
+      "path": "assets/case-thumbnails/2102535945333657960.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "992b632869bf30a3cfdaf093442251523cede54f",
+      "size": 4472,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/992b632869bf30a3cfdaf093442251523cede54f"
+    },
+    {
+      "path": "assets/case-thumbnails/2102544078927741369.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a04147027422cac8e487d4250cf2ee578f7b98d9",
+      "size": 9434,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/a04147027422cac8e487d4250cf2ee578f7b98d9"
+    },
+    {
+      "path": "assets/case-thumbnails/2102548178646016377.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3583a35929a6872e1d47db119808aa8b2f996615",
+      "size": 10234,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/3583a35929a6872e1d47db119808aa8b2f996615"
+    },
+    {
+      "path": "assets/case-thumbnails/2102554209166000267.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2e7f50c25c7300a633d92b5d87c905874bfde88",
+      "size": 8304,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/b2e7f50c25c7300a633d92b5d87c905874bfde88"
+    },
+    {
+      "path": "assets/case-thumbnails/2102558320695402885.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02e465fa179728223cb121507cd6c5efe2dec137",
+      "size": 4236,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/02e465fa179728223cb121507cd6c5efe2dec137"
+    },
+    {
+      "path": "assets/case-thumbnails/2102561072624410878.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89df687a24ef6e70f540e973e0396d59876b5dad",
+      "size": 4254,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/89df687a24ef6e70f540e973e0396d59876b5dad"
+    },
+    {
+      "path": "assets/case-thumbnails/2102576886182453454.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb39800ef0f67daecd75e3c5046b0fbaf46b64f3",
+      "size": 9118,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/cb39800ef0f67daecd75e3c5046b0fbaf46b64f3"
+    },
+    {
+      "path": "assets/case-thumbnails/2102583898865873225.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a887c62796e8421e79911c351b0f0267f92cc2f",
+      "size": 8782,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/9a887c62796e8421e79911c351b0f0267f92cc2f"
+    },
+    {
+      "path": "assets/case-thumbnails/2102591147927654847.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b2b3d3670f29778db783e4a98edb6d55217aff3",
+      "size": 7926,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/7b2b3d3670f29778db783e4a98edb6d55217aff3"
+    },
+    {
+      "path": "assets/case-thumbnails/2102592355165782312.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "131ccd28515536d8e4dce8a3456c04b9ca5a3b12",
+      "size": 14052,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/131ccd28515536d8e4dce8a3456c04b9ca5a3b12"
+    },
+    {
+      "path": "assets/case-thumbnails/2102599211212554616.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00fa161f2de97e3f960fbb623e547403d8691acd",
+      "size": 8738,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/00fa161f2de97e3f960fbb623e547403d8691acd"
+    },
+    {
+      "path": "assets/case-thumbnails/2102605736002150408.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8b61b41e4203cb05981a7dccc5b83462cd1af93",
+      "size": 5972,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/f8b61b41e4203cb05981a7dccc5b83462cd1af93"
+    },
+    {
+      "path": "assets/case-thumbnails/2102606609574941028.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "037056c13bed9a45755be01c06e718b05ff15b62",
+      "size": 7466,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/037056c13bed9a45755be01c06e718b05ff15b62"
+    },
+    {
+      "path": "assets/case-thumbnails/2102611841122017632.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5023ce58edce9cf55607253d681b3ff4300638ce",
+      "size": 10350,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/5023ce58edce9cf55607253d681b3ff4300638ce"
+    },
+    {
+      "path": "assets/case-thumbnails/2102645793828036643.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ba3fc97768c7c75abff605842a706635bbca9ed",
+      "size": 19050,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/0ba3fc97768c7c75abff605842a706635bbca9ed"
+    },
+    {
+      "path": "assets/case-thumbnails/2102652072252584046.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d86ec22f1e7f9c75e41374c2eadfb9d0e626267",
+      "size": 7198,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/0d86ec22f1e7f9c75e41374c2eadfb9d0e626267"
+    },
+    {
+      "path": "assets/case-thumbnails/2102656273112326609.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f06c8ab55f984aef2d483f7aa3588ed30af69f27",
+      "size": 5378,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/f06c8ab55f984aef2d483f7aa3588ed30af69f27"
+    },
+    {
+      "path": "assets/case-thumbnails/2102684116525437206.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a6479ec7eb67883b97fb15704adc24fbd2ed9bc",
+      "size": 12978,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/8a6479ec7eb67883b97fb15704adc24fbd2ed9bc"
+    },
+    {
+      "path": "assets/case-thumbnails/2102685186919932404.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb4267383886f39b5375604a007d0a5177011058",
+      "size": 4964,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/fb4267383886f39b5375604a007d0a5177011058"
+    },
+    {
+      "path": "assets/case-thumbnails/2102692569792835994.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "daa52aa2e7a0a1cc33d344d47923e787a84a49b8",
+      "size": 10106,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/daa52aa2e7a0a1cc33d344d47923e787a84a49b8"
+    },
+    {
+      "path": "assets/case-thumbnails/2102695622042411419.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb3998404481d74695d0a299b1dc8a82dfe8ecac",
+      "size": 9094,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/eb3998404481d74695d0a299b1dc8a82dfe8ecac"
+    },
+    {
+      "path": "assets/case-thumbnails/2102722754172850310.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23504e1b769451a8596d28d7d133601852f4886e",
+      "size": 10020,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/23504e1b769451a8596d28d7d133601852f4886e"
+    },
+    {
+      "path": "assets/case-thumbnails/2102724347446305104.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fa43456197d0a908a22072c33af2e3697c506bd",
+      "size": 4336,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/4fa43456197d0a908a22072c33af2e3697c506bd"
+    },
+    {
+      "path": "assets/case-thumbnails/2102726428991373480.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88e6eaf2ecc9b2d2dada1788f66bcd82a383bce7",
+      "size": 8848,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/88e6eaf2ecc9b2d2dada1788f66bcd82a383bce7"
+    },
+    {
+      "path": "assets/case-thumbnails/2102731669853573582.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3a072aca2541b0ce1dfed2ce1ded37cba5690f2",
+      "size": 9508,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/c3a072aca2541b0ce1dfed2ce1ded37cba5690f2"
+    },
+    {
+      "path": "assets/case-thumbnails/2102733714845491558.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d642c70aa70c238cc5a2884c327f5783ab2acd91",
+      "size": 4470,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/d642c70aa70c238cc5a2884c327f5783ab2acd91"
+    },
+    {
+      "path": "assets/case-thumbnails/2102736587708854585.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6dc73fef9a724ef680c47e648a3a327b1acb1b3",
+      "size": 8098,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/e6dc73fef9a724ef680c47e648a3a327b1acb1b3"
+    },
+    {
+      "path": "assets/case-thumbnails/2102737776219168939.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "445c1f1049efbb3b0c447ffe6e68fc8f44906b98",
+      "size": 9350,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/445c1f1049efbb3b0c447ffe6e68fc8f44906b98"
+    },
+    {
+      "path": "assets/case-thumbnails/2102740041621762166.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7506720dd43df94ed032635c7ed58423965c50f7",
+      "size": 14370,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/7506720dd43df94ed032635c7ed58423965c50f7"
+    },
+    {
+      "path": "assets/case-thumbnails/2102741813719138661.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c94cbb4a81d918a387fbbb6849731ec0ebe8e9ba",
+      "size": 10232,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/c94cbb4a81d918a387fbbb6849731ec0ebe8e9ba"
+    },
+    {
+      "path": "assets/case-thumbnails/2102742924148830211.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bf45ea65d3cfd632587642491762952732aa06c",
+      "size": 7484,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/6bf45ea65d3cfd632587642491762952732aa06c"
+    },
+    {
+      "path": "assets/case-thumbnails/2102744321355067761.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "478a7cceeff899bdaa2d4fabaa07bb5ee45dc329",
+      "size": 11428,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/478a7cceeff899bdaa2d4fabaa07bb5ee45dc329"
+    },
+    {
+      "path": "assets/case-thumbnails/2102751132502446549.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d611bb0bf0356d8ef41f0a209b8cc0258f418508",
+      "size": 8964,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/d611bb0bf0356d8ef41f0a209b8cc0258f418508"
+    },
+    {
+      "path": "assets/case-thumbnails/2102752585371226241.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37f8a9f631e0a6144f4b94f0195b3911409e53c4",
+      "size": 5848,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/37f8a9f631e0a6144f4b94f0195b3911409e53c4"
+    },
+    {
+      "path": "assets/case-thumbnails/2102755328161116223.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca7d79ede3f6d99e9471c58285161198c6266571",
+      "size": 9116,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/ca7d79ede3f6d99e9471c58285161198c6266571"
+    },
+    {
+      "path": "assets/case-thumbnails/2102760783344189761.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dc2c69a2370b46669d6fcc49aef4e8f0e9fba87",
+      "size": 4864,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/6dc2c69a2370b46669d6fcc49aef4e8f0e9fba87"
+    },
+    {
+      "path": "assets/case-thumbnails/2102775755646337530.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8284714904ef8a3f63cd467c3d285a91cd046fd0",
+      "size": 6480,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/8284714904ef8a3f63cd467c3d285a91cd046fd0"
+    },
+    {
+      "path": "assets/case-thumbnails/2102779758408774104.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7254bff52838d5587e1023a110cba7af3c26d779",
+      "size": 5172,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/7254bff52838d5587e1023a110cba7af3c26d779"
+    },
+    {
+      "path": "assets/case-thumbnails/2102781872107659270.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbd2c11968e2d194eb0f1010300ac6fe1d73fdf2",
+      "size": 9416,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/fbd2c11968e2d194eb0f1010300ac6fe1d73fdf2"
+    },
+    {
+      "path": "assets/case-thumbnails/2102782449478668290.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcd9224d009c9a4b58da61a5ce521fb4846634ba",
+      "size": 7772,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/dcd9224d009c9a4b58da61a5ce521fb4846634ba"
+    },
+    {
+      "path": "assets/case-thumbnails/2102786378282987591.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05b6b28cb46a5eab62aa51c24716362872345d2e",
+      "size": 4418,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/05b6b28cb46a5eab62aa51c24716362872345d2e"
+    },
+    {
+      "path": "assets/case-thumbnails/2102787420399825023.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ebff6ef84bf5330d7d61825bcd2198794364ee8",
+      "size": 7216,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/3ebff6ef84bf5330d7d61825bcd2198794364ee8"
+    },
+    {
+      "path": "assets/case-thumbnails/2102787822855893072.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb77dc7ad7906493b1b65ac2df7d2ff1da457f85",
+      "size": 10434,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/fb77dc7ad7906493b1b65ac2df7d2ff1da457f85"
+    },
+    {
+      "path": "assets/case-thumbnails/2102787937482252537.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e664c1dbb2d596e3f48771b43fc9bece176e80e",
+      "size": 11996,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/6e664c1dbb2d596e3f48771b43fc9bece176e80e"
+    },
+    {
+      "path": "assets/case-thumbnails/2102798578427265368.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cdef699e17e9e68075504c089a591470c9528eb9",
+      "size": 11590,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/cdef699e17e9e68075504c089a591470c9528eb9"
+    },
+    {
+      "path": "assets/case-thumbnails/2102801274173587569.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36eab1593c4d68b782a836ecad1f76292944c941",
+      "size": 4956,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/36eab1593c4d68b782a836ecad1f76292944c941"
+    },
+    {
+      "path": "assets/case-thumbnails/2102803889183736141.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c8cfc058475d468f2ddd6892ed65e3fc5317a9b",
+      "size": 9338,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/5c8cfc058475d468f2ddd6892ed65e3fc5317a9b"
+    },
+    {
+      "path": "assets/case-thumbnails/2102805376466891137.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5f301d9f05ad18e5c5a99007e2ec229f2908f9b",
+      "size": 5724,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/b5f301d9f05ad18e5c5a99007e2ec229f2908f9b"
+    },
+    {
+      "path": "assets/case-thumbnails/2102815918049132792.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a77f0e86e61169afc04245c6f2a5267a138428c",
+      "size": 9416,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/3a77f0e86e61169afc04245c6f2a5267a138428c"
+    },
+    {
+      "path": "assets/case-thumbnails/2102817977812824335.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14163013dd9c2a179a6a81c9544be965d2eae837",
+      "size": 9944,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/14163013dd9c2a179a6a81c9544be965d2eae837"
+    },
+    {
+      "path": "assets/case-thumbnails/2102827288190689364.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e0e2ea1688a89d5e1728ea1fda4637a48de1ae9",
+      "size": 4558,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/6e0e2ea1688a89d5e1728ea1fda4637a48de1ae9"
+    },
+    {
+      "path": "assets/case-thumbnails/2102827887732932956.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0090c09e4ff57c5c7e76f2aedd57e00ea2d67f65",
+      "size": 7474,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/0090c09e4ff57c5c7e76f2aedd57e00ea2d67f65"
+    },
+    {
+      "path": "assets/case-thumbnails/2102838830285898214.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93f912ac550f397204658489b6041eb99ec4b1e9",
+      "size": 5982,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/93f912ac550f397204658489b6041eb99ec4b1e9"
+    },
+    {
+      "path": "assets/case-thumbnails/2102844654169575547.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57fbdb3d89be2c8fc1b8b20f72958112ffb917f1",
+      "size": 3566,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/57fbdb3d89be2c8fc1b8b20f72958112ffb917f1"
+    },
+    {
+      "path": "assets/case-thumbnails/2102849219388133592.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "257dc59ff41d677f44198a7cccfdb9409e0697f3",
+      "size": 7810,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/257dc59ff41d677f44198a7cccfdb9409e0697f3"
+    },
+    {
+      "path": "assets/case-thumbnails/2102853258582880547.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a604c55e125d9914134f925e3e9d9a5ea47131fb",
+      "size": 6294,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/a604c55e125d9914134f925e3e9d9a5ea47131fb"
+    },
+    {
+      "path": "assets/case-thumbnails/2102853289259729328.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71d080834d29c51d92bc30ca3cc7a4774b60fb0a",
+      "size": 12746,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/71d080834d29c51d92bc30ca3cc7a4774b60fb0a"
+    },
+    {
+      "path": "assets/case-thumbnails/2102861462461124755.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d9251783137940c41711b794adc0eed36c5d5bf",
+      "size": 16060,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/0d9251783137940c41711b794adc0eed36c5d5bf"
+    },
+    {
+      "path": "assets/case-thumbnails/2102865595675050010.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ffb1456dc0288e50e90b3fc8d6a65a0b73f9095",
+      "size": 12656,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/6ffb1456dc0288e50e90b3fc8d6a65a0b73f9095"
+    },
+    {
+      "path": "assets/case-thumbnails/2102879729594343605.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5c63a2c97de53abafd8c67191d9b080981106f4",
+      "size": 9376,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/f5c63a2c97de53abafd8c67191d9b080981106f4"
+    },
+    {
+      "path": "assets/case-thumbnails/2102890107200229817.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3e84a074e83616206fc6ca601e52fc988282697",
+      "size": 9370,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/d3e84a074e83616206fc6ca601e52fc988282697"
+    },
+    {
+      "path": "assets/case-thumbnails/2102893186330841502.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02df06b2239ec6909afd87181b699f79fe290e77",
+      "size": 7844,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/02df06b2239ec6909afd87181b699f79fe290e77"
+    },
+    {
+      "path": "assets/case-thumbnails/2102897123037761640.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c895e9dad8ecdc5e6322f684dc5b9474cc92f3c9",
+      "size": 7000,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/c895e9dad8ecdc5e6322f684dc5b9474cc92f3c9"
+    },
+    {
+      "path": "assets/case-thumbnails/2102899866762440893.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0c49d3fae202d9f9eed5601d0993ac37e55c876",
+      "size": 3876,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/c0c49d3fae202d9f9eed5601d0993ac37e55c876"
+    },
+    {
+      "path": "assets/case-thumbnails/2102903173161877996.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50300a523359d4595b33bf91245ce943c2431498",
+      "size": 2502,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/50300a523359d4595b33bf91245ce943c2431498"
+    },
+    {
+      "path": "assets/case-thumbnails/2102908742518100086.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a2f95cb41714251d010155bcb9e4c5e9161b444",
+      "size": 4478,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/4a2f95cb41714251d010155bcb9e4c5e9161b444"
+    },
+    {
+      "path": "assets/case-thumbnails/2102910805721362875.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46fe0532434871fcef070196eba0116f4435b3be",
+      "size": 2842,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/46fe0532434871fcef070196eba0116f4435b3be"
+    },
+    {
+      "path": "assets/case-thumbnails/2102911234526048706.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf54784a3df75fb8437a89bd57c06fc3270db1dd",
+      "size": 8892,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/cf54784a3df75fb8437a89bd57c06fc3270db1dd"
+    },
+    {
+      "path": "assets/case-thumbnails/2102919394775220530.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b3c1c5da0c0006e07e0e371ea71e3b65ec85d40",
+      "size": 4536,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/7b3c1c5da0c0006e07e0e371ea71e3b65ec85d40"
+    },
+    {
+      "path": "assets/case-thumbnails/2102954743442399395.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09286e291bc2ad37444275dbbae19e09f3eb1c7e",
+      "size": 7074,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/09286e291bc2ad37444275dbbae19e09f3eb1c7e"
+    },
+    {
+      "path": "assets/case-thumbnails/2102966807376334856.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1069eb83399da6a7a9eb999862c939d4246ae252",
+      "size": 21626,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/1069eb83399da6a7a9eb999862c939d4246ae252"
+    },
+    {
+      "path": "assets/case-thumbnails/2102984873351037161.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c78364d91e42b59546218b6d40bdfdf22a44d98",
+      "size": 6438,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/5c78364d91e42b59546218b6d40bdfdf22a44d98"
+    },
+    {
+      "path": "assets/case-thumbnails/2102986085328716066.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64e6a69bb8f98b338f82067ca23cf1b93706bc2e",
+      "size": 8672,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/64e6a69bb8f98b338f82067ca23cf1b93706bc2e"
+    },
+    {
+      "path": "assets/case-thumbnails/2103003425915195750.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a1314687624545dc698ccfbd0e3828d2ab80370",
+      "size": 13676,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/8a1314687624545dc698ccfbd0e3828d2ab80370"
+    },
+    {
+      "path": "assets/case-thumbnails/2103008945220567166.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27846c1aad75de622997bd0c982cedd90d4c5170",
+      "size": 11036,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/27846c1aad75de622997bd0c982cedd90d4c5170"
+    },
+    {
+      "path": "assets/case-thumbnails/2103009037164110327.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbdbb58c4b72b485d1b94c69239ae74353c7a9b3",
+      "size": 4634,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/cbdbb58c4b72b485d1b94c69239ae74353c7a9b3"
+    },
+    {
+      "path": "assets/case-thumbnails/2103015561076564319.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4c44400d3572848c2b5d49ca02766d738f1d5b9",
+      "size": 7614,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/e4c44400d3572848c2b5d49ca02766d738f1d5b9"
+    },
+    {
+      "path": "assets/case-thumbnails/2103015953877647820.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12d280028282b2cc97771b4a8f2e5d1421a9f047",
+      "size": 5338,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/12d280028282b2cc97771b4a8f2e5d1421a9f047"
+    },
+    {
+      "path": "assets/case-thumbnails/2103019799614034026.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d3917cbeeb38bb83946c872cea46d7fcb7be29a",
+      "size": 5802,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/4d3917cbeeb38bb83946c872cea46d7fcb7be29a"
+    },
+    {
+      "path": "assets/case-thumbnails/2103021886045348073.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c281bd3fe44caa0ddb71e1ee42dd3c260d54dd5",
+      "size": 11064,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/2c281bd3fe44caa0ddb71e1ee42dd3c260d54dd5"
+    },
+    {
+      "path": "assets/case-thumbnails/2103022039854657902.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3dbe812eb69e0bb6887fb49b059b20e2d0e21c5",
+      "size": 6946,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/b3dbe812eb69e0bb6887fb49b059b20e2d0e21c5"
+    },
+    {
+      "path": "assets/case-thumbnails/2103024907965612250.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "231bea14bc4fef46981fbe6f7848a0de4abad46a",
+      "size": 3736,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/231bea14bc4fef46981fbe6f7848a0de4abad46a"
+    },
+    {
+      "path": "assets/case-thumbnails/2103028027861152225.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b1b43b4d7466f67b262ecae83570c6ebc26d1ac",
+      "size": 6378,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/2b1b43b4d7466f67b262ecae83570c6ebc26d1ac"
+    },
+    {
+      "path": "assets/case-thumbnails/2103037586663235713.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e1e12631e873a45e5b53e2ff785c943baa67077",
+      "size": 6766,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/7e1e12631e873a45e5b53e2ff785c943baa67077"
+    },
+    {
+      "path": "assets/case-thumbnails/2103039084944138621.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4edc003aad24aebf6b0b800eb37dd6b8ff60264",
+      "size": 6478,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/b4edc003aad24aebf6b0b800eb37dd6b8ff60264"
+    },
+    {
+      "path": "assets/case-thumbnails/2103053166006657284.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "552bf5b7f2691a9f186360c59e31587faa6a3f9e",
+      "size": 9464,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/552bf5b7f2691a9f186360c59e31587faa6a3f9e"
+    },
+    {
+      "path": "assets/case-thumbnails/2103075805098070315.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2457ae580a63b0ae44b2c0eb57aa06de3e498278",
+      "size": 6226,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/2457ae580a63b0ae44b2c0eb57aa06de3e498278"
+    },
+    {
+      "path": "assets/case-thumbnails/2103082248320766456.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8223b65667095be16e278915d21c086ed4a260fc",
+      "size": 9134,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/8223b65667095be16e278915d21c086ed4a260fc"
+    },
+    {
+      "path": "assets/case-thumbnails/2103082510607610023.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21057c01c2e5b2c5ac6be59d1d8c49d1c80b2c0c",
+      "size": 20292,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/21057c01c2e5b2c5ac6be59d1d8c49d1c80b2c0c"
+    },
+    {
+      "path": "assets/case-thumbnails/2103095131536764940.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b623d384a375ffc344428e1faee7d062658c1bc",
+      "size": 5956,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/5b623d384a375ffc344428e1faee7d062658c1bc"
+    },
+    {
+      "path": "assets/case-thumbnails/2103104303808348305.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c79a81a8deaa8a7c7f09cf973718200750fac66",
+      "size": 14140,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/8c79a81a8deaa8a7c7f09cf973718200750fac66"
+    },
+    {
+      "path": "assets/case-thumbnails/2103108551799632050.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a10b94a2cdd265e3355354fd9c4f131753bc5755",
+      "size": 4688,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/a10b94a2cdd265e3355354fd9c4f131753bc5755"
+    },
+    {
+      "path": "assets/case-thumbnails/2103108964821107104.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da9cb334b053de637bd4fc51ac76ac5fe80fa4dc",
+      "size": 7282,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/da9cb334b053de637bd4fc51ac76ac5fe80fa4dc"
+    },
+    {
+      "path": "assets/case-thumbnails/2103108967194833310.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f16f2bfa408b409d416b05304db0052c90841b7",
+      "size": 9546,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/9f16f2bfa408b409d416b05304db0052c90841b7"
+    },
+    {
+      "path": "assets/case-thumbnails/2103112945341251920.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "514b5f7bd54318106fca84e7007236737ba28db3",
+      "size": 9388,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/514b5f7bd54318106fca84e7007236737ba28db3"
+    },
+    {
+      "path": "assets/case-thumbnails/2103114698610683964.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb2dbb9928a95415891329d135e4755b43b92933",
+      "size": 6614,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/cb2dbb9928a95415891329d135e4755b43b92933"
+    },
+    {
+      "path": "assets/case-thumbnails/2103115017755500561.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1dff9062b3c2945350a9b79f9eeb6dea18c522a8",
+      "size": 11620,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/1dff9062b3c2945350a9b79f9eeb6dea18c522a8"
+    },
+    {
+      "path": "assets/case-thumbnails/2103116003689550013.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f536334cd4344dc72de58ae1b7dce39d68f7287a",
+      "size": 6902,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/f536334cd4344dc72de58ae1b7dce39d68f7287a"
+    },
+    {
+      "path": "assets/case-thumbnails/2103117246860345550.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b19e4725ea7835e2e9911d3a1a85df129af9aaa",
+      "size": 11136,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/7b19e4725ea7835e2e9911d3a1a85df129af9aaa"
+    },
+    {
+      "path": "assets/case-thumbnails/2103117547776163845.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d43f7928b8c379bf8b244b8feb4971ee016ebaa2",
+      "size": 8866,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/d43f7928b8c379bf8b244b8feb4971ee016ebaa2"
+    },
+    {
+      "path": "assets/case-thumbnails/2103117698863390805.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "106b1a1d89b4bca990e0049d2dd5b0624c68776c",
+      "size": 4902,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/106b1a1d89b4bca990e0049d2dd5b0624c68776c"
+    },
+    {
+      "path": "assets/case-thumbnails/2103119648271290566.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1870520dd1a9f92f48cdbdba4dea1d5978c6458",
+      "size": 6448,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/c1870520dd1a9f92f48cdbdba4dea1d5978c6458"
+    },
+    {
+      "path": "assets/case-thumbnails/2103120880796873091.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29e66dc95ff92717f84267c6294cefeaf6aa4eeb",
+      "size": 14608,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/29e66dc95ff92717f84267c6294cefeaf6aa4eeb"
+    },
+    {
+      "path": "assets/case-thumbnails/2103122947133309311.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7fab4e3d5004dcd144a681a9a2e7d12657cc3b8",
+      "size": 5836,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/b7fab4e3d5004dcd144a681a9a2e7d12657cc3b8"
+    },
+    {
+      "path": "assets/case-thumbnails/2103127192591065595.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f45fa85a8092369563fbf36aee82120548fc5d32",
+      "size": 15450,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/f45fa85a8092369563fbf36aee82120548fc5d32"
+    },
+    {
+      "path": "assets/case-thumbnails/2103128559174971663.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bb827635580d6c44aa99e5cc4d812a452230894",
+      "size": 10460,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/1bb827635580d6c44aa99e5cc4d812a452230894"
+    },
+    {
+      "path": "assets/case-thumbnails/2103129343253778767.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22e06b16b3f5a146aa74b4cdbf461831074f952b",
+      "size": 9214,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/22e06b16b3f5a146aa74b4cdbf461831074f952b"
+    },
+    {
+      "path": "assets/case-thumbnails/2103130115177898208.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cd61f3464ae52af3384555bf2845a5c4140ec90",
+      "size": 4984,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/8cd61f3464ae52af3384555bf2845a5c4140ec90"
+    },
+    {
+      "path": "assets/case-thumbnails/2103132260589338762.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df7f223095758703b9c98004ae193fd69a6a3b3e",
+      "size": 17556,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/df7f223095758703b9c98004ae193fd69a6a3b3e"
+    },
+    {
+      "path": "assets/case-thumbnails/2103133462798483752.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54a5f83104be34c14e069d6c9429afcd139f4ca9",
+      "size": 5784,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/54a5f83104be34c14e069d6c9429afcd139f4ca9"
+    },
+    {
+      "path": "assets/case-thumbnails/2103138089790996843.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d4060819ef99cd979e3a4a8a02456884baeea67",
+      "size": 10274,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/7d4060819ef99cd979e3a4a8a02456884baeea67"
+    },
+    {
+      "path": "assets/case-thumbnails/2103144778481475686.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba7d09b9a98a30839f2c099431e0284c9eaa65e8",
+      "size": 20560,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/ba7d09b9a98a30839f2c099431e0284c9eaa65e8"
+    },
+    {
+      "path": "assets/case-thumbnails/2103148835270971419.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a106f94a6c9c58a7068706eb95bb9e0eb95870e",
+      "size": 9344,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/7a106f94a6c9c58a7068706eb95bb9e0eb95870e"
+    },
+    {
+      "path": "assets/case-thumbnails/2103149275945517546.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a582f96f4aa66ccca40cda7b0456be054fdb37fc",
+      "size": 6654,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/a582f96f4aa66ccca40cda7b0456be054fdb37fc"
+    },
+    {
+      "path": "assets/case-thumbnails/2103152093733253544.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ecefadf846b6d7e0e01262a79e587829c9fb0020",
+      "size": 7440,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/ecefadf846b6d7e0e01262a79e587829c9fb0020"
+    },
+    {
+      "path": "assets/case-thumbnails/2103153899431432535.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc5e35e337668e4e02ad543bdf37d6ff2f97029f",
+      "size": 6966,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/fc5e35e337668e4e02ad543bdf37d6ff2f97029f"
+    },
+    {
+      "path": "assets/case-thumbnails/2103154189064876406.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "596cca354938a836641e52cbc609053e707cc79b",
+      "size": 5414,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/596cca354938a836641e52cbc609053e707cc79b"
+    },
+    {
+      "path": "assets/case-thumbnails/2103166575071330778.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adc7db26f9b60d10591f7fdc062f4dba24d56572",
+      "size": 9282,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/adc7db26f9b60d10591f7fdc062f4dba24d56572"
+    },
+    {
+      "path": "assets/case-thumbnails/2103169675928764486.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb3c6cd58e74f7ddeb9aab834e8cd519073f0981",
+      "size": 9170,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/fb3c6cd58e74f7ddeb9aab834e8cd519073f0981"
+    },
+    {
+      "path": "assets/case-thumbnails/2103169764244017396.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36b280782c61f3ea5e91bedb982bf255d5182d80",
+      "size": 7272,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/36b280782c61f3ea5e91bedb982bf255d5182d80"
+    },
+    {
+      "path": "assets/case-thumbnails/2103170666187117006.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abd7381a586499d02e005b201e725b2c0047187f",
+      "size": 6392,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/abd7381a586499d02e005b201e725b2c0047187f"
+    },
+    {
+      "path": "assets/case-thumbnails/2103171088637419631.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d4a056e753a856842351c9a32f5b571eff1cf5d",
+      "size": 10174,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/0d4a056e753a856842351c9a32f5b571eff1cf5d"
+    },
+    {
+      "path": "assets/case-thumbnails/2103171975220781332.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1dd95902a4ad632d2797d61622f25cb756f1e0d0",
+      "size": 4586,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/1dd95902a4ad632d2797d61622f25cb756f1e0d0"
+    },
+    {
+      "path": "assets/case-thumbnails/2103173729656459455.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "696cf5de3e5b65381a20ac842755dfb8c14f7fbc",
+      "size": 15628,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/696cf5de3e5b65381a20ac842755dfb8c14f7fbc"
+    },
+    {
+      "path": "assets/case-thumbnails/2103174501345493197.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cabce1f381845fe73dd411df5f14e773e3ef4c54",
+      "size": 10584,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/cabce1f381845fe73dd411df5f14e773e3ef4c54"
+    },
+    {
+      "path": "assets/case-thumbnails/2103183904563998809.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26e2abf5a7497ba3daa8bc513f40a85eb3302026",
+      "size": 9726,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/26e2abf5a7497ba3daa8bc513f40a85eb3302026"
+    },
+    {
+      "path": "assets/case-thumbnails/2103192634395361596.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f3d41e24b0f63724a620c75f27627c3e778cab3",
+      "size": 9188,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/0f3d41e24b0f63724a620c75f27627c3e778cab3"
+    },
+    {
+      "path": "assets/case-thumbnails/2103202431224119500.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab86838183ae3c1b281ccd3d6f92d0d594dc8402",
+      "size": 8392,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/ab86838183ae3c1b281ccd3d6f92d0d594dc8402"
+    },
+    {
+      "path": "assets/case-thumbnails/2103237884564414633.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db543b88d647ab4de30e614e031cbc909a5d876a",
+      "size": 11708,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/db543b88d647ab4de30e614e031cbc909a5d876a"
+    },
+    {
+      "path": "assets/case-thumbnails/2103237989065277590.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "232144186d9796fbff0f2ed0e330214ec4e8a281",
+      "size": 20666,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/232144186d9796fbff0f2ed0e330214ec4e8a281"
+    },
+    {
+      "path": "assets/case-thumbnails/2103244081388503196.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d12606a36a7f1548072a75ecde52d13e229a305",
+      "size": 9172,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/3d12606a36a7f1548072a75ecde52d13e229a305"
+    },
+    {
+      "path": "assets/case-thumbnails/2103247490237825416.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d615256b06fe8224809ab1a028564ff9cefc60b",
+      "size": 12598,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/3d615256b06fe8224809ab1a028564ff9cefc60b"
+    },
+    {
+      "path": "assets/case-thumbnails/2103247844542922825.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28946152db4429f198cae1830f7458cb61d5ebb2",
+      "size": 4972,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/28946152db4429f198cae1830f7458cb61d5ebb2"
+    },
+    {
+      "path": "assets/case-thumbnails/2103288413969621231.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0129d15ebc1efc62b3258cc7ee7ca9a199fa8f8",
+      "size": 4016,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/f0129d15ebc1efc62b3258cc7ee7ca9a199fa8f8"
+    },
+    {
+      "path": "assets/case-thumbnails/2103304514329854102.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50faa49248539713aacd7e04ade13cb7f17a4ee7",
+      "size": 7580,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/50faa49248539713aacd7e04ade13cb7f17a4ee7"
+    },
+    {
+      "path": "assets/case-thumbnails/2103315922098470926.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92c5b5a969c8f52236f9a479ff0dfda112553b30",
+      "size": 15522,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/92c5b5a969c8f52236f9a479ff0dfda112553b30"
+    },
+    {
+      "path": "assets/case-thumbnails/2103357848961036304.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3800d851ef370ecc3acbf94c0458b7e5617d2e6",
+      "size": 10062,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/d3800d851ef370ecc3acbf94c0458b7e5617d2e6"
+    },
+    {
+      "path": "assets/case-thumbnails/2103380404791333144.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "929493b759e8e64bb9bab82d13e752474e175b71",
+      "size": 7610,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/929493b759e8e64bb9bab82d13e752474e175b71"
+    },
+    {
+      "path": "assets/case-thumbnails/2103418429248069973.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ea88f2b6eaaae4793a82f21537f893de71f46c3",
+      "size": 6926,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/0ea88f2b6eaaae4793a82f21537f893de71f46c3"
+    },
+    {
+      "path": "assets/case-thumbnails/2103449416325890146.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a22e636a0a6464fd2311df2c356ed769257db9a",
+      "size": 7410,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/9a22e636a0a6464fd2311df2c356ed769257db9a"
+    },
+    {
+      "path": "assets/case-thumbnails/2103457566978162901.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c83e354d529e175face01013aa1846ad69e2283",
+      "size": 4968,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/3c83e354d529e175face01013aa1846ad69e2283"
+    },
+    {
+      "path": "assets/case-thumbnails/2103465246014746943.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af73e036b992d2e198d7b260882941fd169ce61b",
+      "size": 5478,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/af73e036b992d2e198d7b260882941fd169ce61b"
+    },
+    {
+      "path": "assets/case-thumbnails/2103472385563459833.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a5da15b0a538e6274f729ebfd53d29dc722f53d",
+      "size": 21386,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/4a5da15b0a538e6274f729ebfd53d29dc722f53d"
+    },
+    {
+      "path": "assets/case-thumbnails/2103475507471806929.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3490fd9833115f74de483fabf5612caaaad36f58",
+      "size": 28890,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/3490fd9833115f74de483fabf5612caaaad36f58"
+    },
+    {
+      "path": "assets/case-thumbnails/2103483923783373039.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14ef8b136102021410ab397ba39ad34cef71f669",
+      "size": 20278,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/14ef8b136102021410ab397ba39ad34cef71f669"
+    },
+    {
+      "path": "assets/case-thumbnails/2103494684374900862.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ed2d111e42eaa02c85a008dcf588e468f6c7abb",
+      "size": 5586,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/7ed2d111e42eaa02c85a008dcf588e468f6c7abb"
+    },
+    {
+      "path": "assets/case-thumbnails/2103683057689522564.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53a1ece891c2c3d1b402a4ff88f6a94551356bc1",
+      "size": 7630,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/53a1ece891c2c3d1b402a4ff88f6a94551356bc1"
+    },
+    {
+      "path": "assets/case-thumbnails/2103707054108299437.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc7fc83dfcdec023d9622b1afcec87c1c4138199",
+      "size": 10018,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/cc7fc83dfcdec023d9622b1afcec87c1c4138199"
+    },
+    {
+      "path": "assets/case-thumbnails/2103829449359966629.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "333c5d2219b7461585648928cce4e155e78dcc77",
+      "size": 5454,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/333c5d2219b7461585648928cce4e155e78dcc77"
+    },
+    {
+      "path": "assets/case-thumbnails/frames.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc0ca3a6d1e278c5a7756ba6bc6f053a4f862ace",
+      "size": 14001,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/fc0ca3a6d1e278c5a7756ba6bc6f053a4f862ace"
+    },
+    {
+      "path": "assets/claude55-2026-10-03",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a75206274a8ae1379337f3ca888328d26eb9af53",
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/trees/a75206274a8ae1379337f3ca888328d26eb9af53"
+    },
+    {
+      "path": "assets/claude55-2026-10-03/2106081142143168580.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b81b274cf9cef23b6f09b8b263764533a86f7db4",
+      "size": 4056,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/b81b274cf9cef23b6f09b8b263764533a86f7db4"
+    },
+    {
+      "path": "assets/claude55-2026-10-03/2106095190285144331.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44cec647550dd5d4e2e0fa2944e426fbbe9515ae",
+      "size": 6197,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/44cec647550dd5d4e2e0fa2944e426fbbe9515ae"
+    },
+    {
+      "path": "assets/claude55-2026-10-03/2106138602073641241.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df8938a9e980f9b0585f71a3d7aa450d844fc5b5",
+      "size": 7134,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/df8938a9e980f9b0585f71a3d7aa450d844fc5b5"
+    },
+    {
+      "path": "assets/claude55-2026-10-03/2106158746938269728.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d093f5c7dba159689949eb5ca56e37633d4b106a",
+      "size": 6170,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/d093f5c7dba159689949eb5ca56e37633d4b106a"
+    },
+    {
+      "path": "assets/claude55-2026-10-03/2106162924331180510.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "728e7dd9da162aab9836e50c2772f2062d510ca1",
+      "size": 13007,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/728e7dd9da162aab9836e50c2772f2062d510ca1"
+    },
+    {
+      "path": "assets/claude55-2026-10-03/2106190594775097663.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e4108ade0ffffa95c8df850c5b4482e8a863248",
+      "size": 3544,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/3e4108ade0ffffa95c8df850c5b4482e8a863248"
+    },
+    {
+      "path": "assets/claude55-2026-10-03/2106238699872956427.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8829bdf2d777387616b6bd7a457629d6c1be098d",
+      "size": 8035,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/8829bdf2d777387616b6bd7a457629d6c1be098d"
+    },
+    {
+      "path": "assets/claude55-2026-10-03/frames.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19570005c1a00b2c4cebad85cc8d190a029e2784",
+      "size": 1790,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/19570005c1a00b2c4cebad85cc8d190a029e2784"
+    },
+    {
+      "path": "assets/color-study",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "45ec764d82ff9a6f033a1ad70eedc2d2577e583f",
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/trees/45ec764d82ff9a6f033a1ad70eedc2d2577e583f"
+    },
+    {
+      "path": "assets/color-study/color-modes-domain-atlas.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da65b9f134640603695a70ac479170789d09cc1a",
+      "size": 495934,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/da65b9f134640603695a70ac479170789d09cc1a"
+    },
+    {
+      "path": "assets/color-study/color-modes-domain-atlas.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0babf48ed6211a5395e91d8abd0a2eafa4e16493",
+      "size": 296713,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/0babf48ed6211a5395e91d8abd0a2eafa4e16493"
+    },
+    {
+      "path": "assets/color-study/color-modes-highlight.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "273dbd76ef82be36452f611af8613af739816acf",
+      "size": 233777,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/273dbd76ef82be36452f611af8613af739816acf"
+    },
+    {
+      "path": "assets/color-study/color-modes-highlight.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e8d6aed8cd2e4268b167b23ce330b7370a067af",
+      "size": 166748,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/2e8d6aed8cd2e4268b167b23ce330b7370a067af"
+    },
+    {
+      "path": "assets/color-study/color-modes-overview.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a400a01852b0d57e813b527b89c038946a0c2c7",
+      "size": 113883,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/3a400a01852b0d57e813b527b89c038946a0c2c7"
+    },
+    {
+      "path": "assets/color-study/color-modes-style-atlas.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "285b6d22cccc7f6af278722563c6018670da1138",
+      "size": 548971,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/285b6d22cccc7f6af278722563c6018670da1138"
+    },
+    {
+      "path": "assets/color-study/color-modes-style-atlas.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2161548c8b9cf4b815cd6b4a639a8a229d62239",
+      "size": 323838,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/a2161548c8b9cf4b815cd6b4a639a8a229d62239"
+    },
+    {
+      "path": "assets/corpus-overview.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef5aeb2ad1139d92f99c18123856273ce51fd332",
+      "size": 82893,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/ef5aeb2ad1139d92f99c18123856273ce51fd332"
+    },
+    {
+      "path": "assets/domain-labels.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f85c16f7b6823423dffab295ce9ec1e2a5d2a5ce",
+      "size": 101828,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/f85c16f7b6823423dffab295ce9ec1e2a5d2a5ce"
+    },
+    {
+      "path": "assets/domain-style-heatmap.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b974540b786389ba2b447db9533d2cdf062d6b4",
+      "size": 167475,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/3b974540b786389ba2b447db9533d2cdf062d6b4"
+    },
+    {
+      "path": "assets/new-case-thumbnails",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "855ceed2a0707cac2d43b53e49071738684370bb",
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/trees/855ceed2a0707cac2d43b53e49071738684370bb"
+    },
+    {
+      "path": "assets/new-case-thumbnails/2103869704955900023.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f6e9c006ff893d090e00eefb2fa924a8ddc3499",
+      "size": 12782,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/7f6e9c006ff893d090e00eefb2fa924a8ddc3499"
+    },
+    {
+      "path": "assets/new-case-thumbnails/2103923067277733943.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4edfc17ec21c684699b16aeeecd5d71624145710",
+      "size": 9442,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/4edfc17ec21c684699b16aeeecd5d71624145710"
+    },
+    {
+      "path": "assets/new-case-thumbnails/2104009748874141941-m2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "baad7bd9832731118532bb08b1f6679e3653f3e7",
+      "size": 6062,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/baad7bd9832731118532bb08b1f6679e3653f3e7"
+    },
+    {
+      "path": "assets/new-case-thumbnails/2104009748874141941.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2590226fd861533290f5d907643be50cfda83f29",
+      "size": 9290,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/2590226fd861533290f5d907643be50cfda83f29"
+    },
+    {
+      "path": "assets/new-case-thumbnails/2104011150471917838.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20ddfb5d82c6c154c4616b7b04d86ddec80cb375",
+      "size": 5588,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/20ddfb5d82c6c154c4616b7b04d86ddec80cb375"
+    },
+    {
+      "path": "assets/new-case-thumbnails/2104021764863078697-m2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10029cbc20c4a9f88540668a3b48f89424cc719b",
+      "size": 7968,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/10029cbc20c4a9f88540668a3b48f89424cc719b"
+    },
+    {
+      "path": "assets/new-case-thumbnails/2104021764863078697.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7737d7af254bad7ceb761e352782e166a1de427c",
+      "size": 13692,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/7737d7af254bad7ceb761e352782e166a1de427c"
+    },
+    {
+      "path": "assets/new-case-thumbnails/2104039075175182487.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc78d432fdbe31627019904e6ec1682e37cca734",
+      "size": 7148,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/fc78d432fdbe31627019904e6ec1682e37cca734"
+    },
+    {
+      "path": "assets/new-case-thumbnails/2104131805175844923.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ed16f39168a268505d265618953fd8a8f96b0cf",
+      "size": 6742,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/7ed16f39168a268505d265618953fd8a8f96b0cf"
+    },
+    {
+      "path": "assets/new-case-thumbnails/frames.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a3f3719f666cbd5512416a4cf3c723b60f7de46",
+      "size": 1104,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/6a3f3719f666cbd5512416a4cf3c723b60f7de46"
+    },
+    {
+      "path": "assets/opus55-video-paths.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d92085eee245f7c41bd6fc1393daab92d5386463",
+      "size": 275158,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/d92085eee245f7c41bd6fc1393daab92d5386463"
+    },
+    {
+      "path": "assets/preview-duration.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "668652e38c680e26435a40bd09c7bd9ec2b8fea2",
+      "size": 100655,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/668652e38c680e26435a40bd09c7bd9ec2b8fea2"
+    },
+    {
+      "path": "assets/production-paths.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fe836ea57051cad67108ca939c2ecf017bd5a22",
+      "size": 84663,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/2fe836ea57051cad67108ca939c2ecf017bd5a22"
+    },
+    {
+      "path": "assets/prompt-lengths.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca6f7d68ef85090c0061d6af5e72f9c58651473e",
+      "size": 66840,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/ca6f7d68ef85090c0061d6af5e72f9c58651473e"
+    },
+    {
+      "path": "assets/resource-thumbnails",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "62baab7d0b6c1bfaa09f2ed7267891d6f7523b89",
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/trees/62baab7d0b6c1bfaa09f2ed7267891d6f7523b89"
+    },
+    {
+      "path": "assets/resource-thumbnails/frames.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b595e82a4ce3e9d6e8ee7153c0e950b7c6bdc9b4",
+      "size": 1113,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/b595e82a4ce3e9d6e8ee7153c0e950b7c6bdc9b4"
+    },
+    {
+      "path": "assets/resource-thumbnails/lemo-opuscar.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71d60db3ed4396d8287b89b322fd9637bf9457ae",
+      "size": 20788,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/71d60db3ed4396d8287b89b322fd9637bf9457ae"
+    },
+    {
+      "path": "assets/resource-thumbnails/papermotion.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8e7f3718b5ae957a6bcb80e18742e63c40aed80",
+      "size": 10018,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/a8e7f3718b5ae957a6bcb80e18742e63c40aed80"
+    },
+    {
+      "path": "assets/style-labels.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17b5cc2e8fb72ccaec7cc33d2bdbd01b8cfec14f",
+      "size": 104171,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/17b5cc2e8fb72ccaec7cc33d2bdbd01b8cfec14f"
+    },
+    {
+      "path": "assets/visible-prompt-lengths.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4a27d3aafbdd4561aeedf8cc2ca32a8323b0b14",
+      "size": 122252,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/d4a27d3aafbdd4561aeedf8cc2ca32a8323b0b14"
+    },
+    {
+      "path": "data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7322537bb80fe7d90921c1c789b62dafae4b6b50",
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/trees/7322537bb80fe7d90921c1c789b62dafae4b6b50"
+    },
+    {
+      "path": "data/atlas-case-notes-en.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18e84f12babeda90eb67ad2698091cefa6572836",
+      "size": 18471,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/18e84f12babeda90eb67ad2698091cefa6572836"
+    },
+    {
+      "path": "data/case-engagement-observed.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b625a8bf1162d028d517aaf881ddf3a766e65b4",
+      "size": 28785,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/0b625a8bf1162d028d517aaf881ddf3a766e65b4"
+    },
+    {
+      "path": "data/case-engagement-refresh-2026-09-27.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c4adecbaf7c845dba2ad15b4f63fa776387d4f3",
+      "size": 39373,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/2c4adecbaf7c845dba2ad15b4f63fa776387d4f3"
+    },
+    {
+      "path": "data/cases.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41c7fe9a65868a61369541a94908fd86a7e052af",
+      "size": 102759,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/41c7fe9a65868a61369541a94908fd86a7e052af"
+    },
+    {
+      "path": "data/claude55-candidate-audit-2026-10-03.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4358c54b4254940b7a71ccf5b0edd000cf1f1962",
+      "size": 151518,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/4358c54b4254940b7a71ccf5b0edd000cf1f1962"
+    },
+    {
+      "path": "data/claude55-search-coverage-2026-10-03.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69139fbb395e0ebcef75fde300418478281b1f9e",
+      "size": 3177,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/69139fbb395e0ebcef75fde300418478281b1f9e"
+    },
+    {
+      "path": "data/claude55-source-review-2026-10-02.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10955b1896084189467937280b2cc60d4e98c40d",
+      "size": 8811,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/10955b1896084189467937280b2cc60d4e98c40d"
+    },
+    {
+      "path": "data/claude55-source-review-2026-10-03.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c11605237ffb767818a0e46577bb721165c4602",
+      "size": 97532,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/2c11605237ffb767818a0e46577bb721165c4602"
+    },
+    {
+      "path": "data/color-study",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dd39cc8acfab7f098ce71efa6174d6f92d5d2acb",
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/trees/dd39cc8acfab7f098ce71efa6174d6f92d5d2acb"
+    },
+    {
+      "path": "data/color-study/color-mode-summary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c994f830199f9f027753bbad6776070292b7907c",
+      "size": 13277,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/c994f830199f9f027753bbad6776070292b7907c"
+    },
+    {
+      "path": "data/color-study/color-mode-swatches.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "913c6b8af620ef75d459a7482b66b5acc2746ddd",
+      "size": 22761,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/913c6b8af620ef75d459a7482b66b5acc2746ddd"
+    },
+    {
+      "path": "data/color-study/color-modes.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bd848760fe6035d6a4032b00a8559a8ff0968c1",
+      "size": 264152,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/8bd848760fe6035d6a4032b00a8559a8ff0968c1"
+    },
+    {
+      "path": "data/color-study/per-video-color-modes.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c80232ee1bb1b257915d597f0668f985f3a232d8",
+      "size": 448854,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/c80232ee1bb1b257915d597f0668f985f3a232d8"
+    },
+    {
+      "path": "data/color-study/per-video-color-vectors.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9235ec89d58b591b9b3c066e72f6c01ecd3898b9",
+      "size": 389449,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/9235ec89d58b591b9b3c066e72f6c01ecd3898b9"
+    },
+    {
+      "path": "data/corpus-snapshot.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "777cb491827fe878e9967f5fbaa9d1cc21b321aa",
+      "size": 881,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/777cb491827fe878e9967f5fbaa9d1cc21b321aa"
+    },
+    {
+      "path": "data/domain-style.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e161bb16ea4a6224c65008be7f456469b8630ffa",
+      "size": 213772,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/e161bb16ea4a6224c65008be7f456469b8630ffa"
+    },
+    {
+      "path": "data/prompt-overlap.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65500efbbffef8467fe3344c804708af65b710f4",
+      "size": 905,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/65500efbbffef8467fe3344c804708af65b710f4"
+    },
+    {
+      "path": "data/visible-prompt-lengths.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4af29e84d2b921d163f56bb0a9e286d9eeb7b5ef",
+      "size": 1089,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/4af29e84d2b921d163f56bb0a9e286d9eeb7b5ef"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f1a2f38128dcc2cca5ea12d8c2b2cb3f0e91d901",
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/trees/f1a2f38128dcc2cca5ea12d8c2b2cb3f0e91d901"
+    },
+    {
+      "path": "docs/case-index-guide.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aef08dc9ae3dc804f8074649042671dd01e54f93",
+      "size": 2391,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/aef08dc9ae3dc804f8074649042671dd01e54f93"
+    },
+    {
+      "path": "docs/cases-index.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28d6865bd090cd5d4117a481c077bb06f3ec0e87",
+      "size": 81546,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/28d6865bd090cd5d4117a481c077bb06f3ec0e87"
+    },
+    {
+      "path": "docs/chart-generation.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b103ca439092430e28d8101b094f8fabcd13680",
+      "size": 2801,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/7b103ca439092430e28d8101b094f8fabcd13680"
+    },
+    {
+      "path": "docs/claude55-update-2026-10-02.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c9541a5465e8eda0dc1c967632b9ad8ea847626",
+      "size": 10679,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/4c9541a5465e8eda0dc1c967632b9ad8ea847626"
+    },
+    {
+      "path": "docs/claude55-update-2026-10-02.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e124c1370ad3f3c7cf5f61f98bea65bf1cc6be35",
+      "size": 9858,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/e124c1370ad3f3c7cf5f61f98bea65bf1cc6be35"
+    },
+    {
+      "path": "docs/claude55-update-2026-10-03.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23f0f5314cacb547a5ebcbac90cfe52f31d630c4",
+      "size": 51112,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/23f0f5314cacb547a5ebcbac90cfe52f31d630c4"
+    },
+    {
+      "path": "docs/claude55-update-2026-10-03.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d8d2eb008ea4101df1221dfb5ca8d6947fb35e6",
+      "size": 47215,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/4d8d2eb008ea4101df1221dfb5ca8d6947fb35e6"
+    },
+    {
+      "path": "docs/color-modes.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2dd086823aab0bd85c7735f1b595d12309aade1f",
+      "size": 5942,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/2dd086823aab0bd85c7735f1b595d12309aade1f"
+    },
+    {
+      "path": "docs/color-modes.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16c4f51d858625c41493e4171568760e5b576916",
+      "size": 5930,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/16c4f51d858625c41493e4171568760e5b576916"
+    },
+    {
+      "path": "docs/domain-style-atlas.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "747466e3acefc5115bad673ee5c51be725918081",
+      "size": 112100,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/747466e3acefc5115bad673ee5c51be725918081"
+    },
+    {
+      "path": "docs/domain-style-atlas.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29e789456b9f19aa0200e9683573e2f41776bbeb",
+      "size": 112212,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/29e789456b9f19aa0200e9683573e2f41776bbeb"
+    },
+    {
+      "path": "docs/evidence-examples.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75c6118e3fd6bb8bcf82babaaadac3d24573b9bf",
+      "size": 16636,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/75c6118e3fd6bb8bcf82babaaadac3d24573b9bf"
+    },
+    {
+      "path": "docs/evidence-examples.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3202f5d10fa00c2eb86d4a4622d45ebace486d76",
+      "size": 14865,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/3202f5d10fa00c2eb86d4a4622d45ebace486d76"
+    },
+    {
+      "path": "docs/media-profile.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "715469f2da5b5ef965a87b9e08e4b0df0e85a100",
+      "size": 1361,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/715469f2da5b5ef965a87b9e08e4b0df0e85a100"
+    },
+    {
+      "path": "docs/methodology.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f368ab5646a3d2e7760448d0450c4f88818a016",
+      "size": 6142,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/9f368ab5646a3d2e7760448d0450c4f88818a016"
+    },
+    {
+      "path": "docs/new-cases-2026-09-27.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfa9a432e2c78875bbdc7a7c98a60c693b34be4a",
+      "size": 11652,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/cfa9a432e2c78875bbdc7a7c98a60c693b34be4a"
+    },
+    {
+      "path": "docs/new-cases-2026-09-27.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d780ec8a286546a65df33a7f10f64c21c2fdf0d",
+      "size": 10731,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/4d780ec8a286546a65df33a7f10f64c21c2fdf0d"
+    },
+    {
+      "path": "docs/production-brief.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de296ba609a0fd2278f989bde880018ac0f09f07",
+      "size": 3072,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/de296ba609a0fd2278f989bde880018ac0f09f07"
+    },
+    {
+      "path": "docs/production-brief.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29adc2c0e757ed79a1f54ddbc41946cd94d54c61",
+      "size": 3062,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/29adc2c0e757ed79a1f54ddbc41946cd94d54c61"
+    },
+    {
+      "path": "docs/prompt-matrix.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "892380aae64e988173eb4badd7e46075bc1070c4",
+      "size": 46376,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/892380aae64e988173eb4badd7e46075bc1070c4"
+    },
+    {
+      "path": "docs/prompt-playbook.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac00c28266d9fb80da0c14ed0c0304b109a9bfd2",
+      "size": 9130,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/ac00c28266d9fb80da0c14ed0c0304b109a9bfd2"
+    },
+    {
+      "path": "docs/report.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fd47d2bd80beb1ede05d81bfa2a45a5a65c1e4e",
+      "size": 43952,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/0fd47d2bd80beb1ede05d81bfa2a45a5a65c1e4e"
+    },
+    {
+      "path": "docs/search-coverage.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe606cfacf9e26bd6842df76c51ebeb436c27235",
+      "size": 4927,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/fe606cfacf9e26bd6842df76c51ebeb436c27235"
+    },
+    {
+      "path": "docs/statistics.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ab6bb4130430e06f687792d21eb319536db0408",
+      "size": 9262,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/4ab6bb4130430e06f687792d21eb319536db0408"
+    },
+    {
+      "path": "docs/statistics.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bbf0ef2f457c8276c0cf724e4becd0a416edbe2",
+      "size": 8661,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/8bbf0ef2f457c8276c0cf724e4becd0a416edbe2"
+    },
+    {
+      "path": "docs/visual-effects-fit.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5c313820cd6626106ffe9d6159e40166940beea",
+      "size": 11020,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/e5c313820cd6626106ffe9d6159e40166940beea"
+    },
+    {
+      "path": "docs/visual-effects-fit.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e41523229bce337cf229b4189a5597d7e3480614",
+      "size": 10653,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/e41523229bce337cf229b4189a5597d7e3480614"
+    },
+    {
+      "path": "docs/x-article.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1afef38ff492162ac274cd373693d1721aa1a20",
+      "size": 4493,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/a1afef38ff492162ac274cd373693d1721aa1a20"
+    },
+    {
+      "path": "requirements-charts.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c5d319372d66dc10b344c1215a89f420e3acc16",
+      "size": 265,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/9c5d319372d66dc10b344c1215a89f420e3acc16"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e14c5df278a628953d17d6115b045ac1b022c687",
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/trees/e14c5df278a628953d17d6115b045ac1b022c687"
+    },
+    {
+      "path": "scripts/check_color_modes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc6f795191b786f181e845f954e24e71831623b9",
+      "size": 18307,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/cc6f795191b786f181e845f954e24e71831623b9"
+    },
+    {
+      "path": "scripts/generate_case_thumbnails.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4c0da97a0c0900db29ca329ae3fe65ca311120e",
+      "size": 10223,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/f4c0da97a0c0900db29ca329ae3fe65ca311120e"
+    },
+    {
+      "path": "scripts/generate_cases.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31de2ca91d29a11dcf3f2fc0366c0c5cce5a1270",
+      "size": 10120,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/31de2ca91d29a11dcf3f2fc0366c0c5cce5a1270"
+    },
+    {
+      "path": "scripts/generate_color_charts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bede30850da4731916dcf8ce46c175a7d36b8274",
+      "size": 15758,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/bede30850da4731916dcf8ce46c175a7d36b8274"
+    },
+    {
+      "path": "scripts/generate_domain_style_atlas.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df86bd59e69eb6c119092b8102e55f6cc766763d",
+      "size": 44087,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/df86bd59e69eb6c119092b8102e55f6cc766763d"
+    },
+    {
+      "path": "scripts/generate_intro_charts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bb7d9afc573612f51c74f4bf86d26a28379788e",
+      "size": 11197,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/7bb7d9afc573612f51c74f4bf86d26a28379788e"
+    },
+    {
+      "path": "scripts/generate_new_case_thumbnails.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "668e2dcd5f2560a59cfe6d8fda2857d72ba67be9",
+      "size": 4982,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/668e2dcd5f2560a59cfe6d8fda2857d72ba67be9"
+    },
+    {
+      "path": "scripts/generate_stat_charts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb82c7a0b08a89e519a72aa325f17bac44b38668",
+      "size": 17226,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/bb82c7a0b08a89e519a72aa325f17bac44b38668"
+    },
+    {
+      "path": "scripts/generate_statistics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ac376be87ecc46fb896e1e40743aaefa11ee6b1",
+      "size": 35040,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/3ac376be87ecc46fb896e1e40743aaefa11ee6b1"
+    },
+    {
+      "path": "scripts/plot_domain_labels.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34e63cfd4f974c724a02e7fba9a75188fdd1c771",
+      "size": 353,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/34e63cfd4f974c724a02e7fba9a75188fdd1c771"
+    },
+    {
+      "path": "scripts/refresh_case_engagement.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff5ee60504a5dd6c410713cf296beef67e7de970",
+      "size": 23332,
+      "url": "https://api.github.com/repos/athemeroy/awesome-claude-5-5-videos/git/blobs/ff5ee60504a5dd6c410713cf296beef67e7de970"
+    }
+  ],
+  "truncated": false
+}

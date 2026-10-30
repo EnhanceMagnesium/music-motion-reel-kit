@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Neutral example production (portrait)</title>
+<style>
+  html, body { margin: 0; background: #1b1820; color: #eee; font: 13px system-ui, sans-serif; }
+  main { padding: 12px; display: grid; gap: 8px; }
+  #out { height: auto; background: #F3EBDC; }
+  .p5Canvas { display: none !important; }
+  .bar { display: flex; gap: 10px; align-items: center; max-width: 1280px; }
+  #scrub { flex: 1; }
+  #tt { font-variant-numeric: tabular-nums; min-width: 190px; }
+</style>
+<script src="../../base/node_modules/p5/lib/p5.min.js"></script>
+<script src="../../base/node_modules/p5.brush/dist/p5.brush.js"></script>
+</head>
+<body>
+<main>
+  <canvas id="out" width="1080" height="1920"></canvas>
+  <div class="bar"><input id="scrub" type="range" min="0" max="8" step="0.0417" value="0"><span id="tt">loading…</span></div>
+</main>
+<!-- engine: same order as base/studio.html. The production config sits next to this page. -->
+<script src="config.js"></script>
+<script src="../../base/src/project-config.js"></script>
+<script>
+  (() => { const o = document.getElementById('out'), N = normalizeProject(PROJECT), w = N.width, h = N.height;
+    o.width = w; o.height = h; o.style.aspectRatio = w + ' / ' + h; o.style.width = 'min(100%, ' + (w >= h ? 1280 : 540) + 'px)'; })();
+</script>
+<script src="../../base/src/core.js"></script>
+<script src="../../base/src/clawd.js"></script>
+<script src="../../base/src/timeline.js"></script>
+<script src="../../base/src/sheets.js"></script>
+<!-- No per-scene script tags: the production's modules/scenes are declared in config.js and loaded in dependency order by production-host.mjs. -->
+<script>
+  (window.READY_PROMISES = window.READY_PROMISES || []).push(
+    import('../../adapters/host-integration.mjs').then(m => m.installLibraryOverlays(window, normalizeProject(PROJECT)))
+      .then(() => import('../../production/production-host.mjs'))
+      .then(m => m.installProduction(window, normalizeProject(PROJECT), { configUrl: new URL('config.js', location.href).href })));
+</script>
+</body>
+</html>

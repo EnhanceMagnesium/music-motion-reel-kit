@@ -1,0 +1,187 @@
+ANIMATION VIDEO REPOSITORY INSPECTION RECORD
+Reviewed October 5, 2026
+
+CURRENT R12 ADDENDUM — 2026-10-26
+The October 5 counts and selected examples below describe the older R12 commit and remain historical evidence. The current local Skillry-linked catalog is `repository-downloads/yihui-dev/awesome-opus5-5-videos-20261026/`, upstream commit `92aee2f586ac0715cb3cbcb6384834f98a33383d`, with 703 prompt records, including 418 Skillry gallery URLs from the 11-page site. Search it with `node repository-preparation/tools/search-r12-skillry.mjs "scene need technique terms"`; follow `claude-finished-song-animation-project/12_CODE_ANIMATION_REFERENCE_WORKFLOW.txt` and `repository-preparation/R12_SKILLRY_LOCAL_REFERENCE_REFRESH_2026-10-26.md`. The clone has no preview videos or runtime package. Its MIT license covers the catalog compilation, not creators' videos, linked code, music or assets.
+
+# Source ingestion: Lemo-Opuscar and opus-video-skills
+
+Reviewed October 5, 2026. Source files were fetched read-only from GitHub main into /tmp/reel-source. No dependencies installed; no repository code executed; no rendering benchmarks run. These are source inspections, not end-to-end reproduction tests.
+
+## Scope and verified inventory
+
+Lemo-Opuscar: inspected README.md, LICENSE, DIRECTOR.md, TECHNIQUE.md, core/README.md, complete core/render/video.mjs, core/lib.js; fetched seven STYLE.md guides (watercolor, risograph, swiss-motion, cel-anime-80s, shadow-puppet, one-line, silkscreen-poster) and read substantial creative/material/motion/engine sections. Also inspected representative implementation in styles/risograph/demo/draw.js and film.js, styles/swiss-motion/demo/ease.js and film.js. Recursive tree has 44 STYLE.md paths: 43 real styles plus styles/_template/STYLE.md. The README's 43 claim is supported by source inventory. This is a style library with implementation demos and shared tools, beyond a links catalog.
+
+opus-video-skills: inspected README.md, LICENSE, both SKILL.md files, kinetic references/style-guide.md and sound.md, both template/render.mjs files, kinetic reel/cues.js, painted references/music-video.md, scripts/beat_grid.py, template/src/karaoke.js and timeline.js. Current main has two skills: painted-animation and kinetic-reel. The phrase 'every video style' describes its one-skill-per-style organization; the current inventory is two.
+
+Both LICENSE files contain MIT grants. The opus license retains John Heibel attribution for adapted engine portions. Lemo demo sample libraries, fonts, music and voices retain separate licenses; credits must accompany actual assets. Both repos are available; no requested inspected file was missing. User star counts and claimed authorship/performance are not evidence of runtime or reproducibility.
+
+## Technical evidence and boundaries
+
+Lemo: Node 20+, FFmpeg, Python 3.11+ or uv documented; Playwright browser, Canvas 2D, three.js/WebGL2 and optional sound/voice packages. Contract window.READY, window.DUR, window.render(t); deterministic seeded frame evaluation; common timeline drives generated picture/music/SFX/subtitles. It supports --size 1080x1920, though individual examples contain hardcoded 1920x1080 geometry and need vertical composition changes. DIRECTOR and TECHNIQUE are aimed largely at original narrated scored films. For this user's Suno master, take the visual/timing methods and derive cues from the existing recording. Keep all music replacement, foley, TTS, mandatory silences, mix ducking, fades and loudnorm processing as explicitly chosen changes to a separate output/version.
+
+Actual core/render/video.mjs streams JPEG screenshots into one FFmpeg MP4 segment per worker, joins segments and atomically renames final output. It locks output files and cleans abandoned segment directories; its cleanup deletes segments on normal completion, failure or interruption. There is no retained-frame resume mechanism in the inspected renderer. Deterministic seeking enables rerendering a timestamp, which is distinct from recovery of already rendered frames. Preserve the kit's tested local recovery path or adapt an explicitly versioned durable frame store if adopting Lemo techniques.
+
+Opus painted: p5.js+p5.brush, Puppeteer Chrome and FFmpeg; kinetic: Canvas 2D+three.js+WebGL post. Frames are pure functions of t. Each shot paints its complete frame. Cues live separately from artwork. Painted chapter files use private IIFEs with shared cast/palette helpers. Kinetic cue file records scene starts S, hits, CH chapters and duration; SCENES/TR registers drawing functions/transitions. Artist-specific palettes, landscapes, signature mascots and synth scores are examples, not project defaults.
+
+Both opus templates have resumable --frames mode: inspect for missing frames or size < 1000 bytes; write .tmp then rename JPEG; --range permits bounded regeneration; --encode separate. The cache test is existence/size, not identity of source+audio+render settings. Versioned output folders and invalidation of changed scene/frame ranges are necessary to avoid stale frames. Hardware speed quotes in SKILL.md are anecdotal for its author's environment, not measured in this kit.
+
+Important music precision: beat_grid.py computes spectral-flux onsets, autocorrelation search 70–170 BPM, one global beat phase and supplied LRC-line beat indices. It does not establish variable tempo, a true first bar/downbeat, individual word timing or every expressive vocal pickup. Verify pulse/phase against several points in the exact recording and use section maps for tempo changes. Actual karaoke.js computes a continuous left-to-right clipping fraction across a whole line from opt.sing or a default duration. Its README/SKILL 'word-by-word' wording should be presented as a visual fill effect, not demonstrated word-level forced alignment. Supply validated word intervals when exact syllable/word highlighting matters.
+
+## Exact source URLs
+
+https://github.com/lemomo-ai/lemo-opuscar/blob/main/README.md
+https://github.com/lemomo-ai/lemo-opuscar/blob/main/LICENSE
+https://github.com/lemomo-ai/lemo-opuscar/blob/main/DIRECTOR.md
+https://github.com/lemomo-ai/lemo-opuscar/blob/main/TECHNIQUE.md
+https://github.com/lemomo-ai/lemo-opuscar/blob/main/core/README.md
+https://github.com/lemomo-ai/lemo-opuscar/blob/main/core/render/video.mjs
+https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/risograph/STYLE.md
+https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/swiss-motion/STYLE.md
+https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/watercolor/STYLE.md
+https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/cel-anime-80s/STYLE.md
+https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/shadow-puppet/STYLE.md
+https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/one-line/STYLE.md
+https://github.com/lemomo-ai/lemo-opuscar/blob/main/styles/silkscreen-poster/STYLE.md
+https://github.com/tuzhechen2005/opus-video-skills/blob/main/README.md
+https://github.com/tuzhechen2005/opus-video-skills/blob/main/LICENSE
+https://github.com/tuzhechen2005/opus-video-skills/blob/main/skills/painted-animation/SKILL.md
+https://github.com/tuzhechen2005/opus-video-skills/blob/main/skills/painted-animation/references/music-video.md
+https://github.com/tuzhechen2005/opus-video-skills/blob/main/skills/painted-animation/scripts/beat_grid.py
+https://github.com/tuzhechen2005/opus-video-skills/blob/main/skills/painted-animation/template/src/karaoke.js
+https://github.com/tuzhechen2005/opus-video-skills/blob/main/skills/painted-animation/template/render.mjs
+https://github.com/tuzhechen2005/opus-video-skills/blob/main/skills/kinetic-reel/SKILL.md
+https://github.com/tuzhechen2005/opus-video-skills/blob/main/skills/kinetic-reel/references/style-guide.md
+
+## Ready-to-incorporate positive guidance
+
+ANIMATION STYLE AND SCENE DEVELOPMENT
+
+Use the following style families as a vocabulary for interpreting our selected song. Lemo-Opuscar supplies 43 style guides with code examples; opus-video-skills supplies two complete skill/template families. Choose a family because its material, rhythm and transformations express specific lyric moments. State the strongest emotional connection and a concrete animated mechanism for each candidate. Give Claude one primary family and any purposeful supporting technique, with the exact source guide links. Develop the imagery around our song's subjects, narrative and point of view.
+
+Painterly journal: build translucent strokes over warm paper, reveal the structure before detail, let a recurring accent identify the lyric's central object, and use brush growth, mist erasure or a travelling painted world as transitions. Seed generated strokes and cache completed paintings; animate the few marks that are changing. A portrait frame can travel vertically through a tree, city, memory or growing system. Choose this when the lyrics benefit from intimacy, observation, remembrance or transformation.
+
+Risograph and printed layers: choose two or three translucent spot inks with useful overprint mixtures, paper-colored knockouts, stable registration offsets and large silhouettes. Let an additional ink enter at a musical or narrative turn. A brief registration kick can emphasize a hit; restrained drift can express uncertainty. Keep the camera smooth while selected character drawings update at a deliberate limited-animation cadence. For opaque silkscreen treatment, stack flat ink layers, stepped color bands and squeegee reveals; re-ink recurring geometry as the story changes time or mood. Specify which printing action carries the song's meaning and show how the chorus advances it.
+
+Grid and kinetic typography: assign a readable hierarchy to lead lyric fragments, supporting images and short annotations. Choose one signal color, a grid adapted to 1080×1920, and modular graphic movements. Arrivals can land on measured musical cues with clip reveals and precise easing. A deliberate exception to an established visual rule can embody a lyric's rebellion, loss of control or breakthrough. In the kinetic family, combine selected letter staggers, masked shader textures, counters, shapes and depth layers with an actual scene mechanism: a connection forms, an object changes state, a network opens or a shape condenses. Use numbers according to their meaning in the song; label interpretive diagrams where needed. Make essential words readable at phone size and use microtype as secondary texture.
+
+Cel animation and character acting: separate painted background, flat shaded character, luminous elements and restrained playback texture. Create a model sheet with several views, expressions and key poses before building the proof. Keep the character's silhouette and focal expression clear against its background. Use anticipation, the principal action and follow-through; blend poses smoothly; place held objects consistently in the hands. Limited drawings can update at 12 or 8 fps while rain, light and camera move at output frame rate. A held close-up with changing light can carry a sustained vocal; a brief impact drawing can punctuate a musical peak. Check scanline and grain detail after downscaling to a phone preview.
+
+Continuous line and shadow theatre: a line can become a road, body, word or remembered object, carrying one visual idea through successive lyric moments. Plan connection topology and test the final whole drawing early so each reveal reads at its final scale. For shadow puppets, use translucent cut pieces, visible joints, glowing carved openings and overlapping layers. Character attitude comes from profile, head angle, body tilt and deliberate staging. Precompute any pendulum motion to support reproducible seeking. These families suit songs whose meaning benefits from continuity, storytelling, metaphor, ritual or the revelation of who controls an event.
+
+For the winning family, specify opening image, central subject or goal, meaningful turn and ending image. Describe one signature transformation native to the chosen material. Connect that transformation to an actual lyric, instrumental development or return of the chorus. State the shot's framing, camera movement, approximate duration and emotional reason. Establish a recurring setting, object or composition that changes across sections; explain what is learned or altered on each return.
+
+Use a single timing map derived from the exact selected audio. Separate song seconds from excerpt-local seconds, and record the offset. Represent sections, confirmed beats, phrase starts, verified lyric intervals, chosen visual hits and scene boundaries in portable data. BPM estimates and line-fill karaoke are useful prototypes; listening to the exact recording establishes pulse, pickups and word timing. Fit visual reading time to the performance by reducing words per display, arranging short balanced lines or carrying the visual idea into the next phrase.
+
+Give Claude a build plan organized around shared visual rules and separate scene files. Include palette roles, typography roles, cast geometry, camera coordinates, timeline schema, seeds, asset identity and the chosen proof interval. Deterministic frame evaluation makes individual timestamps independently reviewable. Durable versioned frames or completed chunks provide recovery of work already rendered. Record which recovery behavior is provided by the selected renderer, and test that behavior in the proof. Review style frames, key action strips, scene seams and a complete playback with the original song. Preserve source files, timing data, master audio identity, credits and a checkpoint so local rendering and the next Claude session continue from saved work.
+
+
+# Music toolkit source ingestion — October 5, 2026
+
+## Scope and evidence
+
+Reviewed current README, actual skill/guide, selected timing/audio/export/recovery/font implementation files. Files were downloaded read-only to /tmp/reel-ingest-source; repository software was inspected rather than installed or executed. These findings describe upstream documented and inspected capabilities. Existing kit performance remains a separate measured baseline.
+
+makevoid/motion-graphics-music-video-skill, inspected HEAD 1a06e673e3266f8ba94f9aad55669b00fd3a9fca (October 2, 2026): README.md; LICENSE (MIT); .claude/skills/motion-graphics-music-video/SKILL.md; references/planning.md; references/production.md; references/animation-audio-vfx.md; scripts/tools/python/beats.py; scripts/tools/p5/render.mjs; scripts/tools/p5/lib/time.js; scripts/lib/pipeline/steps/music.rb; scripts/lib/pipeline/steps/video.rb; scripts/lib/toolkit/fonts.rb; scripts/lib/workflow/journal.rb. Canonical paths below resolve within .claude/skills/motion-graphics-music-video/.
+
+Sources:
+https://github.com/makevoid/motion-graphics-music-video-skill/blob/1a06e673e3266f8ba94f9aad55669b00fd3a9fca/.claude/skills/motion-graphics-music-video/SKILL.md
+https://github.com/makevoid/motion-graphics-music-video-skill/blob/1a06e673e3266f8ba94f9aad55669b00fd3a9fca/.claude/skills/motion-graphics-music-video/references/planning.md
+https://github.com/makevoid/motion-graphics-music-video-skill/blob/1a06e673e3266f8ba94f9aad55669b00fd3a9fca/.claude/skills/motion-graphics-music-video/references/production.md
+
+JohnHeibel/ClaudeAnimationBase, inspected HEAD 0ac8bf2b31942376cb6b8c4074715595d512acd2 (September 24, 2026): README.md; LICENSE (MIT); ANIMATION_GUIDE.md; render.mjs; src/core.js; src/config.js; src/timeline.js; src/scenes/demo.js.
+https://github.com/JohnHeibel/ClaudeAnimationBase/blob/0ac8bf2b31942376cb6b8c4074715595d512acd2/ANIMATION_GUIDE.md
+https://github.com/JohnHeibel/ClaudeAnimationBase/blob/0ac8bf2b31942376cb6b8c4074715595d512acd2/render.mjs
+
+## Incorporation-ready guidance
+
+### Select an animation method that serves the song
+
+Treat the music-video skill as a hybrid production reference. It combines generated identity sheets and animated character performances from paid Fal services with local p5 graphics, Python analysis and cutouts, optional Swift effects, and FFmpeg assembly. Its code and documentation use MIT licensing. Model services, selected media, fonts and external examples carry their own usage conditions. Build the first proof from the current local renderer and a small number of purposeful assets; propose a generated performance only when a specific lyric or emotional action needs it. Name that shot, its required asset, estimated calls, and its local alternative. Keep the chosen Suno recording as the canonical soundtrack throughout.
+
+Choose one coherent material language from the song. Describe its linework, surface, shading, lighting, colour relationships, typography and camera behaviour in observable terms. A hand-painted approach can use flat washes, hatching, ink outlines, paper texture and gently changing drawings. An illustrated collage can combine stable background plates, isolated subjects and local cameras. A graphic approach can use drawn shapes, measured typography and visual metaphors. Express the meaning through a focal action: a subject seeks, discovers, changes, resists or resolves something. Give the opening and strongest musical or narrative payoff early representation in the proof plan.
+
+### Build callbacks and legible acting
+
+Develop a recurring object through distinct story functions: introduce it, let a verse change its significance, transform it at a musical peak, and resolve it near the ending. Specify the viewer's primary focal subject and reading order in every shot. Give important actions anticipation, a clear peak pose, follow-through and a readable settle. Use offset timing for secondary parts, characters and crowds so their relationships feel intentional. Connect emotion changes through expression and body action. Select hold lengths by what the phone viewer needs to recognise; musical speed and visual density can vary independently. Let the central action complete, then land the next transformation.
+
+ClaudeAnimationBase offers useful pure-time motion helpers: damped springs for secondary settling; eased keyframes; arcs for throws or jumps; prepared squash and stretch; camera moves; and optional twelve-drawings-per-second holds. Its boilSeed(key) reseeds each element using a stable identity and held drawing index, keeping the appearance of stationary objects consistent while other objects move. Translate these mechanisms into the chosen aesthetic. Typography belongs in the plan whenever the song benefits from sung words, a title, labels or an expressive lyric moment. Adopt the base's staging and timing principles while specifying the text treatment required by this project.
+
+### Separate musical evidence from estimates
+
+Create analysis copies of the canonical recording and keep their roles visible. Analyse onsets, loudness and beat candidates, listen to the whole selected version, and document confirmed phrases, vocal entrances, pauses, instrumental changes and ending. The makevoid beat script fits a steady tempo primarily within 80–180 BPM and assigns four-beat bar positions using low-frequency energy. Treat its grid as an initial hypothesis; confirm meter, first downbeat, half/double tempo and drift against the actual song. Maintain corrected timing as song-time seconds and frame ranges. Sung-word transcription and separated vocals can help difficult passages, with audible review confirming the words and alignment.
+
+Use inclusive start and exclusive end frames. Each section's ending frame equals the next section's starting frame; local scene time equals song time minus the section start. Supply each worker the same source-master identity, frame rate and boundaries. Choose the proof around completed lyric phrases and musical events, targeting the established 15–25-second scope with a specific justified boundary. For a singing face, plan a close or medium composition, visible mouth and a matching vocal segment; judge the performance with sound. For a graphic-only scene, synchronise the selected meaningful cues and let background motion support them.
+
+### Make source production recoverable
+
+Separate accepted identity references, scene assets, timing, source code, derived frames and exports. Assign parallel workers distinct scene resources and output paths; let one coordinator own shared manifests and final assembly. Each job records dependencies, exact frame interval, reference version, deliverables, review evidence, budget and retry allowance. Preserve provider request IDs and receipts so a paused generation can be resumed deliberately. Accept the result after inspection of its identity, staging and timed action, then unblock dependent jobs. Rebuild the downstream material affected by a changed reference while retaining previous accepted versions.
+
+Design graphics as deterministic functions of absolute or explicitly derived local time, using stable seeds for procedural variation. ClaudeAnimationBase's saved-frame path writes JPEGs atomically and schedules missing frames, supporting interruption recovery; its direct clip path streams frames to FFmpeg. The makevoid p5 renderer produces named PNGs and offers selected frame indices, while its job and model-request manifests preserve generation state. Select the recovery mechanism actually provided by the chosen renderer and record a reproducible restart action in the checkpoint. Use a versioned render directory whenever source or timing changes.
+
+### Adapt the workflow to the vertical proof
+
+Both upstream projects favour landscape defaults; specify 1080×1920 composition throughout this kit's brief and renderer configuration. Stage the subject, lyric blocks, camera movement, cutouts and reading order inside that canvas. Review representative first, middle and last shot frames, adjacent-frame strips for key motion, detail crops for expressions and cutout edges, and the proof in playback with the canonical audio. A contact sheet establishes composition and coverage; timed playback establishes pacing, transitions and vocal alignment.
+
+Select a small set of fonts with usable licenses and the required glyphs; record family, weight, source and bundled project filename where redistribution permits. Wait for font and image readiness before capture. The makevoid toolkit prepares selected installed font files per project; portability additionally requires recording their usage rights and fallback. Benchmark representative scenes locally before extending to a full song. Brush watercolour fills can be expensive, so use measured frame times to choose texture complexity and worker counts. Treat upstream cost or runtime examples as observations from those productions; estimate this project's tokens, asset calls, storage and render time from its own proof.
+
+## Source qualifications for the coordinator
+
+- makevoid's README mentions approximately $30 Fal credits and about 3 million Opus tokens for a three-minute example; that remains an anecdotal production estimate.
+- Its skill specifies a landscape 24fps runtime and implementing/testing requested format changes. Selected p5 options accept width/height but this alone does not establish whole-pipeline vertical readiness.
+- Its planning guide preserves source audio; a separate Music pipeline step can compose music, fit duration and apply fades. Selected-master use requires explicitly taking the original-track path and recording any requested edit.
+- makevoid's selected p5 export writes PNGs directly, with an --only selector; inspected code does not establish atomic automatic missing-frame recovery there. Its generation scheduler/receipts address a different recovery layer.
+- ClaudeAnimationBase's --frames uses atomic JPEG files and missing-frame detection; --clip streams. Existing-frame reuse needs versioned directories after content changes.
+- No blanket requirements for chaos, no-text visuals, transitions at every seam, beat-locking every movement, paid services, or fixed increasing worker counts were adopted. The incorporated prose specifies positive choices tied to this song and the actual host capacity.
+
+
+# Catalog ingestion notes — October 5, 2026
+
+## Inspected scope and repository distinction
+
+Read current README, license, complete public tree and data/videos.json for yihui-dev/awesome-opus5-5-videos. Parsed the full catalog for counts and inspected selected actual prompt entries. Also read the prompt files prompts/koldo2k-778767.md, prompts/anabology-491441.md, prompts/twoclipping-402193.md and prompts/x4b47x-034026.md. This is catalog and selected-prompt ingestion, rather than an audit of every original video or remake.
+
+https://github.com/yihui-dev/awesome-opus5-5-videos/blob/main/data/videos.json
+https://github.com/yihui-dev/awesome-opus5-5-videos/blob/main/prompts/koldo2k-778767.md
+https://github.com/yihui-dev/awesome-opus5-5-videos/blob/main/prompts/anabology-491441.md
+https://github.com/yihui-dev/awesome-opus5-5-videos/blob/main/prompts/twoclipping-402193.md
+https://github.com/yihui-dev/awesome-opus5-5-videos/blob/main/prompts/x4b47x-034026.md
+
+Verified 475 data entries and 475 prompt Markdown files at inspection. The strings contain 421 distinct prompt texts; 196 entries have prompt_partial=true. Categories are motion 288, interactive 70, explainer 62 and 3d 55. These are catalog entries and labels: each Markdown file can contain a full prompt, a partial prompt, or creator-post text. The README explicitly acknowledges partial disclosures. Treat the figure as 475 catalog entries with associated prompt/post files. Some technology badges describe the Skillry remake: representative Markdown says “Remake built with,” so attach that label to its stated subject when comparing originals and remakes.
+
+The old athemeroy/awesome-opus-5-5-videos URL redirects to athemeroy/awesome-claude-5-5-videos. Current scope includes Opus, Sonnet and separately labeled community Fable reports. Read README.md, LICENSE, THIRD_PARTY.md, data/corpus-snapshot.json, all 168 data/cases.csv rows, data/prompt-overlap.json, data/visible-prompt-lengths.json, docs/production-brief.md, docs/visual-effects-fit.md and docs/prompt-playbook.zh-CN.md; consulted the evidence and prompt-matrix documents. Public raw data and text were downloaded read-only into /tmp; no repository code was installed or executed.
+
+https://github.com/athemeroy/awesome-claude-5-5-videos/blob/main/data/corpus-snapshot.json
+https://github.com/athemeroy/awesome-claude-5-5-videos/blob/main/data/cases.csv
+https://github.com/athemeroy/awesome-claude-5-5-videos/blob/main/docs/production-brief.md
+https://github.com/athemeroy/awesome-claude-5-5-videos/blob/main/docs/visual-effects-fit.md
+https://github.com/athemeroy/awesome-claude-5-5-videos/blob/main/docs/prompt-playbook.zh-CN.md
+
+Verified frozen snapshot fields: 1,511 candidate posts, 1,449 retrieved attachments, 1,401 SHA-distinct files, 1,119 classifier yes/likely files, 168 deliberately reviewed cases. Current README separately adds 157 October 3 source posts. These units retain their stated evidence boundaries; different encodings can be distinct files. The user’s “over 1,000 videos” shorthand should become an explicitly counted source-linked corpus. This repository provides annotations, workflow evidence and production guidance, rather than 1,000 complete buildable projects.
+
+## Ready guidance for the animation-video supplement
+
+Use these catalogs to widen the visual vocabulary. Select examples by the chosen song’s emotional progression, lyric imagery, vocal density and vertical composition. Describe each reference as a usable visual mechanism: materials and edges, focal hierarchy, character design, typography, scene evolution, camera behavior and transitions. Attach the reference URL, name the inspected evidence, and state the adaptation for this song.
+
+An infinite-zoom collage entry specifies a chain of tangible portals, depth layers and a consistent camera-speed rule. A reusable direction for our brief is: choose two or three song-specific objects whose apertures reveal the next lyrical world; define depth-layer behavior and the visible handoff between worlds; test the portal transition inside the 15–25-second proof. Build a continuity plan for the song’s full arc. Its particular external-generation stack, generated music, landscape delivery and credit budget belong to that creator’s request. Our adaptation uses the selected recording and native 9:16 composition.
+
+The continuous-morph entry gives one changing object a sequence of recognizable states. Adapt it as an evolving lyrical symbol whose shape, contents and scale reveal successive meanings. Specify the object’s start state, transformation, readable hold and end state at each musical phrase. A quiet phrase can let the symbol settle; a stronger phrase can change its scale or internal structure. Select a cut or continuous transition according to the song’s story and comprehension needs.
+
+The paper-shadow-theatre entry explicitly combines a home-themed story with vertical 9:16 code animation. Adapt its visual grammar through layered silhouettes, controlled paper depth, motivated lighting, readable character poses and a recurring place or object. State the protagonist’s goal and how the environment changes with the song. Preserve our exact audio master as the timing source.
+
+The existing-song music-video prompt demonstrates lyric interpretation, a shared style sheet and character-sheet planning. Borrow the preparation pattern: establish one visual thesis, map lyric moments to images, give recurring figures clear silhouette/proportion rules and organize interludes as scenes with visible narrative work. Choose imagery and pacing from our selected song. Record optional generated assets as separately budgeted inputs.
+
+Give Claude a per-shot production-route field: code-drawn geometry/type, procedural illustration, supplied image or archive footage, or optional externally generated asset. Record what Claude writes and which local program draws or assembles the frames. Use a short description of each tool’s actual role. This lets an attractive example inform a realistic build plan.
+
+Use observable shot states: beginning composition, subject action, meaningful change, ending composition, exact lyric text and transition cue. Specify typography as editable text with a clear reading order and sufficient musical time to read. Make the first proof exercise the theme’s most demanding transition or recurring-character behavior as well as an expressive lyric moment.
+
+Use the catalog’s staged review pattern within our existing workflow: inspect storyboard/keyframes; inspect a demanding 2–4-second passage inside the proof using neighboring frames and playback; review the whole 15–25-second proof while listening; then extend the approved visual grammar through the song. Validate repeat rendering at the same time after different seek orders. Review complete playback for lyric sync, text clipping, continuity, motion speed and audio identity. A contact sheet supports visual inspection; listening and playback establish sequence behavior.
+
+Keep estimates specific to our project: selected resolution, duration, frame rate, renderer, assets, attempts and accepted output. Record local render time separately from model usage, asset credits and revision time. Creator-reported one-prompt or hour figures serve as attributed context. Source-linked samples suggest possibilities; our proof supplies project evidence.
+
+## Provenance and license
+
+Yihui publishes an MIT LICENSE but README credits the videos and prompts to their creators; preserve creator attribution and check permissions for copied assets, audio, prompts or code. MIT repository metadata alone does not establish third-party media rights. Athemeroy explicitly licenses its own writing, annotations, tables and diagrams CC BY 4.0; THIRD_PARTY.md excludes X posts, videos, music, creator prompts, screenshots, external code and third-party stills. Attribute any reused catalog guidance to the corresponding repository and identify outside references individually.
+
+https://github.com/yihui-dev/awesome-opus5-5-videos/blob/main/LICENSE
+https://github.com/athemeroy/awesome-claude-5-5-videos/blob/main/THIRD_PARTY.md

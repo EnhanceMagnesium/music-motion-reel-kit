@@ -1,0 +1,116 @@
+{
+  "query": "canvas kinetic typography lyric reveal",
+  "catalog_root": "repository-downloads/yihui-dev/awesome-opus5-5-videos-20261026",
+  "catalog_records": 703,
+  "result_count": 5,
+  "ranking": "Exact technology-tag match > category > creator/slug > prompt text; all matching terms add score.",
+  "tag_scope_note": "A technology tag may describe a Skillry remake. Read the local prompt file and creator source before attributing a technique to the original creator or adapting any code.",
+  "rights_note": "The catalog license covers its authored compilation, not creator videos, linked code, music, images, or other assets.",
+  "matches": [
+    {
+      "score": 10,
+      "matched_terms": [
+        "canvas",
+        "kinetic",
+        "typography",
+        "reveal"
+      ],
+      "slug": "gdgtify-929495",
+      "author": "Gdgtify",
+      "category": "motion",
+      "tech_tags": [
+        "canvas"
+      ],
+      "prompt_partial": false,
+      "has_remake": true,
+      "prompt_file": "repository-downloads/yihui-dev/awesome-opus5-5-videos-20261026/prompts/gdgtify-929495.md",
+      "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/gdgtify-929495",
+      "creator_post_url": "https://x.com/Gdgtify/status/2103458245213929495",
+      "prompt_excerpt": "Create a 20.00-second kinetic spoken-word film titled “BUILD THE FLOOR.” Treat this as an original miniature speech staged entirely through typography. Every line changes the architecture of the frame. The final declaration must stand on something the earlier words physically constructed. Deliver one self-contained HTML file, 1080×1080, targeting 60fps, using SVG and/or Canvas. Embed all required assets. ART DIRECTIO"
+    },
+    {
+      "score": 10,
+      "matched_terms": [
+        "canvas",
+        "kinetic",
+        "typography",
+        "reveal"
+      ],
+      "slug": "howdevelop-733090",
+      "author": "HowDevelop",
+      "category": "motion",
+      "tech_tags": [
+        "canvas"
+      ],
+      "prompt_partial": false,
+      "has_remake": true,
+      "prompt_file": "repository-downloads/yihui-dev/awesome-opus5-5-videos-20261026/prompts/howdevelop-733090.md",
+      "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/howdevelop-733090",
+      "creator_post_url": "https://x.com/HowDevelop/status/2103840883812733090",
+      "prompt_excerpt": "Create and render a 15-second motion graphics video introducing TanStack AI. Make it feel like a premium developer-tool launch film produced by Studio1: fast, precise, visually surprising, and polished enough to open a keynote or lead a social campaign. Use the TanStack AI feature details below as the source of truth. Studio1 is presenting the film; do not imply Studio1 built TanStack AI. Format and deliverables - 19"
+    },
+    {
+      "score": 9,
+      "matched_terms": [
+        "canvas",
+        "kinetic",
+        "typography",
+        "reveal"
+      ],
+      "slug": "daniel-haida-636937",
+      "author": "daniel_haida",
+      "category": "motion",
+      "tech_tags": [
+        "canvas",
+        "svg",
+        "css"
+      ],
+      "prompt_partial": true,
+      "has_remake": true,
+      "prompt_file": "repository-downloads/yihui-dev/awesome-opus5-5-videos-20261026/prompts/daniel-haida-636937.md",
+      "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/daniel-haida-636937",
+      "creator_post_url": "https://x.com/daniel_haida/status/2104139720829636937",
+      "prompt_excerpt": "claude code (opus 5.5) made the product film for taxtello, my bookkeeping app every frame is code: react + remotion, 0 after effects the soundtrack is code too, synthesized in python from sine waves and noise 1 prompt and 2 rounds of feedback full prompt below, steal it ↓ You are the senior motion designer, product designer and Remotion engineer for Taxtello. Your task is to create a genuinely premium, Apple-level pr"
+    },
+    {
+      "score": 8,
+      "matched_terms": [
+        "canvas",
+        "kinetic",
+        "typography"
+      ],
+      "slug": "astrothewizard-618782",
+      "author": "AstroTheWizard",
+      "category": "explainer",
+      "tech_tags": [
+        "canvas"
+      ],
+      "prompt_partial": false,
+      "has_remake": true,
+      "prompt_file": "repository-downloads/yihui-dev/awesome-opus5-5-videos-20261026/prompts/astrothewizard-618782.md",
+      "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/astrothewizard-618782",
+      "creator_post_url": "https://x.com/AstroTheWizard/status/2103629247751618782",
+      "prompt_excerpt": "I want you to make a 60-second, fully animated explainer video, end to end, completely on your own. I'm stepping away from my computer, so work autonomously until it's done. Don't stop to ask me questions; make the calls yourself and tell me what you decided at the end. Topic: the journey of photons Style: whimsical, charming, storybook. Give the photon a personality. It should feel like a professional motion-design "
+    },
+    {
+      "score": 8,
+      "matched_terms": [
+        "canvas",
+        "kinetic"
+      ],
+      "slug": "ik-builds-585923",
+      "author": "ik_builds",
+      "category": "motion",
+      "tech_tags": [
+        "canvas",
+        "svg"
+      ],
+      "prompt_partial": true,
+      "has_remake": true,
+      "prompt_file": "repository-downloads/yihui-dev/awesome-opus5-5-videos-20261026/prompts/ik-builds-585923.md",
+      "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/ik-builds-585923",
+      "creator_post_url": "https://x.com/ik_builds/status/2103890476885585923",
+      "prompt_excerpt": "I WAS QUOTED $3000 FOR THIS!!! So I asked Opus 5.5 (medium) to create a launch video using Motion Graphics for us. here's the prompt that one-shots it: \"Create a 15s motion-graphics film explaining {{PRODUCT}}. HyperFrames + GSAP, no voiceover, no footage. Style: paper-light canvas, marker notes that draw on, real physics, huge kinetic type, hard light/dark switches, a new idea every 1.5–2 s, a sound on every hit. CO"
+    }
+  ]
+}

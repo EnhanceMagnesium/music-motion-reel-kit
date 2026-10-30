@@ -1,0 +1,15 @@
+GPT LOCAL RUNTIME VERIFICATION — 2026-10-05
+
+Executed directly on the Mac from music-motion-reel-kit/renderer.
+Node: v26.7.0
+FFmpeg: 9.0.1
+Command: node render.mjs --spec specs/demo.json --preflight
+Exit code: 0
+Preflight OK: 1080x1920, 96 frames
+Chrome path: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+Scope: real installed Puppeteer import succeeded, FFmpeg ran, Chrome executable path existed, demo specification passed validation. Chrome was not launched by this preflight. No frames or video were generated. Audio and song-specific rendering remain pending.
+
+Claude execution failure remains separate: Workspace unavailable. The isolated Linux environment on this device failed to start. Successful direct Mac execution does not repair Claude's execution bridge.
+
+Next: provide the filled Grok brief and Suno recording for creative planning and song-specific implementation. Use saved local rendering files and direct Mac execution while the Claude execution bridge remains unavailable.

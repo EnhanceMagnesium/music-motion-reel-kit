@@ -1,0 +1,49 @@
+FINISHED SONG ANIMATION STUDIO — GENERAL GOAL
+
+## Mission
+Create original, complete code-rendered films from my finished songs through an affordable, portable and reusable production practice. Each film should feel conceived for its own recording: its sound, lyrics, emotional movement, point of view, subject matter, performance and visual possibilities shape its dramatic form. The goal is not to place generic motion behind a track or illustrate every lyric literally. Build a distinctive audiovisual world that gives the song’s ideas and feelings visual life while leaving space for ambiguity, contrast and discovery.
+
+Make the film clear and compelling on a phone: focused framing, readable type when useful and purposeful movement. Build a coherent visual world for this song, not a house style.
+
+## A distinct production for every song
+Start a new Claude conversation and create a separate `productions/<song>/` folder in the connected `music-motion-reel-kit` for every song. Keep that song’s supplied master, lyrics, optional brief, measured facts, plan, cues, configuration, React scenes, adapted helpers, assets, rights and source notes, review evidence, corrections and output together. The material supplied for that conversation governs song-specific facts.
+
+Do not transfer another production’s lyrics, story, characters, palette, timing, assets or creative decisions unless I ask. Earlier work may contribute verified technical lessons and source locations, not creative templates. Reusable tools should improve reliability while allowing every song to look and feel different.
+
+## The complete recording sets duration
+Use the entire supplied finished master, from beginning to end at its measured duration, by default. Songs are often around a minute and a half; this is not a limit. Do not select a short excerpt by default, impose a fixed reel-length limit, trim the master for frame arithmetic, pad it with silence, remix it or change its ending without a deliberate song-specific request.
+
+Shape the visual arc around the recording’s actual sections, changes, pauses and ending. Scene count and length should serve the music, not a preset shot count. Establish duration, structure, cues and synchronization from the recording and evidence; a text brief or estimated lyric position is not a substitute for listening and measurement. Preserve the master and report frame count, video endpoint and unavoidable frame quantization.
+
+## Native composition and song-specific visual direction
+Choose each song’s native frame: 4:5 at 1080×1350 or 9:16 at 1080×1920, based on its visual direction and intended use. Explain the framing consequences before storyboarding and record exact dimensions in its config. Compose subjects, framing, typography and overlays for that frame from the start; cropping a layout made for another ratio is not native composition. If both formats are requested, create two deliberate compositions.
+
+Derive the palette and visual identity from this song. Never default to Claude’s brand orange, a house palette or another song’s colors; orange is fine when the song gives it a clear reason. Give colors roles and judge balance and readability from reviewed output. Unite subject, setting, shape, texture, light, depth, type and motion. Let lyric typography serve meaning and phrasing rather than automatically subtitle every line, and keep designed text readable.
+
+
+
+## Code animation and rendering
+Build new songs through the connected kit’s shared Remotion route using suitable JavaScript techniques such as React, Canvas, SVG, DOM, CSS or WebGL. Use installed GSAP to choreograph DOM/SVG motion when useful, driven by Remotion’s frame clock. Keep code deterministic when frames are sought or revisited, use explicit seeds, await asynchronous preparation and release graphics resources. The supplied recording remains the soundtrack and clock.
+
+Claude may choose per scene whether direct Remotion or a HyperFrames HTML/GSAP subcomposition helps. This is Claude’s judgment, not a routine user decision. Remotion remains the full-song clock, frame authority, final composition and sole encoder. A child follows Remotion time, signals readiness and cleans up resources; it adds no competing renderer or audio clock. Existing p5 productions remain on the shared legacy route.
+
+Survey and rank all 16 catalogued repositories for each song, then deeply inspect candidates that match real scene needs. Do not force their use. Adapt only a mechanism whose source, dependencies, compatibility and reuse terms are understood and whose use is concrete. Record provenance and distinguish source availability, installation, adaptation, checks and accepted output; a repository mention or passing check proves neither integration nor visual quality.
+
+Every finished film uses at least one suitable, rights-cleared clip from each footage source: Moving Image Archive, Wikimedia Commons and Internet Archive/Prelinger. Search and document them separately under their guides; if any source has no suitable clip, the film remains incomplete. Keep footage distinct from R01–R16 code repositories, R10 film-study material and R12/Skillry references; verify item terms and mute source audio. R12 informs code methods, not rights to linked media.
+
+## One initiating prompt and sensible autonomy
+One initiating prompt plus the current recording, lyrics and optional brief should carry authorized work through planning, discovery, implementation, review, corrections and full-song output without repeated approval for routine reversible choices. Infer sensible choices from the song, explain assumptions and keep moving.
+
+Pause for missing essential inputs, material rights uncertainty, credentials, spending, external publication, out-of-scope actions or a consequential choice that cannot responsibly be resolved from supplied evidence. A project instruction cannot create missing filesystem access, native Mac execution, Chrome, network access, credentials or permissions. When the active session lacks a required local capability, say what is unavailable, preserve the work and use the supported handoff instead of claiming the requested stage ran.
+
+## Evidence-based quality and completion
+Review in proportion to risk: make a no-media plan, inspect selected frames for distinct states and known risks, then render the full candidate at its authorized stage. Remotion renders and encodes; Playwright samples an existing candidate; FFmpeg makes a navigation contact sheet. These tools do not by themselves prove motion, synchronization, visual quality or acceptance.
+
+After the candidate exists, play it at normal speed with sound and assess alignment separately. Distinguish technical validity, frame evidence, visual observations, listening, synchronization and my creative acceptance. A plan, still, browser check or passing code test cannot replace another kind of evidence. Claim only what was checked.
+
+Use bounded corrections: record time-referenced findings, fix evidence-supported issues, recheck affected risks and stop at the acceptance criteria or when a distinct decision is needed. Do not sample every half-second, rerender the whole film for a local still-only change, promise perfection or hide remaining risks.
+
+## A growing, portable studio practice
+Leave each song with a reproducible production folder containing its source/configuration, measured timing, provenance, render identity and output, review evidence, correction history and concise checkpoint. Save cross-song lessons in the connected kit only when evidence supports generalizing them. Preserve song-specific artwork, colors, stories and decisions within that production.
+
+Build a repeatable studio in which every song receives an original film and future productions benefit from verified lessons. Keep the process portable and economical, protect each master and creative identity, reduce avoidable setup and approval loops, and remain honest about uncertainty and review.

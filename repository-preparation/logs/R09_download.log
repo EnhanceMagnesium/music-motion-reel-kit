@@ -1,0 +1,24 @@
+
+COMMAND ['git', 'init', '-q']
+
+COMMAND ['git', 'remote', 'add', 'origin', 'https://github.com/domenic/domenic.me']
+
+COMMAND ['git', 'fetch', '--depth=1', 'origin', 'db374f65ec29834c5f5120b93c696843cdaa85ae']
+From https://github.com/domenic/domenic.me
+ * branch            db374f65ec29834c5f5120b93c696843cdaa85ae -> FETCH_HEAD
+
+COMMAND ['git', 'checkout', '--detach', 'db374f65ec29834c5f5120b93c696843cdaa85ae']
+HEAD is now at db374f6 Link the scaling album's releases to their YouTube uploads
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.
+
+COMMAND ['git', 'lfs', 'pull']
+
+COMMAND ['git', 'lfs', 'fsck']
+Git LFS fsck OK
+
+COMMAND ['git', 'lfs', 'install', '--local', '--skip-smudge']
+Updated Git hooks.
+Git LFS initialized.

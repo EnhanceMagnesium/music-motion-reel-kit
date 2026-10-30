@@ -1,0 +1,12 @@
+# How this reference applies in the animation kit
+
+This folder is an optional project-local agent reference copied from the pinned upstream source. Open it only when a real song-scene need matches it. Its upstream guidance is subordinate to the active kit `PROJECT_INSTRUCTIONS.md`, the current song prompt and production policy, and `claude-finished-song-animation-project/07_QUALITY_REVIEW_AND_ACCEPTANCE.txt`.
+
+- Remotion through `shared-animation-library/render.mjs` remains the shared production renderer, master clock, full-song composition and final encoder. This skill does not authorize another render pipeline.
+- The supplied song master remains the soundtrack. Do not generate, replace, trim, pad or remix audio based on examples in this source.
+- Choose palette, format and visual style from the current song's evidence. Upstream colors, named design systems and example scenes are not defaults.
+- Animation must be deterministic at requested frame/time, independent of frame visitation order, and use explicit seeds where randomness is needed. Canvas/WebGL/DOM resources must be released correctly.
+- For GSAP skills: do not recommend GSAP as the default for unspecified animation or in place of this kit’s selected Remotion path. Apply these references only when a concrete scene need and explicit project/task choice select GSAP. These are instructions, not the GSAP runtime. The upstream MIT license covers the skill repository text, not the GSAP runtime or third-party plugins; verify those terms separately before adoption. GSAP does not resolve from the shared Remotion runtime as checked on 2026-10-27. Do not add a package or import it into song code unless a separately authorized shared-runtime dependency change establishes a concrete need. Any future GSAP use must be seekable from Remotion's requested frame/time, deterministic on arbitrary seek order, lifecycle-safe, and checked in the actual renderer.
+- Record a selected technique's source, commit, path/symbol, license, dependency closure, adaptation status and concrete song-local caller in that song's source map/repository review. A skill suggestion alone is not integration evidence.
+
+Local copies exist under both `.claude/skills/` and `.agents/skills/`. Claude Code and Codex use their respective directories; start each tool with this kit as project/working directory. Live app discovery was not tested in this pass.

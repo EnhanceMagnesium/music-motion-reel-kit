@@ -1,0 +1,144 @@
+Environment: Darwin
+arm64
+Node: ~/.local/bin/node
+v26.7.0
+Command: node shared-animation-library/media-discovery/cli.mjs search --provider ia --query "fog" --collection prelinger --limit 1
+{
+  "provider": "internet-archive",
+  "query": "fog",
+  "collection": "prelinger",
+  "page": 1,
+  "totalHits": 66,
+  "returned": 1,
+  "candidates": [
+    {
+      "provider": "internet-archive",
+      "id": "American1956",
+      "title": "American Engineer (Part I)",
+      "description": "A 1956s promotional and recruiting film about American engineering. It opens with radio-telescope \"sounds of the sun and the stars\" and issues a repeated \"Help wanted\" call for imaginative, curious, courageous men and women to take on the challenges of the age. The film runs through the usual qualifications, such as a mathematical mind, a degree, a knack for tinkering and a state license, but argues that the one essential trait is the courage to accept constant challenge: \"Challenge makes an engineer.\" From there it surveys engineering triumphs, including harnessing rushing water for hydroelectric power, turning rivers into routes for commerce, mass-producing goods at prices ordinary people can afford, and \"blueprinting\" the skylines of American cities, which it credits with the highest standard of living in history. It then tours the disciplines: petroleum engineers searching for \"black gold\" with seismographs and offshore rigs, mining engineers extracting everything from coal to uranium, chemical engineers acting as \"catalytic agents\" that turn raw materials into conveniences, and research engineers exploring the laws of the universe. It closes on the optimistic note that every discovery advances humanity's destiny \"toward perfection.\" The tone throughout is classic postwar Cold War boosterism.",
+      "creator": "Handy (Jam) Organization",
+      "uploader": "",
+      "date": "1956",
+      "durationSeconds": 557,
+      "durationEvidence": "Internet Archive item runtime/duration metadata",
+      "collection": "prelinger",
+      "sourceUrl": "https://archive.org/details/American1956",
+      "previewUrl": "https://archive.org/details/American1956",
+      "thumbnailUrl": "https://archive.org/services/img/American1956",
+      "matchBasis": "Internet Archive Advanced Search over mediatype:movies; provider search ordering. No visual match was evaluated.",
+      "rightsStatus": "rights_unverified",
+      "rights": {
+        "status": "rights_unverified",
+        "license": {
+          "kind": "unknown",
+          "key": "unknown:http://creativecommons.org/licenses/publicdomain/",
+          "name": "http://creativecommons.org/licenses/publicdomain/",
+          "url": "http://creativecommons.org/licenses/publicdomain/"
+        },
+        "reason": "Rights fields are incomplete, use an unrecognized license, or conflict; do not download for production.",
+        "evidence": {
+          "licenseurl": "http://creativecommons.org/licenses/publicdomain/",
+          "rights": "",
+          "collection": "prelinger",
+          "uploader": ""
+        }
+      },
+      "attribution": null,
+      "videoFiles": [
+        {
+          "name": "American1956.avi",
+          "format": "Cinepack",
+          "mime": "",
+          "sizeBytes": 29493646,
+          "durationSeconds": null,
+          "durationEvidence": null,
+          "rawLengthField": "558.42",
+          "width": 320,
+          "height": 240,
+          "downloadUrl": "https://archive.org/download/American1956/American1956.avi",
+          "sourceFlag": "original"
+        },
+        {
+          "name": "American1956.mp4",
+          "format": "h.264",
+          "mime": "",
+          "sizeBytes": 57975431,
+          "durationSeconds": null,
+          "durationEvidence": null,
+          "rawLengthField": "558.13",
+          "width": 640,
+          "height": 480,
+          "downloadUrl": "https://archive.org/download/American1956/American1956.mp4",
+          "sourceFlag": "derivative"
+        },
+        {
+          "name": "American1956.mpeg",
+          "format": "MPEG2",
+          "mime": "",
+          "sizeBytes": 222007345,
+          "durationSeconds": null,
+          "durationEvidence": null,
+          "rawLengthField": "558.09",
+          "width": 640,
+          "height": 480,
+          "downloadUrl": "https://archive.org/download/American1956/American1956.mpeg",
+          "sourceFlag": "original"
+        },
+        {
+          "name": "American1956.ogv",
+          "format": "Ogg Video",
+          "mime": "",
+          "sizeBytes": 39529460,
+          "durationSeconds": null,
+          "durationEvidence": null,
+          "rawLengthField": "558.15",
+          "width": 400,
+          "height": 304,
+          "downloadUrl": "https://archive.org/download/American1956/American1956.ogv",
+          "sourceFlag": "derivative"
+        },
+        {
+          "name": "American1956_512kb.mp4",
+          "format": "512Kb MPEG4",
+          "mime": "",
+          "sizeBytes": 39938762,
+          "durationSeconds": null,
+          "durationEvidence": null,
+          "rawLengthField": "558.15",
+          "width": 320,
+          "height": 240,
+          "downloadUrl": "https://archive.org/download/American1956/American1956_512kb.mp4",
+          "sourceFlag": "derivative"
+        },
+        {
+          "name": "American1956_edit.mp4",
+          "format": "HiRes MPEG4",
+          "mime": "",
+          "sizeBytes": 134475407,
+          "durationSeconds": null,
+          "durationEvidence": null,
+          "rawLengthField": "558.05",
+          "width": 320,
+          "height": 240,
+          "downloadUrl": "https://archive.org/download/American1956/American1956_edit.mp4",
+          "sourceFlag": "original"
+        }
+      ]
+    }
+  ],
+  "nextPage": 2,
+  "note": "Internet Archive rights fields may be uploader-supplied and are not certified by the Archive. Search metadata is not visual review.",
+  "providerReturned": 1,
+  "appliedFilters": {
+    "minDurationSeconds": null,
+    "maxDurationSeconds": null,
+    "targetDurationSeconds": null,
+    "targetDurationToleranceSeconds": null,
+    "minWidth": null,
+    "minHeight": null,
+    "yearFrom": null,
+    "yearTo": null,
+    "mime": null
+  }
+}
+zsh:7: read-only variable: status

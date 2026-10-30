@@ -1,0 +1,133 @@
+CLAUDE — INTEGRATE PUBLIC WIKIMEDIA COMMONS AND INTERNET ARCHIVE VIDEO DISCOVERY
+
+Work only in the original active kit:
+
+
+
+This active kit is the source of truth. Do not edit or substitute the Downloads migration copy. Start from the current local files and instructions, not from this prompt as a claim that the present implementation is already known.
+
+## Objective
+
+Add a reusable, evidence-based way for future song productions to discover and selectively source video footage from these two public services:
+
+1. Wikimedia Commons, through its public MediaWiki Action API at [https://commons.wikimedia.org/w/api.php](https://commons.wikimedia.org/w/api.php).
+2. Internet Archive, including the Prelinger collection, through its public Advanced Search API and item metadata API.
+
+Prelinger is a collection within Internet Archive. Do not add stock-library providers, an aggregator, a new renderer, a per-song API dependency, or a separate Remotion project.
+
+The goal is a local discovery workflow that can accept a natural-language scene need, return a small ranked list of video candidates with previews and source evidence, verify item-level rights, and download only a deliberately selected file into that song’s own folder. The API adapters should serve the connected Remotion production workflow without becoming part of rendering or making external calls during render.
+
+## Access and credential facts
+
+Both services’ public search/read use should work without an account, API key, or secret. Do not create accounts, request credentials, add API keys, or ask me to paste a secret. Do not save credentials in the kit. If a particular operation unexpectedly requires authentication, stop that operation, document the exact endpoint and reason, and continue the independent no-key work.
+
+Use official documentation and verify it from this session before implementing:
+
+- Wikimedia API access policy: [https://www.mediawiki.org/wiki/Wikimedia_APIs/Access_policy](https://www.mediawiki.org/wiki/Wikimedia_APIs/Access_policy)
+- Wikimedia rate limits: [https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits](https://www.mediawiki.org/wiki/Wikimedia_APIs/Rate_limits)
+- Commons machine-readable metadata: [https://commons.wikimedia.org/wiki/Help:Machine-readable_data](https://commons.wikimedia.org/wiki/Help:Machine-readable_data)
+- Internet Archive Developer Portal: [https://archive.org/developers/](https://archive.org/developers/)
+- Internet Archive Advanced Search information: [https://archive.org/help/aboutsearch.htm](https://archive.org/help/aboutsearch.htm)
+- Internet Archive item metadata read API: [https://archive.org/developers/md-read.html](https://archive.org/developers/md-read.html)
+- Internet Archive rights guidance: [https://archivesupport.zendesk.com/hc/en-us/articles/360014759692-Rights](https://archivesupport.zendesk.com/hc/en-us/articles/360014759692-Rights)
+
+GPT observed a live Commons API response containing file-description URLs, MIME data and some `extmetadata` fields such as Artist, LicenseShortName, LicenseUrl and UsageTerms. Commons documentation warns that much file-page license/author information is free text or not machine-readable. GPT also observed an Internet Archive Prelinger/movie search return results, but the sample search rows omitted requested `rights` and `licenseurl` fields. Treat these only as test observations; re-check from your local session and fetch full item/file metadata before determining rights.
+
+Wikimedia requires a meaningful HTTP User-Agent. Use low request volume, no more than three concurrent calls, caching and backoff; honor `Retry-After` on 429 and 503 responses. Inspect the project for an accurate public contact URL before configuring the header. Do not invent a URL or email or put the private local filesystem path into the header. If no truthful contact URL is documented, ask me for one short contact URL or email only when needed for the compliant User-Agent; this is the only plausible manual value, not an API key.
+
+## Existing project policy to preserve
+
+- Keep each song’s plan, source shortlist, downloaded media, manifests, config, React scenes and outputs in `productions/<song>/`.
+- The Moving Image Archive at [https://www.movingimagearchive.com/gallery](https://www.movingimagearchive.com/gallery) remains a separate existing footage source and its current project requirement remains in force. These two APIs supplement it; they do not replace its search workflow or its per-song use requirement. Do not assume the Moving Image Archive exposes an API.
+- Keep the API integrations separate from R01–R13 code repositories, R10 film-study material, and R12/Skillry. Internet Archive’s Prelinger collection is not R10. Wikimedia/Internet Archive API availability does not establish that any particular asset is reusable.
+- Remotion remains the shared renderer and encoder. Do not add external fetching, license lookups or API calls to `render.mjs`, the composition, scenes or a render-time bundle.
+- Follow the project’s existing session authorization rules. This pass authorizes local source/guidance edits, API adapter implementation and focused no-media checks, including small read-only API queries. It does not authorize downloading or integrating footage for any current song, rendering, generating or extracting media, modifying song artwork/cues, changing Claude settings, creating external accounts, accepting terms, or installing/updating packages.
+
+## Inspect first
+
+1. Confirm the active-kit path and the session’s actual OS, Node version/architecture and network reachability. Do not infer native access from another session’s report.
+2. Read applicable `AGENTS.md`, `CLAUDE.md`, `PROJECT_INSTRUCTIONS.md`, current paste-ready project instructions and the relevant source-router, one-prompt production, Moving Image Archive, repository-navigation, shared-library, Remotion and QA guides.
+3. Inspect the current archive/source code, config contract, `public/` asset conventions, manifests, output protections, package manifests/lockfiles and all existing discovery helpers. Search before adding anything; extend one suitable existing path where possible.
+4. Preserve historical records and raw evidence. Do not edit pinned repository checkouts, dependency versions, recordings or existing production scenes.
+5. Write a short before-edit inventory in the execution report. Do not read or claim to have read every file in the kit.
+
+## Implement the smallest useful shared integration
+
+Choose the location and interface from the inspected architecture. Prefer one small shared media-discovery module/CLI with separate provider adapters and a normalized candidate record. Do not redesign the app or create a sprawling general asset platform. If an existing tool already does this, repair or document it rather than duplicating it.
+
+### Search and inspection behavior
+
+- Accept a scene description and optional filters, including source, video MIME/container, approximate duration, minimum dimensions, date/era, and collection. Return a bounded, configurable number of results; do not crawl entire catalogs or bulk-download datasets.
+- Search Commons through the Action API, in file namespace, and filter for actual video MIME/container types rather than assuming every file result is video. Request the file page URL and available `imageinfo`/`extmetadata`; expose original and thumbnail/preview URLs when present.
+- Search Internet Archive’s Advanced Search for video records (`mediatype:movies`), with an optional `collection:prelinger` filter. Follow returned identifiers with the item metadata read endpoint to inspect item-level metadata and files. Identify a usable video file from actual MIME/format, size and duration metadata; do not assume the first file is the movie or that the download filename can be guessed.
+- Do not make unsupported semantic-match claims. Show title, description/subjects, creator, date, source collection and why the result matched. A numeric score may sort results but must not imply the footage was visually inspected.
+- Keep search/preview separate from `download`. API results should link to the original item page so a human can preview it in the existing browser workflow. Do not build a browser automation dependency or pretend metadata preview is visual inspection.
+- Re-fetch a selected candidate’s metadata immediately before any later download, since search indexes and rights statements can change.
+- Cache small metadata responses to reduce calls; set sensible timeouts and response-size limits; handle pagination, transient errors, 429/503, `Retry-After`, malformed JSON and unavailable media clearly. Do not bypass access controls or hotlink-protection mechanisms.
+
+### Rights gate and attribution
+
+The project’s default allowlist is only:
+
+- Public Domain, with an explicit item-level basis;
+- CC0;
+- CC BY, with the exact license/version and attribution fields.
+
+Do not accept CC BY-SA, NC, ND, “free,” “open,” blank, missing, conflicting or ambiguous rights as equivalent to this allowlist. Do not infer rights from the collection, uploader, repository, item age, API availability or a search result count. Do not treat Internet Archive or Prelinger as certifying rights: Internet Archive says item rights information is often supplied by uploaders and is not guaranteed. For any uncertain result, mark it `rights_unverified` and exclude it from download/production use until separately resolved. Do not characterize every Prelinger film as public domain.
+
+For Commons, parse recognized machine-readable fields conservatively (`License`, `LicenseShortName`, `LicenseUrl`, `UsageTerms`, `Artist`, `Credit`, `AttributionRequired`, `Copyrighted` where present) and retain the raw relevant values. If the API omits or contradicts fields, link the file description page and mark the rights unresolved rather than guessing from free text.
+
+For Internet Archive, preserve the exact item-level `licenseurl`, `rights` and related fields where supplied, the item page, collection, uploader/creator, and selected filename. Check the item page’s rights statement. Search-index omissions are not a license. Exclude results where rights cannot be established under the allowlist.
+
+Generate an attribution string for every accepted CC BY asset containing creator/author, title, source link, license name/version and license link, plus a note of modifications. Preserve rights evidence for public-domain/CC0 items as well. Save a song-local machine-readable manifest and a readable `CLIP_MANIFEST.md` (or the existing equivalent) containing provider, item/file identifiers, title, creator/uploader, source and file URLs, rights text, license URL/version, access date, technical metadata, downloaded SHA-256, local path, exact in/out points if later trimmed, transformations and required attribution. Do not put attribution text on screen automatically; expose it for production credits and delivery notes, and let the song’s creative plan place credits appropriately.
+
+### Selected download behavior
+
+- Download only after a later explicit per-song selection, never as a side effect of search. For this implementation pass, do not download any asset.
+- In the tool’s eventual `download` path, require the candidate’s rights status to pass the allowlist, use a safe deterministic destination under the selected `productions/<song>/public/archive/` (or current project convention), validate the response and expected type/size, calculate a checksum, and refuse to overwrite an existing file.
+- Preserve the original downloaded file unchanged. Any later trimming, muting, crop, grade or transcode must be declared in the song manifest and performed only under that song’s authorized media stage.
+- Do not fetch or rehost all search results. Respect source policies and cache metadata, not bulk media.
+
+## Documentation and future-song routing
+
+Create or update one canonical guide in the existing project documentation structure describing the two providers, endpoints, query parameters, no-key status, rate limits, limitations, accepted rights, attribution, natural-language discovery workflow, preview/recheck/download sequence and error handling. Add short links from the source router, archive guide, new-song prompt/one-prompt workflow and relevant shared-library README. Keep the detailed policy in the canonical guide; avoid copying it into every document.
+
+The new-song workflow should:
+
+1. Derive actual scene search needs from that song’s recording, lyrics and brief.
+2. Search the Moving Image Archive through its existing website workflow and use its required relevant clip.
+3. Search Commons and Internet Archive/Prelinger where useful, using the shared discovery command and the rights gate.
+4. Record candidates and rank them against scene needs; do not force footage from every provider into each song.
+5. Visually preview the chosen source clip before integration, verify rights again, download only the selected file and record provenance/credit.
+6. Keep source footage silent under the supplied song master unless that song separately authorizes a different sound choice.
+7. Report when no suitable candidate meets the rights gate; do not substitute unverified footage.
+
+## Focused verification
+
+Use focused, non-media checks only. Do not run stills or a video render.
+
+- Add offline fixture-based checks for each provider’s normalization, video-type filtering, license allowlist, missing/conflicting rights behavior, attribution generation, safe destination/no-overwrite behavior and error/backoff handling. Keep tests deterministic and independent of live network.
+- Make at most one small, read-only live smoke request per provider (Commons search plus metadata, and one Internet Archive search plus one metadata read). Do not download media. Save sanitized request/response evidence with no credentials or unnecessary personal data.
+- Confirm no API call is wired into render-time code and no package was installed or changed.
+- If network policy blocks a live check, report the exact host/operation and continue offline validation. Do not ask me to allowlist guessed media hosts unless a tested selected download genuinely requires one.
+- Record exact commands, exit statuses, test results and evidence files. Separate code checks from live API reachability and from media/visual verification.
+
+## Stop conditions
+
+Stop before any asset download if a candidate’s rights are unclear or outside the allowlist. Stop before account creation, accepting legal terms, changing permissions, adding a new dependency, or contacting a provider. Ask only if a real blocking choice remains; do not ask for routine provider, aspect, palette or creative decisions. Do not ask me for API keys for these public read/search endpoints.
+
+## Completion and durable handoff
+
+Save a concise integration report under `repository-preparation/` with:
+
+- files inspected and the actual scope of inspection;
+- exact changed paths;
+- provider endpoint/auth status as verified in this session;
+- search, candidate, rights, attribution and download interface;
+- rights and provenance limitations;
+- whether each live read-only smoke check succeeded;
+- exact checks/commands/results and evidence paths;
+- packages and media actions not performed;
+- any remaining manual requirement, especially an accurate Wikimedia User-Agent contact if none is already documented.
+
+Update the active project checkpoint/index only if the existing documentation convention calls for it. Do not edit a current song’s checkpoint or production. Finish with the exact no-key answer: Commons and Internet Archive/Prelinger are two API integrations, and public search/read requires zero API keys; the Moving Image Archive remains a separate website-based workflow, not a third API established by this task.

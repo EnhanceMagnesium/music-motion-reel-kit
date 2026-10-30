@@ -1,0 +1,1 @@
+Declared audio, image and font files for a Remotion song production belong under this folder (or the public folder named by PROJECT.remotion.publicDir). This synthetic fixture intentionally contains no media.

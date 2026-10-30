@@ -1,0 +1,1066 @@
+{
+  "sha": "8f670f3262c75a454d26e01e062da96db7eefb05",
+  "url": "https://api.github.com/repos/bizarro/evangelion/git/trees/8f670f3262c75a454d26e01e062da96db7eefb05",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6aab50186dd48fc215097b4c0a5fac41e2fd6665",
+      "size": 292,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/6aab50186dd48fc215097b4c0a5fac41e2fd6665"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5cf5aa01cbcd4b6224690960609c21bf5c108c1",
+      "size": 1294,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/f5cf5aa01cbcd4b6224690960609c21bf5c108c1"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fbbd8f097940c9b3b8f7c89000f503ec773ec9c",
+      "size": 3128,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/9fbbd8f097940c9b3b8f7c89000f503ec773ec9c"
+    },
+    {
+      "path": "analysis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b19a9723083756f563dfa8614d3feafbb6ef2c5e",
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/trees/b19a9723083756f563dfa8614d3feafbb6ef2c5e"
+    },
+    {
+      "path": "analysis/.cache",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "58157c464c43ff8d45327343e2fd50e419803296",
+      "size": 53,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/58157c464c43ff8d45327343e2fd50e419803296"
+    },
+    {
+      "path": "analysis/analyze.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25891f97de57ba289a990b7c749a0519db1ede29",
+      "size": 15936,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/25891f97de57ba289a990b7c749a0519db1ede29"
+    },
+    {
+      "path": "analysis/common.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2992fa1ce8f235a70e746e89d50e3fd366d4a8e2",
+      "size": 1463,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/2992fa1ce8f235a70e746e89d50e3fd366d4a8e2"
+    },
+    {
+      "path": "analysis/pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7918a619898913f7e0d9adf81b295321b04fdc06",
+      "size": 290,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/7918a619898913f7e0d9adf81b295321b04fdc06"
+    },
+    {
+      "path": "analysis/uv.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d531283fa6faca718c263e343ed4bff9af5478b9",
+      "size": 225152,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/d531283fa6faca718c263e343ed4bff9af5478b9"
+    },
+    {
+      "path": "app",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cce0a663c64859ae8fb99a0a7748cdfd42ad00ae",
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/trees/cce0a663c64859ae8fb99a0a7748cdfd42ad00ae"
+    },
+    {
+      "path": "app/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a14702c409d3f34f9ab001e572dfeaf0da434bba",
+      "size": 388,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/a14702c409d3f34f9ab001e572dfeaf0da434bba"
+    },
+    {
+      "path": "app/bun.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "108e9b385d711c12ffff1d7941c46dc1293329be",
+      "size": 19020,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/108e9b385d711c12ffff1d7941c46dc1293329be"
+    },
+    {
+      "path": "app/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e87b9877a35b6c347c5dd989c97a16d29535071b",
+      "size": 1949,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/e87b9877a35b6c347c5dd989c97a16d29535071b"
+    },
+    {
+      "path": "app/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab40fab7edfc6d7772ffd956933797e48bfeee07",
+      "size": 397,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/ab40fab7edfc6d7772ffd956933797e48bfeee07"
+    },
+    {
+      "path": "app/public",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9fdee43549e2ed775862c2a4556adf46e9d9b86f",
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/trees/9fdee43549e2ed775862c2a4556adf46e9d9b86f"
+    },
+    {
+      "path": "app/public/audio",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "22a4fe39f4dd83273995ac29b652583f9b73e5a5",
+      "size": 11,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/22a4fe39f4dd83273995ac29b652583f9b73e5a5"
+    },
+    {
+      "path": "app/public/data",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "e67b455909149dffe457ead0f8cb08bfb2504376",
+      "size": 10,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/e67b455909149dffe457ead0f8cb08bfb2504376"
+    },
+    {
+      "path": "app/public/fonts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "09f803326335c8aca381eb16c21832e1731f4d59",
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/trees/09f803326335c8aca381eb16c21832e1731f4d59"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w1000-300.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bb90312d4ff0998f396f9498c2e80f5f4e7166e",
+      "size": 121492,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/0bb90312d4ff0998f396f9498c2e80f5f4e7166e"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w1000-500.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4441d242aee4e7df8aca736ed34d78321864be05",
+      "size": 121588,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/4441d242aee4e7df8aca736ed34d78321864be05"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w1000-700.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ba0d43287924bcf828384dc6b1087daf4fcdcc9",
+      "size": 121440,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/3ba0d43287924bcf828384dc6b1087daf4fcdcc9"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w1000-900.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56633ec809a80fec5871ea913748e910e197f48e",
+      "size": 120740,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/56633ec809a80fec5871ea913748e910e197f48e"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w1125-300.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d056a26bbcbc95a70b12245d9e15e4d364bbc8fc",
+      "size": 121740,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/d056a26bbcbc95a70b12245d9e15e4d364bbc8fc"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w1125-500.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a478e5fe2834ca92f9fb1481e7f5f34839f03759",
+      "size": 121788,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/a478e5fe2834ca92f9fb1481e7f5f34839f03759"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w1125-700.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56517a50508614bf67d9b3e364ea2e2f1ee6ac56",
+      "size": 121716,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/56517a50508614bf67d9b3e364ea2e2f1ee6ac56"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w1125-900.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec08b5a643aad26a87ea04fbacbd638c86031e9f",
+      "size": 121268,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/ec08b5a643aad26a87ea04fbacbd638c86031e9f"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w1250-300.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ff564393ac5c5ef907dc0470b8c69505c174863",
+      "size": 121648,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/3ff564393ac5c5ef907dc0470b8c69505c174863"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w1250-500.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d747f0a85560d5ac8fde2900b852b0bfec49ed68",
+      "size": 121652,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/d747f0a85560d5ac8fde2900b852b0bfec49ed68"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w1250-700.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24495e28588db9f0e53a2d8b28ad1b2e101e5487",
+      "size": 121628,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/24495e28588db9f0e53a2d8b28ad1b2e101e5487"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w1250-900.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ed03d0b1e623436abef2274c440818d4ba7d9b4",
+      "size": 121220,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/7ed03d0b1e623436abef2274c440818d4ba7d9b4"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w620-300.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00810f077436ebde540777346c3a06bc836f81c8",
+      "size": 120484,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/00810f077436ebde540777346c3a06bc836f81c8"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w620-500.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bb7df2fb58766670385ade50073508ea989c658",
+      "size": 120416,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/3bb7df2fb58766670385ade50073508ea989c658"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w620-700.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "644309233fbfa5898cae3714c89267aa18da2bdf",
+      "size": 120376,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/644309233fbfa5898cae3714c89267aa18da2bdf"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w620-900.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b65c6ddf320514b7d25e420292e35d2d332102c",
+      "size": 120080,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/1b65c6ddf320514b7d25e420292e35d2d332102c"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w750-300.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7488a74e8b6d9688af81cb36bfd5de30efcfa759",
+      "size": 120988,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/7488a74e8b6d9688af81cb36bfd5de30efcfa759"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w750-500.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cadb57013ef493376f44c46013e4d6b042247161",
+      "size": 120968,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/cadb57013ef493376f44c46013e4d6b042247161"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w750-700.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a12c2af0f96c5c6ab25ca827273853882cbe864",
+      "size": 120888,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/1a12c2af0f96c5c6ab25ca827273853882cbe864"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w750-900.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4143c933a077e90919bdedfb204cc71e6511906d",
+      "size": 120588,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/4143c933a077e90919bdedfb204cc71e6511906d"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w875-300.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce66a27a1ced82923d8db94c1047a577216cf197",
+      "size": 121144,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/ce66a27a1ced82923d8db94c1047a577216cf197"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w875-500.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9a7b24c1cd0d066779c643a6b79c4e8fab1e099",
+      "size": 121328,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/a9a7b24c1cd0d066779c643a6b79c4e8fab1e099"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w875-700.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2aef2d29ef7f3c440adca525cabd528c3359a877",
+      "size": 121212,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/2aef2d29ef7f3c440adca525cabd528c3359a877"
+    },
+    {
+      "path": "app/public/fonts/Archivo-w875-900.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbcdc3b359b069a83130b6334d0578860ad5e08d",
+      "size": 120844,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/fbcdc3b359b069a83130b6334d0578860ad5e08d"
+    },
+    {
+      "path": "app/public/fonts/ArchivoItalic-w1000-400.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8133aa3df2129d329081536e8441e99401cc9efb",
+      "size": 133740,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/8133aa3df2129d329081536e8441e99401cc9efb"
+    },
+    {
+      "path": "app/public/fonts/ArchivoItalic-w1000-800.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a0bd1bef7a535bc2705be3b84f58698ac076412",
+      "size": 133828,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/4a0bd1bef7a535bc2705be3b84f58698ac076412"
+    },
+    {
+      "path": "app/public/fonts/ArchivoItalic-w750-400.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7947f58d829cfde8ed3d2ebcff33a44c1814d424",
+      "size": 133472,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/7947f58d829cfde8ed3d2ebcff33a44c1814d424"
+    },
+    {
+      "path": "app/public/fonts/ArchivoItalic-w750-800.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8919d6964bcd41ef8fa3fe6666bce20cdef08a82",
+      "size": 133296,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/8919d6964bcd41ef8fa3fe6666bce20cdef08a82"
+    },
+    {
+      "path": "app/public/fonts/Cormorant-400.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "440b356974e41cf8bd697a983ff18431ba3b4d6b",
+      "size": 774016,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/440b356974e41cf8bd697a983ff18431ba3b4d6b"
+    },
+    {
+      "path": "app/public/fonts/Cormorant-600.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a00cc09a90d8a4facb96a39f47f9e6599071125c",
+      "size": 774032,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/a00cc09a90d8a4facb96a39f47f9e6599071125c"
+    },
+    {
+      "path": "app/public/fonts/CormorantItalic-400.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "293177bb6948bf80a0a06eb44d799fa4f051b916",
+      "size": 454392,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/293177bb6948bf80a0a06eb44d799fa4f051b916"
+    },
+    {
+      "path": "app/public/fonts/CormorantItalic-600.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cd3c5ee2669655bb0387ae49dc1de261b457016",
+      "size": 454472,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/1cd3c5ee2669655bb0387ae49dc1de261b457016"
+    },
+    {
+      "path": "app/public/fonts/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7f2f83ab2285c1fdffd0a5b6713f355a1949b5cb",
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/trees/7f2f83ab2285c1fdffd0a5b6713f355a1949b5cb"
+    },
+    {
+      "path": "app/public/fonts/src/Archivo-Italic[wdth,wght].ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41577c6b91d4c12d6490a6957f7c68f3c226c625",
+      "size": 741368,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/41577c6b91d4c12d6490a6957f7c68f3c226c625"
+    },
+    {
+      "path": "app/public/fonts/src/Archivo[wdth,wght].ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc64253d36665a5ca0d6719cdf1e32b3de453b51",
+      "size": 658596,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/cc64253d36665a5ca0d6719cdf1e32b3de453b51"
+    },
+    {
+      "path": "app/public/fonts/src/CormorantGaramond-Italic[wght].ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d914e7663b7a1429d06ec60a5c5bb026031a2ef",
+      "size": 715644,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/0d914e7663b7a1429d06ec60a5c5bb026031a2ef"
+    },
+    {
+      "path": "app/public/fonts/src/CormorantGaramond[wght].ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d992a83ce525c330fad3a19087746bcb2dc038ee",
+      "size": 1195560,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/d992a83ce525c330fad3a19087746bcb2dc038ee"
+    },
+    {
+      "path": "app/public/fonts/src/IBMPlexMono-Bold.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17b406d221e7f27179344707bd543fb8470728ac",
+      "size": 137784,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/17b406d221e7f27179344707bd543fb8470728ac"
+    },
+    {
+      "path": "app/public/fonts/src/IBMPlexMono-Italic.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7f69134614ebdcaa10ebd36b0be1a44a035e157",
+      "size": 143920,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/d7f69134614ebdcaa10ebd36b0be1a44a035e157"
+    },
+    {
+      "path": "app/public/fonts/src/IBMPlexMono-Light.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61d43577842179cdffeb38b6c1928786981db0da",
+      "size": 135216,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/61d43577842179cdffeb38b6c1928786981db0da"
+    },
+    {
+      "path": "app/public/fonts/src/IBMPlexMono-Medium.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33c546f68b6007a45a3f10e845523abb2db25399",
+      "size": 136704,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/33c546f68b6007a45a3f10e845523abb2db25399"
+    },
+    {
+      "path": "app/public/fonts/src/IBMPlexMono-Regular.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c9770d5183ba60dc4350d3e011b782a320761ae",
+      "size": 135580,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/0c9770d5183ba60dc4350d3e011b782a320761ae"
+    },
+    {
+      "path": "app/public/fonts/src/IBMPlexMono-SemiBold.ttf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f8998a139d8f61d3b96bdd3b512fca501a1f6b9",
+      "size": 140216,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/8f8998a139d8f61d3b96bdd3b512fca501a1f6b9"
+    },
+    {
+      "path": "app/public/fonts/src/OFL.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8597481ebc941863ab228e79ea4305507cd73cc6",
+      "size": 4388,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/8597481ebc941863ab228e79ea4305507cd73cc6"
+    },
+    {
+      "path": "app/public/fonts/stroke",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e4c6c45906c534d1eed5c022532ed85bded7aad2",
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/trees/e4c6c45906c534d1eed5c022532ed85bded7aad2"
+    },
+    {
+      "path": "app/public/fonts/stroke/EMSAllure.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fb7bef668f675353e3bee6e23c87d8faf0c1fae",
+      "size": 57469,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/1fb7bef668f675353e3bee6e23c87d8faf0c1fae"
+    },
+    {
+      "path": "app/public/fonts/stroke/EMSFelix.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99950b80b30bffafb29ec0c1c3e37bf15bdd8d19",
+      "size": 48819,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/99950b80b30bffafb29ec0c1c3e37bf15bdd8d19"
+    },
+    {
+      "path": "app/public/fonts/stroke/EMSOsmotron.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "821a0e324645d45c0df170ef136f81fc02ecb412",
+      "size": 30158,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/821a0e324645d45c0df170ef136f81fc02ecb412"
+    },
+    {
+      "path": "app/public/fonts/stroke/EMSReadability.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9c5174edbf3c22ed4611da912ab5984eb6a957e",
+      "size": 41926,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/c9c5174edbf3c22ed4611da912ab5984eb6a957e"
+    },
+    {
+      "path": "app/public/fonts/stroke/EMSTech.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ab5d67c18867458b91cb048a99cf9b7d8f4b311",
+      "size": 40777,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/8ab5d67c18867458b91cb048a99cf9b7d8f4b311"
+    },
+    {
+      "path": "app/public/fonts/stroke/HersheySans1.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a49d184d524872505ca5df27bfd5534ad2042e41",
+      "size": 40196,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/a49d184d524872505ca5df27bfd5534ad2042e41"
+    },
+    {
+      "path": "app/public/fonts/stroke/HersheyScript1.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe470218d8ae468e13729729a0a44e80b854683c",
+      "size": 60060,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/fe470218d8ae468e13729729a0a44e80b854683c"
+    },
+    {
+      "path": "app/public/fonts/stroke/HersheySerifMed.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02da42feab93e0a72d3376a8085b224219d531a7",
+      "size": 60544,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/02da42feab93e0a72d3376a8085b224219d531a7"
+    },
+    {
+      "path": "app/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f88322f61caa9d62b6e9d76ef7110b962a5a2333",
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/trees/f88322f61caa9d62b6e9d76ef7110b962a5a2333"
+    },
+    {
+      "path": "app/scripts/render.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f00bd18d96e4c6d71c05f3b162721cd4e0c7a3d5",
+      "size": 12982,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/f00bd18d96e4c6d71c05f3b162721cd4e0c7a3d5"
+    },
+    {
+      "path": "app/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a8f32c62f77599ab05ee949a6ac819e9dd01f00e",
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/trees/a8f32c62f77599ab05ee949a6ac819e9dd01f00e"
+    },
+    {
+      "path": "app/src/engine",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "86f6736c0aa4d57ed06dfde27de816ab28dd8ac4",
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/trees/86f6736c0aa4d57ed06dfde27de816ab28dd8ac4"
+    },
+    {
+      "path": "app/src/engine/audio.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6df72000a7e085120c457930f27ec7d20a94b5f5",
+      "size": 10086,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/6df72000a7e085120c457930f27ec7d20a94b5f5"
+    },
+    {
+      "path": "app/src/engine/engine.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07d5d51a17cc7734206bceb019202d7f1542d1b0",
+      "size": 18894,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/07d5d51a17cc7734206bceb019202d7f1542d1b0"
+    },
+    {
+      "path": "app/src/engine/gl.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d27d4b6905cb5215908b7d2432c1f902777c73df",
+      "size": 11491,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/d27d4b6905cb5215908b7d2432c1f902777c73df"
+    },
+    {
+      "path": "app/src/engine/glsl",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fdeceec075b221369e3f3a2586b1c6c45ac56e8e",
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/trees/fdeceec075b221369e3f3a2586b1c6c45ac56e8e"
+    },
+    {
+      "path": "app/src/engine/glsl/common.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23bc38e11d0d328074b96722fbb8d1f6dd042e33",
+      "size": 11218,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/23bc38e11d0d328074b96722fbb8d1f6dd042e33"
+    },
+    {
+      "path": "app/src/engine/hud.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d70be7ef733f66201d46e48f2fe41cc11595ce01",
+      "size": 2969,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/d70be7ef733f66201d46e48f2fe41cc11595ce01"
+    },
+    {
+      "path": "app/src/engine/lines.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e21c97d6d7044752ac87097356b1e4dc2435f6a0",
+      "size": 7778,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/e21c97d6d7044752ac87097356b1e4dc2435f6a0"
+    },
+    {
+      "path": "app/src/engine/lyrics.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ad119cce2473d63cfa80feaac215028561081e8",
+      "size": 4170,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/9ad119cce2473d63cfa80feaac215028561081e8"
+    },
+    {
+      "path": "app/src/engine/palette.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "588c4abef2ad0d5900a042cc96edaf643c31a10d",
+      "size": 1662,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/588c4abef2ad0d5900a042cc96edaf643c31a10d"
+    },
+    {
+      "path": "app/src/engine/post.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32e5e9458e1b6b9df836a050fa1a1c20dab1b4e1",
+      "size": 10734,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/32e5e9458e1b6b9df836a050fa1a1c20dab1b4e1"
+    },
+    {
+      "path": "app/src/engine/scale.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce43c887a3aabf86d70d00f492631d428aa7331e",
+      "size": 615,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/ce43c887a3aabf86d70d00f492631d428aa7331e"
+    },
+    {
+      "path": "app/src/engine/scene.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9a25bd20c00b07086a9a6b4ce6d39f036fe69a4",
+      "size": 3188,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/b9a25bd20c00b07086a9a6b4ce6d39f036fe69a4"
+    },
+    {
+      "path": "app/src/engine/spectrum.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c43c70b3d70596b547017a64ae80d2083b31c7e",
+      "size": 4970,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/6c43c70b3d70596b547017a64ae80d2083b31c7e"
+    },
+    {
+      "path": "app/src/engine/stroke.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08c5c13017f20ba7733240597303d3cba9662d21",
+      "size": 14549,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/08c5c13017f20ba7733240597303d3cba9662d21"
+    },
+    {
+      "path": "app/src/engine/type.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a74cc32764bc0a085d92dfb98b143318631362ef",
+      "size": 9573,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/a74cc32764bc0a085d92dfb98b143318631362ef"
+    },
+    {
+      "path": "app/src/engine/util.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c403d739436989a488c960745bc7fe5e75890bff",
+      "size": 7537,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/c403d739436989a488c960745bc7fe5e75890bff"
+    },
+    {
+      "path": "app/src/main.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f04657c1377e8963015f4c3c2681ff57d4c0f5c0",
+      "size": 8560,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/f04657c1377e8963015f4c3c2681ff57d4c0f5c0"
+    },
+    {
+      "path": "app/src/scenes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37758317975ee549ea27455f84871447cd0a6533",
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/trees/37758317975ee549ea27455f84871447cd0a6533"
+    },
+    {
+      "path": "app/src/scenes/_eva.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0aadf9fffc0b8130f50becccde02087b8ed57786",
+      "size": 17884,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/0aadf9fffc0b8130f50becccde02087b8ed57786"
+    },
+    {
+      "path": "app/src/scenes/alert-kit.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e40775555830944c2af66d1b325ced0fa5ee907",
+      "size": 13415,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/9e40775555830944c2af66d1b325ced0fa5ee907"
+    },
+    {
+      "path": "app/src/scenes/alert.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "771917a0c30b868df1670e2dbbf2d1784b593617",
+      "size": 33074,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/771917a0c30b868df1670e2dbbf2d1784b593617"
+    },
+    {
+      "path": "app/src/scenes/atfield-kit.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06a5010a2b30f0f5195bea9f40304ca621b0cd00",
+      "size": 7949,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/06a5010a2b30f0f5195bea9f40304ca621b0cd00"
+    },
+    {
+      "path": "app/src/scenes/atfield.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77cb6c5dc36a6e323f9a52db60ea7ef67e0dadee",
+      "size": 18854,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/77cb6c5dc36a6e323f9a52db60ea7ef67e0dadee"
+    },
+    {
+      "path": "app/src/scenes/battery-kit.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f459c6ef8a85c189daa83dd4e23d5d8ee34269fb",
+      "size": 12953,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/f459c6ef8a85c189daa83dd4e23d5d8ee34269fb"
+    },
+    {
+      "path": "app/src/scenes/battery.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "734414b17ce7f5569d07bc9219844d7377bee17f",
+      "size": 34341,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/734414b17ce7f5569d07bc9219844d7377bee17f"
+    },
+    {
+      "path": "app/src/scenes/berserk-fx.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c3551669ef5ed40b57c9670fb8e790f9766ce69",
+      "size": 3942,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/6c3551669ef5ed40b57c9670fb8e790f9766ce69"
+    },
+    {
+      "path": "app/src/scenes/berserk.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f4366ed07c4225efcface83cc9a067fa4e7671d",
+      "size": 21238,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/0f4366ed07c4225efcface83cc9a067fa4e7671d"
+    },
+    {
+      "path": "app/src/scenes/boot.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55c24e6a663fd949fffe72500bbd4fd4468373b9",
+      "size": 6399,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/55c24e6a663fd949fffe72500bbd4fd4468373b9"
+    },
+    {
+      "path": "app/src/scenes/city-kit.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5f119c1dad75626ff0599926fd7807b86f8adae",
+      "size": 10523,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/a5f119c1dad75626ff0599926fd7807b86f8adae"
+    },
+    {
+      "path": "app/src/scenes/city.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2476c71d3a6f2c7e398820e71af68eb3f7fec20a",
+      "size": 37952,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/2476c71d3a6f2c7e398820e71af68eb3f7fec20a"
+    },
+    {
+      "path": "app/src/scenes/end-kit.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e4e1fc8db2a445638cfd53a176119678570a331",
+      "size": 6796,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/4e4e1fc8db2a445638cfd53a176119678570a331"
+    },
+    {
+      "path": "app/src/scenes/end.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bb4d5ab276393a253726b854c7d0e46debd5a3a",
+      "size": 17771,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/8bb4d5ab276393a253726b854c7d0e46debd5a3a"
+    },
+    {
+      "path": "app/src/scenes/harmonics.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72d8115103fb034be4d4daf1aea4de6193b78b6b",
+      "size": 22148,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/72d8115103fb034be4d4daf1aea4de6193b78b6b"
+    },
+    {
+      "path": "app/src/scenes/impact-kit.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe2c4badea699e8d44ad2da6bcfebcefcb7ba03f",
+      "size": 38625,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/fe2c4badea699e8d44ad2da6bcfebcefcb7ba03f"
+    },
+    {
+      "path": "app/src/scenes/impact.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed665bf9341bfba0cb36f91e304e762504efc9ce",
+      "size": 14569,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/ed665bf9341bfba0cb36f91e304e762504efc9ce"
+    },
+    {
+      "path": "app/src/scenes/magi-hud.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "356b3214bfbd1e1270597440a24cbeafafcbdfcc",
+      "size": 5618,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/356b3214bfbd1e1270597440a24cbeafafcbdfcc"
+    },
+    {
+      "path": "app/src/scenes/magi.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9ea9efeea35b8977a0f9ec409b1f6a688c5a76a",
+      "size": 22625,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/c9ea9efeea35b8977a0f9ec409b1f6a688c5a76a"
+    },
+    {
+      "path": "app/src/scenes/plug-kit.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d05554a13a2f394201e1ab38b1030558d21a0d9",
+      "size": 8437,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/6d05554a13a2f394201e1ab38b1030558d21a0d9"
+    },
+    {
+      "path": "app/src/scenes/plug.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae317b6c2245566e4630dad004106399f41cdfdd",
+      "size": 31416,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/ae317b6c2245566e4630dad004106399f41cdfdd"
+    },
+    {
+      "path": "app/src/scenes/psycho-kit.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cf16a401845b0b1015c5215c6cca5e97db5c521",
+      "size": 7294,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/1cf16a401845b0b1015c5215c6cca5e97db5c521"
+    },
+    {
+      "path": "app/src/scenes/psycho.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "905ec51d0032715d3a888b4cc505edcee19cf3b8",
+      "size": 30522,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/905ec51d0032715d3a888b4cc505edcee19cf3b8"
+    },
+    {
+      "path": "app/src/scenes/radar-kit.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2506bd7a7fbcf1fb0c50f0afca3f4904c8af66c1",
+      "size": 4667,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/2506bd7a7fbcf1fb0c50f0afca3f4904c8af66c1"
+    },
+    {
+      "path": "app/src/scenes/radar.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5aef127043ef72a406a28e226e0e9800b20e25fc",
+      "size": 34240,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/5aef127043ef72a406a28e226e0e9800b20e25fc"
+    },
+    {
+      "path": "app/src/scenes/seele-kit.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abc9128bc38dfb6f363db7bf5eedc568eb0e60b3",
+      "size": 10856,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/abc9128bc38dfb6f363db7bf5eedc568eb0e60b3"
+    },
+    {
+      "path": "app/src/scenes/seele.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a07e137bafb9f3c362d130312bf5d16b648c7fc5",
+      "size": 29356,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/a07e137bafb9f3c362d130312bf5d16b648c7fc5"
+    },
+    {
+      "path": "app/src/scenes/sync-kit.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fffc3eac5c1de274456c624132f8c8fa2406a597",
+      "size": 6468,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/fffc3eac5c1de274456c624132f8c8fa2406a597"
+    },
+    {
+      "path": "app/src/scenes/sync.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bda8376880a4cc18d8db04f72a8f25ef8217831",
+      "size": 37277,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/0bda8376880a4cc18d8db04f72a8f25ef8217831"
+    },
+    {
+      "path": "app/src/scenes/target-kit.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8617f8b7be7461a7c38ad2129a8db3d778722a37",
+      "size": 3994,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/8617f8b7be7461a7c38ad2129a8db3d778722a37"
+    },
+    {
+      "path": "app/src/scenes/target.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1d1f15ef1d41ada5acdce94ef4f33295c292302",
+      "size": 22878,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/b1d1f15ef1d41ada5acdce94ef4f33295c292302"
+    },
+    {
+      "path": "app/src/timeline.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28b3dc835e10797cb825bb8b73995887e2452721",
+      "size": 2791,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/28b3dc835e10797cb825bb8b73995887e2452721"
+    },
+    {
+      "path": "app/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29b7c220523863bbdcb381433344555ccfb3d91d",
+      "size": 456,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/29b7c220523863bbdcb381433344555ccfb3d91d"
+    },
+    {
+      "path": "app/tsconfig.scripts.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a09e480b8e7c2e4cf27b717a31f9cad271ac2f86",
+      "size": 104,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/a09e480b8e7c2e4cf27b717a31f9cad271ac2f86"
+    },
+    {
+      "path": "app/vite.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49648def124d4c6302f1dec27890032479b588e9",
+      "size": 1237,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/49648def124d4c6302f1dec27890032479b588e9"
+    },
+    {
+      "path": "data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "76512fe7d94c2fecc91ff0c3e5120aefdb2f311c",
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/trees/76512fe7d94c2fecc91ff0c3e5120aefdb2f311c"
+    },
+    {
+      "path": "data/audio.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8beed876b7a69d9b7c0e50bf0a39a365f5ae9bd",
+      "size": 978809,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/e8beed876b7a69d9b7c0e50bf0a39a365f5ae9bd"
+    },
+    {
+      "path": "data/spectrum.bin",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fde5b4d410219e2fed8098d04610187796527a9a",
+      "size": 1401516,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/fde5b4d410219e2fed8098d04610187796527a9a"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2142fd7e4bdf3d2cda3f1eb88d5a00fcba9caa17",
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/trees/2142fd7e4bdf3d2cda3f1eb88d5a00fcba9caa17"
+    },
+    {
+      "path": "docs/ENGINE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d82571a711cf018ccef39419008f8132f703d31",
+      "size": 18139,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/0d82571a711cf018ccef39419008f8132f703d31"
+    },
+    {
+      "path": "docs/TREATMENT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a733a3016de00833399bddbc5b19588a06dfbc3c",
+      "size": 12012,
+      "url": "https://api.github.com/repos/bizarro/evangelion/git/blobs/a733a3016de00833399bddbc5b19588a06dfbc3c"
+    }
+  ],
+  "truncated": false
+}

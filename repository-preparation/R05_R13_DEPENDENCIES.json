@@ -1,0 +1,683 @@
+{
+  "date": "2026-10-05",
+  "scope": "R05 R06 R08 R09 R10 R11 R12 R13 dependency preparation",
+  "noMediaProduced": true,
+  "noPaidCalls": true,
+  "noGlobalDefaultsChanged": true,
+  "originalManifestLocksPreserved": true,
+  "repositories": [
+    {
+      "id": "R05",
+      "repository": "makevoid/motion-graphics-music-video-skill",
+      "path": "repository-downloads/makevoid/motion-graphics-music-video-skill",
+      "commit": "1a06e673e3266f8ba94f9aad55669b00fd3a9fca",
+      "manifestAndInstructionInventory": [
+        {
+          "path": ".claude/skills/motion-graphics-music-video/scripts/requirements.txt",
+          "sha256": "219589d6bed8fb78245590b129219b0f9c37a14771fc3489762e17fb8d47805e"
+        },
+        {
+          "path": ".claude/skills/motion-graphics-music-video/scripts/package-lock.json",
+          "sha256": "cc6b75bfe79fe41dbe54b9b0ac99facb068ab19a4c788da23d418b868c497533"
+        },
+        {
+          "path": ".claude/skills/motion-graphics-music-video/scripts/package.json",
+          "sha256": "13c082b1db23c934af673d75275f008e20c9fe4b05bba9a31f69b48eb0906bb7"
+        },
+        {
+          "path": ".claude/skills/motion-graphics-music-video/scripts/Gemfile",
+          "sha256": "885490d8a263d21f031fa4e0ef461678de254079471bf58c42a17a36ad2fc235"
+        },
+        {
+          "path": ".claude/skills/motion-graphics-music-video/scripts/Gemfile.lock",
+          "sha256": "fb74f594dd5f9f79355f0f6aa31e0c18f251dba53ce8842749603835b329c7e9"
+        },
+        {
+          "path": ".claude/skills/motion-graphics-music-video/scripts/tools/vfx/Package.swift",
+          "sha256": "8bc1a8e3106316ca83b2f6ca5e5ca91f59a152507405004a29e981c6307209b3"
+        }
+      ],
+      "worktree": {
+        "command": [
+          "git",
+          "status",
+          "--short"
+        ],
+        "cwd": "repository-downloads/makevoid/motion-graphics-music-video-skill",
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "licenseFiles": [
+        "LICENSE"
+      ],
+      "installedNodePackages": {
+        "p5": {
+          "version": "2.3.3",
+          "resolved": "https://registry.npmjs.org/p5/-/p5-2.3.3.tgz",
+          "overridden": false
+        },
+        "puppeteer-core": {
+          "version": "25.12.0",
+          "resolved": "https://registry.npmjs.org/puppeteer-core/-/puppeteer-core-25.12.0.tgz",
+          "overridden": false
+        }
+      },
+      "status": "local Node/Python tools prepared; Swift VFX compiled; Ruby orchestration deferred",
+      "preparedScopes": [
+        "scripts Node p5+puppeteer-core via npm ci --ignore-scripts",
+        "scripts/.venv Python3.14.3 numpy2.5.3 Pillow12.3.0 via uv",
+        "Swift mvfx compiled at repository-preparation/cache/r05-swift/debug/mvfx"
+      ],
+      "entryPaths": [
+        ".claude/skills/motion-graphics-music-video/scripts/tools/p5/render.mjs",
+        ".claude/skills/motion-graphics-music-video/scripts/tools/python/",
+        ".claude/skills/motion-graphics-music-video/scripts/tools/vfx/",
+        ".claude/skills/motion-graphics-music-video/scripts/mv.rb"
+      ],
+      "deferredScopes": [
+        {
+          "scope": "Ruby orchestration/setup/MCP",
+          "requirements": "Ruby3.2+ recommended, locked Bundler4.0.20, excon1.7.1 json3.0.2 rake13.4.2 rspec3.13.2",
+          "reason": "Mac has Ruby2.6.10; optional orchestration not needed for direct local Node/Python/Swift reuse; no global/runtime install performed"
+        },
+        {
+          "scope": "ImageMagick helpers/full test suite",
+          "requirements": "ImageMagick magick binary",
+          "reason": "not installed; optional fulltoolkit branch not needed for selected local engines"
+        },
+        {
+          "scope": "Fal generation/transcription/stem APIs",
+          "requirements": "explicit service budget and configured credentials",
+          "reason": "outside task; no keys accessed or paid calls"
+        }
+      ],
+      "checksSummary": [
+        "npm ci log success44packages; original zsh wrapper failed afterward assigning reserved status variable",
+        "Node import puppeteer-core and resolve p5 exit0",
+        "Python NumPy/Pillow import and AST11files exit0",
+        "Ruby mv.rb syntax and --help exit0 only; does not establish Ruby gems readiness",
+        "Swift build exit0; missing CLT search paths linker warnings; no effectprocessing executed"
+      ]
+    },
+    {
+      "id": "R06",
+      "repository": "buildwithhanif/claude-animation-skill",
+      "path": "repository-downloads/buildwithhanif/claude-animation-skill",
+      "commit": "4ddb8c80fdec96dc9f55d4b9bdee60bde6f0134b",
+      "manifestAndInstructionInventory": [
+        {
+          "path": "plugins/claude-animation/skills/claude-animation/package.json",
+          "sha256": "8be3adbdd622355f622d53aa7fef66865bf74eb0ddeb7cd3c0fa1890110dc418"
+        }
+      ],
+      "worktree": {
+        "command": [
+          "git",
+          "status",
+          "--short"
+        ],
+        "cwd": "repository-downloads/buildwithhanif/claude-animation-skill",
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "licenseFiles": [
+        "LICENSE"
+      ],
+      "installedNodePackages": {
+        "@napi-rs/canvas": {
+          "version": "0.1.100",
+          "resolved": "https://registry.npmjs.org/@napi-rs/canvas/-/canvas-0.1.100.tgz",
+          "overridden": false
+        }
+      },
+      "status": "shared native Canvas engine prepared",
+      "entryPaths": [
+        "plugins/claude-animation/skills/claude-animation/lib/film.mjs",
+        "plugins/claude-animation/skills/claude-animation/templates/film-template.mjs",
+        "examples/money-quest/",
+        "examples/claude-balloon/",
+        "examples/claude-game/",
+        "examples/ant-colony/"
+      ],
+      "preparedScopes": [
+        "single shared skill package @napi-rs/canvas; examples reuse shared engine"
+      ],
+      "checksSummary": [
+        "npm install --ignore-scripts --package-lock=false log success2packages; wrapper reservedstatus failure recorded separately",
+        "native @napi-rs/canvas import exit0; imports core pen textures nature colony lowpoly fx film exit0"
+      ],
+      "deferredScopes": []
+    },
+    {
+      "id": "R08",
+      "repository": "JohnHeibel/PDoomVideo",
+      "path": "repository-downloads/JohnHeibel/PDoomVideo",
+      "commit": "fa546a38092e75f2b079e6a86d6abc54dd525d17",
+      "manifestAndInstructionInventory": [
+        {
+          "path": "package-lock.json",
+          "sha256": "f1169be62e023229e702f7056490ee00dfbc5acb1801600a7acd8b59e0d6cbda"
+        },
+        {
+          "path": "package.json",
+          "sha256": "6af1829a73800e5d8a32bd76d0678846190338f718bd11ea5dc1e239766bc4ef"
+        }
+      ],
+      "worktree": {
+        "command": [
+          "git",
+          "status",
+          "--short"
+        ],
+        "cwd": "repository-downloads/JohnHeibel/PDoomVideo",
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "licenseFiles": [],
+      "installedNodePackages": {
+        "p5.brush": {
+          "version": "2.2.3",
+          "resolved": "https://registry.npmjs.org/p5.brush/-/p5.brush-2.2.3.tgz",
+          "overridden": false
+        },
+        "p5": {
+          "version": "2.3.3",
+          "resolved": "https://registry.npmjs.org/p5/-/p5-2.3.3.tgz",
+          "overridden": false
+        },
+        "puppeteer-core": {
+          "version": "25.11.0",
+          "resolved": "https://registry.npmjs.org/puppeteer-core/-/puppeteer-core-25.11.0.tgz",
+          "overridden": false
+        }
+      },
+      "status": "Node study engine dependencies prepared; source reuse role remains study-only",
+      "entryPaths": [
+        "render.mjs",
+        "studio.html",
+        "src/",
+        "legacy/"
+      ],
+      "preparedScopes": [
+        "root p5 p5.brush puppeteer-core npm ci"
+      ],
+      "requiredRuntimeInvocation": "render.mjs requires --chrome=/Applications/Google Chrome.app/Contents/MacOS/Google Chrome; bundled default is Windows path",
+      "checksSummary": [
+        "npm ci log success46packages; wrapper reservedstatus failure recorded separately",
+        "puppeteer-core import and p5/p5.brush resolution exit0; renderer not run"
+      ],
+      "licenseCaveat": "No LICENSE file; package.json license ISC metadata alone is not treated as source reuse authorization",
+      "deferredScopes": [
+        "media/audio separate rights; no render performed"
+      ]
+    },
+    {
+      "id": "R09",
+      "repository": "domenic/domenic.me",
+      "path": "repository-downloads/domenic/domenic.me",
+      "commit": "db374f65ec29834c5f5120b93c696843cdaa85ae",
+      "manifestAndInstructionInventory": [
+        {
+          "path": "package-lock.json",
+          "sha256": "c4490e1e4e21ab961b7e815ef3993a6e505e88ae7ba39987746a58b23d67e6a3"
+        },
+        {
+          "path": "package.json",
+          "sha256": "c90c9b2385f34e772166069603ae50058e6562503aa50956f552060e52b91e78"
+        }
+      ],
+      "worktree": {
+        "command": [
+          "git",
+          "status",
+          "--short"
+        ],
+        "cwd": "repository-downloads/domenic/domenic.me",
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "licenseFiles": [],
+      "status": "self-contained browser animation engines inventoried; website dependencies intentionally deferred",
+      "entryPaths": [
+        "src/we-didnt-start-the-scaling/assets/worker.js",
+        "src/we-didnt-start-the-scaling/assets/page.mjs",
+        "src/we-didnt-start-the-scaling/assets/engine/anisong.js",
+        "src/we-didnt-start-the-scaling/assets/engine/eurodance.js",
+        "src/we-didnt-start-the-scaling/assets/engine/k-pop.js",
+        "src/we-didnt-start-the-scaling/assets/engine/indie-folk.js",
+        "src/we-didnt-start-the-scaling/assets/engine/piano-rock.js",
+        "src/we-didnt-start-the-scaling/assets/engine/pop-punk.js"
+      ],
+      "preparedScopes": [
+        "all6 genre engines retained locally; browser-native Canvas/WebGL worker architecture requires no npm dependency for source study"
+      ],
+      "currentGenreSelection": [
+        "anisong",
+        "Eurodance",
+        "K-pop"
+      ],
+      "deferredScopes": [
+        {
+          "scope": "whole Eleventy website",
+          "requirements": {
+            "@11ty/eleventy": "^3.1.6",
+            "@11ty/eleventy-plugin-rss": "^3.0.0",
+            "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+            "markdown-it": "^14.3.0",
+            "markdown-it-anchor": "^9.2.1"
+          },
+          "reason": "website build is separate from browser-native animation engine; source-role study-only"
+        }
+      ],
+      "checksSummary": [
+        "worker/page and6engine node syntaxchecks exit0; syntax does not establish assets/fonts/WebGL readiness"
+      ]
+    },
+    {
+      "id": "R10",
+      "repository": "WinterArc21/Battle-of-Austerlitz-Film",
+      "path": "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film",
+      "commit": "86dae32d20f0a0f2395e7dc8938846fd51e355a6",
+      "manifestAndInstructionInventory": [
+        {
+          "path": "package.json",
+          "sha256": "992f7ce180a9d762c76fd28ff23d53c30514f7e8bed114a3abac22232552a419"
+        }
+      ],
+      "worktree": {
+        "command": [
+          "git",
+          "status",
+          "--short"
+        ],
+        "cwd": "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film",
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "licenseFiles": [],
+      "installedNodePackages": {
+        "playwright": {
+          "version": "1.63.0",
+          "resolved": "https://registry.npmjs.org/playwright/-/playwright-1.63.0.tgz",
+          "overridden": false
+        }
+      },
+      "status": "Playwright package and preparation adapter ready; upstream film not rendered",
+      "entryPaths": [
+        "tools/serve.mjs",
+        "tools/export.mjs",
+        "tools/render.mjs",
+        "tools/frames.mjs",
+        "web/"
+      ],
+      "preparedScopes": [
+        "root playwright npm install --ignore-scripts --package-lock=false",
+        "R10_CHROME_PRELOAD.mjs redirects default Chromium launch to installed Chrome and supplies FFMPEG"
+      ],
+      "adapterInvocation": "node --import repository-preparation/R10_CHROME_PRELOAD.mjs <upstream-script>",
+      "checksSummary": [
+        "Playwright import exit0",
+        "default chromium.launch through adapter blank browser exit0 Chrome154.0.8037.98",
+        "all4 tools syntaxchecks exit0"
+      ],
+      "deferredScopes": [
+        "no bundled Chromium downloaded; execute upstream scripts only at authorized media stage"
+      ],
+      "licenseCaveat": "No LICENSE file; study-only role retained"
+    },
+    {
+      "id": "R11",
+      "repository": "guanmo-ai/awesome-ai-motion",
+      "path": "repository-downloads/guanmo-ai/awesome-ai-motion",
+      "commit": "203472a514a4d41c12b1cee8e82423b5ca311186",
+      "manifestAndInstructionInventory": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "470c02a579fdb59ca58994a30fda099874913c12f8195eca2ed2c90ee6505147"
+        }
+      ],
+      "worktree": {
+        "command": [
+          "git",
+          "status",
+          "--short"
+        ],
+        "cwd": "repository-downloads/guanmo-ai/awesome-ai-motion",
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "licenseFiles": [
+        "LICENSE"
+      ],
+      "status": "catalog; no install required",
+      "entryPaths": [
+        "data/cases.json",
+        "scripts/build.mjs",
+        "scripts/serve.mjs"
+      ],
+      "preparedScopes": [
+        "Node standard library scripts"
+      ],
+      "checksSummary": [
+        "node scripts/build.mjs --check exit0;464cases"
+      ],
+      "deferredScopes": [
+        "maintenance/acquisition/release procedures; outside dependency preparation"
+      ]
+    },
+    {
+      "id": "R12",
+      "repository": "yihui-dev/awesome-opus5-5-videos",
+      "path": "repository-downloads/yihui-dev/awesome-opus5-5-videos",
+      "commit": "3d54892e2ae5b0e8d337171e6508bba4cec01ab8",
+      "manifestAndInstructionInventory": [],
+      "worktree": {
+        "command": [
+          "git",
+          "status",
+          "--short"
+        ],
+        "cwd": "repository-downloads/yihui-dev/awesome-opus5-5-videos",
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "licenseFiles": [
+        "LICENSE"
+      ],
+      "status": "catalog; no animation engine or package installation",
+      "entryPaths": [
+        "data/videos.json",
+        "prompts/",
+        "README.md"
+      ],
+      "preparedScopes": [
+        "local catalog/prompt content"
+      ],
+      "deferredScopes": [
+        "follow identified underlying project source separately when a technique is selected"
+      ],
+      "checksSummary": []
+    },
+    {
+      "id": "R13",
+      "repository": "athemeroy/awesome-claude-5-5-videos",
+      "path": "repository-downloads/athemeroy/awesome-claude-5-5-videos",
+      "commit": "0b96ca1ec8e03fe72a1c349370ab5dad043c5a1b",
+      "manifestAndInstructionInventory": [],
+      "worktree": {
+        "command": [
+          "git",
+          "status",
+          "--short"
+        ],
+        "cwd": "repository-downloads/athemeroy/awesome-claude-5-5-videos",
+        "exit": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "licenseFiles": [
+        "LICENSE"
+      ],
+      "catalogPythonSyntaxFiles": 11,
+      "status": "catalog; optional content-maintenance tools inventoried, dependencies deferred",
+      "entryPaths": [
+        "data/corpus-snapshot.json",
+        "scripts/",
+        "docs/"
+      ],
+      "preparedScopes": [
+        "catalog and docs;11Python maintenance files ASTparsed"
+      ],
+      "deferredScopes": [
+        {
+          "scope": "chart/thumbnail maintenance",
+          "requirements": [
+            "matplotlib",
+            "numpy",
+            "Pillow",
+            "FFmpeg"
+          ],
+          "reason": "generates charts/images, outside animation engine preparation"
+        },
+        {
+          "scope": "engagement refresh",
+          "requirements": [
+            "Python playwright",
+            "browser",
+            "network credentials if requested by source"
+          ],
+          "reason": "external collection maintenance, not reusable animation renderer"
+        }
+      ],
+      "licenseCaveat": "CC BY4.0 rootlicense; thirdparty case/media rights separate",
+      "checksSummary": [
+        "11catalogPython files ASTparse success"
+      ]
+    }
+  ],
+  "validationCommands": [
+    {
+      "command": [
+        "npm",
+        "ls",
+        "--depth=0",
+        "--json"
+      ],
+      "cwd": "repository-downloads/makevoid/motion-graphics-music-video-skill/.claude/skills/motion-graphics-music-video/scripts",
+      "exit": 0,
+      "stdout": "{\n  \"name\": \"motion-graphics-music-video-tools\",\n  \"dependencies\": {\n    \"p5\": {\n      \"version\": \"2.3.3\",\n      \"resolved\": \"https://registry.npmjs.org/p5/-/p5-2.3.3.tgz\",\n      \"overridden\": false\n    },\n    \"puppeteer-core\": {\n      \"version\": \"25.12.0\",\n      \"resolved\": \"https://registry.npmjs.org/puppeteer-core/-/puppeteer-core-25.12.0.tgz\",\n      \"overridden\": false\n    }\n  }\n}\n",
+      "stderr": "",
+      "id": "R05"
+    },
+    {
+      "command": [
+        "npm",
+        "ls",
+        "--depth=0",
+        "--json"
+      ],
+      "cwd": "repository-downloads/buildwithhanif/claude-animation-skill/plugins/claude-animation/skills/claude-animation",
+      "exit": 0,
+      "stdout": "{\n  \"version\": \"1.0.0\",\n  \"name\": \"claude-animation\",\n  \"dependencies\": {\n    \"@napi-rs/canvas\": {\n      \"version\": \"0.1.100\",\n      \"resolved\": \"https://registry.npmjs.org/@napi-rs/canvas/-/canvas-0.1.100.tgz\",\n      \"overridden\": false\n    }\n  }\n}\n",
+      "stderr": "",
+      "id": "R06"
+    },
+    {
+      "command": [
+        "npm",
+        "ls",
+        "--depth=0",
+        "--json"
+      ],
+      "cwd": "repository-downloads/JohnHeibel/PDoomVideo",
+      "exit": 0,
+      "stdout": "{\n  \"version\": \"1.0.0\",\n  \"name\": \"pdoomvideo\",\n  \"dependencies\": {\n    \"p5.brush\": {\n      \"version\": \"2.2.3\",\n      \"resolved\": \"https://registry.npmjs.org/p5.brush/-/p5.brush-2.2.3.tgz\",\n      \"overridden\": false\n    },\n    \"p5\": {\n      \"version\": \"2.3.3\",\n      \"resolved\": \"https://registry.npmjs.org/p5/-/p5-2.3.3.tgz\",\n      \"overridden\": false\n    },\n    \"puppeteer-core\": {\n      \"version\": \"25.11.0\",\n      \"resolved\": \"https://registry.npmjs.org/puppeteer-core/-/puppeteer-core-25.11.0.tgz\",\n      \"overridden\": false\n    }\n  }\n}\n",
+      "stderr": "",
+      "id": "R08"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "repository-downloads/domenic/domenic.me/src/we-didnt-start-the-scaling/assets/worker.js"
+      ],
+      "cwd": "repository-downloads/domenic/domenic.me",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "id": "R09"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "repository-downloads/domenic/domenic.me/src/we-didnt-start-the-scaling/assets/page.mjs"
+      ],
+      "cwd": "repository-downloads/domenic/domenic.me",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "id": "R09"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "repository-downloads/domenic/domenic.me/src/we-didnt-start-the-scaling/assets/engine/pop-punk.js"
+      ],
+      "cwd": "repository-downloads/domenic/domenic.me",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "id": "R09"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "repository-downloads/domenic/domenic.me/src/we-didnt-start-the-scaling/assets/engine/piano-rock.js"
+      ],
+      "cwd": "repository-downloads/domenic/domenic.me",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "id": "R09"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "repository-downloads/domenic/domenic.me/src/we-didnt-start-the-scaling/assets/engine/k-pop.js"
+      ],
+      "cwd": "repository-downloads/domenic/domenic.me",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "id": "R09"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "repository-downloads/domenic/domenic.me/src/we-didnt-start-the-scaling/assets/engine/indie-folk.js"
+      ],
+      "cwd": "repository-downloads/domenic/domenic.me",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "id": "R09"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "repository-downloads/domenic/domenic.me/src/we-didnt-start-the-scaling/assets/engine/anisong.js"
+      ],
+      "cwd": "repository-downloads/domenic/domenic.me",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "id": "R09"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "repository-downloads/domenic/domenic.me/src/we-didnt-start-the-scaling/assets/engine/eurodance.js"
+      ],
+      "cwd": "repository-downloads/domenic/domenic.me",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "id": "R09"
+    },
+    {
+      "command": [
+        "npm",
+        "ls",
+        "--depth=0",
+        "--json"
+      ],
+      "cwd": "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film",
+      "exit": 0,
+      "stdout": "{\n  \"name\": \"battle-of-austerlitz-film\",\n  \"dependencies\": {\n    \"playwright\": {\n      \"version\": \"1.63.0\",\n      \"resolved\": \"https://registry.npmjs.org/playwright/-/playwright-1.63.0.tgz\",\n      \"overridden\": false\n    }\n  }\n}\n",
+      "stderr": "",
+      "id": "R10"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/tools/frames.mjs"
+      ],
+      "cwd": "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "id": "R10"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/tools/render.mjs"
+      ],
+      "cwd": "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "id": "R10"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/tools/export.mjs"
+      ],
+      "cwd": "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "id": "R10"
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film/tools/serve.mjs"
+      ],
+      "cwd": "repository-downloads/WinterArc21/Battle-of-Austerlitz-Film",
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "id": "R10"
+    },
+    {
+      "command": [
+        "node",
+        "scripts/build.mjs",
+        "--check"
+      ],
+      "cwd": "repository-downloads/guanmo-ai/awesome-ai-motion",
+      "exit": 0,
+      "stdout": "校验通过：464 个案例，README、案例页与纯文本提示词。\n",
+      "stderr": "",
+      "id": "R11"
+    }
+  ],
+  "installationLogs": [
+    "logs/R05_npm_ci.log",
+    "logs/R06_npm_install.log",
+    "logs/R08_npm_ci.log",
+    "logs/R10_npm_install.log",
+    "logs/R05_swift_build.log"
+  ],
+  "knownShellWrapperIssue": "Firstthree npm operations succeeded per npm logs, then zsh assigning reserved status failed. Independent package import/list checks establish installed result."
+}

@@ -1,0 +1,19 @@
+{
+  "name": "music-motion-reel-optional-animation-resources",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Isolated local packages for future song-specific animation adapters; not part of the default renderer.",
+  "dependencies": {
+    "@fontsource/archivo-black": "5.2.8",
+    "@fontsource/eb-garamond": "5.2.7",
+    "@fontsource/inter": "5.2.8",
+    "@fontsource/league-gothic": "5.2.8",
+    "@fontsource/noto-sans-jp": "5.2.9",
+    "@fontsource/space-mono": "5.2.9",
+    "flubber": "0.4.2",
+    "lottie-web": "5.13.0",
+    "pixelmatch": "8.0.0",
+    "pngjs": "7.0.0"
+  }
+}

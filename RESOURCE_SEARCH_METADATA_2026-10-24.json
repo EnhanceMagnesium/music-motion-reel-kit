@@ -1,0 +1,83 @@
+[
+  {
+    "full_name": "m-bain/whisperX",
+    "html_url": "https://github.com/m-bain/whisperX",
+    "archived": false,
+    "pushed_at": "2026-10-22T14:53:44Z",
+    "default_branch": "main",
+    "description": "WhisperX:  Automatic Speech Recognition with Word-level Timestamps (& Diarization)",
+    "license": "BSD-2-Clause"
+  },
+  {
+    "full_name": "jianfch/stable-ts",
+    "html_url": "https://github.com/jianfch/stable-ts",
+    "archived": true,
+    "pushed_at": "2026-05-30T18:41:03Z",
+    "default_branch": "main",
+    "description": "Transcription, forced alignment, and audio indexing with OpenAI's Whisper",
+    "license": "MIT"
+  },
+  {
+    "full_name": "qiuqiao/SOFA",
+    "html_url": "https://github.com/qiuqiao/SOFA",
+    "archived": false,
+    "pushed_at": "2026-09-02T12:39:58Z",
+    "default_branch": "main",
+    "description": "SOFA: Singing-Oriented Forced Aligner",
+    "license": "MIT"
+  },
+  {
+    "full_name": "nomadkaraoke/python-audio-separator",
+    "html_url": "https://github.com/nomadkaraoke/python-audio-separator",
+    "archived": false,
+    "pushed_at": "2026-10-19T19:59:30Z",
+    "default_branch": "main",
+    "description": "Easy to use stem (e.g. instrumental/vocals) separation from CLI or as a python package, using a variety of amazing pre-trained models (primarily from UVR)",
+    "license": "MIT"
+  },
+  {
+    "full_name": "katspaugh/wavesurfer.js",
+    "html_url": "https://github.com/katspaugh/wavesurfer.js",
+    "archived": false,
+    "pushed_at": "2026-10-23T14:18:13Z",
+    "default_branch": "main",
+    "description": "Audio waveform player",
+    "license": "BSD-3-Clause"
+  },
+  {
+    "full_name": "google/fonts",
+    "html_url": "https://github.com/google/fonts",
+    "archived": false,
+    "pushed_at": "2026-10-25T01:03:53Z",
+    "default_branch": "main",
+    "description": "Font files available from Google Fonts, and a public issue tracker for all things Google Fonts",
+    "license": null
+  },
+  {
+    "full_name": "opentypejs/opentype.js",
+    "html_url": "https://github.com/opentypejs/opentype.js",
+    "archived": false,
+    "pushed_at": "2026-08-08T03:59:23Z",
+    "default_branch": "master",
+    "description": "Read and write OpenType fonts using JavaScript.",
+    "license": "MIT"
+  },
+  {
+    "full_name": "veltman/flubber",
+    "html_url": "https://github.com/veltman/flubber",
+    "archived": false,
+    "pushed_at": "2022-11-08T03:34:37Z",
+    "default_branch": "master",
+    "description": "Tools for smoother shape animations.",
+    "license": "MIT"
+  },
+  {
+    "full_name": "mapbox/pixelmatch",
+    "html_url": "https://github.com/mapbox/pixelmatch",
+    "archived": false,
+    "pushed_at": "2026-10-06T14:08:46Z",
+    "default_branch": "main",
+    "description": "The smallest, simplest and fastest JavaScript pixel-level image comparison library",
+    "license": "ISC"
+  }
+]
