@@ -2,6 +2,10 @@
 
 Use this guide for a song-specific candidate after the relevant implementation and media-render stages have been authorized. It is a compact, evidence-based review process for the complete song. It replaces blanket instructions to render a frame every half second, perform repeated full exports, or continue until the result is “perfect.” Do not render or create review media unless the current conversation authorizes that stage.
 
+## Audible lyrics and visual treatment
+
+When a song is designed without on-screen lyrics, or a tool cannot produce the requested lyric display, follow the audible-lyrics visual treatment in `PROJECT_INSTRUCTIONS.md`. Review visual storytelling, the preserved master, actual sound playback and audiovisual sync as separate evidence. Record whether captions were intentionally omitted or unavailable, and any impact on accessibility or requested deliverables. A still or silent frame sample cannot verify what is heard.
+
 ## 1. Keep the review tied to this song
 
 - Use only this conversation’s supplied recording, lyrics, creative brief, production plan, config, assets and named song folder for song-specific conclusions. Treat earlier productions as technical examples.
@@ -105,7 +109,7 @@ Do not claim font, glyph, asset, overlay, browser, performance, encoding, or syn
 
 For each review pass, create a short issue list with timestamp/frame, scene or overlay ID, category, observed evidence, impact, proposed correction, and status. Separate:
 
-- **Blocking:** wrong or missing song content, broken scene/overlay, unreadable essential text, incorrect frame/duration/audio, serious sync error, failed export, or major composition flaw.
+- **Blocking:** wrong or missing required song content, broken scene/overlay, unreadable essential text, incorrect frame/duration/audio, serious sync error, failed export, or major composition flaw.
 - **Important:** a clear weakness in hierarchy, pacing, movement, transition, consistency, or song-specific storytelling that materially lowers quality.
 - **Polish:** optional refinements that do not prevent a coherent, readable, technically correct reel.
 
