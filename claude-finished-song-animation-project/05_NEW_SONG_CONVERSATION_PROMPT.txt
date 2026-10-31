@@ -1,3 +1,5 @@
+User-authored lyrics in `shared-inputs/lyrics.txt` or another supplied path are final input: preserve the file and its words unless explicitly asked to edit them. Follow the user-authored lyrics and local execution section of `PROJECT_INSTRUCTIONS.md`.
+
 # ONE-PROMPT FULL-SONG PRODUCTION — USE IN A NEW SONG CONVERSATION
 
 I am supplying this prompt with this song’s finished recording, approved lyrics and optional creative brief. Treat the recording and files in this conversation as the song-specific authority. Create a new `productions/<song>/` folder in the connected original music-motion-reel-kit. Do not search other song conversations or reuse their creative choices.

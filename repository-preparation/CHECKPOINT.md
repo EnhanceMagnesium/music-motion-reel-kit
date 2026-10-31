@@ -4,6 +4,10 @@
 
 Use this as the running change log for the reusable animation kit itself. Whenever Codex or Claude changes the kit's instructions, shared tools, templates, source maps or reusable workflow, add a short dated entry saying what changed, why, which files, what was checked, what remains and the next kit edit. Do not add an entry when a task only uses the kit to make or review a song; record that work in the song's `productions/<song>/CHECKPOINT.md`. Preserve older entries as history. Link a detailed report when useful.
 
+## 2026-10-30 — User-authored lyrics and local production
+
+Audited song-intake and launch guidance and clarified `PROJECT_INSTRUCTIONS.md` plus the Codex, Cursor and Claude song prompts: supplied lyrics can be authored in a local text file, remain authoritative and unchanged unless the user requests edits, and feed song-local captions and timing. Agents verify their local execution environment, identify authorized network source work and report actual tool boundaries. No song inputs, media or renderer code changed. Next: verify the guidance during a future song intake.
+
 ## 2026-10-30 — Windows long paths and installer alerts
 
 Added a per-user Git `core.longpaths` option, its scope and Windows/tool limitations, plus a procedure for recording and evaluating Norton installer alerts in `WINDOWS_SETUP_AND_COMPATIBILITY.md`. Microsoft documentation was checked; no Windows configuration, antivirus setting or installer was changed. Windows behavior remains unverified on a recipient machine.

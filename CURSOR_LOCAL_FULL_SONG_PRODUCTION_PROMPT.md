@@ -1,3 +1,5 @@
+User-authored lyrics in `shared-inputs/lyrics.txt` or another supplied path are final input: preserve the file and its words unless explicitly asked to edit them. Follow the user-authored lyrics and local execution section of `PROJECT_INSTRUCTIONS.md`.
+
 Windows users: read [Windows setup and compatibility](WINDOWS_SETUP_AND_COMPATIBILITY.md), verify this agent’s actual OS and browser path, and record Windows readiness evidence.
 
 # Cursor Local — one-prompt full-song production

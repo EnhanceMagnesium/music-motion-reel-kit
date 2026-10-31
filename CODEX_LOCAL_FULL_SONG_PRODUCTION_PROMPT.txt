@@ -1,3 +1,5 @@
+User-authored lyrics in `shared-inputs/lyrics.txt` or another supplied path are final input: preserve the file and its words unless explicitly asked to edit them. Follow the user-authored lyrics and local execution section of `PROJECT_INSTRUCTIONS.md`.
+
 CODEX LOCAL — ONE-PROMPT FULL-SONG PRODUCTION
 
 Use this as the initiating message in a new **Codex task** with the **Local** environment and the original `music-motion-reel-kit` folder selected as the working folder. Do not use Cloud/SSH or create a worktree. It is reusable for any new song. Supply that song's finished recording and approved lyrics, plus an optional creative brief, either as task attachments or as exact local paths. If the files are already in the active kit, give their folder path; do not make duplicate uploads. The user-provided inputs for this task are authoritative. Do not search other song conversations or carry over another song's creative choices. This is the Codex production workflow; do not route the work to a Claude conversation or depend on a Claude session.
