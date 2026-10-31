@@ -2,6 +2,12 @@
 
 I am supplying this prompt with this song’s finished recording, approved lyrics and optional creative brief. Treat the recording and files in this conversation as the song-specific authority. Create a new `productions/<song>/` folder in the connected original music-motion-reel-kit. Do not search other song conversations or reuse their creative choices.
 
+## Song input folder
+
+Song input folder path: [PASTE YOUR SONG FOLDER PATH HERE]
+
+I will replace the placeholder above with the folder containing this song’s recording, `lyrics.txt` and `brief.md` (if supplied), for example `music-motion-reel-kit/shared-inputs/my-new-song/`. Read the actual files in that folder; they may have different filenames or audio formats. If they are already available locally, use them directly. If a required input is missing or several possible masters are present, identify the exact issue. Keep the inputs unchanged and save production work separately in `productions/<song>/`.
+
 ## Lyrics and visual treatment
 User-authored lyrics in `shared-inputs/lyrics.txt` or another supplied path are final input: preserve the file and its words unless explicitly asked to edit them. Follow the user-authored lyrics and local execution section of `PROJECT_INSTRUCTIONS.md`.
 
