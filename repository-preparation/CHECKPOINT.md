@@ -4,6 +4,10 @@
 
 Use this as the running change log for the reusable animation kit itself. Whenever Codex or Claude changes the kit's instructions, shared tools, templates, source maps or reusable workflow, add a short dated entry saying what changed, why, which files, what was checked, what remains and the next kit edit. Do not add an entry when a task only uses the kit to make or review a song; record that work in the song's `productions/<song>/CHECKPOINT.md`. Preserve older entries as history. Link a detailed report when useful.
 
+## 2026-10-30 — Windows long paths and installer alerts
+
+Added a per-user Git `core.longpaths` option, its scope and Windows/tool limitations, plus a procedure for recording and evaluating Norton installer alerts in `WINDOWS_SETUP_AND_COMPATIBILITY.md`. Microsoft documentation was checked; no Windows configuration, antivirus setting or installer was changed. Windows behavior remains unverified on a recipient machine.
+
 ## 2026-10-30 — Windows sharing audit
 
 Reviewed the current GitHub source workspace, Cursor/Grok guidance, repository atlas, shared entry and Remotion/Playwright browser discovery for OS-specific assumptions. Clarified that preparation receipts are historical and do not install dependencies in a clone, distinguished the GitHub submodule workspace from the older starter package, made the Claude launch guidance environment-neutral, and identified that the GitHub clone must create its own song input folder. Updated the Windows guide, Cursor launch prompt, Claude templates, atlas and this log; see `WINDOWS_CURSOR_SOURCE_WORKSPACE_AUDIT_2026-10-30.md`. Verified 51 links, 16 gitlinks and the no-media help command. Paste-ready Goal/Instructions: 7,985/15,977 characters. Browser overrides, platform-specific dependencies, missing song inputs and a real Windows plan/render/review remain to be validated on Windows; no Windows compatibility is claimed from Mac source inspection. Next: run the guide on the recipient's Windows machine and repair observed defects.

@@ -23,6 +23,19 @@ cd music-motion-reel-kit
 
 A private repository requires account access; a public one does not. A downloaded ZIP does not populate the 16 Git submodules. The source trees live at pinned upstream commits and require network access. To obtain the large files in the R04 HyperFrames checkout, check `git lfs version`; if Git LFS is installed run `git -C repository-downloads/heygen-com/hyperframes lfs pull`. If it is missing, ask before installing from https://git-lfs.com/. Record failures instead of assuming all files downloaded.
 
+## Windows long paths and security alerts
+
+For a Windows machine expected to use several Git repositories with long paths, the user may choose this per-user Git setting before cloning:
+
+```powershell
+git config --global core.longpaths true
+git config --global --get core.longpaths
+```
+
+It changes Git's behavior across that user's repositories, so explain the scope and obtain their approval before an agent changes it. A shorter checkout location such as `C:\work\music-motion-reel-kit` can also help. This Git option does not configure Windows, npm or every program and does not guarantee a successful dependency installation. If a path-length error occurs, save the exact error and inspect the affected tool; Windows long-path support also depends on system configuration and the application's support. See https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation.
+
+If Norton flags a `winget` PowerShell shim or another installer, record the actual alert and path. A behavioral detection can be a false positive, but its name alone does not establish that the file is harmless or that a future alert will recur. Verify the installer source and signature and consult Norton if uncertain; the user may install from the official vendor manually. Do not add a blanket `%TEMP%` antivirus exclusion or disable protection as routine setup.
+
 ## Identify the execution environment
 
 In Cursor's PowerShell terminal run:
