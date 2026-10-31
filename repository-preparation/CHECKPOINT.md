@@ -8,6 +8,10 @@ Use this as the running change log for the reusable animation kit itself. Whenev
 
 Added a labeled song-folder path placeholder near the beginning of `claude-finished-song-animation-project/05_NEW_SONG_CONVERSATION_PROMPT.txt`, with instructions to read the supplied local recording, lyrics and brief and keep production work separate. Checked the prompt placement and placeholder. No song inputs or media changed.
 
+## 2026-10-31 — Per-song input folder guidance
+
+Standardized intake guidance across the README, shared project instructions, Claude/Codex/Cursor prompts and Windows/Cursor setup guides around `shared-inputs/<song>/`, with other exact paths and attachments still supported. Added `shared-inputs/README.md` beside the existing productions folder. The published workspace additionally ignores song inputs while retaining this README, clarifies its source-workspace wording and repairs an empty Codex kit-path placeholder. No song input or production was modified. Verified paths, prompt text, ignored sample paths and Git diff; a real song intake remains to be exercised.
+
 ## 2026-10-31 — Claude prompt organization
 
 Moved the lyric input and audible-lyrics visual-treatment instructions from above the title into a dedicated section of `claude-finished-song-animation-project/05_NEW_SONG_CONVERSATION_PROMPT.txt`, so copying from the title includes them. Verified both instructions remain in the prompt. No song or media changed.

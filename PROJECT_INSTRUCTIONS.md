@@ -52,9 +52,13 @@ Give concise decisions and complete, saveable files. Carry required source facts
 
 R14–R16 MOTION GUIDANCE: assess all three initialized resources before storyboard lock; consultation is required, code adaptation and GSAP runtime use are selective. Use `claude-finished-song-animation-project/17_FOOTAGE_FRAME_FOOTPRINT_AND_CODE_ACTION.txt` and `repository-preparation/ANIMATION_AGENT_SKILL_RESOURCES_GUIDE.md`; record exact skill/source paths and any scene influence.
 
+## Per-song input folders
+
+For a new song, use `shared-inputs/<song>/` as the convenient intake location for the user's recording, final lyrics and optional brief. The active kit has `shared-inputs/` beside `productions/`; create the song subfolder if needed. The user may also provide attachments or other exact paths. Read the actual supplied filenames and formats, preserve the inputs, identify an ambiguous master or lyric source, and create a separate non-overwriting `productions/<song>/` folder for the production. See `shared-inputs/README.md`.
+
 ## User-authored lyrics and local execution
 
-A user may write or edit the final lyrics directly in `shared-inputs/lyrics.txt` or provide an equivalent file or path. Treat the supplied text as the authoritative lyric copy and keep the input file unchanged unless the user explicitly requests an edit. Build captions, timing data and visual treatments in the song's production folder; preserve the supplied words and spelling, and record any user-requested textual change. If a file combines lyrics and a brief, preserve it and identify the relevant passages. Ask only when the lyric text is genuinely ambiguous or missing.
+A user may write or edit the final lyrics directly in `shared-inputs/<song>/lyrics.txt` or provide an equivalent file or path. Treat the supplied text as the authoritative lyric copy and keep the input file unchanged unless the user explicitly requests an edit. Build captions, timing data and visual treatments in the song's production folder; preserve the supplied words and spelling, and record any user-requested textual change. If a file combines lyrics and a brief, preserve it and identify the relevant passages. Ask only when the lyric text is genuinely ambiguous or missing.
 
 Use the selected local agent's verified filesystem and available local tools for planning, implementation, rendering and review when the requested stage is authorized and the tools support it. Record the actual execution environment and any service used. Archive searches and downloads are network operations; use them only as authorized by the production request and source workflow. If a tool or service blocks a stage, report the precise result and continue independent in-scope work; follow applicable tool requirements. Never imply that a local file or process establishes which safeguards apply.
 

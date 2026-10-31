@@ -1,18 +1,22 @@
 When a song's lyrics are intended to be heard without on-screen text, or a tool cannot produce the requested lyric display, follow the audible-lyrics visual treatment in `PROJECT_INSTRUCTIONS.md`: preserve the master and lyric input, use kinetic visual storytelling where supported, note any unverified playback or sync, and follow the active tool's requirements.
 
-User-authored lyrics in `shared-inputs/lyrics.txt` or another supplied path are final input: preserve the file and its words unless explicitly asked to edit them. Follow the user-authored lyrics and local execution section of `PROJECT_INSTRUCTIONS.md`.
+User-authored lyrics in `shared-inputs/<song>/lyrics.txt` or another supplied path are final input: preserve the file and its words unless explicitly asked to edit them. Follow the user-authored lyrics and local execution section of `PROJECT_INSTRUCTIONS.md`.
 
 CODEX LOCAL — ONE-PROMPT FULL-SONG PRODUCTION
 
 Use this as the initiating message in a new **Codex task** with the **Local** environment and the original `music-motion-reel-kit` folder selected as the working folder. Do not use Cloud/SSH or create a worktree. It is reusable for any new song. Supply that song's finished recording and approved lyrics, plus an optional creative brief, either as task attachments or as exact local paths. If the files are already in the active kit, give their folder path; do not make duplicate uploads. The user-provided inputs for this task are authoritative. Do not search other song conversations or carry over another song's creative choices. This is the Codex production workflow; do not route the work to a Claude conversation or depend on a Claude session.
 
+## Song inputs
+
+Song input folder path: [PASTE YOUR SONG FOLDER PATH HERE]
+
+A convenient location is `shared-inputs/<song>/`, containing the recording, lyrics and optional brief. Read the supplied filenames and formats; other exact paths or attachments are also supported. Preserve the inputs and use a separate production folder. Ask only if a required input or the intended master is unclear.
+
 ## Task and destination
 
 Produce one original, full-song code-animated video using the supplied recording. This is a Codex-only production, not a Claude/Codex comparison. Create or resume only this song's folder at `productions/<song-slug>/` inside the active kit. Derive a clear slug from the song title. Before writing, check whether that destination already exists: resume it only if its checkpoint establishes that it is this same unfinished production; otherwise choose a new non-overwriting song-specific sibling and record why. Keep all song-specific code, assets, audio copies, plans, reports, review evidence and outputs in that folder.
 
-Active source of truth:
-
-``
+Active source of truth: the current verified local clone of this kit. Confirm its actual path before producing a song.
 
 Do not use the Downloads migration copy. Treat shared renderer code, installed packages, pinned repositories, source checkouts, project guidance and visual references as read-only, except for appending an evidence-backed cross-song technical lesson to `reusable-animation-context/VERIFIED_PRODUCTION_LESSONS.md` when the lesson meets its documented standard. Do not edit Claude's settings, Project Library, other song folders or comparison scaffolds.
 

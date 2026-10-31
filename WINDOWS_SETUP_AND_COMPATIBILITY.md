@@ -77,7 +77,7 @@ Check the value in the agent's own shell. The setting above lasts for that termi
 
 ## Cloned workspace and historical guidance
 
-The GitHub source workspace contains pinned submodule references but no song inputs, song outputs, installed dependencies or separately packaged starter ZIP. Create `shared-inputs/` yourself when ready, and place only your own authorized inputs there. The repository atlas and older preparation reports describe checks on the original Mac; verify checkout paths and dependency installation in this Windows or WSL environment. Older Claude-specific project prompts may refer to macOS and prior song handoffs; use `CURSOR_LOCAL_FULL_SONG_PRODUCTION_PROMPT.md` for Cursor. For Grok Bot, check its own cloud/local access separately before reading or changing files.
+The GitHub source workspace contains pinned submodule references but no song inputs, song outputs, installed dependencies or separately packaged starter ZIP. Create a song folder such as `shared-inputs/my-new-song/` when ready, and place your own recording, lyrics and optional brief there. See `shared-inputs/README.md`. The repository atlas and older preparation reports describe checks on the original Mac; verify checkout paths and dependency installation in this Windows or WSL environment. Older Claude-specific project prompts may refer to macOS and prior song handoffs; use `CURSOR_LOCAL_FULL_SONG_PRODUCTION_PROMPT.md` for Cursor. For Grok Bot, check its own cloud/local access separately before reading or changing files.
 
 ## Evidence and first run
 

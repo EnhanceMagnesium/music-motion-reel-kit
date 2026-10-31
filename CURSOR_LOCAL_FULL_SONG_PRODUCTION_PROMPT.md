@@ -1,19 +1,19 @@
 When a song's lyrics are intended to be heard without on-screen text, or a tool cannot produce the requested lyric display, follow the audible-lyrics visual treatment in `PROJECT_INSTRUCTIONS.md`: preserve the master and lyric input, use kinetic visual storytelling where supported, note any unverified playback or sync, and follow the active tool's requirements.
 
-User-authored lyrics in `shared-inputs/lyrics.txt` or another supplied path are final input: preserve the file and its words unless explicitly asked to edit them. Follow the user-authored lyrics and local execution section of `PROJECT_INSTRUCTIONS.md`.
+User-authored lyrics in `shared-inputs/<song>/lyrics.txt` or another supplied path are final input: preserve the file and its words unless explicitly asked to edit them. Follow the user-authored lyrics and local execution section of `PROJECT_INSTRUCTIONS.md`.
 
 Windows users: read [Windows setup and compatibility](WINDOWS_SETUP_AND_COMPATIBILITY.md), verify this agent’s actual OS and browser path, and record Windows readiness evidence.
 
 # Cursor Local — one-prompt full-song production
 
-Use this prompt in Cursor Agent after opening the extracted animation-kit folder as the **local workspace**. Create `shared-inputs/` if needed, then put the recording, approved lyrics and brief there. A GitHub source clone does not include song inputs or outputs. Replace the three input names below if needed.
+Use this prompt in Cursor Agent after opening the extracted animation-kit folder as the **local workspace**. Create `shared-inputs/<song>/` if needed, then put the recording, approved lyrics and optional brief there. Other user-supplied paths or attachments are also supported. A GitHub source clone does not include song inputs or outputs. Replace the three input names below if needed.
 
 ```text
 Produce a complete, original, code-animated song film in this local kit using the supplied inputs:
 
-- Recording: shared-inputs/<audio filename>
-- Lyrics: shared-inputs/<lyrics filename>
-- Brief: shared-inputs/<brief filename>
+- Recording: shared-inputs/<song>/<audio filename>
+- Lyrics: shared-inputs/<song>/<lyrics filename>
+- Brief: shared-inputs/<song>/<brief filename> (optional)
 
 This message authorizes the local, reversible stages described below through one finished full-song candidate, post-render QA, up to two focused correction rounds and a durable handoff. Do not ask me again for routine aspect, palette, typography, storyboard or implementation choices. Do not publish or send the result externally.
 

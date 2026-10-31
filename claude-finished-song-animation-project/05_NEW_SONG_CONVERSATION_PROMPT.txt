@@ -9,7 +9,7 @@ Song input folder path: [PASTE YOUR SONG FOLDER PATH HERE]
 I will replace the placeholder above with the folder containing this song’s recording, `lyrics.txt` and `brief.md` (if supplied), for example `music-motion-reel-kit/shared-inputs/my-new-song/`. Read the actual files in that folder; they may have different filenames or audio formats. If they are already available locally, use them directly. If a required input is missing or several possible masters are present, identify the exact issue. Keep the inputs unchanged and save production work separately in `productions/<song>/`.
 
 ## Lyrics and visual treatment
-User-authored lyrics in `shared-inputs/lyrics.txt` or another supplied path are final input: preserve the file and its words unless explicitly asked to edit them. Follow the user-authored lyrics and local execution section of `PROJECT_INSTRUCTIONS.md`.
+User-authored lyrics in `shared-inputs/<song>/lyrics.txt` or another supplied path are final input: preserve the file and its words unless explicitly asked to edit them. Follow the user-authored lyrics and local execution section of `PROJECT_INSTRUCTIONS.md`.
 
 When a song's lyrics are intended to be heard without on-screen text, or a tool cannot produce the requested lyric display, follow the audible-lyrics visual treatment in `PROJECT_INSTRUCTIONS.md`: preserve the master and lyric input, use kinetic visual storytelling where supported, note any unverified playback or sync, and follow the active tool's requirements.
 

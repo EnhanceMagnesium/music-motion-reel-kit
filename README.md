@@ -5,13 +5,17 @@ For Windows and Cursor setup, start with [Windows setup and compatibility](WINDO
 
 This GitHub workspace keeps the reusable kit together with all 16 pinned R01–R16 source repositories as Git submodules. Clone with `--recurse-submodules` to materialize the real source trees locally. Start with [the source workspace guide](repository-preparation/GITHUB_SOURCE_WORKSPACE.md), the [project instructions](PROJECT_INSTRUCTIONS.md), and the [repository navigation atlas](repository-preparation/REPOSITORY_NAVIGATION_AND_USE_GUIDE.md).
 
-The repository is private and has no blanket root license. Each upstream checkout retains its own terms. Per-song inputs and outputs are intentionally not part of this reusable-kit workspace.
+This source workspace has no blanket root license. Each upstream checkout retains its own terms. Per-song inputs and outputs are intentionally not part of this reusable-kit workspace.
 
 ---
 
 # Music Motion Reel Kit
 
 This connected folder is the one working kit for a reusable finished-song animation workflow. Each song has its own conversation and production directory; the shared renderer and pinned source library stay here. Do not create a separate Remotion project.
+
+## Start a new song
+
+Place the recording, final lyrics and optional brief together in a per-song folder such as `shared-inputs/my-new-song/`; see [song input folders](shared-inputs/README.md). Give that folder path to the selected agent. Other exact paths and attachments are supported. The agent keeps production work separately under `productions/<song>/`.
 
 ## Current workflow
 

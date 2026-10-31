@@ -9,3 +9,7 @@ share-packages/
 **/out/
 **/.cache/
 repository-preparation/cache/
+
+# Keep song inputs local; retain the reusable intake guide.
+shared-inputs/*
+!shared-inputs/README.md
