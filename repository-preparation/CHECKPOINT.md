@@ -4,6 +4,10 @@
 
 Use this as the running change log for the reusable animation kit itself. Whenever Codex or Claude changes the kit's instructions, shared tools, templates, source maps or reusable workflow, add a short dated entry saying what changed, why, which files, what was checked, what remains and the next kit edit. Do not add an entry when a task only uses the kit to make or review a song; record that work in the song's `productions/<song>/CHECKPOINT.md`. Preserve older entries as history. Link a detailed report when useful.
 
+## 2026-10-31 — Audible-lyrics handoff refinement
+
+Updated the shared instructions, launch prompts and review guide so the audible-lyrics treatment describes the resulting visuals without requiring a routine record of why on-screen lyric text was omitted. Handoffs remain accurate about produced deliverables and unverified playback or sync. No song or media changed.
+
 ## 2026-10-31 — Audible-lyrics visual treatment
 
 Added a reusable treatment for songs whose lyrics are heard without on-screen captions, including when a display tool cannot produce the requested text. Updated the shared instructions, three local launch prompts and quality guide to preserve supplied inputs, plan kinetic visuals, document the actual boundary and distinguish playback, sync and accessibility evidence. No song or media was modified. Next: assess the treatment during an authorized song production.
