@@ -1,10 +1,11 @@
-When a song's lyrics are intended to be heard without on-screen text, or a tool cannot produce the requested lyric display, follow the audible-lyrics visual treatment in `PROJECT_INSTRUCTIONS.md`: preserve the master and lyric input, use kinetic visual storytelling where supported, note any unverified playback or sync, and follow the active tool's requirements.
-
-User-authored lyrics in `shared-inputs/lyrics.txt` or another supplied path are final input: preserve the file and its words unless explicitly asked to edit them. Follow the user-authored lyrics and local execution section of `PROJECT_INSTRUCTIONS.md`.
-
 # ONE-PROMPT FULL-SONG PRODUCTION — USE IN A NEW SONG CONVERSATION
 
 I am supplying this prompt with this song’s finished recording, approved lyrics and optional creative brief. Treat the recording and files in this conversation as the song-specific authority. Create a new `productions/<song>/` folder in the connected original music-motion-reel-kit. Do not search other song conversations or reuse their creative choices.
+
+## Lyrics and visual treatment
+User-authored lyrics in `shared-inputs/lyrics.txt` or another supplied path are final input: preserve the file and its words unless explicitly asked to edit them. Follow the user-authored lyrics and local execution section of `PROJECT_INSTRUCTIONS.md`.
+
+When a song's lyrics are intended to be heard without on-screen text, or a tool cannot produce the requested lyric display, follow the audible-lyrics visual treatment in `PROJECT_INSTRUCTIONS.md`: preserve the master and lyric input, use kinetic visual storytelling where supported, note any unverified playback or sync, and follow the active tool's requirements.
 
 ## Authorization for this production
 I authorize the full local workflow described below in this one prompt: inspect and measure the supplied song; search/rank local technical sources; search, preview, select and download suitable footage from the Moving Image Archive, Wikimedia Commons and Internet Archive/Prelinger; create the plan and song-specific source/config/React scenes; run the no-media plan and focused checks; create and inspect a risk-based pre-export still set; render the complete full-song candidate; use the local Claude Code Browser pane for a companion visual preview when available; run the installed post-render Playwright/FFmpeg frame review; review the candidate at normal speed with sound and check actual audio/video alignment; make up to two focused correction rounds; rerender the complete candidate when an integrated change requires it; and save final source, candidate, evidence and checkpoint locally. Each finished reel must integrate at least one relevant, rights-cleared clip from all three footage sources. If a source cannot provide a suitable clip, report that requirement unmet and do not call the reel finished. Do not ask for the same approval again for these named, reversible, in-scope stages.

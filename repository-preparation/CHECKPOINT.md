@@ -4,6 +4,10 @@
 
 Use this as the running change log for the reusable animation kit itself. Whenever Codex or Claude changes the kit's instructions, shared tools, templates, source maps or reusable workflow, add a short dated entry saying what changed, why, which files, what was checked, what remains and the next kit edit. Do not add an entry when a task only uses the kit to make or review a song; record that work in the song's `productions/<song>/CHECKPOINT.md`. Preserve older entries as history. Link a detailed report when useful.
 
+## 2026-10-31 — Claude prompt organization
+
+Moved the lyric input and audible-lyrics visual-treatment instructions from above the title into a dedicated section of `claude-finished-song-animation-project/05_NEW_SONG_CONVERSATION_PROMPT.txt`, so copying from the title includes them. Verified both instructions remain in the prompt. No song or media changed.
+
 ## 2026-10-31 — Audible-lyrics handoff refinement
 
 Updated the shared instructions, launch prompts and review guide so the audible-lyrics treatment describes the resulting visuals without requiring a routine record of why on-screen lyric text was omitted. Handoffs remain accurate about produced deliverables and unverified playback or sync. No song or media changed.
