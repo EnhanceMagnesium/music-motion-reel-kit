@@ -6,6 +6,12 @@ Status: source-based guidance, **not yet verified by a Windows render**. Cursor 
 
 Cursor documents that its agent uses the first available terminal profile by default; PowerShell is a useful Windows starting example, but the chosen profile and workspace determine the actual shell. See https://cursor.com/docs/agent/overview. Grok Bot normally works on a separate cloud computer, whose hosted environment runs Linux; local Windows commands require local-computer access to be enabled and approved under that app's policy. See https://docs.x.ai/grok-bot/faq and https://docs.x.ai/grok-bot/deployment. A Windows desktop app alone therefore does not establish where the Bot's shell or files live. Verify the actual session and route before work.
 
+## Recommended Cursor terminal profile
+
+For a native Windows Cursor workspace, start with **PowerShell** (the installed PowerShell profile, including Windows PowerShell if that is what the computer provides). The examples in this guide use PowerShell syntax. No separate PowerShell installation or administrator shell is required merely to select it.
+
+In Cursor, press `Ctrl+Shift+P`, search for `Terminal: Select Default Profile`, select **PowerShell**, and open a new terminal. Cursor documents that its agent uses the first available terminal profile by default: https://cursor.com/docs/agent/overview. Ask Cursor to identify and verify the shell and operating system used by its own commands; the interactive terminal profile alone does not establish that a remote, WSL, cloud or separately routed agent runs in Windows. If PowerShell is unavailable or restricted, report the exact issue and use the available shell with appropriate command syntax; do not change Windows execution policies as a routine setup step. Grok Bot has its own cloud/local execution settings and must check its environment separately.
+
 ## Get the kit
 
 Open Cursor's terminal and ask the agent to check `git --version`. Install Git for Windows from https://git-scm.com/downloads/win if missing, with your approval; reopen Cursor after installation. In the folder where you want the kit, run:

@@ -4,6 +4,10 @@
 
 Use this as the running change log for the reusable animation kit itself. Whenever Codex or Claude changes the kit's instructions, shared tools, templates, source maps or reusable workflow, add a short dated entry saying what changed, why, which files, what was checked, what remains and the next kit edit. Do not add an entry when a task only uses the kit to make or review a song; record that work in the song's `productions/<song>/CHECKPOINT.md`. Preserve older entries as history. Link a detailed report when useful.
 
+## 2026-10-30 — Windows terminal profile recommendation
+
+Recommended PowerShell as the starting Cursor profile for native Windows, with documented selection steps and separate checks for the agent and Grok Bot execution environments. Updated `WINDOWS_SETUP_AND_COMPATIBILITY.md`; checked Cursor documentation and the wording locally. A Windows setup and render remain unverified. Next: collect actual Windows readiness findings.
+
 ## 2026-10-30 — Windows setup and compatibility guide
 
 Added `WINDOWS_SETUP_AND_COMPATIBILITY.md` and links from the README, Cursor prompt and shared renderer README. The guide covers native Windows versus WSL or remote shells, recursive source checkout, isolated Node dependencies, explicit Chrome selection, FFmpeg, and staged evidence. Source inspection identified Mac/Linux browser defaults with explicit overrides. Checked the new links and source claims on the Mac; Windows installation, browser execution and rendering remain unverified. Next: use findings from an actual Windows setup to address concrete compatibility defects.
