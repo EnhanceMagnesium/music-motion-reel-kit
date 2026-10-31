@@ -4,6 +4,10 @@
 
 Use this as the running change log for the reusable animation kit itself. Whenever Codex or Claude changes the kit's instructions, shared tools, templates, source maps or reusable workflow, add a short dated entry saying what changed, why, which files, what was checked, what remains and the next kit edit. Do not add an entry when a task only uses the kit to make or review a song; record that work in the song's `productions/<song>/CHECKPOINT.md`. Preserve older entries as history. Link a detailed report when useful.
 
+## 2026-10-30 — Windows setup and compatibility guide
+
+Added `WINDOWS_SETUP_AND_COMPATIBILITY.md` and links from the README, Cursor prompt and shared renderer README. The guide covers native Windows versus WSL or remote shells, recursive source checkout, isolated Node dependencies, explicit Chrome selection, FFmpeg, and staged evidence. Source inspection identified Mac/Linux browser defaults with explicit overrides. Checked the new links and source claims on the Mac; Windows installation, browser execution and rendering remain unverified. Next: use findings from an actual Windows setup to address concrete compatibility defects.
+
 ## 2026-10-30 — Cursor/Grok Bot share starter completed
 
 Added the Cursor project rule and completed the curated starter folder and dated zip promised by the active README. This makes the local-first workflow portable for a collaborator while excluding the owner's song materials, reference folders, full upstream checkouts, installed dependencies, credentials and generated media. Updated the compatibility guide and repository-preparation index to describe the current files and handoff. The archive passed `unzip -t`; 84 relative Markdown links resolved with no missing targets; scans found no owner home path, contact email, or song media. No render, media search, audio analysis or dependency installation occurred. Detailed scope and SHA-256 are in `CURSOR_GROKBOT_SHARE_PACKAGE_REPORT_2026-10-30.md`.

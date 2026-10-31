@@ -1,3 +1,5 @@
+Windows setup: see [Windows setup and compatibility](../WINDOWS_SETUP_AND_COMPATIBILITY.md); native Windows rendering remains unverified.
+
 # shared-animation-library
 
 Derived, reusable code for song reels. Song imagery, lyrics, audio and cue timing stay in each production folder. Originals, the existing `renderer/` and `productions/` are untouched.

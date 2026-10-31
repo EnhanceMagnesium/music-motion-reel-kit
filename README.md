@@ -1,5 +1,8 @@
 # Music Motion Reel Kit — source workspace
 
+For Windows and Cursor setup, start with [Windows setup and compatibility](WINDOWS_SETUP_AND_COMPATIBILITY.md). Windows rendering is not yet verified.
+
+
 This GitHub workspace keeps the reusable kit together with all 16 pinned R01–R16 source repositories as Git submodules. Clone with `--recurse-submodules` to materialize the real source trees locally. Start with [the source workspace guide](repository-preparation/GITHUB_SOURCE_WORKSPACE.md), the [project instructions](PROJECT_INSTRUCTIONS.md), and the [repository navigation atlas](repository-preparation/REPOSITORY_NAVIGATION_AND_USE_GUIDE.md).
 
 The repository is private and has no blanket root license. Each upstream checkout retains its own terms. Per-song inputs and outputs are intentionally not part of this reusable-kit workspace.
