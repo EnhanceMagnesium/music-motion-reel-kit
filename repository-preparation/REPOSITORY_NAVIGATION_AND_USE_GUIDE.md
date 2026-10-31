@@ -2,6 +2,10 @@
 
 Updated 2026-10-27. Canonical source map for Claude Code and Codex Local in the connected music-motion-reel-kit.
 
+## Recipient environment and preparation evidence
+
+Checkout and installation statements in individual entries describe the original preparation environment and historical checks. A recursive GitHub clone fetches the pinned source checkouts, but does not install their dependencies or establish browser, render or OS compatibility. Check each actual path and local installation before use; select and prepare only relevant dependencies in the current environment. macOS-specific tools, binaries, Swift examples and past Chrome observations do not establish Windows or WSL readiness. Start with `../WINDOWS_SETUP_AND_COMPATIBILITY.md` for Windows and preserve each source's license and provenance.
+
 ## How to use this atlas
 
 Start with the current song's supplied recording, lyrics, optional brief and named production folder. Translate those inputs into actual scene requirements before selecting repository techniques. For every song, create `productions/<song>/research/REPOSITORY_REVIEW.md` before finalizing the storyboard: rank and disposition all accessible R01–R16, record exact paths opened, then deeply inspect only plausible candidates. If any source is inaccessible, mark discovery incomplete for that entry. A valid result may be that no repository mechanism fits.

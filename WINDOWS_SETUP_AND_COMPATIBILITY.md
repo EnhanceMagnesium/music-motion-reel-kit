@@ -62,6 +62,10 @@ $env:CHROME_EXECUTABLE = $chrome
 
 Check the value in the agent's own shell. The setting above lasts for that terminal session; it does not configure other sessions. Alternatively pass the supported `--chrome` argument with the actual path when the relevant command supports it. In WSL use a Linux browser executable available inside WSL, and validate that setup independently. System Chrome with Playwright is a project choice, not a guaranteed browser-protocol or video-codec match.
 
+## Cloned workspace and historical guidance
+
+The GitHub source workspace contains pinned submodule references but no song inputs, song outputs, installed dependencies or separately packaged starter ZIP. Create `shared-inputs/` yourself when ready, and place only your own authorized inputs there. The repository atlas and older preparation reports describe checks on the original Mac; verify checkout paths and dependency installation in this Windows or WSL environment. Older Claude-specific project prompts may refer to macOS and prior song handoffs; use `CURSOR_LOCAL_FULL_SONG_PRODUCTION_PROMPT.md` for Cursor. For Grok Bot, check its own cloud/local access separately before reading or changing files.
+
 ## Evidence and first run
 
 1. Read `CURSOR_LOCAL_FULL_SONG_PRODUCTION_PROMPT.md`, `PROJECT_INSTRUCTIONS.md`, the two runtime/review READMEs and the repository navigation atlas. An agent must read actual sources and record what it used.

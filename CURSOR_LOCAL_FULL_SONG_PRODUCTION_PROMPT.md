@@ -2,7 +2,7 @@ Windows users: read [Windows setup and compatibility](WINDOWS_SETUP_AND_COMPATIB
 
 # Cursor Local — one-prompt full-song production
 
-Use this prompt in Cursor Agent after opening the extracted animation-kit folder as the **local workspace**. Put the friend's recording, approved lyrics and brief in `shared-inputs/` first. Replace the three input names below if needed.
+Use this prompt in Cursor Agent after opening the extracted animation-kit folder as the **local workspace**. Create `shared-inputs/` if needed, then put the recording, approved lyrics and brief there. A GitHub source clone does not include song inputs or outputs. Replace the three input names below if needed.
 
 ```text
 Produce a complete, original, code-animated song film in this local kit using the supplied inputs:

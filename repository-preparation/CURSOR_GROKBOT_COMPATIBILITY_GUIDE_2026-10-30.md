@@ -3,6 +3,10 @@
 Date: 2026-10-30  
 Scope: inspect current project structure and official product documentation; prepare a shareable local starter. No song production or media action is included.
 
+## Current GitHub source workspace
+
+This report originally described a separate curated starter package. The GitHub source workspace has a different scope: R01–R16 are pinned as Git submodules and a recursive clone fetches their source trees. It excludes installed dependencies and song material. Verify the local clone, installed tools and current environment independently; historical Mac preparation and this report do not prove Windows execution. See `../WINDOWS_SETUP_AND_COMPATIBILITY.md` and `GITHUB_SOURCE_WORKSPACE.md`. References below to the curated starter and its missing checkouts describe that older package, not the recursive GitHub clone.
+
 ## Recommendation
 
 Use **Cursor Local as the primary build and render workspace** for a first comparison test. Open the extracted starter-kit folder in Cursor, place the friend's own sample recording, lyrics and brief in `shared-inputs/`, then start a Cursor Agent task using `CURSOR_LOCAL_FULL_SONG_PRODUCTION_PROMPT.md`. Cursor's agent can inspect files, search the project, edit code and run terminal commands. The kit's Remotion route is already Node-based and runs from the opened project folder.

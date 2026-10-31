@@ -74,4 +74,4 @@ R14–R16 motion resources are assessed before storyboard lock; consultation is 
 
 ## Portable starter for sharing
 
-The curated [Cursor/Grok Bot song-animation starter](share-packages/music-motion-animation-starter/README.md) and [dated zip](share-packages/music-motion-animation-starter-2026-10-30.zip) are for sharing with a collaborator. They contain the shared renderer source and guidance, but exclude personal song folders, full upstream repository copies, installed dependencies and generated production outputs. A recipient adds their own recording, lyrics and brief under `shared-inputs/`.
+This GitHub source workspace includes R01–R16 as pinned submodules. Run a recursive clone to fetch their source; install required dependencies on the recipient computer. Create `shared-inputs/` for your own recording, lyrics and brief. The older curated starter package mentioned in historical reports is not included in this source workspace.
