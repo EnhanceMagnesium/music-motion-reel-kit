@@ -12,6 +12,10 @@ Added a labeled song-folder path placeholder near the beginning of `claude-finis
 
 Standardized intake guidance across the README, shared project instructions, Claude/Codex/Cursor prompts and Windows/Cursor setup guides around `shared-inputs/<song>/`, with other exact paths and attachments still supported. Added `shared-inputs/README.md` beside the existing productions folder. The published workspace additionally ignores song inputs while retaining this README, clarifies its source-workspace wording and repairs an empty Codex kit-path placeholder. No song input or production was modified. Verified paths, prompt text, ignored sample paths and Git diff; a real song intake remains to be exercised.
 
+## 2026-10-31 — Claude review capability wording
+
+Aligned the one-pass prompt's Browser-pane preview and full sound playback instructions with actual session capabilities, retaining separate unverified playback and sync status when unavailable. Checked the wording and Git diff; no song, media, or renderer changed.
+
 ## 2026-10-31 — Prelinger reporting and lyric-display clarification
 
 Clarified the Codex prompt's lyric-display choices to include no on-screen lyrics. Documented the ordinary licensed-item download separately from the reviewed-evidence route. Kept the existing machine-readable status for compatibility and added an explicit unverified-permission assessment to command results and JSON/Markdown manifests, including Markdown entries from older manifests. Marked the older checkpoint status as historical. Focused synthetic tests cover both download routes, reporting and existing rights boundaries; no actual media or song was processed. Next: review a real production's item evidence when available.
