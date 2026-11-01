@@ -22,6 +22,7 @@ function usage() {
     "Options use --name value or --name=value. A contact is required for Commons and may be set with MEDIA_DISCOVERY_CONTACT.",
     "The search limit is 1–8. Internet Archive pagination uses --page; Commons pagination uses --offset.",
     "Optional filters: --mime video/mp4, --min-width, --min-height, --min-duration, --max-duration, --duration-seconds with --duration-tolerance, and --year-from/--year-to.",
+    "For a Prelinger item missing rights metadata, reviewed item-specific permission may be supplied using --prelinger-evidence=archive/evidence.json.",
     "Download rechecks item rights and file metadata, writes only under an existing song folder, refuses overwrites, and defaults to an 800 MiB limit (absolute maximum 2 GiB).",
     "No command modifies Remotion/render code or automatically adds a clip to a song config or scene.",
   ].join("\n");
@@ -136,7 +137,7 @@ async function main() {
   const fileName = provider === "internet-archive" ? required(options, "file") : undefined;
   const maxBytes = numberOption(options, "max-bytes", downloadLimits.defaultBytes);
   output(await downloadSelected({
-    provider, id, fileName, productionRoot: root, kitRoot: KIT_ROOT, contact, maxBytes,
+    provider, id, fileName, productionRoot: root, kitRoot: KIT_ROOT, contact, prelingerEvidence: options["prelinger-evidence"], maxBytes,
   }));
 }
 

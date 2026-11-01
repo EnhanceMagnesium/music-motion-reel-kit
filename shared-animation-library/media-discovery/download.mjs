@@ -123,7 +123,7 @@ async function saveManifest(archiveDir, entry, productionRoot) {
 }
 
 export async function downloadSelected({
-  provider, id, fileName, productionRoot, kitRoot, contact, maxBytes = DEFAULT_MAX_BYTES,
+  provider, id, fileName, productionRoot, kitRoot, contact, prelingerEvidence, maxBytes = DEFAULT_MAX_BYTES,
   downloadTimeoutMs = 10 * 60 * 1000,
   fetchImpl = globalThis.fetch, request = undefined, sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms)),
 }) {
@@ -141,9 +141,39 @@ export async function downloadSelected({
   const candidate = provider === "commons"
     ? await inspectCommons({ title: id, contact, request, requestOptions: { cache: false } })
     : await inspectArchive({ identifier: id, request, requestOptions: { cache: false } });
-  if (candidate.rightsStatus !== "eligible") {
+  // A reviewed item-specific permission can supplement missing Prelinger metadata.
+  // Collection membership or a user's general preference is not item permission.
+  if (prelingerEvidence !== undefined) {
+    if (provider !== "internet-archive" || candidate.rightsStatus !== "rights_unverified" ||
+        candidate.rights?.license || candidate.rights?.evidence?.licenseurl || candidate.rights?.evidence?.rights) {
+      throw new ProviderError("Prelinger evidence is supported only for an Internet Archive item with missing item-level rights metadata and no conflict.");
+    }
+    const collections = candidate.rights?.evidence?.collection;
+    if (!(Array.isArray(collections) ? collections : [collections]).some((x) => String(x).toLowerCase() === "prelinger")) {
+      throw new ProviderError("Fresh Internet Archive metadata does not identify this item as Prelinger.");
+    }
+    if (typeof prelingerEvidence !== "string" || !prelingerEvidence.trim() || path.isAbsolute(prelingerEvidence)) {
+      throw new ProviderError("Prelinger evidence must be a song-relative JSON file.");
+    }
+    const evidencePath = await realpath(path.resolve(root, prelingerEvidence));
+    if (!evidencePath.startsWith(root + path.sep)) throw new ProviderError("Prelinger evidence must stay inside the song folder.");
+    const evidence = JSON.parse(await readFile(evidencePath, "utf8"));
+    let source;
+    try { source = new URL(evidence.sourceUrl); } catch { throw new ProviderError("Prelinger evidence needs an HTTPS source URL."); }
+    if (source.protocol !== "https:" || evidence.itemId !== candidate.id ||
+        typeof evidence.permissionStatement !== "string" || evidence.permissionStatement.trim().length < 30 ||
+        typeof evidence.reviewedBy !== "string" || !evidence.reviewedBy.trim() ||
+        !/^\d{4}-\d{2}-\d{2}$/.test(evidence.reviewedDate ?? "")) {
+      throw new ProviderError("Prelinger evidence must identify this item and include an HTTPS source, specific permission statement, reviewer and date.");
+    }
+    candidate.rightsStatus = "eligible_with_reviewed_evidence";
+    candidate.rights = { ...candidate.rights, evidence: { ...candidate.rights.evidence, reviewedItemPermission: evidence },
+      license: { name: "Reviewed item-specific reuse evidence (not independently verified)", url: source.href } };
+    candidate.attribution = "Review item-specific permission and record any required credit; source: " + candidate.sourceUrl;
+  }
+  if (!["eligible", "eligible_with_reviewed_evidence"].includes(candidate.rightsStatus)) {
     throw new ProviderError("Download blocked: rights status is " + candidate.rightsStatus + ". " +
-      (candidate.rights?.reason ?? "No allowlisted item-level rights basis was established."));
+      (candidate.rights?.reason ?? "No supported item-level rights basis was established."));
   }
   let sourceFile;
   let downloadUrl;

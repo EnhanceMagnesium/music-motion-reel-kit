@@ -4,6 +4,16 @@ This dependency-free Node CLI performs bounded, pre-render search and metadata c
 
 No provider request is part of the render path. The CLI does not call Remotion, produce previews, automatically alter a song config, or visually evaluate footage. Search output is a shortlist; preview the original item page before selecting a file. A source quota never justifies an irrelevant clip or a rights-gate bypass; if either API source yields no suitable item, mark its required source unmet and do not call the reel finished.
 
+## Prelinger items with missing rights metadata
+
+Prelinger permits free reuse of many films carrying its Creative Commons Public Domain Dedication, but says not every film is under that dedication and recommends checking the individual film or contacting the archive for unlicensed films: https://www.panix.com/~footage/prelarch.html. If a selected film lacks item-level rights metadata, first find an equivalent record with a supported item-level license. If there is independently reviewed, **item-specific** reuse permission, record it in a song-local JSON file, for example `productions/<song>/archive/prelinger-permission.json`:
+
+```json
+{"itemId":"EXACT_ARCHIVE_IDENTIFIER","sourceUrl":"https://example.org/item-specific-permission","permissionStatement":"Accurate item-specific permission text from the source","reviewedBy":"Reviewer name","reviewedDate":"YYYY-MM-DD"}
+```
+
+Replace every example with actual evidence. Then use `node shared-animation-library/media-discovery/cli.mjs download --provider ia --id ITEM_ID --file "EXACT_VIDEO_FILENAME.mp4" --root productions/SONG_ID --prelinger-evidence=archive/prelinger-permission.json`. The helper re-fetches metadata, requires exact Prelinger collection membership, the same item ID, missing item-level rights fields, a song-local evidence file and the stated fields. It preserves that reviewed assertion in the manifest as `eligible_with_reviewed_evidence`; it does **not** independently authenticate the evidence or certify rights. Unknown/conflicting or explicitly restrictive metadata is not overridden. Record any source-specific conditions and credits. The archive's general availability or a user's production direction alone is not item-specific permission.
+
 ## Public access and contact
 
 Public search and item metadata reads require no API key, OAuth consumer, login or secret. Do not register OAuth for this workflow.
@@ -23,7 +33,7 @@ Run from the active kit root:
 
 Each search page is capped at eight candidates. Internet Archive uses --page; Commons uses the returned continuation/offset information. Optional metadata filters include MIME, minimum dimensions, duration range or target with tolerance, and date range. Candidates missing a field needed by an active filter are excluded.
 
-Download is a separate explicit command. It re-fetches current item metadata without the search cache, verifies the selected Internet Archive filename or current Commons file page, applies the strict rights allowlist, validates provider host and response type, enforces an 800 MiB default (2 GiB hard maximum), streams and hashes the unmodified source, writes only under an existing productions/<song>/public/archive/, refuses overwrite, and records supplemental API provenance at productions/<song>/archive/API_CLIP_MANIFEST.json and .md. It does not add the asset to config.js or a scene.
+Download is a separate explicit command. It re-fetches current item metadata without the search cache, verifies the selected Internet Archive filename or current Commons file page, applies the rights allowlist or the documented reviewed Prelinger evidence route, validates provider host and response type, enforces an 800 MiB default (2 GiB hard maximum), streams and hashes the unmodified source, writes only under an existing productions/<song>/public/archive/, refuses overwrite, and records supplemental API provenance at productions/<song>/archive/API_CLIP_MANIFEST.json and .md. It does not add the asset to config.js or a scene.
 
 For this project, a film surfaced through Prelinger Archives Online is an available footage-source candidate; its presence in the Prelinger route, rather than the “Download Options” list, establishes source availability. Use “Download Options” only to identify the actual retrievable video file and format, then use its exact filename with this helper. Preserve the item's own rights/reuse statement and verify it under the rights gate; route inclusion does not mean every item is public domain or free of item-specific conditions. Do not mistake torrents, logs, subtitles or metadata files for footage.
 

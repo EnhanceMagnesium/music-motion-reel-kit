@@ -352,3 +352,27 @@ test("archive download URLs reject unsafe identifiers and file paths", async () 
   assert.throws(() => archiveDownloadUrl("../outside", "clip.mp4"), /identifier/);
   assert.throws(() => archiveDownloadUrl("valid-id", "../outside.mp4"), /safe item path/);
 });
+
+test("Prelinger reviewed permission permits a missing-metadata download and preserves evidence", async () => {
+  const kitRoot = await mkdtemp(path.join(os.tmpdir(), "prelinger-evidence-"));
+  const songRoot = path.join(kitRoot, "productions", "song");
+  await mkdir(path.join(songRoot, "archive"), { recursive: true });
+  await writeFile(path.join(songRoot, "config.js"), "const PROJECT = {};\n");
+  const evidence = {itemId: "fixture", sourceUrl: "https://example.org/permission", permissionStatement: "The rights holder explicitly permits reuse in this production.", reviewedBy: "Reviewer", reviewedDate: "2026-10-31"};
+  await writeFile(path.join(songRoot, "archive", "evidence.json"), JSON.stringify(evidence));
+  const metadata = { metadata: {identifier: "fixture", title: "Film", collection: ["prelinger"]}, files: [{name: "film.mp4", format: "MPEG4", size: "4"}] };
+  const options = {provider: "internet-archive", id: "fixture", fileName: "film.mp4", productionRoot: "productions/song", kitRoot, prelingerEvidence: "archive/evidence.json", request: async () => metadata, fetchImpl: async () => new Response(Buffer.from("film"), {status:200, headers:{"content-type":"video/mp4", "content-length":"4"}})};
+  try {
+    await assert.rejects(downloadSelected({...options, prelingerEvidence: undefined}), /Download blocked/);
+    await assert.rejects(downloadSelected({...options, prelingerEvidence: "../outside.json"}), /ENOENT|inside the song/);
+    await writeFile(path.join(songRoot, "archive", "bad.json"), JSON.stringify({...evidence, itemId: "wrong"}));
+    await assert.rejects(downloadSelected({...options, prelingerEvidence: "archive/bad.json"}), /identify this item/);
+    await assert.rejects(downloadSelected({...options, request: async () => ({...metadata, metadata: {...metadata.metadata, rights: "All rights reserved"}})}), /missing item-level rights/);
+    await assert.rejects(downloadSelected({...options, request: async () => ({...metadata, metadata: {...metadata.metadata, collection: ["other"]}})}), /does not identify/);
+    const result = await downloadSelected(options);
+    assert.equal(result.rightsStatus, "eligible_with_reviewed_evidence");
+    const manifest = JSON.parse(await readFile(result.manifest.jsonPath, "utf8"));
+    assert.deepEqual(manifest.entries[0].rightsEvidence.reviewedItemPermission, evidence);
+    assert.match(manifest.entries[0].licenseName, /not independently verified/);
+  } finally { await rm(kitRoot, {recursive:true, force:true}); }
+});
