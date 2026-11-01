@@ -268,6 +268,7 @@ test("selected download uses a fresh rights lookup, writes only into the song, r
     });
     assert.equal(result.bytes, 8);
     assert.equal(result.rightsStatus, "eligible");
+    assert.equal(result.rightsEvidenceAssessment, null);
     assert.equal(apiCalls, 1);
     assert.equal(downloadCalls, 1);
     assert.match(result.file, /productions\/fixture-song\/public\/archive\//);
@@ -364,6 +365,7 @@ test("Prelinger reviewed permission permits a missing-metadata download and pres
   const options = {provider: "internet-archive", id: "fixture", fileName: "film.mp4", productionRoot: "productions/song", kitRoot, prelingerEvidence: "archive/evidence.json", request: async () => metadata, fetchImpl: async () => new Response(Buffer.from("film"), {status:200, headers:{"content-type":"video/mp4", "content-length":"4"}})};
   try {
     await assert.rejects(downloadSelected({...options, prelingerEvidence: undefined}), /Download blocked/);
+    await assert.rejects(downloadSelected({...options, request: async () => ({...metadata, metadata: {...metadata.metadata, rights: "Public Domain"}})}), /missing item-level rights/);
     await assert.rejects(downloadSelected({...options, prelingerEvidence: "../outside.json"}), /ENOENT|inside the song/);
     await writeFile(path.join(songRoot, "archive", "bad.json"), JSON.stringify({...evidence, itemId: "wrong"}));
     await assert.rejects(downloadSelected({...options, prelingerEvidence: "archive/bad.json"}), /identify this item/);
@@ -371,8 +373,11 @@ test("Prelinger reviewed permission permits a missing-metadata download and pres
     await assert.rejects(downloadSelected({...options, request: async () => ({...metadata, metadata: {...metadata.metadata, collection: ["other"]}})}), /does not identify/);
     const result = await downloadSelected(options);
     assert.equal(result.rightsStatus, "eligible_with_reviewed_evidence");
+    assert.match(result.rightsEvidenceAssessment, /did not independently authenticate permission/);
     const manifest = JSON.parse(await readFile(result.manifest.jsonPath, "utf8"));
     assert.deepEqual(manifest.entries[0].rightsEvidence.reviewedItemPermission, evidence);
+    assert.match(manifest.entries[0].rightsEvidenceAssessment, /did not independently authenticate permission/);
+    assert.match(await readFile(result.manifest.markdownPath, "utf8"), /Evidence assessment:.*did not independently authenticate permission/);
     assert.match(manifest.entries[0].licenseName, /not independently verified/);
   } finally { await rm(kitRoot, {recursive:true, force:true}); }
 });

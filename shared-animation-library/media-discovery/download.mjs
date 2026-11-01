@@ -9,6 +9,8 @@ import { ProviderError } from "./http.mjs";
 const DEFAULT_MAX_BYTES = 800 * 1024 * 1024;
 const ABSOLUTE_MAX_BYTES = 2 * 1024 * 1024 * 1024;
 const VIDEO_EXT = /\.(?:mp4|m4v|webm|ogv|ogg|mov|avi|mkv|mpg|mpeg|wmv|flv|3gp|ts)$/i;
+const REVIEWED_EVIDENCE_STATUS = "eligible_with_reviewed_evidence";
+const REVIEWED_EVIDENCE_ASSESSMENT = "Download permitted based on a reviewer-supplied item-specific permission assertion; the helper did not independently authenticate permission or certify reuse rights.";
 
 function isAllowedHost(provider, hostname) {
   const host = hostname.toLowerCase();
@@ -94,6 +96,7 @@ async function saveManifest(archiveDir, entry, productionRoot) {
       "- Creator/uploader: " + (item.creator || item.uploader || "Not supplied"),
       "- Date: " + (item.date || "Not supplied"),
       "- Rights status at download: " + item.rightsStatus,
+      ...(item.rightsStatus === REVIEWED_EVIDENCE_STATUS ? ["- Evidence assessment: " + REVIEWED_EVIDENCE_ASSESSMENT] : []),
       "- Rights/license basis: " + (item.licenseName || "Unverified"),
       "- License URL: " + (item.licenseUrl || "Not supplied"),
       "- Rights evidence: " + JSON.stringify(item.rightsEvidence),
@@ -166,12 +169,12 @@ export async function downloadSelected({
         !/^\d{4}-\d{2}-\d{2}$/.test(evidence.reviewedDate ?? "")) {
       throw new ProviderError("Prelinger evidence must identify this item and include an HTTPS source, specific permission statement, reviewer and date.");
     }
-    candidate.rightsStatus = "eligible_with_reviewed_evidence";
+    candidate.rightsStatus = REVIEWED_EVIDENCE_STATUS;
     candidate.rights = { ...candidate.rights, evidence: { ...candidate.rights.evidence, reviewedItemPermission: evidence },
       license: { name: "Reviewed item-specific reuse evidence (not independently verified)", url: source.href } };
     candidate.attribution = "Review item-specific permission and record any required credit; source: " + candidate.sourceUrl;
   }
-  if (!["eligible", "eligible_with_reviewed_evidence"].includes(candidate.rightsStatus)) {
+  if (!["eligible", REVIEWED_EVIDENCE_STATUS].includes(candidate.rightsStatus)) {
     throw new ProviderError("Download blocked: rights status is " + candidate.rightsStatus + ". " +
       (candidate.rights?.reason ?? "No supported item-level rights basis was established."));
   }
@@ -332,6 +335,7 @@ export async function downloadSelected({
     sourceDownloadUrl: downloadUrl,
     localPath: path.relative(root, destination).split(path.sep).join("/"),
     rightsStatus: candidate.rightsStatus,
+    rightsEvidenceAssessment: candidate.rightsStatus === REVIEWED_EVIDENCE_STATUS ? REVIEWED_EVIDENCE_ASSESSMENT : null,
     licenseName: rights?.license?.name ?? null,
     licenseUrl: rights?.license?.url ?? null,
     rightsEvidence: rights?.evidence ?? {},
@@ -357,6 +361,7 @@ export async function downloadSelected({
     bytes,
     sha256: entry.sha256,
     rightsStatus: candidate.rightsStatus,
+    rightsEvidenceAssessment: entry.rightsEvidenceAssessment,
     attribution: candidate.attribution,
     manifest,
   };

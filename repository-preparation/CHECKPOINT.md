@@ -12,6 +12,10 @@ Added a labeled song-folder path placeholder near the beginning of `claude-finis
 
 Standardized intake guidance across the README, shared project instructions, Claude/Codex/Cursor prompts and Windows/Cursor setup guides around `shared-inputs/<song>/`, with other exact paths and attachments still supported. Added `shared-inputs/README.md` beside the existing productions folder. The published workspace additionally ignores song inputs while retaining this README, clarifies its source-workspace wording and repairs an empty Codex kit-path placeholder. No song input or production was modified. Verified paths, prompt text, ignored sample paths and Git diff; a real song intake remains to be exercised.
 
+## 2026-10-31 — Prelinger reporting and lyric-display clarification
+
+Clarified the Codex prompt's lyric-display choices to include no on-screen lyrics. Documented the ordinary licensed-item download separately from the reviewed-evidence route. Kept the existing machine-readable status for compatibility and added an explicit unverified-permission assessment to command results and JSON/Markdown manifests, including Markdown entries from older manifests. Marked the older checkpoint status as historical. Focused synthetic tests cover both download routes, reporting and existing rights boundaries; no actual media or song was processed. Next: review a real production's item evidence when available.
+
 ## 2026-10-31 — Production ordering and Prelinger evidence
 
 Reordered Claude source discovery before storyboarding, clarified conditional listening and no-on-screen-lyrics options, and routed Commons requests to the operator-authorized contact in guide 15. Added a reviewed, item-specific Prelinger permission path for selected IA items with missing rights metadata, with fresh collection checks, song-local evidence and provenance; explicit restrictions and conflicts remain unresolved. The helper does not certify rights. The original archive's current FAQ states not all films carry its public-domain dedication. Synthetic media-discovery tests and static checks verify the implementation only; actual rights, playback and production remain per-song checks. See `PRELINGER_EVIDENCE_AND_CLAUDE_ORDER_2026-10-31.md`.
@@ -113,7 +117,7 @@ Expanded the two-layer storyboard from a concise rule into field-by-field covera
 
 ## Checkpoint update — 2026-10-29
 
-This entry consolidates the kit-wide decisions and changes from the current conversation into this existing checkpoint so the next kit pass can resume from one durable status. The current operating contract, links to its detailed subject guides/reports, and the open Prelinger rights-policy reconciliation are recorded above. The two-layer storyboard is the latest completed guidance change; its standalone detail record is `STORYBOARD_COVERAGE_GUIDANCE_DETAIL_2026-10-29.md`.
+This entry consolidates the kit-wide decisions and changes from the current conversation into this existing checkpoint so the next kit pass can resume from one durable status. At the time of that earlier entry, the Prelinger rights-policy reconciliation was open; the current implementation and remaining boundaries are recorded in the newer entry above. The two-layer storyboard is the latest completed guidance change; its standalone detail record is `STORYBOARD_COVERAGE_GUIDANCE_DETAIL_2026-10-29.md`.
 
 Changed in this checkpointing pass: `repository-preparation/CHECKPOINT.md` (living status and history index), root `AGENTS.md` and `CLAUDE.md` (require future kit-level updates here), `repository-preparation/README.txt` and root `README.md` (checkpoint discovery pointers). Read the existing repository-preparation and shared-library checkpoints plus current active render, source, footage, GSAP, storyboard and quality guidance. No renderer or production code was changed; no song production was changed; no media, browser, tests or renders were run.
 

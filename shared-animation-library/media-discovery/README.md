@@ -4,6 +4,10 @@ This dependency-free Node CLI performs bounded, pre-render search and metadata c
 
 No provider request is part of the render path. The CLI does not call Remotion, produce previews, automatically alter a song config, or visually evaluate footage. Search output is a shortlist; preview the original item page before selecting a file. A source quota never justifies an irrelevant clip or a rights-gate bypass; if either API source yields no suitable item, mark its required source unmet and do not call the reel finished.
 
+## Selecting the Prelinger download route
+
+Inspect the selected Internet Archive item first. If fresh metadata already yields `rightsStatus: eligible`, use the normal `download --provider ia` command under Commands below, **without** `--prelinger-evidence`. The downloader re-fetches metadata, so a changed rights result may require another review. The evidence option is only for a Prelinger item whose fresh item-level rights fields are missing; it is rejected for already eligible items, other collections, and conflicting or restrictive metadata.
+
 ## Prelinger items with missing rights metadata
 
 Prelinger permits free reuse of many films carrying its Creative Commons Public Domain Dedication, but says not every film is under that dedication and recommends checking the individual film or contacting the archive for unlicensed films: https://www.panix.com/~footage/prelarch.html. If a selected film lacks item-level rights metadata, first find an equivalent record with a supported item-level license. If there is independently reviewed, **item-specific** reuse permission, record it in a song-local JSON file, for example `productions/<song>/archive/prelinger-permission.json`:
@@ -12,7 +16,7 @@ Prelinger permits free reuse of many films carrying its Creative Commons Public 
 {"itemId":"EXACT_ARCHIVE_IDENTIFIER","sourceUrl":"https://example.org/item-specific-permission","permissionStatement":"Accurate item-specific permission text from the source","reviewedBy":"Reviewer name","reviewedDate":"YYYY-MM-DD"}
 ```
 
-Replace every example with actual evidence. Then use `node shared-animation-library/media-discovery/cli.mjs download --provider ia --id ITEM_ID --file "EXACT_VIDEO_FILENAME.mp4" --root productions/SONG_ID --prelinger-evidence=archive/prelinger-permission.json`. The helper re-fetches metadata, requires exact Prelinger collection membership, the same item ID, missing item-level rights fields, a song-local evidence file and the stated fields. It preserves that reviewed assertion in the manifest as `eligible_with_reviewed_evidence`; it does **not** independently authenticate the evidence or certify rights. Unknown/conflicting or explicitly restrictive metadata is not overridden. Record any source-specific conditions and credits. The archive's general availability or a user's production direction alone is not item-specific permission.
+Replace every example with actual evidence. Then use `node shared-animation-library/media-discovery/cli.mjs download --provider ia --id ITEM_ID --file "EXACT_VIDEO_FILENAME.mp4" --root productions/SONG_ID --prelinger-evidence=archive/prelinger-permission.json`. The helper re-fetches metadata, requires exact Prelinger collection membership, the same item ID, missing item-level rights fields, a song-local evidence file and the stated fields. It retains the machine-readable status `eligible_with_reviewed_evidence` for compatibility and writes an explicit evidence assessment in the command result, JSON manifest and Markdown manifest: the reviewer-supplied permission assertion was not independently authenticated and rights were not certified. Carry that distinction into the production report. Unknown/conflicting or explicitly restrictive metadata is not overridden. Record any source-specific conditions and credits. The archive's general availability or a user's production direction alone is not item-specific permission.
 
 ## Public access and contact
 
@@ -39,7 +43,7 @@ For this project, a film surfaced through Prelinger Archives Online is an availa
 
 ## Rights and limits
 
-Only item-level Public Domain, CC0, or CC BY 1.0/2.0/2.5/3.0/4.0 with complete attribution is eligible. CC BY-SA, NC, ND, other restrictive terms, unknowns and conflicts are blocked. Internet Archive rights are often uploader supplied; its metadata is not legal certification. Commons metadata is partly free text and may be missing. Search rank, metadata, MIME, dimensions, thumbnails and checksums do not establish visual suitability or actual rights. Preview selected footage and verify its item page and source terms.
+The ordinary item-metadata route accepts Public Domain, CC0, or CC BY 1.0/2.0/2.5/3.0/4.0 with complete attribution. The separately documented reviewed Prelinger evidence route applies only when qualifying item metadata is absent. CC BY-SA, NC, ND, other restrictive terms, unknowns and conflicts are blocked. Internet Archive rights are often uploader supplied; its metadata is not legal certification. Commons metadata is partly free text and may be missing. Search rank, metadata, MIME, dimensions, thumbnails and checksums do not establish visual suitability or actual rights. Preview selected footage and verify its item page and source terms.
 
 No media was downloaded for the tool's implementation checks. Offline fixtures use only short synthetic byte strings and temporary directories.
 
