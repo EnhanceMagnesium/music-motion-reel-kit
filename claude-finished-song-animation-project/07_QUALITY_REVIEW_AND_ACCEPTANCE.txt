@@ -4,7 +4,7 @@ Use this guide for a song-specific candidate after the relevant implementation a
 
 ## Audible lyrics and visual treatment
 
-When a song is designed without on-screen lyrics, or a tool cannot produce the requested lyric display, follow the audible-lyrics visual treatment in `PROJECT_INSTRUCTIONS.md`. Review visual storytelling, the preserved master, actual sound playback and audiovisual sync as separate evidence. Describe the resulting caption treatment and any impact on accessibility or requested deliverables. A still or silent frame sample cannot verify what is heard.
+When a song is designed without on-screen lyrics, or a tool cannot produce the requested lyric display, follow the audible-lyrics visual treatment in `PROJECT_INSTRUCTIONS.md`. When captions are requested and only some lines can be displayed, inspect the permitted displayed lines for exact wording, timing, legibility and placement; use visual action for omitted passages. Honor an explicit no-caption direction. Review visual storytelling, the preserved master, actual sound playback and audiovisual sync as separate evidence. Describe the resulting caption treatment and any impact on accessibility or requested deliverables. A still or silent frame sample cannot verify what is heard.
 
 ## 1. Keep the review tied to this song
 

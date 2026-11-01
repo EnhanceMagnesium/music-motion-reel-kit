@@ -1,4 +1,4 @@
-When a song's lyrics are intended to be heard without on-screen text, or a tool cannot produce the requested lyric display, follow the audible-lyrics visual treatment in `PROJECT_INSTRUCTIONS.md`: preserve the master and lyric input, use kinetic visual storytelling where supported, note any unverified playback or sync, and follow the active tool's requirements.
+When a song's lyrics are intended to be heard without on-screen text, or a tool cannot produce the requested lyric display, follow the audible-lyrics visual treatment in `PROJECT_INSTRUCTIONS.md`: preserve the master and lyric input, when captions are requested, display the remaining lines supported by the active workflow if only some lines cannot be shown; use kinetic visual storytelling, preserve supplied words, note any unverified playback or sync, and follow the active tool's requirements. Honor an explicit no-caption direction.
 
 User-authored lyrics in `shared-inputs/<song>/lyrics.txt` or another supplied path are final input: preserve the file and its words unless explicitly asked to edit them. Follow the user-authored lyrics and local execution section of `PROJECT_INSTRUCTIONS.md`.
 
