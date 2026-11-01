@@ -12,6 +12,8 @@ Song input folder path: [PASTE YOUR SONG FOLDER PATH HERE]
 
 A convenient location is `shared-inputs/<song>/`, containing the recording, lyrics and optional brief. Read the supplied filenames and formats; other exact paths or attachments are also supported. Preserve the inputs and use a separate production folder. Ask only if a required input or the intended master is unclear.
 
+For song-specific font research, follow `claude-finished-song-animation-project/20_FONT_DISCOVERY_AND_LYRIC_TYPOGRAPHY.txt` and record actual sources, license, roles, chosen local files and reviewed evidence in `productions/<song>/research/FONT_SELECTION.md` using `repository-preparation/templates/FONT_SELECTION_RECORD_TEMPLATE.md`. Research and download free licensed font files when needed for this song; package installs, paid fonts and credentials require separate authorization. Select fonts to serve the actual lyrics and visual direction, including no-text and selective-caption treatments.
+
 ## Task and destination
 
 Produce one original, full-song code-animated video using the supplied recording. This is a Codex-only production, not a Claude/Codex comparison. Create or resume only this song's folder at `productions/<song-slug>/` inside the active kit. Derive a clear slug from the song title. Before writing, check whether that destination already exists: resume it only if its checkpoint establishes that it is this same unfinished production; otherwise choose a new non-overwriting song-specific sibling and record why. Keep all song-specific code, assets, audio copies, plans, reports, review evidence and outputs in that folder.

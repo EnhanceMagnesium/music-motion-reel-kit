@@ -52,6 +52,10 @@ Give concise decisions and complete, saveable files. Carry required source facts
 
 R14–R16 MOTION GUIDANCE: assess all three initialized resources before storyboard lock; consultation is required, code adaptation and GSAP runtime use are selective. Use `claude-finished-song-animation-project/17_FOOTAGE_FRAME_FOOTPRINT_AND_CODE_ACTION.txt` and `repository-preparation/ANIMATION_AGENT_SKILL_RESOURCES_GUIDE.md`; record exact skill/source paths and any scene influence.
 
+## Song-specific font selection
+
+Before storyboarding, follow `claude-finished-song-animation-project/20_FONT_DISCOVERY_AND_LYRIC_TYPOGRAPHY.txt`: search and compare suitable licensed fonts against the song's actual text and visual direction, choose roles and weights without routine user choices, and record source, license and implementation in `productions/<song>/research/FONT_SELECTION.md` using `repository-preparation/templates/FONT_SELECTION_RECORD_TEMPLATE.md`. Preserve an explicit no-text or selective-caption treatment. Use the shared local font contract; verify appearance, glyphs and readability in actual review evidence.
+
 ## Per-song input folders
 
 For a new song, use `shared-inputs/<song>/` as the convenient intake location for the user's recording, final lyrics and optional brief. The active kit has `shared-inputs/` beside `productions/`; create the song subfolder if needed. The user may also provide attachments or other exact paths. Read the actual supplied filenames and formats, preserve the inputs, identify an ambiguous master or lyric source, and create a separate non-overwriting `productions/<song>/` folder for the production. See `shared-inputs/README.md`.

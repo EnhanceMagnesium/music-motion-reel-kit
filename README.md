@@ -13,6 +13,8 @@ This source workspace has no blanket root license. Each upstream checkout retain
 
 This connected folder is the one working kit for a reusable finished-song animation workflow. Each song has its own conversation and production directory; the shared renderer and pinned source library stay here. Do not create a separate Remotion project.
 
+For song-specific lyric type, use the [font discovery and typography guide](claude-finished-song-animation-project/20_FONT_DISCOVERY_AND_LYRIC_TYPOGRAPHY.txt) and its [font selection record template](repository-preparation/templates/FONT_SELECTION_RECORD_TEMPLATE.md).
+
 ## Start a new song
 
 Place the recording, final lyrics and optional brief together in a per-song folder such as `shared-inputs/my-new-song/`; see [song input folders](shared-inputs/README.md). Give that folder path to the selected agent. Other exact paths and attachments are supported. The agent keeps production work separately under `productions/<song>/`.

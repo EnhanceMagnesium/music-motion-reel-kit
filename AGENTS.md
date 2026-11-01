@@ -9,3 +9,5 @@ Keep song-specific work in its named `productions/<song>/` folder. Treat shared 
 KIT EDIT LOG: When Codex or Claude changes the reusable kit itself—its instructions, shared tools, templates, source maps or reusable workflow—add a short dated entry to `repository-preparation/CHECKPOINT.md` saying what changed, why, which files, what was checked, what remains and the next kit edit. When a task only uses the kit to make or review a song, record it in that song's `productions/<song>/CHECKPOINT.md` instead.
 
 MOTION RESOURCES: R14–R16 are initialized in `repository-downloads/` with project-local Claude/Codex skill copies. Assess all three against each song's scene needs before storyboard lock; adopting a technique remains selective. Follow `claude-finished-song-animation-project/17_FOOTAGE_FRAME_FOOTPRINT_AND_CODE_ACTION.txt` and `repository-preparation/ANIMATION_AGENT_SKILL_RESOURCES_GUIDE.md`. The skills do not add a renderer or shared runtime dependency.
+
+FONT DISCOVERY: Follow `claude-finished-song-animation-project/20_FONT_DISCOVERY_AND_LYRIC_TYPOGRAPHY.txt` for song-specific typography and font provenance.

@@ -509,3 +509,5 @@ ONGOING VERIFIED LESSONS
 Maintain reusable-animation-context/VERIFIED_PRODUCTION_LESSONS.md after every substantive pass when evidence supports a general lesson or changes an earlier conclusion. Save the song handoff locally and update its current checkpoint even when no new shared lesson arises. This requirement continues across future songs; read the lessons selectively before repeating setup or diagnosing a known failure.
 
 MOTION-RESOURCE ASSESSMENT: R14–R16 source checkouts and project-local Claude/Codex skills are initialized in `repository-downloads/` and the verified skill locations. Assess all three before each song's storyboard lock; direct adoption is selective. See `claude-finished-song-animation-project/17_FOOTAGE_FRAME_FOOTPRINT_AND_CODE_ACTION.txt` and `repository-preparation/ANIMATION_AGENT_SKILL_RESOURCES_GUIDE.md`. They do not add a renderer or runtime dependency.
+
+SONG TYPOGRAPHY: Before storyboard lock, follow `claude-finished-song-animation-project/20_FONT_DISCOVERY_AND_LYRIC_TYPOGRAPHY.txt` for song-specific font discovery, licensing, selection and review. Record the decision in the song production.

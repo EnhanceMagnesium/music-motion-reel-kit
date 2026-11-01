@@ -12,6 +12,10 @@ Added a labeled song-folder path placeholder near the beginning of `claude-finis
 
 Standardized intake guidance across the README, shared project instructions, Claude/Codex/Cursor prompts and Windows/Cursor setup guides around `shared-inputs/<song>/`, with other exact paths and attachments still supported. Added `shared-inputs/README.md` beside the existing productions folder. The published workspace additionally ignores song inputs while retaining this README, clarifies its source-workspace wording and repairs an empty Codex kit-path placeholder. No song input or production was modified. Verified paths, prompt text, ignored sample paths and Git diff; a real song intake remains to be exercised.
 
+## 2026-11-01 — Song-specific font discovery
+
+Added `claude-finished-song-animation-project/20_FONT_DISCOVERY_AND_LYRIC_TYPOGRAPHY.txt` and `repository-preparation/templates/FONT_SELECTION_RECORD_TEMPLATE.md`; linked song-specific search, licensing, selection, existing local font loading and evidence-based review from the shared instructions, three agent prompts, production/storyboard/quality guides, runtime README and setup index. Free licensed font discovery/download is authorized in the song prompts; package installs and paid fonts remain separate. No font, song or media was downloaded, installed or rendered. Verified source paths, relative links and template limits; actual glyph appearance and readability require song-specific visual review.
+
 ## 2026-11-01 — Selective lyric captions
 
 Clarified shared instructions, the Claude/Codex/Cursor prompts and review guidance: when captions are requested and only some lines can be shown, display the remaining lines supported by the active workflow, preserve their wording and cover omitted passages with visual storytelling. Explicit no-caption direction remains valid. Verify wording, timing and legibility with appropriate evidence. No song inputs or media changed.

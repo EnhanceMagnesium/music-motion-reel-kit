@@ -170,3 +170,5 @@ Dependency notes: R02 kinetic needs three.js (installed in its template environm
 
 END OF GUIDE
 REPOSITORY NAVIGATION: for each new song scan/rank all catalogued R01–R16 and use `13_REPOSITORY_NAVIGATION_AND_USE.txt` plus `repository-preparation/REPOSITORY_NAVIGATION_AND_USE_GUIDE.md`; deep-inspect only source candidates that map to a real scene need. The atlas records exact paths and reading limits.
+
+SONG TYPOGRAPHY: Before storyboard lock, follow `claude-finished-song-animation-project/20_FONT_DISCOVERY_AND_LYRIC_TYPOGRAPHY.txt` for song-specific font discovery, licensing, selection and review. Record the decision in the song production.

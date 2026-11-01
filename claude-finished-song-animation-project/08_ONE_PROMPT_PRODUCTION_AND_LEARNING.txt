@@ -45,3 +45,5 @@ Maintain reusable-animation-context/VERIFIED_PRODUCTION_LESSONS.md after every s
 
 HISTORICAL VERIFIED EXECUTION EXAMPLE — 2026-10-25 (NOT A REQUIRED GPT GATE)
 GPT executed the shared native Mac still route and inspected six fixture PNGs directly; evidence: productions/will-not-fade/technical-review/gpt_fixture_stills_20261025-080452/REVIEW.md. GPT can carry out explicitly authorized native execution and save results locally when the Claude session only exposes Linux. This removes the manual Terminal transfer for the demonstrated still stage, but unattended full-song video production remains unproven. See reusable lessons L13.
+
+SONG TYPOGRAPHY: Before storyboard lock, follow `claude-finished-song-animation-project/20_FONT_DISCOVERY_AND_LYRIC_TYPOGRAPHY.txt` for song-specific font discovery, licensing, selection and review. Record the decision in the song production.

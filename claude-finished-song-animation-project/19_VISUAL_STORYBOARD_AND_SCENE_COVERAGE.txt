@@ -65,6 +65,8 @@ Write each row so a reader who has not seen the code can reconstruct the intende
 
 ### 4. Give lyrics and instrumental passages visual coverage
 
+Use `20_FONT_DISCOVERY_AND_LYRIC_TYPOGRAPHY.txt` before storyboard lock to select song-specific text roles and candidate fonts; connect typography states and scene callers to the song font record.
+
 Connect every lyric phrase and meaningful instrumental event to one or more rows, scene IDs and board panels. A scene can cover several phrases, but each phrase must have a planned visual interpretation. Identify what changes when a key word or phrase matters: subject action, formation, scale, camera, visual metaphor, typography integrated into the scene, or another deliberate event. Do not let captions carry the entire story by default.
 
 Instrumental passages need purposeful visual development too. Plan the action, image transition, build, release or intentional tableau across the actual duration. Avoid long ranges described only as “music continues,” “more footage,” “same caption,” or “hold.” A repeated section may return to a motif, but specify the changed framing, scale, grouping, depth, orientation, action, consequence or point of view that makes the return meaningful. If a musical repeat intentionally repeats the image, explain why the reprise is useful and show how timing/action still feels intentional.
